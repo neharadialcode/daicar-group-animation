@@ -30,9 +30,10 @@ const Hero = () => {
       scrollTrigger: {
         trigger: ".main_div",
         start: "top top",
-        end: "bottom top",
+        end: "+=200%",
         scrub: 1,
         pin: true,
+        pinspacing: false,
       },
     });
 
@@ -105,7 +106,6 @@ const Hero = () => {
         start: "top center",
         end: "bottom top",
         toggleActions: "play none none reverse",
-        // markers: true,
       },
     });
     newValue2
@@ -147,11 +147,48 @@ const Hero = () => {
           zIndex: 1,
         },
         "-=1"
+      )
+      .fromTo(
+        ".text_div2",
+        { top: "200vh", position: "absolute", delay: 1, yPercent: -50 },
+        {
+          delay: 1,
+          top: "50%",
+          position: "absolute",
+          duration: 1,
+          yPercent: -50,
+        }
+      )
+      .to(
+        ".text_div",
+        {
+          opacity: 0,
+          yPercent: "-100vh",
+        },
+        "-=1"
+      )
+      .to(".bg_green", {
+        height: "100vh",
+        duration: 0.1,
+      })
+      .to(".icon_4", {
+        yPercent: -155,
+        xPercent: -50,
+        duration: 1,
+        scale: 0.8,
+      })
+      .to(
+        ".bg_green",
+        {
+          height: "50vh",
+          duration: 1,
+        },
+        "-=1"
       );
   }, []);
 
   return (
-    <div className="main_div hero_bg">
+    <div className="main_div hero_bg h-300">
       <div className="value">
         <div className="bg_green"></div>
         <div className="heading">
@@ -188,6 +225,23 @@ const Hero = () => {
                 Il futuro dei tuoi&nbsp;
                 <span className="hero_btn mx-2 d-inline-block">Lead</span> è
                 digitale
+              </h2>
+              <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
+                200.000
+              </h3>
+              <p className="font_4xl color_white_off fw-normal text-center  ">
+                Lead Qualificati nel 2022
+              </p>
+              <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
+                Daicar aiuta a far crescere la tua azienda, <br /> creando
+                contatti e generando vendite
+              </p>
+            </div>
+            <div className="text_div2">
+              <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
+                Il futuro dei tuoi&nbsp;
+                <span className="hero_btn mx-2 d-inline-block">Lead</span> è
+                digitale xcvbnsdcv sdc third
               </h2>
               <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
                 200.000
