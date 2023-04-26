@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html,
+body {
+  font-family: Mundial-regular;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ====================font-family==================== */
+
+@font-face {
+  font-family: Mundial-light;
+  src: url("./assets/fonts/Fontspring-DEMO-3-mundial-light-tty.otf");
+}
+
+@font-face {
+  font-family: Mundial-regular;
+  src: url("./assets/fonts/Fontspring-DEMO-4-mundial-regular-tty.otf");
+}
+
+@font-face {
+  font-family: Mundial-semibold;
+  src: url("./assets/fonts/Fontspring-DEMO-5-mundial-demibold-tty.otf");
+}
+
+@font-face {
+  font-family: Mundial-bold;
+  src: url("./assets/fonts/Fontspring-DEMO-6-mundial-bold-tty.otf");
+}
+
+/* =====================DEFINE FONT-FAMILY===================== */
+
+.ff_mundial_light {
+  font-family: Mundial-light;
+  font-weight: 300;
+}
+
+.ff_mundial_regular {
+  font-family: Mundial-regular;
+  font-weight: 500;
+}
+
+.ff_mundial_semibold {
+  font-family: Mundial-semibold;
+  font-weight: 600;
+}
+
+.ff_mundial_bold {
+  font-family: Mundial-bold;
+  font-weight: 700;
+}
+
+.ff_montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ff_roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* =====================DEFINE ROOT CSS CODE===================== */
+
+:root {
+  /* =====================font-size===================== */
+  --font-xsm: 14px;
+  --font-sm: 16px;
+  --font-md: 18px;
+  --font-lg: 20px;
+  --font-xl: 22px;
+  --font-2xl: 24px;
+  --font-3xl: 25px;
+  --font-4xl: 27px;
+  --font-5xl: 30px;
+  --font-6xl: 40px;
+  --font-7xl: 48.18px;
+  --font-8xl: 50px;
+  /* =======================color======================= */
+  --color-white-off: #edfafb;
+  --color-gray: #2d5363;
+  --color-light-gray: rgba(83, 132, 153, 0.5);
+  --color-light-green: #7ee49c;
+  /* =======================background-color================== */
+  --bg-light-white: #edfafb;
+  --bg-gray: #2d5363;
+}
+
+/* ----------------------------------- ONLY-MEDIA-QUERIES ----------------------------------- */
+@media (max-width: 1500px) {
+  :root {
+    --font-xsm: 12px;
+    --font-sm: 14px;
+    --font-md: 15px;
+    --font-lg: 17px;
+    --font-xl: 22px;
+    --font-2xl: 14px !important;
+    --font-3xl: 22px;
+    --font-4xl: 25px;
+    --font-5xl: 17px !important;
+    --font-6xl: 36px;
+    --font-7xl: 42px;
+    --font-8xl: 45px;
+  }
+}
+@media (max-width: 1399.98px) {
+  :root {
+    --font-xsm: 12px;
+    --font-sm: 14px;
+    --font-md: 15px;
+    --font-lg: 17px;
+    --font-xl: 22px;
+    --font-2xl: 14px !important;
+    --font-3xl: 22px;
+    --font-4xl: 25px;
+    --font-5xl: 17px !important;
+    --font-6xl: 36px;
+    --font-7xl: 42px;
+    --font-8xl: 45px;
+  }
+}
+@media (max-width: 1199.98px) {
+  :root {
+    --font-xsm: 13px;
+    --font-sm: 16px;
+    --font-md: 14px;
+    --font-lg: 15px;
+    --font-xl: 22px;
+    --font-2xl: 24px;
+    --font-3xl: 22px;
+    --font-4xl: 25px;
+    --font-5xl: 24px;
+    --font-6xl: 36px;
+    --font-7xl: 42px;
+    --font-8xl: 45px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --font-xsm: 9px;
+    --font-sm: 12px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 22px;
+    --font-4xl: 22px;
+    --font-5xl: 13px !important;
+    --font-6xl: 32px;
+    --font-7xl: 36px;
+    --font-8xl: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --font-xsm: 14px;
+    --font-sm: 16px;
+    --font-md: 18px;
+    --font-lg: 20px;
+    --font-xl: 18px;
+    --font-2xl: 18px;
+    --font-3xl: 19px;
+    --font-4xl: 20px;
+    --font-5xl: 23px;
+    --font-6xl: 28px;
+    --font-7xl: 30px;
+    --font-8xl: 35px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --font-xsm: 9px;
+    --font-sm: 7px;
+    --font-md: 9px;
+    --font-lg: 14px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-2xl: 16px;
+    --font-3xl: 17px;
+    --font-4xl: 18px;
+    --font-5xl: 20px;
+    --font-6xl: 22px;
+    --font-7xl: 26px;
+    --font-8xl: 30px;
+  }
+}
+
+/* =================== DEFINE FONT-SIZE======================== */
+.font_xsm {
+  font-size: var(--font-xsm);
+}
+
+.font_sm {
+  font-size: var(--font-sm);
+}
+
+.font_md {
+  font-size: var(--font-md);
+}
+
+.font_lg {
+  font-size: var(--font-lg);
+}
+
+.font_xl {
+  font-size: var(--font-xl);
+}
+
+.font_2xl {
+  font-size: var(--font-2xl);
+}
+
+.font_3xl {
+  font-size: var(--font-3xl);
+}
+
+.font_4xl {
+  font-size: var(--font-4xl);
+}
+
+.font_5xl {
+  font-size: var(--font-5xl);
+}
+
+.font_6xl {
+  font-size: var(--font-6xl);
+}
+
+.font_7xl {
+  font-size: var(--font-7xl);
+}
+
+.font_8xl {
+  font-size: var(--font-8xl);
+}
+
+/* =================== DEFINE BACKGROUND-COLOR==================== */
+.bg_light_white {
+  background-color: var(--bg-light-white);
+}
+.bg_gray {
+  background-color: var(--bg-gray);
+}
+
+/* =================== DEFINE COLOR======================== */
+.color_white_off {
+  color: var(--color-white-off);
+}
+
+.color_gray {
+  color: var(--color-gray);
+}
+
+.color_light_gray {
+  color: var(--color-light-gray);
+}
+.color_light_green {
+  color: var(--color-light-green);
+}
+
+/* ===================== DEFINE FONT-WEIGHT==================== */
+.fw_medium {
+  font-weight: 500;
+}
+@media (max-width: 1400px) {
+  .roadmapline_set {
+    left: -220px;
+    z-index: 1;
+    width: 100% !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .carplanner_cards {
+    width: 420px;
+  }
+  .carplanner_logo {
+    max-width: 350px;
+  }
+}
+@media (max-width: 991.98px) {
+  .carplanner_cards {
+    width: 350px;
+  }
+  .carplanner_logo {
+    max-width: 280px;
+  }
+  .roadmapline_set {
+    left: -100px;
+    z-index: 1;
+    width: 100% !important;
+  }
+}
