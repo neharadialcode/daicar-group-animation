@@ -30,10 +30,11 @@ const Hero = () => {
       scrollTrigger: {
         trigger: ".main_div",
         start: "top top",
-        end: "+=200%",
+        end: "bottom top",
         scrub: 1,
         pin: true,
         pinspacing: false,
+        pinspacer: false,
       },
     });
 
@@ -184,7 +185,11 @@ const Hero = () => {
           duration: 1,
         },
         "-=1"
-      );
+      )
+      .to(".bg_green", {
+        height: "50vh",
+        duration: 5,
+      });
   }, []);
 
   return (
