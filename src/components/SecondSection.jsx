@@ -29,9 +29,10 @@ const SecondSection = () => {
       scrollTrigger: {
         trigger: ".second_sectioon",
         start: "top top",
-        end: "+=200%",
+        end: "bottom top",
         scrub: 1,
         pin: true,
+        pinSpacing: false,
       },
     });
     secondSection
@@ -203,18 +204,25 @@ const SecondSection = () => {
           top: "-200%",
         },
         "-=.5"
-      );
+      )
+
+      .to(".second_sectioon", {
+        autoAlpha: 0,
+        delay: 1,
+      })
+      .to(".second_sectioon", {
+        autoAlpha: 0,
+      });
   }, []);
   return (
-    <div className="vh-100 d-flex flex-column justify-content-center second_sectioon">
-      {" "}
+    <div className="vh-100 d-flex flex-column justify-content-center second_sectioon bg_white overflow-hidden bg_white z_index2">
       <div className="side_icon position-absolute">SIDE ICON</div>
       <div className="max_width position-relative">
         <div className="icon_5 position-absolute">
           <Icon5 />
         </div>
         <img className="i_pad_img_2" src={img} alt="img" />
-        <div className="text-center pt-4">
+        <div className="text-center pt-4 ">
           <h1 className="max_width d-flex justify-content-center">
             {buttonData.map((obj, index) => (
               <div className="px-2 pt-5 ">

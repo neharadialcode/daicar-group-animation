@@ -4,7 +4,10 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import "./master.css";
 import SecondSection from "./components/SecondSection";
+import ThirdSection from "./components/ThirdSection";
 import Hero2 from "./components/Hero2";
+import ForthSection from "./components/ForthSection";
+import FifthSection from "./components/FifthSection";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Hero2 />
       {/* <Hero /> */}
       <SecondSection />
+      <ThirdSection />
+      <ForthSection />
+      <FifthSection />
       {/* <CarPlanner />
       <Tiguido />
       <Partner />
