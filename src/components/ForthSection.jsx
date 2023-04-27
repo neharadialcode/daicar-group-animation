@@ -131,7 +131,7 @@ const ForthSection = () => {
       );
   }, []);
   return (
-    <div className="vh-100 overflow-hidden forth_section  ">
+    <div className="vh-100 overflow-hidden forth_section ">
       <div className="position-relative h-100">
         {/* <div className="bg_white position-absolute top-0 start-0 w-100 h-100 forth_section_background"></div> */}
         <img className="roadmap_icon_1" src={roadmapImg1} alt="roadmapImg1" />

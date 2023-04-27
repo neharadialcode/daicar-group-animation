@@ -3,6 +3,22 @@ import { gsap } from "gsap";
 
 const FifthSection = () => {
   useEffect(() => {
+    let fifth2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".fifth_main",
+        start: "top -80%",
+        end: "bottom top",
+        markers: true,
+        toggleActions: "play none none reverse",
+      },
+    });
+    fifth2.fromTo(
+      ".bg-green",
+      { scale: 0 },
+      {
+        scale: 1,
+      }
+    );
     let fifth = gsap.timeline({
       scrollTrigger: {
         trigger: ".fifth_section",
@@ -34,8 +50,11 @@ const FifthSection = () => {
       );
   }, []);
   return (
-    <div className="vh-200 overflow-hidden fifth_section bg-green">
-      <div className="vh-100 position-relative">FifthSection</div>
+    <div className="fifth_main">
+      <div className="vh-200 overflow-hidden fifth_section ">
+        <div className="bg-green vh-100 position-absolute w-100"></div>
+        <div className="vh-100 position-relative">FifthSection</div>
+      </div>
     </div>
   );
 };
