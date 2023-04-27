@@ -8,6 +8,10 @@
   position: relative;
   margin-top: -2px !important;
 }
+.main_div {
+  z-index: 10;
+  background-color: white;
+}
 .hero_btn {
   font-size: var(--font-2xl) !important;
   border: 1px solid #edfafb;
@@ -50,12 +54,18 @@
 .icon_4 {
   position: absolute;
 }
-
+.icon_5 {
+  max-width: 500px;
+  z-index: -1;
+}
 .icon_1 {
   top: 65%;
   left: 15%;
 }
-
+.side_icon {
+  right: 0;
+  bottom: 0;
+}
 .icon_2 {
   top: 0%;
   left: 50%;

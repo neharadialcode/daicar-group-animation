@@ -5,195 +5,203 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img from "../Free_iPad_Mockup_1 1.png";
 
 const Hero = () => {
-  gsap.registerPlugin(ScrollTrigger);
-  useEffect(() => {
-    gsap.from("nav", { yPercent: -50, opacity: 0, duration: 1 });
-    gsap.from(".heading", {
-      filter: "blur(2px)",
-      duration: 1.5,
-    });
-    gsap.from(".icon_1", {
-      yPercent: 100,
-      duration: 1.5,
-    });
-    gsap.from(".icon_2", {
-      y: "50%",
-      duration: 1.5,
-    });
-    gsap.from(".icon_3", {
-      yPercent: 100,
-      duration: 1.5,
-      zIndex: 1,
-    });
+  // gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.from("nav", { yPercent: -50, opacity: 0, duration: 1 });
+  //   gsap.from(".heading", {
+  //     filter: "blur(2px)",
+  //     duration: 1.5,
+  //   });
+  //   gsap.from(".icon_1", {
+  //     yPercent: 100,
+  //     duration: 1.5,
+  //   });
+  //   gsap.from(".icon_2", {
+  //     y: "50%",
+  //     duration: 1.5,
+  //   });
+  //   gsap.from(".icon_3", {
+  //     yPercent: 100,
+  //     duration: 1.5,
+  //     zIndex: 1,
+  //   });
 
-    let secondSlide = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".main_div",
-        start: "top top",
-        end: "bottom top",
-        scrub: 1,
-        pin: true,
-        pinspacing: false,
-        pinspacer: false,
-      },
-    });
+  //   let secondSlide = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".main_div",
+  //       start: "top top",
+  //       end: "bottom top",
+  //       scrub: 1,
+  //       pin: true,
+  //       markers: true,
+  //       pinSpacing: false,
+  //     },
+  //   });
 
-    let newValue = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".value",
-        start: "top -10%",
-        end: "bottom top",
-        toggleActions: "play none none reverse",
-      },
-    });
-    newValue
-      .to(".second_div", {
-        yPercent: -100,
-        duration: 1,
-      })
-      .to(
-        ".heading",
-        {
-          opacity: 0,
-          duration: 1,
-        },
-        "-=1"
-      )
-      .to(
-        ".icon_1",
-        {
-          y: "-100vh",
-          duration: 1,
-        },
-        "-=1"
-      )
-      .to(
-        ".icon_2",
-        {
-          yPercent: -100,
-          duration: 1,
-        },
-        "-=1"
-      )
-      .to(
-        ".icon_3",
-        {
-          rotate: 20,
-          y: "-75%",
-          x: "10%",
-          scale: 0.7,
-          duration: 1,
-          zIndex: 1,
-        },
-        "-=1"
-      )
-      .fromTo(
-        ".icon_4",
-        {
-          yPercent: 80,
-          duration: 1,
-        },
-        {
-          yPercent: -65,
-          xPercent: -50,
-          duration: 1,
-        },
-        "-=1"
-      );
+  //   let newValue = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".value",
+  //       start: "top -10%",
+  //       end: "bottom top",
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
+  //   newValue
+  //     .to(".second_div", {
+  //       yPercent: -100,
+  //       duration: 1,
+  //     })
+  //     .to(
+  //       ".heading",
+  //       {
+  //         opacity: 0,
+  //         duration: 1,
+  //       },
+  //       "-=1"
+  //     )
+  //     .to(
+  //       ".icon_1",
+  //       {
+  //         y: "-100vh",
+  //         duration: 1,
+  //       },
+  //       "-=1"
+  //     )
+  //     .to(
+  //       ".icon_2",
+  //       {
+  //         yPercent: -100,
+  //         duration: 1,
+  //       },
+  //       "-=1"
+  //     )
+  //     .to(
+  //       ".icon_3",
+  //       {
+  //         rotate: 20,
+  //         y: "-75%",
+  //         x: "10%",
+  //         scale: 0.7,
+  //         duration: 1,
+  //         zIndex: 1,
+  //       },
+  //       "-=1"
+  //     )
+  //     .fromTo(
+  //       ".icon_4",
+  //       {
+  //         yPercent: 80,
+  //         duration: 1,
+  //       },
+  //       {
+  //         yPercent: -65,
+  //         xPercent: -50,
+  //         duration: 1,
+  //       },
+  //       "-=1"
+  //     );
 
-    let newValue2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".second_div",
-        start: "top center",
-        end: "bottom top",
-        toggleActions: "play none none reverse",
-      },
-    });
-    newValue2
-      .fromTo(
-        ".i_pad_img",
-        {
-          opacity: 0,
-          xPercent: -50,
-          left: "50%",
-          scale: 2,
-          top: "50%",
-          yPercent: -50,
-          duration: 1,
-        },
-        {
-          opacity: 1,
-          scale: 0.8,
-          xPercent: -50,
-          left: "50%",
-          top: "50%",
-          yPercent: -50,
-          duration: 1,
-        }
-      )
+  //   let newValue2 = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".second_div",
+  //       start: "top center",
+  //       end: "bottom top",
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
+  //   newValue2
+  //     .fromTo(
+  //       ".i_pad_img",
+  //       {
+  //         opacity: 0,
+  //         xPercent: -50,
+  //         left: "50%",
+  //         scale: 2,
+  //         top: "50%",
+  //         yPercent: -50,
+  //         duration: 1,
+  //       },
+  //       {
+  //         opacity: 1,
+  //         scale: 0.8,
+  //         xPercent: -50,
+  //         left: "50%",
+  //         top: "50%",
+  //         yPercent: -50,
+  //         duration: 1,
+  //       }
+  //     )
 
-      .to(
-        ".second_div",
-        {
-          scale: 0.8,
-          duration: 1,
-        },
-        "-=1"
-      )
-      .to(
-        ".icon_3",
-        {
-          scale: 0.4,
-          left: "50%",
-          zIndex: 1,
-        },
-        "-=1"
-      )
-      .fromTo(
-        ".text_div2",
-        { top: "200vh", position: "absolute", delay: 1, yPercent: -50 },
-        {
-          delay: 1,
-          top: "50%",
-          position: "absolute",
-          duration: 1,
-          yPercent: -50,
-        }
-      )
-      .to(
-        ".text_div",
-        {
-          opacity: 0,
-          yPercent: "-100vh",
-        },
-        "-=1"
-      )
-      .to(".bg_green", {
-        height: "100vh",
-        duration: 0.1,
-      })
-      .to(".icon_4", {
-        yPercent: -155,
-        xPercent: -50,
-        duration: 1,
-        scale: 0.8,
-      })
-      .to(
-        ".bg_green",
-        {
-          height: "50vh",
-          duration: 1,
-        },
-        "-=1"
-      )
-      .to(".bg_green", {
-        height: "50vh",
-        duration: 5,
-      });
-  }, []);
+  //     .to(
+  //       ".second_div",
+  //       {
+  //         scale: 0.8,
+  //         duration: 1,
+  //       },
+  //       "-=1"
+  //     )
+  //     .to(
+  //       ".icon_3",
+  //       {
+  //         scale: 0.4,
+  //         left: "50%",
+  //         zIndex: 1,
+  //       },
+  //       "-=1"
+  //     )
+  //     .fromTo(
+  //       ".text_div2",
+  //       { top: "200vh", position: "absolute", delay: 1, yPercent: -50 },
+  //       {
+  //         delay: 1,
+  //         top: "50%",
+  //         position: "absolute",
+  //         duration: 1,
+  //         yPercent: -50,
+  //       }
+  //     )
+  //     .to(
+  //       ".text_div",
+  //       {
+  //         opacity: 0,
+  //         yPercent: "-100vh",
+  //       },
+  //       "-=1"
+  //     )
+  //     .to(".bg_green", {
+  //       height: "100vh",
+  //       duration: 0.1,
+  //     })
+  //     .to(".icon_4", {
+  //       yPercent: -155,
+  //       xPercent: -50,
+  //       duration: 1,
+  //       scale: 0.8,
+  //     })
+  //     .to(
+  //       ".bg_green",
+  //       {
+  //         height: "50vh",
+  //         duration: 1,
+  //       },
+  //       "-=1"
+  //     )
+
+  //     .from(".second_sectioon", {
+  //       autoAlpha: 0,
+  //       zIndex: 10,
+  //     })
+  //     .to(
+  //       ".main_div",
+  //       {
+  //         autoAlpha: 0,
+  //       },
+  //       "-=.5"
+  //     );
+  // }, []);
 
   return (
-    <div className="main_div hero_bg h-300">
+    <div className="main_div hero_bg h-300 ">
       <div className="value">
         <div className="bg_green"></div>
         <div className="heading">
