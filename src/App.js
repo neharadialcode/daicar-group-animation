@@ -18,7 +18,7 @@ function App() {
       <SecondSection />
       <ThirdSection />
       <ForthSection />
-      <FifthSection />
+      {/* <FifthSection /> */}
       {/* <CarPlanner />
       <Tiguido />
       <Partner />

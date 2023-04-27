@@ -15,6 +15,15 @@ const FifthSection = () => {
     });
     fifth
       .fromTo(
+        ".fifth_section",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        }
+      )
+      .fromTo(
         ".forth_section",
         {
           height: "100%",
@@ -22,19 +31,11 @@ const FifthSection = () => {
         {
           height: "0%",
         }
-      )
-      .to(
-        ".bg-green",
-        {
-          autoAlpha: 1,
-        },
-        "-=.5"
       );
   }, []);
   return (
-    <div className="vh-200 overflow-hidden fifth_section ">
-      <div className="vh-100 bg-green"></div>
-      FifthSection
+    <div className="vh-200 overflow-hidden fifth_section bg-green">
+      <div className="vh-100 position-relative">FifthSection</div>
     </div>
   );
 };
