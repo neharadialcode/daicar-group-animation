@@ -1,7 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 const FifthSection = () => {
+  const [leftMargin, setLeftMargin] = useState(0);
+  const containerRef = useRef(null);
+  useEffect(() => {
+    if (containerRef.current) {
+      setLeftMargin(containerRef.current.getBoundingClientRect().left);
+    }
+
+    window.addEventListener("resize", () => {
+      if (containerRef.current) {
+        setLeftMargin(containerRef.current.getBoundingClientRect().left);
+      }
+    });
+  }, [leftMargin]);
   useEffect(() => {
     let fifth2 = gsap.timeline({
       scrollTrigger: {
@@ -50,12 +63,43 @@ const FifthSection = () => {
       );
   }, []);
   return (
-    <div className="fifth_main">
-      <div className="vh-200 overflow-hidden fifth_section ">
-        <div className="bg-green vh-100 position-absolute w-100"></div>
-        <div className="vh-100 position-relative">FifthSection</div>
+    <>
+      <div className="container" ref={containerRef}></div>
+      <div className="fifth_main">
+        <div className="vh-200 overflow-hidden fifth_section ">
+          <div className="bg-green vh-100 position-absolute w-100"></div>
+          <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative">
+            <div className="d-flex">
+              <div
+                className="div_1 custom_width"
+                style={{ marginLeft: `${leftMargin + 16}px` }}
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+                velit id eligendi possimus. Consequuntur officia suscipit
+                molestiae earum, quis placeat quo perspiciatis beatae rem veniam
+                corporis eius ipsa, repellendus necessitatibus!
+              </div>
+              <div className="div_1 custom_width">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+                velit id eligendi possimus. Consequuntur officia suscipit
+                molestiae earum, quis placeat quo perspiciatis beatae rem veniam
+                corporis eius ipsa, repellendus necessitatibus!
+              </div>
+              <div className="div_1 custom_width">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+                velit id eligendi possimus. Consequuntur officia suscipit
+                molestiae earum, quis placeat quo perspiciatis beatae rem veniam
+                corporis eius ipsa, repellendus necessitatibus!
+              </div>
+            </div>
+            <div
+              className="line mt-5"
+              style={{ marginLeft: `${leftMargin + 16}px` }}
+            ></div>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
