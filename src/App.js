@@ -8,6 +8,9 @@ import ThirdSection from "./components/ThirdSection";
 import Hero2 from "./components/Hero2";
 import ForthSection from "./components/ForthSection";
 import FifthSection from "./components/FifthSection";
+import SixthSection from "./components/SixthSection";
+import SeventhSection from "./components/SeventhSection";
+import EightSection from "./components/EightSection";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
       <ThirdSection />
       <ForthSection />
       <FifthSection />
+      <SixthSection />
+      <SeventhSection />
+      <EightSection />
       {/* <CarPlanner />
       <Tiguido />
       <Partner />

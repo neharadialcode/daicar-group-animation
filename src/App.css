@@ -243,6 +243,21 @@
 .z_negative {
   z-index: -1;
 }
+.custom_width {
+  min-width: 800px;
+}
+.line {
+  width: 2400px;
+  height: 5px;
+  background-color: white;
+}
+.small_icon_1,
+.small_icon_2 {
+  position: absolute;
+
+  /* bottom: 0; */
+}
+
 @-webkit-keyframes up-down {
   50% {
     -webkit-transform: translateY(-10px);
