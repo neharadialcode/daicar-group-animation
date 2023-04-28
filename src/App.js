@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+// import Hero from "./components/Hero";
 import "./master.css";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
@@ -11,6 +11,7 @@ import FifthSection from "./components/FifthSection";
 import SixthSection from "./components/SixthSection";
 import SeventhSection from "./components/SeventhSection";
 import EightSection from "./components/EightSection";
+// import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -30,8 +31,8 @@ function App() {
       <Partner />
       <Crm />
       <About />
-      <Footer />
-      <BackToTop /> */}
+      <Footer /> */}
+      {/* <BackToTop /> */}
     </>
   );
 }

@@ -52,16 +52,16 @@ const Tiguido = () => {
                     <path
                       d="M24.8357 1.36011L14.4747 11.7211L9.02152 6.26794L0.841797 14.4477"
                       stroke="#EDFAFB"
-                      stroke-width="1.09677"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.09677"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M18.291 1.36011H24.8348V7.90389"
                       stroke="#EDFAFB"
-                      stroke-width="1.09677"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.09677"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                   Finanza
@@ -77,9 +77,9 @@ const Tiguido = () => {
                     <path
                       d="M17.0089 17.4766C17.0089 18.262 16.7095 19.0152 16.1766 19.5705C15.6437 20.1259 14.9209 20.4379 14.1672 20.4379C13.4136 20.4379 12.6908 20.1259 12.1579 19.5705C11.625 19.0152 11.3256 18.262 11.3256 17.4766V10.5669M21.745 10.5669C21.4975 7.86577 20.2929 5.35773 18.3663 3.53251C16.4397 1.70728 13.9294 0.695923 11.3256 0.695923C8.72184 0.695923 6.21156 1.70728 4.28493 3.53251C2.3583 5.35773 1.15367 7.86577 0.90625 10.5669H21.745Z"
                       stroke="#EDFAFB"
-                      stroke-width="1.09677"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.09677"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                   Assicurazione
@@ -95,58 +95,58 @@ const Tiguido = () => {
                     <path
                       d="M21.5691 4.4292C23.0654 6.22561 23.8848 8.48962 23.8848 10.8276C23.8848 13.1655 23.0654 15.4295 21.5691 17.2259"
                       stroke="#EDFAFB"
-                      stroke-width="1.63594"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.63594"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M24.7928 1.17749C27.134 3.83356 28.4258 7.25257 28.4258 10.7932C28.4258 14.3339 27.134 17.7529 24.7928 20.4089"
                       stroke="#EDFAFB"
-                      stroke-width="1.63594"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.63594"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M18.3263 7.63928C18.9818 8.56196 19.334 9.66574 19.334 10.7976C19.334 11.9294 18.9818 13.0332 18.3263 13.9558"
                       stroke="#EDFAFB"
-                      stroke-width="1.63594"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.63594"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M14.793 10.7919L14.793 10.8007"
                       stroke="#EDFAFB"
-                      stroke-width="1.63594"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.63594"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M8.01683 4.4292C6.52055 6.22561 5.70117 8.48962 5.70117 10.8276C5.70117 13.1655 6.52055 15.4295 8.01683 17.2259"
                       stroke="#EDFAFB"
-                      stroke-width="1.63594"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.63594"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M4.79318 1.17749C2.45193 3.83356 1.16016 7.25257 1.16016 10.7932C1.16016 14.3339 2.45193 17.7529 4.79318 20.4089"
                       stroke="#EDFAFB"
-                      stroke-width="1.63594"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.63594"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M11.2596 7.63928C10.6041 8.56196 10.252 9.66574 10.252 10.7976C10.252 11.9294 10.6041 13.0332 11.2596 13.9558"
                       stroke="#EDFAFB"
-                      stroke-width="1.63594"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.63594"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M14.793 10.7919L14.793 10.8007"
                       stroke="#EDFAFB"
-                      stroke-width="1.63594"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.63594"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                   Telco
