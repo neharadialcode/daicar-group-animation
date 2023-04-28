@@ -46,274 +46,277 @@ const SecondSection = () => {
     },
   ];
   useEffect(() => {
-    let secondSection = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".second_sectioon",
-        start: "top top",
-        end: "bottom top",
-        scrub: 1,
-        pin: true,
-        pinSpacing: false,
-      },
-    });
-    secondSection
-      .fromTo(
-        ".icon_5",
-        {
-          top: "100%",
+    let second = gsap.matchMedia();
+    second.add("(min-width:1200px)", () => {
+      let secondSection = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".second_sectioon",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
         },
-        {
-          top: "80%",
-        }
-      )
-      .fromTo(
-        ".card_img_0",
-        {
-          opacity: 0,
-          top: "50px",
-        },
-        {
-          opacity: 1,
-          top: "0px",
-        }
-      )
-      .to(
-        ".active_button_0",
-        {
-          background: "rgba(83, 132, 153, 0.5)",
-          rotate: "-3deg",
-        },
-        "-=.5"
-      )
-      .to(
-        ".icon_5",
-        {
-          top: "70%",
-        },
-        "-=.5"
-      )
-      .to(
-        ".side_icon",
-        {
-          bottom: "10%",
-        },
-        "-=.5"
-      )
+      });
+      secondSection
+        .fromTo(
+          ".icon_5",
+          {
+            top: "100%",
+          },
+          {
+            top: "80%",
+          }
+        )
+        .fromTo(
+          ".card_img_0",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(
+          ".active_button_0",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to(
+          ".icon_5",
+          {
+            top: "70%",
+          },
+          "-=.5"
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "10%",
+          },
+          "-=.5"
+        )
 
-      .fromTo(
-        ".card_img_1",
-        {
-          opacity: 0,
-          top: "50px",
-        },
-        {
-          opacity: 1,
-          top: "0px",
-        }
-      )
-      .to(
-        ".active_button_1",
-        {
-          background: "rgba(83, 132, 153, 0.5)",
-          rotate: "-3deg",
-        },
-        "-=.5"
-      )
-      .to(
-        ".icon_5",
-        {
-          top: "60%",
-        },
-        "-=.5"
-      )
-      .to(
-        ".side_icon",
-        {
-          bottom: "20%",
-        },
-        "-=.5"
-      )
-      .to(
-        ".active_button_0",
-        {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        },
-        "-=.5"
-      )
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(
+          ".active_button_1",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to(
+          ".icon_5",
+          {
+            top: "60%",
+          },
+          "-=.5"
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "20%",
+          },
+          "-=.5"
+        )
+        .to(
+          ".active_button_0",
+          {
+            background: "rgba(126, 228, 156, 0.5)",
+            rotate: 0,
+          },
+          "-=.5"
+        )
 
-      .fromTo(
-        ".card_img_2",
-        {
-          opacity: 0,
-          top: "50px",
-        },
-        {
-          opacity: 1,
-          top: "0px",
-        }
-      )
-      .to(
-        ".active_button_2",
-        {
-          background: "rgba(83, 132, 153, 0.5)",
-          rotate: "-3deg",
-        },
-        "-=.5"
-      )
-      .to(
-        ".active_button_1",
-        {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        },
-        "-=.5"
-      )
-      .to(
-        ".icon_5",
-        {
-          top: "50%",
-        },
-        "-=.5"
-      )
-      .to(
-        ".side_icon",
-        {
-          bottom: "30%",
-        },
-        "-=.5"
-      )
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(
+          ".active_button_2",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to(
+          ".active_button_1",
+          {
+            background: "rgba(126, 228, 156, 0.5)",
+            rotate: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".icon_5",
+          {
+            top: "50%",
+          },
+          "-=.5"
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "30%",
+          },
+          "-=.5"
+        )
 
-      .fromTo(
-        ".card_img_3",
-        {
-          opacity: 0,
-          top: "50px",
-        },
-        {
-          opacity: 1,
-          top: "0px",
-        }
-      )
-      .to(
-        ".active_button_3",
-        {
-          background: "rgba(83, 132, 153, 0.5)",
-          rotate: "-3deg",
-        },
-        "-=.5"
-      )
-      .to(
-        ".icon_5",
-        {
-          top: "40%",
-        },
-        "-=.5"
-      )
-      .to(
-        ".side_icon",
-        {
-          bottom: "40%",
-        },
-        "-=.5"
-      )
-      .to(
-        ".active_button_2",
-        {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        },
-        "-=.5"
-      )
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(
+          ".active_button_3",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to(
+          ".icon_5",
+          {
+            top: "40%",
+          },
+          "-=.5"
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "40%",
+          },
+          "-=.5"
+        )
+        .to(
+          ".active_button_2",
+          {
+            background: "rgba(126, 228, 156, 0.5)",
+            rotate: 0,
+          },
+          "-=.5"
+        )
 
-      // .fromTo(
-      //   ".icon_5",
-      //   {
-      //     top: "40%",
-      //   },
-      //   {
-      //     top: "-200%",
-      //   },
-      //   "-=.5"
-      // )
-      .fromTo(
-        ".card_img_4",
-        {
-          opacity: 0,
-          top: "50px",
-        },
-        {
-          opacity: 1,
-          top: "0px",
-        }
-      )
-      .to(
-        ".active_button_4",
-        {
-          background: "rgba(83, 132, 153, 0.5)",
-          rotate: "-3deg",
-        },
-        "-=.5"
-      )
-      // .to(
-      //   ".icon_5",
-      //   {
-      //     top: "30%",
-      //   },
-      //   "-=.5"
-      // )
-      .fromTo(
-        ".icon_5",
-        {
-          top: "40%",
-        },
-        {
-          top: "-100%",
-        },
-        "-=.5"
-      )
-      .to(
-        ".side_icon",
-        {
-          bottom: "50%",
-        },
-        "-=.5"
-      )
-      .to(
-        ".active_button_3",
-        {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        },
-        "-=.5"
-      )
+        // .fromTo(
+        //   ".icon_5",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-200%",
+        //   },
+        //   "-=.5"
+        // )
+        .fromTo(
+          ".card_img_4",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(
+          ".active_button_4",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        // .to(
+        //   ".icon_5",
+        //   {
+        //     top: "30%",
+        //   },
+        //   "-=.5"
+        // )
+        .fromTo(
+          ".icon_5",
+          {
+            top: "40%",
+          },
+          {
+            top: "-100%",
+          },
+          "-=.5"
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "50%",
+          },
+          "-=.5"
+        )
+        .to(
+          ".active_button_3",
+          {
+            background: "rgba(126, 228, 156, 0.5)",
+            rotate: 0,
+          },
+          "-=.5"
+        )
 
-      .fromTo(
-        ".card_img_5",
-        {
-          opacity: 0,
-          top: "50px",
-        },
-        {
-          opacity: 1,
-          top: "10px",
-        }
-      )
-      .to(
-        ".active_button_4",
-        {
-          background: "rgba(83, 132, 153, 0.5)",
-          rotate: "-3deg",
-        },
-        "-=.5"
-      )
-      .to(".second_sectioon", {
-        autoAlpha: 0,
-        delay: 1,
-      })
+        .fromTo(
+          ".card_img_5",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "10px",
+          }
+        )
+        .to(
+          ".active_button_4",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to(".second_sectioon", {
+          autoAlpha: 0,
+          delay: 1,
+        });
       // .to(".second_sectioon", {
       //   autoAlpha: 0,
       // });
+    });
   }, []);
   return (
     <div className="vh-100 d-flex flex-column justify-content-center second_sectioon bg_white overflow-hidden bg_white z_index2">
