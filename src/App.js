@@ -12,7 +12,7 @@ import FifthSection from "./components/FifthSection";
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Hero2 />
       {/* <Hero /> */}
       <SecondSection />

@@ -198,7 +198,7 @@ const Hero2 = () => {
               className="hero_btn mx-1 d-inline-block
             "
             >
-              Lead
+              vendite
             </span>
             è digitale
           </h2>
@@ -223,7 +223,7 @@ const Hero2 = () => {
             <div className="text_div">
               <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
                 Il futuro dei tuoi&nbsp;
-                <span className="hero_btn mx-2 d-inline-block">Lead</span> è
+                <span className="hero_btn mx-2 d-inline-block">vendite</span> è
                 digitale
               </h2>
               <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
@@ -239,19 +239,19 @@ const Hero2 = () => {
             </div>
             <div className="text_div2">
               <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
-                Il futuro dei tuoi&nbsp;
-                <span className="hero_btn mx-2 d-inline-block">Lead</span> è
-                digitale xcvbnsdcv sdc third
+                Il futuro delle tue&nbsp;
+                <span className="hero_btn mx-2 d-inline-block">vendite</span> è
+                digitale
               </h2>
               <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
-                200.000
+                10.000
               </h3>
               <p className="font_4xl color_white_off fw-normal text-center  ">
-                Lead Qualificati nel 2022
+                Campagne Generate nel 2022
               </p>
               <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
-                Daicar aiuta a far crescere la tua azienda, <br /> creando
-                contatti e generando vendite
+                Campaign management flessibile e altamente <br /> personalizzabile
+                sulle criticità di ogni partner.
               </p>
             </div>
           </div>
