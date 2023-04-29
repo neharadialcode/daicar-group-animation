@@ -29,7 +29,7 @@ const ThirdSection = () => {
           autoAlpha: 0,
         })
         .to(".big_icon", {
-          top: "-5%",
+          top: "-12%",
         })
         .to(".small_icon", {
           top: "5px",
@@ -207,17 +207,17 @@ const ThirdSection = () => {
                 />
                 <div className="heading_1">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
-                  <p className=" pt-5 font_2xl position-absolute text_1 text-white pe-xl-5">
+                  <p className=" pt-5 font_2xl position-absolute text_1 text-white pe-xl-5 pt-2">
                     Strategie di marketing costruite ad hoc per generare
                     traffico qualificato da veicolare sui social media, Google e
                     native advertising
                   </p>
                 </div>
-                <div className="heading_2">
+                <div className="heading_2 pt-3">
                   <h3 className="font_5xl text-white">
                     LANDING CONVERSAZIONALE
                   </h3>
-                  <p className="pt-5 font_2xl position-absolute text_2 text-white pe-xl-5">
+                  <p className="pt-5 font_2xl position-absolute text_2 text-white pe-xl-5 pt-2">
                     Landingpage su misura per i nostri partner e conformi al
                     <span className="ff_mundial_bold">
                       regolamento GDPR
@@ -225,19 +225,19 @@ const ThirdSection = () => {
                     per l’acquisizione di contatti qualificati.
                   </p>
                 </div>
-                <div className="heading_3">
+                <div className="heading_3 pt-3">
                   <h3 className="font_5xl text-white">
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
-                  <p className=" pt-5 font_2xl position-absolute text_3 text-white pe-xl-5">
+                  <p className=" pt-5 font_2xl position-absolute text_3 text-white pe-xl-5 pt-2">
                     Meno tempo e maggiore conversione grazie al nostro{" "}
                     <span className="ff_mundial_bold">software di I.A.</span>{" "}
                     per la validazione real-time dei dati degli utenti
                   </p>
                 </div>
-                <div className="heading_4">
+                <div className="heading_4 pt-3">
                   <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
-                  <p className=" pt-5 font_2xl position-absolute text_4 text-white pe-xl-5">
+                  <p className=" pt-5 font_2xl position-absolute text_4 text-white pe-xl-5 pt-2">
                     I lead generati vengono sottoposti ad un attento processo di
                     filtraggio e controllo tramite API o integrazione con il CRM
                     del partner prima di essere inviati”

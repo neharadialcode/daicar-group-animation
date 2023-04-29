@@ -11,6 +11,7 @@ import tabImg5 from "../assets/images/png/tab-5.png";
 // import tab6 from "../assets/images/png/tab-6.png";
 import tabImg7 from "../assets/images/png/tab-7.png";
 import tabRightIcon from "../assets/images/png/tab-right-icon.png";
+import smallTabImg from "../assets/images/png/small-tab-img.png";
 const SecondSection = () => {
   gsap.registerPlugin(ScrollTrigger);
   const buttonData = [
@@ -270,7 +271,7 @@ const SecondSection = () => {
             top: "40%",
           },
           {
-            top: "-100%",
+            top: "-200%",
           },
           "-=.5"
         )
@@ -317,13 +318,36 @@ const SecondSection = () => {
       //   autoAlpha: 0,
       // });
     });
+    let second2 = gsap.matchMedia();
+    second2.add("(max-width:767.78px)", () => {
+      let secondSection2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".second_sectioon",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
+          markers: true,
+        },
+      });
+      secondSection2.fromTo(
+        ".small_tab",
+        {
+          scale: 1.5,
+        },
+        {
+          scale: 1,
+        }
+      );
+    });
   }, []);
   return (
     <div className="vh-100 d-flex flex-column justify-content-center second_sectioon bg_white overflow-hidden bg_white z_index2">
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
         <img src={tabRightIcon} alt="tab-right-icon" />
       </div>
-      <div className="max_width position-relative">
+      <div className="max_width position-relative d-none d-md-block">
         <div className="icon_5 position-absolute">
           <Icon5 />
         </div>
@@ -348,7 +372,7 @@ const SecondSection = () => {
                     alt=""
                   />
                 </div>
-                <div className="d-flex align-items-center">
+                <div className="d-none d-md-flex align-items-center">
                   <p className="font_2xl color_gray pt-2">{obj.para}</p>
                   {obj.buttonText && (
                     <button
@@ -362,6 +386,9 @@ const SecondSection = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="d-md-none small_tab">
+        <img className="w-100" src={smallTabImg} alt="small-tab-img" />
       </div>
     </div>
   );

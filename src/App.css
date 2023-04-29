@@ -278,7 +278,7 @@
   left: -70px;
 }
 
-.custom_business_img_height{
+.custom_business_img_height {
   height: 400px;
 }
 
@@ -372,7 +372,7 @@
   }
 }
 
-@media (max-width: 1599.98px) { 
+@media (max-width: 1599.98px) {
   .icon_1 {
     top: 50% !important;
     left: 5% !important;
@@ -396,7 +396,13 @@
   }
 
   .custom_height_tab_img {
-    height: 600px;
+    max-height: 565px;
+    width: 70% !important;
+    left: 15% !important;
+  }
+
+  .i_pad_img_2 {
+    margin-left: 180px;
   }
 }
 
@@ -431,6 +437,15 @@
   .custom_height_tab_img {
     height: 550px;
   }
+
+  .custom_height_tab_img {
+    max-height: 450px;
+    left: 15% !important;
+  }
+
+  .i_pad_img_2 {
+    margin-left: 155px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -458,6 +473,19 @@
   .icon_3 {
     top: -10% !important;
     right: -50px !important;
+  }
+
+  .i_pad_img_2 {
+    margin-left: 36px;
+  }
+
+  .icon_5 {
+    left: -2%;
+  }
+
+  .custom_height_tab_img{
+    left: 5% !important;
+    width: 90% !important;
   }
 }
 
