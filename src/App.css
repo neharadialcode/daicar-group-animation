@@ -25,7 +25,7 @@
 }
 
 .bg_img {
-  background: url('./assets/images/png/man-img.png');
+  background: url("./assets/images/png/man-img.png");
 }
 
 .bg_green {
@@ -204,7 +204,7 @@
 
 .tabs_btn {
   background: rgba(126, 228, 156, 0.5);
-  border: 1px solid #EDFAFB;
+  border: 1px solid #edfafb;
   border-radius: 10px;
   padding: 10px 24px;
 }
@@ -249,13 +249,32 @@
   z-index: -1;
 }
 
-.text_1,
-.text_2,
-.text_3,
-.text_4 {
+.text_1 {
   top: 0;
   opacity: 0;
   transform: rotate(-50deg);
+}
+
+.text_2 {
+  top: 40px;
+  opacity: 0;
+  transform: rotate(-50deg);
+}
+
+.text_3 {
+  top: 80px;
+  opacity: 0;
+  transform: rotate(-50deg);
+}
+
+.text_4 {
+  top: 120px;
+  opacity: 0;
+  transform: rotate(-50deg);
+}
+.small_icon {
+  position: absolute;
+  left: -40px;
 }
 
 .roadmap_icon_2,
