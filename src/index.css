@@ -84,6 +84,7 @@ body {
   --color-gray: #2d5363;
   --color-light-gray: rgba(83, 132, 153, 0.5);
   --color-light-green: #7ee49c;
+  --color-dark-gray: #29424d;
   /* =======================background-color================== */
   --bg-light-white: #edfafb;
   --bg-gray: #2d5363;
@@ -133,7 +134,7 @@ body {
     --font-3xl: 22px;
     --font-4xl: 25px;
     --font-5xl: 24px;
-    --font-6xl: 36px;
+    --font-6xl: 25px;
     --font-7xl: 42px;
     --font-8xl: 45px;
   }
@@ -255,6 +256,9 @@ body {
 
 .color_gray {
   color: var(--color-gray);
+}
+.color_dark_gray {
+  color: var(--color-dark-gray);
 }
 
 .color_light_gray {

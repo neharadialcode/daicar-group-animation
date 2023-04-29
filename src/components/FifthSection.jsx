@@ -97,12 +97,12 @@ const FifthSection = () => {
     <>
       <div className="container" ref={containerRef}></div>
       <div className="fifth_main">
-        <div className="vh-100 overflow-hidden fifth_section ">
+        <div className="vh-100 overflow-hidden fifth_section">
           <div className="bg-green vh-100 position-absolute w-100"></div>
           <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative div_roadmap">
             <div className="d-flex">
               <div
-                className="div_1 custom_width"
+                className="div_1 custom_width bg-danger"
                 style={{ marginLeft: `${leftMargin + 16}px` }}
               >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
