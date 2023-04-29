@@ -67,7 +67,7 @@
 .icon_5 {
   max-width: 500px;
   z-index: -1;
-  left: 20%;
+  left: 10%;
 }
 
 .icon_1 {
@@ -117,11 +117,16 @@
 }
 
 .i_pad_img_2 {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .max_width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.max_width_tabs {
   max-width: 1200px;
   margin: 0 auto;
 }

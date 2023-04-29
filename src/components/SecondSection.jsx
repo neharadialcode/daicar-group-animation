@@ -328,10 +328,10 @@ const SecondSection = () => {
           <Icon5 />
         </div>
         <img className="i_pad_img_2" src={tabImg1} alt="img" />
-        <div className="text-center pt-4 ">
+        <div className="text-center pt4 ">
           <div className="max_width d-flex justify-content-center tabs_wrap">
             {buttonData.map((obj, index) => (
-              <div className="px-2 pt-5" key={index}>
+              <div className="px-2 pt-2" key={index}>
                 <div className={`card_img_${index}`}>
                   {/* <img
                     className={`position-absolute start-0 w-100 top-0`}
@@ -345,7 +345,7 @@ const SecondSection = () => {
                   />
                 </div>
                 <div className="d-flex align-items-center">
-                  <p className="font_2xl color_gray text-nowra">{obj.para}</p>
+                  <p className="font_2xl color_gray pt-2">{obj.para}</p>
                   {obj.buttonText && (
                     <button
                       className={`active_button_${index} tabs_btn ms-3 font_2xl color_gray`}
