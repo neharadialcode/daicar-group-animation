@@ -117,12 +117,12 @@
 }
 
 .i_pad_img_2 {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .max_width {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -272,9 +272,14 @@
   opacity: 0;
   transform: rotate(-50deg);
 }
+
 .small_icon {
   position: absolute;
-  left: -40px;
+  left: -70px;
+}
+
+.custom_business_img_height{
+  height: 400px;
 }
 
 .roadmap_icon_2,
@@ -367,7 +372,7 @@
   }
 }
 
-@media (max-width: 1599.98px) {
+@media (max-width: 1599.98px) { 
   .icon_1 {
     top: 50% !important;
     left: 5% !important;
@@ -388,6 +393,10 @@
 
   .icon_3 svg {
     width: 450px !important;
+  }
+
+  .custom_height_tab_img {
+    height: 600px;
   }
 }
 
@@ -417,6 +426,10 @@
   .hero_btn {
     padding: 8px 16px;
     border-radius: 6px !important;
+  }
+
+  .custom_height_tab_img {
+    height: 550px;
   }
 }
 

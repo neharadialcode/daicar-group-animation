@@ -47,11 +47,11 @@ const SecondSection = () => {
   ];
   useEffect(() => {
     let second = gsap.matchMedia();
-    second.add("(min-width:1200px)", () => {
+    second.add("(min-width:768px)", () => {
       let secondSection = gsap.timeline({
         scrollTrigger: {
           trigger: ".second_sectioon",
-          start: "top top",
+          start: "top 2%",
           end: "bottom top",
           scrub: 1,
           pin: true,
@@ -320,15 +320,19 @@ const SecondSection = () => {
   }, []);
   return (
     <div className="vh-100 d-flex flex-column justify-content-center second_sectioon bg_white overflow-hidden bg_white z_index2">
-      <div className="side_icon position-absolute tab_right_icon">
+      <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
         <img src={tabRightIcon} alt="tab-right-icon" />
       </div>
       <div className="max_width position-relative">
         <div className="icon_5 position-absolute">
           <Icon5 />
         </div>
-        <img className="i_pad_img_2" src={tabImg1} alt="img" />
-        <div className="text-center pt4 ">
+        <img
+          className="i_pad_img_2 pt-2 w-100 custom_height_tab_img"
+          src={tabImg1}
+          alt="img"
+        />
+        <div className="text-center">
           <div className="max_width d-flex justify-content-center tabs_wrap">
             {buttonData.map((obj, index) => (
               <div className="px-2 pt-2" key={index}>
@@ -339,7 +343,7 @@ const SecondSection = () => {
                     alt="img"
                   /> */}
                   <img
-                    className="position-absolute top-0 start-0 w-100 h100"
+                    className="position-absolute top-0 start-0 w-100 pt-2 custom_height_tab_img tabs_img"
                     src={obj.card_img}
                     alt=""
                   />
