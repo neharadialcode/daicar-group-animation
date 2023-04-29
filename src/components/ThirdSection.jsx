@@ -23,49 +23,90 @@ const ThirdSection = () => {
         .to(".big_icon", {
           top: "-30%",
         })
+        .to(".small_icon", {
+          top: "5px",
+        })
+        .to(".heading_1", {
+          height: "200px",
+        })
         .to(".text_1", {
           autoAlpha: 1,
           rotate: 0,
+        })
+        .to(".heading_1", {
+          height: "40px",
+        })
+        .to(
+          ".text_1",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(".small_icon", {
+          top: "45px",
+        })
+        .to(".heading_2", {
+          height: "200px",
         })
         .to(".text_2", {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
         })
-        .to(
-          ".text_1",
-          {
-            autoAlpha: 0,
-            rotate: 50,
-          },
-          "-=.8"
-        )
-        .to(".text_3", {
-          autoAlpha: 1,
-          delay: 1,
-          rotate: 0,
+        .to(".heading_2", {
+          height: "40px",
         })
         .to(
           ".text_2",
           {
             autoAlpha: 0,
-            rotate: 50,
           },
-          "-=.8"
+          "-=.5"
         )
-        .to(".text_4", {
+        .to(".small_icon", {
+          top: "85px",
+        })
+        .to(".heading_3", {
+          height: "200px",
+        })
+        .to(".text_3", {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
+        })
+        .to(".heading_3", {
+          height: "40px",
         })
         .to(
           ".text_3",
           {
             autoAlpha: 0,
-            rotate: 50,
           },
-          "-=.8"
+          "-=.5"
         )
+        .to(".small_icon", {
+          top: "125px",
+        })
+        .to(".heading_4", {
+          height: "200px",
+        })
+        .to(".text_4", {
+          autoAlpha: 1,
+          delay: 1,
+          rotate: 0,
+        })
+        .to(".heading_4", {
+          height: "40px",
+        })
+        .to(
+          ".text_4",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+
         .to(
           ".main_text",
           {
@@ -92,9 +133,9 @@ const ThirdSection = () => {
         />
         <div className="top_space_business_text text-center pt-5">
           <p className="font_6xl text-white">
-            Progettiamo soluzioni{" "}
+            Progettiamo soluzioni
             <span className="hero_btn bg_light_green">personalizzate</span> per
-            il tuo business{" "}
+            il tuo business
           </p>
         </div>
         <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
@@ -111,48 +152,42 @@ const ThirdSection = () => {
                 />
               </div>
               <div className="col-6 position-relative">
-                {/* <div className="position-absolute business_icon_small_img">
-                  <img
-                    className="small_icon_arrow"
-                    src={businessIconSmall}
-                    alt="business-small-arrow"
-                  />
-                </div> */}
-                <div className="text_1 position-absolute ">
+                <span className="small_icon">Small Icon</span>
+                <div className="heading_1">
                   <h3 className="font_5xl color_dark_gray">
                     GENERAZIONE TRAFFICO
                   </h3>
-                  <p className="font_2xl ff_mundial_light color_dark_gray pe-xl-5">
+                  <p className=" pt-5 font_2xl position-absolute text_1 ff_mundial_light color_dark_gray pe-xl-5">
                     Generiamo traffico tramite campagne marketing ideate e
                     create dal nostro team marketing e  veicolate sui canali
                     social, Google e native.
                   </p>
                 </div>
-                <div className="text_2 position-absolute ">
+                <div className="heading_2">
                   <h3 className="font_5xl color_dark_gray">
                     LANDING CONVERSAZIONALE
                   </h3>
-                  <p className="font_2xl ff_mundial_light color_dark_gray pe-xl-5">
+                  <p className=" pt-5 font_2xl position-absolute text_2 ff_mundial_light color_dark_gray pe-xl-5">
                     Progettiamo e sviluppiamo landingpage personalizzate per i
                     nostri partner con lo scopo di generare lead di contatti
                     altamente ingaggianti e conformi al regolamento GDPR.
                   </p>
                 </div>
-                <div className="text_3 position-absolute ">
+                <div className="heading_3">
                   <h3 className="font_5xl color_dark_gray">
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
-                  <p className="font_2xl ff_mundial_light color_dark_gray pe-xl-5">
+                  <p className=" pt-5 font_2xl position-absolute text_3 ff_mundial_light color_dark_gray pe-xl-5">
                     Qualifichiamo e validiamo in tempo reale i dati degli utenti
                     grazie alla nostra piattaforma proprietaria connessa al
                     nostro software di I.A.
                   </p>
                 </div>
-                <div className="text_4 position-absolute ">
+                <div className="heading_4">
                   <h3 className="font_5xl color_dark_gray">
                     TRASMISSIONE LEAD
                   </h3>
-                  <p className="font_2xl ff_mundial_light color_dark_gray pe-xl-5">
+                  <p className=" pt-5 font_2xl position-absolute text_4 ff_mundial_light color_dark_gray pe-xl-5">
                     Inviamo i lead generati tramite API o integrazione con il
                     CRM del partner solamente una volta filtrati e controllati.
                   </p>
