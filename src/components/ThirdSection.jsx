@@ -22,12 +22,7 @@ const ThirdSection = () => {
         },
       });
       secondSection2
-        .to(".business_img_2", {
-          autoAlpha: 0,
-        })
-        .to(".business_img_3", {
-          autoAlpha: 0,
-        })
+
         .to(".big_icon", {
           top: "-12%",
         })
@@ -40,13 +35,6 @@ const ThirdSection = () => {
         .to(".text_1", {
           autoAlpha: 1,
           rotate: 0,
-        })
-        .to(".business_img_1", {
-          autoAlpha: 0,
-          delay: 1,
-        })
-        .to(".business_img_2", {
-          autoAlpha: 1,
         })
 
         .to(".heading_1", {
@@ -70,13 +58,6 @@ const ThirdSection = () => {
           delay: 1,
           rotate: 0,
         })
-        .to(".business_img_2", {
-          autoAlpha: 0,
-          delay: 1,
-        })
-        .to(".business_img_3", {
-          autoAlpha: 1,
-        })
 
         .to(".heading_2", {
           height: "40px",
@@ -98,13 +79,6 @@ const ThirdSection = () => {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
-        })
-        .to(".business_img_3", {
-          autoAlpha: 0,
-          delay: 1,
-        })
-        .to(".business_img_2", {
-          autoAlpha: 1,
         })
 
         .to(".heading_3", {
@@ -155,7 +129,7 @@ const ThirdSection = () => {
     });
   }, []);
   return (
-    <div className="third_section overflow-hidden vh-200 bg_white z_1 bg_gray pt-5">
+    <div className="third_section overflow-hidden vh-300 bg_white z_1 bg_gray pt-5">
       <div className="d-flex flex-column justify-content-center vh-100 ">
         <img
           className="w-100 position-absolute big_icon"
@@ -176,27 +150,21 @@ const ThirdSection = () => {
           <div className="main_text">
             <div className="row justify-content-between pt-5">
               <div className="col-4 position-relative custom_business_img_height">
-                <div className="position-absolute">
-                  <img
-                    className="w-100 business_img_1"
-                    src={businessOne}
-                    alt="business-big-arrow"
-                  />
-                </div>
-                <div className="position-absolute">
-                  <img
-                    className="w-100 business_img_3"
-                    src={businessThree}
-                    alt="business-big-arrow"
-                  />
-                </div>
-                <div className="position-absolute">
-                  <img
-                    className="w-100 business_img_2"
-                    src={businessFour}
-                    alt="business-big-arrow"
-                  />
-                </div>
+                <img
+                  className="w-100 business_img_1 position-absolute"
+                  src={businessOne}
+                  alt="business-big-arrow"
+                />
+                <img
+                  className="w-100 business_img_3 opacity_0 position-absolute"
+                  src={businessThree}
+                  alt="business-big-arrow"
+                />{" "}
+                <img
+                  className="w-100 business_img_2 opacity_0"
+                  src={businessFour}
+                  alt="business-big-arrow"
+                />
               </div>
               <div className="col-6 position-relative">
                 {/* <span className="small_icon">Small Icon</span> */}

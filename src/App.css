@@ -336,6 +336,12 @@
 .business_icon_img_2 {
   top: 65%;
 }
+.opacity_0 {
+  opacity: 0;
+}
+.vh-300 {
+  height: 300vh;
+}
 
 @-webkit-keyframes up-down {
   50% {
@@ -483,7 +489,7 @@
     left: -2%;
   }
 
-  .custom_height_tab_img{
+  .custom_height_tab_img {
     left: 5% !important;
     width: 90% !important;
   }
