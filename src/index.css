@@ -98,10 +98,10 @@ body {
     --font-md: 15px;
     --font-lg: 17px;
     --font-xl: 22px;
-    --font-2xl: 14px !important;
+    --font-2xl: 14px;
     --font-3xl: 22px;
     --font-4xl: 25px;
-    --font-5xl: 17px !important;
+    --font-5xl: 17px;
     --font-6xl: 36px;
     --font-7xl: 38px;
     --font-8xl: 39px;
@@ -114,10 +114,10 @@ body {
     --font-md: 15px;
     --font-lg: 17px;
     --font-xl: 22px;
-    --font-2xl: 14px !important;
+    --font-2xl: 14px;
     --font-3xl: 22px;
     --font-4xl: 25px;
-    --font-5xl: 17px !important;
+    --font-5xl: 17px;
     --font-6xl: 36px;
   }
 }
@@ -143,10 +143,10 @@ body {
     --font-md: 16px;
     --font-lg: 18px;
     --font-xl: 20px;
-    --font-2xl: 22px;
+    --font-2xl: 20px;
     --font-3xl: 22px;
     --font-4xl: 22px;
-    --font-5xl: 13px !important;
+    --font-5xl: 24px;
     --font-6xl: 32px;
     --font-7xl: 36px;
     --font-8xl: 40px;

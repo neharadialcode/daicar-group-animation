@@ -245,8 +245,8 @@
 }
 
 .big_icon {
-  top: 0;
-  z-index: -1;
+  /* top: 0; */
+  /* z-index: -1; */
 }
 
 .text_1 {
@@ -487,6 +487,10 @@
     left: 5% !important;
     width: 90% !important;
   }
+
+  /* .big_icon{
+    scale: 2;
+  } */
 }
 
 @media (max-width: 767.98px) {
