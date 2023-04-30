@@ -245,8 +245,8 @@
 }
 
 .big_icon {
-  /* top: 0; */
-  /* z-index: -1; */
+  top: 0;
+  z-index: -1;
 }
 
 .text_1 {
@@ -335,6 +335,10 @@
 
 .business_icon_img_2 {
   top: 65%;
+}
+
+.third_sec_height {
+  height: 200vh;
 }
 
 @-webkit-keyframes up-down {
@@ -483,9 +487,17 @@
     left: -2%;
   }
 
-  .custom_height_tab_img{
+  .custom_height_tab_img {
     left: 5% !important;
     width: 90% !important;
+  }
+
+  .i_pad_img {
+    width: 150%;
+  }
+
+  .third_sec_height {
+    height: 150vh;
   }
 
   /* .big_icon{

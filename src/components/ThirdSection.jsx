@@ -155,7 +155,7 @@ const ThirdSection = () => {
     });
   }, []);
   return (
-    <div className="third_section overflow-hidden vh-200 bg_white z_1 bg_gray pt-5">
+    <div className="third_section overflow-hidden third_sec_height bg_white z_1 bg_gray pt-5">
       <div className="d-flex flex-column justify-content-center vh-100">
         <img
           className="w-100 position-absolute big_icon d-none d-lg-block"
