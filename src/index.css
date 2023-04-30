@@ -272,6 +272,17 @@ body {
 .fw_medium {
   font-weight: 500;
 }
+
+.small_icon_arrow {
+  top: 12%;
+  left: -20px;
+}
+
+.small_icon_arrow_2 {
+  top: 80%;
+  right: 18%;
+}
+
 @media (max-width: 1400px) {
   .roadmapline_set {
     left: -220px;
@@ -286,6 +297,15 @@ body {
   .carplanner_logo {
     max-width: 350px;
   }
+
+  .small_icon_arrow {
+    top: 0%;
+    left: -5%;
+  }
+  .small_icon_arrow_2 {
+    top: 60%;
+    right: 60%;
+  }
 }
 @media (max-width: 991.98px) {
   .carplanner_cards {
@@ -298,5 +318,28 @@ body {
     left: -100px;
     z-index: 1;
     width: 100% !important;
+  }
+
+  .small_icon_arrow_2 {
+    top: 65%;
+    right: 25%;
+  }
+  .small_icon_arrow {
+    left: 0%;
+  }
+}
+@media (max-width: 575.98px) {
+  .small_icon_arrow_2 {
+    top: 55%;
+    right: 5%;
+  }
+
+  .small_icon_arrow {
+    top: 0%;
+    left: -2%;
+  }
+
+  .small_icon_arrow {
+    width: 70%;
   }
 }
