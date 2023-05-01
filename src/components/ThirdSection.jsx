@@ -129,16 +129,16 @@ const ThirdSection = () => {
     });
   }, []);
   return (
-    <div className="third_section overflow-hidden vh-300 bg_white z_1 bg_gray pt-5">
-      <div className="d-flex flex-column justify-content-center vh-100 ">
+    <div className="third_section overflow-hidden third_sec_height bg_white z_1 bg_gray pt-5">
+      <div className="d-flex flex-column justify-content-center vh-100">
         <img
-          className="w-100 position-absolute big_icon"
+          className="w-100 position-absolute big_icon d-none d-lg-block"
           src={iconImg}
           alt="iconImg"
         />
-        <div className="top_space_business_text text-center pt-5">
-          <p className="font_6xl text-white">
-            Progettiamo soluzioni
+        <div className="top_space_business_text text-center pt-5 mt-5 mt-lg-0 px-4 px-lg-0">
+          <p className="font_6xl text-white pt-5 pt-lg-0 px-5 px-lg-0 mx-5 mx-lg-0">
+            Progettiamo soluzioni{" "}
             <span className="hero_btn bg_light_green">personalizzate</span> per
             il tuo business
           </p>
@@ -146,8 +146,8 @@ const ThirdSection = () => {
         <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
           <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
         </div>
-        <div className="container pb-5 min-vh-100 d-flex flex-column justify-content-center">
-          <div className="main_text">
+        <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
+          <div className="main_text d-none d-lg-block">
             <div className="row justify-content-between pt-5">
               <div className="col-4 position-relative custom_business_img_height">
                 <img
@@ -169,7 +169,7 @@ const ThirdSection = () => {
               <div className="col-6 position-relative">
                 {/* <span className="small_icon">Small Icon</span> */}
                 <img
-                  className="small_icon"
+                  className="small_icon d-none d-lg-block"
                   src={businessIconSmall}
                   alt="small-arrow-icon"
                 />
@@ -212,6 +212,74 @@ const ThirdSection = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="row d-lg-none justify-content-evenly pt-5 mt-5">
+            <div className="col-4">
+              <img
+                className="w-100 business_img_1"
+                src={businessOne}
+                alt="business-big-arrow"
+              />
+            </div>
+            <div className="col-6 d-flex justify-content-end flex-column">
+              <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+              <p className="font_2xl text-white pe-xl-5 pt-2">
+                Strategie di marketing costruite ad hoc per generare traffico
+                qualificato da veicolare sui social media, Google e native
+                advertising
+              </p>
+            </div>
+          </div>
+          <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
+            <div className="col-4">
+              <img
+                className="w-100 business_img_1"
+                src={businessFour}
+                alt="business-big-arrow"
+              />
+            </div>
+            <div className="col-6 d-flex justify-content-end flex-column">
+              <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+              <p className="font_2xl text-white pe-xl-5 pt-2">
+                Strategie di marketing costruite ad hoc per generare traffico
+                qualificato da veicolare sui social media, Google e native
+                advertising
+              </p>
+            </div>
+          </div>
+          <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
+            <div className="col-4">
+              <img
+                className="w-100 business_img_1"
+                src={businessThree}
+                alt="business-big-arrow"
+              />
+            </div>
+            <div className="col-6 d-flex justify-content-end flex-column">
+              <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+              <p className="font_2xl text-white pe-xl-5 pt-2">
+                Strategie di marketing costruite ad hoc per generare traffico
+                qualificato da veicolare sui social media, Google e native
+                advertising
+              </p>
+            </div>
+          </div>
+          <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
+            <div className="col-4">
+              <img
+                className="w-100 business_img_1"
+                src={businessFour}
+                alt="business-big-arrow"
+              />
+            </div>
+            <div className="col-6 d-flex justify-content-end flex-column">
+              <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+              <p className="font_2xl text-white pe-xl-5 pt-2">
+                Strategie di marketing costruite ad hoc per generare traffico
+                qualificato da veicolare sui social media, Google e native
+                advertising
+              </p>
             </div>
           </div>
         </div>

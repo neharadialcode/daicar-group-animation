@@ -98,10 +98,10 @@ body {
     --font-md: 15px;
     --font-lg: 17px;
     --font-xl: 22px;
-    --font-2xl: 14px !important;
+    --font-2xl: 14px;
     --font-3xl: 22px;
     --font-4xl: 25px;
-    --font-5xl: 17px !important;
+    --font-5xl: 17px;
     --font-6xl: 36px;
     --font-7xl: 42px;
     --font-8xl: 45px;
@@ -114,10 +114,10 @@ body {
     --font-md: 15px;
     --font-lg: 17px;
     --font-xl: 22px;
-    --font-2xl: 14px !important;
+    --font-2xl: 14px;
     --font-3xl: 22px;
     --font-4xl: 25px;
-    --font-5xl: 17px !important;
+    --font-5xl: 17px;
     --font-6xl: 36px;
     --font-7xl: 42px;
     --font-8xl: 45px;
@@ -130,7 +130,7 @@ body {
     --font-md: 14px;
     --font-lg: 15px;
     --font-xl: 22px;
-    --font-2xl: 24px;
+    --font-2xl: 18px;
     --font-3xl: 22px;
     --font-4xl: 25px;
     --font-5xl: 24px;
@@ -147,10 +147,10 @@ body {
     --font-md: 16px;
     --font-lg: 18px;
     --font-xl: 20px;
-    --font-2xl: 22px;
+    --font-2xl: 20px;
     --font-3xl: 22px;
     --font-4xl: 22px;
-    --font-5xl: 13px !important;
+    --font-5xl: 24px;
     --font-6xl: 32px;
     --font-7xl: 36px;
     --font-8xl: 40px;
@@ -272,6 +272,17 @@ body {
 .fw_medium {
   font-weight: 500;
 }
+
+.small_icon_arrow {
+  top: 12%;
+  left: -20px;
+}
+
+.small_icon_arrow_2 {
+  top: 80%;
+  right: 18%;
+}
+
 @media (max-width: 1400px) {
   .roadmapline_set {
     left: -220px;
@@ -286,6 +297,15 @@ body {
   .carplanner_logo {
     max-width: 350px;
   }
+
+  .small_icon_arrow {
+    top: 0%;
+    left: -5%;
+  }
+  .small_icon_arrow_2 {
+    top: 60%;
+    right: 60%;
+  }
 }
 @media (max-width: 991.98px) {
   .carplanner_cards {
@@ -298,5 +318,28 @@ body {
     left: -100px;
     z-index: 1;
     width: 100% !important;
+  }
+
+  .small_icon_arrow_2 {
+    top: 65%;
+    right: 25%;
+  }
+  .small_icon_arrow {
+    left: 0%;
+  }
+}
+@media (max-width: 575.98px) {
+  .small_icon_arrow_2 {
+    top: 55%;
+    right: 5%;
+  }
+
+  .small_icon_arrow {
+    top: 0%;
+    left: -2%;
+  }
+
+  .small_icon_arrow {
+    width: 70%;
   }
 }

@@ -343,6 +343,10 @@
   height: 300vh;
 }
 
+.third_sec_height {
+  height: 200vh;
+}
+
 @-webkit-keyframes up-down {
   50% {
     -webkit-transform: translateY(-10px);
@@ -493,6 +497,18 @@
     left: 5% !important;
     width: 90% !important;
   }
+
+  .i_pad_img {
+    width: 150%;
+  }
+
+  .third_sec_height {
+    height: 150vh;
+  }
+
+  /* .big_icon{
+    scale: 2;
+  } */
 }
 
 @media (max-width: 767.98px) {

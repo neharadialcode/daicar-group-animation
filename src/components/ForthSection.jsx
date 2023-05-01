@@ -2,12 +2,8 @@ import React, { useEffect } from "react";
 import roadmapImg1 from "../assets/images/svg/roadmap_img1.png";
 import roadmapImg2 from "../assets/images/svg/roadmap_img2.png";
 
-// import smallArrowOne from "../assets/images/png/small-arrow.png";
-// import smallArrowTwo from "../assets/images/png/small-arrow-2.png";
-
 import bigFounder from "../assets/images/png/big-founder-federico-img.png";
-// import bigFounderTwo from "../assets/images/png/arrow-founder-2.png";
-// import bigFounderThree from "../assets/images/png/arrow-founder-3.png";
+import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -107,7 +103,7 @@ const ForthSection = () => {
           left: "10%",
         },
         {
-          left: "20%",
+          left: "15%",
         }
       )
       .fromTo(
@@ -116,7 +112,7 @@ const ForthSection = () => {
           left: "20%",
         },
         {
-          left: "30%",
+          left: "25%",
         },
         "-=.5"
       )
@@ -148,14 +144,6 @@ const ForthSection = () => {
         <div className="container h-100">
           <div className="row justify-content-end align-items-center ">
             <div className="col-6">
-              {/* <div className="roadmap_text_1">
-                <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-xl-5 pe-xxl-5 me-xxl-5">
-                  Siamo un’azienda digitale che si concentra sulla generazione
-                  di opportunità di business.
-                </h4>
-                <p>Federico, CF Tecnology Officer</p>
-              </div> */}
-
               <div className="roadmap_text_1 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
@@ -175,7 +163,7 @@ const ForthSection = () => {
                     src={bigFounder}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray ps-3 mb-0">
+                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
                     Federico,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       CF Tecnology Officer
@@ -184,18 +172,61 @@ const ForthSection = () => {
                 </div>
               </div>
 
-              <h2 className="roadmap_text_2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                ullam, atque nostrum quo voluptatum quibusdam placeat distinctio
-                culpa pariatur est natus harum itaque consequuntur incidunt
-                iusto. Iusto quibusdam aut reiciendis?
-              </h2>
-              <h2 className="roadmap_text_3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                ullam, atque nostrum quo voluptatum quibusdam placeat distinctio
-                culpa pariatur est natus harum itaque consequuntur incidunt
-                iusto. Iusto quibusdam aut reiciendis?
-              </h2>
+              <div className="roadmap_text_2 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
+                <div className="position-absolute small_icon_arrow">
+                  <UpArrowNoiIcon />
+                </div>
+                <div className="position-absolute small_icon_arrow_2">
+                  <DownArrowNoiIcon />
+                </div>
+                <div className="top_space_custom_arrow_text">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
+                    Obiettivi chiari e definiti perseguiti con un approccio
+                    personalizzato verso risultati concreti e misurabili.
+                  </h4>
+                </div>
+                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                  <img
+                    className="founder_img"
+                    src={bigFounder2}
+                    alt="arrow-founder"
+                  />
+                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                    Matteo,
+                    <span className="fw-light ff_mundial_ligh ms-2">
+                      Business Developmet Manager
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="roadmap_text_3 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
+                <div className="position-absolute small_icon_arrow">
+                  <UpArrowNoiIcon />
+                </div>
+                <div className="position-absolute small_icon_arrow_2">
+                  <DownArrowNoiIcon />
+                </div>
+                <div className="top_space_custom_arrow_text">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
+                    Qualifichiamo i dati in tempo reale consentendo di
+                    incrementare il ROI delle azioni di lead generation.
+                  </h4>
+                </div>
+                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                  <img
+                    className="founder_img"
+                    src={bigFounder}
+                    alt="arrow-founder"
+                  />
+                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                    Federico,
+                    <span className="fw-light ff_mundial_ligh ms-2">
+                      IT Manager
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -205,3 +236,8 @@ const ForthSection = () => {
 };
 
 export default ForthSection;
+// For third section image
+//  .to(".big_icon", {
+// top: "-50%",
+// scale: "1.2",
+// });
