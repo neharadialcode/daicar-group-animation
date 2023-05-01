@@ -52,6 +52,9 @@ const ForthSection = () => {
           },
           "-=.5"
         )
+        .to(".forth_section", {
+          background: "red",
+        })
         // .fromTo(
         //   ".forth_section_background",
         //   {

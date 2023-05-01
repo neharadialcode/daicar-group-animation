@@ -280,6 +280,10 @@ body {
 .noi_btn {
   padding: 5px 24px 12px !important;
 }
+.fifth_main .div_1 {
+  max-width: 523px !important;
+}
+
 @media (min-width: 1600px) {
   .roadmap_icon_2,
   .roadmap_icon_1 {
