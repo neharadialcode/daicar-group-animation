@@ -3,6 +3,7 @@ import roadmapImg1 from "../assets/images/svg/roadmap_img1.png";
 import roadmapImg2 from "../assets/images/svg/roadmap_img2.png";
 import bigFounder from "../assets/images/png/big-founder-federico-img.png";
 import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
+import bigFounder3 from "../assets/images/png/big-founder-francesca-img.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -354,7 +355,7 @@ const ForthSection = () => {
                 <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
                   <img
                     className="founder_img"
-                    src={bigFounder}
+                    src={bigFounder3}
                     alt="arrow-founder"
                   />
                   <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
@@ -442,7 +443,7 @@ const ForthSection = () => {
                 <div className="d-flex align-items-sm-center ps-xl-5 pt-3 pt-4 mt-xl-3">
                   <img
                     className="founder_img d-none d-sm-block"
-                    src={bigFounder}
+                    src={bigFounder3}
                     alt="arrow-founder"
                   />
                   <p className="font_2xl color_dark_gray fw-normal ps-sm-3 mb-0">
