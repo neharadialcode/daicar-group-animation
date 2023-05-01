@@ -10,7 +10,7 @@ import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 const ThirdSection = () => {
   useEffect(() => {
     let third = gsap.matchMedia();
-    third.add("(min-width:992px)", () => {
+    third.add("(min-width:1500px)", () => {
       let secondSection2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".third_section",
@@ -170,6 +170,166 @@ const ThirdSection = () => {
           "+=.5"
         );
     });
+    third.add("(min-width:992px) and (max-width:1499.98px)", () => {
+      let secondSection2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".third_section",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+      secondSection2
+        .to(".big_icon", {
+          top: "-12%",
+        })
+        .to(".small_icon", {
+          top: "5px",
+        })
+        .to(".heading_1", {
+          height: "120px",
+        })
+        .to(".text_1", {
+          autoAlpha: 1,
+          rotate: 0,
+        })
+
+        .to(".heading_1", {
+          height: "40px",
+        })
+        .to(
+          ".text_1",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+
+        .to(
+          ".business_img_1",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_2",
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+
+        .to(".small_icon", {
+          top: "45px",
+        })
+        .to(".heading_2", {
+          height: "120px",
+        })
+        .to(".text_2", {
+          autoAlpha: 1,
+          delay: 1,
+          rotate: 0,
+        })
+
+        .to(".heading_2", {
+          height: "40px",
+        })
+        .to(
+          ".text_2",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_2",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_3",
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+        .to(".small_icon", {
+          top: "85px",
+        })
+        .to(".heading_3", {
+          height: "120px",
+        })
+        .to(".text_3", {
+          autoAlpha: 1,
+          delay: 1,
+          rotate: 0,
+        })
+
+        .to(".heading_3", {
+          height: "40px",
+        })
+        .to(
+          ".text_3",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_3",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_4",
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+        .to(".small_icon", {
+          top: "125px",
+        })
+        .to(".heading_4", {
+          height: "120px",
+        })
+        .to(".text_4", {
+          autoAlpha: 1,
+          delay: 1,
+          rotate: 0,
+        })
+        .to(".heading_4", {
+          height: "40px",
+        })
+        .to(
+          ".text_4",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".main_text",
+          {
+            autoAlpha: 0,
+          },
+          "+=.5"
+        )
+        .to(
+          ".business_left_icon",
+          {
+            autoAlpha: 0,
+          },
+          "+=.5"
+        );
+    });
   }, []);
   return (
     <div className="third_section overflow-hidden third_sec_height bg_white z_1 bg_gray pt-5">
@@ -191,8 +351,8 @@ const ThirdSection = () => {
         </div>
         <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
           <div className="main_text d-none d-lg-block">
-            <div className="row justify-content-between pt-5">
-              <div className="col-4 position-relative custom_business_img_height">
+            <div className="row justify-content-evenly divide_space_text pt5">
+              <div className="col-3 position-relative custom_business_img_height">
                 <img
                   className="w-100 business_img_1 position-absolute"
                   src={businessOne}
@@ -214,26 +374,26 @@ const ThirdSection = () => {
                   alt="business-big-arrow"
                 />
               </div>
-              <div className="col-6 position-relative">
+              <div className="col-7 col-xl-5 position-relative">
                 {/* <span className="small_icon">Small Icon</span> */}
                 <img
                   className="small_icon d-none d-lg-block"
                   src={businessIconSmall}
                   alt="small-arrow-icon"
                 />
-                <div className="heading_1">
+                <div className="heading_1 ps-5 ps-xxl-0">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
-                  <p className=" pt-5 font_2xl position-absolute text_1 text-white pe-xl-5 pt-2">
+                  <p className=" pt-5 font_2xl position-absolute text_1 text-white pe-xl-5 pt-2 m_w_business_text">
                     Strategie di marketing costruite ad hoc per generare
                     traffico qualificato da veicolare sui social media, Google e
                     native advertising
                   </p>
                 </div>
-                <div className="heading_2 pt-3">
+                <div className="heading_2 ps-5 ps-xxl-0 pt-3">
                   <h3 className="font_5xl text-white">
                     LANDING CONVERSAZIONALE
                   </h3>
-                  <p className="pt-5 font_2xl position-absolute text_2 text-white pe-xl-5 pt-2">
+                  <p className="pt-5 font_2xl position-absolute text_2 text-white pe-xl-5 pt-2 m_w_business_text">
                     Landingpage su misura per i nostri partner e conformi al
                     <span className="ff_mundial_bold">
                       regolamento GDPR
@@ -241,19 +401,19 @@ const ThirdSection = () => {
                     per l’acquisizione di contatti qualificati.
                   </p>
                 </div>
-                <div className="heading_3 pt-3">
+                <div className="heading_3 ps-5 ps-xxl-0 pt-3">
                   <h3 className="font_5xl text-white">
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
-                  <p className=" pt-5 font_2xl position-absolute text_3 text-white pe-xl-5 pt-2">
+                  <p className="pt-5 font_2xl position-absolute text_3 text-white pe-xl-5 pt-2 m_w_business_text">
                     Meno tempo e maggiore conversione grazie al nostro{" "}
                     <span className="ff_mundial_bold">software di I.A.</span>{" "}
                     per la validazione real-time dei dati degli utenti
                   </p>
                 </div>
-                <div className="heading_4 pt-3">
+                <div className="heading_4 ps-5 ps-xxl-0 pt-3">
                   <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
-                  <p className=" pt-5 font_2xl position-absolute text_4 text-white pe-xl-5 pt-2">
+                  <p className=" pt-5 font_2xl position-absolute text_4 text-white pe-xl-5 pt-2 m_w_business_text">
                     I lead generati vengono sottoposti ad un attento processo di
                     filtraggio e controllo tramite API o integrazione con il CRM
                     del partner prima di essere inviati”

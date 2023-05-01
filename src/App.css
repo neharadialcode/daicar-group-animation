@@ -325,9 +325,11 @@
 .business_icon_img_2 {
   top: 65%;
 }
+
 .opacity_0 {
   opacity: 0;
 }
+
 .vh-300 {
   height: 300vh;
 }
@@ -335,17 +337,20 @@
 .third_sec_height {
   height: 200vh;
 }
+
 .small_icon_1 {
   max-width: 2000px;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
 }
+
 .line_with_dot {
   height: 5px;
   background-color: white;
   position: relative;
 }
+
 .line_with_dot::after {
   position: absolute;
   content: "";
@@ -357,6 +362,7 @@
   width: 30px;
   border-radius: 50%;
 }
+
 .line_first::before {
   position: absolute;
   content: "";
@@ -368,10 +374,12 @@
   width: 30px;
   border-radius: 50%;
 }
+
 .div_4 {
   right: 0;
   max-width: 200px;
 }
+
 @-webkit-keyframes up-down {
   50% {
     -webkit-transform: translateY(-10px);
@@ -394,16 +402,9 @@
   .business_icon_img_2 {
     top: 35%;
   }
-}
 
-@media (max-width: 767.98px) {
-  .iconsBar {
-    min-width: 150px !important;
-  }
-
-  .crm_slider {
-    min-width: 150px;
-    height: unset;
+  .divide_space_text {
+    justify-content: space-between !important;
   }
 }
 
@@ -438,6 +439,18 @@
 
   .i_pad_img_2 {
     margin-left: 180px;
+  }
+}
+
+@media (max-width: 1499.98px) {
+  .m_w_business_text {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .small_icon{
+    left: 0%;
   }
 }
 
@@ -561,6 +574,15 @@
 
   .icon_3 svg {
     width: 300px !important;
+  }
+
+  .iconsBar {
+    min-width: 150px !important;
+  }
+
+  .crm_slider {
+    min-width: 150px;
+    height: unset;
   }
 }
 
