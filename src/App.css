@@ -545,7 +545,8 @@
   }
 
   .third_sec_height {
-    height: 140vh;
+    /* height: 140vh; */
+    height: unset;
   }
 
   /* .big_icon{
@@ -623,10 +624,6 @@
 
   .third_section {
     background: #7EE49C;
-  }
-
-  .third_sec_height {
-    height: 100vh;
   }
 }
 

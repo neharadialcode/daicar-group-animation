@@ -340,40 +340,38 @@ const ThirdSection = () => {
           trigger: ".third_section",
           start: "top top",
           end: "bottom top",
-          scrub: 1,
-          pin: true,
-          pinSpacing: true,
+          // scrub: 1,
         },
       });
       secondSection2
-        .to(".business_tab_1", {
-        xPercent: "-80",
+        .from(".business_tab_1", {
+          xPercent: "-80",
           stagger: 0.3,
         })
-        .to(".business_tab_2", {
-        xPercent: "80",
+        .from(".business_tab_2", {
+          xPercent: "80",
           stagger: 0.3,
         })
-        .to(".business_tab_3", {
-        xPercent: "-60",
+        .from(".business_tab_3", {
+          xPercent: "-80",
           stagger: 0.3,
         })
-        .to(".business_tab_4", {
-        xPercent: "40",
+        .from(".business_tab_4", {
+          xPercent: "80",
           stagger: 0.3,
         });
     });
   }, []);
   return (
-    <div className="third_section overflow-hidden third_sec_height z_1  pt-5">
-      <div className="d-flex flex-column justify-content-center vh-100">
+    <div className="third_section overflow-hidden third_sec_height z_1 pt-5">
+      <div className="d-flex flex-column justify-content-center">
         <img
           className="w-100 position-absolute big_icon d-none d-lg-block"
           src={iconImg}
           alt="iconImg"
         />
-        <div className="top_space_business_text text-center pt-5 mt-5 mt-lg-0 px-4 px-lg-0">
-          <p className="font_6xl text-white pt-5 pt-lg-0 px-5 px-lg-0 mx-5 mx-lg-0">
+        <div className="top_space_business_text text-center pt-lg-5 mt-lg-0 px-4 px-lg-0">
+          <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
             Progettiamo soluzioni{" "}
             <span className="hero_btn bg_light_green">personalizzate</span> per
             il tuo business
@@ -457,8 +455,8 @@ const ThirdSection = () => {
           </div>
           <div className="d-lg-none">
             <div className="business_tab_1">
-              <div className="row justify-content-evenly pt-5 mt-5">
-                <div className="col-sm-4">
+              <div className="row justify-content-evenly">
+                <div className="col-8 col-sm-4">
                   <img
                     className="w-100"
                     src={businessOne}
@@ -477,7 +475,7 @@ const ThirdSection = () => {
             </div>
             <div className="business_tab_2">
               <div className="row justify-content-evenly pt-5 mt-3">
-                <div className="col-sm-4">
+                <div className="col-8 col-sm-4">
                   <img
                     className="w-100"
                     src={businessTwo}
@@ -485,18 +483,22 @@ const ThirdSection = () => {
                   />
                 </div>
                 <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
-                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+                  <h3 className="font_5xl text-white">
+                    LANDING CONVERSAZIONALE
+                  </h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
-                    Strategie di marketing costruite ad hoc per generare
-                    traffico qualificato da veicolare sui social media, Google e
-                    native advertising
+                    Landingpage su misura per i nostri partner e conformi al
+                    <span className="ff_mundial_bold">
+                      regolamento GDPR
+                    </span>{" "}
+                    per l’acquisizione di contatti qualificati.
                   </p>
                 </div>
               </div>
             </div>
             <div className="business_tab_3">
               <div className="row justify-content-evenly pt-5 mt-3">
-                <div className="col-sm-4">
+                <div className="col-8 col-sm-4">
                   <img
                     className="w-100"
                     src={businessThree}
@@ -504,18 +506,21 @@ const ThirdSection = () => {
                   />
                 </div>
                 <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
-                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+                  <h3 className="font_5xl text-white">
+                    {" "}
+                    VALIDAZIONE AUTOMATICA DEI DATI
+                  </h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
-                    Strategie di marketing costruite ad hoc per generare
-                    traffico qualificato da veicolare sui social media, Google e
-                    native advertising
+                    Meno tempo e maggiore conversione grazie al nostro{" "}
+                    <span className="ff_mundial_bold">software di I.A.</span>{" "}
+                    per la validazione real-time dei dati degli utenti
                   </p>
                 </div>
               </div>
             </div>
             <div className="business_tab_4">
               <div className="row justify-content-evenly pt-5 mt-3">
-                <div className="col-sm-4">
+                <div className="col-8 col-sm-4">
                   <img
                     className="w-100"
                     src={businessTwo}
@@ -523,11 +528,11 @@ const ThirdSection = () => {
                   />
                 </div>
                 <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
-                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+                  <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
-                    Strategie di marketing costruite ad hoc per generare
-                    traffico qualificato da veicolare sui social media, Google e
-                    native advertising
+                    I lead generati vengono sottoposti ad un attento processo di
+                    filtraggio e controllo tramite API o integrazione con il CRM
+                    del partner prima di essere inviati”
                   </p>
                 </div>
               </div>

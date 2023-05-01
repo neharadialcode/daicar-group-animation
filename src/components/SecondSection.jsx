@@ -326,7 +326,7 @@ const SecondSection = () => {
           end: "bottom top",
           scrub: 1,
           pin: true,
-          pinSpacing: false,
+          pinSpacing: true,
           markers: true,
         },
       });
