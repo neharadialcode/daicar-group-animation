@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import roadmapImg1 from "../assets/images/svg/roadmap_img1.png";
 import roadmapImg2 from "../assets/images/svg/roadmap_img2.png";
-
 import bigFounder from "../assets/images/png/big-founder-federico-img.png";
 import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
 
@@ -281,8 +280,8 @@ const ForthSection = () => {
         </div> */}
 
         <div className="container h-100">
-          <div className="row justify-content-end align-items-center ">
-            <div className="col-6 roadmap_col_content">
+          <div className="row justify-content-lg-end align-items-center ">
+            <div className="col-6 roadmap_col_content d-none d-lg-block">
               <div className="roadmap_text_1 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
@@ -340,6 +339,94 @@ const ForthSection = () => {
               </div>
 
               <div className="roadmap_text_3 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
+                <div className="position-absolute small_icon_arrow">
+                  <UpArrowNoiIcon />
+                </div>
+                <div className="position-absolute small_icon_arrow_2">
+                  <DownArrowNoiIcon />
+                </div>
+                <div className="top_space_custom_arrow_text">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-4 mb-0">
+                    Qualifichiamo i dati in tempo reale consentendo di
+                    incrementare il ROI delle azioni di lead generation.
+                  </h4>
+                </div>
+                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                  <img
+                    className="founder_img"
+                    src={bigFounder}
+                    alt="arrow-founder"
+                  />
+                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                    Federico,
+                    <span className="fw-light ff_mundial_ligh ms-2">
+                      IT Manager
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-11 roadmap_col_content d-lg-none">
+              <div className="position-relative p-4">
+                <div className="position-absolute small_icon_arrow">
+                  <UpArrowNoiIcon />
+                </div>
+                <div className="position-absolute small_icon_arrow_2">
+                  <DownArrowNoiIcon />
+                </div>
+                <div className="top_space_custom_arrow_text">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
+                    Siamo un’azienda digitale che si concentra sulla generazione
+                    di opportunità di business.
+                  </h4>
+                </div>
+                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                  <img
+                    className="founder_img"
+                    src={bigFounder}
+                    alt="arrow-founder"
+                  />
+                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                    Federico,
+                    <span className="fw-light ff_mundial_ligh ms-2">
+                      CF Tecnology Officer
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 roadmap_col_content d-lg-none">
+              <div className="position-relative p-4">
+                <div className="position-absolute small_icon_arrow">
+                  <UpArrowNoiIcon />
+                </div>
+                <div className="position-absolute small_icon_arrow_2">
+                  <DownArrowNoiIcon />
+                </div>
+                <div className="top_space_custom_arrow_text">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
+                    Obiettivi chiari e definiti perseguiti con un approccio
+                    personalizzato verso risultati concreti e misurabili.
+                  </h4>
+                </div>
+                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                  <img
+                    className="founder_img"
+                    src={bigFounder2}
+                    alt="arrow-founder"
+                  />
+                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                    Matteo,
+                    <span className="fw-light ff_mundial_ligh ms-2">
+                      Business Developmet Manager
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 roadmap_col_content d-lg-none">
+              <div className="position-relative p-4">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>

@@ -84,6 +84,7 @@ body {
   --color-gray: #2d5363;
   --color-light-gray: rgba(83, 132, 153, 0.5);
   --color-light-green: #7ee49c;
+  --color-light-green_2: #b5efcb;
   --color-dark-gray: #29424d;
   /* =======================background-color================== */
   --bg-light-white: #edfafb;
@@ -345,6 +346,13 @@ body {
   }
   .small_icon_arrow {
     left: 0%;
+  }
+  .forth_section {
+    background-color: var(--color-light-green_2);
+  }
+  .roadmap_icon_1,
+  .roadmap_icon_2 {
+    display: none !important;
   }
 }
 @media (max-width: 575.98px) {
