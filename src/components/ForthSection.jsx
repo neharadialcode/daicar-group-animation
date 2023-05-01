@@ -105,7 +105,7 @@ const ForthSection = () => {
             left: "10%",
           },
           {
-            left: "15%",
+            left: "13%",
           }
         )
         .fromTo(
@@ -114,7 +114,7 @@ const ForthSection = () => {
             left: "20%",
           },
           {
-            left: "25%",
+            left: "23%",
           },
           "-=.5"
         )
@@ -282,7 +282,7 @@ const ForthSection = () => {
 
         <div className="container h-100">
           <div className="row justify-content-end align-items-center ">
-            <div className="col-5">
+            <div className="col-6 roadmap_col_content">
               <div className="roadmap_text_1 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
@@ -291,7 +291,7 @@ const ForthSection = () => {
                   <DownArrowNoiIcon />
                 </div>
                 <div className="top_space_custom_arrow_text">
-                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-xl-5 pe-xxl-5 me-xxl-5">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
                     Siamo un’azienda digitale che si concentra sulla generazione
                     di opportunità di business.
                   </h4>
@@ -319,7 +319,7 @@ const ForthSection = () => {
                   <DownArrowNoiIcon />
                 </div>
                 <div className="top_space_custom_arrow_text">
-                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
                     Obiettivi chiari e definiti perseguiti con un approccio
                     personalizzato verso risultati concreti e misurabili.
                   </h4>
@@ -347,7 +347,7 @@ const ForthSection = () => {
                   <DownArrowNoiIcon />
                 </div>
                 <div className="top_space_custom_arrow_text">
-                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-xl-5 pe-xxl-5 me-xxl-4 mb-0">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-4 mb-0">
                     Qualifichiamo i dati in tempo reale consentendo di
                     incrementare il ROI delle azioni di lead generation.
                   </h4>
