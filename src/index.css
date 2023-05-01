@@ -183,7 +183,7 @@ body {
     --font-5xl: 20px;
     --font-6xl: 22px;
     --font-7xl: 26px;
-    --font-8xl: 30px;
+    --font-8xl: 24px;
   }
 }
 
@@ -379,17 +379,24 @@ body {
   }
 }
 @media (max-width: 575.98px) {
-  .small_icon_arrow_2 {
-    top: 55%;
-    right: 5%;
-  }
-
   .small_icon_arrow {
     top: 0%;
     left: -2%;
   }
-
   .small_icon_arrow {
     width: 70%;
+  }
+  .roadmap_para {
+    padding: 16px 14px 0px 16px;
+  }
+  .roadmap_para h4 {
+    line-height: 142%;
+  }
+  .small_icon_arrow svg,
+  .small_icon_arrow_2 svg {
+    max-width: 24px;
+  }
+  .custom_top_spacing {
+    margin-top: 16vh;
   }
 }

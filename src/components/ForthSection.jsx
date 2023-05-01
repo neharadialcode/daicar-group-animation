@@ -279,8 +279,8 @@ const ForthSection = () => {
           </p>
         </div> */}
 
-        <div className="container h-100">
-          <div className="row justify-content-lg-end align-items-center my-5 my-lg-0">
+        <div className="container h-100 py-5 py-sm-0">
+          <div className="row justify-content-lg-end align-items-center my-5 my-lg-0 py-5 py-sm-0">
             <div className="col-6 roadmap_col_content d-none d-lg-block">
               <div className="roadmap_text_1 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
@@ -367,7 +367,7 @@ const ForthSection = () => {
               </div>
             </div>
 
-            <div className="col-12 col-md-11 d-lg-none custom_top_spacing">
+            <div className="col-12 col-md-11 d-lg-none custom_top_spacing mb-4 mb-sm-0">
               <div className="position-relative roadmap_para">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
@@ -381,13 +381,13 @@ const ForthSection = () => {
                     <DownArrowNoiIcon />
                   </div>
                 </div>
-                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                <div className="d-flex align-items-sm-center ps-xl-5 pt-3 pt-4 mt-xl-3">
                   <img
-                    className="founder_img"
+                    className="founder_img d-none d-sm-block"
                     src={bigFounder}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                  <p className="font_2xl color_dark_gray fw-normal ps-sm-3 mb-0">
                     Marta Daina,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       Founder
@@ -410,13 +410,13 @@ const ForthSection = () => {
                     <DownArrowNoiIcon />
                   </div>
                 </div>
-                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                <div className="d-flex align-items-sm-center ps-xl-5 pt-3 pt-4 mt-xl-3">
                   <img
-                    className="founder_img"
+                    className="founder_img d-none d-sm-block"
                     src={bigFounder2}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                  <p className="font_2xl color_dark_gray fw-normal ps-sm-3 mb-0">
                     Matteo,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       Business Developmet Manager
@@ -425,7 +425,7 @@ const ForthSection = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 d-lg-none">
+            <div className="col-12 d-lg-none mt-4 mt-sm-0">
               <div className="position-relative roadmap_para">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
@@ -439,13 +439,13 @@ const ForthSection = () => {
                     </div>
                   </h4>
                 </div>
-                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                <div className="d-flex align-items-sm-center ps-xl-5 pt-3 pt-4 mt-xl-3">
                   <img
-                    className="founder_img"
+                    className="founder_img d-none d-sm-block"
                     src={bigFounder}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                  <p className="font_2xl color_dark_gray fw-normal ps-sm-3 mb-0">
                     Francesca,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       Responsabile Marketing
