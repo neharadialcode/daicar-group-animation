@@ -133,9 +133,9 @@ body {
     --font-4xl: 25px;
     --font-5xl: 24px;
     --font-6xl: 25px;
+    --font-8xl: 32px;
   }
 }
-
 @media (max-width: 991.98px) {
   :root {
     --font-xsm: 9px;
@@ -152,7 +152,6 @@ body {
     --font-8xl: 40px;
   }
 }
-
 @media (max-width: 767.98px) {
   :root {
     --font-xsm: 14px;
@@ -169,7 +168,6 @@ body {
     --font-8xl: 35px;
   }
 }
-
 @media (max-width: 575.98px) {
   :root {
     --font-xsm: 9px;
@@ -286,12 +284,21 @@ body {
   .roadmap_icon_1 {
     max-width: 600px !important;
   }
+  .roadmap_col_content {
+    max-width: 540px !important;
+  }
 }
 @media (max-width: 1400px) {
   .roadmapline_set {
     left: -220px;
     z-index: 1;
     width: 100% !important;
+  }
+}
+@media (max-width: 1399.98px) {
+  .roadmap_icon_2,
+  .roadmap_icon_1 {
+    max-width: 370px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -303,16 +310,20 @@ body {
   }
 
   .small_icon_arrow {
-    top: 0%;
+    top: -5%;
     left: -5%;
   }
   .small_icon_arrow_2 {
-    top: 60%;
-    right: 60%;
+    top: 64%;
+    right: 30%;
   }
   .roadmap_icon_1,
   .roadmap_icon_2 {
-    max-width: 260px !important;
+    max-width: 300px !important;
+  }
+  .small_icon_arrow svg,
+  .small_icon_arrow_2 svg {
+    max-width: 42px;
   }
 }
 @media (max-width: 991.98px) {
