@@ -278,6 +278,9 @@ body {
   top: 80%;
   right: 18%;
 }
+.noi_btn {
+  padding: 5px 24px 12px !important;
+}
 
 @media (max-width: 1400px) {
   .roadmapline_set {

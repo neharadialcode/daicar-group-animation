@@ -270,6 +270,16 @@ const ForthSection = () => {
       <div className="position-relative h-100">
         <img className="roadmap_icon_1" src={roadmapImg1} alt="roadmapImg1" />
         <img className="roadmap_icon_2" src={roadmapImg2} alt="roadmapImg1" />
+        <div className="top_space_business_text text-center pt-5 mt-5 mt-lg-0 px-4 px-lg-0">
+          <p className="font_6xl text-white pt-5 pt-lg-0 px-5 px-lg-0 mx-5 mx-lg-0">
+            Ideata da
+            <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
+            grazie all’esperienza acquisita nel
+            <span className="hero_btn noi_btn bg_light_green mx-2">tempo</span>
+            <span className="text-black">.</span>
+          </p>
+        </div>
+
         <div className="container h-100">
           <div className="row justify-content-end align-items-center ">
             <div className="col-6">
