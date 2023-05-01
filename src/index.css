@@ -103,8 +103,8 @@ body {
     --font-4xl: 25px;
     --font-5xl: 17px;
     --font-6xl: 36px;
-    --font-7xl: 42px;
-    --font-8xl: 45px;
+    --font-7xl: 38px;
+    --font-8xl: 39px;
   }
 }
 @media (max-width: 1399.98px) {
@@ -119,8 +119,6 @@ body {
     --font-4xl: 25px;
     --font-5xl: 17px;
     --font-6xl: 36px;
-    --font-7xl: 42px;
-    --font-8xl: 45px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -135,8 +133,6 @@ body {
     --font-4xl: 25px;
     --font-5xl: 24px;
     --font-6xl: 25px;
-    --font-7xl: 42px;
-    --font-8xl: 45px;
   }
 }
 

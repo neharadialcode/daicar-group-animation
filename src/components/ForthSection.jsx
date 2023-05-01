@@ -135,6 +135,42 @@ const ForthSection = () => {
         "-=.5"
       );
   }, []);
+
+  // useEffect(() => {
+  //   let secondSection2 = gsap.matchMedia();
+  //   secondSection2.add("(min-width:992px) and (max-width:1399.98px)", () => {
+  //     let secondSection2 = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".third_section",
+  //         start: "top top",
+  //         end: "bottom top",
+  //         scrub: 1,
+  //         pin: true,
+  //         pinSpacing: false,
+  //       },
+  //     });
+  //     secondSection2
+  //       .fromTo(
+  //         ".roadmap_icon_1",
+  //         {
+  //           left: "0%",
+  //         },
+  //         {
+  //           left: "10%",
+  //         }
+  //       )
+  //       .fromTo(
+  //         ".roadmap_icon_2",
+  //         {
+  //           left: "10%",
+  //         },
+  //         {
+  //           left: "20%",
+  //         },
+  //         "-=.5"
+  //       );
+  //   });
+  // }, []);
   return (
     <div className="vh-100 overflow-hidden forth_section">
       <div className="position-relative h-100">
