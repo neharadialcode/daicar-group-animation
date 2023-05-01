@@ -318,8 +318,7 @@ const SecondSection = () => {
       //   autoAlpha: 0,
       // });
     });
-    let second2 = gsap.matchMedia();
-    second2.add("(max-width:767.78px)", () => {
+    second.add("(max-width:767.78px)", () => {
       let secondSection2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".second_sectioon",
@@ -357,7 +356,7 @@ const SecondSection = () => {
           alt="img"
         />
         <div className="text-center">
-          <div className="max_width d-flex justify-content-center tabs_wrap">
+          <div className="max_width d-flex justify-content-center tabs_wrap pt-5 pt-lg-0">
             {buttonData.map((obj, index) => (
               <div className="px-2 pt-2" key={index}>
                 <div className={`card_img_${index}`}>
@@ -367,12 +366,16 @@ const SecondSection = () => {
                     alt="img"
                   /> */}
                   <img
-                    className="position-absolute top-0 start-0 w-100 pt-2 custom_height_tab_img tabs_img"
+                    className={`${
+                      index === 5
+                        ? "d-none"
+                        : "position-absolute top-0 start-0 w-100 pt-2 custom_height_tab_img tabs_img"
+                    }`}
                     src={obj.card_img}
                     alt=""
                   />
                 </div>
-                <div className="d-none d-md-flex align-items-center">
+                <div className="d-none d-md-flex align-items-center pt-3 pt-lg-0">
                   <p className="font_2xl color_gray pt-2">{obj.para}</p>
                   {obj.buttonText && (
                     <button
