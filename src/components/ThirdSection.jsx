@@ -334,7 +334,7 @@ const ThirdSection = () => {
           "+=.5"
         );
     });
-    third.add("(min-width:576px) and (max-width:991.98px)", () => {
+    third.add("(min-width:320px) and (max-width:991.98px)", () => {
       let secondSection2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".third_section",
@@ -345,20 +345,24 @@ const ThirdSection = () => {
       });
       secondSection2
         .from(".business_tab_1", {
-          xPercent: "-80",
+          xPercent: "-150",
           stagger: 0.3,
+          duration: 1,
         })
         .from(".business_tab_2", {
-          xPercent: "80",
+          xPercent: "150",
           stagger: 0.3,
+          duration: 1,
         })
         .from(".business_tab_3", {
-          xPercent: "-80",
+          xPercent: "-150",
           stagger: 0.3,
+          duration: 1,
         })
         .from(".business_tab_4", {
-          xPercent: "80",
+          xPercent: "150",
           stagger: 0.3,
+          duration: 1,
         });
     });
   }, []);
@@ -463,7 +467,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
+                <div className="col-sm-6 d-sm-flex justify-content-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     Strategie di marketing costruite ad hoc per generare
@@ -474,7 +478,7 @@ const ThirdSection = () => {
               </div>
             </div>
             <div className="business_tab_2">
-              <div className="row justify-content-evenly pt-5 mt-3">
+              <div className="row justify-content-evenly pt-5 mt-sm-3">
                 <div className="col-8 col-sm-4">
                   <img
                     className="w-100"
@@ -482,7 +486,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
+                <div className="col-sm-6 d-sm-flex justify-content-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">
                     LANDING CONVERSAZIONALE
                   </h3>
@@ -497,7 +501,7 @@ const ThirdSection = () => {
               </div>
             </div>
             <div className="business_tab_3">
-              <div className="row justify-content-evenly pt-5 mt-3">
+              <div className="row justify-content-evenly pt-5 mt-sm-3">
                 <div className="col-8 col-sm-4">
                   <img
                     className="w-100"
@@ -505,7 +509,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
+                <div className="col-sm-6 d-sm-flex justify-content-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">
                     {" "}
                     VALIDAZIONE AUTOMATICA DEI DATI
@@ -519,7 +523,7 @@ const ThirdSection = () => {
               </div>
             </div>
             <div className="business_tab_4">
-              <div className="row justify-content-evenly pt-5 mt-3">
+              <div className="row justify-content-evenly pt-5 mt-sm-3">
                 <div className="col-8 col-sm-4">
                   <img
                     className="w-100"
@@ -527,7 +531,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
+                <div className="col-sm-6 d-sm-flex justify-content-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     I lead generati vengono sottoposti ad un attento processo di
