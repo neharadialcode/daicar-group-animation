@@ -388,9 +388,9 @@ const ForthSection = () => {
                     alt="arrow-founder"
                   />
                   <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
-                    Federico,
+                    Marta Daina,
                     <span className="fw-light ff_mundial_ligh ms-2">
-                      CF Tecnology Officer
+                      Founder
                     </span>
                   </p>
                 </div>
@@ -446,9 +446,9 @@ const ForthSection = () => {
                     alt="arrow-founder"
                   />
                   <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
-                    Federico,
+                    Francesca,
                     <span className="fw-light ff_mundial_ligh ms-2">
-                      IT Manager
+                      Responsabile Marketing
                     </span>
                   </p>
                 </div>
