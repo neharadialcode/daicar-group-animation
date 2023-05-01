@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import icon1 from "../assets/images/svg/roadmap_side_icon.svg";
 import icon2 from "../assets/images/png/roadmap_icon2.png";
 
+import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
+
 const FifthSection = () => {
   const [leftMargin, setLeftMargin] = useState(0);
   const [leftSpacing, setLeftSpacing] = useState(0);
@@ -83,10 +85,10 @@ const FifthSection = () => {
       .fromTo(
         ".value_1",
         {
-          left: "-100vw",
+          left: "-75vw",
         },
         {
-          left: "-85vw",
+          left: "-65vw",
         },
         "+=1"
       )
@@ -172,21 +174,22 @@ const FifthSection = () => {
       <div className="container" ref={containerRef}></div>
       <div className="fifth_main">
         <div className="vh-100 overflow-hidden fifth_section">
-          <div className="bg-green vh-100 position-absolute w-100"></div>
+          <div className="bg_gray vh-100 position-absolute w-100"></div>
           <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative  ">
             <div className="d-flex">
               <div
-                className="div_1 bg-danger"
+                className="div_1 text-white bg-danger"
                 style={{ marginLeft: `${leftMargin + 16}px` }}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-                velit id eligendi possimus. Consequuntur officia suscipit
-                molestiae earum, quis placeat quo perspiciatis beatae rem veniam
-                corporis eius ipsa, repellendus necessitatibus!
+                <img className="w-100" src={timelineImg1} alt="timelineImg1" />
+                <p className="font_2xl fw-normal text-white">
+                  Carplanner.com nasce nel 2015 posizionandosi nel settore
+                  automotive, specializzata nella lead generation innovativa.
+                </p>
               </div>
 
               <div
-                className="div_2 position-absolute"
+                className="div_2 text-white position-absolute"
                 style={{ left: `${leftSpacing - 10}px` }}
               >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
@@ -195,7 +198,7 @@ const FifthSection = () => {
                 corporis eius ipsa, repellendus necessitatibus!
               </div>
               <div
-                className="div_3 position-absolute"
+                className="div_3 text-white position-absolute"
                 style={{ left: `${leftSpacing2 - 10}px` }}
               >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
