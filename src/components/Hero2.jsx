@@ -3,7 +3,7 @@ import { Icon1, Icon2, Icon3, Icon4 } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img from "../Free_iPad_Mockup_1 1.png";
-
+import iPadSmallImg from "../assets/images/png/small-ipad.png";
 const Hero2 = () => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
@@ -97,7 +97,7 @@ const Hero2 = () => {
           opacity: 0,
           xPercent: -50,
           left: "50%",
-          scale: 2,
+          scale: 3,
           top: "50%",
           yPercent: -50,
           duration: 1,
@@ -217,7 +217,16 @@ const Hero2 = () => {
         </div>
         <div className="second_div">
           <div className="i_pad_img">
-            <img className="w-100" src={img} alt="i_pad_img" />
+            <img
+              className="w-100 d-none d-sm-block"
+              src={img}
+              alt="i_pad_img"
+            />
+            <img
+              className="w-100 d-sm-none"
+              src={iPadSmallImg}
+              alt="i_pad_img2"
+            />
           </div>
           <div className="w-100 d-flex flex-column justify-content-center second_section_text align-items-center text-white vh-100 ">
             <div className="text_div">
@@ -250,8 +259,8 @@ const Hero2 = () => {
                 Campagne Generate nel 2022
               </p>
               <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
-                Campaign management flessibile e altamente <br /> personalizzabile
-                sulle criticità di ogni partner.
+                Campaign management flessibile e altamente <br />{" "}
+                personalizzabile sulle criticità di ogni partner.
               </p>
             </div>
           </div>
