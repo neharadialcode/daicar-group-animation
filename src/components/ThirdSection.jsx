@@ -47,6 +47,22 @@ const ThirdSection = () => {
           },
           "-=.5"
         )
+
+        .to(
+          ".business_img_1",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_2",
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+
         .to(".small_icon", {
           top: "45px",
         })
@@ -69,6 +85,20 @@ const ThirdSection = () => {
           },
           "-=.5"
         )
+        .to(
+          ".business_img_2",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_3",
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
         .to(".small_icon", {
           top: "85px",
         })
@@ -88,6 +118,20 @@ const ThirdSection = () => {
           ".text_3",
           {
             autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_3",
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .to(
+          ".business_img_4",
+          {
+            autoAlpha: 1,
           },
           "-=.5"
         )
@@ -163,6 +207,11 @@ const ThirdSection = () => {
                 <img
                   className="w-100 business_img_2 opacity_0"
                   src={businessFour}
+                  alt="business-big-arrow"
+                />
+                <img
+                  className="w-100 business_img_4 opacity_0 position-absolute"
+                  src={businessOne}
                   alt="business-big-arrow"
                 />
               </div>
