@@ -302,6 +302,10 @@ body {
     top: 60%;
     right: 60%;
   }
+  .roadmap_icon_1,
+  .roadmap_icon_2 {
+    max-width: 260px !important;
+  }
 }
 @media (max-width: 991.98px) {
   .carplanner_cards {

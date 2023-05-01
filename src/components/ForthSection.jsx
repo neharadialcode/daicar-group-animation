@@ -10,171 +10,264 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 const ForthSection = () => {
   useEffect(() => {
-    let secondSection2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".forth_section",
-        start: "top top",
-        end: "bottom top",
-        scrub: 1,
-        pin: true,
-        pinSpacing: false,
-      },
+    let media = gsap.matchMedia();
+    media.add("(min-width: 1400px)", () => {
+      let secondSection2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".forth_section",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+      secondSection2
+        .fromTo(
+          ".roadmap_icon_1",
+          {
+            left: "-100%",
+          },
+          {
+            left: "0%",
+          }
+        )
+        .fromTo(
+          ".roadmap_icon_2",
+          {
+            left: "-100%",
+          },
+          {
+            left: "10%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".roadmap_text_1",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+        // .fromTo(
+        //   ".forth_section_background",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   {
+        //     autoAlpha: 1,
+        //   },
+        //   "-=.5"
+        // )
+        .fromTo(
+          ".roadmap_icon_1",
+          {
+            left: "0%",
+          },
+          {
+            left: "10%",
+          }
+        )
+        .fromTo(
+          ".roadmap_icon_2",
+          {
+            left: "10%",
+          },
+          {
+            left: "20%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".roadmap_text_2",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+        .to(
+          ".roadmap_text_1",
+          {
+            autoAlpha: 0,
+          },
+
+          "-=.5"
+        )
+        .fromTo(
+          ".roadmap_icon_1",
+          {
+            left: "10%",
+          },
+          {
+            left: "15%",
+          }
+        )
+        .fromTo(
+          ".roadmap_icon_2",
+          {
+            left: "20%",
+          },
+          {
+            left: "25%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".roadmap_text_3",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+        .to(
+          ".roadmap_text_2",
+          {
+            autoAlpha: 0,
+          },
+
+          "-=.5"
+        );
     });
-    secondSection2
-      .fromTo(
-        ".roadmap_icon_1",
-        {
-          left: "-100%",
+    media.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+      let secondSection2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".forth_section",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
         },
-        {
-          left: "0%",
-        }
-      )
-      .fromTo(
-        ".roadmap_icon_2",
-        {
-          left: "-100%",
-        },
-        {
-          left: "10%",
-        },
-        "-=.5"
-      )
-      .fromTo(
-        ".roadmap_text_1",
-        {
-          autoAlpha: 0,
-        },
-        {
-          autoAlpha: 1,
-        },
-        "-=.5"
-      )
-      // .fromTo(
-      //   ".forth_section_background",
-      //   {
-      //     autoAlpha: 0,
-      //   },
-      //   {
-      //     autoAlpha: 1,
-      //   },
-      //   "-=.5"
-      // )
-      .fromTo(
-        ".roadmap_icon_1",
-        {
-          left: "0%",
-        },
-        {
-          left: "10%",
-        }
-      )
-      .fromTo(
-        ".roadmap_icon_2",
-        {
-          left: "10%",
-        },
-        {
-          left: "20%",
-        },
-        "-=.5"
-      )
-      .fromTo(
-        ".roadmap_text_2",
-        {
-          autoAlpha: 0,
-        },
-        {
-          autoAlpha: 1,
-        },
-        "-=.5"
-      )
-      .to(
-        ".roadmap_text_1",
-        {
-          autoAlpha: 0,
-        },
+      });
+      secondSection2
+        .fromTo(
+          ".roadmap_icon_1",
+          {
+            left: "-100%",
+          },
+          {
+            left: "0%",
+          }
+        )
+        .fromTo(
+          ".roadmap_icon_2",
+          {
+            left: "-100%",
+          },
+          {
+            left: "10%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".roadmap_text_1",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+        // .fromTo(
+        //   ".forth_section_background",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   {
+        //     autoAlpha: 1,
+        //   },
+        //   "-=.5"
+        // )
+        .fromTo(
+          ".roadmap_icon_1",
+          {
+            left: "0%",
+          },
+          {
+            left: "10%",
+          }
+        )
+        .fromTo(
+          ".roadmap_icon_2",
+          {
+            left: "10%",
+          },
+          {
+            left: "20%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".roadmap_text_2",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+        .to(
+          ".roadmap_text_1",
+          {
+            autoAlpha: 0,
+          },
 
-        "-=.5"
-      )
-      .fromTo(
-        ".roadmap_icon_1",
-        {
-          left: "10%",
-        },
-        {
-          left: "15%",
-        }
-      )
-      .fromTo(
-        ".roadmap_icon_2",
-        {
-          left: "20%",
-        },
-        {
-          left: "25%",
-        },
-        "-=.5"
-      )
-      .fromTo(
-        ".roadmap_text_3",
-        {
-          autoAlpha: 0,
-        },
-        {
-          autoAlpha: 1,
-        },
-        "-=.5"
-      )
-      .to(
-        ".roadmap_text_2",
-        {
-          autoAlpha: 0,
-        },
+          "-=.5"
+        )
+        .fromTo(
+          ".roadmap_icon_1",
+          {
+            left: "10%",
+          },
+          {
+            left: "10%",
+          }
+        )
+        .fromTo(
+          ".roadmap_icon_2",
+          {
+            left: "20%",
+          },
+          {
+            left: "20%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".roadmap_text_3",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "-=.5"
+        )
+        .to(
+          ".roadmap_text_2",
+          {
+            autoAlpha: 0,
+          },
 
-        "-=.5"
-      );
+          "-=.5"
+        );
+    });
   }, []);
 
-  // useEffect(() => {
-  //   let secondSection2 = gsap.matchMedia();
-  //   secondSection2.add("(min-width:992px) and (max-width:1399.98px)", () => {
-  //     let secondSection2 = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: ".third_section",
-  //         start: "top top",
-  //         end: "bottom top",
-  //         scrub: 1,
-  //         pin: true,
-  //         pinSpacing: false,
-  //       },
-  //     });
-  //     secondSection2
-  //       .fromTo(
-  //         ".roadmap_icon_1",
-  //         {
-  //           left: "0%",
-  //         },
-  //         {
-  //           left: "10%",
-  //         }
-  //       )
-  //       .fromTo(
-  //         ".roadmap_icon_2",
-  //         {
-  //           left: "10%",
-  //         },
-  //         {
-  //           left: "20%",
-  //         },
-  //         "-=.5"
-  //       );
-  //   });
-  // }, []);
   return (
     <div className="vh-100 overflow-hidden forth_section">
       <div className="position-relative h-100">
-        {/* <div className="bg_white position-absolute top-0 start-0 w-100 h-100 forth_section_background"></div> */}
         <img className="roadmap_icon_1" src={roadmapImg1} alt="roadmapImg1" />
         <img className="roadmap_icon_2" src={roadmapImg2} alt="roadmapImg1" />
         <div className="container h-100">
