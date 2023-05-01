@@ -135,7 +135,7 @@
   height: 200vh;
 }
 
-.i_pad_img::after {
+/* .i_pad_img::after {
   position: absolute;
   content: "";
   width: 91%;
@@ -147,7 +147,7 @@
   z-index: -1;
   border-radius: 20px;
   background-color: #2d5363;
-}
+} */
 
 .icon_4 {
   z-index: -1;

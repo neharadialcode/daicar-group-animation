@@ -455,79 +455,81 @@ const ThirdSection = () => {
               </div>
             </div>
           </div>
-          <div className="business_tab_1">
-            <div className="row d-lg-none justify-content-evenly pt-5 mt-5">
-              <div className="col-4">
-                <img
-                  className="w-100"
-                  src={businessOne}
-                  alt="business-big-arrow"
-                />
-              </div>
-              <div className="col-6 d-flex justify-content-end flex-column">
-                <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
-                <p className="font_2xl text-white pe-xl-5 pt-2">
-                  Strategie di marketing costruite ad hoc per generare traffico
-                  qualificato da veicolare sui social media, Google e native
-                  advertising
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="business_tab_2">
-            <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
-              <div className="col-4">
-                <img
-                  className="w-100"
-                  src={businessTwo}
-                  alt="business-big-arrow"
-                />
-              </div>
-              <div className="col-6 d-flex justify-content-end flex-column">
-                <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
-                <p className="font_2xl text-white pe-xl-5 pt-2">
-                  Strategie di marketing costruite ad hoc per generare traffico
-                  qualificato da veicolare sui social media, Google e native
-                  advertising
-                </p>
+          <div className="d-lg-none">
+            <div className="business_tab_1">
+              <div className="row justify-content-evenly pt-5 mt-5">
+                <div className="col-4">
+                  <img
+                    className="w-100"
+                    src={businessOne}
+                    alt="business-big-arrow"
+                  />
+                </div>
+                <div className="col-6 d-flex justify-content-end flex-column">
+                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+                  <p className="font_2xl text-white pe-xl-5 pt-2">
+                    Strategie di marketing costruite ad hoc per generare
+                    traffico qualificato da veicolare sui social media, Google e
+                    native advertising
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="business_tab_3">
-            <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
-              <div className="col-4">
-                <img
-                  className="w-100"
-                  src={businessThree}
-                  alt="business-big-arrow"
-                />
-              </div>
-              <div className="col-6 d-flex justify-content-end flex-column">
-                <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
-                <p className="font_2xl text-white pe-xl-5 pt-2">
-                  Strategie di marketing costruite ad hoc per generare traffico
-                  qualificato da veicolare sui social media, Google e native
-                  advertising
-                </p>
+            <div className="business_tab_2">
+              <div className="row justify-content-evenly pt-5 mt-3">
+                <div className="col-4">
+                  <img
+                    className="w-100"
+                    src={businessTwo}
+                    alt="business-big-arrow"
+                  />
+                </div>
+                <div className="col-6 d-flex justify-content-end flex-column">
+                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+                  <p className="font_2xl text-white pe-xl-5 pt-2">
+                    Strategie di marketing costruite ad hoc per generare
+                    traffico qualificato da veicolare sui social media, Google e
+                    native advertising
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="business_tab_4">
-            <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
-              <div className="col-4">
-                <img
-                  className="w-100"
-                  src={businessTwo}
-                  alt="business-big-arrow"
-                />
+            <div className="business_tab_3">
+              <div className="row justify-content-evenly pt-5 mt-3">
+                <div className="col-4">
+                  <img
+                    className="w-100"
+                    src={businessThree}
+                    alt="business-big-arrow"
+                  />
+                </div>
+                <div className="col-6 d-flex justify-content-end flex-column">
+                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+                  <p className="font_2xl text-white pe-xl-5 pt-2">
+                    Strategie di marketing costruite ad hoc per generare
+                    traffico qualificato da veicolare sui social media, Google e
+                    native advertising
+                  </p>
+                </div>
               </div>
-              <div className="col-6 d-flex justify-content-end flex-column">
-                <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
-                <p className="font_2xl text-white pe-xl-5 pt-2">
-                  Strategie di marketing costruite ad hoc per generare traffico
-                  qualificato da veicolare sui social media, Google e native
-                  advertising
-                </p>
+            </div>
+            <div className="business_tab_4">
+              <div className="row justify-content-evenly pt-5 mt-3">
+                <div className="col-4">
+                  <img
+                    className="w-100"
+                    src={businessTwo}
+                    alt="business-big-arrow"
+                  />
+                </div>
+                <div className="col-6 d-flex justify-content-end flex-column">
+                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
+                  <p className="font_2xl text-white pe-xl-5 pt-2">
+                    Strategie di marketing costruite ad hoc per generare
+                    traffico qualificato da veicolare sui social media, Google e
+                    native advertising
+                  </p>
+                </div>
               </div>
             </div>
           </div>
