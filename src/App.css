@@ -394,6 +394,10 @@
   }
 }
 
+.third_section {
+  background: #29424D;
+}
+
 @media (min-width: 1600px) {
   .icon_2 svg {
     width: 1300px !important;
@@ -449,7 +453,7 @@
 }
 
 @media (max-width: 1399.98px) {
-  .small_icon{
+  .small_icon {
     left: 0%;
   }
 }
@@ -615,6 +619,14 @@
   .icon_3 {
     top: -25% !important;
     right: -70px !important;
+  }
+
+  .third_section {
+    background: #7EE49C;
+  }
+
+  .third_sec_height {
+    height: 100vh;
   }
 }
 

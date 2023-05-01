@@ -334,38 +334,38 @@ const ThirdSection = () => {
           "+=.5"
         );
     });
-    // third.add("(min-width:576px) and (max-width:991.98px)", () => {
-    //   let secondSection2 = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: ".third_section",
-    //       start: "top top",
-    //       end: "bottom top",
-    //       scrub: 1,
-    //       pin: true,
-    //       pinSpacing: false,
-    //     },
-    //   });
-    //   secondSection2
-    //     .to(".business_tab_1", {
-    //     yPercent: "-80",
-    //       stagger: 0.3,
-    //     })
-    //     .to(".business_tab_2", {
-    //     yPercent: "-80",
-    //       stagger: 0.3,
-    //     })
-    //     .to(".business_tab_3", {
-    //     yPercent: "-60",
-    //       stagger: 0.3,
-    //     })
-    //     .to(".business_tab_4", {
-    //     yPercent: "-40",
-    //       stagger: 0.3,
-    //     });
-    // });
+    third.add("(min-width:576px) and (max-width:991.98px)", () => {
+      let secondSection2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".third_section",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+        },
+      });
+      secondSection2
+        .to(".business_tab_1", {
+        xPercent: "-80",
+          stagger: 0.3,
+        })
+        .to(".business_tab_2", {
+        xPercent: "80",
+          stagger: 0.3,
+        })
+        .to(".business_tab_3", {
+        xPercent: "-60",
+          stagger: 0.3,
+        })
+        .to(".business_tab_4", {
+        xPercent: "40",
+          stagger: 0.3,
+        });
+    });
   }, []);
   return (
-    <div className="third_section overflow-hidden third_sec_height bg_white z_1 bg_gray pt-5">
+    <div className="third_section overflow-hidden third_sec_height z_1  pt-5">
       <div className="d-flex flex-column justify-content-center vh-100">
         <img
           className="w-100 position-absolute big_icon d-none d-lg-block"
@@ -458,14 +458,14 @@ const ThirdSection = () => {
           <div className="d-lg-none">
             <div className="business_tab_1">
               <div className="row justify-content-evenly pt-5 mt-5">
-                <div className="col-4">
+                <div className="col-sm-4">
                   <img
                     className="w-100"
                     src={businessOne}
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-6 d-flex justify-content-end flex-column">
+                <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     Strategie di marketing costruite ad hoc per generare
@@ -477,14 +477,14 @@ const ThirdSection = () => {
             </div>
             <div className="business_tab_2">
               <div className="row justify-content-evenly pt-5 mt-3">
-                <div className="col-4">
+                <div className="col-sm-4">
                   <img
                     className="w-100"
                     src={businessTwo}
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-6 d-flex justify-content-end flex-column">
+                <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     Strategie di marketing costruite ad hoc per generare
@@ -496,14 +496,14 @@ const ThirdSection = () => {
             </div>
             <div className="business_tab_3">
               <div className="row justify-content-evenly pt-5 mt-3">
-                <div className="col-4">
+                <div className="col-sm-4">
                   <img
                     className="w-100"
                     src={businessThree}
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-6 d-flex justify-content-end flex-column">
+                <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     Strategie di marketing costruite ad hoc per generare
@@ -515,14 +515,14 @@ const ThirdSection = () => {
             </div>
             <div className="business_tab_4">
               <div className="row justify-content-evenly pt-5 mt-3">
-                <div className="col-4">
+                <div className="col-sm-4">
                   <img
                     className="w-100"
                     src={businessTwo}
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-6 d-flex justify-content-end flex-column">
+                <div className="col-sm-6 d-sm-flex justify-content-end flex-column">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     Strategie di marketing costruite ad hoc per generare
