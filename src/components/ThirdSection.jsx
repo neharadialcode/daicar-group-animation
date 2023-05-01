@@ -168,7 +168,11 @@ const ThirdSection = () => {
             autoAlpha: 0,
           },
           "+=.5"
-        );
+        )
+        .to(".big_icon", {
+          top: "-39%",
+          scale: "1",
+        });
     });
   }, []);
   return (
