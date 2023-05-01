@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import iconImg from "../assets/images/svg/big-icon.svg";
 import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
-import businessFour from "../assets/images/png/business-4.png";
-import businessThree from "../assets/images/png/business-3.png";
 import businessOne from "../assets/images/png/business-1.png";
+import businessTwo from "../assets/images/png/business-2.png";
+import businessThree from "../assets/images/png/business-3.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 const ThirdSection = () => {
@@ -22,7 +22,6 @@ const ThirdSection = () => {
         },
       });
       secondSection2
-
         .to(".big_icon", {
           top: "-12%",
         })
@@ -200,18 +199,18 @@ const ThirdSection = () => {
                   alt="business-big-arrow"
                 />
                 <img
+                  className="w-100 business_img_2 opacity_0 position-absolute"
+                  src={businessTwo}
+                  alt="business-big-arrow"
+                />
+                <img
                   className="w-100 business_img_3 opacity_0 position-absolute"
                   src={businessThree}
                   alt="business-big-arrow"
                 />{" "}
                 <img
-                  className="w-100 business_img_2 opacity_0"
-                  src={businessFour}
-                  alt="business-big-arrow"
-                />
-                <img
                   className="w-100 business_img_4 opacity_0 position-absolute"
-                  src={businessOne}
+                  src={businessTwo}
                   alt="business-big-arrow"
                 />
               </div>
@@ -266,7 +265,7 @@ const ThirdSection = () => {
           <div className="row d-lg-none justify-content-evenly pt-5 mt-5">
             <div className="col-4">
               <img
-                className="w-100 business_img_1"
+                className="w-100"
                 src={businessOne}
                 alt="business-big-arrow"
               />
@@ -283,8 +282,8 @@ const ThirdSection = () => {
           <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
             <div className="col-4">
               <img
-                className="w-100 business_img_1"
-                src={businessFour}
+                className="w-100"
+                src={businessTwo}
                 alt="business-big-arrow"
               />
             </div>
@@ -300,7 +299,7 @@ const ThirdSection = () => {
           <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
             <div className="col-4">
               <img
-                className="w-100 business_img_1"
+                className="w-100"
                 src={businessThree}
                 alt="business-big-arrow"
               />
@@ -317,8 +316,8 @@ const ThirdSection = () => {
           <div className="row d-lg-none justify-content-evenly pt-5 mt-3">
             <div className="col-4">
               <img
-                className="w-100 business_img_1"
-                src={businessFour}
+                className="w-100"
+                src={businessTwo}
                 alt="business-big-arrow"
               />
             </div>
