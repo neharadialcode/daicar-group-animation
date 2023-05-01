@@ -32,7 +32,7 @@ const Hero2 = () => {
         end: "bottom top",
         scrub: 2,
         pin: true,
-        markers: true,
+        // markers: true,
         pinSpacing: false,
       },
     });
