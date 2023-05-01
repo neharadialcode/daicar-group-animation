@@ -168,7 +168,11 @@ const ThirdSection = () => {
             autoAlpha: 0,
           },
           "+=.5"
-        );
+        )
+        .to(".big_icon", {
+          top: "-39%",
+          scale: "1",
+        });
     });
     third.add("(min-width:992px) and (max-width:1499.98px)", () => {
       let secondSection2 = gsap.timeline({

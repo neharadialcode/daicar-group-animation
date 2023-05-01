@@ -270,7 +270,7 @@ const ForthSection = () => {
       <div className="position-relative h-100">
         <img className="roadmap_icon_1" src={roadmapImg1} alt="roadmapImg1" />
         <img className="roadmap_icon_2" src={roadmapImg2} alt="roadmapImg1" />
-        <div className="top_space_business_text text-center pt-5 mt-5 mt-lg-0 px-4 px-lg-0">
+        {/* <div className="top_space_business_text top_heading_text text-center pt-5 mt-5 mt-lg-0 px-4 px-lg-0">
           <p className="font_6xl text-white pt-5 pt-lg-0 px-5 px-lg-0 mx-5 mx-lg-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
@@ -278,11 +278,11 @@ const ForthSection = () => {
             <span className="hero_btn noi_btn bg_light_green mx-2">tempo</span>
             <span className="text-black">.</span>
           </p>
-        </div>
+        </div> */}
 
         <div className="container h-100">
           <div className="row justify-content-end align-items-center ">
-            <div className="col-6">
+            <div className="col-5">
               <div className="roadmap_text_1 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
@@ -347,7 +347,7 @@ const ForthSection = () => {
                   <DownArrowNoiIcon />
                 </div>
                 <div className="top_space_custom_arrow_text">
-                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-xl-5 pe-xxl-5 me-xxl-4 mb-0">
                     Qualifichiamo i dati in tempo reale consentendo di
                     incrementare il ROI delle azioni di lead generation.
                   </h4>
@@ -375,8 +375,3 @@ const ForthSection = () => {
 };
 
 export default ForthSection;
-// For third section image
-//  .to(".big_icon", {
-// top: "-50%",
-// scale: "1.2",
-// });

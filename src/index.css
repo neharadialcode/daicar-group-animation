@@ -281,7 +281,12 @@ body {
 .noi_btn {
   padding: 5px 24px 12px !important;
 }
-
+@media (min-width: 1600px) {
+  .roadmap_icon_2,
+  .roadmap_icon_1 {
+    max-width: 600px !important;
+  }
+}
 @media (max-width: 1400px) {
   .roadmapline_set {
     left: -220px;
