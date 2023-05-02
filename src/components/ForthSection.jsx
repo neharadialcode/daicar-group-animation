@@ -43,7 +43,7 @@ const ForthSection = () => {
           "-=.5"
         )
         .to(".forth_section", {
-          background: "#EDFAFB",
+          background: "#b5efcb",
         })
         .fromTo(
           ".roadmap_text_1",
