@@ -173,10 +173,10 @@ const FifthSection = () => {
     <>
       <div className="container" ref={containerRef}></div>
       <div className="fifth_main">
-        <div className="vh-100 overflow-hidden fifth_section">
+        <div className="vh-100 overflow-hidden fifth_section  z-10">
           <div className="bg_gray vh-100 position-absolute w-100"></div>
           <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative  ">
-            <div className="d-flex timeline_slide_content justify-content-center z-10">
+            <div className="d-flex timeline_slide_content justify-content-center">
               <div
                 className="div_1 text-white"
                 style={{ marginLeft: `${leftMargin + 16}px` }}
