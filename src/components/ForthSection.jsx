@@ -42,6 +42,9 @@ const ForthSection = () => {
           },
           "-=.5"
         )
+        .to(".forth_section", {
+          background: "#b5efcb",
+        })
         .fromTo(
           ".roadmap_text_1",
           {
@@ -52,9 +55,6 @@ const ForthSection = () => {
           },
           "-=.5"
         )
-        .to(".forth_section", {
-          background: "red",
-        })
         // .fromTo(
         //   ".forth_section_background",
         //   {
@@ -71,7 +71,7 @@ const ForthSection = () => {
             left: "0%",
           },
           {
-            left: "10%",
+            left: "6%",
           }
         )
         .fromTo(
@@ -80,7 +80,7 @@ const ForthSection = () => {
             left: "10%",
           },
           {
-            left: "20%",
+            left: "16%",
           },
           "-=.5"
         )
@@ -105,19 +105,19 @@ const ForthSection = () => {
         .fromTo(
           ".roadmap_icon_1",
           {
-            left: "10%",
+            left: "6%",
           },
           {
-            left: "13%",
+            left: "10%",
           }
         )
         .fromTo(
           ".roadmap_icon_2",
           {
-            left: "20%",
+            left: "16%",
           },
           {
-            left: "23%",
+            left: "20%",
           },
           "-=.5"
         )

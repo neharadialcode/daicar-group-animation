@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import icon1 from "../assets/images/svg/roadmap_side_icon.svg";
-import icon2 from "../assets/images/png/roadmap_icon2.png";
+// import icon2 from "../assets/images/png/roadmap_icon2.png";
 
 import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
 
@@ -173,19 +173,26 @@ const FifthSection = () => {
     <>
       <div className="container" ref={containerRef}></div>
       <div className="fifth_main">
-        <div className="vh-100 overflow-hidden fifth_section">
+        <div className="vh-100 overflow-hidden fifth_section  z-10">
           <div className="bg_gray vh-100 position-absolute w-100"></div>
           <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative  ">
-            <div className="d-flex">
+            <div className="d-flex timeline_slide_content justify-content-center">
               <div
-                className="div_1 text-white bg-danger"
+                className="div_1 text-white"
                 style={{ marginLeft: `${leftMargin + 16}px` }}
               >
-                <img className="w-100" src={timelineImg1} alt="timelineImg1" />
-                <p className="font_2xl fw-normal text-white">
+                <img
+                  className="w-100 mb-5"
+                  src={timelineImg1}
+                  alt="timelineImg1"
+                />
+                <p className="font_2xl fw-normal text-white mb-3">
                   Carplanner.com nasce nel 2015 posizionandosi nel settore
                   automotive, specializzata nella lead generation innovativa.
                 </p>
+                <button className="font_xl fw-normal color_white_off timeline_btn pulse bg-transparent">
+                  automotive
+                </button>
               </div>
 
               <div
@@ -222,7 +229,7 @@ const FifthSection = () => {
               style={{ marginLeft: `${leftMargin + 16}px` }}
             ></div> */}
             <div className="container mt-5">
-              <div className="d-flex ">
+              <div className="d-flex mx-auto the_time_line">
                 <div className="col-4 line_with_dot line_first "></div>
                 <div ref={secondText} className="col-4 line_with_dot "></div>
                 <div ref={secondText2} className="col-4 line_with_dot "></div>
