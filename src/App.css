@@ -148,6 +148,7 @@
   border-radius: 20px;
   background-color: #2d5363;
 }
+
 .color_div {
   z-index: -5;
 }
@@ -303,9 +304,10 @@
   transform: translateY(-50%);
 }
 
-/* .z_1 {
+.z_1 {
   z-index: 1;
-} */
+}
+
 .bg-green {
   background-color: darkgreen;
   /* opacity: 0; */
@@ -400,6 +402,9 @@
   background: #29424d;
 }
 
+.small_tab_arrow_img{
+  height: 155vh;
+}
 @media (min-width: 1600px) {
   .icon_2 svg {
     width: 1300px !important;
