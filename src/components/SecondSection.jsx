@@ -8,8 +8,7 @@ import tabImg2 from "../assets/images/png/tab-2.png";
 import tabImg3 from "../assets/images/png/tab-3.png";
 import tabImg4 from "../assets/images/png/tab-4.png";
 import tabImg5 from "../assets/images/png/tab-5.png";
-// import tab6 from "../assets/images/png/tab-6.png";
-import tabImg7 from "../assets/images/png/tab-7.png";
+import tabImg6 from "../assets/images/png/tab-6.png";
 import tabRightIcon from "../assets/images/png/tab-right-icon.png";
 import smallTabImg from "../assets/images/png/small-tab-img.png";
 const SecondSection = () => {
@@ -37,7 +36,7 @@ const SecondSection = () => {
     },
     {
       buttonText: "CRM",
-      card_img: tabImg7,
+      card_img: tabImg6,
       para: "per ottenere una",
     },
     {

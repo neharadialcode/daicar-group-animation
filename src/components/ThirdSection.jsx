@@ -534,10 +534,10 @@ const ThirdSection = () => {
             </div>
             <div className="business_tab_4">
               <div className="row justify-content-evenly pt-5 mt-sm-3">
-                <div className="col-8 col-sm-4">
+                <div className="col-sm-4 d-flex align-items-center">
                   <img
                     className="w-100"
-                    src={businessTwo}
+                    src={businessFour}
                     alt="business-big-arrow"
                   />
                 </div>
