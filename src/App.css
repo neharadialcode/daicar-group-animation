@@ -358,7 +358,7 @@
 .line_with_dot::after {
   position: absolute;
   content: "";
-  background: red;
+  background: white;
   right: 0;
   height: 30px;
   top: 50%;
@@ -370,7 +370,7 @@
 .line_first::before {
   position: absolute;
   content: "";
-  background: red;
+  background: white;
   left: 0;
   height: 30px;
   top: 50%;
@@ -402,7 +402,7 @@
   background: #29424d;
 }
 
-.small_tab_arrow_img{
+.small_tab_arrow_img {
   height: 155vh;
 }
 @media (min-width: 1600px) {
