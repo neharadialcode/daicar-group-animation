@@ -169,6 +169,169 @@ const FifthSection = () => {
         "-=.8"
       );
   }, []);
+
+  // useEffect(() => {
+  //   let fifth2 = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".fifth_main",
+  //       start: "top 5%",
+  //       end: "bottom top",
+  //       toggleActions: "play none none reverse",
+  //     },
+  //   });
+  //   fifth2.fromTo(
+  //     ".bg-green",
+  //     { scale: 0 },
+  //     {
+  //       scale: 1,
+  //     }
+  //   );
+  //   let fifth = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".fifth_section",
+  //       start: "top top",
+  //       end: "bottom top",
+  //       scrub: 1,
+  //       pin: true,
+  //       pinSpacing: true,
+  //       // markers: true,
+  //     },
+  //   });
+  //   fifth
+  //     .fromTo(
+  //       ".fifth_section",
+  //       {
+  //         opacity: 0,
+  //       },
+  //       {
+  //         opacity: 1,
+  //       }
+  //     )
+  //     .fromTo(
+  //       ".forth_section",
+  //       {
+  //         opacity: 1,
+  //       },
+  //       {
+  //         opacity: 0,
+  //       },
+  //       "-=.5"
+  //     )
+  //     .fromTo(
+  //       ".value_1",
+  //       {
+  //         left: "-82vw",
+  //         duration: 0.5,
+  //       },
+  //       {
+  //         left: "-80vw",
+  //         duration: 0.5,
+  //       },
+  //       "+=1"
+  //     )
+  //     .fromTo(
+  //       ".value_1",
+  //       {
+  //         left: "-74.4vw",
+  //         duration: 0.5,
+  //       },
+  //       {
+  //         left: "-74.4vw",
+  //         duration: 0.5,
+  //       },
+  //       "+=1"
+  //     )
+  //     .fromTo(
+  //       ".div_1",
+  //       {
+  //         autoAlpha: 1,
+  //         duration: 2,
+  //       },
+  //       {
+  //         autoAlpha: 0,
+  //         duration: 2,
+  //       },
+  //       "-=.1"
+  //     )
+  //     .fromTo(
+  //       ".div_2",
+  //       {
+  //         autoAlpha: 0,
+  //         duration: 2,
+  //       },
+  //       {
+  //         autoAlpha: 1,
+  //         duration: 2,
+  //       }
+  //     )
+  //     .fromTo(
+  //       ".value_1",
+  //       {
+  //         left: "-65vw",
+  //       },
+  //       {
+  //         left: "-58.6vw",
+  //       },
+  //       "-=.8"
+  //     )
+  //     .fromTo(
+  //       ".div_3",
+  //       {
+  //         autoAlpha: 0,
+  //         duration: 2,
+  //       },
+  //       {
+  //         autoAlpha: 1,
+  //         duration: 2,
+  //       }
+  //     )
+  //     //
+  //     .fromTo(
+  //       ".div_2",
+  //       {
+  //         autoAlpha: 1,
+  //         duration: 2,
+  //       },
+  //       {
+  //         autoAlpha: 0,
+  //         duration: 2,
+  //       },
+  //       "-=.4"
+  //     )
+  //     .fromTo(
+  //       ".value_1",
+  //       {
+  //         left: "-58.6vw",
+  //       },
+  //       {
+  //         left: "-45vw",
+  //       }
+  //     )
+  //     .fromTo(
+  //       ".div_4",
+  //       {
+  //         autoAlpha: 0,
+  //         duration: 2,
+  //       },
+  //       {
+  //         autoAlpha: 1,
+  //         duration: 2,
+  //       }
+  //     )
+  //     .fromTo(
+  //       ".div_3",
+  //       {
+  //         autoAlpha: 1,
+  //         duration: 2,
+  //       },
+  //       {
+  //         autoAlpha: 0,
+  //         duration: 2,
+  //       },
+  //       "-=.8"
+  //     );
+  // }, []);
+
   return (
     <>
       <div className="container" ref={containerRef}></div>
@@ -199,10 +362,12 @@ const FifthSection = () => {
                 className="div_2 text-white position-absolute"
                 style={{ left: `${leftSpacing - 10}px` }}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-                velit id eligendi possimus. Consequuntur officia suscipit
-                molestiae earum, quis placeat quo perspiciatis beatae rem veniam
-                corporis eius ipsa, repellendus necessitatibus!
+                <p className="font_2xl fw-normal text-white mb-3">
+                  Sviluppiamo la nostra piattaforma proprietaria tramite
+                  tecnologia A.I. Nello stesso anno entriamo a far parte di
+                  Facebook Success Case per lo sviluppo di chatbot sulla
+                  piattaforma Messenger
+                </p>
               </div>
               <div
                 className="div_3 text-white position-absolute"

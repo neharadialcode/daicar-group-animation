@@ -344,10 +344,9 @@
 .small_icon_1 {
   max-width: 2000px;
   top: 50%;
-  transform: translateY(-50%);
   left: 0;
+  transform: translateY(-41%);
 }
-
 .line_with_dot {
   height: 5px;
   background-color: white;
