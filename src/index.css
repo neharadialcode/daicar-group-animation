@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 html,
 body {
   font-family: Mundial-regular;
@@ -108,6 +109,7 @@ body {
     --font-8xl: 39px;
   }
 }
+
 @media (max-width: 1399.98px) {
   :root {
     --font-xsm: 12px;
@@ -122,6 +124,7 @@ body {
     --font-6xl: 36px;
   }
 }
+
 @media (max-width: 1199.98px) {
   :root {
     --font-xsm: 13px;
@@ -137,6 +140,7 @@ body {
     --font-8xl: 32px;
   }
 }
+
 @media (max-width: 991.98px) {
   :root {
     --font-xsm: 9px;
@@ -153,6 +157,7 @@ body {
     --font-8xl: 40px;
   }
 }
+
 @media (max-width: 767.98px) {
   :root {
     --font-xsm: 14px;
@@ -169,6 +174,7 @@ body {
     --font-8xl: 35px;
   }
 }
+
 @media (max-width: 575.98px) {
   :root {
     --font-xsm: 9px;
@@ -240,6 +246,7 @@ body {
 .bg_light_white {
   background-color: var(--bg-light-white);
 }
+
 .bg_gray {
   background-color: var(--bg-gray);
 }
@@ -252,6 +259,7 @@ body {
 .color_gray {
   color: var(--color-gray);
 }
+
 .color_dark_gray {
   color: var(--color-dark-gray);
 }
@@ -259,6 +267,7 @@ body {
 .color_light_gray {
   color: var(--color-light-gray);
 }
+
 .color_light_green {
   color: var(--color-light-green);
 }
@@ -277,18 +286,23 @@ body {
   top: 80%;
   right: 18%;
 }
+
 .noi_btn {
   padding: 5px 24px 12px !important;
 }
+
 .fifth_main .div_1 {
   max-width: 523px !important;
 }
+
 .the_time_line {
   max-width: 1003px;
 }
+
 .timeline_slide_content {
   max-width: 1173px;
 }
+
 .timeline_btn {
   padding: 2px 27px 6px;
   border: 2px solid #53849980;
@@ -297,20 +311,24 @@ body {
   cursor: pointer !important;
   transition: all 0.3s ease-in-out !important;
 }
+
 .pulse:focus,
 .pulse:hover {
   -webkit-animation: pulse 1s;
   animation: pulse 1s;
   box-shadow: 0 0 0 0.7em transparent;
 }
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 #29424d;
   }
 }
+
 .z-10 {
   z-index: 10;
 }
+
 .fifth_main .div_1 p,
 .fifth_main .div_2 p,
 .fifth_main .div_3 p,
@@ -318,37 +336,46 @@ body {
   letter-spacing: -0.01em;
   line-height: 147%;
 }
+
 .fifth_main .div_2 {
   max-width: 550px !important;
 }
+
 .fifth_main .div_3 {
   max-width: 600px !important;
-  top: 364px !important ;
+  top: 364px !important;
 }
+
 .fifth_main .div_3 img {
   max-width: 289.29px !important;
 }
+
 .fifth_main .div_4 {
   top: 49% !important;
   right: 7% !important;
 }
 
 @media (min-width: 1600px) {
+
   .roadmap_icon_2,
   .roadmap_icon_1 {
     max-width: 600px !important;
   }
+
   .roadmap_col_content {
     max-width: 660px !important;
   }
+
   .roadmap_text_1 h4 {
     max-width: 820px;
   }
+
   .roadmap_text_2 h4,
   .roadmap_text_3 h4 {
     max-width: 840px;
   }
 }
+
 @media (max-width: 1400px) {
   .roadmapline_set {
     left: -220px;
@@ -356,16 +383,20 @@ body {
     width: 100% !important;
   }
 }
+
 @media (max-width: 1399.98px) {
+
   .roadmap_icon_2,
   .roadmap_icon_1 {
     max-width: 370px;
   }
 }
+
 @media (max-width: 1199.98px) {
   .carplanner_cards {
     width: 420px;
   }
+
   .carplanner_logo {
     max-width: 350px;
   }
@@ -374,26 +405,32 @@ body {
     top: -5%;
     left: -5%;
   }
+
   .small_icon_arrow_2 {
     top: 64%;
     right: 30%;
   }
+
   .roadmap_icon_1,
   .roadmap_icon_2 {
     max-width: 300px !important;
   }
+
   .small_icon_arrow svg,
   .small_icon_arrow_2 svg {
     max-width: 42px;
   }
 }
+
 @media (max-width: 991.98px) {
   .carplanner_cards {
     width: 350px;
   }
+
   .carplanner_logo {
     max-width: 280px;
   }
+
   .roadmapline_set {
     left: -100px;
     z-index: 1;
@@ -404,59 +441,73 @@ body {
     top: 65%;
     right: 25%;
   }
+
   .small_icon_arrow {
     left: 0%;
   }
+
   .forth_section {
     background-color: var(--color-light-green_2);
     height: 100% !important;
   }
+
   .roadmap_icon_1,
   .roadmap_icon_2 {
     display: none !important;
   }
+
   .roadmap_para {
     max-width: 621px;
     margin: auto;
     padding: 16px 19px 0px 52px;
   }
+
   .custom_top_spacing {
-    margin-top: 32vh;
+    margin-top: 12vh;
   }
+
   .small_icon_arrow_2 {
     top: unset;
     right: -20px;
     bottom: -40px;
   }
+
   .small_icon_arrow svg,
   .small_icon_arrow_2 svg {
     max-width: 52px;
   }
 }
+
 @media (max-width: 767.98px) {
   .roadmap_para {
     max-width: 100%;
   }
 }
+
 @media (max-width: 575.98px) {
   .small_icon_arrow {
     top: 0%;
     left: -2%;
   }
+
   .small_icon_arrow {
     width: 70%;
   }
+
   .roadmap_para {
     padding: 16px 14px 0px 16px;
   }
+
   .roadmap_para h4 {
     line-height: 142%;
   }
+
   .small_icon_arrow svg,
   .small_icon_arrow_2 svg {
     max-width: 24px;
   }
+
   .custom_top_spacing {
-    margin-top: 16vh;
+    margin-top: unset;
   }
 }

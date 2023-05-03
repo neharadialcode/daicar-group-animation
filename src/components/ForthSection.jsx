@@ -12,7 +12,7 @@ const ForthSection = () => {
   useEffect(() => {
     let media = gsap.matchMedia();
     media.add("(min-width: 1400px)", () => {
-      let secondSection2 = gsap.timeline({
+      let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".forth_section",
           start: "top top",
@@ -22,7 +22,16 @@ const ForthSection = () => {
           pinSpacing: false,
         },
       });
-      secondSection2
+      secondSection4
+        .fromTo(
+          ".forth_heading",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -141,7 +150,7 @@ const ForthSection = () => {
         );
     });
     media.add("(min-width: 992px) and (max-width:1399.98px)", () => {
-      let secondSection2 = gsap.timeline({
+      let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".forth_section",
           start: "top top",
@@ -151,7 +160,16 @@ const ForthSection = () => {
           pinSpacing: false,
         },
       });
-      secondSection2
+      secondSection4
+        .fromTo(
+          ".forth_heading",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -171,6 +189,9 @@ const ForthSection = () => {
           },
           "-=.5"
         )
+        .to(".forth_section", {
+          background: "#b5efcb",
+        })
         .fromTo(
           ".roadmap_text_1",
           {
@@ -266,6 +287,31 @@ const ForthSection = () => {
           "-=.5"
         );
     });
+    media.add("(max-width:991.98px)", () => {
+      let secondSection4 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".forth_section",
+          start: "top 30%",
+          end: "bottom top",
+        },
+      });
+      secondSection4
+        .from(".founder_1", {
+          xPercent: "-100",
+          duration: 1,
+          stagger: 0.3,
+        })
+        .from(".founder_2", {
+          xPercent: "100",
+          duration: 1,
+          stagger: 0.3,
+        })
+        .from(".founder_3", {
+          xPercent: "-100",
+          duration: 1,
+          stagger: 0.3,
+        });
+    });
   }, []);
 
   return (
@@ -273,18 +319,18 @@ const ForthSection = () => {
       <div className="position-relative h-100">
         <img className="roadmap_icon_1" src={roadmapImg1} alt="roadmapImg1" />
         <img className="roadmap_icon_2" src={roadmapImg2} alt="roadmapImg1" />
-        {/* <div className="top_space_business_text top_heading_text text-center pt-5 mt-5 mt-lg-0 px-4 px-lg-0">
-          <p className="font_6xl text-white pt-5 pt-lg-0 px-5 px-lg-0 mx-5 mx-lg-0">
+        <div className="top_space_business_text top_heading_text text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading">
+          <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
             <span className="hero_btn noi_btn bg_light_green mx-2">tempo</span>
             <span className="text-black">.</span>
           </p>
-        </div> */}
+        </div>
 
-        <div className="container h-100 py-5 py-sm-0">
-          <div className="row justify-content-lg-end align-items-center my-5 my-lg-0 py-5 py-sm-0">
+        <div className="container h-100 pb-5 pb-lg-0">
+          <div className="row justify-content-lg-end align-items-center mb-sm-5 my-lg-0">
             <div className="col-6 roadmap_col_content d-none d-lg-block">
               <div className="roadmap_text_1 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
@@ -299,7 +345,7 @@ const ForthSection = () => {
                     di opportunità di business.
                   </h4>
                 </div>
-                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3 px-lg-4">
                   <img
                     className="founder_img"
                     src={bigFounder}
@@ -327,7 +373,7 @@ const ForthSection = () => {
                     personalizzato verso risultati concreti e misurabili.
                   </h4>
                 </div>
-                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3 px-lg-4">
                   <img
                     className="founder_img"
                     src={bigFounder2}
@@ -355,7 +401,7 @@ const ForthSection = () => {
                     incrementare il ROI delle azioni di lead generation.
                   </h4>
                 </div>
-                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3">
+                <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3 px-lg-4">
                   <img
                     className="founder_img"
                     src={bigFounder3}
@@ -371,7 +417,7 @@ const ForthSection = () => {
               </div>
             </div>
 
-            <div className="col-12 col-md-11 d-lg-none custom_top_spacing mb-4 mb-sm-0">
+            <div className="col-12 d-lg-none custom_top_spacing mb-4 mb-sm-0 founder_1">
               <div className="position-relative roadmap_para">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
@@ -400,7 +446,7 @@ const ForthSection = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 d-lg-none py-5 my-4">
+            <div className="col-12 d-lg-none py-sm-5 my-sm-4 founder_2">
               <div className="position-relative roadmap_para">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
@@ -429,7 +475,7 @@ const ForthSection = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 d-lg-none mt-4 mt-sm-0">
+            <div className="col-12 d-lg-none mt-4 mt-sm-0 founder_3">
               <div className="position-relative roadmap_para">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />

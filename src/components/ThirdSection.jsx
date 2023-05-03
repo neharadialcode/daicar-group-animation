@@ -13,10 +13,10 @@ const ThirdSection = () => {
   useEffect(() => {
     let third = gsap.matchMedia();
     third.add("(min-width:1500px)", () => {
-      let secondSection2 = gsap.timeline({
+      let secondSection3 = gsap.timeline({
         scrollTrigger: {
           trigger: ".third_section",
-          start: "top -10%",
+          start: "top top",
           end: "bottom top",
           scrub: 1,
           pin: true,
@@ -24,7 +24,7 @@ const ThirdSection = () => {
           markers: true,
         },
       });
-      secondSection2
+      secondSection3
         .to(".big_icon", {
           top: "-12%",
         })
@@ -173,12 +173,15 @@ const ThirdSection = () => {
           "+=.5"
         )
         .to(".big_icon", {
-          top: "-39%",
+          top: "-20%",
           scale: "1",
+        })
+        .to(".third_heading", {
+          autoAlpha: 0,
         });
     });
     third.add("(min-width:992px) and (max-width:1499.98px)", () => {
-      let secondSection2 = gsap.timeline({
+      let secondSection3 = gsap.timeline({
         scrollTrigger: {
           trigger: ".third_section",
           start: "top top",
@@ -188,7 +191,7 @@ const ThirdSection = () => {
           pinSpacing: false,
         },
       });
-      secondSection2
+      secondSection3
         .to(".big_icon", {
           top: "-12%",
         })
@@ -335,10 +338,13 @@ const ThirdSection = () => {
             autoAlpha: 0,
           },
           "+=.5"
-        );
+        )
+        .to(".third_heading", {
+          autoAlpha: 0,
+        });
     });
-    third.add("(min-width:320px) and (max-width:991.98px)", () => {
-      let secondSection2 = gsap.timeline({
+    third.add("(max-width:991.98px)", () => {
+      let secondSection3 = gsap.timeline({
         scrollTrigger: {
           trigger: ".third_section",
           start: "top top",
@@ -346,7 +352,7 @@ const ThirdSection = () => {
           // scrub: 1,
         },
       });
-      secondSection2
+      secondSection3
         .from(".business_tab_1", {
           xPercent: "-150",
           stagger: 0.3,
@@ -384,7 +390,7 @@ const ThirdSection = () => {
             alt="arrow-tab-img"
           />
         </div>
-        <div className="top_space_business_text text-center pt-lg-5 mt-lg-0 px-4 px-lg-0 z_1">
+        <div className="top_space_business_text text-center pt-lg5 px-4 px-lg-0 z_1 third_heading">
           <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
             Progettiamo soluzioni{" "}
             <span className="hero_btn bg_light_green">personalizzate</span> per
