@@ -321,6 +321,17 @@ body {
 .fifth_main .div_2 {
   max-width: 550px !important;
 }
+.fifth_main .div_3 {
+  max-width: 600px !important;
+  top: 364px !important ;
+}
+.fifth_main .div_3 img {
+  max-width: 289.29px !important;
+}
+.fifth_main .div_4 {
+  top: 49% !important;
+  right: 7% !important;
+}
 
 @media (min-width: 1600px) {
   .roadmap_icon_2,
