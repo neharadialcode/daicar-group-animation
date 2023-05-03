@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import businessOne from "../assets/images/png/business-1.png";
 import businessTwo from "../assets/images/png/business-2.png";
 import businessThree from "../assets/images/png/business-3.png";
+import businessFour from "../assets/images/png/business-4.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
@@ -15,11 +16,12 @@ const ThirdSection = () => {
       let secondSection2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".third_section",
-          start: "top top",
+          start: "top -10%",
           end: "bottom top",
           scrub: 1,
           pin: true,
           pinSpacing: false,
+          markers: true,
         },
       });
       secondSection2
@@ -375,7 +377,14 @@ const ThirdSection = () => {
           src={iconImg}
           alt="iconImg"
         />
-        <div className="top_space_business_text text-center pt-lg-5 mt-lg-0 px-4 px-lg-0">
+        <div className="position-absolute d-none d-sm-block d-lg-none">
+          <img
+            className="w-100 small_tab_arrow_img"
+            src={businessTabImg}
+            alt="arrow-tab-img"
+          />
+        </div>
+        <div className="top_space_business_text text-center pt-lg-5 mt-lg-0 px-4 px-lg-0 z_1">
           <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
             Progettiamo soluzioni{" "}
             <span className="hero_btn bg_light_green">personalizzate</span> per
@@ -388,7 +397,7 @@ const ThirdSection = () => {
         <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
           <div className="main_text d-none d-lg-block pb-5">
             <div className="row justify-content-evenly divide_space_text pt5">
-              <div className="col-3 position-relative custom_business_img_height">
+              <div className="col-3 position-relative custom_business_img_height d-flex align-items-center">
                 <img
                   className="w-100 business_img_1 position-absolute"
                   src={businessOne}
@@ -406,7 +415,7 @@ const ThirdSection = () => {
                 />{" "}
                 <img
                   className="w-100 business_img_4 opacity_0 position-absolute"
-                  src={businessTwo}
+                  src={businessFour}
                   alt="business-big-arrow"
                 />
               </div>
@@ -459,11 +468,8 @@ const ThirdSection = () => {
             </div>
           </div>
           <div className="d-lg-none">
-            <div className="position-absolute">
-              <img className="w-100" src={businessTabImg} alt="arrow-tab-img" />
-            </div>
             <div className="business_tab_1">
-              <div className="row justify-content-evenly">
+              <div className="row justify-content-evenly pt-5">
                 <div className="col-8 col-sm-4">
                   <img
                     className="w-100"
@@ -471,7 +477,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-end flex-column pt-4 pt-sm-0">
+                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     Strategie di marketing costruite ad hoc per generare
@@ -490,7 +496,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-end flex-column pt-4 pt-sm-0">
+                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">
                     LANDING CONVERSAZIONALE
                   </h3>
@@ -513,7 +519,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-end flex-column pt-4 pt-sm-0">
+                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">
                     {" "}
                     VALIDAZIONE AUTOMATICA DEI DATI
@@ -535,7 +541,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-end flex-column pt-4 pt-sm-0">
+                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     I lead generati vengono sottoposti ad un attento processo di
