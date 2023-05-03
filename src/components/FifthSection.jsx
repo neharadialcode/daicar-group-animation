@@ -362,7 +362,7 @@ const FifthSection = () => {
               </div>
 
               <div
-                className="div_2 text-white position-absolute"
+                className="div_2 text-white position-absolute ps-2"
                 style={{ left: `${leftSpacing - 10}px` }}
               >
                 <p className="font_2xl fw-normal text-white mb-3">
@@ -400,7 +400,7 @@ const FifthSection = () => {
               className="line mt-5"
               style={{ marginLeft: `${leftMargin + 16}px` }}
             ></div> */}
-            <div className="container mt-5">
+            <div className="container mt-5 pt-2">
               <div className="d-flex mx-auto the_time_line">
                 <div className="col-4 line_with_dot line_first "></div>
                 <div ref={secondText} className="col-4 line_with_dot "></div>

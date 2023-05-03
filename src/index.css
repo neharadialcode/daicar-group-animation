@@ -311,6 +311,16 @@ body {
 .z-10 {
   z-index: 10;
 }
+.fifth_main .div_1 p,
+.fifth_main .div_2 p,
+.fifth_main .div_3 p,
+.fifth_main .div_4 p {
+  letter-spacing: -0.01em;
+  line-height: 147%;
+}
+.fifth_main .div_2 {
+  max-width: 550px !important;
+}
 
 @media (min-width: 1600px) {
   .roadmap_icon_2,
