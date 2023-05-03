@@ -259,7 +259,7 @@ const Hero2 = () => {
                 Campagne Generate nel 2022
               </p>
               <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
-                Campaign management flessibile e altamente <br />{" "}
+                Campaign management flessibile <br /> e altamente <br />{" "}
                 personalizzabile sulle criticità di ogni partner.
               </p>
             </div>
