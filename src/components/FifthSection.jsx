@@ -257,7 +257,30 @@ const FifthSection = () => {
         "-=.1"
       )
       .fromTo(
+        ".year_1",
+        {
+          autoAlpha: 1,
+          duration: 2,
+        },
+        {
+          autoAlpha: 0,
+          duration: 2,
+        },
+        "-=.1"
+      )
+      .fromTo(
         ".div_2",
+        {
+          autoAlpha: 0,
+          duration: 2,
+        },
+        {
+          autoAlpha: 1,
+          duration: 2,
+        }
+      )
+      .fromTo(
+        ".year_2",
         {
           autoAlpha: 0,
           duration: 2,
@@ -290,10 +313,34 @@ const FifthSection = () => {
           delay: 1,
         }
       )
+      .fromTo(
+        ".year_3",
+        {
+          autoAlpha: 0,
+          duration: 2,
+          delay: 1,
+        },
+        {
+          autoAlpha: 1,
+          duration: 2,
+          delay: 1,
+        }
+      )
 
       //
       .fromTo(
         ".div_2",
+        {
+          autoAlpha: 1,
+          duration: 2,
+        },
+        {
+          autoAlpha: 0,
+          duration: 2,
+        }
+      )
+      .fromTo(
+        ".year_2",
         {
           autoAlpha: 1,
           duration: 2,
@@ -324,6 +371,17 @@ const FifthSection = () => {
         }
       )
       .fromTo(
+        ".year_4",
+        {
+          autoAlpha: 0,
+          duration: 2,
+        },
+        {
+          autoAlpha: 1,
+          duration: 2,
+        }
+      )
+      .fromTo(
         ".div_3",
         {
           autoAlpha: 1,
@@ -333,7 +391,19 @@ const FifthSection = () => {
           autoAlpha: 0,
           duration: 2,
         },
-        "-=.8"
+        "-=.4"
+      )
+      .fromTo(
+        ".year_3",
+        {
+          autoAlpha: 1,
+          duration: 2,
+        },
+        {
+          autoAlpha: 0,
+          duration: 2,
+        },
+        "-=.4"
       )
       .fromTo(
         ".value_1",
@@ -371,7 +441,6 @@ const FifthSection = () => {
                   automotive
                 </button>
               </div>
-
               <div
                 className="div_2 text-white position-absolute ps-2"
                 style={{ left: `${leftSpacing - 10}px` }}
@@ -432,6 +501,12 @@ const FifthSection = () => {
                 <div className="col-4 line_with_dot line_first "></div>
                 <div ref={secondText} className="col-4 line_with_dot "></div>
                 <div ref={secondText2} className="col-4 line_with_dot "></div>
+                <div className="position-relative w-100">
+                  <p className="timeline_text position-absolute year_1">2015</p>
+                  <p className="timeline_text position-absolute year_2">2018</p>
+                  <p className="timeline_text position-absolute year_3">2022</p>
+                  <p className="timeline_text position-absolute year_4">2023</p>
+                </div>
               </div>
             </div>
           </div>

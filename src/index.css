@@ -80,6 +80,7 @@ body {
   --font-6xl: 40px;
   --font-7xl: 48.18px;
   --font-8xl: 50px;
+  --font-9xl: 128.4px;
   /* =======================color======================= */
   --color-white-off: #edfafb;
   --color-gray: #2d5363;
@@ -362,6 +363,12 @@ body {
 /* .su-di-noi-side-text p {
   transform: rotate(90deg);
 } */
+.timeline_text {
+  font-size: var(--font-9xl);
+  font-weight: 400;
+  color: var(--color-white-off);
+  right: 0;
+}
 
 @media (min-width: 1600px) {
   .roadmap_icon_2,
