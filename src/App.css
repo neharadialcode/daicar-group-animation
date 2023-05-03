@@ -328,7 +328,11 @@
 }
 
 .business_icon_img_2 {
-  top: 65%;
+  top: 30%;
+}
+
+.left_text_forth {
+  top: 70%;
 }
 
 .opacity_0 {
@@ -349,6 +353,7 @@
   left: 0;
   transform: translateY(-41%);
 }
+
 .line_with_dot {
   height: 5px;
   background-color: white;
@@ -405,6 +410,10 @@
 .small_tab_arrow_img {
   height: 155vh;
 }
+.small_tab_arrow_img_forth {
+  height: 110vh;
+}
+
 @media (min-width: 1600px) {
   .icon_2 svg {
     width: 1300px !important;

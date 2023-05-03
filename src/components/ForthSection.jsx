@@ -4,6 +4,8 @@ import roadmapImg2 from "../assets/images/svg/roadmap_img2.png";
 import bigFounder from "../assets/images/png/big-founder-federico-img.png";
 import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
 import bigFounder3 from "../assets/images/png/big-founder-francesca-img.png";
+import lefttextImg from "../assets/images/png/left-text-icon-img.png";
+import smallbgImg from "../assets/images/png/small-bg-forth.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -23,6 +25,15 @@ const ForthSection = () => {
         },
       });
       secondSection4
+        .fromTo(
+          ".left_text_forth",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .fromTo(
           ".forth_heading",
           {
@@ -161,6 +172,15 @@ const ForthSection = () => {
         },
       });
       secondSection4
+        .fromTo(
+          ".left_text_forth",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .fromTo(
           ".forth_heading",
           {
@@ -316,10 +336,17 @@ const ForthSection = () => {
 
   return (
     <div className="vh-100 overflow-hidden forth_section">
-      <div className="position-relative h-100">
+      <div className="position-relative h-100 z_1">
         <img className="roadmap_icon_1" src={roadmapImg1} alt="roadmapImg1" />
         <img className="roadmap_icon_2" src={roadmapImg2} alt="roadmapImg1" />
-        <div className="top_space_business_text top_heading_text text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading">
+        <div className="position-absolute d-none d-sm-block d-lg-none z_negative">
+          <img
+            className="w-100 small_tab_arrow_img_forth"
+            src={smallbgImg}
+            alt="arrow-tab-img"
+          />
+        </div>
+        <div className="top_space_business_text top_heading_text text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading z_1">
           <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
@@ -328,7 +355,9 @@ const ForthSection = () => {
             <span className="text-black">.</span>
           </p>
         </div>
-
+        <div className="position-absolute z-1 end-0 d-none d-lg-block pe-5 left_text_forth">
+          <img src={lefttextImg} alt="business-small-arrow-2" />
+        </div>
         <div className="container h-100 pb-5 pb-lg-0">
           <div className="row justify-content-lg-end align-items-center mb-sm-5 my-lg-0">
             <div className="col-6 roadmap_col_content d-none d-lg-block">
