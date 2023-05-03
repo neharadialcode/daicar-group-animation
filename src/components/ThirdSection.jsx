@@ -7,6 +7,7 @@ import businessTwo from "../assets/images/png/business-2.png";
 import businessThree from "../assets/images/png/business-3.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
+import businessTabImg from "../assets/images/png/arrow-tab-img.png";
 const ThirdSection = () => {
   useEffect(() => {
     let third = gsap.matchMedia();
@@ -385,7 +386,7 @@ const ThirdSection = () => {
           <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
         </div>
         <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
-          <div className="main_text d-none d-lg-block">
+          <div className="main_text d-none d-lg-block pb-5">
             <div className="row justify-content-evenly divide_space_text pt5">
               <div className="col-3 position-relative custom_business_img_height">
                 <img
@@ -458,6 +459,9 @@ const ThirdSection = () => {
             </div>
           </div>
           <div className="d-lg-none">
+            <div className="position-absolute">
+              <img className="w-100" src={businessTabImg} alt="arrow-tab-img" />
+            </div>
             <div className="business_tab_1">
               <div className="row justify-content-evenly">
                 <div className="col-8 col-sm-4">
