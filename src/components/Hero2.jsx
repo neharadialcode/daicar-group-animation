@@ -3,7 +3,10 @@ import { Icon1, Icon2, Icon3, Icon4 } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img from "../Free_iPad_Mockup_1 1.png";
-import iPadSmallImg from "../assets/images/png/small-ipad.png";
+// import iPadSmallImg from "../assets/images/png/small-ipad.png";
+// import iPadSmallImg from "../assets/images/png/hero-ipad-mockup-img.png";
+import iPadSmallImg from "../assets/images/png/hero-ipad-mockupImg.png";
+
 const Hero2 = () => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
@@ -194,13 +197,8 @@ const Hero2 = () => {
         <div className="heading">
           <h2 className="ff_mundial_regular font_6xl mb-0">
             Il futuro dei tuoi
-            <span
-              className="hero_btn mx-1 d-inline-block
-            "
-            >
-              vendite
-            </span>
-            è digitale
+            <span className="hero_btn mx-1 d-inline-block">vendite</span>è
+            digitale
           </h2>
         </div>
         <div className="icon_1">
@@ -223,7 +221,7 @@ const Hero2 = () => {
               alt="i_pad_img"
             />
             <img
-              className="w-100 d-sm-none"
+              className="ipad_image d-sm-none"
               src={iPadSmallImg}
               alt="i_pad_img2"
             />

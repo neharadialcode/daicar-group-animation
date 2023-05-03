@@ -332,6 +332,11 @@ body {
   top: 49% !important;
   right: 7% !important;
 }
+.ipad_image {
+  width: 160vw;
+  height: 156vh;
+  margin-left: -20px;
+}
 
 @media (min-width: 1600px) {
   .roadmap_icon_2,
