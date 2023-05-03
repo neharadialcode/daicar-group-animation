@@ -331,6 +331,13 @@ const ForthSection = () => {
           duration: 1,
           stagger: 0.3,
         });
+      // .to(
+      //   ".business_left_icon",
+      //   {
+      //     autoAlpha: 0,
+      //   },
+      //   "+=.5"
+      // );
     });
   }, []);
 

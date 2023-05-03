@@ -21,7 +21,6 @@ const ThirdSection = () => {
           scrub: 1,
           pin: true,
           pinSpacing: false,
-          markers: true,
         },
       });
       secondSection3
