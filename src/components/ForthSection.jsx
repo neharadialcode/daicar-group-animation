@@ -4,6 +4,7 @@ import roadmapImg2 from "../assets/images/svg/roadmap_img2.png";
 import bigFounder from "../assets/images/png/big-founder-federico-img.png";
 import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
 import bigFounder3 from "../assets/images/png/big-founder-francesca-img.png";
+import SideArrowIcon from "../assets/images/png/side-arrow-icon.svg";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -311,6 +312,13 @@ const ForthSection = () => {
           duration: 1,
           stagger: 0.3,
         });
+      // .to(
+      //   ".business_left_icon",
+      //   {
+      //     autoAlpha: 0,
+      //   },
+      //   "+=.5"
+      // );
     });
   }, []);
 
@@ -328,7 +336,10 @@ const ForthSection = () => {
             <span className="text-black">.</span>
           </p>
         </div>
-
+        {/* <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon su-di-noi-side-text">
+          <p className="font_sm fw-normal color_white_off">Su di noi</p>
+          <img src={SideArrowIcon} alt="side_arrow_img" />
+        </div> */}
         <div className="container h-100 pb-5 pb-lg-0">
           <div className="row justify-content-lg-end align-items-center mb-sm-5 my-lg-0">
             <div className="col-6 roadmap_col_content d-none d-lg-block">

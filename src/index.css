@@ -359,9 +359,11 @@ body {
   height: 156vh;
   margin-left: -20px;
 }
+/* .su-di-noi-side-text p {
+  transform: rotate(90deg);
+} */
 
 @media (min-width: 1600px) {
-
   .roadmap_icon_2,
   .roadmap_icon_1 {
     max-width: 600px !important;
@@ -390,7 +392,6 @@ body {
 }
 
 @media (max-width: 1399.98px) {
-
   .roadmap_icon_2,
   .roadmap_icon_1 {
     max-width: 370px;
