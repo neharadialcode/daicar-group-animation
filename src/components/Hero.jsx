@@ -6,6 +6,7 @@ import img from "../Free_iPad_Mockup_1 1.png";
 // import iPadSmallImg from "../assets/images/png/small-ipad.png";
 // import iPadSmallImg from "../assets/images/png/hero-ipad-mockup-img.png";
 import iPadSmallImg from "../assets/images/png/hero-ipad-mockupImg.png";
+import Header from "./Header";
 
 const Hero = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -191,82 +192,93 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="main_div hero_bg ">
-      <div className="value">
-        <div className="bg_green"></div>
-        <div className="heading hero_section_heading">
-          <h2 className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01">
-            Il futuro dei tuoi
-            <span className="d-inline-block hero_heading_btn mx-3">
-              vendite
-            </span>
-            è digitale
-          </h2>
-        </div>
-        <div className="icon_1">
-          <Icon1 />
-        </div>
-        <div className="icon_2">
-          <Icon2 className="w-100" />
-        </div>
-        <div className="icon_3">
-          <Icon3 />
-        </div>
-        <div className="icon_4">
-          <Icon4 />
-        </div>
-        <div className="second_div">
-          <div className="i_pad_img">
-            <img
-              className="w-100 d-none d-sm-block"
-              src={img}
-              alt="i_pad_img"
-            />
-            <img
-              className="ipad_image d-sm-none"
-              src={iPadSmallImg}
-              alt="i_pad_img2"
-            />
-          </div>
-          <div className="w-100 d-flex flex-column justify-content-center second_section_text align-items-center text-white vh-100 ">
-            <div className="text_div">
-              <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
-                Il futuro dei tuoi&nbsp;
-                <span className="hero_btn mx-2 d-inline-block">vendite</span> è
-                digitale
-              </h2>
-              <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
-                200.000
-              </h3>
-              <p className="font_4xl color_white_off fw-normal text-center  ">
-                Lead Qualificati nel 2022
-              </p>
-              <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
-                Daicar aiuta a far crescere la tua azienda, <br /> creando
-                contatti e generando vendite
-              </p>
+    <>
+      <div className="bg_dark_gray">
+        <Header />
+        <div className="main_div hero_bg ">
+          <div className="value">
+            <div className="bg_green"></div>
+            <div className="heading">
+              <div className="hero_section_heading">
+                <h2 className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01">
+                  Il futuro dei tuoi
+                  <span className="d-inline-block hero_heading_btn mx-3">
+                    vendite
+                  </span>
+                  è digitale
+                </h2>
+              </div>
             </div>
-            <div className="text_div2">
-              <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
-                Il futuro delle tue&nbsp;
-                <span className="hero_btn mx-2 d-inline-block">vendite</span> è
-                digitale
-              </h2>
-              <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
-                10.000
-              </h3>
-              <p className="font_4xl color_white_off fw-normal text-center  ">
-                Campagne Generate nel 2022
-              </p>
-              <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
-                Campaign management flessibile <br /> e altamente <br />{" "}
-                personalizzabile sulle criticità di ogni partner.
-              </p>
+            <div className="icon_1">
+              <Icon1 />
+            </div>
+            <div className="icon_2">
+              <Icon2 className="w-100" />
+            </div>
+            <div className="icon_3">
+              <Icon3 />
+            </div>
+            <div className="icon_4">
+              <Icon4 />
+            </div>
+            <div className="second_div">
+              <div className="i_pad_img">
+                <img
+                  className="w-100 d-none d-sm-block"
+                  src={img}
+                  alt="i_pad_img"
+                />
+                <img
+                  className="ipad_image d-sm-none"
+                  src={iPadSmallImg}
+                  alt="i_pad_img2"
+                />
+              </div>
+              <div className="w-100 d-flex flex-column justify-content-center second_section_text align-items-center text-white vh-100 ">
+                <div className="text_div">
+                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
+                    Il futuro dei tuoi&nbsp;
+                    <span className="hero_btn mx-2 d-inline-block">
+                      vendite
+                    </span>{" "}
+                    è digitale
+                  </h2>
+                  <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
+                    200.000
+                  </h3>
+                  <p className="font_4xl color_white_off fw-normal text-center  ">
+                    Lead Qualificati nel 2022
+                  </p>
+                  <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
+                    Daicar aiuta a far crescere la tua azienda, <br /> creando
+                    contatti e generando vendite
+                  </p>
+                </div>
+                <div className="text_div2">
+                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
+                    Il futuro delle tue&nbsp;
+                    <span className="hero_btn mx-2 d-inline-block">
+                      vendite
+                    </span>{" "}
+                    è digitale
+                  </h2>
+                  <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
+                    10.000
+                  </h3>
+                  <p className="font_4xl color_white_off fw-normal text-center  ">
+                    Campagne Generate nel 2022
+                  </p>
+                  <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
+                    Campaign management flessibile <br /> e altamente <br />{" "}
+                    personalizzabile sulle criticità di ogni partner.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

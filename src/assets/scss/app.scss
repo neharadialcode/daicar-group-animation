@@ -727,9 +727,7 @@ $background-color_3: black;
 }
 
 .hero_section_heading {
-  // height: calc(100vh - 148px) !important;
-  height: 100vh !important;
-  z-index: 10;
+  transform: translateY(-148px);
 }
 .hero_heading_btn {
   font-size: var(--font-5xl) !important;
