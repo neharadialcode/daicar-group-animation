@@ -22,7 +22,7 @@ function App() {
       <TabsImage />
       <Business />
       <AboutUs />
-      <Timeline />
+      {/* <Timeline /> */}
       {/* <SixthSection /> */}
       <Partner />
       <Crm />
