@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import pagelogo from "../assets/images/svg/page-logo.svg";
 import { ToggleIcon } from "./Icons";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Header = () => {
   const [navShow, setNavShow] = useState(false);
@@ -11,10 +13,20 @@ const Header = () => {
     document.body.classList.remove("overflow-hidden");
     document.body.classList.remove("vh-100");
   }
+
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.from(".header_section", {
+      x: "-2%",
+      y: "-100%",
+      duration: 1.7,
+    });
+  }, []);
+
   return (
     <section className="bg_navbar">
       <div className="container-lg common_container py-2 py-lg-0">
-        <div className="d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 py-lg-5 navbar_links">
+        <div className="header_section d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 py-lg-5 navbar_links">
           <a href="#">
             <img
               className="logo_width logo_md_100"
@@ -77,7 +89,6 @@ const Header = () => {
             </button>
           </div>
         </div>
-
         <div className="d-lg-none d-flex navbar_overlay_links">
           <div className={` ${navShow ? "nav-fix nav_bg" : "fix-navbar"}`}>
             <ul className="ps-0 mb-0 d-flex flex-column  align-items-center  list-unstyled gap-4">
