@@ -84,14 +84,14 @@ const Header = () => {
             >
               Sentiamoci
             </a>
-            <button className="navbar_btn font-normal font_2xl color_gray ms-xl-4">
+            <button className="navbar_btn font-normal font_2xl color_dark_gray ms-xl-4">
               chat
             </button>
           </div>
         </div>
         <div className="d-lg-none d-flex navbar_overlay_links">
           <div className={` ${navShow ? "nav-fix nav_bg" : "fix-navbar"}`}>
-            <ul className="ps-0 mb-0 d-flex flex-column  align-items-center  list-unstyled gap-4">
+            <ul className="ps-0 mb-0 d-flex flex-column align-items-center list-unstyled gap-4">
               <a
                 onClick={() => setNavShow(false)}
                 className="btn_close_position position-absolute"
@@ -156,7 +156,7 @@ const Header = () => {
               >
                 Sentiamoci
               </a>
-              <button className="navbar_btn font-normal font_2xl color_gray mt-2 mt-sm-4">
+              <button className="navbar_btn font-normal font_2xl color_dark_gray mt-2 mt-sm-4">
                 chat
               </button>
             </ul>

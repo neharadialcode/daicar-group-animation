@@ -194,11 +194,13 @@ const Hero = () => {
     <div className="main_div hero_bg ">
       <div className="value">
         <div className="bg_green"></div>
-        <div className="heading">
-          <h2 className="ff_mundial_regular font_6xl mb-0">
+        <div className="heading hero_section_heading">
+          <h2 className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01">
             Il futuro dei tuoi
-            <span className="hero_btn mx-1 d-inline-block">vendite</span>è
-            digitale
+            <span className="d-inline-block hero_heading_btn mx-3">
+              vendite
+            </span>
+            è digitale
           </h2>
         </div>
         <div className="icon_1">
