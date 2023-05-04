@@ -6,6 +6,7 @@ import img from "../Free_iPad_Mockup_1 1.png";
 // import iPadSmallImg from "../assets/images/png/small-ipad.png";
 // import iPadSmallImg from "../assets/images/png/hero-ipad-mockup-img.png";
 import iPadSmallImg from "../assets/images/png/hero-ipad-mockupImg.png";
+import iPadFrameimg from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import Header from "./Header";
 
 const Hero = () => {
@@ -225,8 +226,13 @@ const Hero = () => {
             <div className="second_div">
               <div className="i_pad_img ipad_frame">
                 <img
-                  className="w-100 d-none d-sm-block"
+                  className="w-100 d-none d-lg-block"
                   src={img}
+                  alt="i_pad_img"
+                />
+                <img
+                  className="w-100 d-none d-sm-block d-lg-none"
+                  src={iPadFrameimg}
                   alt="i_pad_img"
                 />
                 <img
