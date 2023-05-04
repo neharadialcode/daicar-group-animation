@@ -1,4 +1,3 @@
-
 /* HEADER-CSS */
 @-webkit-keyframes navbar_btn {
   0% {
@@ -133,7 +132,7 @@
     color: #7ee49c;
   }
   transition: all 500ms ease-in-out;
-} 
+}
 .sentia_link {
   transition: all 500ms ease-in-out;
   letter-spacing: -0.01em;
@@ -144,6 +143,31 @@
 .white_space {
   white-space: nowrap;
 }
+// =====
+@media (min-width: 1200px) {
+  .navbar_links .font_sm,
+  .navbar_btn {
+    font-size: 16px !important;
+  }
+  .common_gap {
+    gap: 40px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .navbar_links.font_sm {
+    font-size: 14px !important;
+  }
+  .navbar_btn {
+    width: 87px;
+    height: 42px;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1399.98px) {
+  .common_container {
+    max-width: 1280px !important;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .parliamone {
     &::after {
