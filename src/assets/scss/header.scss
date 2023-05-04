@@ -14,18 +14,19 @@
 }
 
 .bg_navbar {
-  background: #2d5363;
+  background: var(--color-gray);
 }
 .navbar_btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 7px 24px;
-  max-width: 101px;
-  min-height: 52px;
+  /* padding: 7px 24px; */
+  padding: 4px 24px 10px;
+  width: 97px;
+  height: 52px;
   background: rgba(126, 228, 156, 0.5);
-  border: 1px solid #edfafb;
+  border: 1px solid var(--color-white-off);
   border-radius: 10px;
   transition: all 300ms linear;
   &:hover {
@@ -69,7 +70,7 @@
   position: absolute;
   transition: all 700ms ease-in-out !important;
   display: flex;
-  background: #2d5363 !important;
+  background: var(--color-gray) !important;
   align-items: center;
   justify-content: center;
   opacity: 100%;
@@ -83,23 +84,23 @@
   width: 100%;
   transition: all 700ms ease-in-out !important;
   display: flex;
-  background: #2d5363 !important;
+  background: var(--color-gray) !important;
   align-items: center;
   justify-content: center;
   opacity: 100%;
   z-index: 12 !important;
 }
 .nav_bg {
-  background: #2d5363 !important;
+  background: var(--color-gray) !important;
 }
 .line_black {
   width: 25px;
   height: 2px;
   border-radius: 20px;
-  background-color: #7ee49c;
+  background-color: var(--color-light-green);
   margin-top: 5px;
   margin-bottom: 5px;
-  border: 1.75px solid #7ee49c;
+  border: 1.75px solid var(--color-light-green);
 }
 .nav_hover {
   transition: all 400ms ease-in-out;
@@ -132,6 +133,13 @@
     color: #7ee49c;
   }
   transition: all 500ms ease-in-out;
+} */
+.sentia_link {
+  transition: all 500ms ease-in-out;
+  letter-spacing: -0.01em;
+}
+.sentia_link:hover {
+  color: var(--color-light-green);
 }
 .white_space {
   white-space: nowrap;
@@ -154,6 +162,16 @@
     top: 35px;
     right: 25px;
     width: 3%;
+  }
+  .logo_width {
+    max-width: 210px;
+  }
+  .navbar_links .font_sm {
+    font-size: 14px !important;
+  }
+  .navbar_btn {
+    width: 87px;
+    height: 42px;
   }
 }
 @media (max-width: 992.98px) {
@@ -225,7 +243,7 @@
     max-width: 101px;
     min-height: 35px;
     background: rgba(126, 228, 156, 0.5);
-    border: 1px solid #edfafb;
+    border: 1px solid var(--color-white-off);
     border-radius: 10px;
   }
 }
