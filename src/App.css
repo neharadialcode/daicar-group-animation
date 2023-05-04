@@ -344,10 +344,10 @@
 }
 
 .small_icon_1 {
+  transform: translateY(-41%);
   max-width: 2000px;
   top: 50%;
   left: 0;
-  transform: translateY(-41%);
 }
 .line_with_dot {
   height: 5px;
@@ -456,6 +456,9 @@
 @media (max-width: 1499.98px) {
   .m_w_business_text {
     max-width: 400px;
+  }
+  .small_icon_1 {
+    transform: translateY(-40%);
   }
 }
 
