@@ -111,6 +111,10 @@
     padding-left: 12px;
     padding-right: 12px;
   }
+  .business_img_2 {
+    object-fit: contain;
+    max-height: 500px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -222,6 +226,10 @@
   }
   .gap_xxl_66 {
     gap: 66px !important;
+  }
+  .business_img_2 {
+    object-fit: unset;
+    max-height: unset;
   }
 }
 
@@ -418,8 +426,9 @@
   .i_pad_img_2 {
     margin-left: 39px;
   }
-  .icon_5 {
+  .arrow_tabs {
     left: -2%;
+    transform: unset;
   }
   .custom_height_tab_img {
     left: 5% !important;
