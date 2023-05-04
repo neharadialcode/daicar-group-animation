@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import pagelogo from "../assets/images/svg/page-logo.svg";
+import { ToggleIcon } from "./Icons";
 
 const Header = () => {
   const [navShow, setNavShow] = useState(false);
@@ -12,8 +13,8 @@ const Header = () => {
   }
   return (
     <section className="bg_navbar">
-      <div className="container common_container">
-        <div className="d-flex align-items-center justify-content-between py-5 navbar_links">
+      <div className="container common_container py-2 py-lg-0">
+        <div className="d-flex align-items-center justify-content-between py-4 py-lg-5 navbar_links">
           <a href="#">
             <img
               className="logo_width logo_md_100"
@@ -25,9 +26,10 @@ const Header = () => {
             onClick={() => setNavShow(!navShow)}
             className="text-danger px-2 py-1 d-lg-none rounded-3"
           >
+            {/* <div className="line_black"></div>
             <div className="line_black"></div>
-            <div className="line_black"></div>
-            <div className="line_black"></div>
+            <div className="line_black"></div> */}
+            <ToggleIcon />
           </div>
           <ul className="d-flex align-items-center mb-0 d-none d-lg-flex  ps-0 mb-0 common_gap">
             <li>
@@ -75,7 +77,8 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="d-lg-none d-flex">
+
+        <div className="d-lg-none d-flex navbar_overlay_links">
           <div className={` ${navShow ? "nav-fix nav_bg" : "fix-navbar"}`}>
             <ul className="ps-0 mb-0 d-flex flex-column  align-items-center  list-unstyled gap-4">
               <a
@@ -142,7 +145,7 @@ const Header = () => {
               >
                 Sentiamoci
               </a>
-              <button className="navbar_btn font-normal font_2xl color_gray ms-xl-2">
+              <button className="navbar_btn font-normal font_2xl color_gray mt-4">
                 chat
               </button>
             </ul>
