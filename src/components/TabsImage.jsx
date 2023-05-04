@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import img from "../Free_iPad_Mockup_1 1.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Icon5 } from "./Icons";
+import { ChatIcon, Icon5 } from "./Icons";
 import tabImg1 from "../assets/images/png/tab-1.png";
 import tabImg2 from "../assets/images/png/tab-2.png";
 import tabImg3 from "../assets/images/png/tab-3.png";
@@ -67,6 +67,13 @@ const SecondSection = () => {
           },
           "-=.5"
         )
+        .to(
+          ".side_icon",
+          {
+            bottom: "25%",
+          },
+          "-=.5"
+        )
         .fromTo(
           ".icon_5",
           {
@@ -102,13 +109,6 @@ const SecondSection = () => {
           },
           "-=.5"
         )
-        .to(
-          ".side_icon",
-          {
-            bottom: "25%",
-          },
-          "-=.5"
-        )
 
         .fromTo(
           ".card_img_1",
@@ -139,7 +139,7 @@ const SecondSection = () => {
         .to(
           ".side_icon",
           {
-            bottom: "20%",
+            bottom: "30%",
           },
           "-=.5"
         )
@@ -189,7 +189,7 @@ const SecondSection = () => {
         .to(
           ".side_icon",
           {
-            bottom: "30%",
+            bottom: "35%",
           },
           "-=.5"
         )
@@ -350,6 +350,9 @@ const SecondSection = () => {
   }, []);
   return (
     <div className="vh-100 d-flex flex-column justify-content-center tab_parent bg_light_white overflow-hidden z_index2">
+      <div className="position-absolute chat_icon cursor_pointer">
+        <ChatIcon />
+      </div>
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
         <img src={tabRightIcon} alt="tab-right-icon" />
       </div>

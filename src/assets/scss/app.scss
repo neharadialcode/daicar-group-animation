@@ -95,6 +95,7 @@
   max-width: 500px;
   z-index: -1;
   left: 10%;
+  transform: scale(1.7);
 }
 .side_icon {
   right: 0;
@@ -252,6 +253,15 @@
 }
 .custom_business_img_height {
   height: 400px;
+}
+
+.chat_icon {
+  right: 2%;
+  top: 90%;
+}
+
+.cursor_pointer {
+  cursor: pointer;
 }
 .roadmap_icon_2 {
   position: absolute;

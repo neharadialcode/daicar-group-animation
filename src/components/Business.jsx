@@ -9,6 +9,7 @@ import businessFour from "../assets/images/png/business-4.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
+// import { ChatIcon } from "./Icons";
 const ThirdSection = () => {
   useEffect(() => {
     let third = gsap.matchMedia();
@@ -385,6 +386,9 @@ const ThirdSection = () => {
   }, []);
   return (
     <div className="third_section overflow-hidden third_sec_height z_1 pt-5">
+      {/* <div className="position-absolute chat_icon cursor_pointer">
+        <ChatIcon />
+      </div> */}
       <div className="d-flex flex-column justify-content-center">
         <img
           className="w-100 position-absolute big_icon d-none d-lg-block"
