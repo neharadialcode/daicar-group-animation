@@ -13,8 +13,8 @@ const Header = () => {
   }
   return (
     <section className="bg_navbar">
-      <div className="container common_container py-2 py-lg-0">
-        <div className="d-flex align-items-center justify-content-between py-4 py-lg-5 navbar_links">
+      <div className="container-lg common_container py-2 py-lg-0">
+        <div className="d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 py-lg-5 navbar_links">
           <a href="#">
             <img
               className="logo_width logo_md_100"
@@ -24,7 +24,7 @@ const Header = () => {
           </a>
           <div
             onClick={() => setNavShow(!navShow)}
-            className="text-danger px-2 py-1 d-lg-none rounded-3"
+            className="text-danger px-2 py-1 d-lg-none rounded-3 toggle_icon"
           >
             {/* <div className="line_black"></div>
             <div className="line_black"></div>
@@ -145,7 +145,7 @@ const Header = () => {
               >
                 Sentiamoci
               </a>
-              <button className="navbar_btn font-normal font_2xl color_gray mt-4">
+              <button className="navbar_btn font-normal font_2xl color_gray mt-2 mt-sm-4">
                 chat
               </button>
             </ul>
