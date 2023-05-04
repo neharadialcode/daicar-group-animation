@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <section className="bg_navbar">
       <div className="container common_container">
-        <div className="d-flex align-items-center justify-content-between py-5">
+        <div className="d-flex align-items-center justify-content-between py-5 navbar_links">
           <a href="#">
             <img
               className="logo_width logo_md_100"
@@ -65,10 +65,10 @@ const Header = () => {
           </ul>
           <div className="d-flex d-none d-lg-flex align-items-center gap-5">
             <a
-              className="mb-0 ff_mundial_bold font_sm color_white_off parliamone custom_hover_link me-2"
+              className="mb-0 ff_mundial_bold font_sm color_white_off parliamone sentia_link me-2"
               href="#"
             >
-              Parliamone
+              Sentiamoci
             </a>
             <button className="navbar_btn font-normal font_2xl color_gray ms-xl-4">
               chat
@@ -134,13 +134,13 @@ const Header = () => {
                 >
                   Contatti
                 </a>
-              </li>{" "}
+              </li>
               <a
                 onClick={() => setNavShow(false)}
-                className="mb-0 ff_mundial_bold font_lg color_white_off parliamone custom_hover_link"
+                className="mb-0 ff_mundial_bold font_lg color_white_off parliamone sentia_link"
                 href="#"
               >
-                Parliamone
+                Sentiamoci
               </a>
               <button className="navbar_btn font-normal font_2xl color_gray ms-xl-2">
                 chat

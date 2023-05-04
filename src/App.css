@@ -405,6 +405,11 @@
 .small_tab_arrow_img {
   height: 155vh;
 }
+@media (min-width: 1300px) and (max-width: 1399.98px) {
+  .common_container {
+    max-width: 1280px !important;
+  }
+}
 @media (min-width: 1600px) {
   .icon_2 svg {
     width: 1300px !important;
