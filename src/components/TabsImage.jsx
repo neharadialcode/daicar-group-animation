@@ -46,9 +46,9 @@ const SecondSection = () => {
     },
   ];
   useEffect(() => {
-    let second = gsap.matchMedia();
-    second.add("(min-width:768px)", () => {
-      let secondSection = gsap.timeline({
+    let tabImage = gsap.matchMedia();
+    tabImage.add("(min-width:768px)", () => {
+      let tabimageparent = gsap.timeline({
         scrollTrigger: {
           trigger: ".tab_parent",
           start: "top top",
@@ -58,7 +58,7 @@ const SecondSection = () => {
           pinSpacing: false,
         },
       });
-      secondSection
+      tabimageparent
         .to(
           ".active_button_0",
           {
@@ -75,7 +75,7 @@ const SecondSection = () => {
           "-=.5"
         )
         .fromTo(
-          ".icon_5",
+          ".arrow_tabs",
           {
             top: "100%",
           },
@@ -103,7 +103,7 @@ const SecondSection = () => {
           "-=.5"
         )
         .to(
-          ".icon_5",
+          ".arrow_tabs",
           {
             top: "70%",
           },
@@ -130,7 +130,7 @@ const SecondSection = () => {
           "-=.5"
         )
         .to(
-          ".icon_5",
+          ".arrow_tabs",
           {
             top: "60%",
           },
@@ -180,7 +180,7 @@ const SecondSection = () => {
           "-=.5"
         )
         .to(
-          ".icon_5",
+          ".arrow_tabs",
           {
             top: "50%",
           },
@@ -214,7 +214,7 @@ const SecondSection = () => {
           "-=.5"
         )
         .to(
-          ".icon_5",
+          ".arrow_tabs",
           {
             top: "40%",
           },
@@ -237,7 +237,7 @@ const SecondSection = () => {
         )
 
         // .fromTo(
-        //   ".icon_5",
+        //   ".arrow_tabs",
         //   {
         //     top: "40%",
         //   },
@@ -266,14 +266,14 @@ const SecondSection = () => {
           "-=.5"
         )
         // .to(
-        //   ".icon_5",
+        //   ".arrow_tabs",
         //   {
         //     top: "30%",
         //   },
         //   "-=.5"
         // )
         .fromTo(
-          ".icon_5",
+          ".arrow_tabs",
           {
             top: "40%",
           },
@@ -325,8 +325,8 @@ const SecondSection = () => {
       //   autoAlpha: 0,
       // });
     });
-    second.add("(max-width:767.78px)", () => {
-      let secondSection2 = gsap.timeline({
+    tabImage.add("(max-width:767.78px)", () => {
+      let tabimageparent2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".tab_parent",
           start: "top top",
@@ -337,7 +337,7 @@ const SecondSection = () => {
           // markers: true,
         },
       });
-      secondSection2.fromTo(
+      tabimageparent2.fromTo(
         ".small_tab",
         {
           scale: 1.5,
@@ -350,14 +350,14 @@ const SecondSection = () => {
   }, []);
   return (
     <div className="vh-100 d-flex flex-column justify-content-center tab_parent bg_light_white overflow-hidden z_index2">
-      <div className="position-absolute chat_icon cursor_pointer">
+      <div className="position-absolute chat_icon cursor_pointer d-none d-lg-block">
         <ChatIcon />
       </div>
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
         <img src={tabRightIcon} alt="tab-right-icon" />
       </div>
-      <div className="max_width position-relative d-none d-md-block">
-        <div className="icon_5 position-absolute">
+      <div className="max_width_tabs position-relative d-none d-md-block">
+        <div className="arrow_tabs position-absolute">
           <Icon5 />
         </div>
         <img
@@ -366,7 +366,7 @@ const SecondSection = () => {
           alt="img"
         />
         <div className="text-center">
-          <div className="max_width d-flex justify-content-center tabs_wrap pt-5 pt-lg-0">
+          <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-5 pt-lg-0">
             {buttonData.map((obj, index) => (
               <div className="px-2 pt-2" key={index}>
                 <div className={`card_img_${index}`}>
