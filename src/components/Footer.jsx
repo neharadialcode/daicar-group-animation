@@ -12,13 +12,13 @@ function Footer() {
   const getnewyear = new Date().getFullYear();
   return (
     <>
-      <section className="green py-5 min -vh-100 position-relative d-flex align-items-end justify-content-center position-relative">
+      <section className="green pt-5 min -vh-100 position-relative d-flex align-items-end justify-content-center position-relative">
         <img
           className="position-absolute footer_background_set d-none d-xl-block"
           src={footerbg}
           alt="footerbg"
         />
-        <div className="container position-relative z_index2">
+        <div className="container position-relative z_index2 pb-5">
           <div className="row justify-content-md-center justify-content-between gap-md-5 ">
             <div className="col-md-2 col-sm-3 col-4 d-flex flex-column justify-content-between">
               <a href="#">
