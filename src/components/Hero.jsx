@@ -129,6 +129,7 @@ const Hero = () => {
         ".icon_3",
         {
           scale: 0.4,
+          top: "55%",
           left: "50%",
           zIndex: 1,
         },
