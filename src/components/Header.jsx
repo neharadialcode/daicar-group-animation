@@ -18,7 +18,7 @@ const Header = () => {
   useEffect(() => {
     gsap.from(".header_section", {
       x: "-2%",
-      y: "-100%",
+      y: "-80%",
       duration: 1.7,
     });
   }, []);
