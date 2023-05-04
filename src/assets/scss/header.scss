@@ -1,0 +1,231 @@
+
+/* HEADER-CSS */
+@-webkit-keyframes navbar_btn {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes navbar_btn {
+  0% {
+    -webkit-box-shadow: 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+
+.bg_navbar {
+  background: #2d5363;
+}
+.navbar_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 24px;
+  max-width: 101px;
+  min-height: 52px;
+  background: rgba(126, 228, 156, 0.5);
+  border: 1px solid #edfafb;
+  border-radius: 10px;
+  transition: all 300ms linear;
+  &:hover {
+    -webkit-animation: navbar_btn 1s;
+    animation: navbar_btn 1s;
+    -webkit-box-shadow: 0 0 0 0.7em transparent;
+    box-shadow: 0 0 0 0.7em transparent;
+  }
+  &:focus {
+    -webkit-animation: navbar_btn 1s;
+    animation: navbar_btn 1s;
+    -webkit-box-shadow: 0 0 0 0.7em transparent;
+    box-shadow: 0 0 0 0.7em transparent;
+  }
+}
+.header_btn {
+  &:hover {
+    background: rgba(57, 176, 93, 0.5);
+    color: white;
+  }
+}
+.parliamone {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 70.47px;
+    width: 1.69px;
+    border: 1px solid #edfafb;
+    opacity: 0.5;
+    background-color: #edfafb;
+    right: -30px;
+    top: -20px;
+  }
+}
+.nav-fix {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  transition: all 700ms ease-in-out !important;
+  display: flex;
+  background: #2d5363 !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+  z-index: 12 !important;
+}
+.fix-navbar {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  transition: all 700ms ease-in-out !important;
+  display: flex;
+  background: #2d5363 !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+  z-index: 12 !important;
+}
+.nav_bg {
+  background: #2d5363 !important;
+}
+.line_black {
+  width: 25px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #7ee49c;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1.75px solid #7ee49c;
+}
+.nav_hover {
+  transition: all 400ms ease-in-out;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -7px;
+    background-color: #7ee49c;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 500ms ease-in-out;
+  }
+  &:hover {
+    color: #edfafb;
+    &::after {
+      width: 100%;
+    }
+  }
+}
+.btn_close_position {
+  top: 30px;
+  right: 30px;
+  width: 10%;
+}
+.text_white {
+  &:hover {
+    color: #7ee49c;
+  }
+  transition: all 500ms ease-in-out;
+}
+.white_space {
+  white-space: nowrap;
+}
+@media (max-width: 1199.98px) {
+  .parliamone {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 73.47px;
+      width: 1.69px;
+      border: 1px solid #edfafb;
+      opacity: 0.5;
+      background-color: #edfafb;
+      right: -25px;
+      top: -20px;
+    }
+  }
+  .btn_close_position {
+    top: 35px;
+    right: 25px;
+    width: 3%;
+  }
+}
+@media (max-width: 992.98px) {
+  .btn_close_position {
+    top: 35px;
+    right: 50px;
+    width: 3%;
+  }
+  .parliamone {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100.69px;
+      border: 1px solid #edfafb;
+      opacity: 0.5;
+      background-color: #edfafb;
+      right: -5px;
+      top: 35px;
+    }
+  }
+}
+@media (max-width: 768.98px) {
+  .parliamone {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100.69px;
+      border: 1px solid #edfafb;
+      opacity: 0.5;
+      background-color: #edfafb;
+      right: -15px;
+      top: 30px;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .parliamone {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      border: 1px solid transparent;
+      opacity: 0.5;
+      background-color: transparent;
+      right: -30px;
+      top: -20px;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .logo_width {
+    max-width: 175px;
+    min-height: 30.93px;
+  }
+  .btn_close_position {
+    top: 30px;
+    right: 25px;
+    width: 5%;
+  }
+  .navbar_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    max-width: 101px;
+    min-height: 35px;
+    background: rgba(126, 228, 156, 0.5);
+    border: 1px solid #edfafb;
+    border-radius: 10px;
+  }
+}

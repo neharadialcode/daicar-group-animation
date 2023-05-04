@@ -1,0 +1,499 @@
+@media (min-width: 576px) {
+  .common_gap {
+    gap: 19px;
+  }
+  .common_button {
+    background: rgba(126, 228, 156, 0.5);
+    border: 1px solid #edfafb;
+    border-radius: 10px;
+    padding: 8px 6px;
+    font-weight: 400;
+  }
+  .margin {
+    margin-top: 100px;
+  }
+  .margin_top15 {
+    margin-top: 15px !important;
+  }
+  .margin_top36 {
+    margin-top: 24px !important;
+  }
+  .padding_y163 {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+  .padding_y55 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .svg {
+    transition: all 400ms ease-in-out;
+    width: 36px;
+    height: 36px;
+  }
+  .common_width {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .common_gap {
+    gap: 20px;
+  }
+  .common_button {
+    background: rgba(126, 228, 156, 0.5);
+    border: 1px solid #edfafb;
+    border-radius: 10px;
+    padding: 13.3px 34.1px;
+    display: inline-block;
+    font-weight: 400;
+  }
+  .margin {
+    margin-top: 143px;
+  }
+  .Calendly_button {
+    background: rgba(126, 228, 156, 0.5);
+    border: 1px solid #edfafb;
+    border-radius: 10px;
+    padding: 20px 124px;
+    font-weight: 400;
+  }
+  .padding_y163 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .padding_y55 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .svg {
+    transition: all 400ms ease-in-out;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .padding_y163 {
+    padding-top: 163px !important;
+    padding-bottom: 163px !important;
+  }
+  .padding_y55 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .common_gap {
+    gap: 40px;
+  }
+  .svg {
+    transition: all 400ms ease-in-out;
+    width: 46px;
+    height: 46px;
+  }
+  .common_width {
+    width: 42px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .margin_top36 {
+    margin-top: 30px !important;
+  }
+  .padding_y55 {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .common_gap {
+    gap: 55px;
+  }
+  .common_container {
+    max-width: 1475px;
+    margin-left: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .roadmap_icon_2 {
+    max-width: 600px !important;
+  }
+  .roadmap_icon_1 {
+    max-width: 600px !important;
+  }
+  .roadmap_col_content {
+    max-width: 660px !important;
+  }
+  .roadmap_text_1 {
+    h4 {
+      max-width: 820px;
+    }
+  }
+  .roadmap_text_2 {
+    h4 {
+      max-width: 840px;
+    }
+  }
+  .roadmap_text_3 {
+    h4 {
+      max-width: 840px;
+    }
+  }
+  .icon_2 {
+    svg {
+      width: 1300px !important;
+    }
+  }
+  .business_icon_img_2 {
+    top: 35%;
+  }
+  .divide_space_text {
+    justify-content: space-between !important;
+  }
+}
+
+@media (max-width: 1599.98px) {
+  .icon_1 {
+    top: 50% !important;
+    left: 5% !important;
+  }
+  .icon_2 {
+    top: -25% !important;
+    svg {
+      width: 800px !important;
+    }
+  }
+  .icon_3 {
+    top: 30% !important;
+    right: -30px !important;
+    svg {
+      width: 450px !important;
+    }
+  }
+  .custom_height_tab_img {
+    max-height: 565px;
+    width: 70% !important;
+    left: 15% !important;
+  }
+  .i_pad_img_2 {
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 1499.98px) {
+  .m_w_business_text {
+    max-width: 400px;
+  }
+  .small_icon_1 {
+    transform: translateY(-40%);
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .roadmap_icon_2 {
+    max-width: 370px;
+  }
+  .roadmap_icon_1 {
+    max-width: 370px;
+  }
+  .roadmapline_set {
+    left: -220px;
+    z-index: 1;
+    width: 100% !important;
+  }
+  .small_icon {
+    left: 0%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .carplanner_cards {
+    width: 420px;
+  }
+  .carplanner_logo {
+    max-width: 350px;
+  }
+  .small_icon_arrow {
+    top: -5%;
+    left: -5%;
+    svg {
+      max-width: 42px;
+    }
+  }
+  .small_icon_arrow_2 {
+    top: 64%;
+    right: 30%;
+    svg {
+      max-width: 42px;
+    }
+  }
+  .roadmap_icon_1 {
+    max-width: 300px !important;
+  }
+  .roadmap_icon_2 {
+    max-width: 300px !important;
+  }
+  .icon_1 {
+    top: 45% !important;
+    left: 5% !important;
+  }
+  .icon_2 {
+    top: -30% !important;
+    svg {
+      width: 650px !important;
+    }
+  }
+  .icon_3 {
+    top: 25% !important;
+    right: -10px !important;
+    svg {
+      width: 350px !important;
+    }
+  }
+  .hero_btn {
+    padding: 8px 16px;
+    border-radius: 6px !important;
+  }
+  .custom_height_tab_img {
+    height: 550px;
+    max-height: 450px;
+    left: 15% !important;
+  }
+  .i_pad_img_2 {
+    margin-left: 155px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .carplanner_cards {
+    width: 350px;
+  }
+  .carplanner_logo {
+    max-width: 280px;
+  }
+  .roadmapline_set {
+    left: -100px;
+    z-index: 1;
+    width: 100% !important;
+  }
+  .small_icon_arrow_2 {
+    top: 65%;
+    right: 25%;
+    top: unset;
+    right: -20px;
+    bottom: -40px;
+    svg {
+      max-width: 52px;
+    }
+  }
+  .small_icon_arrow {
+    left: 0%;
+    svg {
+      max-width: 52px;
+    }
+  }
+  .forth_section {
+    background-color: var(--color-light-green_2);
+    height: 100% !important;
+  }
+  .roadmap_icon_1 {
+    display: none !important;
+  }
+  .roadmap_icon_2 {
+    display: none !important;
+  }
+  .roadmap_para {
+    max-width: 621px;
+    margin: auto;
+    padding: 16px 19px 0px 52px;
+  }
+  .custom_top_spacing {
+    margin-top: 12vh;
+  }
+  .icon_1 {
+    svg {
+      width: 250px !important;
+    }
+    top: 70% !important;
+    left: -5% !important;
+  }
+  .icon_2 {
+    svg {
+      width: 750px !important;
+    }
+    top: -5% !important;
+  }
+  .icon_3 {
+    svg {
+      width: 300px !important;
+    }
+    top: -10% !important;
+    right: -50px !important;
+  }
+  .i_pad_img_2 {
+    margin-left: 39px;
+  }
+  .icon_5 {
+    left: -2%;
+  }
+  .custom_height_tab_img {
+    left: 5% !important;
+    width: 90% !important;
+  }
+  .i_pad_img {
+    width: 150%;
+  }
+  .third_sec_height {
+    height: unset;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .roadmap_para {
+    max-width: 100%;
+  }
+  .icon_1 {
+    top: 65% !important;
+    left: -5% !important;
+    svg {
+      width: 250px !important;
+    }
+  }
+  .icon_2 {
+    top: -20% !important;
+    svg {
+      width: 650px !important;
+    }
+  }
+  .icon_3 {
+    top: -15% !important;
+    right: -13% !important;
+    svg {
+      width: 300px !important;
+    }
+  }
+  .iconsBar {
+    min-width: 150px !important;
+  }
+  .crm_slider {
+    min-width: 150px;
+    height: unset;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .small_icon_arrow {
+    top: 0%;
+    left: -2%;
+    width: 70%;
+    svg {
+      max-width: 24px;
+    }
+  }
+  .roadmap_para {
+    padding: 16px 14px 0px 16px;
+    h4 {
+      line-height: 142%;
+    }
+  }
+  .small_icon_arrow_2 {
+    svg {
+      max-width: 24px;
+    }
+  }
+  .custom_top_spacing {
+    margin-top: unset;
+  }
+  .common_button {
+    background: rgba(126, 228, 156, 0.5);
+    border: 1px solid #edfafb;
+    border-radius: 10px;
+    padding: 3px 8px;
+    font-weight: 400;
+  }
+  .Calendly_button {
+    background: rgba(126, 228, 156, 0.5);
+    border: 1px solid #edfafb;
+    border-radius: 10px;
+    padding: 7px 33px;
+    font-weight: 500;
+  }
+  .image_hight {
+    width: 25px;
+    height: 25px;
+  }
+  .lh_0 {
+    line-height: 7px !important;
+  }
+  .padding_y163 {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+  .common_gap {
+    gap: 10px;
+  }
+  .margin {
+    margin-top: 70px;
+  }
+  .margin_top {
+    margin-top: 10px;
+  }
+  .common_width {
+    width: 18px;
+    height: 18px;
+  }
+  .footer_logo {
+    width: 80px;
+    height: 32px;
+  }
+  .margin_top15 {
+    margin-top: 11px;
+  }
+  .margin_top36 {
+    margin-top: 16px;
+  }
+  .text_sm {
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+  .padding_y55 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .icon_1 {
+    svg {
+      width: 120px !important;
+    }
+    top: 60% !important;
+    left: -5% !important;
+  }
+  .icon_2 {
+    svg {
+      width: 550px !important;
+    }
+    top: -37% !important;
+  }
+  .icon_3 {
+    svg {
+      width: 200px !important;
+    }
+    right: 20px !important;
+    top: -25% !important;
+    right: -70px !important;
+  }
+  .third_section {
+    background: #7ee49c;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .hero_btn {
+    font-size: 18px !important;
+    padding: 5px 12px;
+  }
+  .icon_2 {
+    top: -50% !important;
+  }
+}
