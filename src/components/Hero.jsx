@@ -135,7 +135,7 @@ const Hero = () => {
         "-=1"
       )
       .fromTo(
-        ".text_div2",
+        ".hero_slide_2",
         { top: "200vh", position: "absolute", delay: 1, yPercent: -50 },
         {
           delay: 1,
@@ -146,7 +146,7 @@ const Hero = () => {
         }
       )
       .to(
-        ".text_div",
+        ".hero_slide_1",
         {
           opacity: 0,
           yPercent: "-100vh",
@@ -222,7 +222,7 @@ const Hero = () => {
               <Icon4 />
             </div>
             <div className="second_div">
-              <div className="i_pad_img">
+              <div className="i_pad_img ipad_frame">
                 <img
                   className="w-100 d-none d-sm-block"
                   src={img}
@@ -235,42 +235,57 @@ const Hero = () => {
                 />
               </div>
               <div className="w-100 d-flex flex-column justify-content-center second_section_text align-items-center text-white vh-100 ">
-                <div className="text_div">
-                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
-                    Il futuro dei tuoi&nbsp;
-                    <span className="hero_btn mx-2 d-inline-block">
+                <div className="hero_slide_1">
+                  <h2 className="ff_mundial_regular font_4xl mb-0 text-center flex align-items-center">
+                    Il futuro delle tue&nbsp;
+                    <span className="d-inline-block hero_heading_btn slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-3">
                       vendite
-                    </span>{" "}
+                    </span>
                     è digitale
                   </h2>
-                  <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
+                  <h3 className="font_8xl fw-bold mt-5 pt-5 pb-4 text-center color_light_green">
                     200.000
                   </h3>
-                  <p className="font_4xl color_white_off fw-normal text-center  ">
-                    Lead Qualificati nel 2022
+                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4">
+                    Lead
+                    <span className="ff_mundial_bold mx-2">Qualificati</span>
+                    nel 2022
                   </p>
-                  <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
-                    Daicar aiuta a far crescere la tua azienda, <br /> creando
-                    contatti e generando vendite
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pb-4">
+                    Daicar aiuta a far
+                    <span className="ff_mundial_bold mx-2">crescere</span> la
+                    tua azienda,
+                    <br />
+                    creando contatti e generando vendite
                   </p>
                 </div>
-                <div className="text_div2">
-                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
+
+                <div className="hero_slide_2">
+                  <h2 className="ff_mundial_regular font_4xl mb-0 text-center flex align-items-center">
                     Il futuro delle tue&nbsp;
-                    <span className="hero_btn mx-2 d-inline-block">
+                    <span className="d-inline-block hero_heading_btn slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-3">
                       vendite
-                    </span>{" "}
+                    </span>
                     è digitale
                   </h2>
-                  <h3 className="font_6xl fw-semibold pt-5 pb-3 text-center color_light_green ">
+                  <h3 className="font_8xl fw-bold mt-5 pt-5 pb-4 text-center color_light_green">
                     10.000
                   </h3>
-                  <p className="font_4xl color_white_off fw-normal text-center  ">
-                    Campagne Generate nel 2022
+                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4">
+                    Campagne
+                    <span className="ff_mundial_bold mx-2">Generate</span>
+                    nel 2022
                   </p>
-                  <p className="pt-5 pb-3 font_6xl color_white_off fw-bold text-center ">
-                    Campaign management flessibile <br /> e altamente <br />{" "}
-                    personalizzabile sulle criticità di ogni partner.
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pb-4">
+                    Campaign management
+                    <span className="ff_mundial_bold mx-2">flessibile</span>e
+                    altamente
+                    <br />
+                    <span className="ff_mundial_bold mx-2">
+                      personalizzabile
+                    </span>
+                    sulle criticità di ogni partner
+                    <br />
                   </p>
                 </div>
               </div>

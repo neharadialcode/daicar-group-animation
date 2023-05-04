@@ -729,11 +729,23 @@ $background-color_3: black;
 .hero_heading_btn {
   font-size: var(--font-5xl) !important;
   padding: 4px 24px 11px !important;
-  color: black !important;
+  color: var(--color-dark-gray) !important;
   background: rgba(126, 228, 156, 0.5) !important;
   border: 1px solid var(--color-white-off) !important;
   border-radius: 10px !important;
 }
 .letter_spacing_01 {
   letter-spacing: -0.01em !important;
+}
+.ipad_frame,
+.ipad_frame img {
+  background-color: var(--color-dark-gray) !important;
+}
+.slide_3_btn {
+  font-size: var(--font-xl) !important;
+  padding: 11px 15px 14px !important;
+}
+.hero_slide_1 h3,
+.hero_slide_1 h3 {
+  font-size: 72px !important;
 }
