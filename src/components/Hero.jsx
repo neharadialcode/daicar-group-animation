@@ -244,7 +244,7 @@ const Hero = () => {
                     </span>
                     è digitale
                   </h2>
-                  <h3 className="font_8xl fw-bold mt-5 pt-5 pb-4 text-center color_light_green">
+                  <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     200.000
                   </h3>
                   <p className="font_xl color_white_off ff_mundial_regular text-center pb-4">
@@ -252,7 +252,7 @@ const Hero = () => {
                     <span className="ff_mundial_bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pb-4">
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-2 pt-xl-5 pb-4">
                     Daicar aiuta a far
                     <span className="ff_mundial_bold mx-2">crescere</span> la
                     tua azienda,
@@ -269,7 +269,7 @@ const Hero = () => {
                     </span>
                     è digitale
                   </h2>
-                  <h3 className="font_8xl fw-bold mt-5 pt-5 pb-4 text-center color_light_green">
+                  <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     10.000
                   </h3>
                   <p className="font_xl color_white_off ff_mundial_regular text-center pb-4">
@@ -277,7 +277,7 @@ const Hero = () => {
                     <span className="ff_mundial_bold mx-2">Generate</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pb-4">
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-2 pt-xl-5 pb-4">
                     Campaign management
                     <span className="ff_mundial_bold mx-2">flessibile</span>e
                     altamente
