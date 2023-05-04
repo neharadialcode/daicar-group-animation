@@ -6,45 +6,45 @@ import pipedrivelogo from "../assets/images/svg/pipedrive-logo.svg";
 import zendexlogo from "../assets/images/svg/zendesk-suite-logo.svg";
 import { gsap } from "gsap";
 const Crm = () => {
-  useLayoutEffect(() => {
-    let crm = gsap.matchMedia();
-    crm.add("(min-width: 992px)", () => {
-      let crm_value = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".crm_parent",
-          start: "top top",
-          end: "bottom top",
-          // markers: true,
-        },
-      });
-      crm_value.from(".crm_text", {
-        yPercent: 100,
-        autoAlpha: 0,
-        ease: "back(2)",
-        stagger: 0.02,
-      });
-    });
-    // crm.add("(max-width:767.98px)", () => {
-    //   let crmicons = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: ".crm_parent_img",
-    //       start: "30% 50%",
-    //       end: "bottom center",
-    //       scrub: 10,
-    //     },
-    //   });
-    //   crmicons.fromTo(
-    //     ".crm_img",
-    //     {
-    //       xPercent: 0,
-    //     },
-    //     {
-    //       xPercent: -150,
-    //     }
-    //   );
-    //   // },
-    // });
-  }, []);
+  // useLayoutEffect(() => {
+  //   let crm = gsap.matchMedia();
+  //   crm.add("(min-width: 992px)", () => {
+  //     let crm_value = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".crm_parent",
+  //         start: "top top",
+  //         end: "bottom top",
+  //         // markers: true,
+  //       },
+  //     });
+  //     crm_value.from(".crm_text", {
+  //       yPercent: 100,
+  //       autoAlpha: 0,
+  //       ease: "back(2)",
+  //       stagger: 0.02,
+  //     });
+  //   });
+  //   // crm.add("(max-width:767.98px)", () => {
+  //   //   let crmicons = gsap.timeline({
+  //   //     scrollTrigger: {
+  //   //       trigger: ".crm_parent_img",
+  //   //       start: "30% 50%",
+  //   //       end: "bottom center",
+  //   //       scrub: 10,
+  //   //     },
+  //   //   });
+  //   //   crmicons.fromTo(
+  //   //     ".crm_img",
+  //   //     {
+  //   //       xPercent: 0,
+  //   //     },
+  //   //     {
+  //   //       xPercent: -150,
+  //   //     }
+  //   //   );
+  //   //   // },
+  //   // });
+  // }, []);
   return (
     <>
       <div className="bg_light_white min-vh-100 d-flex justify-content-center align-items-center crm_parent overflow-hidden">

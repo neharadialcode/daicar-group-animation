@@ -3,24 +3,24 @@ import man from "../assets/images/png/man-img.png";
 import gsap from "gsap";
 
 function About() {
-  useEffect(() => {
-    let about = gsap.matchMedia();
-    about.add("(min-width: 992px)", () => {
-      let about_value = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".about_parent",
-          start: "top top",
-          end: "bottom top",
-        },
-      });
-      about_value.from(".about_text", {
-        yPercent: 100,
-        autoAlpha: 0,
-        ease: "back(2)",
-        stagger: 0.02,
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   let about = gsap.matchMedia();
+  //   about.add("(min-width: 992px)", () => {
+  //     let about_value = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".about_parent",
+  //         start: "top top",
+  //         end: "bottom top",
+  //       },
+  //     });
+  //     about_value.from(".about_text", {
+  //       yPercent: 100,
+  //       autoAlpha: 0,
+  //       ease: "back(2)",
+  //       stagger: 0.02,
+  //     });
+  //   });
+  // }, []);
   return (
     <>
       <section className=" bg_light_white padding_y163 about_parent min-vh-100 overflow-hidden">

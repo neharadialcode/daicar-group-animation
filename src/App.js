@@ -1,33 +1,35 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import SecondSection from "./components/SecondSection";
-import ThirdSection from "./components/ThirdSection";
-import ForthSection from "./components/ForthSection";
-import FifthSection from "./components/FifthSection";
-import SixthSection from "./components/SixthSection";
-import SeventhSection from "./components/SeventhSection";
-import EightSection from "./components/EightSection";
+// import SixthSection from "./components/SixthSection";
+// import SeventhSection from "./components/SeventhSection";
+// import EightSection from "./components/EightSection";
 import BackToTop from "./components/BackToTopButton";
+import TabsImage from "./components/TabsImage";
+import Business from "./components/Business";
+import AboutUs from "./components/AboutUs";
+import Timeline from "./components/Timeline";
+import Partner from "./components/Partner";
+import Crm from "./components/Crm";
+import Meeting from "./components/Meeting";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <SecondSection />
-      <ThirdSection />
-      <ForthSection />
-      <FifthSection />
-      <SixthSection />
-      <SeventhSection />
-      <EightSection />
-      {/* <CarPlanner />
-      <Tiguido />
+      <TabsImage />
+      <Business />
+      <AboutUs />
+      <Timeline />
+      {/* <SixthSection /> */}
       <Partner />
       <Crm />
-      <About />
-      <Footer /> */}
+      <Meeting />
+      <Footer />
+      {/* <SeventhSection /> */}
+      {/* <EightSection /> */}
       <BackToTop />
     </>
   );

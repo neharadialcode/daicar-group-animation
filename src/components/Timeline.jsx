@@ -444,7 +444,7 @@ const FifthSection = () => {
           scrub: 1,
           pin: true,
           pinSpacing: true,
-          markers: true,
+          // markers: true,
         },
       });
       fifth

@@ -12,25 +12,25 @@ import arrowbtn from "../assets/images/svg/partner-arrow.svg";
 import gsap from "gsap";
 
 const Partner = () => {
-  useEffect(() => {
-    let partner = gsap.matchMedia();
-    partner.add("(min-width: 992px)", () => {
-      let partner_value = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".partner_parent",
-          start: "top top",
-          end: "bottom top",
-          // markers: true,
-        },
-      });
-      partner_value.from(".partner_text", {
-        yPercent: 100,
-        autoAlpha: 0,
-        ease: "back(2)",
-        stagger: 0.02,
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   let partner = gsap.matchMedia();
+  //   partner.add("(min-width: 992px)", () => {
+  //     let partner_value = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".partner_parent",
+  //         start: "top top",
+  //         end: "bottom top",
+  //         // markers: true,
+  //       },
+  //     });
+  //     partner_value.from(".partner_text", {
+  //       yPercent: 100,
+  //       autoAlpha: 0,
+  //       ease: "back(2)",
+  //       stagger: 0.02,
+  //     });
+  //   });
+  // }, []);
   // const partnerData = [
   //   {
   //     imgUrl: "../assets/images/svg/leasys-logo.svg",

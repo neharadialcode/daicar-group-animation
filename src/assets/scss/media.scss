@@ -76,7 +76,7 @@
 
 @media (min-width: 992px) {
   .padding_y163 {
-    padding-top: 163px !important;
+    // padding-top: 163px !important;
     padding-bottom: 163px !important;
   }
   .padding_y55 {
@@ -148,6 +148,80 @@
   }
   .divide_space_text {
     justify-content: space-between !important;
+  }
+  .custom_container {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+  .leasyslogo {
+    max-width: 233.07px;
+    min-height: 47px;
+  }
+  .enelexlogo {
+    max-width: 236px;
+    min-height: 48px;
+    margin-right: 11px;
+  }
+  .athlonlogo {
+    max-width: 194px;
+    min-height: 74px;
+    margin-right: 11px;
+  }
+  .insuramalogo {
+    max-width: 214px;
+    min-height: 67px;
+    margin-right: 11px;
+  }
+  .aldlogo {
+    max-width: 198px;
+    min-height: 57px;
+  }
+  .bmwlogo {
+    max-width: 154px;
+    min-height: 89px;
+    margin-right: 100px;
+  }
+  .toyatologo {
+    max-width: 154px;
+    min-height: 89px;
+    margin-right: 102px;
+  }
+  .audilogo {
+    max-width: 125px;
+    min-height: 79px;
+    margin-right: 102px;
+  }
+  .jaguarlogo {
+    max-width: 142px;
+    min-height: 79px;
+  }
+  .salesforcelogo {
+    max-width: 179.67px;
+    min-height: 125.57px;
+    margin-right: 45px;
+  }
+  .amazonlogo {
+    max-width: 181.2px;
+    min-height: 76.29px;
+    margin-right: 45px;
+  }
+  .hubsportlogo {
+    max-width: 151.63px;
+    min-height: 43px;
+    margin-right: 30px;
+  }
+  .pipedrivelogo {
+    max-width: 225.74px;
+    min-height: 75.92px;
+    margin-right: 30px;
+  }
+  .zendexlogo {
+    max-width: 280.38px;
+    min-height: 85.83px;
+  }
+  .gap_xxl_66 {
+    gap: 66px !important;
   }
 }
 
@@ -344,6 +418,79 @@
   }
   .third_sec_height {
     height: unset;
+  }
+  .partner_btn {
+    padding: 11px 16px;
+    max-width: 130px;
+    min-height: 33px;
+    background: rgba(126, 228, 156, 0.5);
+    border: 1px solid #edfafb !important;
+    border-radius: 10px !important;
+    line-height: 50%;
+  }
+  .leasyslogo {
+    max-width: 169.39px;
+    min-height: 34.16px;
+  }
+  .enelexlogo {
+    min-height: 35px;
+    max-width: 171px;
+  }
+  .athlonlogo {
+    min-height: 80px;
+    max-width: 146px;
+  }
+  .insuramalogo {
+    max-width: 169.39px;
+    min-height: 34.16px;
+  }
+  .aldlogo {
+    min-height: 79px;
+    max-width: 142px;
+  }
+  .bmwlogo {
+    min-height: 79px;
+    max-width: 100px;
+  }
+  .toyatologo {
+    min-height: 79px;
+    max-width: 140px;
+  }
+  .audilogo {
+    min-height: 69px;
+    max-width: 120px;
+  }
+  .jaguarlogo {
+    min-height: 70px;
+    max-width: 136px;
+  }
+  .salesforcelogo {
+    max-width: 161.75px;
+    min-height: 112.79px;
+    margin-right: 30px;
+  }
+  .amazonlogo {
+    max-width: 163.2px;
+    min-height: 112.79px;
+    margin-right: 48px;
+  }
+  .hubsportlogo {
+    max-width: 136.58px;
+    min-height: 112.79px;
+    margin-right: 30px;
+  }
+  .pipedrivelogo {
+    max-width: 203.32px;
+    min-height: 112.79px;
+  }
+  .zendexlogo {
+    max-width: 252.54px;
+    min-height: 112.79px;
+  }
+  .img_set {
+    height: 130px;
+    display: flex;
+    align-items: center;
   }
 }
 
