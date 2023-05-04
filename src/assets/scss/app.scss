@@ -36,17 +36,18 @@
 }
 .hero_btn {
   font-size: var(--font-2xl) !important;
-  border: 1px solid #edfafb;
+  border: 1px solid var(--color-white-off);
   border-radius: 10px;
   padding: 10px 24px;
+  // padding: 4px 24px 10px;
   color: var(--color-white-off) !important;
-  background: #7ee49c;
+  background: var(--color-light-green);
 }
 // .bg_img {
 //   background: url("./assets/images/png/man-img.png");
 // }
 .bg_green {
-  background: #2d5363 !important;
+  background: var(--color-dark-gray) !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -96,11 +97,12 @@
   right: 0;
   bottom: 0;
 }
-.bg_white {
-  background-color: var(--bg-light-white);
-}
+// .bg_white {
+//   background-color: var(--bg-light-white);
+// }
 .second_div {
   position: relative;
+  z-index: -1;
 }
 .second_section_text {
   min-height: 100vh;
@@ -183,7 +185,7 @@
 }
 .tabs_btn {
   background: rgba(126, 228, 156, 0.5);
-  border: 1px solid #edfafb;
+  border: 1px solid var(--color-white-off);
   border-radius: 10px;
   padding: 10px 24px;
 }
@@ -201,7 +203,7 @@
   position: fixed;
   right: 15px;
   bottom: 25px;
-  background: #7ee49c;
+  background: var(--color-light-green);
   border: 1px solid white;
   height: 40px;
   width: 40px;
@@ -213,7 +215,7 @@
   -webkit-animation: up-down 2.5s ease-in-out infinite;
   animation: up-down 2.5s ease-in-out infinite;
   &:hover {
-    box-shadow: 0px 4px 30px #7ee49c;
+    box-shadow: 0px 4px 30px var(--color-light-green);
   }
 }
 .big_icon {
@@ -375,7 +377,7 @@
 }
 .common_button {
   background: rgba(126, 228, 156, 0.5);
-  border: 1px solid #edfafb;
+  border: 1px solid var(--color-white-off);
   border-radius: 10px;
   padding: 11.3px 34.1px;
   display: inline-block;
@@ -383,7 +385,7 @@
 }
 .Calendly_button {
   background: rgba(126, 228, 156, 0.5);
-  border: 1px solid #edfafb;
+  border: 1px solid var(--color-white-off);
   border-radius: 10px;
   padding: 17px 68px;
   font-weight: 400;
@@ -435,7 +437,7 @@
 }
 .list_item_text {
   &:hover {
-    color: #7ee49c;
+    color: var(--color-light-green);
   }
   transition: all 400ms ease-in-out;
 }
@@ -574,7 +576,7 @@ $background-color_3: black;
   max-width: 130px;
   min-height: 52px;
   background: rgba(126, 228, 156, 0.5);
-  border: 1px solid #edfafb !important;
+  border: 1px solid var(--color-white-off) !important;
   border-radius: 10px !important;
   line-height: 50%;
 }
@@ -710,3 +712,18 @@ $background-color_3: black;
   font-weight: 200px !important;
 }
 
+.hero_section_heading {
+  height: calc(100vh - 148px) !important;
+  z-index: 10;
+}
+.hero_heading_btn {
+  font-size: var(--font-5xl) !important;
+  padding: 4px 24px 11px !important;
+  color: black !important;
+  background: rgba(126, 228, 156, 0.5) !important;
+  border: 1px solid var(--color-white-off) !important;
+  border-radius: 10px !important;
+}
+.letter_spacing_01 {
+  letter-spacing: -0.01em !important;
+}
