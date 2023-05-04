@@ -21,7 +21,6 @@ const ThirdSection = () => {
           scrub: 1,
           pin: true,
           pinSpacing: false,
-          markers: true,
         },
       });
       secondSection3
@@ -390,7 +389,7 @@ const ThirdSection = () => {
             alt="arrow-tab-img"
           />
         </div>
-        <div className="top_space_business_text text-center pt-lg5 px-4 px-lg-0 z_1 third_heading">
+        <div className="top_space_business_text text-center px-4 px-lg-0 z_1 third_heading">
           <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
             Progettiamo soluzioni{" "}
             <span className="hero_btn bg_light_green">personalizzate</span> per
