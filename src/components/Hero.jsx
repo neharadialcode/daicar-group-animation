@@ -245,7 +245,7 @@ const Hero = () => {
                 <div className="hero_slide_1">
                   <h2 className="ff_mundial_regular font_4xl mb-0 text-center flex align-items-center">
                     Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-3">
+                    <span className="d-inline-block hero_heading_btn slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-2 mx-lg-3">
                       vendite
                     </span>
                     è digitale
@@ -253,12 +253,12 @@ const Hero = () => {
                   <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     200.000
                   </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4">
+                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 slide_para_1">
                     Lead
                     <span className="ff_mundial_bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-2 pt-xl-5 pb-4">
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 slide_para_2">
                     Daicar aiuta a far
                     <span className="ff_mundial_bold mx-2">crescere</span> la
                     tua azienda,
@@ -270,7 +270,7 @@ const Hero = () => {
                 <div className="hero_slide_2">
                   <h2 className="ff_mundial_regular font_4xl mb-0 text-center flex align-items-center">
                     Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-3">
+                    <span className="d-inline-block hero_heading_btn slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-2 mx-lg-3">
                       vendite
                     </span>
                     è digitale
@@ -278,12 +278,12 @@ const Hero = () => {
                   <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     10.000
                   </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4">
+                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 slide_para_1">
                     Campagne
                     <span className="ff_mundial_bold mx-2">Generate</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-2 pt-xl-5 pb-4">
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 slide_para_2">
                     Campaign management
                     <span className="ff_mundial_bold mx-2">flessibile</span>e
                     altamente

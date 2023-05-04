@@ -521,6 +521,25 @@
     display: flex;
     align-items: center;
   }
+  .hero_slide_1 h3,
+  .hero_slide_2 h3 {
+    font-size: 80px !important;
+    margin-top: 132px !important;
+  }
+  .hero_slide_1 h2,
+  .hero_slide_2 h2 {
+    font-size: 32px !important;
+  }
+  .slide_3_btn {
+    font-size: 28px !important;
+    padding: 2px 20px 13px !important;
+  }
+  .slide_para_1 {
+    font-size: 24px !important;
+  }
+  .slide_para_2 {
+    font-size: 32px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
