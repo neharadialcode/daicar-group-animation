@@ -417,6 +417,9 @@
   .divide_space_text {
     justify-content: space-between !important;
   }
+  .common_container {
+    max-width: 1547px !important;
+  }
 }
 
 @media (max-width: 1599.98px) {

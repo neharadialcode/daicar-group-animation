@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <section className="bg_navbar">
       <div className="container common_container">
-        <div className="d-flex align-items-center justify-content-between padding_y55">
+        <div className="d-flex align-items-center justify-content-between py-5">
           <a href="#">
             <img
               className="logo_width logo_md_100"
@@ -33,7 +33,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="font-normal font_md color_white_off nav_hover"
+                className="fw-normal font_sm color_white_off nav_hover"
               >
                 Main Assets
               </a>
@@ -41,7 +41,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="font-normal font_md color_white_off nav_hover"
+                className="fw-normal font_sm color_white_off nav_hover"
               >
                 Servizi
               </a>
@@ -49,7 +49,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="font-normal font_md color_white_off nav_hover"
+                className="fw-normal font_sm color_white_off nav_hover"
               >
                 Daicar Group
               </a>
@@ -57,7 +57,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="font-normal font_md color_white_off nav_hover"
+                className="fw-normal font_sm color_white_off nav_hover"
               >
                 Contatti
               </a>
@@ -65,17 +65,17 @@ const Header = () => {
           </ul>
           <div className="d-flex d-none d-lg-flex align-items-center gap-5">
             <a
-              className="mb-0 ff_mundial_bold font_lg color_white_off parliamone text_white"
+              className="mb-0 ff_mundial_bold font_sm color_white_off parliamone custom_hover_link me-2"
               href="#"
             >
               Parliamone
             </a>
-            <button className="navbar_btn font-normal font_2xl color_gray ms-xl-2">
-              Chat
+            <button className="navbar_btn font-normal font_2xl color_gray ms-xl-4">
+              chat
             </button>
           </div>
         </div>
-        <div className="d-lg-none d-flex ">
+        <div className="d-lg-none d-flex">
           <div className={` ${navShow ? "nav-fix nav_bg" : "fix-navbar"}`}>
             <ul className="ps-0 mb-0 d-flex flex-column  align-items-center  list-unstyled gap-4">
               <a
@@ -137,13 +137,13 @@ const Header = () => {
               </li>{" "}
               <a
                 onClick={() => setNavShow(false)}
-                className="mb-0 ff_mundial_bold font_lg color_white_off parliamone text_white"
+                className="mb-0 ff_mundial_bold font_lg color_white_off parliamone custom_hover_link"
                 href="#"
               >
                 Parliamone
               </a>
               <button className="navbar_btn font-normal font_2xl color_gray ms-xl-2">
-                Chat
+                chat
               </button>
             </ul>
           </div>
