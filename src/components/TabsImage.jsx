@@ -105,7 +105,7 @@ const SecondSection = () => {
         .to(
           ".side_icon",
           {
-            bottom: "10%",
+            bottom: "25%",
           },
           "-=.5"
         )

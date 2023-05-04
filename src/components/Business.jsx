@@ -411,7 +411,7 @@ const ThirdSection = () => {
         <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
           <div className="main_text d-none d-lg-block pb-5">
             <div className="row justify-content-evenly divide_space_text pt5">
-              <div className="col-5 position-relative custom_business_img_height d-flex align-items-center">
+              <div className="col-4 position-relative custom_business_img_height d-flex align-items-center">
                 <img
                   className="w-100 business_img_1 position-absolute"
                   src={businessOne}
