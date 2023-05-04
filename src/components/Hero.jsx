@@ -224,7 +224,7 @@ const Hero = () => {
               <Icon4 />
             </div>
             <div className="second_div">
-              <div className="i_pad_img ipad_frame">
+              <div className="i_pad_img">
                 <img
                   className="w-100 d-none d-lg-block"
                   src={img}
