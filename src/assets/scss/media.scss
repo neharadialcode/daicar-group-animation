@@ -663,8 +663,8 @@
   }
   .icon_2 {
     svg {
-      width: 550px !important;
-      transform: scale(1.29);
+      width: 650px !important;
+      transform: unset !important;
     }
     top: -34% !important;
   }
@@ -679,6 +679,14 @@
   }
   .third_section {
     background: #7ee49c;
+  }
+  .slide_para_2 {
+    font-size: 20px !important;
+  }
+  .hero_slide_1 h2,
+  .hero_slide_2 h2 {
+    max-width: 285px !important;
+    margin: auto !important;
   }
 }
 

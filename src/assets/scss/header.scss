@@ -68,7 +68,7 @@
   position: absolute;
   transition: all 700ms ease-in-out !important;
   display: flex;
-  background: var(--color-gray) !important;
+  background: var(--color-dark-gray) !important;
   align-items: center;
   justify-content: center;
   opacity: 100%;
@@ -82,14 +82,14 @@
   width: 100%;
   transition: all 700ms ease-in-out !important;
   display: flex;
-  background: var(--color-gray) !important;
+  background: var(--color-dark-gray) !important;
   align-items: center;
   justify-content: center;
   opacity: 100%;
   z-index: 12 !important;
 }
 .nav_bg {
-  background: var(--color-gray) !important;
+  background: var(--color-dark-gray) !important;
 }
 .line_black {
   width: 25px;

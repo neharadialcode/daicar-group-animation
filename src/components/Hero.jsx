@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Icon1, Icon2, Icon3, Icon4 } from "./Icons";
+import { Icon1, Icon2, Icon3, Icon4, Icon4_2 } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img from "../Free_iPad_Mockup_1 1.png";
@@ -221,7 +221,12 @@ const Hero = () => {
               <Icon3 />
             </div>
             <div className="icon_4">
-              <Icon4 />
+              <div className="d-none d-sm-block">
+                <Icon4 />
+              </div>
+              <div className="d-sm-none">
+                <Icon4_2 />
+              </div>
             </div>
             <div className="second_div">
               <div className="i_pad_img">
@@ -261,8 +266,7 @@ const Hero = () => {
                   <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 slide_para_2">
                     Daicar aiuta a far
                     <span className="ff_mundial_bold mx-2">crescere</span> la
-                    tua azienda,
-                    <br />
+                    tua azienda, <br className="d-none d-sm-block" />
                     creando contatti e generando vendite
                   </p>
                 </div>
@@ -285,9 +289,9 @@ const Hero = () => {
                   </p>
                   <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 slide_para_2">
                     Campaign management
-                    <span className="ff_mundial_bold mx-2">flessibile</span>e
+                    <span className="ff_mundial_bold mx-2">flessibile</span> e
                     altamente
-                    <br />
+                    <br className="d-none d-sm-block" />
                     <span className="ff_mundial_bold mx-2">
                       personalizzabile
                     </span>
