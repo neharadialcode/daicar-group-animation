@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import img from "../Free_iPad_Mockup_1 1.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -50,8 +50,8 @@ const SecondSection = () => {
     second.add("(min-width:768px)", () => {
       let secondSection = gsap.timeline({
         scrollTrigger: {
-          trigger: ".second_sectioon",
-          start: "top 2%",
+          trigger: ".tab_parent",
+          start: "top top",
           end: "bottom top",
           scrub: 1,
           pin: true,
@@ -59,6 +59,14 @@ const SecondSection = () => {
         },
       });
       secondSection
+        .to(
+          ".active_button_0",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
         .fromTo(
           ".icon_5",
           {
@@ -309,7 +317,7 @@ const SecondSection = () => {
           },
           "-=.5"
         )
-        .to(".second_sectioon", {
+        .to(".tab_parent", {
           autoAlpha: 0,
           delay: 1,
         });
@@ -320,7 +328,7 @@ const SecondSection = () => {
     second.add("(max-width:767.78px)", () => {
       let secondSection2 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".second_sectioon",
+          trigger: ".tab_parent",
           start: "top top",
           end: "bottom top",
           scrub: 1,
@@ -341,7 +349,7 @@ const SecondSection = () => {
     });
   }, []);
   return (
-    <div className="vh-100 d-flex flex-column justify-content-center second_sectioon bg_white overflow-hidden bg_white z_index2">
+    <div className="vh-100 d-flex flex-column justify-content-center tab_parent bg_light_white overflow-hidden z_index2">
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
         <img src={tabRightIcon} alt="tab-right-icon" />
       </div>
@@ -350,7 +358,7 @@ const SecondSection = () => {
           <Icon5 />
         </div>
         <img
-          className="i_pad_img_2 pt-2 w-100 custom_height_tab_img"
+          className="i_pad_img_2 pt-3 w-100 custom_height_tab_img"
           src={tabImg1}
           alt="img"
         />
@@ -368,14 +376,14 @@ const SecondSection = () => {
                     className={`${
                       index === 5
                         ? "d-none"
-                        : "position-absolute top-0 start-0 w-100 pt-2 custom_height_tab_img tabs_img"
+                        : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img"
                     }`}
                     src={obj.card_img}
                     alt=""
                   />
                 </div>
                 <div className="d-none d-md-flex align-items-center pt-3 pt-lg-0">
-                  <p className="font_2xl color_gray pt-2">{obj.para}</p>
+                  <p className="font_2xl color_gray pt-3">{obj.para}</p>
                   {obj.buttonText && (
                     <button
                       className={`active_button_${index} tabs_btn ms-3 font_2xl color_gray`}

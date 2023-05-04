@@ -24,6 +24,9 @@ const ThirdSection = () => {
         },
       });
       secondSection3
+        // .from(".third_section", {
+        //   scale: 1.3,
+        // })
         .to(".big_icon", {
           top: "-12%",
         })
@@ -36,15 +39,17 @@ const ThirdSection = () => {
         .to(".text_1", {
           autoAlpha: 1,
           rotate: 0,
+          delay: 1,
         })
 
-        .to(".heading_1", {
-          height: "40px",
+        .to(".text_1", {
+          autoAlpha: 0,
+          delay: 1,
         })
         .to(
-          ".text_1",
+          ".heading_1",
           {
-            autoAlpha: 0,
+            height: "40px",
           },
           "-=.5"
         )
@@ -75,17 +80,18 @@ const ThirdSection = () => {
           delay: 1,
           rotate: 0,
         })
-
-        .to(".heading_2", {
-          height: "40px",
+        .to(".text_2", {
+          autoAlpha: 0,
+          delay: 1,
         })
         .to(
-          ".text_2",
+          ".heading_2",
           {
-            autoAlpha: 0,
+            height: "40px",
           },
           "-=.5"
         )
+
         .to(
           ".business_img_2",
           {
@@ -111,17 +117,18 @@ const ThirdSection = () => {
           delay: 1,
           rotate: 0,
         })
-
-        .to(".heading_3", {
-          height: "40px",
+        .to(".text_3", {
+          delay: 1,
+          autoAlpha: 0,
         })
         .to(
-          ".text_3",
+          ".heading_3",
           {
-            autoAlpha: 0,
+            height: "40px",
           },
           "-=.5"
         )
+
         .to(
           ".business_img_3",
           {
@@ -147,16 +154,18 @@ const ThirdSection = () => {
           delay: 1,
           rotate: 0,
         })
-        .to(".heading_4", {
-          height: "40px",
+        .to(".text_4", {
+          delay: 1,
+          autoAlpha: 0,
         })
         .to(
-          ".text_4",
+          ".heading_4",
           {
-            autoAlpha: 0,
+            height: "40px",
           },
           "-=.5"
         )
+
         .to(
           ".main_text",
           {
@@ -174,10 +183,10 @@ const ThirdSection = () => {
         .to(".big_icon", {
           top: "-20%",
           scale: "1",
-        })
-        .to(".third_heading", {
-          autoAlpha: 0,
         });
+      // .to(".third_heading", {
+      //   autoAlpha: 0,
+      // });
     });
     third.add("(min-width:992px) and (max-width:1499.98px)", () => {
       let secondSection3 = gsap.timeline({
@@ -402,7 +411,7 @@ const ThirdSection = () => {
         <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
           <div className="main_text d-none d-lg-block pb-5">
             <div className="row justify-content-evenly divide_space_text pt5">
-              <div className="col-3 position-relative custom_business_img_height d-flex align-items-center">
+              <div className="col-5 position-relative custom_business_img_height d-flex align-items-center">
                 <img
                   className="w-100 business_img_1 position-absolute"
                   src={businessOne}
