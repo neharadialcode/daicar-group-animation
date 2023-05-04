@@ -174,246 +174,496 @@ const FifthSection = () => {
 
   // MY CHANGES
   useEffect(() => {
-    let fifth2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".fifth_main",
-        start: "top 5%",
-        end: "bottom top",
-        toggleActions: "play none none reverse",
-      },
-    });
-    fifth2.fromTo(
-      ".bg-green",
-      { scale: 0 },
-      {
-        scale: 1,
-      }
-    );
-    let fifth = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".fifth_section",
-        start: "top top",
-        end: "bottom top",
-        scrub: 1,
-        pin: true,
-        pinSpacing: true,
-        // markers: true,
-      },
-    });
-    fifth
-      .fromTo(
-        ".fifth_section",
-        {
-          opacity: 0,
+    let media = gsap.matchMedia();
+    media.add("(min-width: 1400px)", () => {
+      let fifth2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".fifth_main",
+          start: "top 5%",
+          end: "bottom top",
+          toggleActions: "play none none reverse",
+          // markers: true,
         },
-        {
-          opacity: 1,
-        }
-      )
-      .fromTo(
-        ".forth_section",
-        {
-          opacity: 1,
-        },
-        {
-          opacity: 0,
-        },
-        "-=.5"
-      )
-      .fromTo(
-        ".value_1",
-        {
-          left: "-82vw",
-          duration: 0.5,
-        },
-        {
-          left: "-80vw",
-          duration: 0.5,
-        },
-        "+=1"
-      )
-      .fromTo(
-        ".value_1",
-        {
-          left: "-74.4vw",
-          duration: 0.5,
-        },
-        {
-          left: "-74.4vw",
-          duration: 0.5,
-        },
-        "+=1"
-      )
-      .fromTo(
-        ".div_1",
-        {
-          autoAlpha: 1,
-          duration: 2,
-        },
-        {
-          autoAlpha: 0,
-          duration: 2,
-        },
-        "-=.1"
-      )
-      .fromTo(
-        ".year_1",
-        {
-          autoAlpha: 1,
-          duration: 2,
-        },
-        {
-          autoAlpha: 0,
-          duration: 2,
-        },
-        "-=.1"
-      )
-      .fromTo(
-        ".div_2",
-        {
-          autoAlpha: 0,
-          duration: 2,
-        },
-        {
-          autoAlpha: 1,
-          duration: 2,
-        }
-      )
-      .fromTo(
-        ".year_2",
-        {
-          autoAlpha: 0,
-          duration: 2,
-        },
-        {
-          autoAlpha: 1,
-          duration: 2,
-        }
-      )
-      .fromTo(
-        ".value_1",
-        {
-          left: "-74.4vw",
-        },
-        {
-          left: "-58.6vw",
-        },
-        "-=.8"
-      )
-      .fromTo(
-        ".div_3",
-        {
-          autoAlpha: 0,
-          duration: 2,
-          delay: 1,
-        },
-        {
-          autoAlpha: 1,
-          duration: 2,
-          delay: 1,
-        }
-      )
-      .fromTo(
-        ".year_3",
-        {
-          autoAlpha: 0,
-          duration: 2,
-          delay: 1,
-        },
-        {
-          autoAlpha: 1,
-          duration: 2,
-          delay: 1,
-        }
-      )
+      });
 
-      //
-      .fromTo(
-        ".div_2",
+      fifth2.fromTo(
+        ".bg-green",
+        { scale: 0 },
         {
-          autoAlpha: 1,
-          duration: 2,
-        },
-        {
-          autoAlpha: 0,
-          duration: 2,
-        }
-      )
-      .fromTo(
-        ".year_2",
-        {
-          autoAlpha: 1,
-          duration: 2,
-        },
-        {
-          autoAlpha: 0,
-          duration: 2,
-        }
-      )
-      .fromTo(
-        ".value_1",
-        {
-          left: "-58.6vw",
-        },
-        {
-          left: "-41vw",
-        }
-      )
-      .fromTo(
-        ".div_4",
-        {
-          autoAlpha: 0,
-          duration: 2,
-        },
-        {
-          autoAlpha: 1,
-          duration: 2,
-        }
-      )
-      .fromTo(
-        ".year_4",
-        {
-          autoAlpha: 0,
-          duration: 2,
-        },
-        {
-          autoAlpha: 1,
-          duration: 2,
-        }
-      )
-      .fromTo(
-        ".div_3",
-        {
-          autoAlpha: 1,
-          duration: 2,
-        },
-        {
-          autoAlpha: 0,
-          duration: 2,
-        },
-        "-=.4"
-      )
-      .fromTo(
-        ".year_3",
-        {
-          autoAlpha: 1,
-          duration: 2,
-        },
-        {
-          autoAlpha: 0,
-          duration: 2,
-        },
-        "-=.4"
-      )
-      .fromTo(
-        ".value_1",
-        {
-          left: "-41vw",
-        },
-        {
-          left: "-23.7vw",
+          scale: 1,
         }
       );
+      let fifth = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".fifth_section",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          markers: true,
+        },
+      });
+      fifth
+        .fromTo(
+          ".fifth_section",
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          }
+        )
+        .fromTo(
+          ".forth_section",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          },
+          "-=.5"
+        )
+        // .fromTo(
+        //   ".value_1",
+        //   {
+        //     left: "-82vw",
+        //     duration: 0.5,
+        //   },
+        //   {
+        //     left: "-80vw",
+        //     duration: 0.5,
+        //   },
+        //   "+=1"
+        // )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-80vw",
+            duration: 0.5,
+          },
+          {
+            left: "-82vw",
+            duration: 0.5,
+          }
+          // "+=8"
+        )
+        .fromTo(
+          ".div_1",
+          {
+            autoAlpha: 1,
+            duration: 0.5,
+            delay: 1,
+          },
+          {
+            autoAlpha: 0,
+            duration: 0.5,
+            delay: 1,
+          },
+          "-=.1"
+        )
+        .fromTo(
+          ".year_1",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          "-=.1"
+        )
+        .fromTo(
+          ".div_2",
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".year_2",
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-74.4vw",
+          },
+          {
+            left: "-58.6vw",
+          },
+          "-=.8"
+        )
+        .fromTo(
+          ".div_3",
+          {
+            autoAlpha: 0,
+            duration: 2,
+            delay: 1,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+            delay: 1,
+          }
+        )
+        .fromTo(
+          ".year_3",
+          {
+            autoAlpha: 0,
+            duration: 2,
+            delay: 1,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+            delay: 1,
+          }
+        )
+
+        //
+        .fromTo(
+          ".div_2",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".year_2",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-58.6vw",
+          },
+          {
+            left: "-41vw",
+          }
+        )
+        .fromTo(
+          ".div_4",
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".year_4",
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".div_3",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          "-=.4"
+        )
+        .fromTo(
+          ".year_3",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          "-=.4"
+        )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-41vw",
+          },
+          {
+            left: "-23.7vw",
+          }
+        );
+    });
+    media.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+      let fifth2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".fifth_main",
+          start: "top 5%",
+          end: "bottom top",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      fifth2.fromTo(
+        ".bg-green",
+        { scale: 0 },
+        {
+          scale: 1,
+        }
+      );
+      let fifth = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".fifth_section",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          // markers: true,
+        },
+      });
+      fifth
+        .fromTo(
+          ".fifth_section",
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          }
+        )
+        .fromTo(
+          ".forth_section",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-82vw",
+            duration: 0.5,
+          },
+          {
+            left: "-80vw",
+            duration: 0.5,
+          },
+          "+=1"
+        )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-74.4vw",
+            duration: 0.5,
+          },
+          {
+            left: "-74.4vw",
+            duration: 0.5,
+          },
+          "+=1"
+        )
+        .fromTo(
+          ".div_1",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          "-=.1"
+        )
+        .fromTo(
+          ".year_1",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          "-=.1"
+        )
+        .fromTo(
+          ".div_2",
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".year_2",
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-74.4vw",
+          },
+          {
+            left: "-58.6vw",
+          },
+          "-=.8"
+        )
+        .fromTo(
+          ".div_3",
+          {
+            autoAlpha: 0,
+            duration: 2,
+            delay: 1,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+            delay: 1,
+          }
+        )
+        .fromTo(
+          ".year_3",
+          {
+            autoAlpha: 0,
+            duration: 2,
+            delay: 1,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+            delay: 1,
+          }
+        )
+
+        //
+        .fromTo(
+          ".div_2",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".year_2",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-58.6vw",
+          },
+          {
+            left: "-41vw",
+          }
+        )
+        .fromTo(
+          ".div_4",
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".year_4",
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            duration: 2,
+          }
+        )
+        .fromTo(
+          ".div_3",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          "-=.4"
+        )
+        .fromTo(
+          ".year_3",
+          {
+            autoAlpha: 1,
+            duration: 2,
+          },
+          {
+            autoAlpha: 0,
+            duration: 2,
+          },
+          "-=.4"
+        )
+        .fromTo(
+          ".value_1",
+          {
+            left: "-41vw",
+          },
+          {
+            left: "-23.7vw",
+          }
+        );
+    });
   }, []);
 
   return (
