@@ -199,6 +199,7 @@
   .navbar_btn {
     width: 87px;
     height: 42px;
+    padding: 7px 24px 10px;
   }
 }
 @media (max-width: 991.98px) {
@@ -234,8 +235,14 @@
   .logo_width {
     max-width: unset;
   }
+  .hero_section_heading h2 {
+    font-size: 40px;
+  }
+  .hero_heading_btn {
+    font-size: 32px !important;
+  }
 }
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
   .parliamone {
     &::after {
       content: "";
@@ -300,5 +307,15 @@
   }
   .toggle_icon svg {
     max-width: 26px !important;
+  }
+  .hero_section_heading {
+    max-width: 265px !important;
+  }
+  .hero_section_heading h2 {
+    font-size: 32px !important;
+  }
+  .hero_heading_btn {
+    padding: 3px 23px 9px !important;
+    font-size: 24px !important;
   }
 }

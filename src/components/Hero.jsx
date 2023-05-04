@@ -201,8 +201,8 @@ const Hero = () => {
             <div className="heading">
               <div className="hero_section_heading">
                 <h2 className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01">
-                  Il futuro dei tuoi
-                  <span className="d-inline-block hero_heading_btn mx-3">
+                  Il futuro delle tue
+                  <span className="d-inline-block hero_heading_btn me-2 mt-3 mt-sm-0 mx-sm-3">
                     vendite
                   </span>
                   è digitale

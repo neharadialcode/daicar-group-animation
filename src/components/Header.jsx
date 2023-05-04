@@ -47,7 +47,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="fw-normal font_sm color_white_off nav_hover"
+                className="ff_mundial_regular font_sm color_white_off nav_hover"
               >
                 Main Assets
               </a>
@@ -55,7 +55,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="fw-normal font_sm color_white_off nav_hover"
+                className="ff_mundial_regular font_sm color_white_off nav_hover"
               >
                 Servizi
               </a>
@@ -63,7 +63,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="fw-normal font_sm color_white_off nav_hover"
+                className="ff_mundial_regular font_sm color_white_off nav_hover"
               >
                 Daicar Group
               </a>
@@ -71,7 +71,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="fw-normal font_sm color_white_off nav_hover"
+                className="ff_mundial_regular font_sm color_white_off nav_hover"
               >
                 Contatti
               </a>
@@ -84,7 +84,7 @@ const Header = () => {
             >
               Sentiamoci
             </a>
-            <button className="navbar_btn font-normal font_2xl color_dark_gray ms-xl-4">
+            <button className="ff_mundial_regular navbar_btn font_2xl color_dark_gray ms-xl-4">
               chat
             </button>
           </div>

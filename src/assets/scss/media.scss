@@ -327,20 +327,21 @@
     max-width: 300px !important;
   }
   .icon_1 {
-    top: 45% !important;
+    top: 6% !important;
     left: 5% !important;
   }
   .icon_2 {
-    top: -30% !important;
+    top: -48% !important;
     svg {
       width: 650px !important;
     }
   }
   .icon_3 {
-    top: 25% !important;
+    top: -5% !important;
     right: -10px !important;
     svg {
-      width: 350px !important;
+      width: 300px !important;
+      margin-left: 40px;
     }
   }
   .hero_btn {
@@ -407,8 +408,8 @@
     svg {
       width: 250px !important;
     }
-    top: 70% !important;
-    left: -5% !important;
+    top: 18% !important;
+    left: 6% !important;
   }
   .icon_2 {
     svg {
@@ -418,10 +419,13 @@
   }
   .icon_3 {
     svg {
-      width: 300px !important;
+      width: 400px !important;
     }
-    top: -10% !important;
+    top: 40% !important;
     right: -50px !important;
+  }
+  .icon_3 svg {
+    margin-left: 28% !important;
   }
   .i_pad_img_2 {
     margin-left: 39px;
@@ -629,23 +633,25 @@
   }
   .icon_1 {
     svg {
-      width: 120px !important;
+      width: 170px !important;
     }
-    top: 60% !important;
+    top: 52% !important;
     left: -5% !important;
   }
   .icon_2 {
     svg {
       width: 550px !important;
+      transform: scale(1.29);
     }
-    top: -37% !important;
+    top: -34% !important;
   }
   .icon_3 {
     svg {
-      width: 200px !important;
+      width: 240px !important;
+      margin-left: -20px !important;
     }
     right: 20px !important;
-    top: -25% !important;
+    top: -20% !important;
     right: -70px !important;
   }
   .third_section {
