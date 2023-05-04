@@ -227,8 +227,14 @@
 
 @media (max-width: 1599.98px) {
   .icon_1 {
-    top: 50% !important;
-    left: 5% !important;
+    top: 23% !important;
+    left: 15% !important;
+  }
+  .icon_1 svg {
+    max-width: 187px !important;
+  }
+  .icon_3 svg {
+    max-width: 414px !important;
   }
   .icon_2 {
     top: -25% !important;
@@ -237,7 +243,7 @@
     }
   }
   .icon_3 {
-    top: 30% !important;
+    top: 19% !important;
     right: -30px !important;
     svg {
       width: 450px !important;
@@ -276,6 +282,12 @@
   }
   .small_icon {
     left: 0%;
+  }
+  .icon_3 {
+    top: 15% !important;
+  }
+  .icon_3 svg {
+    width: 340px !important;
   }
 }
 

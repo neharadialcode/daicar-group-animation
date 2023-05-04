@@ -68,19 +68,22 @@
 }
 .icon_1 {
   position: absolute;
-  top: 65%;
+  top: 36%;
   left: 15%;
 }
 .icon_2 {
   position: absolute;
-  top: 0%;
+  bottom: 2%;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: -1;
 }
+.icon_2 svg {
+  transform: scale(1.05);
+}
 .icon_3 {
   position: absolute;
-  top: 50%;
+  top: 33%;
   right: 7%;
 }
 .icon_4 {
@@ -713,7 +716,8 @@ $background-color_3: black;
 }
 
 .hero_section_heading {
-  height: calc(100vh - 148px) !important;
+  // height: calc(100vh - 148px) !important;
+  height: 100vh !important;
   z-index: 10;
 }
 .hero_heading_btn {
