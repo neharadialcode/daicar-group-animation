@@ -224,200 +224,475 @@ const FifthSection = () => {
           "-=.5"
         )
         .fromTo(
+          ".timeline_line_img",
+          {
+            autoAlpha: 0,
+            // duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            // duration: 2,
+          }
+        )
+        // FIRST VALUES
+
+        .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-82vw",
-            duration: 0.5,
+            left: "-100vw",
+            // duration: 0.5,
           },
           {
-            left: "-80vw",
-            duration: 0.5,
+            left: "-82vw",
+            // duration: 0.5,
+          }
+        )
+        .fromTo(
+          ".timeline_text_1",
+          {
+            autoAlpha: 0,
+            // duration: 2,
           },
-          "+=1"
+          {
+            autoAlpha: 1,
+            // duration: 2,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".year_1",
+          {
+            autoAlpha: 0,
+            // duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            // duration: 2,
+          },
+          "-=.5"
         )
         .fromTo(
           ".timeline_text_1",
           {
             autoAlpha: 1,
-            duration: 2,
+            duration: 1,
           },
           {
             autoAlpha: 0,
-            duration: 2,
+            duration: 1,
           },
-          "-=.1"
+          "-=.5"
         )
-        .fromTo(
-          ".timeline_arrow_icon",
-          {
-            left: "-74.4vw",
-            duration: 0.5,
-          },
-          {
-            left: "-74.4vw",
-            duration: 0.5,
-          },
-          "+=1"
-        )
-
         .fromTo(
           ".year_1",
           {
             autoAlpha: 1,
-            duration: 2,
+            duration: 1,
           },
           {
             autoAlpha: 0,
-            duration: 2,
+            duration: 1,
           },
-          "-=.1"
+          "-=.5"
         )
+
+        // SECOND VALUES
         .fromTo(
           ".timeline_text_2",
           {
             autoAlpha: 0,
-            duration: 2,
+            // duration: 2,
           },
           {
             autoAlpha: 1,
-            duration: 2,
+            // duration: 2,
           }
+        )
+        .fromTo(
+          ".timeline_arrow_icon",
+          {
+            left: "-82vw",
+            // duration: 0.5,
+          },
+          {
+            left: "-61vw",
+            // duration: 0.5,
+          },
+          "-=.5"
         )
         .fromTo(
           ".year_2",
           {
             autoAlpha: 0,
-            duration: 2,
+            // duration: 2,
           },
           {
             autoAlpha: 1,
-            duration: 2,
+            // duration: 2,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".timeline_text_2",
+          {
+            autoAlpha: 1,
+            duration: 1,
+          },
+          {
+            autoAlpha: 0,
+            duration: 1,
+          }
+        )
+        .fromTo(
+          ".year_2",
+          {
+            autoAlpha: 1,
+            duration: 1,
+          },
+          {
+            autoAlpha: 0,
+            duration: 1,
+          },
+          "-=.5"
+        )
+
+        // THIRD VALUES
+        .fromTo(
+          ".timeline_text_3",
+          {
+            autoAlpha: 0,
+            // duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            // duration: 2,
           }
         )
         .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-74.4vw",
+            left: "-61vw",
+            // duration: 0.5,
           },
           {
-            left: "-58.6vw",
+            left: "-39vw",
+            // duration: 0.5,
           },
-          "-=.8"
-        )
-        .fromTo(
-          ".timeline_text_3",
-          {
-            autoAlpha: 0,
-            duration: 2,
-            delay: 1,
-          },
-          {
-            autoAlpha: 1,
-            duration: 2,
-            delay: 1,
-          }
+          "-=.5"
         )
         .fromTo(
           ".year_3",
           {
             autoAlpha: 0,
-            duration: 2,
-            delay: 1,
+            // duration: 2,
           },
           {
             autoAlpha: 1,
-            duration: 2,
-            delay: 1,
+            // duration: 2,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".timeline_text_3",
+          {
+            autoAlpha: 1,
+            duration: 1,
+          },
+          {
+            autoAlpha: 0,
+            duration: 1,
           }
+        )
+        .fromTo(
+          ".year_3",
+          {
+            autoAlpha: 1,
+            duration: 1,
+          },
+          {
+            autoAlpha: 0,
+            duration: 1,
+          },
+          "-=.5"
         )
 
-        //
+        // FOURTH VALUES
         .fromTo(
-          ".timeline_text_2",
-          {
-            autoAlpha: 1,
-            duration: 2,
-          },
+          ".timeline_text_4",
           {
             autoAlpha: 0,
-            duration: 2,
-          }
-        )
-        .fromTo(
-          ".year_2",
-          {
-            autoAlpha: 1,
-            duration: 2,
+            // duration: 2,
           },
           {
-            autoAlpha: 0,
-            duration: 2,
+            autoAlpha: 1,
+            // duration: 2,
           }
         )
         .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-58.6vw",
+            left: "-39vw",
+            // duration: 0.5,
           },
           {
-            left: "-41vw",
-          }
-        )
-        .fromTo(
-          ".timeline_text_4",
-          {
-            autoAlpha: 0,
-            duration: 2,
+            left: "-16vw",
+            // duration: 0.5,
           },
-          {
-            autoAlpha: 1,
-            duration: 2,
-          }
+          "-=.5"
         )
         .fromTo(
           ".year_4",
           {
             autoAlpha: 0,
-            duration: 2,
+            // duration: 2,
           },
           {
             autoAlpha: 1,
-            duration: 2,
-          }
+            // duration: 2,
+          },
+          "-=.5"
         )
         .fromTo(
-          ".timeline_text_3",
+          ".timeline_text_4",
           {
             autoAlpha: 1,
-            duration: 2,
+            duration: 1,
           },
           {
             autoAlpha: 0,
-            duration: 2,
-          },
-          "-=.4"
+            duration: 1,
+          }
         )
         .fromTo(
-          ".year_3",
+          ".year_4",
           {
             autoAlpha: 1,
-            duration: 2,
+            duration: 1,
           },
           {
             autoAlpha: 0,
-            duration: 2,
+            duration: 1,
           },
-          "-=.4"
-        )
-        .fromTo(
-          ".timeline_arrow_icon",
-          {
-            left: "-41vw",
-          },
-          {
-            left: "-23.7vw",
-          }
+          "-=.5"
         );
+
+      // .fromTo(
+      //   ".timeline_text_1",
+      //   {
+      //     autoAlpha: 0,
+      //     // duration: 2,
+      //   },
+      //   {
+      //     autoAlpha: 1,
+      //     // duration: 2,
+      //   }
+      // )
+      // .fromTo(
+      //   ".timeline_arrow_icon",
+      //   {
+      //     left: "-110vw",
+      //     // duration: 0.5,
+      //   },
+      //   {
+      //     left: "-82vw",
+      //     // duration: 0.5,
+      //   },
+      //   "-=.5"
+      // )
+      // .fromTo(
+      //   ".year_1",
+      //   {
+      //     autoAlpha: 0,
+      //     // duration: 2,
+      //   },
+      //   {
+      //     autoAlpha: 1,
+      //     // duration: 2,
+      //   },
+      //   "-=.5"
+      // )
+      // .fromTo(
+      //   ".timeline_text_1",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 1,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 1,
+      //   }
+      // )
+      // .fromTo(
+      //   ".year_1",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 1,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 1,
+      //   },
+      //   "-=.5"
+      // )
+
+      // .fromTo(
+      //   ".timeline_text_2",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 1,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 1,
+      //   }
+      // )
+      // .fromTo(
+      //   ".timeline_arrow_icon",
+      //   {
+      //     left: "-74.4vw",
+      //   },
+      //   {
+      //     left: "-58.6vw",
+      //   },
+      //   "-=.5"
+      // )
+      // .fromTo(
+      //   ".year_2",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 1,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 1,
+      //   }
+      // )
+      // .fromTo(
+      //   ".timeline_text_2",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 1,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 1,
+      //   }
+      // )
+
+      // .fromTo(
+      //   ".timeline_text_3",
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 2,
+      //     delay: 1,
+      //   },
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 2,
+      //     delay: 1,
+      //   }
+      // )
+      // .fromTo(
+      //   ".year_3",
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 2,
+      //     delay: 1,
+      //   },
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 2,
+      //     delay: 1,
+      //   }
+      // )
+
+      // //
+      // .fromTo(
+      //   ".timeline_text_2",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 2,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 2,
+      //   }
+      // )
+      // .fromTo(
+      //   ".year_2",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 2,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 2,
+      //   }
+      // )
+      // .fromTo(
+      //   ".timeline_arrow_icon",
+      //   {
+      //     left: "-58.6vw",
+      //   },
+      //   {
+      //     left: "-41vw",
+      //   }
+      // )
+      // .fromTo(
+      //   ".timeline_text_4",
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 2,
+      //   },
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 2,
+      //   }
+      // )
+      // .fromTo(
+      //   ".year_4",
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 2,
+      //   },
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 2,
+      //   }
+      // )
+      // .fromTo(
+      //   ".timeline_text_3",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 2,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 2,
+      //   },
+      //   "-=.4"
+      // )
+      // .fromTo(
+      //   ".year_3",
+      //   {
+      //     autoAlpha: 1,
+      //     duration: 2,
+      //   },
+      //   {
+      //     autoAlpha: 0,
+      //     duration: 2,
+      //   },
+      //   "-=.4"
+      // )
+      // .fromTo(
+      //   ".timeline_arrow_icon",
+      //   {
+      //     left: "-41vw",
+      //   },
+      //   {
+      //     left: "-23.7vw",
+      //   }
+      // );
     });
     timelineMedia.add("(min-width: 1400px) and (max-width:1599.98px)", () => {
       // let timelineParent = gsap.timeline({
