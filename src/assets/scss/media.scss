@@ -231,6 +231,13 @@
     object-fit: unset;
     max-height: unset;
   }
+  .heading_1 .m_w_business_text {
+    max-width: 474px;
+  }
+  .m_w_business_text {
+    max-width: 525px;
+    line-height: 142%;
+  }
 }
 
 @media (max-width: 1599.98px) {

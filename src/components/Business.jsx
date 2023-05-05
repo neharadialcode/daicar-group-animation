@@ -460,7 +460,7 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray">
                     LANDING CONVERSAZIONALE
                   </h3>
-                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     Landingpage su misura per i nostri partner e conformi
                     al&nbsp;
                     <span className="ff_mundial_bold">regolamento GDPR</span>
@@ -471,7 +471,7 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray">
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
-                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     Meno tempo e maggiore conversione grazie al nostro&nbsp;
                     <span className="ff_mundial_bold">software di I.A.</span>
                     &nbsp; per la validazione real-time dei dati degli utenti
@@ -481,10 +481,10 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray">
                     TRASMISSIONE LEAD
                   </h3>
-                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     I lead generati vengono sottoposti ad un attento processo di
                     filtraggio e controllo tramite API o integrazione con il CRM
-                    del partner prima di essere inviati”
+                    del partner prima di essere inviati
                   </p>
                 </div>
               </div>
