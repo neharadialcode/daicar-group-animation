@@ -304,7 +304,7 @@
 .z_negative {
   z-index: -1;
 }
-.small_icon_1 {
+.timeline_arrow_icon {
   position: absolute;
   z-index: -1;
   transform: translateY(-41%);
@@ -331,7 +331,7 @@
 .third_sec_height {
   height: 200vh;
 }
-.line_with_dot {
+.timeline_with_dot {
   height: 5px;
   background-color: var(--bg-light-white);
   position: relative;
@@ -347,7 +347,7 @@
     border-radius: 50%;
   }
 }
-.line_first {
+.timeline_ist_dot {
   &::before {
     position: absolute;
     content: "";
@@ -360,7 +360,7 @@
     border-radius: 50%;
   }
 }
-.div_4 {
+.timeline_text_4 {
   right: 0;
   max-width: 200px;
 }
@@ -487,21 +487,21 @@
   padding: 5px 24px 12px !important;
 }
 .fifth_main {
-  .div_1 {
+  .timeline_text_1 {
     // max-width: 523px !important;
     p {
       letter-spacing: -0.01em;
       line-height: 147%;
     }
   }
-  .div_2 {
+  .timeline_text_2 {
     p {
       letter-spacing: -0.01em;
       line-height: 147%;
     }
     max-width: 550px !important;
   }
-  .div_3 {
+  .timeline_text_3 {
     p {
       letter-spacing: -0.01em;
       line-height: 147%;
@@ -512,7 +512,7 @@
       max-width: 289.29px !important;
     }
   }
-  .div_4 {
+  .timeline_text_4 {
     p {
       letter-spacing: -0.01em;
       line-height: 147%;
@@ -521,7 +521,7 @@
     right: 7% !important;
   }
 }
-.the_time_line {
+.timeline_line_img {
   max-width: 1280px;
 }
 .timeline_slide_content {
@@ -555,7 +555,7 @@
   height: 156vh;
   margin-left: -20px;
 }
-.timeline_text {
+.timeline_year {
   font-size: var(--font-9xl);
   font-weight: 400;
   color: var(--color-white-off);
