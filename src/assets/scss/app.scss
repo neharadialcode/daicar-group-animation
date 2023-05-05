@@ -203,7 +203,7 @@
 .topscroll {
   position: absolute;
   right: 15px;
-  bottom: 25px;
+  bottom: 100px;
   background: var(--color-light-green);
   border: 1px solid white;
   height: 40px;
@@ -754,10 +754,16 @@ $background-color_3: black;
 }
 .show_chat_icon {
   position: fixed;
-  right: 22px;
-  bottom: 90px;
+  right: 35px;
+  bottom: 37px;
   height: 53px;
   width: 53px;
   z-index: 100;
   cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    // box-shadow: 0px 0px 5px var(--color-white-off);
+    transform: scale(0.94);
+  }
 }
