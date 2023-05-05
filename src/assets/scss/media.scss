@@ -412,21 +412,21 @@
     svg {
       width: 250px !important;
     }
-    top: 18% !important;
+    top: 17% !important;
     left: -1% !important;
   }
   .icon_2 {
     svg {
       width: 900px !important;
     }
-    top: -5% !important;
+    top: -8% !important;
     left: 47% !important;
   }
   .icon_3 {
     svg {
       width: 400px !important;
     }
-    top: 43% !important;
+    top: 41% !important;
     right: -50px !important;
   }
   .icon_3 svg {
@@ -540,6 +540,22 @@
   }
   .slide_para_2 {
     font-size: 32px !important;
+  }
+}
+
+@media (max-width: 799.98px) {
+  .icon_1 {
+    top: 12% !important;
+    left: -4% !important;
+  }
+  .icon_2 {
+    svg {
+      width: 800px !important;
+    }
+    top: -16% !important;
+  }
+  .icon_3 {
+    top: 38% !important;
   }
 }
 
