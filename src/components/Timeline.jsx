@@ -85,7 +85,7 @@ const FifthSection = () => {
   //       "-=.5"
   //     )
   //     .fromTo(
-  //       ".value_1",
+  //       ".timeline_arrow_icon",
   //       {
   //         left: "-75vw",
   //       },
@@ -95,7 +95,7 @@ const FifthSection = () => {
   //       "+=1"
   //     )
   //     .fromTo(
-  //       ".div_2",
+  //       ".timeline_text_2",
   //       {
   //         autoAlpha: 0,
   //       },
@@ -104,7 +104,7 @@ const FifthSection = () => {
   //       }
   //     )
   //     .fromTo(
-  //       ".div_1",
+  //       ".timeline_text_1",
   //       {
   //         autoAlpha: 1,
   //       },
@@ -115,7 +115,7 @@ const FifthSection = () => {
   //     )
 
   //     .fromTo(
-  //       ".value_1",
+  //       ".timeline_arrow_icon",
   //       {
   //         left: "-85vw",
   //       },
@@ -124,7 +124,7 @@ const FifthSection = () => {
   //       }
   //     )
   //     .fromTo(
-  //       ".div_3",
+  //       ".timeline_text_3",
   //       {
   //         autoAlpha: 0,
   //       },
@@ -133,7 +133,7 @@ const FifthSection = () => {
   //       }
   //     )
   //     .fromTo(
-  //       ".div_2",
+  //       ".timeline_text_2",
   //       {
   //         autoAlpha: 1,
   //       },
@@ -143,7 +143,7 @@ const FifthSection = () => {
   //       "-=.8"
   //     )
   //     .fromTo(
-  //       ".value_1",
+  //       ".timeline_arrow_icon",
   //       {
   //         left: "-65vw",
   //       },
@@ -152,7 +152,7 @@ const FifthSection = () => {
   //       }
   //     )
   //     .fromTo(
-  //       ".div_4",
+  //       ".timeline_text_4",
   //       {
   //         autoAlpha: 0,
   //       },
@@ -161,7 +161,7 @@ const FifthSection = () => {
   //       }
   //     )
   //     .fromTo(
-  //       ".div_3",
+  //       ".timeline_text_3",
   //       {
   //         autoAlpha: 1,
   //       },
@@ -192,7 +192,7 @@ const FifthSection = () => {
       //     scale: 1,
       //   }
       // );
-      let fifth = gsap.timeline({
+      let timeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
@@ -203,7 +203,7 @@ const FifthSection = () => {
           markers: true,
         },
       });
-      fifth
+      timeline
         .fromTo(
           ".timeline_parent",
           {
@@ -224,7 +224,7 @@ const FifthSection = () => {
           "-=.5"
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-82vw",
             duration: 0.5,
@@ -236,7 +236,7 @@ const FifthSection = () => {
           "+=1"
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-74.4vw",
             duration: 0.5,
@@ -248,7 +248,7 @@ const FifthSection = () => {
           "+=1"
         )
         .fromTo(
-          ".div_1",
+          ".timeline_text_1",
           {
             autoAlpha: 1,
             duration: 2,
@@ -272,7 +272,7 @@ const FifthSection = () => {
           "-=.1"
         )
         .fromTo(
-          ".div_2",
+          ".timeline_text_2",
           {
             autoAlpha: 0,
             duration: 2,
@@ -294,7 +294,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-74.4vw",
           },
@@ -304,7 +304,7 @@ const FifthSection = () => {
           "-=.8"
         )
         .fromTo(
-          ".div_3",
+          ".timeline_text_3",
           {
             autoAlpha: 0,
             duration: 2,
@@ -332,7 +332,7 @@ const FifthSection = () => {
 
         //
         .fromTo(
-          ".div_2",
+          ".timeline_text_2",
           {
             autoAlpha: 1,
             duration: 2,
@@ -354,7 +354,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-58.6vw",
           },
@@ -363,7 +363,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".div_4",
+          ".timeline_text_4",
           {
             autoAlpha: 0,
             duration: 2,
@@ -385,7 +385,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".div_3",
+          ".timeline_text_3",
           {
             autoAlpha: 1,
             duration: 2,
@@ -409,7 +409,7 @@ const FifthSection = () => {
           "-=.4"
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-41vw",
           },
@@ -419,24 +419,24 @@ const FifthSection = () => {
         );
     });
     timelineMedia.add("(min-width: 1400px) and (max-width:1599.98px)", () => {
-      let timelineParent = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".timeline_parent",
-          start: "top 5%",
-          end: "bottom top",
-          toggleActions: "play none none reverse",
-          // markers: true,
-        },
-      });
+      // let timelineParent = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".timeline_parent",
+      //     start: "top 5%",
+      //     end: "bottom top",
+      //     toggleActions: "play none none reverse",
+      //     // markers: true,
+      //   },
+      // });
 
-      timelineParent.fromTo(
-        ".bg-green",
-        { scale: 0 },
-        {
-          scale: 1,
-        }
-      );
-      let fifth = gsap.timeline({
+      // timelineParent.fromTo(
+      //   ".bg-green",
+      //   { scale: 0 },
+      //   {
+      //     scale: 1,
+      //   }
+      // );
+      let timeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
@@ -447,7 +447,7 @@ const FifthSection = () => {
           // markers: true,
         },
       });
-      fifth
+      timeline
         .fromTo(
           ".timeline_parent",
           {
@@ -468,7 +468,7 @@ const FifthSection = () => {
           "-=.5"
         )
         // .fromTo(
-        //   ".value_1",
+        //   ".timeline_arrow_icon",
         //   {
         //     left: "-82vw",
         //     duration: 0.5,
@@ -480,7 +480,7 @@ const FifthSection = () => {
         //   "+=1"
         // )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-80vw",
             duration: 0.5,
@@ -492,7 +492,7 @@ const FifthSection = () => {
           // "+=8"
         )
         .fromTo(
-          ".div_1",
+          ".timeline_text_1",
           {
             autoAlpha: 1,
             duration: 0.5,
@@ -518,7 +518,7 @@ const FifthSection = () => {
           "-=.1"
         )
         .fromTo(
-          ".div_2",
+          ".timeline_text_2",
           {
             autoAlpha: 0,
             duration: 2,
@@ -540,7 +540,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-74.4vw",
           },
@@ -550,7 +550,7 @@ const FifthSection = () => {
           "-=.8"
         )
         .fromTo(
-          ".div_3",
+          ".timeline_text_3",
           {
             autoAlpha: 0,
             duration: 2,
@@ -578,7 +578,7 @@ const FifthSection = () => {
 
         //
         .fromTo(
-          ".div_2",
+          ".timeline_text_2",
           {
             autoAlpha: 1,
             duration: 2,
@@ -600,7 +600,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-58.6vw",
           },
@@ -609,7 +609,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".div_4",
+          ".timeline_text_4",
           {
             autoAlpha: 0,
             duration: 2,
@@ -631,7 +631,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".div_3",
+          ".timeline_text_3",
           {
             autoAlpha: 1,
             duration: 2,
@@ -655,7 +655,7 @@ const FifthSection = () => {
           "-=.4"
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-41vw",
           },
@@ -665,23 +665,23 @@ const FifthSection = () => {
         );
     });
     timelineMedia.add("(min-width: 992px) and (max-width:1399.98px)", () => {
-      let timelineParent = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".timeline_parent",
-          start: "top 5%",
-          end: "bottom top",
-          toggleActions: "play none none reverse",
-        },
-      });
+      // let timelineParent = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".timeline_parent",
+      //     start: "top 5%",
+      //     end: "bottom top",
+      //     toggleActions: "play none none reverse",
+      //   },
+      // });
 
-      timelineParent.fromTo(
-        ".bg-green",
-        { scale: 0 },
-        {
-          scale: 1,
-        }
-      );
-      let fifth = gsap.timeline({
+      // timelineParent.fromTo(
+      //   ".bg-green",
+      //   { scale: 0 },
+      //   {
+      //     scale: 1,
+      //   }
+      // );
+      let timeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
@@ -692,7 +692,7 @@ const FifthSection = () => {
           // markers: true,
         },
       });
-      fifth
+      timeline
         .fromTo(
           ".timeline_parent",
           {
@@ -713,7 +713,7 @@ const FifthSection = () => {
           "-=.5"
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-82vw",
             duration: 0.5,
@@ -725,7 +725,7 @@ const FifthSection = () => {
           "+=1"
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-74.4vw",
             duration: 0.5,
@@ -737,7 +737,7 @@ const FifthSection = () => {
           "+=1"
         )
         .fromTo(
-          ".div_1",
+          ".timeline_text_1",
           {
             autoAlpha: 1,
             duration: 2,
@@ -761,7 +761,7 @@ const FifthSection = () => {
           "-=.1"
         )
         .fromTo(
-          ".div_2",
+          ".timeline_text_2",
           {
             autoAlpha: 0,
             duration: 2,
@@ -783,7 +783,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-74.4vw",
           },
@@ -793,7 +793,7 @@ const FifthSection = () => {
           "-=.8"
         )
         .fromTo(
-          ".div_3",
+          ".timeline_text_3",
           {
             autoAlpha: 0,
             duration: 2,
@@ -821,7 +821,7 @@ const FifthSection = () => {
 
         //
         .fromTo(
-          ".div_2",
+          ".timeline_text_2",
           {
             autoAlpha: 1,
             duration: 2,
@@ -843,7 +843,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-58.6vw",
           },
@@ -852,7 +852,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".div_4",
+          ".timeline_text_4",
           {
             autoAlpha: 0,
             duration: 2,
@@ -874,7 +874,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".div_3",
+          ".timeline_text_3",
           {
             autoAlpha: 1,
             duration: 2,
@@ -898,7 +898,7 @@ const FifthSection = () => {
           "-=.4"
         )
         .fromTo(
-          ".value_1",
+          ".timeline_arrow_icon",
           {
             left: "-41vw",
           },
@@ -914,11 +914,11 @@ const FifthSection = () => {
       <div className="container" ref={containerRef}></div>
       {/* <div className="timeline_parent"> */}
       <div className="vh-100 overflow-hidden timeline_parent z-10">
-        <div className="bg_gray vh-100 position-absolute w-100"></div>
+        <div className="bg_dark_gray vh-100 position-absolute w-100"></div>
         <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative">
           <div className="d-flex timeline_slide_content justify-content-center">
             <div
-              className="div_1 text-white"
+              className="timeline_text_1 text-white"
               style={{ marginLeft: `${leftMargin + 16}px` }}
             >
               <img
@@ -935,7 +935,7 @@ const FifthSection = () => {
               </button>
             </div>
             <div
-              className="div_2 text-white position-absolute ps-2"
+              className="timeline_text_2 text-white position-absolute ps-2"
               style={{ left: `${leftSpacing - 10}px` }}
             >
               <p className="font_2xl fw-normal text-white mb-3">
@@ -946,7 +946,7 @@ const FifthSection = () => {
               </p>
             </div>
             <div
-              className="div_3 text-white position-absolute"
+              className="timeline_text_3 text-white position-absolute"
               style={{ left: `${leftSpacing2 - 10}px` }}
             >
               <img className="w-100" src={timelineImg2} alt="timelineImg2" />
@@ -970,7 +970,7 @@ const FifthSection = () => {
                 </button>
               </div>
             </div>
-            <div className="div_4 position-absolute">
+            <div className="timeline_text_4 position-absolute">
               <img className="w-100" src={timelineImg3} alt="timelineImg3" />
             </div>
           </div>
@@ -979,7 +979,7 @@ const FifthSection = () => {
             className="d-inline-block"
           >
             <img
-              className="small_icon_1 value_1 w-100"
+              className="timeline_arrow_icon w-100"
               src={icon1}
               alt="icon1"
             />
@@ -989,16 +989,16 @@ const FifthSection = () => {
               className="line mt-5"
               style={{ marginLeft: `${leftMargin + 16}px` }}
             ></div> */}
-          <div className="container mt-5 pt-2">
-            <div className="d-flex mx-auto the_time_line">
-              <div className="col-4 line_with_dot line_first "></div>
-              <div ref={secondText} className="col-4 line_with_dot "></div>
-              <div ref={secondText2} className="col-4 line_with_dot "></div>
+          <div className="container mt-5 pt-3">
+            <div className="d-flex mx-auto timeline_line_img">
+              <div className="col-4 timeline_with_dot timeline_ist_dot"></div>
+              <div ref={secondText} className="col-4 timeline_with_dot"></div>
+              <div ref={secondText2} className="col-4 timeline_with_dot"></div>
               <div className="position-relative w-100">
-                <p className="timeline_text position-absolute year_1">2015</p>
-                <p className="timeline_text position-absolute year_2">2018</p>
-                <p className="timeline_text position-absolute year_3">2022</p>
-                <p className="timeline_text position-absolute year_4">2023</p>
+                <p className="timeline_year position-absolute year_1">2015</p>
+                <p className="timeline_year position-absolute year_2">2018</p>
+                <p className="timeline_year position-absolute year_3">2022</p>
+                <p className="timeline_year position-absolute year_4">2023</p>
               </div>
             </div>
           </div>
