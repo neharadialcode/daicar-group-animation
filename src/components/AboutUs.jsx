@@ -3,7 +3,7 @@ import roadmapImg1 from "../assets/images/svg/roadmap_img1.png";
 import roadmapImg2 from "../assets/images/svg/roadmap_img2.png";
 import bigFounder from "../assets/images/png/big-founder-federico-img.png";
 import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
-import bigFounder3 from "../assets/images/png/big-founder-francesca-img.png";
+import bigFounder3 from "../assets/images/png/big-founder-federico-img-2.png";
 import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
 
@@ -354,7 +354,7 @@ const ForthSection = () => {
           />
         </div>
         <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading z_1">
-          <p className="font_5xl fw-normal text-white pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing">
+          <p className="font_5xl fw-normal text-white pt-sm-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
@@ -376,7 +376,7 @@ const ForthSection = () => {
                   <DownArrowNoiIcon />
                 </div>
                 <div className="top_space_custom_arrow_text">
-                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
+                  <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5">
                     Il futuro della lead generation è basato sulla creazione di
                     relazioni di fiducia, sostenute dalla tecnologia.
                   </h4>

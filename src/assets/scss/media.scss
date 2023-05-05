@@ -129,7 +129,7 @@
   }
   .roadmap_text_1 {
     h4 {
-      max-width: 820px;
+      max-width: 900px;
     }
   }
   .roadmap_text_2 {
@@ -283,6 +283,10 @@
   .business-content {
     transform: translateY(20px) !important;
     padding-top: 14px !important;
+  }
+  .roadmap_text_1 {
+    width: 710px !important;
+    margin-left: -60px;
   }
 }
 
