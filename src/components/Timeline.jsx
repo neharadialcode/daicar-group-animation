@@ -200,7 +200,6 @@ const FifthSection = () => {
           scrub: 5,
           pin: true,
           pinSpacing: true,
-          markers: true,
         },
       });
       timeline
@@ -482,225 +481,8 @@ const FifthSection = () => {
           },
           "-=.5"
         );
-
-      // .fromTo(
-      //   ".timeline_text_1",
-      //   {
-      //     autoAlpha: 0,
-      //     // duration: 2,
-      //   },
-      //   {
-      //     autoAlpha: 1,
-      //     // duration: 2,
-      //   }
-      // )
-      // .fromTo(
-      //   ".timeline_arrow_icon",
-      //   {
-      //     left: "-110vw",
-      //     // duration: 0.5,
-      //   },
-      //   {
-      //     left: "-82vw",
-      //     // duration: 0.5,
-      //   },
-      //   "-=.5"
-      // )
-      // .fromTo(
-      //   ".year_1",
-      //   {
-      //     autoAlpha: 0,
-      //     // duration: 2,
-      //   },
-      //   {
-      //     autoAlpha: 1,
-      //     // duration: 2,
-      //   },
-      //   "-=.5"
-      // )
-      // .fromTo(
-      //   ".timeline_text_1",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 1,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 1,
-      //   }
-      // )
-      // .fromTo(
-      //   ".year_1",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 1,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 1,
-      //   },
-      //   "-=.5"
-      // )
-
-      // .fromTo(
-      //   ".timeline_text_2",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 1,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 1,
-      //   }
-      // )
-      // .fromTo(
-      //   ".timeline_arrow_icon",
-      //   {
-      //     left: "-74.4vw",
-      //   },
-      //   {
-      //     left: "-58.6vw",
-      //   },
-      //   "-=.5"
-      // )
-      // .fromTo(
-      //   ".year_2",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 1,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 1,
-      //   }
-      // )
-      // .fromTo(
-      //   ".timeline_text_2",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 1,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 1,
-      //   }
-      // )
-
-      // .fromTo(
-      //   ".timeline_text_3",
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 2,
-      //     delay: 1,
-      //   },
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 2,
-      //     delay: 1,
-      //   }
-      // )
-      // .fromTo(
-      //   ".year_3",
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 2,
-      //     delay: 1,
-      //   },
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 2,
-      //     delay: 1,
-      //   }
-      // )
-
-      // //
-      // .fromTo(
-      //   ".timeline_text_2",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 2,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 2,
-      //   }
-      // )
-      // .fromTo(
-      //   ".year_2",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 2,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 2,
-      //   }
-      // )
-      // .fromTo(
-      //   ".timeline_arrow_icon",
-      //   {
-      //     left: "-58.6vw",
-      //   },
-      //   {
-      //     left: "-41vw",
-      //   }
-      // )
-      // .fromTo(
-      //   ".timeline_text_4",
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 2,
-      //   },
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 2,
-      //   }
-      // )
-      // .fromTo(
-      //   ".year_4",
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 2,
-      //   },
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 2,
-      //   }
-      // )
-      // .fromTo(
-      //   ".timeline_text_3",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 2,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 2,
-      //   },
-      //   "-=.4"
-      // )
-      // .fromTo(
-      //   ".year_3",
-      //   {
-      //     autoAlpha: 1,
-      //     duration: 2,
-      //   },
-      //   {
-      //     autoAlpha: 0,
-      //     duration: 2,
-      //   },
-      //   "-=.4"
-      // )
-      // .fromTo(
-      //   ".timeline_arrow_icon",
-      //   {
-      //     left: "-41vw",
-      //   },
-      //   {
-      //     left: "-23.7vw",
-      //   }
-      // );
     });
+
     timelineMedia.add("(min-width: 1400px) and (max-width:1599.98px)", () => {
       // let timelineParent = gsap.timeline({
       //   scrollTrigger: {
@@ -724,12 +506,229 @@ const FifthSection = () => {
           trigger: ".timeline_parent",
           start: "top top",
           end: "bottom top",
-          scrub: 1,
+          scrub: 5,
           pin: true,
           pinSpacing: true,
-          // markers: true,
+          markers: true,
         },
       });
+      // timeline
+      //   .fromTo(
+      //     ".timeline_parent",
+      //     {
+      //       opacity: 0,
+      //     },
+      //     {
+      //       opacity: 1,
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".forth_section",
+      //     {
+      //       opacity: 1,
+      //     },
+      //     {
+      //       opacity: 0,
+      //     },
+      //     "-=.5"
+      //   )
+      //   // .fromTo(
+      //   //   ".timeline_arrow_icon",
+      //   //   {
+      //   //     left: "-82vw",
+      //   //     duration: 0.5,
+      //   //   },
+      //   //   {
+      //   //     left: "-80vw",
+      //   //     duration: 0.5,
+      //   //   },
+      //   //   "+=1"
+      //   // )
+      //   .fromTo(
+      //     ".timeline_arrow_icon",
+      //     {
+      //       left: "-80vw",
+      //       duration: 0.5,
+      //     },
+      //     {
+      //       left: "-82vw",
+      //       duration: 0.5,
+      //     }
+      //     // "+=8"
+      //   )
+      //   .fromTo(
+      //     ".timeline_text_1",
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 0.5,
+      //       delay: 1,
+      //     },
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 0.5,
+      //       delay: 1,
+      //     },
+      //     "-=.1"
+      //   )
+      //   .fromTo(
+      //     ".year_1",
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     },
+      //     "-=.1"
+      //   )
+      //   .fromTo(
+      //     ".timeline_text_2",
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".year_2",
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".timeline_arrow_icon",
+      //     {
+      //       left: "-74.4vw",
+      //     },
+      //     {
+      //       left: "-58.6vw",
+      //     },
+      //     "-=.8"
+      //   )
+      //   .fromTo(
+      //     ".timeline_text_3",
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //       delay: 1,
+      //     },
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //       delay: 1,
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".year_3",
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //       delay: 1,
+      //     },
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //       delay: 1,
+      //     }
+      //   )
+
+      //   //
+      //   .fromTo(
+      //     ".timeline_text_2",
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".year_2",
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".timeline_arrow_icon",
+      //     {
+      //       left: "-58.6vw",
+      //     },
+      //     {
+      //       left: "-41vw",
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".timeline_text_4",
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".year_4",
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     }
+      //   )
+      //   .fromTo(
+      //     ".timeline_text_3",
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     },
+      //     "-=.4"
+      //   )
+      //   .fromTo(
+      //     ".year_3",
+      //     {
+      //       autoAlpha: 1,
+      //       duration: 2,
+      //     },
+      //     {
+      //       autoAlpha: 0,
+      //       duration: 2,
+      //     },
+      //     "-=.4"
+      //   )
+      //   .fromTo(
+      //     ".timeline_arrow_icon",
+      //     {
+      //       left: "-41vw",
+      //     },
+      //     {
+      //       left: "-23.7vw",
+      //     }
+      //   );
+
       timeline
         .fromTo(
           ".timeline_parent",
@@ -750,201 +749,264 @@ const FifthSection = () => {
           },
           "-=.5"
         )
-        // .fromTo(
-        //   ".timeline_arrow_icon",
-        //   {
-        //     left: "-82vw",
-        //     duration: 0.5,
-        //   },
-        //   {
-        //     left: "-80vw",
-        //     duration: 0.5,
-        //   },
-        //   "+=1"
-        // )
+        .fromTo(
+          ".timeline_line_img",
+          {
+            autoAlpha: 0,
+            // duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            // duration: 2,
+          }
+        )
+        // FIRST VALUES
+
         .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-80vw",
-            duration: 0.5,
+            left: "-100vw",
+            // duration: 0.5,
           },
           {
             left: "-82vw",
-            duration: 0.5,
+            // duration: 0.5,
+            delay: 1,
           }
-          // "+=8"
+        )
+        .fromTo(
+          ".timeline_text_1",
+          {
+            autoAlpha: 0,
+            // duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            // duration: 2,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".year_1",
+          {
+            autoAlpha: 0,
+            // duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            // duration: 2,
+          },
+          "-=.5"
         )
         .fromTo(
           ".timeline_text_1",
           {
             autoAlpha: 1,
-            duration: 0.5,
-            delay: 1,
+            duration: 1,
           },
           {
             autoAlpha: 0,
-            duration: 0.5,
+            duration: 1,
             delay: 1,
-          },
-          "-=.1"
+          }
         )
         .fromTo(
           ".year_1",
           {
             autoAlpha: 1,
-            duration: 2,
+            duration: 1,
           },
           {
             autoAlpha: 0,
-            duration: 2,
+            duration: 1,
           },
-          "-=.1"
+          "-=.5"
         )
+
+        // SECOND VALUES
         .fromTo(
           ".timeline_text_2",
           {
             autoAlpha: 0,
-            duration: 2,
+            // duration: 2,
           },
           {
             autoAlpha: 1,
-            duration: 2,
-          }
-        )
-        .fromTo(
-          ".year_2",
-          {
-            autoAlpha: 0,
-            duration: 2,
-          },
-          {
-            autoAlpha: 1,
-            duration: 2,
+            // duration: 2,
+            delay: 1,
           }
         )
         .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-74.4vw",
+            left: "-82vw",
+            // duration: 0.5,
           },
           {
-            left: "-58.6vw",
+            left: "-61vw",
+            // duration: 0.5,
           },
-          "-=.8"
+          "-=.5"
         )
+        .fromTo(
+          ".year_2",
+          {
+            autoAlpha: 0,
+            // duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            // duration: 2,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".timeline_text_2",
+          {
+            autoAlpha: 1,
+            duration: 1,
+          },
+          {
+            autoAlpha: 0,
+            duration: 1,
+            delay: 1,
+          }
+        )
+        .fromTo(
+          ".year_2",
+          {
+            autoAlpha: 1,
+            duration: 1,
+          },
+          {
+            autoAlpha: 0,
+            duration: 1,
+          },
+          "-=.5"
+        )
+
+        // THIRD VALUES
         .fromTo(
           ".timeline_text_3",
           {
             autoAlpha: 0,
-            duration: 2,
-            delay: 1,
+            // duration: 2,
           },
           {
             autoAlpha: 1,
-            duration: 2,
+            // duration: 2,
+            delay: 1,
+          }
+        )
+        .fromTo(
+          ".timeline_arrow_icon",
+          {
+            left: "-61vw",
+            // duration: 0.5,
+          },
+          {
+            left: "-39vw",
+            // duration: 0.5,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".year_3",
+          {
+            autoAlpha: 0,
+            // duration: 2,
+          },
+          {
+            autoAlpha: 1,
+            // duration: 2,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".timeline_text_3",
+          {
+            autoAlpha: 1,
+            duration: 1,
+          },
+          {
+            autoAlpha: 0,
+            duration: 1,
             delay: 1,
           }
         )
         .fromTo(
           ".year_3",
           {
-            autoAlpha: 0,
-            duration: 2,
-            delay: 1,
+            autoAlpha: 1,
+            duration: 1,
           },
           {
-            autoAlpha: 1,
-            duration: 2,
-            delay: 1,
-          }
+            autoAlpha: 0,
+            duration: 1,
+          },
+          "-=.5"
         )
 
-        //
+        // FOURTH VALUES
         .fromTo(
-          ".timeline_text_2",
-          {
-            autoAlpha: 1,
-            duration: 2,
-          },
+          ".timeline_text_4",
           {
             autoAlpha: 0,
-            duration: 2,
-          }
-        )
-        .fromTo(
-          ".year_2",
-          {
-            autoAlpha: 1,
-            duration: 2,
+            // duration: 2,
           },
           {
-            autoAlpha: 0,
-            duration: 2,
+            autoAlpha: 1,
+            // duration: 2,
+            delay: 1,
           }
         )
         .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-58.6vw",
+            left: "-39vw",
+            // duration: 0.5,
           },
           {
-            left: "-41vw",
-          }
-        )
-        .fromTo(
-          ".timeline_text_4",
-          {
-            autoAlpha: 0,
-            duration: 2,
+            left: "-16vw",
+            // duration: 0.5,
           },
-          {
-            autoAlpha: 1,
-            duration: 2,
-          }
+          "-=.5"
         )
         .fromTo(
           ".year_4",
           {
             autoAlpha: 0,
-            duration: 2,
+            // duration: 2,
           },
           {
             autoAlpha: 1,
-            duration: 2,
-          }
+            // duration: 2,
+          },
+          "-=.5"
         )
         .fromTo(
-          ".timeline_text_3",
+          ".timeline_text_4",
           {
             autoAlpha: 1,
-            duration: 2,
+            duration: 1,
           },
           {
             autoAlpha: 0,
-            duration: 2,
-          },
-          "-=.4"
+            duration: 1,
+            delay: 1,
+          }
         )
         .fromTo(
-          ".year_3",
+          ".year_4",
           {
             autoAlpha: 1,
-            duration: 2,
+            duration: 1,
           },
           {
             autoAlpha: 0,
-            duration: 2,
+            duration: 1,
           },
-          "-=.4"
-        )
-        .fromTo(
-          ".timeline_arrow_icon",
-          {
-            left: "-41vw",
-          },
-          {
-            left: "-23.7vw",
-          }
+          "-=.5"
         );
     });
     timelineMedia.add("(min-width: 992px) and (max-width:1399.98px)", () => {
@@ -1292,7 +1354,7 @@ const FifthSection = () => {
                 <p className="timeline_year position-absolute year_1">2015</p>
                 <p className="timeline_year position-absolute year_2">2018</p>
                 <p className="timeline_year position-absolute year_3">2022</p>
-                <div className="position-absolute year_4">
+                <div className="position-absolute year_4 pt-2">
                   <p className="font_2xl ff_mundial_light color_white_off mb-0 text-end">
                     2 Ottobre
                   </p>

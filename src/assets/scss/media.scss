@@ -250,6 +250,16 @@
   .business_img_4 {
     width: 645px !important;
   }
+  .timeline_line_img {
+    max-width: 1280px;
+  }
+  .timeline_text_2 {
+    max-width: 550px !important;
+  }
+  .timeline_text_3 {
+    max-width: 600px !important;
+    margin-top: -125px;
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1599.98px) {
@@ -307,6 +317,26 @@
   .i_pad_img_2 {
     margin-left: 180px;
   }
+  .timeline_line_img {
+    max-width: 1050px;
+  }
+  .timeline_text_1 {
+    max-width: 400px !important;
+  }
+  .timeline_text_2 {
+    max-width: 400px !important;
+  }
+  .timeline_text_3 {
+    max-width: 440px !important;
+    margin-top: -70px;
+  }
+  .timeline_arrow_icon {
+    top: 49%;
+  }
+
+  .timeline_text_4 {
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 1499.98px) {
@@ -315,6 +345,9 @@
   }
   .timeline_arrow_icon {
     transform: translateY(-40%);
+  }
+  .timeline_line_img {
+    max-width: 970px;
   }
 }
 
