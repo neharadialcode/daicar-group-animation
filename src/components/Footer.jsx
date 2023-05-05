@@ -7,12 +7,14 @@ import icon_1 from "../assets/images/svg/icon-1.svg";
 import icon_2 from "../assets/images/svg/icon-2.svg";
 import icon_3 from "../assets/images/svg/icon-3.svg";
 import footerbg from "../assets/images/png/footer_bg.png";
+import BackToTop from "./BackToTopButton";
 
 function Footer() {
   const getnewyear = new Date().getFullYear();
   return (
     <>
-      <section className="green pt-5 min -vh-100 position-relative d-flex align-items-end justify-content-center position-relative">
+      <section className="green pt-5 min -vh-100 position-relative d-flex align-items-end justify-content-center">
+        <BackToTop />
         <img
           className="position-absolute footer_background_set d-none d-xl-block"
           src={footerbg}
@@ -106,7 +108,7 @@ function Footer() {
                     Phone
                   </a>
                   <a
-                    className="mb-0 font_sm list-unstyled text-decoration-none   fw-normal color_light_gray ff_roboto text_hover mt-sm-1 ff_mon"
+                    className="mb-0 font_sm list-unstyled text-decoration-none fw-normal color_light_gray ff_roboto text_hover mt-sm-1 ff_mon"
                     href="tel:521-239-4623"
                   >
                     521-239-4623

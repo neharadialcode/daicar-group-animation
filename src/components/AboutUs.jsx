@@ -354,7 +354,7 @@ const ForthSection = () => {
           />
         </div>
         <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading z_1">
-          <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
+          <p className="font_5xl fw-normal text-white pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
@@ -377,8 +377,8 @@ const ForthSection = () => {
                 </div>
                 <div className="top_space_custom_arrow_text">
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
-                    Siamo un’azienda digitale che si concentra sulla generazione
-                    di opportunità di business.
+                    Il futuro della lead generation è basato sulla creazione di
+                    relazioni di fiducia, sostenute dalla tecnologia.
                   </h4>
                 </div>
                 <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3 px-lg-4">
@@ -460,8 +460,8 @@ const ForthSection = () => {
                 </div>
                 <div className="top_space_custom_arrow_text position-relative">
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
-                    Siamo un’azienda digitale che si concentra sulla generazione
-                    di opportunità di business.
+                    Qualifichiamo i dati in tempo reale consentendo di
+                    incrementare il ROI delle azioni di lead generation.
                   </h4>
                   <div className="position-absolute small_icon_arrow_2">
                     <DownArrowNoiIcon />

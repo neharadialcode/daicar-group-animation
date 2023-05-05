@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import img from "../Free_iPad_Mockup_1 1.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ChatIcon, Icon5 } from "./Icons";
+import { Icon5 } from "./Icons";
 import tabImg1 from "../assets/images/png/tab-1.png";
 import tabImg2 from "../assets/images/png/tab-2.png";
 import tabImg3 from "../assets/images/png/tab-3.png";
@@ -350,9 +350,6 @@ const SecondSection = () => {
   }, []);
   return (
     <div className="vh-100 d-flex flex-column justify-content-center tab_parent bg_light_white overflow-hidden z_index2">
-      <div className="position-absolute chat_icon cursor_pointer d-none d-lg-block">
-        <ChatIcon />
-      </div>
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
         <img src={tabRightIcon} alt="tab-right-icon" />
       </div>

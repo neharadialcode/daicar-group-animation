@@ -201,9 +201,9 @@
   align-items: center;
 }
 .topscroll {
-  position: fixed;
+  position: absolute;
   right: 15px;
-  bottom: 25px;
+  bottom: 100px;
   background: var(--color-light-green);
   border: 1px solid white;
   height: 40px;
@@ -251,12 +251,6 @@
 .custom_business_img_height {
   height: 400px;
 }
-
-.chat_icon {
-  right: 2%;
-  top: 90%;
-}
-
 .cursor_pointer {
   cursor: pointer;
 }
@@ -485,6 +479,7 @@
 }
 .noi_btn {
   padding: 5px 24px 12px !important;
+  color: var(--color-dark-gray) !important;
 }
 .timeline_text_heading {
   left: 28%;
@@ -760,12 +755,21 @@ $background-color_3: black;
 }
 .show_chat_icon {
   position: fixed;
-  right: 22px;
-  bottom: 90px;
+  right: 35px;
+  bottom: 37px;
   height: 53px;
   width: 53px;
   z-index: 100;
   cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    // box-shadow: 0px 0px 5px var(--color-white-off);
+    transform: scale(0.94);
+  }
+}
+.custom_letter_spacing {
+  letter-spacing: -0.01em !important;
 }
 
 .crm_left_icon {

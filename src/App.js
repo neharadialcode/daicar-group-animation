@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 // import SixthSection from "./components/SixthSection";
 // import SeventhSection from "./components/SeventhSection";
 // import EightSection from "./components/EightSection";
-import BackToTop from "./components/BackToTopButton";
 import TabsImage from "./components/TabsImage";
 import Business from "./components/Business";
 import AboutUs from "./components/AboutUs";
@@ -29,8 +28,7 @@ function App() {
       <Footer />
       {/* <SeventhSection /> */}
       {/* <EightSection /> */}
-      {/* <ScrollChatIcon /> */}
-      <BackToTop />
+      <ScrollChatIcon />
     </>
   );
 }
