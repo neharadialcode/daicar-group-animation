@@ -914,7 +914,7 @@ const FifthSection = () => {
       <div className="container" ref={containerRef}></div>
       {/* <div className="timeline_parent"> */}
       <div className="vh-100 overflow-hidden timeline_parent z-10">
-        <div className="bg_gray vh-100 position-absolute w-100"></div>
+        <div className="bg_dark_gray vh-100 position-absolute w-100"></div>
         <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative">
           <div className="d-flex timeline_slide_content justify-content-center">
             <div
@@ -989,7 +989,7 @@ const FifthSection = () => {
               className="line mt-5"
               style={{ marginLeft: `${leftMargin + 16}px` }}
             ></div> */}
-          <div className="container mt-5 pt-2">
+          <div className="container mt-5 pt-3">
             <div className="d-flex mx-auto the_time_line">
               <div className="col-4 line_with_dot line_first "></div>
               <div ref={secondText} className="col-4 line_with_dot "></div>
