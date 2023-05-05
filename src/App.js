@@ -29,7 +29,7 @@ function App() {
       <Footer />
       {/* <SeventhSection /> */}
       {/* <EightSection /> */}
-      <ScrollChatIcon />
+      {/* <ScrollChatIcon /> */}
       <BackToTop />
     </>
   );
