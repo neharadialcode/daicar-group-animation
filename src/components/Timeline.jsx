@@ -192,7 +192,7 @@ const FifthSection = () => {
       //     scale: 1,
       //   }
       // );
-      let fifth = gsap.timeline({
+      let timeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
@@ -203,7 +203,7 @@ const FifthSection = () => {
           markers: true,
         },
       });
-      fifth
+      timeline
         .fromTo(
           ".timeline_parent",
           {
@@ -419,24 +419,24 @@ const FifthSection = () => {
         );
     });
     timelineMedia.add("(min-width: 1400px) and (max-width:1599.98px)", () => {
-      let timelineParent = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".timeline_parent",
-          start: "top 5%",
-          end: "bottom top",
-          toggleActions: "play none none reverse",
-          // markers: true,
-        },
-      });
+      // let timelineParent = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".timeline_parent",
+      //     start: "top 5%",
+      //     end: "bottom top",
+      //     toggleActions: "play none none reverse",
+      //     // markers: true,
+      //   },
+      // });
 
-      timelineParent.fromTo(
-        ".bg-green",
-        { scale: 0 },
-        {
-          scale: 1,
-        }
-      );
-      let fifth = gsap.timeline({
+      // timelineParent.fromTo(
+      //   ".bg-green",
+      //   { scale: 0 },
+      //   {
+      //     scale: 1,
+      //   }
+      // );
+      let timeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
@@ -447,7 +447,7 @@ const FifthSection = () => {
           // markers: true,
         },
       });
-      fifth
+      timeline
         .fromTo(
           ".timeline_parent",
           {
@@ -665,23 +665,23 @@ const FifthSection = () => {
         );
     });
     timelineMedia.add("(min-width: 992px) and (max-width:1399.98px)", () => {
-      let timelineParent = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".timeline_parent",
-          start: "top 5%",
-          end: "bottom top",
-          toggleActions: "play none none reverse",
-        },
-      });
+      // let timelineParent = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".timeline_parent",
+      //     start: "top 5%",
+      //     end: "bottom top",
+      //     toggleActions: "play none none reverse",
+      //   },
+      // });
 
-      timelineParent.fromTo(
-        ".bg-green",
-        { scale: 0 },
-        {
-          scale: 1,
-        }
-      );
-      let fifth = gsap.timeline({
+      // timelineParent.fromTo(
+      //   ".bg-green",
+      //   { scale: 0 },
+      //   {
+      //     scale: 1,
+      //   }
+      // );
+      let timeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
@@ -692,7 +692,7 @@ const FifthSection = () => {
           // markers: true,
         },
       });
-      fifth
+      timeline
         .fromTo(
           ".timeline_parent",
           {
