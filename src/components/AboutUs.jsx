@@ -375,7 +375,7 @@ const ForthSection = () => {
                 <div className="position-absolute small_icon_arrow_2">
                   <DownArrowNoiIcon />
                 </div>
-                <div className="top_space_custom_arrow_text">
+                <div>
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5">
                     Il futuro della lead generation è basato sulla creazione di
                     relazioni di fiducia, sostenute dalla tecnologia.
@@ -403,7 +403,7 @@ const ForthSection = () => {
                 <div className="position-absolute small_icon_arrow_2">
                   <DownArrowNoiIcon />
                 </div>
-                <div className="top_space_custom_arrow_text">
+                <div>
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
                     Obiettivi chiari e definiti perseguiti con un approccio
                     personalizzato verso risultati concreti e misurabili.
@@ -431,7 +431,7 @@ const ForthSection = () => {
                 <div className="position-absolute small_icon_arrow_2">
                   <DownArrowNoiIcon />
                 </div>
-                <div className="top_space_custom_arrow_text">
+                <div>
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-4 mb-0">
                     Qualifichiamo i dati in tempo reale consentendo di
                     incrementare il ROI delle azioni di lead generation.
@@ -458,7 +458,7 @@ const ForthSection = () => {
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
-                <div className="top_space_custom_arrow_text position-relative">
+                <div className="position-relative">
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
                     Qualifichiamo i dati in tempo reale consentendo di
                     incrementare il ROI delle azioni di lead generation.
@@ -487,7 +487,7 @@ const ForthSection = () => {
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
-                <div className="top_space_custom_arrow_text position-relative">
+                <div className="position-relative">
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
                     Obiettivi chiari e definiti perseguiti con un approccio
                     personalizzato verso risultati concreti e misurabili.
@@ -516,7 +516,7 @@ const ForthSection = () => {
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
-                <div className="top_space_custom_arrow_text position-relative">
+                <div className="position-relative">
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-4 mb-0">
                     Qualifichiamo i dati in tempo reale consentendo di
                     incrementare il ROI delle azioni di lead generation.
