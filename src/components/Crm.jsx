@@ -1,9 +1,10 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import salesfortlogo from "../assets/images/svg/salesforce-logo.svg";
 import amazonlogo from "../assets/images/svg/amazon-logo.svg";
 import hubsportlogo from "../assets/images/svg/hubsport-logo.svg";
 import pipedrivelogo from "../assets/images/svg/pipedrive-logo.svg";
 import zendexlogo from "../assets/images/svg/zendesk-suite-logo.svg";
+import crmLeftIcon from "../assets/images/png/crm-left-icon.png";
 import { gsap } from "gsap";
 const Crm = () => {
   // useLayoutEffect(() => {
@@ -45,17 +46,31 @@ const Crm = () => {
   //   //   // },
   //   // });
   // }, []);
+
+  useEffect(() => {
+    let crm = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".crm_parent",
+        pin: true,
+        pinSpacing: false,
+      },
+    });
+  }, []);
   return (
     <>
       <div className="bg_light_white min-vh-100 d-flex justify-content-center align-items-center crm_parent overflow-hidden">
+        <div className="position-absolute crm_left_icon">
+          <img src={crmLeftIcon} alt="crm-left-icon" />
+        </div>
         <div className="container custom_container crm_text">
           <div className="d-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0">
-            <p className="ff_mundial_normal font_5xl text_secondary mb-0 partner_para">
+            <p className="font_5xl color_dark_gray mb-0 partner_para">
               É possibile integrare i dati con il tuo
             </p>
-            <button className="ff_mundial_normal font_2xl text_secondary partner_btn ">
+            <button className="font_2xl color_dark_gray partner_btn">
               CRM
             </button>
+            <span className="font_lg">.</span>
           </div>
           <div className=" pb-lg-5 crm_parent_img">
             <div className="pb-lg-5 d-flex justify-content-between align-items-center my-xl-5 py-5 crm_img">

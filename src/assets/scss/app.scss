@@ -416,7 +416,7 @@
 .common_padding {
   padding-top: 23px;
 }
-.margin {
+.meeting_top_space {
   margin-top: 143px;
 }
 .margin_top {
@@ -766,4 +766,9 @@ $background-color_3: black;
   width: 53px;
   z-index: 100;
   cursor: pointer;
+}
+
+.crm_left_icon {
+  right: 5%;
+  top: 10%;
 }

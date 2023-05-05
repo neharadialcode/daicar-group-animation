@@ -3,6 +3,15 @@ import man from "../assets/images/png/man-img.png";
 import gsap from "gsap";
 
 function About() {
+  useEffect(() => {
+    let sixth = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".about_parent",
+        pin: true,
+        pinSpacing: false,
+      },
+    });
+  }, []);
   // useEffect(() => {
   //   let about = gsap.matchMedia();
   //   about.add("(min-width: 992px)", () => {
@@ -66,18 +75,18 @@ function About() {
               CRM
             </span>
           </p>
-          <div className="d-flex justify-content-center margin position-relative z_index2">
+          <div className="d-flex justify-content-center meeting_top_space position-relative z_index2">
             <div>
               <button className="Calendly_button fw-normal mx-auto d-flex ff_mundial_normal font_2xl color_gray">
                 Parliamone meglio su Calendly
               </button>
               <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center">
                 <img className="image_hight" src={man} alt="man" />
-                <p className="mb-0 font_md color_white_off d-none d-xl-block ">
+                <p className="mb-0 font_md color_gray d-none d-xl-block">
                   <span className="fw_light">Matteo,</span> Business Development
                   Manager
                 </p>
-                <p className="mb-0 font_md color_gray  d-xl-none ">
+                <p className="mb-0 font_md color_gray d-xl-none">
                   <span className="fw_light">Matteo,</span> Business Development
                   Manager
                 </p>
