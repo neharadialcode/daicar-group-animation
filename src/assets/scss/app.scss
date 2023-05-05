@@ -745,3 +745,12 @@ $background-color_3: black;
 .hero_slide_2 h3 {
   font-size: 72px !important;
 }
+.chat_icon {
+  position: fixed;
+  right: 15px;
+  bottom: 25px;
+  height: 40px;
+  width: 40px;
+  z-index: 100;
+  cursor: pointer;
+}

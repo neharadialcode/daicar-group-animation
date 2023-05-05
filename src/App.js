@@ -12,6 +12,7 @@ import Partner from "./components/Partner";
 import Crm from "./components/Crm";
 import Meeting from "./components/Meeting";
 import Footer from "./components/Footer";
+import ScrollChatIcon from "./components/ScrollChatIcon";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Footer />
       {/* <SeventhSection /> */}
       {/* <EightSection /> */}
+      <ScrollChatIcon />
       <BackToTop />
     </>
   );
