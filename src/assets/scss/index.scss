@@ -143,7 +143,25 @@ body {
 .fw_medium {
   font-weight: 500;
 }
-@media (max-width: 1599.98px) {
+// @media (max-width: 1599.98px) {
+//   :root {
+//     --font-xsm: 12px;
+//     --font-sm: 14px;
+//     --font-md: 15px;
+//     --font-lg: 17px;
+//     --font-xl: 22px;
+//     --font-2xl: 14px;
+//     --font-3xl: 22px;
+//     --font-4xl: 25px;
+//     --font-5xl: 17px;
+//     --font-6xl: 36px;
+//     --font-7xl: 38px;
+//     --font-8xl: 39px;
+//     --font-9xl: 80px;
+//   }
+// }
+
+@media (max-width: 1499.98px) {
   :root {
     --font-xsm: 12px;
     --font-sm: 14px;
