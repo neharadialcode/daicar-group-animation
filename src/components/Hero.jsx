@@ -279,7 +279,6 @@ const Hero = () => {
                     </span>
                     è digitale
                   </h2>
-                  {/* padding: 4px 24px 12px !important; */}
                   <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     10.000
                   </h3>
