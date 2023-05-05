@@ -7,63 +7,47 @@ import zendexlogo from "../assets/images/svg/zendesk-suite-logo.svg";
 import crmLeftIcon from "../assets/images/png/crm-left-icon.png";
 import { gsap } from "gsap";
 const Crm = () => {
-  // useLayoutEffect(() => {
-  //   let crm = gsap.matchMedia();
-  //   crm.add("(min-width: 992px)", () => {
-  //     let crm_value = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: ".crm_parent",
-  //         start: "top top",
-  //         end: "bottom top",
-  //         // markers: true,
-  //       },
-  //     });
-  //     crm_value.from(".crm_text", {
-  //       yPercent: 100,
-  //       autoAlpha: 0,
-  //       ease: "back(2)",
-  //       stagger: 0.02,
-  //     });
-  //   });
-  //   // crm.add("(max-width:767.98px)", () => {
-  //   //   let crmicons = gsap.timeline({
-  //   //     scrollTrigger: {
-  //   //       trigger: ".crm_parent_img",
-  //   //       start: "30% 50%",
-  //   //       end: "bottom center",
-  //   //       scrub: 10,
-  //   //     },
-  //   //   });
-  //   //   crmicons.fromTo(
-  //   //     ".crm_img",
-  //   //     {
-  //   //       xPercent: 0,
-  //   //     },
-  //   //     {
-  //   //       xPercent: -150,
-  //   //     }
-  //   //   );
-  //   //   // },
-  //   // });
-  // }, []);
-
   useEffect(() => {
-    let crm = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".crm_parent",
-        pin: true,
-        pinSpacing: false,
-      },
+    let crmValues = gsap.matchMedia();
+    crmValues.add("(min-width:992px)", () => {
+      let crm = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".crm_parent",
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+    });
+
+    crmValues.add("(max-width:991.98px)", () => {
+      let crmicons = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".crm_parent",
+          start: "top top",
+          end: "bottom center",
+          scrub: 3,
+          pin: true,
+        },
+      });
+      crmicons.fromTo(
+        ".crm_parent_img",
+        {
+          xPercent: 0,
+        },
+        {
+          xPercent: -80,
+        }
+      );
     });
   }, []);
   return (
     <>
-      <div className="bg_light_white min-vh-100 d-flex justify-content-center align-items-center crm_parent overflow-hidden">
-        <div className="position-absolute crm_left_icon">
+      <div className="d-flex justify-content-center align-items-center crm_parent overflow-hidden">
+        <div className="position-absolute crm_left_icon d-none d-lg-block">
           <img src={crmLeftIcon} alt="crm-left-icon" />
         </div>
         <div className="container custom_container crm_text">
-          <div className="d-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0">
+          <div className="d-sm-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0 text-center text-sm-start">
             <p className="font_5xl color_dark_gray mb-0 partner_para">
               É possibile integrare i dati con il tuo
             </p>
