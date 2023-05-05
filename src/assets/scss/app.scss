@@ -25,7 +25,7 @@
 /* .big_icon{
     scale: 2;
   } */
-.main_div {
+.main_parent {
   height: 100vh;
   overflow: hidden;
   width: 100%;
@@ -104,7 +104,7 @@
 // .bg_white {
 //   background-color: var(--bg-light-white);
 // }
-.second_div {
+.second_slide_parent {
   position: relative;
   z-index: -1;
 }

@@ -32,7 +32,7 @@ const Hero = () => {
     });
     let secondSlide = gsap.timeline({
       scrollTrigger: {
-        trigger: ".main_div",
+        trigger: ".main_parent",
         start: "top top",
         end: "bottom top",
         scrub: 2,
@@ -43,7 +43,7 @@ const Hero = () => {
     });
 
     secondSlide
-      .to(".second_div", {
+      .to(".second_slide_parent", {
         yPercent: -100,
         duration: 1,
       })
@@ -119,7 +119,7 @@ const Hero = () => {
       )
 
       .to(
-        ".second_div",
+        ".second_slide_parent",
         {
           scale: 0.8,
           duration: 1,
@@ -187,7 +187,7 @@ const Hero = () => {
         height: "0vh",
         delay: 2,
       })
-      .to(".main_div", {
+      .to(".main_parent", {
         autoAlpha: 0,
         duration: 1,
       });
@@ -197,7 +197,7 @@ const Hero = () => {
     <>
       <div className="bg_dark_gray">
         <Header />
-        <div className="main_div hero_bg ">
+        <div className="main_parent hero_bg">
           <div className="value">
             <div className="bg_green"></div>
             <div className="heading">
@@ -228,7 +228,7 @@ const Hero = () => {
                 <Icon4_2 />
               </div>
             </div>
-            <div className="second_div">
+            <div className="second_slide_parent">
               <div className="i_pad_img">
                 <img
                   className="w-100 d-none d-lg-block"
