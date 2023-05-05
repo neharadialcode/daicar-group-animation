@@ -7,7 +7,7 @@ import BackToTop from "./components/BackToTopButton";
 import TabsImage from "./components/TabsImage";
 import Business from "./components/Business";
 import AboutUs from "./components/AboutUs";
-// import Timeline from "./components/Timeline";
+import Timeline from "./components/Timeline";
 import Partner from "./components/Partner";
 import Crm from "./components/Crm";
 import Meeting from "./components/Meeting";
@@ -20,7 +20,7 @@ function App() {
       <TabsImage />
       <Business />
       <AboutUs />
-      {/* <Timeline /> */}
+      <Timeline />
       {/* <SixthSection /> */}
       <Partner />
       <Crm />
