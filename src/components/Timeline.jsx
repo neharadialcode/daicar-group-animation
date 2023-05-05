@@ -236,18 +236,6 @@ const FifthSection = () => {
           "+=1"
         )
         .fromTo(
-          ".timeline_arrow_icon",
-          {
-            left: "-74.4vw",
-            duration: 0.5,
-          },
-          {
-            left: "-74.4vw",
-            duration: 0.5,
-          },
-          "+=1"
-        )
-        .fromTo(
           ".timeline_text_1",
           {
             autoAlpha: 1,
@@ -259,6 +247,19 @@ const FifthSection = () => {
           },
           "-=.1"
         )
+        .fromTo(
+          ".timeline_arrow_icon",
+          {
+            left: "-74.4vw",
+            duration: 0.5,
+          },
+          {
+            left: "-74.4vw",
+            duration: 0.5,
+          },
+          "+=1"
+        )
+
         .fromTo(
           ".year_1",
           {
