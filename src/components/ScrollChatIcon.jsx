@@ -23,7 +23,7 @@ const ScrollChatIcon = () => {
       <div>
         {showContent && (
           <>
-            <div className="bg-danger chat_icon d-flex justify-content-center align-items-center cursor-pointer">
+            <div className="show_chat_icon d-flex justify-content-center align-items-center cursor-pointer">
               <ChatIcon />
             </div>
           </>
