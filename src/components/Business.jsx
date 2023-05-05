@@ -402,7 +402,7 @@ const ThirdSection = () => {
             alt="arrow-tab-img"
           />
         </div>
-        <div className="top_space_business_text text-center px-4 px-lg-0 z_1 third_heading">
+        <div className="text-center px-4 px-lg-0 z_1 third_heading">
           <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
             Progettiamo soluzioni&nbsp;
             <span className="business_btn hero_heading_btn color_dark_gray bg_light_green">
@@ -417,7 +417,7 @@ const ThirdSection = () => {
         <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
           <div className="main_text d-none d-lg-block pb-5">
             <div className="row justify-content-evenly divide_space_text pt5">
-              <div className="col-4 position-relative custom_business_img_height d-flex align-items-center">
+              <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center">
                 <img
                   className="w-100 business_img_1 position-absolute"
                   src={businessOne}
@@ -439,7 +439,7 @@ const ThirdSection = () => {
                   alt="business-big-arrow"
                 />
               </div>
-              <div className="col-7 col-xl-5 position-relative">
+              <div className="col-7 col-xl-5 position-relative business-content">
                 {/* <span className="small_icon">Small Icon</span> */}
                 <img
                   className="small_icon d-none d-lg-block"
@@ -460,7 +460,7 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray">
                     LANDING CONVERSAZIONALE
                   </h3>
-                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     Landingpage su misura per i nostri partner e conformi
                     al&nbsp;
                     <span className="ff_mundial_bold">regolamento GDPR</span>
@@ -471,7 +471,7 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray">
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
-                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     Meno tempo e maggiore conversione grazie al nostro&nbsp;
                     <span className="ff_mundial_bold">software di I.A.</span>
                     &nbsp; per la validazione real-time dei dati degli utenti
@@ -481,10 +481,10 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray">
                     TRASMISSIONE LEAD
                   </h3>
-                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     I lead generati vengono sottoposti ad un attento processo di
                     filtraggio e controllo tramite API o integrazione con il CRM
-                    del partner prima di essere inviati”
+                    del partner prima di essere inviati
                   </p>
                 </div>
               </div>
