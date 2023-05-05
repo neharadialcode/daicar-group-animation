@@ -658,15 +658,15 @@
     svg {
       width: 170px !important;
     }
-    top: 52% !important;
+    top: 56% !important;
     left: -5% !important;
   }
   .icon_2 {
     svg {
-      width: 650px !important;
+      width: 720px !important;
       transform: unset !important;
     }
-    top: -34% !important;
+    top: -26% !important;
   }
   .icon_3 {
     svg {
@@ -688,8 +688,19 @@
     max-width: 285px !important;
     margin: auto !important;
   }
+  .hero_section_heading {
+    transform: translateY(-98px);
+  }
 }
 
+@media (max-width: 379.98px) {
+  .icon_2 {
+    svg {
+      width: 600px !important;
+    }
+    top: -40% !important;
+  }
+}
 @media (max-width: 374.98px) {
   .hero_btn {
     font-size: 18px !important;
