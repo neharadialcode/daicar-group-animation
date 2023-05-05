@@ -258,20 +258,21 @@
     max-width: 410px !important;
   }
   .business_img_2 {
-    object-fit: contain;
-    max-height: 544px;
+    max-height: 444px;
     max-width: 359px;
     margin-left: 190px;
   }
   .business_img_3 {
-    max-width: 369px;
+    max-width: 300px;
     margin-left: 150px;
   }
   .business_img_4 {
-    width: 645px !important;
+    width: 485px !important;
+    margin-left: 20px !important;
   }
   .business-content {
-    padding-top: 32px !important;
+    transform: translateY(20px) !important;
+    padding-top: 14px !important;
   }
 }
 
