@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import icon1 from "../assets/images/svg/roadmap_side_icon.svg";
 // import icon2 from "../assets/images/png/roadmap_icon2.png";
-
+import timelineLeftIcon from "../assets/images/png/timeline-left-icon.png";
 import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
 import timelineImg2 from "../assets/images/png/timeline-content-img-2.png";
 import timelineImg3 from "../assets/images/png/timeline-content-cake-img-3.png";
@@ -197,7 +197,7 @@ const FifthSection = () => {
           trigger: ".timeline_parent",
           start: "top top",
           end: "bottom top",
-          scrub: 1,
+          scrub: 5,
           pin: true,
           pinSpacing: true,
           markers: true,
@@ -245,6 +245,7 @@ const FifthSection = () => {
           {
             left: "-82vw",
             // duration: 0.5,
+            delay: 1,
           }
         )
         .fromTo(
@@ -280,8 +281,8 @@ const FifthSection = () => {
           {
             autoAlpha: 0,
             duration: 1,
-          },
-          "-=.5"
+            delay: 1,
+          }
         )
         .fromTo(
           ".year_1",
@@ -306,6 +307,7 @@ const FifthSection = () => {
           {
             autoAlpha: 1,
             // duration: 2,
+            delay: 1,
           }
         )
         .fromTo(
@@ -341,6 +343,7 @@ const FifthSection = () => {
           {
             autoAlpha: 0,
             duration: 1,
+            delay: 1,
           }
         )
         .fromTo(
@@ -366,6 +369,7 @@ const FifthSection = () => {
           {
             autoAlpha: 1,
             // duration: 2,
+            delay: 1,
           }
         )
         .fromTo(
@@ -401,6 +405,7 @@ const FifthSection = () => {
           {
             autoAlpha: 0,
             duration: 1,
+            delay: 1,
           }
         )
         .fromTo(
@@ -426,6 +431,7 @@ const FifthSection = () => {
           {
             autoAlpha: 1,
             // duration: 2,
+            delay: 1,
           }
         )
         .fromTo(
@@ -461,6 +467,7 @@ const FifthSection = () => {
           {
             autoAlpha: 0,
             duration: 1,
+            delay: 1,
           }
         )
         .fromTo(
@@ -1190,6 +1197,17 @@ const FifthSection = () => {
       <div className="container" ref={containerRef}></div>
       {/* <div className="timeline_parent"> */}
       <div className="vh-100 overflow-hidden timeline_parent z-10">
+        <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading z-10 position-absolute timeline_text_heading">
+          <p className="font_5xl text-white pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
+            Ideata da
+            <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
+            grazie all’esperienza acquisita nel
+            <span className="hero_btn noi_btn bg_light_green mx-2">tempo</span>
+          </p>
+        </div>
+        <div className="position-absolute timeline_left_icon z_1">
+          <img src={timelineLeftIcon} alt="timeline-left-icon" />
+        </div>
         <div className="bg_dark_gray vh-100 position-absolute w-100"></div>
         <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative">
           <div className="d-flex timeline_slide_content justify-content-center">
@@ -1225,7 +1243,7 @@ const FifthSection = () => {
               className="timeline_text_3 text-white position-absolute"
               style={{ left: `${leftSpacing2 - 10}px` }}
             >
-              <img className="w-100" src={timelineImg2} alt="timelineImg2" />
+              <img className="w100" src={timelineImg2} alt="timelineImg2" />
               <p className="font_2xl fw-normal text-white mb-3">
                 Nasce TiGuido.io che trasferisce l’elevato know-how e la
                 tecnologia sviluppata in ambito automotive al servizio di nuovi
@@ -1274,7 +1292,15 @@ const FifthSection = () => {
                 <p className="timeline_year position-absolute year_1">2015</p>
                 <p className="timeline_year position-absolute year_2">2018</p>
                 <p className="timeline_year position-absolute year_3">2022</p>
-                <p className="timeline_year position-absolute year_4">2023</p>
+                <div className="position-absolute year_4">
+                  <p className="font_2xl ff_mundial_light color_white_off mb-0 text-end">
+                    2 Ottobre
+                  </p>
+                  <p className="timeline_year mb-0">2023</p>
+                  <p className="font_2xl ff_mundial_light color_white_off mb-0 text-end">
+                    Otto anni
+                  </p>
+                </div>
               </div>
             </div>
           </div>

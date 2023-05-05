@@ -353,7 +353,7 @@ const ForthSection = () => {
             alt="arrow-tab-img"
           />
         </div>
-        <div className="top_space_business_text top_heading_text text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading z_1">
+        <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading z_1">
           <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
@@ -368,7 +368,7 @@ const ForthSection = () => {
         <div className="container h-100 pb-5 pb-lg-0">
           <div className="row justify-content-lg-end align-items-center mb-sm-5 my-lg-0">
             <div className="col-6 roadmap_col_content d-none d-lg-block">
-              <div className="roadmap_text_1 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
+              <div className="roadmap_text_1 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
@@ -396,7 +396,7 @@ const ForthSection = () => {
                 </div>
               </div>
 
-              <div className="roadmap_text_2 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
+              <div className="roadmap_text_2 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
@@ -424,7 +424,7 @@ const ForthSection = () => {
                 </div>
               </div>
 
-              <div className="roadmap_text_3 text_one_arrow position-absolute top_space_business_text ps-3 ps-sm-5 ps-lg-0">
+              <div className="roadmap_text_3 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
