@@ -22,9 +22,11 @@ function App() {
       <AboutUs />
       {/* <Timeline /> */}
       {/* <SixthSection /> */}
-      <Partner />
-      <Crm />
-      <Meeting />
+      <div className="bg_light_white">
+        <Partner />
+        <Crm />
+        <Meeting />
+      </div>
       <Footer />
       {/* <SeventhSection /> */}
       {/* <EightSection /> */}
