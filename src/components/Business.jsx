@@ -403,10 +403,12 @@ const ThirdSection = () => {
           />
         </div>
         <div className="top_space_business_text text-center px-4 px-lg-0 z_1 third_heading">
-          <p className="font_6xl text-white pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
-            Progettiamo soluzioni{" "}
-            <span className="hero_btn bg_light_green">personalizzate</span> per
-            il tuo business
+          <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0">
+            Progettiamo soluzioni&nbsp;
+            <span className="business_btn hero_heading_btn color_dark_gray bg_light_green">
+              personalizzate
+            </span>
+            &nbsp;per il tuo business
           </p>
         </div>
         <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
@@ -430,7 +432,7 @@ const ThirdSection = () => {
                   className="w-100 business_img_3 opacity_0 position-absolute"
                   src={businessThree}
                   alt="business-big-arrow"
-                />{" "}
+                />
                 <img
                   className="w-100 business_img_4 opacity_0 position-absolute"
                   src={businessFour}
@@ -445,38 +447,41 @@ const ThirdSection = () => {
                   alt="small-arrow-icon"
                 />
                 <div className="heading_1 ps-5 ps-xxl-0">
-                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
-                  <p className=" pt-5 font_2xl position-absolute text_1 text-white pe-xl-5 pt-2 m_w_business_text">
+                  <h3 className="font_5xl color_dark_gray">
+                    GENERAZIONE TRAFFICO
+                  </h3>
+                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_1 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     Strategie di marketing costruite ad hoc per generare
                     traffico qualificato da veicolare sui social media, Google e
                     native advertising
                   </p>
                 </div>
                 <div className="heading_2 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl text-white">
+                  <h3 className="font_5xl color_dark_gray">
                     LANDING CONVERSAZIONALE
                   </h3>
-                  <p className="pt-5 font_2xl position-absolute text_2 text-white pe-xl-5 pt-2 m_w_business_text">
-                    Landingpage su misura per i nostri partner e conformi al
-                    <span className="ff_mundial_bold">
-                      regolamento GDPR
-                    </span>{" "}
-                    per l’acquisizione di contatti qualificati.
+                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                    Landingpage su misura per i nostri partner e conformi
+                    al&nbsp;
+                    <span className="ff_mundial_bold">regolamento GDPR</span>
+                    &nbsp; per l’acquisizione di contatti qualificati.
                   </p>
                 </div>
                 <div className="heading_3 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl text-white">
+                  <h3 className="font_5xl color_dark_gray">
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
-                  <p className="pt-5 font_2xl position-absolute text_3 text-white pe-xl-5 pt-2 m_w_business_text">
-                    Meno tempo e maggiore conversione grazie al nostro{" "}
-                    <span className="ff_mundial_bold">software di I.A.</span>{" "}
-                    per la validazione real-time dei dati degli utenti
+                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                    Meno tempo e maggiore conversione grazie al nostro&nbsp;
+                    <span className="ff_mundial_bold">software di I.A.</span>
+                    &nbsp; per la validazione real-time dei dati degli utenti
                   </p>
                 </div>
                 <div className="heading_4 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
-                  <p className=" pt-5 font_2xl position-absolute text_4 text-white pe-xl-5 pt-2 m_w_business_text">
+                  <h3 className="font_5xl color_dark_gray">
+                    TRASMISSIONE LEAD
+                  </h3>
+                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     I lead generati vengono sottoposti ad un attento processo di
                     filtraggio e controllo tramite API o integrazione con il CRM
                     del partner prima di essere inviati”
@@ -520,10 +525,8 @@ const ThirdSection = () => {
                   </h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     Landingpage su misura per i nostri partner e conformi al
-                    <span className="ff_mundial_bold">
-                      regolamento GDPR
-                    </span>{" "}
-                    per l’acquisizione di contatti qualificati.
+                    <span className="ff_mundial_bold">regolamento GDPR</span>
+                    &nbsp; per l’acquisizione di contatti qualificati.
                   </p>
                 </div>
               </div>
@@ -539,13 +542,12 @@ const ThirdSection = () => {
                 </div>
                 <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
                   <h3 className="font_5xl text-white">
-                    {" "}
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
-                    Meno tempo e maggiore conversione grazie al nostro{" "}
-                    <span className="ff_mundial_bold">software di I.A.</span>{" "}
-                    per la validazione real-time dei dati degli utenti
+                    Meno tempo e maggiore conversione grazie al nostro&nbsp;
+                    <span className="ff_mundial_bold">software di I.A.</span>
+                    &nbsp; per la validazione real-time dei dati degli utenti
                   </p>
                 </div>
               </div>
