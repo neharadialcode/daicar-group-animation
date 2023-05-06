@@ -32,45 +32,44 @@ function About() {
   // }, []);
   return (
     <>
-      <section className=" bg_light_white padding_y163 about_parent min-vh-100 overflow-hidden">
-        <div className="custom_container container about_text">
-          <p className="mb-0 text-center fw-normal font_5xl color_gray ff_mundial_normal">
-            Ora che hai compreso che futuro dei tuoi
-            <span className="common_button mx-1 font_2xl mx-2">Lead</span> è
-            digitale,
+      <section className="bg_light_white padding_y163 about_parent min-vh-100 overflow-hidden">
+        <div className="custom_container container about_text pt-xl-5">
+          <p className="mb-0 fw-normal font_5xl color_dark_gray ff_mundial_normal custom_letter_spacing">
+            Ora hai compreso che il futuro delle tue
+            <span className="common_button mx-1 font_2xl mx-2">vendite</span>è
+            digitale e hai scoperto
             <br className="d-md-block d-none"></br> e hai scoperto
             <span className="common_button mx-1 font_2xl mx-2 margin_top">
               come
-            </span>{" "}
+            </span>
             usiamo il
             <span className="common_button mx-1 font_2xl mx-2 margin_top">
-              comeMarketing Converazionale
+              marketing converazionale
             </span>
             e gli
             <span className="common_button mx-1 font_2xl mx-2 margin_top">
-              Strumenti tech<span className="ff_roboto">-</span>driven
+              strumenti tech-driven
             </span>
-            da noi sviluppati,
+            da noi sviluppati
             <br className="d-md-block d-none"></br> per ottenere una
             <span className="common_button mx-1 font_2xl mx-2 margin_top">
-              Qualifica digitale real<span className="ff_roboto">-</span>
-              time
+              qualifica digitale real-time
             </span>
-            e trasmetterti così i dati<br className="d-md-block d-none"></br>{" "}
+            e trasmetterti così i dati.<br className="d-md-block d-none"></br>
             Vogliamo utilizzare l’esperienza acquisita nel
             <span className="common_button mx-1 font_2xl mx-2 margin_top">
               tempo
             </span>
-            per ideare il tuo percorso su
+            per ideare una strategia
             <span className="common_button mx-1 font_2xl mx-2 margin_top">
-              misura
+              personalizzata
             </span>
             <br className="d-md-block d-none"></br>
             proprio come se fossimo il tuo
             <span className="common_button mx-1 font_2xl mx-2 margin_top">
               partner
-            </span>{" "}
-            integrato nel tuo team e nel tuo{" "}
+            </span>
+            integrato nel tuo team e nel tuo
             <span className="common_button mx-1 font_2xl mx-2 margin_top">
               CRM
             </span>
