@@ -34,43 +34,43 @@ function About() {
     <>
       <section className="bg_light_white padding_y163 about_parent min-vh-100 overflow-hidden">
         <div className="custom_container container about_text pt-xl-5">
-          <p className="mb-0 fw-normal font_5xl color_dark_gray ff_mundial_normal custom_letter_spacing">
+          <p className="mb-0 fw-normal font_5xl color_dark_gray ff_mundial_normal custom_letter_spacing meeting_para mx-auto">
             Ora hai compreso che il futuro delle tue
-            <span className="common_button mx-1 font_2xl mx-2">vendite</span>è
-            digitale e hai scoperto
-            <br className="d-md-block d-none"></br> e hai scoperto
-            <span className="common_button mx-1 font_2xl mx-2 margin_top">
+            <span className="common_button mx-1 font_2xl mx-sm-3">vendite</span>
+            è digitale e hai scoperto
+            <br className="d-md-block d-none"></br>
+            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
               come
             </span>
             usiamo il
-            <span className="common_button mx-1 font_2xl mx-2 margin_top">
+            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
               marketing converazionale
             </span>
             e gli
-            <span className="common_button mx-1 font_2xl mx-2 margin_top">
+            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
               strumenti tech-driven
             </span>
             da noi sviluppati
             <br className="d-md-block d-none"></br> per ottenere una
-            <span className="common_button mx-1 font_2xl mx-2 margin_top">
+            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
               qualifica digitale real-time
             </span>
             e trasmetterti così i dati.<br className="d-md-block d-none"></br>
             Vogliamo utilizzare l’esperienza acquisita nel
-            <span className="common_button mx-1 font_2xl mx-2 margin_top">
+            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
               tempo
             </span>
             per ideare una strategia
-            <span className="common_button mx-1 font_2xl mx-2 margin_top">
+            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
               personalizzata
             </span>
             <br className="d-md-block d-none"></br>
             proprio come se fossimo il tuo
-            <span className="common_button mx-1 font_2xl mx-2 margin_top">
+            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
               partner
             </span>
             integrato nel tuo team e nel tuo
-            <span className="common_button mx-1 font_2xl mx-2 margin_top">
+            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
               CRM
             </span>
           </p>

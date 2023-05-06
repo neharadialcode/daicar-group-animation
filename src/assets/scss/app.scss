@@ -388,8 +388,7 @@
   display: inline-block;
   font-weight: 400;
   height: 52px;
-  vertical-align: middle;
-  line-height: 80%;
+  line-height: 76%;
 }
 .Calendly_button {
   background: rgba(126, 228, 156, 0.5);
@@ -778,4 +777,9 @@ $background-color_3: black;
 .crm_left_icon {
   right: 5%;
   top: 10%;
+}
+
+.meeting_para {
+  line-height: 234% !important;
+  max-width: 1302px !important;
 }
