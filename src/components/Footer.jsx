@@ -7,19 +7,25 @@ import icon_1 from "../assets/images/svg/icon-1.svg";
 import icon_2 from "../assets/images/svg/icon-2.svg";
 import icon_3 from "../assets/images/svg/icon-3.svg";
 import footerbg from "../assets/images/png/footer_bg.png";
+import footerMobilebg from "../assets/images/png/footer-bg-mobile-sc.png";
 import BackToTop from "./BackToTopButton";
 
 function Footer() {
   const getnewyear = new Date().getFullYear();
   return (
     <>
-      <section className="bg_dark_gray pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center">
+      <section className="pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center">
         <BackToTop />
-        {/* <img
-          className="position-absolute footer_background_set"
+        <img
+          className="position-absolute footer_background_set d-sm-none"
+          src={footerMobilebg}
+          alt="footerMobilebg"
+        />
+        <img
+          className="position-absolute footer_background_set d-none d-sm-block"
           src={footerbg}
           alt="footerbg"
-        /> */}
+        />
         <div className="container position-relative z_index2 pb-5">
           <div className="row justify-content-md-center justify-content-between gap-lg-5 text-center text-sm-start">
             <div className="col-12 col-md-3 col-sm-3 d-flex flex-column justify-content-between">
