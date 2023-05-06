@@ -718,20 +718,10 @@
   .common_button {
     padding: 3px 8px;
   }
-  // .Calendly_button {
-  //   background: rgba(126, 228, 156, 0.5);
-  //   border: 1px solid #edfafb;
-  //   border-radius: 10px;
-  //   padding: 7px 33px;
-  //   font-weight: 500;
-  // }
   .meeting_man_img {
     width: 35px;
     height: 35px;
   }
-  // .lh_0 {
-  //   line-height: 7px !important;
-  // }
   .custom_content_padding {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
@@ -739,9 +729,6 @@
   .common_gap {
     gap: 10px;
   }
-  // .meeting_top_space {
-  //   margin-top: 70px;
-  // }
   .margin_top {
     margin-top: 10px;
   }
@@ -828,6 +815,9 @@
   }
   .show_chat_icon {
     right: 10px;
+  }
+  .social_links_parent a img {
+    max-width: 24px !important;
   }
 }
 
