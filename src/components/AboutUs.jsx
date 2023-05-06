@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import roadmapImg1 from "../assets/images/svg/roadmap_img1.png";
-import roadmapImg2 from "../assets/images/svg/roadmap_img2.png";
+import roadmapImg1 from "../assets/images/png/roadmap_img1.png";
+import roadmapImg2 from "../assets/images/png/roadmap_img2.png";
 import bigFounder from "../assets/images/png/big-founder-federico-img.png";
 import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
 import bigFounder3 from "../assets/images/png/big-founder-federico-img-2.png";
@@ -33,6 +33,13 @@ const ForthSection = () => {
           {
             autoAlpha: 1,
           }
+      )
+        .to(
+          ".left_text_forth",
+          {
+            bottom: "0%",
+          },
+          "-=.5"
         )
         .fromTo(
           ".forth_heading",
@@ -104,16 +111,6 @@ const ForthSection = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".roadmap_text_2",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          },
-          "-=.5"
-        )
         .to(
           ".roadmap_text_1",
           {
@@ -122,6 +119,24 @@ const ForthSection = () => {
 
           "-=.5"
         )
+        .fromTo(
+          ".roadmap_text_2",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "-=.1"
+        )
+        .to(
+          ".left_text_forth",
+          {
+            bottom: "25%",
+          },
+          "-=.5"
+        )
+
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -141,6 +156,14 @@ const ForthSection = () => {
           },
           "-=.5"
         )
+        .to(
+          ".roadmap_text_2",
+          {
+            autoAlpha: 0,
+          },
+
+          "-=.5"
+        )
         .fromTo(
           ".roadmap_text_3",
           {
@@ -149,14 +172,13 @@ const ForthSection = () => {
           {
             autoAlpha: 1,
           },
-          "-=.5"
+          "-=.1"
         )
         .to(
-          ".roadmap_text_2",
+          ".left_text_forth",
           {
-            autoAlpha: 0,
+            bottom: "50%",
           },
-
           "-=.5"
         );
     });
