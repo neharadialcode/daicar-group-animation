@@ -13,7 +13,7 @@ function Footer() {
   const getnewyear = new Date().getFullYear();
   return (
     <>
-      <section className="green pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center">
+      <section className="bg_dark_gray pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center">
         <BackToTop />
         {/* <img
           className="position-absolute footer_background_set"
@@ -44,9 +44,9 @@ function Footer() {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-sm-4 col-md-3 pe-0 pe-sm-2 ps-0">
-              <ul className="ps-0">
-                <li className="lh_0 list-unstyled">
+            <div className="col-4 col-md-3 pe-0 pe-sm-2 ps-0 mx-auto mx-sm-0">
+              <ul className="ps-0 text-start mb-5 mb-sm-0 pb-4 pb-sm-0">
+                <li className="list-unstyled">
                   <a
                     className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
                     href="#"
@@ -54,7 +54,7 @@ function Footer() {
                     Terms of Service
                   </a>
                 </li>
-                <li className="margin_top15 lh_0 list-unstyled">
+                <li className="mt-3 list-unstyled">
                   <a
                     className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
                     href="#"
@@ -62,7 +62,7 @@ function Footer() {
                     Privacy Policy
                   </a>
                 </li>
-                <li className="margin_top15 lh_0 list-unstyled">
+                <li className="mt-3 list-unstyled">
                   <a
                     className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
                     href="#"
@@ -70,7 +70,7 @@ function Footer() {
                     Partners <span className="ff_roboto pe-1">&</span>Affiliates
                   </a>
                 </li>
-                <li className="margin_top15 lh_0 list-unstyled">
+                <li className="mt-3 list-unstyled d-none d-md-block">
                   <a
                     className="font_xsm  text-decoration-none fw_medium color_white_off list_item_text ff_montserrat"
                     href="#"
@@ -125,8 +125,7 @@ function Footer() {
                     La nostra sede
                   </a>
                   <a
-                    className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto text_hover mt-sm-1lh_0
-                    "
+                    className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto text_hover mt-sm-1"
                     href="#"
                   >
                     480 Laurie Causeway Suite 088
