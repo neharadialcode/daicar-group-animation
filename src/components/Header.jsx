@@ -43,11 +43,11 @@ const Header = () => {
             <div className="line_black"></div> */}
             <ToggleIcon />
           </div>
-          <ul className="d-flex align-items-center mb-0 d-none d-lg-flex  ps-0 mb-0 common_gap">
+          <ul className="d-flex align-items-center mb-0 d-none d-lg-flex ps-0 mb-0">
             <li>
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ps-5 ms-2"
               >
                 Main Assets
               </a>
@@ -55,7 +55,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ps-5 ms-2"
               >
                 Servizi
               </a>
@@ -63,7 +63,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ps-5 ms-2"
               >
                 Daicar Group
               </a>
@@ -71,7 +71,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ps-5 ms-2"
               >
                 Contatti
               </a>
@@ -84,7 +84,7 @@ const Header = () => {
             >
               Sentiamoci
             </a>
-            <button className="ff_mundial_regular navbar_btn font_2xl color_dark_gray ms-xl-4">
+            <button className="ff_mundial_regular navbar_btn font_2xl color_dark_gray">
               chat
             </button>
           </div>
