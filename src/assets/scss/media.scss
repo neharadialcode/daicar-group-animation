@@ -359,7 +359,10 @@
   }
   .meeting_para {
     line-height: 260% !important;
-    max-width: 1132px !important;
+    max-width: 1072px !important;
+  }
+  .meeting_para .common_button {
+    font-size: 20px !important;
   }
 }
 
@@ -449,6 +452,10 @@
   }
   .crm_slider {
     min-width: 150px;
+  }
+  .meeting_para .common_button {
+    font-size: 20px !important;
+    padding: 14.4px 16px !important;
   }
 }
 
@@ -715,16 +722,16 @@
   //   padding: 7px 33px;
   //   font-weight: 500;
   // }
-  .image_hight {
-    width: 25px;
-    height: 25px;
+  .meeting_man_img {
+    width: 35px;
+    height: 35px;
   }
   .lh_0 {
     line-height: 7px !important;
   }
   .padding_y163 {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
   .common_gap {
     gap: 10px;
@@ -798,6 +805,25 @@
     font-size: 28px !important;
     line-height: 195% !important;
   }
+  .meeting_para {
+    min-width: 370px !important;
+    max-width: 370px !important;
+    font-size: 24px !important;
+    line-height: 208% !important;
+  }
+  .meeting_para .common_button {
+    font-size: 24px !important;
+    height: 37px !important;
+    padding: 6.4px 16px !important;
+  }
+  .meeting_btn_parent button {
+    font-size: 20px !important;
+    height: 54px !important;
+  }
+  .fissa-meeting-content-parent p {
+    font-size: 16px !important;
+    line-height: 112% !important;
+  }
 }
 
 @media (max-width: 379.98px) {
@@ -816,5 +842,12 @@
   }
   .icon_2 {
     top: -50% !important;
+  }
+  .meeting_para {
+    min-width: 100% !important;
+    font-size: 18px !important;
+  }
+  .meeting_para .common_button {
+    font-size: 18px !important;
   }
 }
