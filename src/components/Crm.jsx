@@ -19,7 +19,7 @@ const Crm = () => {
       });
     });
 
-    crmValues.add("(max-width:991.98px)", () => {
+    crmValues.add("(min-width:576px) and (max-width:991.98px)", () => {
       let crmicons = gsap.timeline({
         scrollTrigger: {
           trigger: ".crm_parent",
@@ -36,6 +36,27 @@ const Crm = () => {
         },
         {
           xPercent: -80,
+        }
+      );
+    });
+    crmValues.add("(max-width:575.98px)", () => {
+      let crmicons = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".crm_parent",
+          start: "top top",
+          end: "bottom center",
+          scrub: 3,
+          pin: true,
+          markers: true,
+        },
+      });
+      crmicons.fromTo(
+        ".crm_parent_img",
+        {
+          xPercent: 0,
+        },
+        {
+          xPercent: -150,
         }
       );
     });

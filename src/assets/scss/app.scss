@@ -219,22 +219,22 @@
   z-index: -1;
   transform: scale(1.3);
 }
-.text_1 {
+.business_para_1 {
   top: 0;
   opacity: 0;
   transform: rotate(-50deg);
 }
-.text_2 {
+.business_para_2 {
   top: 40px;
   opacity: 0;
   transform: rotate(-50deg);
 }
-.text_3 {
+.business_para_3 {
   top: 80px;
   opacity: 0;
   transform: rotate(-50deg);
 }
-.text_4 {
+.business_para_4 {
   top: 120px;
   opacity: 0;
   transform: rotate(-50deg);
@@ -353,7 +353,7 @@
   right: 0;
   max-width: 200px;
 }
-.third_section {
+.business_parent {
   background: var(--color-dark-gray);
 }
 .small_tab_arrow_img {
@@ -566,10 +566,6 @@
   right: 0;
 }
 
-$background-color_1: #373737;
-$background-color_2: transparent;
-$background-color_3: black;
-
 /* CARPLANNER CSS ADD */
 /* footer-css */
 /* :root {
@@ -646,7 +642,7 @@ $background-color_3: black;
 .carousel-indicators {
   bottom: -50px !important;
   [data-bs-target] {
-    background-color: $background-color_1 !important;
+    background-color: #373737 !important;
   }
 }
 .salesforcelogo {
@@ -679,10 +675,10 @@ $background-color_3: black;
 .webkit_scrollbar {
   &::-webkit-scrollbar {
     height: 5px;
-    background-color: $background-color_2;
+    background-color: transparent;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $background-color_3;
+    background-color: black;
     border-radius: 10px;
   }
 }
