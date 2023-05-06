@@ -4,12 +4,15 @@ import gsap from "gsap";
 
 function About() {
   useEffect(() => {
-    let sixth = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".about_parent",
-        pin: true,
-        pinSpacing: false,
-      },
+    let third = gsap.matchMedia();
+    third.add("(min-width:576px)", () => {
+      let sixth = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".about_parent",
+          pin: true,
+          pinSpacing: false,
+        },
+      });
     });
   }, []);
   // useEffect(() => {

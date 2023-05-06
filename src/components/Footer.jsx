@@ -16,7 +16,7 @@ function Footer() {
       <section className="green pt-5 min -vh-100 position-relative d-flex align-items-end justify-content-center">
         <BackToTop />
         <img
-          className="position-absolute footer_background_set d-none d-xl-block"
+          className="position-absolute footer_background_set"
           src={footerbg}
           alt="footerbg"
         />
@@ -31,14 +31,14 @@ function Footer() {
                 />
               </a>
               <div className="mt-4 mt-sm-0 d-md-block d-none">
-                <p className="mb-0 font_xsm fw_medium color_white_off ff_mon">
-                  <span className="ff_roboto pe-1 ">@</span>
+                <p className="mb-0 font_xsm fw_medium color_white_off ff_montserrat text-nowrap">
+                  <span className="ff_roboto pe-1">@</span>
                   {getnewyear} Tutti i diritti riservati
                 </p>
-                <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_mon">
+                <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_montserrat">
                   P.IVA 056382975839
                 </p>
-                <p className="mb-0 font_xsm fw_medium color_light_gray text_hover mt-1 ff_mon">
+                <p className="mb-0 font_xsm fw_medium color_light_gray text_hover mt-1 ff_montserrat">
                   Designed & developed<br className="d-md-block d-none"></br>
                   alfatauristudio.com
                 </p>
@@ -48,7 +48,7 @@ function Footer() {
               <ul className="ps-0">
                 <li className="lh_0 list-unstyled">
                   <a
-                    className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_mon"
+                    className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
                     href="#"
                   >
                     Terms of Service
@@ -56,7 +56,7 @@ function Footer() {
                 </li>
                 <li className="margin_top15 lh_0 list-unstyled">
                   <a
-                    className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_mon"
+                    className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
                     href="#"
                   >
                     Privacy Policy
@@ -64,7 +64,7 @@ function Footer() {
                 </li>
                 <li className="margin_top15 lh_0 list-unstyled">
                   <a
-                    className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_mon"
+                    className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
                     href="#"
                   >
                     Partners <span className="ff_roboto pe-1">&</span>Affiliates
@@ -72,7 +72,7 @@ function Footer() {
                 </li>
                 <li className="margin_top15 lh_0 list-unstyled">
                   <a
-                    className="font_xsm  text-decoration-none fw_medium color_white_off list_item_text ff_mon"
+                    className="font_xsm  text-decoration-none fw_medium color_white_off list_item_text ff_montserrat"
                     href="#"
                   >
                     Sitemap
@@ -85,13 +85,13 @@ function Footer() {
                 <img className="common_width" src={sms_img} alt="sms_img" />
                 <div className=" flex-column d-flex d-inline-block">
                   <a
-                    className="mb-0 list_item_text list-unstyled text-decoration-none  font_sm fw-bold letter_spacing color_white_off ff_mon"
+                    className="mb-0 list_item_text list-unstyled text-decoration-none  font_sm fw-bold letter_spacing color_white_off ff_montserrat"
                     href="mailTo:mail@wonw.xyz"
                   >
                     Email
                   </a>
                   <a
-                    className="mb-0 font_sm fw-normal list-unstyled text-decoration-none  color_light_gray ff_roboto text_hover mt-sm-1 ff_mon"
+                    className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto text_hover mt-sm-1"
                     href="mailTo:mail@wonw.xyz"
                   >
                     mail@wonw.xyz
@@ -102,13 +102,13 @@ function Footer() {
                 <img className="common_width" src={phone_img} alt="sms_img" />
                 <div className=" flex-column d-flex d-inline-block">
                   <a
-                    className="mb-0 list_item_text list-unstyled text-decoration-none  font_sm fw-bold letter_spacing color_white_off ff_mon"
+                    className="mb-0 list_item_text list-unstyled text-decoration-none font_sm fw-bold letter_spacing color_white_off ff_montserrat"
                     href="tel:521-239-4623"
                   >
                     Phone
                   </a>
                   <a
-                    className="mb-0 font_sm list-unstyled text-decoration-none fw-normal color_light_gray ff_roboto text_hover mt-sm-1 ff_mon"
+                    className="mb-0 font_sm list-unstyled text-decoration-none fw-normal color_light_gray ff_roboto text_hover mt-sm-1"
                     href="tel:521-239-4623"
                   >
                     521-239-4623
@@ -119,13 +119,14 @@ function Footer() {
                 <img className="common_width" src={icon_img} alt="sms_img" />
                 <div className=" flex-column d-flex d-inline-block">
                   <a
-                    className="mb-0 list_item_text list-unstyled text-decoration-none  font_sm fw-bold letter_spacing color_white_off ff_mon"
+                    className="mb-0 list_item_text list-unstyled text-decoration-none font_sm fw-bold letter_spacing color_white_off ff_montserrat"
                     href="#"
                   >
                     La nostra sede
                   </a>
                   <a
-                    className="mb-0 font_sm fw-normal list-unstyled text-decoration-none  color_light_gray ff_roboto text_hover mt-sm-1 ff_mon"
+                    className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto text_hover mt-sm-1lh_0
+                    "
                     href="#"
                   >
                     480 Laurie Causeway Suite 088
@@ -145,14 +146,14 @@ function Footer() {
                   <img className="svg" src={icon_3} alt="icon_3" />
                 </a>
               </div>
-              <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_mon">
+              <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
                 <span className="ff_roboto pe-1 ">@</span>
                 {getnewyear} Tutti i diritti riservati
               </p>
-              <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray mt-1 ff_mon">
+              <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray mt-1 ff_montserrat">
                 P.IVA 056382975839
               </p>
-              <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray text_hover ff_mon">
+              <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray text_hover ff_montserrat">
                 Designed & developed<br className="d-md-block d-none"></br>
                 alfatauristudio.com
               </p>
