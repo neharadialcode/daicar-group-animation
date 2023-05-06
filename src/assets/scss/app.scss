@@ -145,7 +145,7 @@
   z-index: -5;
 }
 .carplanner_bg {
-  background: #29424d !important;
+  background: var(--color-dark-gray) !important;
 }
 .carplanner_logo {
   max-width: 490px;
@@ -359,7 +359,7 @@
   max-width: 200px;
 }
 .third_section {
-  background: #29424d;
+  background: var(--color-dark-gray);
 }
 .small_tab_arrow_img {
   height: 155vh;
@@ -370,14 +370,14 @@
 
 @-webkit-keyframes Calendly_button {
   0% {
-    -webkit-box-shadow: 0 0 0 0 #2d5363;
-    box-shadow: 0 0 0 0 #2d5363;
+    -webkit-box-shadow: 0 0 0 0 var(--color-gray);
+    box-shadow: 0 0 0 0 var(--color-gray);
   }
 }
 @keyframes Calendly_button {
   0% {
-    -webkit-box-shadow: 0 0 0 #2d5363;
-    box-shadow: 0 0 0 0 #2d5363;
+    -webkit-box-shadow: 0 0 0 var(--color-gray);
+    box-shadow: 0 0 0 0 var(--color-gray);
   }
 }
 .common_button {
@@ -417,7 +417,7 @@
   margin-top: 23px;
 }
 .green {
-  background-color: #2d5363 !important;
+  background-color: var(--color-gray) !important;
 }
 .margin_top15 {
   margin-top: 15px;
