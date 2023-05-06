@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import { Icon1, Icon2, Icon3, Icon4, Icon4_2 } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import img from "../Free_iPad_Mockup_1 1.png";
-// import iPadSmallImg from "../assets/images/png/small-ipad.png";
-// import iPadSmallImg from "../assets/images/png/hero-ipad-mockup-img.png";
+import ipadScrollFit from "../assets/images/png/ipad-scroll-fit-img.png";
 import iPadSmallImg from "../assets/images/png/hero-ipad-mockupImg.png";
 import iPadFrameimg from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import Header from "./Header";
@@ -15,24 +13,24 @@ const Hero = () => {
     gsap.from("nav", { yPercent: -50, opacity: 0, duration: 1 });
     gsap.from(".heading", {
       filter: "blur(2px)",
-      duration: 1.5,
+      duration: 3,
     });
     gsap.from(".icon_1", {
       yPercent: 100,
-      duration: 1.5,
+      duration: 2,
     });
     gsap.from(".icon_2", {
       y: "50%",
-      duration: 1.5,
+      duration: 2,
     });
     gsap.from(".icon_3", {
       yPercent: 100,
-      duration: 1.5,
+      duration: 2,
       zIndex: 1,
     });
     let secondSlide = gsap.timeline({
       scrollTrigger: {
-        trigger: ".main_parent",
+        trigger: ".hero_parent",
         start: "top top",
         end: "bottom top",
         scrub: 2,
@@ -46,6 +44,7 @@ const Hero = () => {
       .to(".second_slide_parent", {
         yPercent: -100,
         duration: 1,
+        delay: 1,
       })
       .to(
         ".heading",
@@ -78,7 +77,7 @@ const Hero = () => {
           y: "-75%",
           x: "10%",
           scale: 0.7,
-          duration: 1,
+          duration: 2,
           zIndex: 1,
         },
         "-=1"
@@ -87,12 +86,12 @@ const Hero = () => {
         ".icon_4",
         {
           yPercent: 80,
-          duration: 1,
+          duration: 3,
         },
         {
           yPercent: -65,
           xPercent: -50,
-          duration: 1,
+          duration: 3,
         },
         "-=1"
       )
@@ -105,7 +104,7 @@ const Hero = () => {
           scale: 3,
           top: "50%",
           yPercent: -50,
-          duration: 1,
+          duration: 3,
         },
         {
           opacity: 1,
@@ -114,7 +113,7 @@ const Hero = () => {
           left: "50%",
           top: "50%",
           yPercent: -50,
-          duration: 1,
+          duration: 3,
         }
       )
 
@@ -123,6 +122,7 @@ const Hero = () => {
         {
           scale: 0.8,
           duration: 1,
+          delay: 1,
         },
         "-=1"
       )
@@ -162,7 +162,7 @@ const Hero = () => {
       .to(".icon_4", {
         yPercent: -155,
         xPercent: -50,
-        duration: 1,
+        duration: 3,
         scale: 0.8,
       })
       .to(
@@ -176,7 +176,7 @@ const Hero = () => {
       .to(".icon_4", {
         yPercent: -255,
         xPercent: -50,
-        duration: 1,
+        duration: 5,
         scale: 0.5,
       })
       .to(".bg_green", {
@@ -187,7 +187,7 @@ const Hero = () => {
         height: "0vh",
         delay: 2,
       })
-      .to(".main_parent", {
+      .to(".hero_parent", {
         autoAlpha: 0,
         duration: 1,
       });
@@ -197,7 +197,7 @@ const Hero = () => {
     <>
       <div className="bg_dark_gray">
         <Header />
-        <div className="main_parent hero_bg">
+        <div className="hero_parent hero_bg">
           <div className="value">
             <div className="bg_green"></div>
             <div className="heading">
@@ -232,7 +232,7 @@ const Hero = () => {
               <div className="i_pad_img">
                 <img
                   className="w-100 d-none d-lg-block"
-                  src={img}
+                  src={ipadScrollFit}
                   alt="i_pad_img"
                 />
                 <img

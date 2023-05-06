@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import img from "../Free_iPad_Mockup_1 1.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Icon5 } from "./Icons";
@@ -367,11 +366,6 @@ const SecondSection = () => {
             {buttonData.map((obj, index) => (
               <div className="px-2 pt-2" key={index}>
                 <div className={`card_img_${index}`}>
-                  {/* <img
-                    className={`position-absolute start-0 w-100 top-0`}
-                    src={img}
-                    alt="img"
-                  /> */}
                   <img
                     className={`${
                       index === 5
