@@ -74,31 +74,30 @@ function About() {
               CRM
             </span>
           </p>
-          <div className="d-flex justify-content-center pt-5 mt-5 position-relative z_index2">
-            <div>
-              <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
-                <button className="ff_mundial_regular hero_btn me-5">
-                  fissa un meeting
-                </button>
-                <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3">
-                  chat
-                </button>
-              </div>
-              <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center">
-                <img
-                  className="image_hight"
-                  src={meetingManImg}
-                  alt="meetingManImg"
-                />
-                <p className="mb-0 ff_mundial_regular font_md color_gray d-none d-xl-block">
-                  <span className="fw_light">Matteo,</span> Business Development
-                  Manager
-                </p>
-                <p className="mb-0 ff_mundial_regular font_md color_gray d-xl-none">
-                  <span className="fw_light">Matteo,</span> Business Development
-                  Manager
-                </p>
-              </div>
+
+          <div className="pt-5 mt-5 position-relative z_index2">
+            <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
+              <button className="ff_mundial_regular hero_btn me-5">
+                fissa un meeting
+              </button>
+              <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3">
+                chat
+              </button>
+            </div>
+            <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center">
+              <img
+                className="image_hight"
+                src={meetingManImg}
+                alt="meetingManImg"
+              />
+              <p className="mb-0 ff_mundial_regular font_md color_gray d-none d-xl-block">
+                <span className="fw_light">Matteo,</span> Business Development
+                Manager
+              </p>
+              <p className="mb-0 ff_mundial_regular font_md color_gray d-xl-none">
+                <span className="fw_light">Matteo,</span> Business Development
+                Manager
+              </p>
             </div>
           </div>
         </div>
