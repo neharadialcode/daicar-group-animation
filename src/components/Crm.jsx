@@ -43,7 +43,7 @@ const Crm = () => {
   return (
     <>
       <div className="d-flex justify-content-center align-items-center crm_parent overflow-hidden">
-        <div className="position-absolute crm_left_icon d-none d-lg-block">
+        <div className="position-absolute crm_left_icon d-none d-lg-block z_negative">
           <img src={crmLeftIcon} alt="crm-left-icon" />
         </div>
         <div className="container custom_container crm_text">
