@@ -16,15 +16,15 @@ const Header = () => {
 
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    // gsap.from(".bg_navbar", {
+    // gsap.from(".header_parent", {
     //   xPercent: "-2",
     //   yPercent: "-80",
     //   duration: 1.7,
     // });
     gsap.fromTo(
-      ".bg_navbar",
+      ".header_parent",
       {
-        yPercent: "-30",
+        yPercent: "-70",
         duration: 2,
       },
       {
@@ -35,7 +35,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="bg_navbar">
+    <div className="header_parent">
       <div className="container-lg common_container py-2 py-lg-0">
         <div className="header_section d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 py-lg-5 navbar_links">
           <a href="#">
@@ -49,9 +49,6 @@ const Header = () => {
             onClick={() => setNavShow(!navShow)}
             className="text-danger px-2 py-1 d-lg-none rounded-3 toggle_icon"
           >
-            {/* <div className="line_black"></div>
-            <div className="line_black"></div>
-            <div className="line_black"></div> */}
             <ToggleIcon />
           </div>
           <ul className="d-flex align-items-center mb-0 d-none d-lg-flex ps-0 mb-0">

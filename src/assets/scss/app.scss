@@ -22,9 +22,7 @@
     transform: translateY(-10px);
   }
 }
-/* .big_icon{
-    scale: 2;
-  } */
+
 .hero_parent {
   height: 100vh;
   overflow: hidden;
@@ -39,26 +37,23 @@
   border: 1px solid var(--color-white-off);
   border-radius: 10px;
   padding: 10px 24px;
-  // padding: 4px 24px 10px;
   color: var(--color-white-off) !important;
   background: var(--color-light-green);
 }
-// .bg_img {
-//   background: url("./assets/images/png/man-img.png");
+
+// .bg_green {
+//   background: var(--color-dark-gray) !important;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
 // }
-.bg_green {
-  background: var(--color-dark-gray) !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.hero_bg {
-  position: relative;
-}
-.heading {
+// .hero_bg {
+//   position: relative;
+// }
+.hero_heading {
   height: 100vh;
   display: flex;
   flex-direction: column;

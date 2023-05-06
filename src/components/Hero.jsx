@@ -11,7 +11,7 @@ const Hero = () => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     gsap.from("nav", { yPercent: -50, opacity: 0, duration: 1 });
-    gsap.from(".heading", {
+    gsap.from(".hero_heading", {
       filter: "blur(2px)",
       duration: 3,
     });
@@ -35,7 +35,6 @@ const Hero = () => {
         end: "bottom top",
         scrub: 2,
         pin: true,
-        // markers: true,
         pinSpacing: false,
       },
     });
@@ -47,7 +46,7 @@ const Hero = () => {
         delay: 1,
       })
       .to(
-        ".heading",
+        ".hero_heading",
         {
           opacity: 0,
           duration: 1,
@@ -155,7 +154,7 @@ const Hero = () => {
         },
         "-=1"
       )
-      .to(".bg_green", {
+      .to(".hero_text_parent", {
         height: "100vh",
         duration: 0.1,
       })
@@ -166,7 +165,7 @@ const Hero = () => {
         scale: 0.8,
       })
       .to(
-        ".bg_green",
+        ".hero_text_parent",
         {
           height: "50vh",
           duration: 1,
@@ -179,11 +178,11 @@ const Hero = () => {
         duration: 5,
         scale: 0.5,
       })
-      .to(".bg_green", {
+      .to(".hero_text_parent", {
         height: "0vh",
         duration: 1,
       })
-      .to(".bg_green", {
+      .to(".hero_text_parent", {
         height: "0vh",
         delay: 2,
       })
@@ -197,10 +196,10 @@ const Hero = () => {
     <>
       <div className="bg_dark_gray">
         <Header />
-        <div className="hero_parent hero_bg">
+        <div className="hero_parent">
           <div className="value">
-            <div className="bg_green"></div>
-            <div className="heading">
+            <div className="hero_text_parent bg_dark_gray position-absolute top-0 end-0 w-100 h-100 z_negative"></div>
+            <div className="hero_heading">
               <div className="hero_section_heading">
                 <h2 className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01">
                   Il futuro delle tue
