@@ -47,7 +47,6 @@ const Crm = () => {
           end: "bottom center",
           scrub: 3,
           pin: true,
-          markers: true,
         },
       });
       crmicons.fromTo(
