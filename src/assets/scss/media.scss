@@ -359,7 +359,10 @@
   }
   .meeting_para {
     line-height: 260% !important;
-    max-width: 1132px !important;
+    max-width: 1072px !important;
+  }
+  .meeting_para .common_button {
+    font-size: 20px !important;
   }
 }
 
@@ -446,6 +449,10 @@
   .hero_slide_1 h3,
   .hero_slide_2 h3 {
     font-size: 62px !important;
+  }
+  .meeting_para .common_button {
+    font-size: 20px !important;
+    padding: 14.4px 16px !important;
   }
 }
 
@@ -794,6 +801,15 @@
   .custom_business_heading {
     font-size: 28px !important;
     line-height: 195% !important;
+  }
+  .meeting_para {
+    font-size: 24px !important;
+    line-height: 208% !important;
+  }
+  .meeting_para .common_button {
+    font-size: 24px !important;
+    height: 37px !important;
+    padding: 6.4px 16px !important;
   }
 }
 
