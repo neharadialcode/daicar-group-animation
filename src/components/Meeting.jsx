@@ -39,7 +39,7 @@ function About() {
             <span className="common_button mx-1 font_2xl mx-sm-3">vendite</span>
             è digitale e hai scoperto
             <br className="d-md-block d-none"></br>
-            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
+            <span className="common_button mx-1 font_2xl ms-sm-0 me-sm-3 margin_top">
               come
             </span>
             usiamo il
@@ -61,7 +61,7 @@ function About() {
               tempo
             </span>
             per ideare una strategia
-            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
+            <span className="common_button mx-1 font_2xl me-sm-0 ms-sm-3 margin_top">
               personalizzata
             </span>
             <br className="d-md-block d-none"></br>
@@ -70,15 +70,20 @@ function About() {
               partner
             </span>
             integrato nel tuo team e nel tuo
-            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
+            <span className="common_button mx-1 font_2xl me-sm-0 ms-sm-3 margin_top">
               CRM
             </span>
           </p>
-          <div className="d-flex justify-content-center meeting_top_space position-relative z_index2">
+          <div className="d-flex justify-content-center pt-5 mt-5 position-relative z_index2">
             <div>
-              <button className="Calendly_button fw-normal mx-auto d-flex ff_mundial_normal font_2xl color_gray">
-                Parliamone meglio su Calendly
-              </button>
+              <div className="d-flex align-items-center">
+                <button className="Calendly_button fw-normal mx-auto d-flex ff_mundial_normal font_2xl color_gray">
+                  fissa un meeting
+                </button>
+                <button className="Calendly_button fw-normal mx-auto d-flex ff_mundial_normal font_2xl color_gray parliamone">
+                  chat
+                </button>
+              </div>
               <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center">
                 <img className="image_hight" src={man} alt="man" />
                 <p className="mb-0 font_md color_gray d-none d-xl-block">

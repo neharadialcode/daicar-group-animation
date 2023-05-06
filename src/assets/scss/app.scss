@@ -407,9 +407,9 @@
 .common_padding {
   padding-top: 23px;
 }
-.meeting_top_space {
-  margin-top: 143px;
-}
+// .meeting_top_space {
+//   margin-top: 143px;
+// }
 .margin_top {
   margin-top: 23px;
 }
@@ -775,6 +775,20 @@ $background-color_3: black;
 }
 
 .meeting_para {
-  line-height: 234% !important;
+  line-height: 236% !important;
   max-width: 1302px !important;
+}
+.parliamone {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 70.47px;
+    width: 1.69px;
+    border: 1px solid var(--color-white-off);
+    opacity: 0.5;
+    background-color: var(--color-white-off);
+    right: -30px;
+    top: -20px;
+  }
 }
