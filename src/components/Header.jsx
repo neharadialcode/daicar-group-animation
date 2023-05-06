@@ -16,15 +16,26 @@ const Header = () => {
 
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    gsap.from(".header_section", {
-      x: "-2%",
-      y: "-80%",
-      duration: 1.7,
-    });
+    // gsap.from(".bg_navbar", {
+    //   xPercent: "-2",
+    //   yPercent: "-80",
+    //   duration: 1.7,
+    // });
+    gsap.fromTo(
+      ".bg_navbar",
+      {
+        yPercent: "-30",
+        duration: 2,
+      },
+      {
+        yPercent: "10",
+        duration: 2,
+      }
+    );
   }, []);
 
   return (
-    <section className="bg_navbar">
+    <div className="bg_navbar">
       <div className="container-lg common_container py-2 py-lg-0">
         <div className="header_section d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 py-lg-5 navbar_links">
           <a href="#">
@@ -47,7 +58,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ps-5 ms-2"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ps-4 ps-xxl-5 ms-2"
               >
                 Main Assets
               </a>
@@ -55,7 +66,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ps-5 ms-2"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ps-4 ps-xxl-5 ms-2"
               >
                 Servizi
               </a>
@@ -63,7 +74,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ps-5 ms-2"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ps-4 ps-xxl-5 ms-2"
               >
                 Daicar Group
               </a>
@@ -71,7 +82,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ps-5 ms-2"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ps-4 ps-xxl-5 ms-2"
               >
                 Contatti
               </a>
@@ -163,7 +174,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
