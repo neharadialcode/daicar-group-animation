@@ -22,7 +22,7 @@ const Header = () => {
     //   duration: 1.7,
     // });
     gsap.fromTo(
-      ".header_parent",
+      ".header_section",
       {
         yPercent: "-70",
         duration: 2,
