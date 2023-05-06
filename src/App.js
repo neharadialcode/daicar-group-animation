@@ -20,7 +20,7 @@ function App() {
       <TabsImage />
       <Business />
       <AboutUs />
-      <Timeline />
+      {/* <Timeline /> */}
       {/* <SixthSection /> */}
       <div className="bg_light_white">
         <Partner />
