@@ -44,6 +44,7 @@ function Footer() {
                 </p>
               </div>
             </div>
+
             <div className="col-4 col-md-3 pe-0 pe-sm-2 ps-0 mx-auto mx-sm-0">
               <ul className="ps-0 text-start mb-5 mb-sm-0 pb-4 pb-sm-0">
                 <li className="list-unstyled">
@@ -80,6 +81,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
+
             <div className="col-12 col-sm-4 col-md-3 mt-sm-0 ps-0 ps-sm-2 d-none d-md-block">
               <div className="d-flex align-items-center common_gap scle">
                 <img className="common_width" src={sms_img} alt="sms_img" />
@@ -133,8 +135,9 @@ function Footer() {
                 </div>
               </div>
             </div>
+
             <div className="col-12 col-sm-4 col-md-3">
-              <div className="d-flex justify-content-center mb-4 mb-md-0 gap-3 gap-lg-4">
+              <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 gap-3 gap-lg-4">
                 <a target="blank" href="https://www.instagram.com/">
                   <img className="svg" src={icon_1} alt="icon_1" />
                 </a>
@@ -145,16 +148,15 @@ function Footer() {
                   <img className="svg" src={icon_3} alt="icon_3" />
                 </a>
               </div>
-
               <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
                 <span className="ff_roboto pe-1 ">@</span>
                 {getnewyear} Tutti i diritti riservati
               </p>
               <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray mt-1 ff_montserrat">
-                P.IVA 056382975839
+                P.IVA 14570951005
               </p>
               <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray text_hover ff_montserrat">
-                Designed & developed<br className="d-md-block d-none"></br>
+                Designed & developed <br className="d-md-block d-none"></br>
                 alfatauristudio.com
               </p>
             </div>
