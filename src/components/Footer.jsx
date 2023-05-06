@@ -137,7 +137,7 @@ function Footer() {
             </div>
 
             <div className="col-12 col-sm-4 col-md-3">
-              <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 gap-3 gap-lg-4">
+              <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 gap-3 gap-lg-4 social_links_parent">
                 <a target="blank" href="https://www.instagram.com/">
                   <img className="svg" src={icon_1} alt="icon_1" />
                 </a>
