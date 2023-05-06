@@ -28,6 +28,18 @@ const ThirdSection = () => {
         // .from(".third_section", {
         //   scale: 1.3,
         // })
+        .to(".business_heading_1", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_heading_2", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_heading_4", {
+          autoAlpha: 0.5,
+        })
         .to(".big_icon", {
           top: "-12%",
         })
@@ -37,6 +49,15 @@ const ThirdSection = () => {
         .to(".heading_1", {
           height: "200px",
         })
+        .fromTo(
+          ".business_heading_1",
+          {
+            autoAlpha: 0.5,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(".text_1", {
           autoAlpha: 1,
           rotate: 0,
@@ -53,6 +74,15 @@ const ThirdSection = () => {
             height: "40px",
           },
           "-=.5"
+        )
+        .fromTo(
+          ".business_heading_1",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0.5,
+          }
         )
 
         .to(
@@ -76,6 +106,15 @@ const ThirdSection = () => {
         .to(".heading_2", {
           height: "200px",
         })
+        .fromTo(
+          ".business_heading_2",
+          {
+            autoAlpha: 0.5,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(".text_2", {
           autoAlpha: 1,
           delay: 1,
@@ -91,6 +130,15 @@ const ThirdSection = () => {
             height: "40px",
           },
           "-=.5"
+        )
+        .fromTo(
+          ".business_heading_2",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0.5,
+          }
         )
 
         .to(
@@ -113,6 +161,15 @@ const ThirdSection = () => {
         .to(".heading_3", {
           height: "200px",
         })
+        .fromTo(
+          ".business_heading_3",
+          {
+            autoAlpha: 0.5,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(".text_3", {
           autoAlpha: 1,
           delay: 1,
@@ -128,6 +185,15 @@ const ThirdSection = () => {
             height: "40px",
           },
           "-=.5"
+        )
+        .fromTo(
+          ".business_heading_3",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0.5,
+          }
         )
 
         .to(
@@ -150,6 +216,15 @@ const ThirdSection = () => {
         .to(".heading_4", {
           height: "200px",
         })
+        .fromTo(
+          ".business_heading_4",
+          {
+            autoAlpha: 0.5,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(".text_4", {
           autoAlpha: 1,
           delay: 1,
@@ -165,6 +240,15 @@ const ThirdSection = () => {
             height: "40px",
           },
           "-=.5"
+        )
+        .fromTo(
+          ".business_heading_4",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0.5,
+          }
         )
 
         .to(
@@ -201,6 +285,18 @@ const ThirdSection = () => {
         },
       });
       secondSection3
+        .to(".business_heading_1", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_heading_2", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_heading_4", {
+          autoAlpha: 0.5,
+        })
         .to(".big_icon", {
           top: "-12%",
         })
@@ -210,6 +306,15 @@ const ThirdSection = () => {
         .to(".heading_1", {
           height: "120px",
         })
+        .fromTo(
+          ".business_heading_1",
+          {
+            autoAlpha: 0.5,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(".text_1", {
           autoAlpha: 1,
           rotate: 0,
@@ -218,6 +323,15 @@ const ThirdSection = () => {
         .to(".heading_1", {
           height: "40px",
         })
+        .fromTo(
+          ".business_heading_1",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0.5,
+          }
+        )
         .to(
           ".text_1",
           {
@@ -247,6 +361,15 @@ const ThirdSection = () => {
         .to(".heading_2", {
           height: "120px",
         })
+        .fromTo(
+          ".business_heading_2",
+          {
+            autoAlpha: 0.5,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(".text_2", {
           autoAlpha: 1,
           delay: 1,
@@ -256,6 +379,15 @@ const ThirdSection = () => {
         .to(".heading_2", {
           height: "40px",
         })
+        .fromTo(
+          ".business_heading_2",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0.5,
+          }
+        )
         .to(
           ".text_2",
           {
@@ -283,6 +415,15 @@ const ThirdSection = () => {
         .to(".heading_3", {
           height: "120px",
         })
+        .fromTo(
+          ".business_heading_3",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0.5,
+          }
+        )
         .to(".text_3", {
           autoAlpha: 1,
           delay: 1,
@@ -292,6 +433,15 @@ const ThirdSection = () => {
         .to(".heading_3", {
           height: "40px",
         })
+        .fromTo(
+          ".business_heading_3",
+          {
+            autoAlpha: 0.5,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".text_3",
           {
@@ -316,6 +466,15 @@ const ThirdSection = () => {
         .to(".small_icon", {
           top: "125px",
         })
+        .fromTo(
+          ".business_heading_4",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0.5,
+          }
+        )
         .to(".heading_4", {
           height: "120px",
         })
@@ -327,6 +486,15 @@ const ThirdSection = () => {
         .to(".heading_4", {
           height: "40px",
         })
+        .fromTo(
+          ".business_heading_4",
+          {
+            autoAlpha: 0.5,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".text_4",
           {
@@ -447,7 +615,7 @@ const ThirdSection = () => {
                   alt="small-arrow-icon"
                 />
                 <div className="heading_1 ps-5 ps-xxl-0">
-                  <h3 className="font_5xl color_dark_gray">
+                  <h3 className="font_5xl color_dark_gray business_heading_1">
                     GENERAZIONE TRAFFICO
                   </h3>
                   <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_1 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
@@ -457,7 +625,7 @@ const ThirdSection = () => {
                   </p>
                 </div>
                 <div className="heading_2 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl color_dark_gray">
+                  <h3 className="font_5xl color_dark_gray business_heading_2">
                     LANDING CONVERSAZIONALE
                   </h3>
                   <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
@@ -468,7 +636,7 @@ const ThirdSection = () => {
                   </p>
                 </div>
                 <div className="heading_3 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl color_dark_gray">
+                  <h3 className="font_5xl color_dark_gray business_heading_3">
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
                   <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
@@ -478,7 +646,7 @@ const ThirdSection = () => {
                   </p>
                 </div>
                 <div className="heading_4 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl color_dark_gray">
+                  <h3 className="font_5xl color_dark_gray business_heading_4">
                     TRASMISSIONE LEAD
                   </h3>
                   <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">

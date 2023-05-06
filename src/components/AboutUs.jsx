@@ -6,9 +6,7 @@ import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
 import bigFounder3 from "../assets/images/png/big-founder-federico-img-2.png";
 import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
-
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 const ForthSection = () => {
   useEffect(() => {
@@ -33,7 +31,7 @@ const ForthSection = () => {
           {
             autoAlpha: 1,
           }
-      )
+        )
         .to(
           ".left_text_forth",
           {
@@ -195,15 +193,6 @@ const ForthSection = () => {
       });
       secondSection4
         .fromTo(
-          ".left_text_forth",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .fromTo(
           ".forth_heading",
           {
             autoAlpha: 0,
@@ -273,16 +262,6 @@ const ForthSection = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".roadmap_text_2",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          },
-          "-=.5"
-        )
         .to(
           ".roadmap_text_1",
           {
@@ -291,6 +270,24 @@ const ForthSection = () => {
 
           "-=.5"
         )
+        .fromTo(
+          ".roadmap_text_2",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "-=.1"
+        )
+        // .to(
+        //   ".roadmap_text_1",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+
+        //   "-=.5"
+        // )
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -310,6 +307,14 @@ const ForthSection = () => {
           },
           "-=.5"
         )
+        .to(
+          ".roadmap_text_2",
+          {
+            autoAlpha: 0,
+          },
+
+          "-=.5"
+        )
         .fromTo(
           ".roadmap_text_3",
           {
@@ -318,15 +323,7 @@ const ForthSection = () => {
           {
             autoAlpha: 1,
           },
-          "-=.5"
-        )
-        .to(
-          ".roadmap_text_2",
-          {
-            autoAlpha: 0,
-          },
-
-          "-=.5"
+          "-=.1"
         );
     });
     media.add("(max-width:991.98px)", () => {
@@ -376,7 +373,7 @@ const ForthSection = () => {
           />
         </div>
         <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading z_1">
-          <p className="font_5xl fw-normal text-white pt-sm-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing">
+          <p className="font_5xl fw-normal text-white pt-xl-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
@@ -384,7 +381,7 @@ const ForthSection = () => {
             <span className="text-black">.</span>
           </p>
         </div>
-        <div className="position-absolute z-1 end-0 d-none d-lg-block pe-5 left_text_forth">
+        <div className="position-absolute z-1 end-0 d-none d-xxl-block pe-5 left_text_forth">
           <img src={lefttextImg} alt="business-small-arrow-2" />
         </div>
         <div className="container h-100 pb-5 pb-lg-0">
