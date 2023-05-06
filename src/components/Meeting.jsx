@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import man from "../assets/images/png/man-img.png";
+import meetingManImg from "../assets/images/svg/meeting_man_img.svg";
 import gsap from "gsap";
 
 function About() {
@@ -34,12 +34,12 @@ function About() {
     <>
       <section className="bg_light_white padding_y163 about_parent min-vh-100 overflow-hidden">
         <div className="custom_container container about_text pt-xl-5">
-          <p className="mb-0 fw-normal font_5xl color_dark_gray ff_mundial_normal custom_letter_spacing meeting_para mx-auto">
+          <p className="mb-0 fw-normal font_5xl color_dark_gray ff_mundial_regular custom_letter_spacing meeting_para mx-auto">
             Ora hai compreso che il futuro delle tue
             <span className="common_button mx-1 font_2xl mx-sm-3">vendite</span>
             è digitale e hai scoperto
             <br className="d-md-block d-none"></br>
-            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
+            <span className="common_button mx-1 font_2xl ms-sm-0 me-sm-3 margin_top">
               come
             </span>
             usiamo il
@@ -61,7 +61,7 @@ function About() {
               tempo
             </span>
             per ideare una strategia
-            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
+            <span className="common_button mx-1 font_2xl me-sm-0 ms-sm-3 margin_top">
               personalizzata
             </span>
             <br className="d-md-block d-none"></br>
@@ -70,26 +70,34 @@ function About() {
               partner
             </span>
             integrato nel tuo team e nel tuo
-            <span className="common_button mx-1 font_2xl mx-sm-3 margin_top">
+            <span className="common_button mx-1 font_2xl me-sm-0 ms-sm-3 margin_top">
               CRM
             </span>
           </p>
-          <div className="d-flex justify-content-center meeting_top_space position-relative z_index2">
-            <div>
-              <button className="Calendly_button fw-normal mx-auto d-flex ff_mundial_normal font_2xl color_gray">
-                Parliamone meglio su Calendly
+
+          <div className="pt-5 mt-5 position-relative z_index2">
+            <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
+              <button className="ff_mundial_regular hero_btn me-5">
+                fissa un meeting
               </button>
-              <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center">
-                <img className="image_hight" src={man} alt="man" />
-                <p className="mb-0 font_md color_gray d-none d-xl-block">
-                  <span className="fw_light">Matteo,</span> Business Development
-                  Manager
-                </p>
-                <p className="mb-0 font_md color_gray d-xl-none">
-                  <span className="fw_light">Matteo,</span> Business Development
-                  Manager
-                </p>
-              </div>
+              <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3">
+                chat
+              </button>
+            </div>
+            <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center">
+              <img
+                className="image_hight"
+                src={meetingManImg}
+                alt="meetingManImg"
+              />
+              <p className="mb-0 ff_mundial_regular font_md color_gray d-none d-xl-block">
+                <span className="fw_light">Matteo,</span> Business Development
+                Manager
+              </p>
+              <p className="mb-0 ff_mundial_regular font_md color_gray d-xl-none">
+                <span className="fw_light">Matteo,</span> Business Development
+                Manager
+              </p>
             </div>
           </div>
         </div>

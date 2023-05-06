@@ -65,7 +65,7 @@ const Partner = () => {
       <div className="container custom_container">
         <div className="position-absolute arrowbtn_set d-none d-lg-block">
           <div className="mt-lg-5 pt-lg-5 d-flex align-items-center gap-4 justify-content-end position-absolute arrowbtn_set">
-            <p className="mb-0 ff_mundial_normal font_md lh_125 text_secondary">
+            <p className="mb-0 ff_mundial_regular font_md lh_125 text_secondary">
               Partner
             </p>
             <img src={arrowbtn} alt="arrowbtn" />
@@ -74,10 +74,10 @@ const Partner = () => {
         <div className="partner_text">
           <div className="mt-lg-5 pt-lg-5">
             <div className="d-flex align-items-center gap-2 justify-content-center mt-5 pt-lg-5 pb-4">
-              <p className="ff_mundial_normal font_5xl text_secondary mb-0 partner_para">
+              <p className="ff_mundial_regular font_5xl text_secondary mb-0 partner_para">
                 Non cerchiamo clienti ma
               </p>
-              <button className="ff_mundial_normal font_2xl text_secondary partner_btn ">
+              <button className="ff_mundial_regular font_2xl text_secondary partner_btn ">
                 partner
               </button>
             </div>
