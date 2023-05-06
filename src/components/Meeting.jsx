@@ -75,18 +75,18 @@ function About() {
             </span>
           </p>
 
-          <div className="pt-4 pt-lg-5 mt-5 position-relative z_index2">
+          <div className="pt-4 pt-lg-5 mt-sm-5 position-relative z_index2">
             <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
               <button className="ff_mundial_regular hero_btn me-4 me-lg-5">
                 fissa un meeting
               </button>
-              <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3">
+              <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3 d-none d-sm-block">
                 chat
               </button>
             </div>
-            <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center">
+            <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center fissa-meeting-content-parent">
               <img
-                className="image_hight"
+                className="meeting_man_img me-2"
                 src={meetingManImg}
                 alt="meetingManImg"
               />
@@ -95,8 +95,9 @@ function About() {
                 Manager
               </p>
               <p className="mb-0 ff_mundial_regular font_md color_gray d-xl-none">
-                <span className="fw_light">Matteo,</span> Business Development
-                Manager
+                <span className="fw_light">Matteo,</span>
+                <br className="d-sm-none" />
+                Business Development Manager
               </p>
             </div>
           </div>
