@@ -4,12 +4,15 @@ import gsap from "gsap";
 
 function About() {
   useEffect(() => {
-    let sixth = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".about_parent",
-        pin: true,
-        pinSpacing: false,
-      },
+    let third = gsap.matchMedia();
+    third.add("(min-width:576px)", () => {
+      let sixth = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".about_parent",
+          pin: true,
+          pinSpacing: false,
+        },
+      });
     });
   }, []);
   // useEffect(() => {
@@ -32,7 +35,7 @@ function About() {
   // }, []);
   return (
     <>
-      <section className="bg_light_white padding_y163 about_parent min-vh-100 overflow-hidden">
+      <section className="bg_light_white custom_content_padding about_parent min-vh-100 overflow-hidden">
         <div className="custom_container container about_text pt-xl-5">
           <p className="mb-0 fw-normal font_5xl color_dark_gray ff_mundial_regular custom_letter_spacing meeting_para mx-auto px-2 px-sm-0">
             Ora hai compreso che il futuro delle tue

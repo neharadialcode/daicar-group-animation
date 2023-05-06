@@ -14,7 +14,7 @@
   .margin_top36 {
     margin-top: 24px !important;
   }
-  .padding_y163 {
+  .custom_content_padding {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
   }
@@ -50,7 +50,7 @@
   //   padding: 20px 124px;
   //   font-weight: 400;
   // }
-  .padding_y163 {
+  .custom_content_padding {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
   }
@@ -66,8 +66,8 @@
 }
 
 @media (min-width: 992px) {
-  .padding_y163 {
-    // padding-top: 163px !important;
+  .custom_content_padding {
+    padding-top: 163px !important;
     padding-bottom: 163px !important;
   }
   .padding_y55 {
@@ -88,6 +88,9 @@
   }
   .crm_parent {
     min-height: 100vh;
+  }
+  .footer_year_line {
+    white-space: nowrap;
   }
 }
 
@@ -457,6 +460,9 @@
     font-size: 20px !important;
     padding: 14.4px 16px !important;
   }
+  .footer_background_set {
+    height: 650px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -729,7 +735,7 @@
   .lh_0 {
     line-height: 7px !important;
   }
-  .padding_y163 {
+  .custom_content_padding {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
@@ -747,8 +753,10 @@
     height: 18px;
   }
   .footer_logo {
-    width: 80px;
-    height: 32px;
+    width: 114px;
+    height: 46px;
+    margin-top: 120px;
+    margin-bottom: 77px;
   }
   .margin_top15 {
     margin-top: 11px;
