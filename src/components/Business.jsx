@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import iconImg from "../assets/images/svg/big-icon.svg";
 import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
 import businessOne from "../assets/images/png/business-1.png";
 import businessTwo from "../assets/images/png/business-2.png";
 import businessThree from "../assets/images/png/business-3.png";
@@ -9,14 +8,13 @@ import businessFour from "../assets/images/png/business-4.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
-// import { ChatIcon } from "./Icons";
 const ThirdSection = () => {
   useEffect(() => {
-    let third = gsap.matchMedia();
-    third.add("(min-width:1500px)", () => {
-      let secondSection3 = gsap.timeline({
+    let busniessValue = gsap.matchMedia();
+    busniessValue.add("(min-width:1500px)", () => {
+      let busniessParentt = gsap.timeline({
         scrollTrigger: {
-          trigger: ".third_section",
+          trigger: ".business_parent",
           start: "top top",
           end: "bottom top",
           scrub: 3,
@@ -24,7 +22,7 @@ const ThirdSection = () => {
           pinSpacing: false,
         },
       });
-      secondSection3
+      busniessParentt
         .to(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -56,13 +54,13 @@ const ThirdSection = () => {
             autoAlpha: 1,
           }
         )
-        .to(".text_1", {
+        .to(".business_para_1", {
           autoAlpha: 1,
           rotate: 0,
           delay: 1,
           duration: 7,
         })
-        .to(".text_1", {
+        .to(".business_para_1", {
           autoAlpha: 0,
           delay: 1,
           duration: 7,
@@ -116,13 +114,13 @@ const ThirdSection = () => {
             autoAlpha: 1,
           }
         )
-        .to(".text_2", {
+        .to(".business_para_2", {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
           duration: 7,
         })
-        .to(".text_2", {
+        .to(".business_para_2", {
           autoAlpha: 0,
           delay: 1,
           duration: 7,
@@ -175,13 +173,13 @@ const ThirdSection = () => {
             autoAlpha: 1,
           }
         )
-        .to(".text_3", {
+        .to(".business_para_3", {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
           duration: 7,
         })
-        .to(".text_3", {
+        .to(".business_para_3", {
           delay: 1,
           autoAlpha: 0,
           duration: 7,
@@ -234,13 +232,13 @@ const ThirdSection = () => {
             autoAlpha: 1,
           }
         )
-        .to(".text_4", {
+        .to(".business_para_4", {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
           duration: 7,
         })
-        .to(".text_4", {
+        .to(".business_para_4", {
           delay: 1,
           autoAlpha: 0,
           duration: 7,
@@ -281,14 +279,11 @@ const ThirdSection = () => {
           top: "-20%",
           scale: "1",
         });
-      // .to(".third_heading", {
-      //   autoAlpha: 0,
-      // });
     });
-    third.add("(min-width:992px) and (max-width:1499.98px)", () => {
-      let secondSection3 = gsap.timeline({
+    busniessValue.add("(min-width:992px) and (max-width:1499.98px)", () => {
+      let busniessParentt = gsap.timeline({
         scrollTrigger: {
-          trigger: ".third_section",
+          trigger: ".business_parent",
           start: "top top",
           end: "bottom top",
           scrub: 1,
@@ -296,7 +291,7 @@ const ThirdSection = () => {
           pinSpacing: false,
         },
       });
-      secondSection3
+      busniessParentt
         .to(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -328,13 +323,13 @@ const ThirdSection = () => {
             autoAlpha: 1,
           }
         )
-        .to(".text_1", {
+        .to(".business_para_1", {
           autoAlpha: 1,
           rotate: 0,
           delay: 1,
           duration: 7,
         })
-        .to(".text_1", {
+        .to(".business_para_1", {
           autoAlpha: 0,
           delay: 1,
           duration: 7,
@@ -384,13 +379,13 @@ const ThirdSection = () => {
             autoAlpha: 1,
           }
         )
-        .to(".text_2", {
+        .to(".business_para_2", {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
           duration: 7,
         })
-        .to(".text_2", {
+        .to(".business_para_2", {
           autoAlpha: 0,
           delay: 1,
           duration: 7,
@@ -413,14 +408,6 @@ const ThirdSection = () => {
             autoAlpha: 0.5,
           }
         )
-        // .to(
-        //   ".text_2",
-        //   {
-        //     autoAlpha: 0,
-        //     duration: 7,
-        //   },
-        //   "-=.5"
-        // )
 
         .to(
           ".business_img_2",
@@ -452,13 +439,13 @@ const ThirdSection = () => {
             autoAlpha: 1,
           }
         )
-        .to(".text_3", {
+        .to(".business_para_3", {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
           duration: 7,
         })
-        .to(".text_3", {
+        .to(".business_para_3", {
           delay: 1,
           autoAlpha: 0,
           duration: 7,
@@ -507,20 +494,17 @@ const ThirdSection = () => {
             autoAlpha: 1,
           }
         )
-        .to(".text_4", {
+        .to(".business_para_4", {
           autoAlpha: 1,
           delay: 1,
           rotate: 0,
           duration: 7,
         })
-        .to(
-          ".text_4",
-          {
-            delay: 1,
-            autoAlpha: 0,
-            duration: 7,
-          }
-        )
+        .to(".business_para_4", {
+          delay: 1,
+          autoAlpha: 0,
+          duration: 7,
+        })
         .to(".heading_4", {
           height: "40px",
           duration: 7,
@@ -553,16 +537,15 @@ const ThirdSection = () => {
           autoAlpha: 0,
         });
     });
-    third.add("(max-width:991.98px)", () => {
-      let secondSection3 = gsap.timeline({
+    busniessValue.add("(max-width:991.98px)", () => {
+      let busniessParentt = gsap.timeline({
         scrollTrigger: {
-          trigger: ".third_section",
+          trigger: ".business_parent",
           start: "top top",
           end: "bottom top",
-          // scrub: 1,
         },
       });
-      secondSection3
+      busniessParentt
         .from(".business_tab_1", {
           xPercent: "-150",
           stagger: 0.3,
@@ -586,10 +569,7 @@ const ThirdSection = () => {
     });
   }, []);
   return (
-    <div className="third_section overflow-hidden third_sec_height z_1 pt-5">
-      {/* <div className="position-absolute chat_icon cursor_pointer">
-        <ChatIcon />
-      </div> */}
+    <div className="business_parent overflow-hidden third_sec_height z_1 pt-5">
       <div className="d-flex flex-column justify-content-center">
         <img
           className="w-100 position-absolute big_icon d-none d-lg-block"
@@ -650,7 +630,7 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray business_heading_1">
                     GENERAZIONE TRAFFICO
                   </h3>
-                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute text_1 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute business_para_1 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     Strategie di marketing costruite ad hoc per generare
                     traffico qualificato da veicolare sui social media, Google e
                     native advertising
@@ -660,7 +640,7 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray business_heading_2">
                     LANDING CONVERSAZIONALE
                   </h3>
-                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     Landingpage su misura per i nostri partner e conformi
                     al&nbsp;
                     <span className="ff_mundial_bold">regolamento GDPR</span>
@@ -671,7 +651,7 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray business_heading_3">
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
-                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     Meno tempo e maggiore conversione grazie al nostro&nbsp;
                     <span className="ff_mundial_bold">software di I.A.</span>
                     &nbsp; per la validazione real-time dei dati degli utenti
@@ -681,7 +661,7 @@ const ThirdSection = () => {
                   <h3 className="font_5xl color_dark_gray business_heading_4">
                     TRASMISSIONE LEAD
                   </h3>
-                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute text_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
+                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
                     I lead generati vengono sottoposti ad un attento processo di
                     filtraggio e controllo tramite API o integrazione con il CRM
                     del partner prima di essere inviati
