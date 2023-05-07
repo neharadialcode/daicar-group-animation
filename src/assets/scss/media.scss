@@ -364,7 +364,8 @@
     line-height: 260% !important;
     max-width: 1072px !important;
   }
-  .meeting_para .common_button {
+  .meeting_para .common_button,
+  .common_btn {
     font-size: 20px !important;
   }
 }
@@ -580,15 +581,6 @@
   }
   .third_sec_height {
     height: unset;
-  }
-  .partner_btn {
-    padding: 11px 16px;
-    max-width: 130px;
-    min-height: 33px;
-    background: rgba(126, 228, 156, 0.5);
-    border: 1px solid #edfafb !important;
-    border-radius: 10px !important;
-    line-height: 50%;
   }
   .leasyslogo {
     max-width: 169.39px;
@@ -921,6 +913,9 @@
   }
   .social_links_parent a img {
     max-width: 24px !important;
+  }
+  .partner_parent {
+    min-height: 100% !important;
   }
 }
 

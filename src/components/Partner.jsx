@@ -60,30 +60,84 @@ const Partner = () => {
   //     imgUrl: "../assets/images/svg/jaguar-logo.svg",
   //   },
   // ];
+
+  useEffect(() => {
+    let crmValues = gsap.matchMedia();
+    crmValues.add("(min-width:992px)", () => {
+      let crm = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".partner_parent",
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+    });
+
+    crmValues.add("(min-width:576px) and (max-width:991.98px)", () => {
+      let crmicons = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".partner_parent",
+          start: "top top",
+          end: "bottom center",
+          scrub: 3,
+          pin: true,
+        },
+      });
+      crmicons.fromTo(
+        ".partner_parent_img",
+        {
+          xPercent: 0,
+        },
+        {
+          xPercent: -100,
+        }
+      );
+    });
+    crmValues.add("(max-width:575.98px)", () => {
+      let crmicons = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".partner_parent",
+          start: "top top",
+          end: "bottom center",
+          scrub: 3,
+          pin: true,
+        },
+      });
+      crmicons.fromTo(
+        ".partner_parent_img",
+        {
+          xPercent: 0,
+        },
+        {
+          xPercent: -160,
+        }
+      );
+    });
+  }, []);
   return (
     <div className="bg_light_white py-5 position-relative partner_parent min-vh-100 d-flex justify-content-center align-items-center overflow-hidden">
       <div className="container custom_container">
         <div className="position-absolute arrowbtn_set d-none d-lg-block">
           <div className="mt-lg-5 pt-lg-5 d-flex align-items-center gap-4 justify-content-end position-absolute arrowbtn_set">
-            <p className="mb-0 ff_mundial_regular font_md lh_125 text_secondary">
+            <p className="mb-0 ff_mundial_regular font_md lh_125 color_dark_gray">
               Partner
             </p>
             <img src={arrowbtn} alt="arrowbtn" />
           </div>
         </div>
         <div className="partner_text">
-          <div className="mt-lg-5 pt-lg-5">
+          <div className="mt-lg-5 pt-lg-5 d-none d-lg-block">
             <div className="d-flex align-items-center gap-2 justify-content-center mt-5 pt-lg-5 pb-4">
-              <p className="ff_mundial_regular font_5xl text_secondary mb-0 partner_para">
+              <p className="ff_mundial_regular font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
                 Non cerchiamo clienti ma
               </p>
-              <button className="ff_mundial_regular font_2xl text_secondary partner_btn ">
+              <button className="ff_mundial_regular font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
                 partner
               </button>
             </div>
           </div>
           <div className="pb-lg-5">
-            <div className="row flex-md-wrap justify-content-center align-items-center dnone d-md-flex my-xl-5 pt-5 pb-xl-5 gap_5 gap_xxl_66">
+            <div className="row flex-md-wrap justify-content-center align-items-center d-none d-lg-flex my-xl-5 pt-5 pb-xl-5 gap_5 gap_xxl_66">
               {/* {partnerData.map((obj, index) => {
                 return ( */}
               <div className="col-auto">
@@ -157,33 +211,45 @@ const Partner = () => {
           </div>
         </div>
       </div>
-      <div className="webkit_scrollbar">
-        <div className="d-flex align-items-center gap-5 pt-5 mb-5 overflow-auto d-md-none">
-          <div className="w-100">
+
+      <div className="webkit_scrollbar partner_parent_img">
+        <div className="mt-lg-5 pt-lg-5 d-lg-none">
+          <div className="d-flex align-items-center gap-2 justify-content-center mt-5 pt-lg-5 pb-4">
+            <p className="ff_mundial_regular font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
+              Non cerchiamo clienti ma
+            </p>
+            <button className="ff_mundial_regular font_2xl color_dark_gray common_button d-sm-flex mt-2 mt-xxl-1 common_btn">
+              partner
+            </button>
+          </div>
+        </div>
+
+        <div className="d-flex align-items-center gap-5 pt-5 mb-5 overflow-auto d-lg-none">
+          <div className="crm_slider w-100">
             <img className="leasyslogo" src={leasyslogo} alt="leasyslogo" />
           </div>
-          <div className="w-100">
+          <div className="crm_slider w-100">
             <img className="enelexlogo" src={enelexlogo} alt="enelexlogo" />
           </div>
-          <div className="w-100">
+          <div className="crm_slider w-100">
             <img className="athlonlogo" src={athlonlogo} alt="athlonlogo" />
           </div>
-          <div className="w-100">
+          <div className="crm_slider w-100">
             <img className="insuramalogo" src={insurama} alt="insurama" />
           </div>
-          <div className="w-100">
+          <div className="crm_slider w-100">
             <img className="aldlogo" src={aldlogo} alt="aldlogo" />
           </div>
-          <div className="w-100">
+          <div className="crm_slider w-100">
             <img className="bmwlogo" src={bmwlogo} alt="bmwlogo" />
           </div>
-          <div className="w-100">
+          <div className="crm_slider w-100">
             <img className="toyatologo" src={toyatologo} alt="toyatologo" />
           </div>
-          <div className="w-100">
+          <div className="crm_slider w-100">
             <img className="audilogo" src={audilogo} alt="amazonlogo" />
           </div>
-          <div className="w-100">
+          <div className="crm_slider w-100">
             <img className="jaguarlogo" src={jaguarlogo} alt="jaguarlogo" />
           </div>
         </div>

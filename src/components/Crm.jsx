@@ -68,15 +68,15 @@ const Crm = () => {
         </div>
         <div className="container custom_container crm_text">
           <div className="d-sm-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0 text-center text-sm-start">
-            <p className="font_5xl color_dark_gray mb-0 partner_para">
+            <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
               É possibile integrare i dati con il tuo
             </p>
-            <button className="font_2xl color_dark_gray partner_btn">
+            <button className="font_2xl color_dark_gray common_button common_btn">
               CRM
             </button>
             <span className="font_lg">.</span>
           </div>
-          <div className=" pb-lg-5 crm_parent_img">
+          <div className="pb-lg-5 crm_parent_img">
             <div className="pb-lg-5 d-flex justify-content-between align-items-center my-xl-5 py-5 crm_img">
               <div className="crm_slider text-center">
                 <img className="w-100" src={salesfortlogo} alt="icon-1" />
