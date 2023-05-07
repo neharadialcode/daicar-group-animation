@@ -333,7 +333,7 @@
     margin-top: -70px;
   }
   .timeline_arrow_icon {
-    top: 49%;
+    top: 51%;
   }
 
   .timeline_text_4 {
@@ -341,6 +341,9 @@
   }
   .footer_background_set {
     height: 700px;
+  }
+  .custom_size_timeline_text {
+    font-size: 16px;
   }
   // .meeting_top_space {
   //   margin-top: 50px;
@@ -386,6 +389,12 @@
   }
   .icon_3 svg {
     width: 340px !important;
+  }
+  .timeline_line_img {
+    max-width: 880px;
+  }
+  .timeline_arrow_icon {
+    top: 53%;
   }
 }
 
@@ -459,6 +468,29 @@
   }
   .footer_background_set {
     height: 650px;
+  }
+  .timeline_text_heading {
+    left: 17%;
+  }
+  .timeline_line_img {
+    max-width: 710px;
+  }
+  .timeline_parent .timeline_text_3 img {
+    max-width: 160.29px !important;
+  }
+  .timeline_text_3 {
+    padding-right: 65px;
+  }
+  .timeline_text_4 {
+    top: 50% !important;
+    right: 2% !important;
+    max-width: 120px;
+  }
+  .custom_size_timeline_text {
+    font-size: 14px;
+  }
+  .timeline_btn {
+    padding: 2px 15px 6px;
   }
 }
 
@@ -641,6 +673,53 @@
   .hero_slide_2 h2 {
     font-size: 32px !important;
   }
+  .timeline_text_heading {
+    left: unset;
+  }
+  .custom_size_timeline_text {
+    font-size: 24px;
+  }
+  .timeline_arrow_icon {
+    top: 59.5%;
+  }
+  .timeline_line_img {
+    max-width: 650px;
+  }
+  .timeline_text_1 {
+    max-width: 520px !important;
+  }
+  .timeline_car_icon {
+    max-width: 450px;
+  }
+  .timeline_ist_dot::before {
+    height: 20px;
+    width: 20px;
+  }
+  .timeline_ist_dot::after {
+    height: 20px;
+    width: 20px;
+  }
+  .timeline_with_dot::before {
+    height: 20px;
+    width: 20px;
+  }
+  .timeline_with_dot::after {
+    height: 20px;
+    width: 20px;
+  }
+  .timeline_text_2 {
+    max-width: 515px !important;
+    margin-left: -120px;
+  }
+  .timeline_text_3 {
+    max-width: unset !important;
+    margin-left: -400px;
+    padding-right: unset;
+  }
+  .timeline_text_4 {
+    top: 40% !important;
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 799.98px) {
@@ -689,6 +768,30 @@
   .crm_slider {
     min-width: 150px;
     height: unset;
+  }
+  .custom_size_timeline_text {
+    font-size: 16px;
+  }
+  .timeline_car_icon {
+    max-width: 250px;
+  }
+  .timeline_text_1 {
+    max-width: 350px !important;
+  }
+  .timeline_text_2 {
+    margin-left: -135px;
+  }
+  .timeline_text_3 {
+    margin-left: -230px;
+  }
+  .timeline_btn {
+    padding: 0px 20px 4px;
+  }
+  .timeline_text_4 {
+    top: 22% !important;
+  }
+  .timeline_arrow_icon {
+    top: 61.5%;
   }
 }
 
@@ -827,6 +930,12 @@
       width: 600px !important;
     }
     top: -40% !important;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 400px) {
+  .timeline_arrow_icon {
+    top: 59.5%;
   }
 }
 
