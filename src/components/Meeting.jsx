@@ -17,7 +17,10 @@ function Meeting() {
   }, []);
   return (
     <>
-      <div className="bg_light_white custom_content_padding meeting_parent min-vh-100 overflow-hidden">
+      <div
+        className="bg_light_white custom_content_padding meeting_parent min-vh-100 overflow-hidden"
+        id="contatti"
+      >
         <div className="custom_container container about_text pt-xxl-5">
           <p className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0">
             Ora hai compreso che il futuro delle tue

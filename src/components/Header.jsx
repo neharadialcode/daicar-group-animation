@@ -54,7 +54,7 @@ const Header = () => {
           <ul className="d-flex align-items-center mb-0 d-none d-lg-flex ps-0 mb-0">
             <li className="ps-4 ps-xxl-5">
               <a
-                href="#"
+                href="#main-assets"
                 className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
               >
                 Main Assets
@@ -62,7 +62,7 @@ const Header = () => {
             </li>
             <li className="ps-4 ps-xxl-5">
               <a
-                href="#"
+                href="#servizi"
                 className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
               >
                 Servizi
@@ -70,7 +70,7 @@ const Header = () => {
             </li>
             <li className="ps-4 ps-xxl-5">
               <a
-                href="#"
+                href="#daicar-group"
                 className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
               >
                 Daicar Group
@@ -78,7 +78,7 @@ const Header = () => {
             </li>
             <li className="ps-4 ps-xxl-5">
               <a
-                href="#"
+                href="#contatti"
                 className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
               >
                 Contatti
@@ -124,7 +124,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={() => setNavShow(false)}
-                  href="#"
+                  href="#main-assets"
                   className="ff_mundial_regular font_lg color_white_off nav_hover"
                 >
                   Main Assets
@@ -133,7 +133,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={() => setNavShow(false)}
-                  href="#"
+                  href="#servizi"
                   className="ff_mundial_regular font_lg color_white_off nav_hover"
                 >
                   Servizi
@@ -142,7 +142,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={() => setNavShow(false)}
-                  href="#"
+                  href="#daicar-group"
                   className="ff_mundial_regular font_lg color_white_off nav_hover"
                 >
                   Daicar Group
@@ -151,7 +151,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={() => setNavShow(false)}
-                  href="#"
+                  href="#contatti"
                   className="ff_mundial_regular font_lg color_white_off nav_hover"
                 >
                   Contatti

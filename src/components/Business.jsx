@@ -569,7 +569,10 @@ const ThirdSection = () => {
     });
   }, []);
   return (
-    <div className="business_parent overflow-hidden third_sec_height z_1 pt-5">
+    <div
+      className="business_parent overflow-hidden third_sec_height z_1 pt-5"
+      id="servizi"
+    >
       <div className="d-flex flex-column justify-content-center">
         <img
           className="w-100 position-absolute big_icon d-none d-lg-block"
