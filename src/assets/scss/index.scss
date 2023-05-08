@@ -147,6 +147,9 @@ body {
 .ff_math {
   font-family: math !important;
 }
+.parent_para {
+  transition: all 0.4s ease-in-out !important;
+}
 
 @media (max-width: 1599.98px) {
   :root {

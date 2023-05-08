@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import leasyslogo from "../assets/images/svg/leasys-logo.svg";
 import enelexlogo from "../assets/images/svg/enel-x-logo.svg";
 import athlonlogo from "../assets/images/svg/athlon-logo.svg";
@@ -10,6 +10,7 @@ import audilogo from "../assets/images/svg/audi-logo.svg";
 import jaguarlogo from "../assets/images/svg/jaguar-logo.svg";
 import leftTextImg from "../assets/images/png/partner-left-text-img.png";
 import gsap from "gsap";
+import ParentLogoPara from "../common/ParentLogoPara";
 
 const Partner = () => {
   useEffect(() => {
@@ -64,6 +65,12 @@ const Partner = () => {
       );
     });
   }, []);
+
+  const [hover, setHover] = useState(false);
+
+  const handleHover = () => {
+    setHover(!hover);
+  };
   return (
     <div className="partner_main">
       <div className="bg_light_white py-5 position-relative partner_parent d-flex justify-content-center align-items-center overflow-hidden ">
@@ -88,7 +95,9 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="leasyslogo"
+                      className="leasyslogo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
                       src={leasyslogo}
                       alt="leasyslogo"
                     />
@@ -97,7 +106,9 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="enelexlogo"
+                      className="enelexlogo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
                       src={enelexlogo}
                       alt="enelexlogo"
                     />
@@ -106,7 +117,9 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="athlonlogo"
+                      className="athlonlogo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
                       src={athlonlogo}
                       alt="athlonlogo"
                     />
@@ -115,7 +128,9 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="insuramalogo"
+                      className="insuramalogo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
                       src={insurama}
                       alt="insurama"
                     />
@@ -123,18 +138,32 @@ const Partner = () => {
                 </div>
                 <div className="col-auto">
                   <div className="w-100">
-                    <img className="aldlogo" src={aldlogo} alt="aldlogo" />
-                  </div>
-                </div>
-                <div className="col-auto">
-                  <div className="w-100">
-                    <img className="bmwlogo" src={bmwlogo} alt="bmwlogo" />
+                    <img
+                      className="aldlogo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
+                      src={aldlogo}
+                      alt="aldlogo"
+                    />
                   </div>
                 </div>
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="toyatologo"
+                      className="bmwlogo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
+                      src={bmwlogo}
+                      alt="bmwlogo"
+                    />
+                  </div>
+                </div>
+                <div className="col-auto">
+                  <div className="w-100">
+                    <img
+                      className="toyatologo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
                       src={toyatologo}
                       alt="toyatologo"
                     />
@@ -142,34 +171,30 @@ const Partner = () => {
                 </div>
                 <div className="col-auto">
                   <div className="w-100">
-                    <img className="audilogo" src={audilogo} alt="amazonlogo" />
+                    <img
+                      className="audilogo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
+                      src={audilogo}
+                      alt="amazonlogo"
+                    />
                   </div>
                 </div>
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="jaguarlogo"
+                      className="jaguarlogo cursor_pointer z_index2"
+                      onMouseEnter={handleHover}
+                      onMouseLeave={handleHover}
                       src={jaguarlogo}
                       alt="jaguarlogo"
                     />
                   </div>
                 </div>
+                <div className="parent_para" style={{ opacity: hover ? 1 : 0 }}>
+                  <ParentLogoPara />
+                </div>
               </div>
-              <p className="ff_mundial_light font_5xl color_light_gray mb-0 partner_para custom_letter_spacing text-center">
-                <span className="ff_math mb-1">></span>Title
-                <span className="ff_math mb-1">_</span>
-                <span className="color_light_green ff_mundial_regular">
-                  Lead Generation MINI
-                </span>
-                &nbsp;KPI<span className="ff_math mb-1">_</span>
-                <span className="color_light_green ff_mundial_regular">
-                  Validazione numero di Telfono
-                </span>
-                &nbsp;Year<span className="ff_math mb-1">_</span>
-                <span className="color_light_green ff_mundial_regular">
-                  2021
-                </span>
-              </p>
             </div>
           </div>
         </div>
