@@ -51,8 +51,8 @@ function Footer() {
               </div>
             </div>
 
-            <div className="col-4 col-md-3 pe-0 pe-sm-2 ps-0 mx-auto mx-sm-0">
-              <ul className="ps-0 text-start mb-5 mb-sm-0 pb-4 pb-sm-0">
+            <div className="col-5 col-md-3 pe-0 pe-sm-2 ps-0 mx-auto mx-sm-0">
+              <ul className="ps-sm-0 text-start mb-5 mb-sm-0 pb-4 pb-sm-0 text-nowrap px-2 px-sm-0 mx-auto mx-sm-0">
                 <li className="list-unstyled">
                   <a
                     className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
@@ -154,7 +154,7 @@ function Footer() {
                   <img className="svg" src={icon_3} alt="icon_3" />
                 </a>
               </div>
-              <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
+              <p className="pt-3 pt-sm-0 mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
                 <span className="ff_roboto pe-1 ">@</span>
                 {getnewyear} Tutti i diritti riservati
               </p>

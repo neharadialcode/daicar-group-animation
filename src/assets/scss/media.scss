@@ -468,7 +468,7 @@
     padding: 14.4px 16px !important;
   }
   .footer_background_set {
-    height: 650px;
+    height: 820px;
   }
   .timeline_text_heading {
     left: 17%;
@@ -903,10 +903,12 @@
   .meeting_btn_parent button {
     font-size: 20px !important;
     height: 54px !important;
+    padding: 8px 38px !important;
   }
   .fissa-meeting-content-parent p {
     font-size: 16px !important;
     line-height: 112% !important;
+    color: var(--color-white-off) !important;
   }
   .show_chat_icon {
     right: 10px;
@@ -916,6 +918,9 @@
   }
   .partner_parent {
     min-height: 100% !important;
+  }
+  .list_item_text {
+    font-size: 14px !important;
   }
 }
 
