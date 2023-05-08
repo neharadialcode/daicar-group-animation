@@ -16,22 +16,20 @@ const Header = () => {
 
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    // gsap.from(".header_parent", {
-    //   xPercent: "-2",
-    //   yPercent: "-80",
-    //   duration: 1.7,
-    // });
-    gsap.fromTo(
-      ".header_section",
-      {
-        yPercent: "-70",
-        duration: 2,
-      },
-      {
-        yPercent: "10",
-        duration: 2,
-      }
-    );
+    let headerValue = gsap.matchMedia();
+    headerValue.add("(min-width:992px)", () => {
+      gsap.fromTo(
+        ".header_section",
+        {
+          yPercent: "-70",
+          duration: 2,
+        },
+        {
+          yPercent: "10",
+          duration: 2,
+        }
+      );
+    });
   }, []);
 
   return (
