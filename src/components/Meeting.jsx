@@ -2,42 +2,24 @@ import React, { useEffect } from "react";
 import meetingManImg from "../assets/images/svg/meeting_man_img.svg";
 import gsap from "gsap";
 
-function About() {
+function Meeting() {
   useEffect(() => {
     let third = gsap.matchMedia();
     third.add("(min-width:576px)", () => {
-      let sixth = gsap.timeline({
+      let meeting = gsap.timeline({
         scrollTrigger: {
-          trigger: ".about_parent",
+          trigger: ".meeting_parent",
           pin: true,
           pinSpacing: false,
         },
       });
     });
   }, []);
-  // useEffect(() => {
-  //   let about = gsap.matchMedia();
-  //   about.add("(min-width: 992px)", () => {
-  //     let about_value = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: ".about_parent",
-  //         start: "top top",
-  //         end: "bottom top",
-  //       },
-  //     });
-  //     about_value.from(".about_text", {
-  //       yPercent: 100,
-  //       autoAlpha: 0,
-  //       ease: "back(2)",
-  //       stagger: 0.02,
-  //     });
-  //   });
-  // }, []);
   return (
     <>
-      <section className="bg_light_white custom_content_padding about_parent min-vh-100 overflow-hidden">
+      <div className="bg_light_white custom_content_padding meeting_parent min-vh-100 overflow-hidden">
         <div className="custom_container container about_text pt-xxl-5">
-          <p className="mb-0 fw-normal font_5xl color_dark_gray ff_mundial_regular custom_letter_spacing meeting_para mx-auto px-2 px-sm-0">
+          <p className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0">
             Ora hai compreso che il futuro delle tue
             <span className="common_button mx-2 font_2xl mx-sm-3">vendite</span>
             è digitale e hai scoperto
@@ -109,9 +91,9 @@ function About() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }
 
-export default About;
+export default Meeting;

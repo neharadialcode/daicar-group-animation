@@ -12,67 +12,8 @@ import leftTextImg from "../assets/images/png/partner-left-text-img.png";
 import gsap from "gsap";
 
 const Partner = () => {
-  // useEffect(() => {
-  //   let partner = gsap.matchMedia();
-  //   partner.add("(min-width: 992px)", () => {
-  //     let partner_value = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: ".partner_parent",
-  //         start: "top top",
-  //         end: "bottom top",
-  //         // markers: true,
-  //       },
-  //     });
-  //     partner_value.from(".partner_text", {
-  //       yPercent: 100,
-  //       autoAlpha: 0,
-  //       ease: "back(2)",
-  //       stagger: 0.02,
-  //     });
-  //   });
-  // }, []);
-  // const partnerData = [
-  //   {
-  //     imgUrl: "../assets/images/svg/leasys-logo.svg",
-  //   },
-  //   {
-  //     imgUrl: "../assets/images/svg/enel-x-logo.svg",
-  //   },
-  //   {
-  //     imgUrl: "../assets/images/svg/athlon-logo.svg",
-  //   },
-  //   {
-  //     imgUrl: "../assets/images/svg/insurama-logo.svg",
-  //   },
-  //   {
-  //     imgUrl: "../assets/images/svg/ald-logo.svg",
-  //   },
-  //   {
-  //     imgUrl: "../assets/images/svg/bmw-group-logo.svg",
-  //   },
-  //   {
-  //     imgUrl: "../assets/images/svg/toyoto-logo.svg",
-  //   },
-  //   {
-  //     imgUrl: "../assets/images/svg/audi-logo.svg",
-  //   },
-  //   {
-  //     imgUrl: "../assets/images/svg/jaguar-logo.svg",
-  //   },
-  // ];
-
   useEffect(() => {
     let partnerValues = gsap.matchMedia();
-    // partnerValues.add("(min-width:992px)", () => {
-    //   let partner = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: ".partner_parent",
-    //       pin: true,
-    //       pinSpacing: false,
-    //     },
-    //   });
-    // });
-
     partnerValues.add("(min-width:992px)", () => {
       let partners = gsap.timeline({
         scrollTrigger: {
@@ -82,44 +23,43 @@ const Partner = () => {
         },
       });
     });
-
     partnerValues.add("(min-width:576px) and (max-width:991.98px)", () => {
-      let crmicons = gsap.timeline({
+      let partnerSlider = gsap.timeline({
         scrollTrigger: {
-          trigger: ".partner_parent",
+          trigger: ".partner_slider_parent",
           start: "top top",
           end: "bottom center",
           scrub: 3,
           pin: true,
         },
       });
-      crmicons.fromTo(
+      partnerSlider.fromTo(
         ".partner_parent_img",
         {
-          xPercent: 0,
+          xPercent: 30,
         },
         {
-          xPercent: -100,
+          xPercent: -40,
         }
       );
     });
     partnerValues.add("(max-width:575.98px)", () => {
-      let crmicons = gsap.timeline({
+      let partnerSlider = gsap.timeline({
         scrollTrigger: {
-          trigger: ".partner_parent",
+          trigger: ".partner_slider_parent",
           start: "top top",
           end: "bottom center",
           scrub: 3,
           pin: true,
         },
       });
-      crmicons.fromTo(
+      partnerSlider.fromTo(
         ".partner_parent_img",
         {
-          xPercent: 0,
+          xPercent: 40,
         },
         {
-          xPercent: -160,
+          xPercent: -50,
         }
       );
     });
@@ -127,12 +67,12 @@ const Partner = () => {
   return (
     <div className="partner_main">
       <div className="bg_light_white py-5 position-relative partner_parent d-flex justify-content-center align-items-center overflow-hidden ">
-        <div className="container custom_container">
+        <div className="container custom_container d-none d-lg-block">
           <div className="position-absolute arrowbtn_set d-none d-lg-block">
             <img src={leftTextImg} alt="partner-left-text-img" />
           </div>
           <div className="partner_text">
-            <div className="mt-xxl-5 pt-xxl-5 d-none d-lg-block">
+            <div className="mt-xxl-5 pt-xxl-5">
               <div className="d-flex align-items-center gap-2 justify-content-center mt-5 pt-xxl-5 pb-4">
                 <p className="ff_mundial_regular font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
                   Non cerchiamo clienti ma
@@ -145,8 +85,6 @@ const Partner = () => {
             </div>
             <div className="pb-lg-5">
               <div className="row flex-md-wrap justify-content-center align-items-center d-none d-lg-flex my-xl-5 pt-5 pb-xl-5 gap_5 gap_xxl_66">
-                {/* {partnerData.map((obj, index) => {
-                return ( */}
                 <div className="col-auto">
                   <div className="w-100">
                     <img
@@ -156,8 +94,6 @@ const Partner = () => {
                     />
                   </div>
                 </div>
-                {/* );
-              })} */}
                 <div className="col-auto">
                   <div className="w-100">
                     <img
@@ -223,9 +159,9 @@ const Partner = () => {
           </div>
         </div>
 
-        <div className="webkit_scrollbar partner_parent_img">
-          <div className="mt-lg-5 pt-lg-5 d-lg-none">
-            <div className="d-flex align-items-center gap-2 justify-content-center mt-5 pt-lg-5 pb-4">
+        <div className="partner_slider_parent d-lg-none">
+          <div className="mt-lg-5 pt-lg-5">
+            <div className="d-flex align-items-center gap-2 justify-content-center pt-5 pb-4">
               <p className="ff_mundial_regular font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
                 Non cerchiamo clienti ma
               </p>
@@ -234,8 +170,7 @@ const Partner = () => {
               </button>
             </div>
           </div>
-
-          <div className="d-flex align-items-center gap-5 pt-5 mb-5 overflow-auto d-lg-none">
+          <div className="d-flex align-items-center gap-5 pt-5 mb-5 partner_parent_img">
             <div className="crm_slider w-100">
               <img className="leasyslogo" src={leasyslogo} alt="leasyslogo" />
             </div>
