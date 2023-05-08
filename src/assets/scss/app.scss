@@ -617,16 +617,16 @@
   right: 9%;
   top: 10%;
 }
-.webkit_scrollbar {
-  &::-webkit-scrollbar {
-    height: 5px;
-    background-color: transparent;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: black;
-    border-radius: 10px;
-  }
-}
+// .webkit_scrollbar {
+//   &::-webkit-scrollbar {
+//     height: 5px;
+//     background-color: transparent;
+//   }
+//   &::-webkit-scrollbar-thumb {
+//     background-color: black;
+//     border-radius: 10px;
+//   }
+// }
 .daicar_arrow_set {
   right: 80px;
   top: 40px;
