@@ -36,7 +36,7 @@ function About() {
   return (
     <>
       <section className="bg_light_white custom_content_padding about_parent min-vh-100 overflow-hidden">
-        <div className="custom_container container about_text pt-xl-5">
+        <div className="custom_container container about_text pt-xxl-5">
           <p className="mb-0 fw-normal font_5xl color_dark_gray ff_mundial_regular custom_letter_spacing meeting_para mx-auto px-2 px-sm-0">
             Ora hai compreso che il futuro delle tue
             <span className="common_button mx-2 font_2xl mx-sm-3">vendite</span>
@@ -78,7 +78,7 @@ function About() {
             </span>
           </p>
 
-          <div className="pt-4 pt-lg-5 mt-sm-5 position-relative z_index2">
+          <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_index2">
             <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
               <button className="ff_mundial_regular hero_btn me-4 me-lg-5">
                 fissa un meeting

@@ -48,7 +48,7 @@
   //   font-weight: 400;
   // }
   .custom_content_padding {
-    padding-top: 50px !important;
+    padding-top: 15px !important;
     padding-bottom: 50px !important;
   }
   .padding_y55 {
@@ -64,7 +64,7 @@
 
 @media (min-width: 992px) {
   .custom_content_padding {
-    padding-top: 163px !important;
+    // padding-top: 163px !important;
     padding-bottom: 163px !important;
   }
   .padding_y55 {
@@ -492,6 +492,38 @@
   }
   .timeline_btn {
     padding: 2px 15px 6px;
+  }
+  .arrowbtn_set {
+    right: 2%;
+    top: 3%;
+  }
+  .crm_left_icon {
+    right: 2%;
+    top: 3%;
+  }
+  .leasyslogo {
+    max-width: 150.07px;
+  }
+  .enelexlogo {
+    max-width: 210px;
+  }
+  .athlonlogo {
+    max-width: 165px;
+  }
+  .aldlogo {
+    max-width: 160px;
+  }
+  .bmwlogo {
+    max-width: 130px;
+  }
+  .toyatologo {
+    max-width: 130px;
+  }
+  .audilogo {
+    max-width: 100px;
+  }
+  .gap_5 {
+    gap: 40px;
   }
 }
 

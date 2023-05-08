@@ -62,7 +62,7 @@ const Crm = () => {
   }, []);
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center crm_parent overflow-hidden">
+      <div className="d-flex justify-content-center align-items-center crm_parent overflow-hidden bg_light_white">
         <div className="position-absolute crm_left_icon d-none d-lg-block z_negative">
           <img src={crmLeftIcon} alt="crm-left-icon" />
         </div>
@@ -77,7 +77,7 @@ const Crm = () => {
             <span className="font_lg">.</span>
           </div>
           <div className="pb-lg-5 crm_parent_img">
-            <div className="pb-lg-5 d-flex justify-content-between align-items-center my-xl-5 py-5 crm_img">
+            <div className="pb-lg-5 d-flex justify-content-between align-items-center my-xxl-5 py-5 crm_img">
               <div className="crm_slider text-center">
                 <img className="w-100" src={salesfortlogo} alt="icon-1" />
               </div>
