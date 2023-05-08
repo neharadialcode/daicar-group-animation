@@ -589,7 +589,7 @@ const Business = () => {
         <div className="text-center px-4 px-lg-0 z_1 third_heading">
           <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_business_heading">
             Progettiamo soluzioni &nbsp;
-            <span className="business_btn hero_heading_btn color_dark_gray bg_light_green">
+            <span className="business_btn hero_heading_btn color_dark_gray bg_light_green my-2 my-sm-0">
               personalizzate
             </span>
             &nbsp; per il tuo business
