@@ -1,13 +1,4 @@
 /* ============DEFINE HERO SECTION CSS START============ */
-/* .h-300 {
-  height: 300vh;
-} */
-/* nav {
-  background-color: rgba(255, 0, 0, 0.164);     
-} */
-/* .icon_4 {
-  z-index: -1;
-} */
 /* =================DEFINE CRM SLIDER CODE CSS================= */
 /* =====================BACK TO TOP===================== */
 @-webkit-keyframes up-down {
@@ -41,18 +32,6 @@
   background: var(--color-light-green);
 }
 
-// .bg_green {
-//   background: var(--color-dark-gray) !important;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index: -1;
-// }
-// .hero_bg {
-//   position: relative;
-// }
 .hero_heading {
   height: 100vh;
   display: flex;
@@ -96,9 +75,7 @@
   right: 0;
   bottom: 0;
 }
-// .bg_white {
-//   background-color: var(--bg-light-white);
-// }
+
 .second_slide_parent {
   position: relative;
   z-index: -1;
@@ -121,7 +98,6 @@
     background-color: var(--color-dark-gray);
     z-index: -1;
     border-radius: 20px;
-    // background-color: var(--color-light-green_2);
   }
 }
 .i_pad_img_2 {
@@ -133,15 +109,6 @@
   margin: 0 auto;
 }
 
-.vh-200 {
-  height: 200vh;
-}
-.color_div {
-  z-index: -5;
-}
-.carplanner_bg {
-  background: var(--color-dark-gray) !important;
-}
 .carplanner_logo {
   max-width: 490px;
 }
@@ -284,9 +251,7 @@
 .z_1 {
   z-index: 1;
 }
-// .bg-green {
-//   background-color: $background-color_4;
-// }
+
 .forth_section {
   z-index: 5;
 }
@@ -308,15 +273,11 @@
 .business_icon_img_2 {
   top: 30%;
 }
-// .left_text_forth {
-//   top: 70%;
-// }
+
 .opacity_0 {
   opacity: 0;
 }
-.vh-300 {
-  height: 300vh;
-}
+
 .third_sec_height {
   height: 200vh;
 }
@@ -381,7 +342,7 @@
 .margin_top36 {
   margin-top: 36px;
 }
-.scle {
+.footer_iocns_hover {
   &:hover {
     img {
       transform: scale(1.2);
@@ -410,9 +371,6 @@
 }
 .common_margin {
   margin-top: 40px !important;
-}
-.z_index0 {
-  z-index: 0 !important;
 }
 .z_index2 {
   z-index: 2 !important;
@@ -452,22 +410,14 @@
       line-height: 147%;
     }
   }
-  // .timeline_text_2 {
-  //   max-width: 550px;
-  // }
   .timeline_text_3 {
     p {
       letter-spacing: -0.01em;
       line-height: 147%;
     }
-    // top: 364px !important;
     img {
       max-width: 289.29px !important;
     }
-    // .timeline_text_3 {
-    //   margin-top: -125px;
-    //   max-width: 600px;
-    // }
   }
   .timeline_text_4 {
     p {
@@ -520,28 +470,10 @@
   right: 0;
 }
 
-/* CARPLANNER CSS ADD */
-/* footer-css */
-/* :root {
-    --font-xsm: 14px;
-    --font-sm: 16px;
-    --font-md: 18px;
-    --font-lg: 20px;
-    --font-xl: 22px;
-    --font-2xl: 14px !important;
-    --font-3xl: 25px;
-    --font-4xl: 27px;
-    --font-5xl: 18px !important;
-    --font-6xl: 40px;
-    --font-6xl: 48.18px;
-    --font-6xl: 50px;
-//   } */
 .partner_para {
   line-height: 167%;
 }
-.lh_125 {
-  line-height: 125%;
-}
+
 .leasyslogo {
   max-width: 233.07px;
   min-height: 47px;
@@ -617,16 +549,7 @@
   right: 9%;
   top: 10%;
 }
-// .webkit_scrollbar {
-//   &::-webkit-scrollbar {
-//     height: 5px;
-//     background-color: transparent;
-//   }
-//   &::-webkit-scrollbar-thumb {
-//     background-color: black;
-//     border-radius: 10px;
-//   }
-// }
+
 .daicar_arrow_set {
   right: 80px;
   top: 40px;
@@ -700,7 +623,6 @@
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
   &:hover {
-    // box-shadow: 0px 0px 5px var(--color-white-off);
     transform: scale(0.94);
   }
 }

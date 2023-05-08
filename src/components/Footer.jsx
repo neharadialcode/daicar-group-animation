@@ -89,7 +89,7 @@ function Footer() {
             </div>
 
             <div className="col-12 col-sm-4 col-md-3 mt-sm-0 ps-0 ps-sm-2 d-none d-md-block">
-              <div className="d-flex align-items-center common_gap scle">
+              <div className="d-flex align-items-center common_gap footer_iocns_hover">
                 <img className="common_width" src={sms_img} alt="sms_img" />
                 <div className=" flex-column d-flex d-inline-block">
                   <a
@@ -106,7 +106,7 @@ function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="d-flex align-items-center common_gap scle margin_top36">
+              <div className="d-flex align-items-center common_gap footer_iocns_hover margin_top36">
                 <img className="common_width" src={phone_img} alt="sms_img" />
                 <div className=" flex-column d-flex d-inline-block">
                   <a
@@ -123,7 +123,7 @@ function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="d-flex align-items-center common_gap scle margin_top36">
+              <div className="d-flex align-items-center common_gap footer_iocns_hover margin_top36">
                 <img className="common_width" src={icon_img} alt="sms_img" />
                 <div className=" flex-column d-flex d-inline-block">
                   <a

@@ -88,15 +88,7 @@
 .nav_bg {
   background: var(--color-dark-gray) !important;
 }
-.line_black {
-  width: 25px;
-  height: 2px;
-  border-radius: 20px;
-  background-color: var(--color-light-green);
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1.75px solid var(--color-light-green);
-}
+
 .nav_hover {
   transition: all 400ms ease-in-out;
   position: relative;
@@ -123,12 +115,7 @@
   right: 30px;
   width: 10%;
 }
-.text_white {
-  &:hover {
-    color: var(--color-light-green);
-  }
-  transition: all 500ms ease-in-out;
-}
+
 .sentia_link {
   transition: all 500ms ease-in-out;
   letter-spacing: -0.01em;
@@ -136,11 +123,7 @@
 .sentia_link:hover {
   color: var(--color-light-green);
 }
-.white_space {
-  white-space: nowrap;
-}
 
-//
 @media (min-width: 1200px) {
   .navbar_links .font_sm {
     font-size: 16px !important;
@@ -166,7 +149,6 @@
     max-width: 1280px !important;
   }
 }
-//
 
 @media (max-width: 1199.98px) {
   .parliamone {
