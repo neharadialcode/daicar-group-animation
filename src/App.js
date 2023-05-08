@@ -1,8 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Hero from "./components/Hero";
-// import SixthSection from "./components/SixthSection";
-// import SeventhSection from "./components/SeventhSection";
-// import EightSection from "./components/EightSection";
 import TabsImage from "./components/TabsImage";
 import Business from "./components/Business";
 import AboutUs from "./components/AboutUs";
@@ -21,15 +18,12 @@ function App() {
       <Business />
       <AboutUs />
       <Timeline />
-      {/* <SixthSection /> */}
       <div className="bg_light_white">
         <Partner />
         <Crm />
         <Meeting />
       </div>
       <Footer />
-      {/* <SeventhSection /> */}
-      {/* <EightSection /> */}
       <ScrollChatIcon />
     </>
   );

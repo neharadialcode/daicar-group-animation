@@ -80,16 +80,6 @@ const ForthSection = () => {
           },
           "-=.5"
         )
-        // .fromTo(
-        //   ".forth_section_background",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   {
-        //     autoAlpha: 1,
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -233,16 +223,6 @@ const ForthSection = () => {
           },
           "-=.5"
         )
-        // .fromTo(
-        //   ".forth_section_background",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   {
-        //     autoAlpha: 1,
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -280,14 +260,6 @@ const ForthSection = () => {
           },
           "-=.1"
         )
-        // .to(
-        //   ".roadmap_text_1",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-
-        //   "-=.5"
-        // )
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -350,13 +322,6 @@ const ForthSection = () => {
           duration: 1,
           stagger: 0.3,
         });
-      // .to(
-      //   ".business_left_icon",
-      //   {
-      //     autoAlpha: 0,
-      //   },
-      //   "+=.5"
-      // );
     });
   }, []);
 

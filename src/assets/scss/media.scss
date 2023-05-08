@@ -345,6 +345,9 @@
   .custom_size_timeline_text {
     font-size: 16px;
   }
+  .timeline_text_heading {
+    left: 24%;
+  }
   // .meeting_top_space {
   //   margin-top: 50px;
   // }
@@ -790,7 +793,6 @@
     min-width: 150px !important;
   }
   .crm_slider {
-    min-width: 150px;
     height: unset;
   }
   .custom_size_timeline_text {

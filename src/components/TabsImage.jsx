@@ -10,7 +10,7 @@ import tabImg5 from "../assets/images/png/tab-5.png";
 import tabImg6 from "../assets/images/png/tab-6.png";
 import tabRightIcon from "../assets/images/png/tab-right-icon.png";
 import smallTabImg from "../assets/images/png/small-tab-img.png";
-const SecondSection = () => {
+const TabsImage = () => {
   gsap.registerPlugin(ScrollTrigger);
   const buttonData = [
     {
@@ -234,17 +234,6 @@ const SecondSection = () => {
           },
           "-=.5"
         )
-
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   {
-        //     top: "-200%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".card_img_4",
           {
@@ -264,13 +253,6 @@ const SecondSection = () => {
           },
           "-=.5"
         )
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "30%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".arrow_tabs",
           {
@@ -320,9 +302,6 @@ const SecondSection = () => {
           autoAlpha: 0,
           delay: 1,
         });
-      // .to(".second_sectioon", {
-      //   autoAlpha: 0,
-      // });
     });
     tabImage.add("(max-width:767.78px)", () => {
       let tabimageparent2 = gsap.timeline({
@@ -333,7 +312,6 @@ const SecondSection = () => {
           scrub: 1,
           pin: true,
           pinSpacing: true,
-          // markers: true,
         },
       });
       tabimageparent2.fromTo(
@@ -401,4 +379,4 @@ const SecondSection = () => {
   );
 };
 
-export default SecondSection;
+export default TabsImage;

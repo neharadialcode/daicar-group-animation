@@ -8,10 +8,10 @@ import businessFour from "../assets/images/png/business-4.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
-const ThirdSection = () => {
+const Business = () => {
   useEffect(() => {
     let busniessValue = gsap.matchMedia();
-    busniessValue.add("(min-width:1500px)", () => {
+    busniessValue.add("(min-width:1600px)", () => {
       let busniessParentt = gsap.timeline({
         scrollTrigger: {
           trigger: ".business_parent",
@@ -280,7 +280,7 @@ const ThirdSection = () => {
           scale: "1",
         });
     });
-    busniessValue.add("(min-width:992px) and (max-width:1499.98px)", () => {
+    busniessValue.add("(min-width:992px) and (max-width:1599.98px)", () => {
       let busniessParentt = gsap.timeline({
         scrollTrigger: {
           trigger: ".business_parent",
@@ -683,7 +683,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
+                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-3 pt-sm-0">
                   <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     Strategie di marketing costruite ad hoc per generare
@@ -744,7 +744,7 @@ const ThirdSection = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
+                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column">
                   <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
                   <p className="font_2xl text-white pe-xl-5 pt-2">
                     I lead generati vengono sottoposti ad un attento processo di
@@ -761,4 +761,4 @@ const ThirdSection = () => {
   );
 };
 
-export default ThirdSection;
+export default Business;
