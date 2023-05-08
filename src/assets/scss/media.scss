@@ -900,7 +900,7 @@
       padding-left: 30px !important;
     }
     top: -14% !important;
-    right: -70px !important;
+    right: 0px !important;
   }
   .business_parent {
     background: #7ee49c;
@@ -969,12 +969,12 @@
     top: -40% !important;
   }
   .icon_3 {
+    svg {
+      width: 198px !important;
+      padding-left: 0px !important;
+    }
     top: -22% !important;
     right: 20px !important;
-  }
-  .icon_3 svg {
-    width: 198px !important;
-    padding-left: 0px !important;
   }
 }
 
