@@ -52,34 +52,34 @@ const Header = () => {
             <ToggleIcon />
           </div>
           <ul className="d-flex align-items-center mb-0 d-none d-lg-flex ps-0 mb-0">
-            <li>
+            <li className="ps-4 ps-xxl-5">
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ps-4 ps-xxl-5 ms-2"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
               >
                 Main Assets
               </a>
             </li>
-            <li>
+            <li className="ps-4 ps-xxl-5">
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ps-4 ps-xxl-5 ms-2"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
               >
                 Servizi
               </a>
             </li>
-            <li>
+            <li className="ps-4 ps-xxl-5">
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ps-4 ps-xxl-5 ms-2"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
               >
                 Daicar Group
               </a>
             </li>
-            <li>
+            <li className="ps-4 ps-xxl-5">
               <a
                 href="#"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ps-4 ps-xxl-5 ms-2"
+                className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
               >
                 Contatti
               </a>
