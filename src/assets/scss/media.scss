@@ -896,11 +896,10 @@
   }
   .icon_3 {
     svg {
-      width: 240px !important;
-      margin-left: -20px !important;
+      width: 238px !important;
+      padding-left: 30px !important;
     }
-    right: 20px !important;
-    top: -20% !important;
+    top: -14% !important;
     right: -70px !important;
   }
   .business_parent {
@@ -957,6 +956,9 @@
   .footer_background_set {
     height: 820px;
   }
+  .icon_2 {
+    left: 50% !important;
+  }
 }
 
 @media (max-width: 379.98px) {
@@ -965,6 +967,14 @@
       width: 600px !important;
     }
     top: -40% !important;
+  }
+  .icon_3 {
+    top: -22% !important;
+    right: 20px !important;
+  }
+  .icon_3 svg {
+    width: 198px !important;
+    padding-left: 0px !important;
   }
 }
 
