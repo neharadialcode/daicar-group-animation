@@ -64,7 +64,7 @@ const Partner = () => {
   useEffect(() => {
     let crmValues = gsap.matchMedia();
     crmValues.add("(min-width:992px)", () => {
-      let crm = gsap.timeline({
+      let partner = gsap.timeline({
         scrollTrigger: {
           trigger: ".partner_parent",
           pin: true,
