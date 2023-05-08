@@ -591,7 +591,7 @@ const FifthSection = () => {
         className="vh-100 overflow-hidden timeline_parent z-10"
         id="daicar-group"
       >
-        <div className="text-center pt-5 px-sm-5 px-lg-0 forth_heading z-10 position-absolute timeline_text_heading">
+        <div className="text-center pt-sm-5 px-sm-5 px-lg-0 forth_heading z-10 position-absolute timeline_text_heading">
           <p className="font_5xl text-white px-mdx-5 px-lg-0 mx-mdx-5 mx-lg-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
