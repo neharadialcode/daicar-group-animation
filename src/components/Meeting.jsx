@@ -80,8 +80,10 @@ function About() {
 
           <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_index2">
             <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
-              <button className="ff_mundial_regular hero_btn me-4 me-lg-5">
-                fissa un meeting
+              <button className="ff_mundial_regular hero_btn me-4 me-lg-5 mt-5 mt-sm-0">
+                <span className="d-sm-none">F</span>
+                <span className="d-none d-sm-inline-block">f</span>issa un
+                meeting
               </button>
               <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3 d-none d-sm-block">
                 chat
@@ -100,7 +102,9 @@ function About() {
               <p className="mb-0 ff_mundial_regular font_md color_gray d-xl-none">
                 <span className="fw_light">Matteo,</span>
                 <br className="d-sm-none" />
-                Business Development Manager
+                <span className="ff_mundial_light">
+                  Business Development Manager
+                </span>
               </p>
             </div>
           </div>
