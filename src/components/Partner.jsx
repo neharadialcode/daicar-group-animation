@@ -72,7 +72,7 @@ const Partner = () => {
             <img src={leftTextImg} alt="partner-left-text-img" />
           </div>
           <div className="partner_text">
-            <div className="mt-xxl-5 pt-xxl-5">
+            <div className="mt-xxl-4">
               <div className="d-flex align-items-center gap-2 justify-content-center mt-5 pt-xxl-5 pb-4">
                 <p className="ff_mundial_regular font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
                   Non cerchiamo clienti ma
@@ -84,7 +84,7 @@ const Partner = () => {
               </div>
             </div>
             <div className="pb-lg-5">
-              <div className="row flex-md-wrap justify-content-center align-items-center d-none d-lg-flex my-xl-5 pt-5 pb-xl-5 gap_5 gap_xxl_66">
+              <div className="row flex-md-wrap justify-content-center align-items-center d-none d-lg-flex my-xl-5 pt-5 pb-xl-4 gap_5 gap_xxl_66">
                 <div className="col-auto">
                   <div className="w-100">
                     <img
@@ -155,6 +155,21 @@ const Partner = () => {
                   </div>
                 </div>
               </div>
+              <p className="ff_mundial_light font_5xl color_light_gray mb-0 partner_para custom_letter_spacing text-center">
+                <span className="ff_math mb-1">></span>Title
+                <span className="ff_math mb-1">_</span>
+                <span className="color_light_green ff_mundial_regular">
+                  Lead Generation MINI
+                </span>
+                &nbsp;KPI<span className="ff_math mb-1">_</span>
+                <span className="color_light_green ff_mundial_regular">
+                  Validazione numero di Telfono
+                </span>
+                &nbsp;Year<span className="ff_math mb-1">_</span>
+                <span className="color_light_green ff_mundial_regular">
+                  2021
+                </span>
+              </p>
             </div>
           </div>
         </div>

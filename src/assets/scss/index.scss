@@ -143,12 +143,16 @@ body {
 .fw_medium {
   font-weight: 500;
 }
+
+.ff_math {
+  font-family: math !important;
+}
+
 @media (max-width: 1599.98px) {
   :root {
     --font-9xl: 80px;
   }
 }
-
 @media (max-width: 1499.98px) {
   :root {
     --font-xsm: 12px;
