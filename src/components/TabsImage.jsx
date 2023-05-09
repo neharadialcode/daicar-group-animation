@@ -331,7 +331,7 @@ const TabsImage = () => {
     >
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
         <div className="d-flex align-items-center">
-          <p className="me-4 color_light_green">come lo facciamo</p>
+          <p className="me-4 color_light_green mb-0">come lo facciamo</p>
           <TabRightIcon />
         </div>
       </div>
