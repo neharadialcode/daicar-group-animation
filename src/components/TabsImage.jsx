@@ -330,7 +330,7 @@ const TabsImage = () => {
       id="main-assets"
     >
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
-        <div className="d-flex align-items-center">
+        <div className="d-flex align-items-center tab-side-effect">
           <p className="me-4 color_light_green mb-0">come lo facciamo</p>
           <TabRightIcon />
         </div>

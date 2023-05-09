@@ -1,6 +1,9 @@
 .social_links_parent a img {
   transition: all 400ms ease-in-out;
 }
+.tab-side-effect {
+  transform: rotate(90deg);
+}
 @media (min-width: 576px) {
   .common_gap {
     gap: 19px;
