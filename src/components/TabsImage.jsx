@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Icon5 } from "./Icons";
+import { Icon5, TabRightIcon } from "./Icons";
 import tabImg1 from "../assets/images/png/tab-1.png";
 import tabImg2 from "../assets/images/png/tab-2.png";
 import tabImg3 from "../assets/images/png/tab-3.png";
 import tabImg4 from "../assets/images/png/tab-4.png";
 import tabImg5 from "../assets/images/png/tab-5.png";
 import tabImg6 from "../assets/images/png/tab-6.png";
-import tabRightIcon from "../assets/images/png/tab-right-icon.png";
 import smallTabImg from "../assets/images/png/small-tab-img.png";
 const TabsImage = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -331,7 +330,10 @@ const TabsImage = () => {
       id="main-assets"
     >
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
-        <img src={tabRightIcon} alt="tab-right-icon" />
+        <div className="d-flex align-items-center">
+          <p className="me-4 color_light_green">come lo facciamo</p>
+          <TabRightIcon />
+        </div>
       </div>
       <div className="max_width_tabs position-relative d-none d-md-block">
         <div className="arrow_tabs position-absolute">
