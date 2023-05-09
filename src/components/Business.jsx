@@ -56,7 +56,6 @@ const Business = () => {
         )
         .to(".business_para_1", {
           autoAlpha: 1,
-          rotate: 0,
           delay: 1,
           duration: 7,
         })
@@ -117,7 +116,6 @@ const Business = () => {
         .to(".business_para_2", {
           autoAlpha: 1,
           delay: 1,
-          rotate: 0,
           duration: 7,
         })
         .to(".business_para_2", {
@@ -176,7 +174,6 @@ const Business = () => {
         .to(".business_para_3", {
           autoAlpha: 1,
           delay: 1,
-          rotate: 0,
           duration: 7,
         })
         .to(".business_para_3", {
@@ -235,7 +232,6 @@ const Business = () => {
         .to(".business_para_4", {
           autoAlpha: 1,
           delay: 1,
-          rotate: 0,
           duration: 7,
         })
         .to(".business_para_4", {
@@ -325,7 +321,6 @@ const Business = () => {
         )
         .to(".business_para_1", {
           autoAlpha: 1,
-          rotate: 0,
           delay: 1,
           duration: 7,
         })
@@ -382,7 +377,6 @@ const Business = () => {
         .to(".business_para_2", {
           autoAlpha: 1,
           delay: 1,
-          rotate: 0,
           duration: 7,
         })
         .to(".business_para_2", {
@@ -442,7 +436,6 @@ const Business = () => {
         .to(".business_para_3", {
           autoAlpha: 1,
           delay: 1,
-          rotate: 0,
           duration: 7,
         })
         .to(".business_para_3", {
@@ -497,7 +490,6 @@ const Business = () => {
         .to(".business_para_4", {
           autoAlpha: 1,
           delay: 1,
-          rotate: 0,
           duration: 7,
         })
         .to(".business_para_4", {
