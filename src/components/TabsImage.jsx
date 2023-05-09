@@ -352,7 +352,7 @@ const TabsImage = () => {
                   <img
                     className={`${
                       index === 5
-                        ? "d-none"
+                        ? "d-none "
                         : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img"
                     }`}
                     src={obj.card_img}
