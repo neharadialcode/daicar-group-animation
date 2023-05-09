@@ -28,7 +28,7 @@ function Footer() {
         />
         <div className="container position-relative z_index2 pb-5">
           <div className="row justify-content-md-center justify-content-between gap-lg-5 text-center text-sm-start">
-            <div className="col-12 col-md-3 col-sm-3 d-flex flex-column justify-content-between">
+            <div className="col-12 col-sm-3 col-md-3 col-lg-2 d-flex flex-column justify-content-between">
               <a href="#">
                 <img
                   className="footer_logo"
@@ -51,7 +51,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="col-5 col-md-3 pe-0 pe-sm-2 ps-0 mx-auto mx-sm-0">
+            <div className="col-5 col-md-3 col-lg-2 pe-0 pe-sm-2 ps-0 mx-auto mx-sm-0">
               <ul className="ps-sm-0 text-start mb-5 mb-sm-0 pb-4 pb-sm-0 text-nowrap px-2 px-sm-0 mx-auto mx-sm-0">
                 <li className="list-unstyled">
                   <a
@@ -142,7 +142,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="col-12 col-sm-4 col-md-3">
+            <div className="col-12 col-sm-4 col-md-3 col-lg-2">
               <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 gap-3 gap-lg-4 social_links_parent">
                 <a target="blank" href="https://www.instagram.com/">
                   <img className="svg" src={icon_1} alt="icon_1" />
