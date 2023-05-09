@@ -8,13 +8,13 @@ import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
 import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
-const ForthSection = () => {
+const About = () => {
   useEffect(() => {
-    let media = gsap.matchMedia();
-    media.add("(min-width: 1400px)", () => {
+    let aboutValue = gsap.matchMedia();
+    aboutValue.add("(min-width: 1400px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".forth_section",
+          trigger: ".about_parent",
           start: "top top",
           end: "bottom top",
           scrub: 1,
@@ -48,26 +48,28 @@ const ForthSection = () => {
             autoAlpha: 1,
           }
         )
+
+        // FIRST VALUES
         .fromTo(
           ".roadmap_icon_1",
           {
-            left: "-100%",
+            left: "-40%",
           },
           {
-            left: "0%",
+            left: "0%",         
           }
         )
         .fromTo(
           ".roadmap_icon_2",
           {
-            left: "-100%",
+            left: "-40%",
           },
           {
             left: "10%",
           },
           "-=.5"
         )
-        .to(".forth_section", {
+        .to(".about_parent", {
           background: "#b5efcb",
         })
         .fromTo(
@@ -77,9 +79,12 @@ const ForthSection = () => {
           },
           {
             autoAlpha: 1,
+            duration: 5,
           },
           "-=.5"
         )
+
+        // SECOND VALUES
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -87,6 +92,7 @@ const ForthSection = () => {
           },
           {
             left: "6%",
+            duration: 5,
           }
         )
         .fromTo(
@@ -96,6 +102,7 @@ const ForthSection = () => {
           },
           {
             left: "16%",
+            duration: 5,
           },
           "-=.5"
         )
@@ -114,6 +121,7 @@ const ForthSection = () => {
           },
           {
             autoAlpha: 1,
+            duration: 5,
           },
           "-=.1"
         )
@@ -125,6 +133,7 @@ const ForthSection = () => {
           "-=.5"
         )
 
+        // THIRD VALUES
         .fromTo(
           ".roadmap_icon_1",
           {
@@ -132,6 +141,7 @@ const ForthSection = () => {
           },
           {
             left: "10%",
+            duration: 5,
           }
         )
         .fromTo(
@@ -141,6 +151,7 @@ const ForthSection = () => {
           },
           {
             left: "20%",
+            duration: 5,
           },
           "-=.5"
         )
@@ -159,6 +170,7 @@ const ForthSection = () => {
           },
           {
             autoAlpha: 1,
+            duration: 5,
           },
           "-=.1"
         )
@@ -170,10 +182,11 @@ const ForthSection = () => {
           "-=.5"
         );
     });
-    media.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+
+    aboutValue.add("(min-width: 992px) and (max-width:1399.98px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".forth_section",
+          trigger: ".about_parent",
           start: "top top",
           end: "bottom top",
           scrub: 1,
@@ -210,7 +223,7 @@ const ForthSection = () => {
           },
           "-=.5"
         )
-        .to(".forth_section", {
+        .to(".about_parent", {
           background: "#b5efcb",
         })
         .fromTo(
@@ -298,10 +311,10 @@ const ForthSection = () => {
           "-=.1"
         );
     });
-    media.add("(max-width:991.98px)", () => {
+    aboutValue.add("(max-width:991.98px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".forth_section",
+          trigger: ".about_parent",
           start: "top 30%",
           end: "bottom top",
         },
@@ -326,7 +339,7 @@ const ForthSection = () => {
   }, []);
 
   return (
-    <div className="vh-100 overflow-hidden forth_section">
+    <div className="vh-100 overflow-hidden about_parent bg_light_green">
       <div className="position-relative h-100 z_1">
         <img className="roadmap_icon_1" src={roadmapImg1} alt="roadmapImg1" />
         <img className="roadmap_icon_2" src={roadmapImg2} alt="roadmapImg1" />
@@ -531,4 +544,4 @@ const ForthSection = () => {
   );
 };
 
-export default ForthSection;
+export default About;
