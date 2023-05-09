@@ -1,8 +1,8 @@
 import React from "react";
 import footer_logo from "../assets/images/svg/footer_logo.svg";
-import sms_img from "../assets/images/svg/sms_img.svg";
-import phone_img from "../assets/images/svg/phone.svg";
-import icon_img from "../assets/images/svg/icon.svg";
+import smsImg from "../assets/images/svg/sms_img.svg";
+import phoneImg from "../assets/images/svg/phone.svg";
+import iconImg from "../assets/images/svg/icon.svg";
 import icon_1 from "../assets/images/svg/icon-1.svg";
 import icon_2 from "../assets/images/svg/icon-2.svg";
 import icon_3 from "../assets/images/svg/icon-3.svg";
@@ -90,8 +90,8 @@ function Footer() {
 
             <div className="col-12 col-sm-4 col-md-3 mt-sm-0 ps-0 ps-sm-2 d-none d-md-block">
               <div className="d-flex align-items-center common_gap footer_iocns_hover">
-                <img className="common_width" src={sms_img} alt="sms_img" />
-                <div className=" flex-column d-flex d-inline-block">
+                <img className="contact_icon" src={smsImg} alt="smsImg" />
+                <div className="flex-column d-flex d-inline-block">
                   <a
                     className="mb-0 list_item_text list-unstyled text-decoration-none  font_sm fw-bold letter_spacing color_white_off ff_montserrat"
                     href="mailTo:mail@wonw.xyz"
@@ -107,8 +107,8 @@ function Footer() {
                 </div>
               </div>
               <div className="d-flex align-items-center common_gap footer_iocns_hover margin_top36">
-                <img className="common_width" src={phone_img} alt="sms_img" />
-                <div className=" flex-column d-flex d-inline-block">
+                <img className="contact_icon" src={phoneImg} alt="phoneImg" />
+                <div className="flex-column d-flex d-inline-block">
                   <a
                     className="mb-0 list_item_text list-unstyled text-decoration-none font_sm fw-bold letter_spacing color_white_off ff_montserrat"
                     href="tel:521-239-4623"
@@ -124,8 +124,8 @@ function Footer() {
                 </div>
               </div>
               <div className="d-flex align-items-center common_gap footer_iocns_hover margin_top36">
-                <img className="common_width" src={icon_img} alt="sms_img" />
-                <div className=" flex-column d-flex d-inline-block">
+                <img className="contact_icon" src={iconImg} alt="iconImg" />
+                <div className="flex-column d-flex d-inline-block">
                   <a
                     className="mb-0 list_item_text list-unstyled text-decoration-none font_sm fw-bold letter_spacing color_white_off ff_montserrat"
                     href="#"
