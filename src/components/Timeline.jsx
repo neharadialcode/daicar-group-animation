@@ -61,7 +61,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".forth_section",
+          ".about_parent",
           {
             opacity: 1,
           },
@@ -78,8 +78,8 @@ const FifthSection = () => {
           {
             autoAlpha: 1,
           }
-      )
-        
+        )
+
         // FIRST VALUES
         .fromTo(
           ".timeline_arrow_icon",
@@ -333,7 +333,7 @@ const FifthSection = () => {
           }
         )
         .fromTo(
-          ".forth_section",
+          ".about_parent",
           {
             opacity: 1,
           },
