@@ -387,15 +387,17 @@
   right: 18%;
 }
 .noi_btn {
-  padding: 5px 24px 12px !important;
+  padding: 8px 24px 12px !important;
   color: var(--color-dark-gray) !important;
 }
 .timeline_text_heading {
-  left: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 .timeline_left_icon {
   right: 4%;
-  top: 6%;
+  top: 6px;
 }
 .timeline_parent {
   .timeline_text_1 {
