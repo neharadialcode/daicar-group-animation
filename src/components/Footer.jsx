@@ -27,8 +27,8 @@ function Footer() {
           alt="footerbg"
         />
         <div className="container position-relative z_index2 pb-5">
-          <div className="row justify-content-md-center justify-content-between gap-lg-5 text-center text-sm-start">
-            <div className="col-12 col-sm-3 col-md-3 col-lg-2 d-flex flex-column justify-content-between">
+          <div className="row justify-content-md-center justify-content-between gap-lg-5 text-center text-sm-start px-xxl-5">
+            <div className="col-12 col-sm-3 col-lg-2 d-flex flex-column justify-content-between">
               <a href="#">
                 <img
                   className="footer_logo"
@@ -143,15 +143,15 @@ function Footer() {
             </div>
 
             <div className="col-12 col-sm-4 col-md-3 col-lg-2">
-              <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 gap-3 gap-lg-4 social_links_parent">
+              <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 gap-3 gap-xl-4 social_links_parent">
                 <a target="blank" href="https://www.instagram.com/">
-                  <img className="svg" src={icon_1} alt="icon_1" />
+                  <img src={icon_1} alt="icon_1" />
                 </a>
                 <a target="blank" href="https://www.facebook.com/">
-                  <img className="svg" src={icon_2} alt="icon_2" />
+                  <img src={icon_2} alt="icon_2" />
                 </a>
                 <a target="blank" href="https://in.linkedin.com/">
-                  <img className="svg" src={icon_3} alt="icon_3" />
+                  <img src={icon_3} alt="icon_3" />
                 </a>
               </div>
               <p className="pt-3 pt-sm-0 mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
