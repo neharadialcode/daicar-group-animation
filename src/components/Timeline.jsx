@@ -84,7 +84,7 @@ const FifthSection = () => {
         .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-100vw",
+            left: "-90vw",
           },
           {
             left: "-80vw",
@@ -94,7 +94,7 @@ const FifthSection = () => {
         .fromTo(
           ".timeline_text_1",
           {
-            autoAlpha: 0,
+            autoAlpha: 0.3,
             duration: 2,
           },
           {
@@ -673,7 +673,7 @@ const FifthSection = () => {
             />
           </span>
 
-          <div className="container mt-5 pt-3 ps-sm-5 ps-lg-0x">
+          <div className="container mt-5 pt-3 ps-sm-5 ps-lg-0">
             <div className="d-flex mx-auto timeline_line_img ps-5 ps-lg-0">
               <div className="col-4 timeline_with_dot timeline_ist_dot"></div>
               <div ref={secondText} className="col-4 timeline_with_dot"></div>
