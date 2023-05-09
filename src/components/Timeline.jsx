@@ -599,7 +599,7 @@ const FifthSection = () => {
             <span className="hero_btn noi_btn bg_light_green mx-2">tempo</span>
           </p>
         </div>
-        <div className="position-absolute timeline_left_icon z_1 d-none d-xxl-block">
+        <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block">
           <img src={timelineLeftIcon} alt="timeline-left-icon" />
         </div>
         <div className="bg_dark_gray vh-100 position-absolute w-100"></div>

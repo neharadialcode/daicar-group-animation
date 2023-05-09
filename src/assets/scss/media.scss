@@ -344,9 +344,9 @@
   .custom_size_timeline_text {
     font-size: 16px;
   }
-  .timeline_text_heading {
-    left: 24%;
-  }
+  // .timeline_text_heading {
+  //   left: 24%;
+  // }
   // .meeting_top_space {
   //   margin-top: 50px;
   // }
@@ -472,9 +472,9 @@
   .footer_background_set {
     height: 650px;
   }
-  .timeline_text_heading {
-    left: 17%;
-  }
+  // .timeline_text_heading {
+  //   left: 17%;
+  // }
   .timeline_line_img {
     max-width: 710px;
   }
@@ -526,6 +526,9 @@
   }
   .gap_5 {
     gap: 40px;
+  }
+  .noi_btn {
+    padding: 8px 24px 12px !important;
   }
 }
 
@@ -699,9 +702,9 @@
   .hero_slide_2 h2 {
     font-size: 32px !important;
   }
-  .timeline_text_heading {
-    left: unset;
-  }
+  // .timeline_text_heading {
+  //   left: unset;
+  // }
   .custom_size_timeline_text {
     font-size: 24px;
   }
@@ -821,6 +824,10 @@
   }
   .timeline_arrow_icon {
     top: 61.5%;
+  }
+  .timeline_text_heading {
+    white-space: inherit;
+    width: 100%;
   }
 }
 
