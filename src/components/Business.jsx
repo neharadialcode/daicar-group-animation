@@ -19,10 +19,34 @@ const Business = () => {
           end: "bottom top",
           scrub: 3,
           pin: true,
-          pinSpacing: false,
+          // pinSpacing: false,
         },
       });
       busniessParentt
+        // .fromTo(
+        //   ".business_parent",
+        //   {
+        //     scale: 0.7,
+        //     translateY: "-50%",
+        //   },
+        //   {
+        //     scale: 1.03,
+        //     translateY: "-10%",
+        //   }
+        // )
+        .fromTo(
+          ".main_text",
+          {
+            scale: 0.5,
+            duration: 5,
+            autoAlpha: 0,
+          },
+          {
+            scale: 1,
+            duration: 5,
+            autoAlpha: 1,
+          }
+        )
         .to(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -36,7 +60,7 @@ const Business = () => {
           autoAlpha: 0.5,
         })
         .to(".big_icon", {
-          top: "-12%",
+          top: "-20%",
         })
         .to(".small_icon", {
           top: "5px",
@@ -256,25 +280,46 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-
-        .to(
+        .fromTo(
           ".main_text",
           {
-            autoAlpha: 0,
+            scale: 1,
+            duration: 5,
+            autoAlpha: 1,
           },
-          "+=.5"
+          {
+            scale: 0.5,
+            duration: 5,
+            autoAlpha: 0,
+          }
         )
+        // .to(
+        //   ".main_text",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=.5"
+        // )
         .to(
           ".business_left_icon",
           {
             autoAlpha: 0,
           },
           "+=.5"
-        )
-        .to(".big_icon", {
-          top: "-20%",
-          scale: "1",
-        });
+        );
+      // .fromTo(
+      //   ".business_parent",
+      //   {
+      //     scale: 1,
+      //   },
+      //   {
+      //     scale: 0.6,
+      //   }
+      // );
+      // .to(".big_icon", {
+      //   top: "-20%",
+      //   scale: "1",
+      // });
     });
     busniessValue.add("(min-width:992px) and (max-width:1599.98px)", () => {
       let busniessParentt = gsap.timeline({
@@ -284,7 +329,7 @@ const Business = () => {
           end: "bottom top",
           scrub: 1,
           pin: true,
-          pinSpacing: false,
+          // pinSpacing: false,
         },
       });
       busniessParentt
@@ -562,7 +607,7 @@ const Business = () => {
   }, []);
   return (
     <div
-      className="business_parent overflow-hidden third_sec_height z_1 pt-5"
+      className="business_parent overflow-hidden third_sec_height z_1 pt-5 min-vh-100"
       id="servizi"
     >
       <div className="d-flex flex-column justify-content-center">
@@ -592,7 +637,7 @@ const Business = () => {
         </div>
         <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
           <div className="main_text d-none d-lg-block pb-5">
-            <div className="row justify-content-evenly divide_space_text pt5">
+            <div className="row justify-content-evenly divide_space_text">
               <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center">
                 <img
                   className="w-100 business_img_1 position-absolute"

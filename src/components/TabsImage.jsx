@@ -53,7 +53,7 @@ const TabsImage = () => {
           end: "bottom top",
           scrub: 1,
           pin: true,
-          pinSpacing: false,
+          // pinSpacing: false,
         },
       });
       tabimageparent
@@ -258,7 +258,7 @@ const TabsImage = () => {
             top: "40%",
           },
           {
-            top: "-100%",
+            top: "-40%",
           },
           "-=.5"
         )
@@ -296,11 +296,18 @@ const TabsImage = () => {
             rotate: "-3deg",
           },
           "-=.5"
-        )
-        .to(".tab_parent", {
-          autoAlpha: 0,
-          delay: 1,
-        });
+        );
+      // .fromTo(
+      //   ".tab_parent",
+      //   {
+      //     scale: 1,
+      //     // translateY: "0%",
+      //   },
+      //   {
+      //     scale: 0.6,
+      //     // translateY: "-50%",
+      //   }
+      // );
     });
     tabImage.add("(max-width:767.78px)", () => {
       let tabimageparent2 = gsap.timeline({
