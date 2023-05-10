@@ -8,45 +8,39 @@ import businessFour from "../assets/images/png/business-4.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
+
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Business = () => {
+  let tl;
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
   useEffect(() => {
-    let busniessValue = gsap.matchMedia();
-    busniessValue.add("(min-width:1600px)", () => {
-      let busniessParentt = gsap.timeline({
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width:1600px)", () => {
+      tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
           end: "bottom top",
           scrub: 3,
           pin: true,
-          // pinSpacing: false,
         },
       });
-      busniessParentt
-        // .fromTo(
-        //   ".business_parent",
-        //   {
-        //     scale: 0.7,
-        //     translateY: "-50%",
-        //   },
-        //   {
-        //     scale: 1.03,
-        //     translateY: "-10%",
-        //   }
-        // )
-        .fromTo(
-          ".main_text",
-          {
-            scale: 0.5,
-            duration: 5,
-            autoAlpha: 0.5,
-          },
-          {
-            scale: 1,
-            duration: 5,
-            autoAlpha: 1,
-          }
-        )
+      tl.fromTo(
+        ".main_text",
+        {
+          scale: 0.5,
+          duration: 5,
+          autoAlpha: 0.5,
+        },
+        {
+          scale: 1,
+          duration: 5,
+          autoAlpha: 1,
+        }
+      )
         .to(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -78,6 +72,7 @@ const Business = () => {
             autoAlpha: 1,
           }
         )
+        .addLabel("business_accordion_1")
         .to(".business_para_1", {
           autoAlpha: 1,
           delay: 1,
@@ -105,7 +100,6 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-
         .to(
           ".business_img_1",
           {
@@ -120,7 +114,6 @@ const Business = () => {
           },
           "-=.5"
         )
-
         .to(".small_icon", {
           top: "45px",
         })
@@ -128,6 +121,7 @@ const Business = () => {
           height: "200px",
           duration: 7,
         })
+        .addLabel("business_accordion_2")
         .fromTo(
           ".business_heading_2",
           {
@@ -155,8 +149,9 @@ const Business = () => {
           },
           "-=.5"
         )
+        .addLabel("business_accordion_3")
         .fromTo(
-          ".business_heading_2",
+          ".business_heading_3",
           {
             autoAlpha: 1,
           },
@@ -164,7 +159,6 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-
         .to(
           ".business_img_2",
           {
@@ -222,7 +216,6 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-
         .to(
           ".business_img_3",
           {
@@ -244,6 +237,7 @@ const Business = () => {
           height: "200px",
           duration: 7,
         })
+        .addLabel("business_accordion_4")
         .fromTo(
           ".business_heading_4",
           {
@@ -293,13 +287,6 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-        // .to(
-        //   ".main_text",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=.5"
-        // )
         .to(
           ".business_left_icon",
           {
@@ -307,45 +294,31 @@ const Business = () => {
           },
           "+=.5"
         );
-      // .fromTo(
-      //   ".business_parent",
-      //   {
-      //     scale: 1,
-      //   },
-      //   {
-      //     scale: 0.6,
-      //   }
-      // );
-      // .to(".big_icon", {
-      //   top: "-20%",
-      //   scale: "1",
-      // });
     });
-    busniessValue.add("(min-width:992px) and (max-width:1599.98px)", () => {
-      let busniessParentt = gsap.timeline({
+
+    mm.add("(min-width:992px) and (max-width:1599.98px)", () => {
+      tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
           end: "bottom top",
           scrub: 1,
           pin: true,
-          // pinSpacing: false,
         },
       });
-      busniessParentt
-        .fromTo(
-          ".main_text",
-          {
-            scale: 0.5,
-            duration: 5,
-            autoAlpha: 0.5,
-          },
-          {
-            scale: 1,
-            duration: 5,
-            autoAlpha: 1,
-          }
-        )
+      tl.fromTo(
+        ".main_text",
+        {
+          scale: 0.5,
+          duration: 5,
+          autoAlpha: 0.5,
+        },
+        {
+          scale: 1,
+          duration: 5,
+          autoAlpha: 1,
+        }
+      )
         .to(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -368,6 +341,7 @@ const Business = () => {
           height: "150px",
           duration: 7,
         })
+        .addLabel("business_accordion_1")
         .fromTo(
           ".business_heading_1",
           {
@@ -423,6 +397,7 @@ const Business = () => {
           height: "150px",
           duration: 7,
         })
+        .addLabel("business_accordion_2")
         .fromTo(
           ".business_heading_2",
           {
@@ -442,7 +417,6 @@ const Business = () => {
           delay: 1,
           duration: 7,
         })
-
         .to(
           ".heading_2",
           {
@@ -460,7 +434,6 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-
         .to(
           ".business_img_2",
           {
@@ -482,6 +455,7 @@ const Business = () => {
           height: "150px",
           duration: 7,
         })
+        .addLabel("business_accordion_3")
         .fromTo(
           ".business_heading_3",
           {
@@ -514,7 +488,6 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-
         .to(
           ".business_img_3",
           {
@@ -536,6 +509,7 @@ const Business = () => {
           height: "40px",
           duration: 7,
         })
+        .addLabel("business_accordion_4")
         .fromTo(
           ".business_heading_4",
           {
@@ -568,7 +542,6 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-
         .fromTo(
           ".main_text",
           {
@@ -582,13 +555,6 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
-        // .to(
-        //   ".main_text",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=.5"
-        // )
         .to(
           ".business_left_icon",
           {
@@ -600,30 +566,35 @@ const Business = () => {
           autoAlpha: 0,
         });
     });
-    busniessValue.add("(max-width:991.98px)", () => {
-      let busniessParentt = gsap.timeline({
+
+    mm.add("(max-width:991.98px)", () => {
+      tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
           end: "bottom top",
         },
       });
-      busniessParentt
+
+      tl.addLabel("business_accordion_1")
         .from(".business_tab_1", {
           xPercent: "-150",
           stagger: 0.3,
           duration: 1,
         })
+        .addLabel("business_accordion_2")
         .from(".business_tab_2", {
           xPercent: "150",
           stagger: 0.3,
           duration: 1,
         })
+        .addLabel("business_accordion_3")
         .from(".business_tab_3", {
           xPercent: "-150",
           stagger: 0.3,
           duration: 1,
         })
+        .addLabel("business_accordion_4")
         .from(".business_tab_4", {
           xPercent: "150",
           stagger: 0.3,
@@ -631,6 +602,23 @@ const Business = () => {
         });
     });
   }, []);
+
+  // const moveTo = (id) => {
+  //   const pos = Math.ceil(
+  //     document.body.scrollHeight * (tl.labels[id] / tl.duration())
+  //   );
+  //   gsap.to(window, { duration: 0.3, scrollTo: pos, ease: "linear" });
+  // };
+
+  const moveTo = (sectionId, id) => {
+    const section = document.querySelector(`#${sectionId}`);
+    const pos1 = Math.ceil(
+      section.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
+        section.parentNode.offsetTop
+    );
+    console.log(pos1);
+    gsap.to(window, { duration: 0.3, scrollTo: pos1, ease: "linear" });
+  };
   return (
     <div
       className="business_parent overflow-hidden third_sec_height z_1 pt-5 min-vh-100"
@@ -693,7 +681,10 @@ const Business = () => {
                   alt="small-arrow-icon"
                 />
                 <div className="heading_1 ps-5 ps-xxl-0">
-                  <h3 className="font_5xl color_dark_gray business_heading_1">
+                  <h3
+                    className="font_5xl color_dark_gray business_heading_1 cursor_pointer"
+                    onClick={() => moveTo("servizi", "business_accordion_1")}
+                  >
                     GENERAZIONE TRAFFICO
                   </h3>
                   <p className="ff_mundial_light mt-2 pt-5 font_2xl position-absolute business_para_1 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
@@ -703,7 +694,10 @@ const Business = () => {
                   </p>
                 </div>
                 <div className="heading_2 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl color_dark_gray business_heading_2">
+                  <h3
+                    className="font_5xl color_dark_gray business_heading_2 cursor_pointer"
+                    onClick={() => moveTo("servizi", "business_accordion_2")}
+                  >
                     LANDING CONVERSAZIONALE
                   </h3>
                   <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_2 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
@@ -714,7 +708,10 @@ const Business = () => {
                   </p>
                 </div>
                 <div className="heading_3 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl color_dark_gray business_heading_3">
+                  <h3
+                    className="font_5xl color_dark_gray business_heading_3 cursor_pointer"
+                    onClick={() => moveTo("servizi", "business_accordion_3")}
+                  >
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
                   <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_3 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
@@ -724,7 +721,10 @@ const Business = () => {
                   </p>
                 </div>
                 <div className="heading_4 ps-5 ps-xxl-0 pt-3">
-                  <h3 className="font_5xl color_dark_gray business_heading_4">
+                  <h3
+                    className="font_5xl color_dark_gray business_heading_4 cursor_pointer"
+                    onClick={() => moveTo("servizi", "business_accordion_4")}
+                  >
                     TRASMISSIONE LEAD
                   </h3>
                   <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_4 color_dark_gray pe-xl-5 pt-2 m_w_business_text">
