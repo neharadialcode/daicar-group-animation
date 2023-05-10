@@ -4,15 +4,45 @@ import gsap from "gsap";
 
 function Meeting() {
   useEffect(() => {
-    let third = gsap.matchMedia();
-    third.add("(min-width:576px)", () => {
+    let meetingValue = gsap.matchMedia();
+    meetingValue.add("(min-width:1600px)", () => {
       let meeting = gsap.timeline({
         scrollTrigger: {
           trigger: ".meeting_parent",
-          pin: true,
-          pinSpacing: false,
+          start: "top top",
+          end: "bottom center",
+          scrub: 1,
         },
       });
+      meeting.fromTo(
+        ".meeting_parent",
+        {
+          yPercent: 0,
+        },
+        {
+          yPercent: -20,
+        }
+      );
+    });
+    meetingValue.add("(min-width:992px) and (max-width:1599.98px)", () => {
+      let meeting = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".meeting_parent",
+          markers: true,
+          start: "top top",
+          end: "bottom center",
+          scrub: 1,
+        },
+      });
+      meeting.fromTo(
+        ".meeting_parent",
+        {
+          yPercent: 0,
+        },
+        {
+          yPercent: -40,
+        }
+      );
     });
   }, []);
   return (
