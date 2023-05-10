@@ -378,19 +378,8 @@ const TabsImage = () => {
           },
           "-=.5"
         );
-      // .fromTo(
-      //   ".tab_parent",
-      //   {
-      //     scale: 1,
-      //     // translateY: "0%",
-      //   },
-      //   {
-      //     scale: 0.6,
-      //     // translateY: "-50%",
-      //   }
-      // );
     });
-    tabImage.add("(max-width:767.78px)", () => {
+    tabImage.add("(max-width:767.98px)", () => {
       let tabimageparent2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".tab_parent",

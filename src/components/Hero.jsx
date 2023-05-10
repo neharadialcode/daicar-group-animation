@@ -10,7 +10,7 @@ import Header from "./Header";
 const Hero = () => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    gsap.from("nav", { yPercent: -50, opacity: 0, duration: 1 });
+    // gsap.from("nav", { yPercent: -50, opacity: 0, duration: 1 });
     gsap.from(".hero_heading", {
       filter: "blur(2px)",
       duration: 3,
@@ -35,7 +35,6 @@ const Hero = () => {
         end: "bottom top",
         scrub: 2,
         pin: true,
-        // pinSpacing: false,
       },
     });
 
