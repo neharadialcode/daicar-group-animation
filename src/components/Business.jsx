@@ -36,7 +36,7 @@ const Business = () => {
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
-          end: "bottom top",
+          end: "+=400%",
           scrub: 3,
           pin: true,
         },
@@ -255,7 +255,8 @@ const Business = () => {
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
-          end: "bottom top",
+          // end: "bottom top",
+          end: "+=400%",
           scrub: 1,
           pin: true,
         },
