@@ -332,7 +332,7 @@ const Business = () => {
           autoAlpha: 0.5,
         })
         .to(".big_icon", {
-          top: "-12%",
+          top: "-25%",
         })
         .to(".small_icon", {
           top: "5px",
