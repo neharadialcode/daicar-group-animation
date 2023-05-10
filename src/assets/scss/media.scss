@@ -353,6 +353,12 @@
   // .meeting_top_space {
   //   margin-top: 50px;
   // }
+  .arrow_tabs {
+    transform: scale(1.5);
+  }
+  .tab_right_icon {
+    right: 0% !important;
+  }
 }
 
 @media (max-width: 1499.98px) {
