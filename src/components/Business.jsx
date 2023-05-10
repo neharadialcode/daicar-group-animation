@@ -63,10 +63,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "5px",
         })
-        // .to(".acc_para_1", {
-        //   height: "200px",
-        //   duration: 7,
-        // })
         .fromTo(
           ".business_heading_1",
           {
@@ -79,8 +75,6 @@ const Business = () => {
         .addLabel("business_accordion_1")
         .to(".business_para_1", {
           autoAlpha: 1,
-          delay: 1,
-          duration: 7,
           height: "auto",
           marginTop: "16px",
           marginBottom: "16px",
@@ -92,14 +86,6 @@ const Business = () => {
           height: "0px",
           margin: "0",
         })
-        // .to(
-        //   ".acc_para_1",
-        //   {
-        //     height: "40px",
-        //     duration: 7,
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".business_heading_1",
           {
@@ -126,10 +112,10 @@ const Business = () => {
         .to(".small_icon", {
           top: "45px",
         })
-        .to(".heading_2", {
-          height: "200px",
-          duration: 7,
-        })
+        // .to(".heading_2", {
+        //   height: "200px",
+        //   duration: 7,
+        // })
         .addLabel("business_accordion_2")
         .fromTo(
           ".business_heading_2",
@@ -150,14 +136,14 @@ const Business = () => {
           delay: 1,
           duration: 7,
         })
-        .to(
-          ".heading_2",
-          {
-            height: "40px",
-            duration: 7,
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".heading_2",
+        //   {
+        //     height: "40px",
+        //     duration: 7,
+        //   },
+        //   "-=.5"
+        // )
         .addLabel("business_accordion_3")
         .fromTo(
           ".business_heading_3",
@@ -185,10 +171,10 @@ const Business = () => {
         .to(".small_icon", {
           top: "85px",
         })
-        .to(".heading_3", {
-          height: "200px",
-          duration: 7,
-        })
+        // .to(".heading_3", {
+        //   height: "200px",
+        //   duration: 7,
+        // })
         .fromTo(
           ".business_heading_3",
           {
@@ -208,14 +194,14 @@ const Business = () => {
           autoAlpha: 0,
           duration: 7,
         })
-        .to(
-          ".heading_3",
-          {
-            height: "40px",
-            duration: 7,
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".heading_3",
+        //   {
+        //     height: "40px",
+        //     duration: 7,
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".business_heading_3",
           {
@@ -242,10 +228,10 @@ const Business = () => {
         .to(".small_icon", {
           top: "125px",
         })
-        .to(".heading_4", {
-          height: "200px",
-          duration: 7,
-        })
+        // .to(".heading_4", {
+        //   height: "200px",
+        //   duration: 7,
+        // })
         .addLabel("business_accordion_4")
         .fromTo(
           ".business_heading_4",
@@ -266,14 +252,14 @@ const Business = () => {
           autoAlpha: 0,
           duration: 7,
         })
-        .to(
-          ".heading_4",
-          {
-            height: "40px",
-            duration: 7,
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".heading_4",
+        //   {
+        //     height: "40px",
+        //     duration: 7,
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".business_heading_4",
           {
@@ -393,10 +379,10 @@ const Business = () => {
         .to(".small_icon", {
           top: "60px",
         })
-        .to(".heading_2", {
-          height: "150px",
-          duration: 7,
-        })
+        // .to(".heading_2", {
+        //   height: "150px",
+        //   duration: 7,
+        // })
         .addLabel("business_accordion_2")
         .from(".business_heading_2", {
           autoAlpha: 0.5,
@@ -409,14 +395,14 @@ const Business = () => {
           delay: 1,
           duration: 7,
         })
-        .to(
-          ".heading_2",
-          {
-            height: "40px",
-            duration: 7,
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".heading_2",
+        //   {
+        //     height: "40px",
+        //     duration: 7,
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".business_heading_2",
           {
@@ -443,10 +429,10 @@ const Business = () => {
         .to(".small_icon", {
           top: "100px",
         })
-        .to(".heading_3", {
-          height: "150px",
-          duration: 7,
-        })
+        // .to(".heading_3", {
+        //   height: "150px",
+        //   duration: 7,
+        // })
         .addLabel("business_accordion_3")
         .fromTo(
           ".business_heading_3",
@@ -467,10 +453,10 @@ const Business = () => {
           autoAlpha: 0,
           duration: 7,
         })
-        .to(".heading_3", {
-          height: "40px",
-          duration: 7,
-        })
+        // .to(".heading_3", {
+        //   height: "40px",
+        //   duration: 7,
+        // })
         .fromTo(
           ".business_heading_3",
           {
@@ -497,10 +483,10 @@ const Business = () => {
         .to(".small_icon", {
           top: "140px",
         })
-        .to(".heading_4", {
-          height: "40px",
-          duration: 7,
-        })
+        // .to(".heading_4", {
+        //   height: "40px",
+        //   duration: 7,
+        // })
         .addLabel("business_accordion_4")
         .fromTo(
           ".business_heading_4",
@@ -521,10 +507,10 @@ const Business = () => {
           autoAlpha: 0,
           duration: 7,
         })
-        .to(".heading_4", {
-          height: "40px",
-          duration: 7,
-        })
+        // .to(".heading_4", {
+        //   height: "40px",
+        //   duration: 7,
+        // })
         .fromTo(
           ".business_heading_4",
           {
@@ -612,208 +598,212 @@ const Business = () => {
     gsap.to(window, { duration: 0.3, scrollTo: pos1, ease: "linear" });
   };
   return (
-    <div
-      className="business_parent overflow-hidden third_sec_height z_1 pt-5 min-vh-100"
-      id="servizi"
-    >
-      <div className="d-flex flex-column justify-content-center">
-        <img
-          className="w-100 position-absolute big_icon d-none d-lg-block"
-          src={iconImg}
-          alt="iconImg"
-        />
-        <div className="position-absolute d-none d-sm-block d-lg-none">
+    <>
+      <div
+        className="business_parent overflow-hidden third_sec_height z_1 pt-5 min-vh-100"
+        id="servizi"
+      >
+        <div className="d-flex flex-column justify-content-center">
           <img
-            className="w-100 small_tab_arrow_img"
-            src={businessTabImg}
-            alt="arrow-tab-img"
+            className="w-100 position-absolute big_icon d-none d-lg-block"
+            src={iconImg}
+            alt="iconImg"
           />
-        </div>
-        <div className="text-center px-4 px-lg-0 z_1 third_heading">
-          <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_business_heading">
-            Progettiamo soluzioni &nbsp;
-            <span className="business_btn hero_heading_btn color_dark_gray bg_light_green my-2 my-sm-0">
-              personalizzate
-            </span>
-            &nbsp; per il tuo business
-          </p>
-        </div>
-        <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
-          <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
-        </div>
-        <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
-          <div className="main_text d-none d-lg-block pb-5">
-            <div className="row justify-content-evenly divide_space_text">
-              <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center">
-                <img
-                  className="w-100 business_img_1 position-absolute"
-                  src={businessOne}
-                  alt="business-big-arrow"
-                />
-                <img
-                  className="w-100 business_img_2 opacity_0 position-absolute"
-                  src={businessTwo}
-                  alt="business-big-arrow"
-                />
-                <img
-                  className="w-100 business_img_3 opacity_0 position-absolute"
-                  src={businessThree}
-                  alt="business-big-arrow"
-                />
-                <img
-                  className="w-100 business_img_4 opacity_0 position-absolute"
-                  src={businessFour}
-                  alt="business-big-arrow"
-                />
-              </div>
-              <div className="col-7 col-xl-5 position-relative business-content">
-                <img
-                  className="small_icon d-none d-lg-block"
-                  src={businessIconSmall}
-                  alt="small-arrow-icon"
-                />
-                <div className=" ps-5 ps-xxl-0">
-                  <h3
-                    className="font_5xl color_dark_gray business_heading_1 cursor_pointer"
-                    onClick={() => moveTo("servizi", "business_accordion_1")}
-                  >
-                    GENERAZIONE TRAFFICO
-                  </h3>
-                  <p className="overflow-hidden ff_mundial_light font_2xl business_para_1 color_dark_gray pe-xl-5 m_w_business_text">
-                    Strategie di marketing costruite ad hoc per generare
-                    traffico qualificato da veicolare sui social media, Google e
-                    native advertising
-                  </p>
-                </div>
-                <div className="heading_2 ps-5 ps-xxl-0 pt-3">
-                  <h3
-                    className="font_5xl color_dark_gray business_heading_2 cursor_pointer"
-                    onClick={() => moveTo("servizi", "business_accordion_2")}
-                  >
-                    LANDING CONVERSAZIONALE
-                  </h3>
-                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_2 color_dark_gray pe-xl-5 m_w_business_text">
-                    Landingpage su misura per i nostri partner e conformi
-                    al&nbsp;
-                    <span className="ff_mundial_bold">regolamento GDPR</span>
-                    &nbsp; per l’acquisizione di contatti qualificati.
-                  </p>
-                </div>
-                <div className="heading_3 ps-5 ps-xxl-0 pt-3">
-                  <h3
-                    className="font_5xl color_dark_gray business_heading_3 cursor_pointer"
-                    onClick={() => moveTo("servizi", "business_accordion_3")}
-                  >
-                    VALIDAZIONE AUTOMATICA DEI DATI
-                  </h3>
-                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_3 color_dark_gray pe-xl-5 m_w_business_text">
-                    Meno tempo e maggiore conversione grazie al nostro&nbsp;
-                    <span className="ff_mundial_bold">software di I.A.</span>
-                    &nbsp; per la validazione real-time dei dati degli utenti
-                  </p>
-                </div>
-                <div className="heading_4 ps-5 ps-xxl-0 pt-3">
-                  <h3
-                    className="font_5xl color_dark_gray business_heading_4 cursor_pointer"
-                    onClick={() => moveTo("servizi", "business_accordion_4")}
-                  >
-                    TRASMISSIONE LEAD
-                  </h3>
-                  <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_4 color_dark_gray pe-xl-5 m_w_business_text">
-                    I lead generati vengono sottoposti ad un attento processo di
-                    filtraggio e controllo tramite API o integrazione con il CRM
-                    del partner prima di essere inviati
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="position-absolute d-none d-sm-block d-lg-none">
+            <img
+              className="w-100 small_tab_arrow_img"
+              src={businessTabImg}
+              alt="arrow-tab-img"
+            />
           </div>
-
-          <div className="d-lg-none">
-            <div className="business_tab_1">
-              <div className="row justify-content-evenly pt-5">
-                <div className="col-8 col-sm-4">
+          <div className="text-center px-4 px-lg-0 z_1 third_heading">
+            <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_business_heading">
+              Progettiamo soluzioni &nbsp;
+              <span className="business_btn hero_heading_btn color_dark_gray bg_light_green my-2 my-sm-0">
+                personalizzate
+              </span>
+              &nbsp; per il tuo business
+            </p>
+          </div>
+          <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
+            <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
+          </div>
+          <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
+            <div className="main_text d-none d-lg-block pb-5">
+              <div className="row justify-content-evenly divide_space_text">
+                <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center">
                   <img
-                    className="w-100"
+                    className="w-100 business_img_1 position-absolute"
                     src={businessOne}
                     alt="business-big-arrow"
                   />
-                </div>
-                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-3 pt-sm-0">
-                  <h3 className="font_5xl text-white">GENERAZIONE TRAFFICO</h3>
-                  <p className="font_2xl text-white pe-xl-5 pt-2">
-                    Strategie di marketing costruite ad hoc per generare
-                    traffico qualificato da veicolare sui social media, Google e
-                    native advertising
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="business_tab_2">
-              <div className="row justify-content-evenly pt-5 mt-sm-3">
-                <div className="col-8 col-sm-4">
                   <img
-                    className="w-100"
+                    className="w-100 business_img_2 opacity_0 position-absolute"
                     src={businessTwo}
                     alt="business-big-arrow"
                   />
-                </div>
-                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
-                  <h3 className="font_5xl text-white">
-                    LANDING CONVERSAZIONALE
-                  </h3>
-                  <p className="font_2xl text-white pe-xl-5 pt-2">
-                    Landingpage su misura per i nostri partner e conformi al
-                    <span className="ff_mundial_bold">regolamento GDPR</span>
-                    &nbsp; per l’acquisizione di contatti qualificati.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="business_tab_3">
-              <div className="row justify-content-evenly pt-5 mt-sm-3">
-                <div className="col-8 col-sm-4">
                   <img
-                    className="w-100"
+                    className="w-100 business_img_3 opacity_0 position-absolute"
                     src={businessThree}
                     alt="business-big-arrow"
                   />
-                </div>
-                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
-                  <h3 className="font_5xl text-white">
-                    VALIDAZIONE AUTOMATICA DEI DATI
-                  </h3>
-                  <p className="font_2xl text-white pe-xl-5 pt-2">
-                    Meno tempo e maggiore conversione grazie al nostro&nbsp;
-                    <span className="ff_mundial_bold">software di I.A.</span>
-                    &nbsp; per la validazione real-time dei dati degli utenti
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="business_tab_4">
-              <div className="row justify-content-evenly pt-5 mt-sm-3">
-                <div className="col-sm-4 d-flex align-items-center">
                   <img
-                    className="w-100"
+                    className="w-100 business_img_4 opacity_0 position-absolute"
                     src={businessFour}
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column">
-                  <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
-                  <p className="font_2xl text-white pe-xl-5 pt-2">
-                    I lead generati vengono sottoposti ad un attento processo di
-                    filtraggio e controllo tramite API o integrazione con il CRM
-                    del partner prima di essere inviati”
-                  </p>
+                <div className="col-7 col-xl-5 position-relative business-content">
+                  <img
+                    className="small_icon d-none d-lg-block"
+                    src={businessIconSmall}
+                    alt="small-arrow-icon"
+                  />
+                  <div className=" ps-5 ps-xxl-0">
+                    <h3
+                      className="font_5xl color_dark_gray business_heading_1 cursor_pointer"
+                      onClick={() => moveTo("servizi", "business_accordion_1")}
+                    >
+                      GENERAZIONE TRAFFICO
+                    </h3>
+                    <p className="overflow-hidden ff_mundial_light font_2xl business_para_1 color_dark_gray pe-xl-5 m_w_business_text">
+                      Strategie di marketing costruite ad hoc per generare
+                      traffico qualificato da veicolare sui social media, Google
+                      e native advertising
+                    </p>
+                  </div>
+                  <div className=" ps-5 ps-xxl-0 pt-3">
+                    <h3
+                      className="font_5xl color_dark_gray business_heading_2 cursor_pointer"
+                      onClick={() => moveTo("servizi", "business_accordion_2")}
+                    >
+                      LANDING CONVERSAZIONALE
+                    </h3>
+                    <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_2 color_dark_gray pe-xl-5 m_w_business_text">
+                      Landingpage su misura per i nostri partner e conformi
+                      al&nbsp;
+                      <span className="ff_mundial_bold">regolamento GDPR</span>
+                      &nbsp; per l’acquisizione di contatti qualificati.
+                    </p>
+                  </div>
+                  <div className=" ps-5 ps-xxl-0 pt-3">
+                    <h3
+                      className="font_5xl color_dark_gray business_heading_3 cursor_pointer"
+                      onClick={() => moveTo("servizi", "business_accordion_3")}
+                    >
+                      VALIDAZIONE AUTOMATICA DEI DATI
+                    </h3>
+                    <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_3 color_dark_gray pe-xl-5 m_w_business_text">
+                      Meno tempo e maggiore conversione grazie al nostro&nbsp;
+                      <span className="ff_mundial_bold">software di I.A.</span>
+                      &nbsp; per la validazione real-time dei dati degli utenti
+                    </p>
+                  </div>
+                  <div className=" ps-5 ps-xxl-0 pt-3">
+                    <h3
+                      className="font_5xl color_dark_gray business_heading_4 cursor_pointer"
+                      onClick={() => moveTo("servizi", "business_accordion_4")}
+                    >
+                      TRASMISSIONE LEAD
+                    </h3>
+                    <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_4 color_dark_gray pe-xl-5 m_w_business_text">
+                      I lead generati vengono sottoposti ad un attento processo
+                      di filtraggio e controllo tramite API o integrazione con
+                      il CRM del partner prima di essere inviati
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="d-lg-none">
+              <div className="business_tab_1">
+                <div className="row justify-content-evenly pt-5">
+                  <div className="col-8 col-sm-4">
+                    <img
+                      className="w-100"
+                      src={businessOne}
+                      alt="business-big-arrow"
+                    />
+                  </div>
+                  <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-3 pt-sm-0">
+                    <h3 className="font_5xl text-white">
+                      GENERAZIONE TRAFFICO
+                    </h3>
+                    <p className="font_2xl text-white pe-xl-5 pt-2">
+                      Strategie di marketing costruite ad hoc per generare
+                      traffico qualificato da veicolare sui social media, Google
+                      e native advertising
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="business_tab_2">
+                <div className="row justify-content-evenly pt-5 mt-sm-3">
+                  <div className="col-8 col-sm-4">
+                    <img
+                      className="w-100"
+                      src={businessTwo}
+                      alt="business-big-arrow"
+                    />
+                  </div>
+                  <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
+                    <h3 className="font_5xl text-white">
+                      LANDING CONVERSAZIONALE
+                    </h3>
+                    <p className="font_2xl text-white pe-xl-5 pt-2">
+                      Landingpage su misura per i nostri partner e conformi al
+                      <span className="ff_mundial_bold">regolamento GDPR</span>
+                      &nbsp; per l’acquisizione di contatti qualificati.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="business_tab_3">
+                <div className="row justify-content-evenly pt-5 mt-sm-3">
+                  <div className="col-8 col-sm-4">
+                    <img
+                      className="w-100"
+                      src={businessThree}
+                      alt="business-big-arrow"
+                    />
+                  </div>
+                  <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
+                    <h3 className="font_5xl text-white">
+                      VALIDAZIONE AUTOMATICA DEI DATI
+                    </h3>
+                    <p className="font_2xl text-white pe-xl-5 pt-2">
+                      Meno tempo e maggiore conversione grazie al nostro&nbsp;
+                      <span className="ff_mundial_bold">software di I.A.</span>
+                      &nbsp; per la validazione real-time dei dati degli utenti
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="business_tab_4">
+                <div className="row justify-content-evenly pt-5 mt-sm-3">
+                  <div className="col-sm-4 d-flex align-items-center">
+                    <img
+                      className="w-100"
+                      src={businessFour}
+                      alt="business-big-arrow"
+                    />
+                  </div>
+                  <div className="col-sm-6 d-sm-flex justify-content-center justify-content-lg-end flex-column">
+                    <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
+                    <p className="font_2xl text-white pe-xl-5 pt-2">
+                      I lead generati vengono sottoposti ad un attento processo
+                      di filtraggio e controllo tramite API o integrazione con
+                      il CRM del partner prima di essere inviati”
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
