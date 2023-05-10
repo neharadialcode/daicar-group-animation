@@ -47,29 +47,9 @@ const FifthSection = () => {
           end: "bottom top",
           scrub: 5,
           pin: true,
-          pinSpacing: false,
         },
       });
       timeline
-        .fromTo(
-          ".timeline_parent",
-          {
-            opacity: 0,
-          },
-          {
-            opacity: 1,
-          }
-        )
-        .fromTo(
-          ".about_parent",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          },
-          "-=.5"
-        )
         .fromTo(
           ".timeline_line_img",
           {
@@ -319,29 +299,9 @@ const FifthSection = () => {
           end: "bottom top",
           scrub: 5,
           pin: true,
-          pinSpacing: true,
         },
       });
       timeline
-        .fromTo(
-          ".timeline_parent",
-          {
-            opacity: 0,
-          },
-          {
-            opacity: 1,
-          }
-        )
-        .fromTo(
-          ".about_parent",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          },
-          "-=.5"
-        )
         .fromTo(
           ".timeline_line_img",
           {
