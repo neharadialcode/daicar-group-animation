@@ -271,7 +271,7 @@
   z-index: -1;
 }
 .business_icon_img_2 {
-  top: 30%;
+  top: 50%;
 }
 
 .opacity_0 {
@@ -647,4 +647,10 @@
 .meeting_btn_parent .meeting_border_line::after {
   height: 82px !important;
   right: 127px !important;
+}
+.social_links_parent a img {
+  transition: all 400ms ease-in-out;
+}
+.tab-side-effect {
+  transform: rotate(90deg);
 }

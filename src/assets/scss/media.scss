@@ -1,9 +1,3 @@
-.social_links_parent a img {
-  transition: all 400ms ease-in-out;
-}
-.tab-side-effect {
-  transform: rotate(90deg);
-}
 @media (min-width: 576px) {
   .common_gap {
     gap: 19px;
@@ -147,7 +141,7 @@
     }
   }
   .business_icon_img_2 {
-    top: 35%;
+    top: 60%;
   }
   .divide_space_text {
     justify-content: space-between !important;
@@ -1021,7 +1015,7 @@
 
 @media (min-width: 380px) and (max-width: 400px) {
   .timeline_arrow_icon {
-    top: 59.5%;
+    top: 58.5%;
   }
 }
 

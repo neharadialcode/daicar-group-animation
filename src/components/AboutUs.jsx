@@ -19,7 +19,6 @@ const About = () => {
           end: "bottom top",
           scrub: 1,
           pin: true,
-          pinSpacing: false,
         },
       });
       secondSection4
@@ -39,15 +38,6 @@ const About = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".forth_heading",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
 
         // FIRST VALUES
         .fromTo(
@@ -56,7 +46,8 @@ const About = () => {
             left: "-40%",
           },
           {
-            left: "0%",         
+            left: "5%",
+            duration: 5,
           }
         )
         .fromTo(
@@ -66,12 +57,11 @@ const About = () => {
           },
           {
             left: "10%",
+            duration: 5,
           },
           "-=.5"
         )
-        .to(".about_parent", {
-          background: "#b5efcb",
-        })
+
         .fromTo(
           ".roadmap_text_1",
           {
@@ -191,41 +181,33 @@ const About = () => {
           end: "bottom top",
           scrub: 1,
           pin: true,
-          pinSpacing: false,
         },
       });
       secondSection4
-        .fromTo(
-          ".forth_heading",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+
+        // FIRST VALUES
         .fromTo(
           ".roadmap_icon_1",
           {
-            left: "-100%",
+            left: "-50%",
           },
           {
-            left: "0%",
+            left: "5%",
+            duration: 5,
           }
         )
         .fromTo(
           ".roadmap_icon_2",
           {
-            left: "-100%",
+            left: "-50%",
           },
           {
             left: "10%",
+            duration: 5,
           },
           "-=.5"
         )
-        .to(".about_parent", {
-          background: "#b5efcb",
-        })
+
         .fromTo(
           ".roadmap_text_1",
           {
@@ -233,15 +215,19 @@ const About = () => {
           },
           {
             autoAlpha: 1,
+            duration: 5,
           },
           "-=.5"
         )
+
+        // SECOND VALUES
         .fromTo(
           ".roadmap_icon_1",
           {
-            left: "0%",
+            left: "5%",
           },
           {
+            duration: 5,
             left: "10%",
           }
         )
@@ -251,7 +237,8 @@ const About = () => {
             left: "10%",
           },
           {
-            left: "20%",
+            left: "15%",
+            duration: 5,
           },
           "-=.5"
         )
@@ -270,25 +257,30 @@ const About = () => {
           },
           {
             autoAlpha: 1,
+            duration: 5,
           },
           "-=.1"
         )
+
+        // THIRD VALUES
         .fromTo(
           ".roadmap_icon_1",
           {
             left: "10%",
           },
           {
-            left: "10%",
+            left: "15%",
+            duration: 5,
           }
         )
         .fromTo(
           ".roadmap_icon_2",
           {
-            left: "20%",
+            left: "15%",
           },
           {
             left: "20%",
+            duration: 5,
           },
           "-=.5"
         )
@@ -307,6 +299,7 @@ const About = () => {
           },
           {
             autoAlpha: 1,
+            duration: 5,
           },
           "-=.1"
         );
