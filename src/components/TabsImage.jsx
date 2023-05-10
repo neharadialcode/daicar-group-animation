@@ -57,6 +57,18 @@ const TabsImage = () => {
         },
       });
       tabimageparent
+        .to(".left_text_2", {
+          autoAlpha: 0,
+        })
+        .to(".left_text_3", {
+          autoAlpha: 0,
+        })
+        .to(".left_text_4", {
+          autoAlpha: 0,
+        })
+        .to(".left_text_5", {
+          autoAlpha: 0,
+        })
         .to(
           ".active_button_0",
           {
@@ -65,10 +77,19 @@ const TabsImage = () => {
           },
           "-=.5"
         )
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".side_icon",
           {
-            bottom: "25%",
+            bottom: "10%",
           },
           "-=.5"
         )
@@ -134,6 +155,24 @@ const TabsImage = () => {
           },
           "-=.5"
         )
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".side_icon",
           {
@@ -184,6 +223,24 @@ const TabsImage = () => {
           },
           "-=.5"
         )
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".side_icon",
           {
@@ -217,6 +274,24 @@ const TabsImage = () => {
             top: "40%",
           },
           "-=.5"
+        )
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
         )
         .to(
           ".side_icon",
@@ -261,6 +336,24 @@ const TabsImage = () => {
             top: "-40%",
           },
           "-=.5"
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_5",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
         )
         .to(
           ".side_icon",
@@ -337,11 +430,34 @@ const TabsImage = () => {
       id="main-assets"
     >
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
-        <div className="d-flex align-items-center tab-side-effect">
+        <div className="d-flex align-items-center tab-side-effect left_text_5">
+          <p className="me-4 color_light_green mb-0">CRM lo facciamo</p>
+          <TabRightIcon />
+        </div>
+        <div className="d-flex align-items-center tab-side-effect left_text_4">
+          <p className="me-4 color_light_green mb-0">
+            qualifica digitale real-time lo facciamo
+          </p>
+          <TabRightIcon />
+        </div>
+        <div className="d-flex align-items-center tab-side-effect left_text_3">
+          <p className="me-4 color_light_green mb-0">
+            strumenti tech-driven lo facciamo
+          </p>
+          <TabRightIcon />
+        </div>
+        <div className="d-flex align-items-center tab-side-effect left_text_2">
+          <p className="me-4 color_light_green mb-0">
+            marketing conversazionale lo facciamo
+          </p>
+          <TabRightIcon />
+        </div>
+        <div className="d-flex align-items-center tab-side-effect left_text_1">
           <p className="me-4 color_light_green mb-0">come lo facciamo</p>
           <TabRightIcon />
         </div>
       </div>
+
       <div className="max_width_tabs position-relative d-none d-md-block">
         <div className="arrow_tabs position-absolute">
           <Icon5 />
