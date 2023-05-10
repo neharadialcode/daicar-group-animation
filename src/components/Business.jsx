@@ -18,6 +18,10 @@ const Business = () => {
   useEffect(() => {
     let mm = gsap.matchMedia();
 
+    gsap.set(".business_para_1", {
+      height: 0,
+    });
+
     mm.add("(min-width:1600px)", () => {
       tl = gsap.timeline({
         scrollTrigger: {
@@ -346,60 +350,46 @@ const Business = () => {
           height: "150px",
           duration: 7,
         })
-        .fromTo(
-          ".business_heading_1",
-          {
-            autoAlpha: 0.5,
-          },
+        .from(".business_heading_1", {
+          autoAlpha: 0.5,
+        })
+        .to(
+          ".business_para_1",
           {
             autoAlpha: 1,
-          }
+            height: "auto",
+            marginTop: "16px",
+            marginBottom: "16px",
+          },
+          ">"
         )
         .addLabel("business_accordion_1")
-        .to(".business_para_1", {
-          autoAlpha: 1,
-          delay: 1,
-          duration: 7,
-          height: "auto",
-          marginTop: "16px",
-          marginBottom: "16px",
-        })
-        .to(".business_para_1", {
-          autoAlpha: 0,
-          delay: 1,
-          duration: 7,
-          height: "0",
-          margin: "0",
-        })
-        // .to(".heading_1", {
-        //   height: "40px",
-        //   duration: 7,
-        // })
-        .fromTo(
-          ".business_heading_1",
+        .to(
+          ".business_para_1",
           {
-            autoAlpha: 1,
+            autoAlpha: 0,
+            height: "0",
+            margin: "0",
           },
-          {
-            autoAlpha: 0.5,
-          }
+          "+=50"
         )
-
+        .to(".business_heading_1", {
+          autoAlpha: 0.5,
+        })
         .to(
           ".business_img_1",
           {
             autoAlpha: 0,
           },
-          "-=.5"
+          "<"
         )
         .to(
           ".business_img_2",
           {
             autoAlpha: 1,
           },
-          "-=.5"
+          ">"
         )
-
         .to(".small_icon", {
           top: "60px",
         })
@@ -408,19 +398,11 @@ const Business = () => {
           duration: 7,
         })
         .addLabel("business_accordion_2")
-        .fromTo(
-          ".business_heading_2",
-          {
-            autoAlpha: 0.5,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        .from(".business_heading_2", {
+          autoAlpha: 0.5,
+        })
         .to(".business_para_2", {
           autoAlpha: 1,
-          delay: 1,
-          duration: 7,
         })
         .to(".business_para_2", {
           autoAlpha: 0,
