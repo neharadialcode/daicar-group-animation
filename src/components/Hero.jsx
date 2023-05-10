@@ -35,7 +35,7 @@ const Hero = () => {
         end: "bottom top",
         scrub: 2,
         pin: true,
-        pinSpacing: false,
+        // pinSpacing: false,
       },
     });
 
@@ -185,11 +185,11 @@ const Hero = () => {
       .to(".hero_text_parent", {
         height: "0vh",
         delay: 2,
-      })
-      .to(".hero_parent", {
-        autoAlpha: 0,
-        duration: 1,
       });
+    // .to(".hero_parent", {
+    //   autoAlpha: 0,
+    //   duration: 1,
+    // });
   }, []);
 
   return (
