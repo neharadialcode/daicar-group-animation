@@ -13,8 +13,8 @@ import ScrollChatIcon from "./components/ScrollChatIcon";
 function App() {
   return (
     <>
-      {/* <Hero />
-      <TabsImage /> */}
+      <Hero />
+      <TabsImage />
       <Business />
       <AboutUs />
       <Timeline />

@@ -28,7 +28,7 @@ function Meeting() {
       let meeting = gsap.timeline({
         scrollTrigger: {
           trigger: ".meeting_parent",
-          markers: true,
+          markers: false,
           start: "top top",
           end: "bottom center",
           scrub: 1,
