@@ -21,6 +21,15 @@ const Business = () => {
     gsap.set(".business_para_1", {
       height: 0,
     });
+    gsap.set(".business_para_2", {
+      height: 0,
+    });
+    gsap.set(".business_para_3", {
+      height: 0,
+    });
+    gsap.set(".business_para_4", {
+      height: 0,
+    });
 
     mm.add("(min-width:1600px)", () => {
       tl = gsap.timeline({
@@ -63,176 +72,162 @@ const Business = () => {
         .to(".small_icon", {
           top: "5px",
         })
-        .fromTo(
-          ".business_heading_1",
-          {
-            autoAlpha: 0.5,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .addLabel("business_accordion_1")
+
+        .from(".business_heading_1", {
+          autoAlpha: 0.5,
+        })
         .to(".business_para_1", {
           autoAlpha: 1,
           height: "auto",
           marginTop: "16px",
           marginBottom: "16px",
         })
-        .to(".business_para_1", {
-          autoAlpha: 0,
-          delay: 1,
-          duration: 7,
-          height: "0px",
-          margin: "0",
-        })
-        .fromTo(
-          ".business_heading_1",
+        .addLabel("business_accordion_1")
+        .to(
+          ".business_para_1",
           {
-            autoAlpha: 1,
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
           },
-          {
-            autoAlpha: 0.5,
-          }
+          "+=50"
         )
+        .to(".business_heading_1", {
+          autoAlpha: 0.5,
+        })
         .to(
           ".business_img_1",
           {
             autoAlpha: 0,
           },
-          "-=.5"
+          "<"
         )
         .to(
           ".business_img_2",
           {
             autoAlpha: 1,
           },
-          "-=.5"
+          ">"
         )
         .to(".small_icon", {
           top: "45px",
         })
-        .addLabel("business_accordion_2")
-        .fromTo(
-          ".business_heading_2",
-          {
-            autoAlpha: 0.5,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+
+        .from(".business_heading_2", {
+          autoAlpha: 0.5,
+        })
         .to(".business_para_2", {
           autoAlpha: 1,
-          delay: 1,
-          duration: 7,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
         })
-        .to(".business_para_2", {
-          autoAlpha: 0,
-          delay: 1,
-          duration: 7,
-        })
-        .addLabel("business_accordion_3")
-        .fromTo(
-          ".business_heading_3",
+        .addLabel("business_accordion_2")
+        .to(
+          ".business_para_2",
           {
-            autoAlpha: 1,
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
           },
-          {
-            autoAlpha: 0.5,
-          }
+          "+=50"
         )
+        .to(".business_heading_2", {
+          autoAlpha: 0.5,
+        })
+
+        .addLabel("business_accordion_3")
+        .from(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
         .to(
           ".business_img_2",
           {
             autoAlpha: 0,
           },
-          "-=.5"
+          "<"
         )
         .to(
           ".business_img_3",
           {
             autoAlpha: 1,
           },
-          "-=.5"
+          ">"
         )
         .to(".small_icon", {
           top: "85px",
         })
-        .fromTo(
-          ".business_heading_3",
-          {
-            autoAlpha: 0.5,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        .to(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
         .to(".business_para_3", {
           autoAlpha: 1,
-          delay: 1,
-          duration: 7,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
         })
-        .to(".business_para_3", {
-          delay: 1,
-          autoAlpha: 0,
-          duration: 7,
-        })
-        .fromTo(
-          ".business_heading_3",
+        .addLabel("business_accordion_3")
+        .to(
+          ".business_para_3",
           {
-            autoAlpha: 1,
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
           },
-          {
-            autoAlpha: 0.5,
-          }
+          "+=50"
         )
+        .to(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
         .to(
           ".business_img_3",
           {
             autoAlpha: 0,
           },
-          "-=.5"
+          "<"
         )
         .to(
           ".business_img_4",
           {
             autoAlpha: 1,
           },
-          "-=.5"
+          ">"
         )
         .to(".small_icon", {
           top: "125px",
         })
+
         .addLabel("business_accordion_4")
-        .fromTo(
-          ".business_heading_4",
-          {
-            autoAlpha: 0.5,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        .from(".business_heading_4", {
+          autoAlpha: 0.5,
+        })
         .to(".business_para_4", {
           autoAlpha: 1,
-          delay: 1,
-          duration: 7,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
         })
-        .to(".business_para_4", {
-          delay: 1,
-          autoAlpha: 0,
-          duration: 7,
-        })
-        .fromTo(
-          ".business_heading_4",
+        .addLabel("business_accordion_4")
+        .to(
+          ".business_para_4",
           {
-            autoAlpha: 1,
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
           },
-          {
-            autoAlpha: 0.5,
-          }
+          "+=50"
         )
+        .to(".business_heading_4", {
+          autoAlpha: 0.5,
+        })
         .fromTo(
           ".main_text",
           {
@@ -251,7 +246,7 @@ const Business = () => {
           {
             autoAlpha: 0,
           },
-          "+=.5"
+          ">"
         );
     });
 
@@ -296,6 +291,7 @@ const Business = () => {
         .to(".small_icon", {
           top: "5px",
         })
+
         .from(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -339,119 +335,199 @@ const Business = () => {
         .to(".small_icon", {
           top: "60px",
         })
-        .addLabel("business_accordion_2")
+
+        // .addLabel("business_accordion_2")
+        // .from(".business_heading_2", {
+        //   autoAlpha: 0.5,
+        // })
+        // .to(".business_para_2", {
+        //   autoAlpha: 1,
+        // })
+        // .to(".business_para_2", {
+        //   autoAlpha: 0,
+        //   delay: 1,
+        //   duration: 7,
+        // })
+
+        // .fromTo(
+        //   ".business_heading_2",
+        //   {
+        //     autoAlpha: 1,
+        //   },
+        //   {
+        //     autoAlpha: 0.5,
+        //   }
+        // )
+
         .from(".business_heading_2", {
           autoAlpha: 0.5,
         })
         .to(".business_para_2", {
           autoAlpha: 1,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
         })
-        .to(".business_para_2", {
-          autoAlpha: 0,
-          delay: 1,
-          duration: 7,
-        })
-        .fromTo(
-          ".business_heading_2",
+        .addLabel("business_accordion_2")
+        .to(
+          ".business_para_2",
           {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0.5,
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
           }
+          // "+=50"
         )
+        .to(".business_heading_2", {
+          autoAlpha: 0.5,
+        })
+
         .to(
           ".business_img_2",
           {
             autoAlpha: 0,
           },
-          "-=.5"
+          "<"
         )
         .to(
           ".business_img_3",
           {
             autoAlpha: 1,
           },
-          "-=.5"
+          ">"
         )
         .to(".small_icon", {
           top: "100px",
         })
-        .addLabel("business_accordion_3")
-        .fromTo(
-          ".business_heading_3",
-          {
-            autoAlpha: 0.5,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+
+        // .addLabel("business_accordion_3")
+        // .fromTo(
+        //   ".business_heading_3",
+        //   {
+        //     autoAlpha: 0.5,
+        //   },
+        //   {
+        //     autoAlpha: 1,
+        //   }
+        // )
+        // .to(".business_para_3", {
+        //   autoAlpha: 1,
+        //   delay: 1,
+        //   duration: 7,
+        // })
+        // .to(".business_para_3", {
+        //   delay: 1,
+        //   autoAlpha: 0,
+        //   duration: 7,
+        // })
+        // .fromTo(
+        //   ".business_heading_3",
+        //   {
+        //     autoAlpha: 1,
+        //   },
+        //   {
+        //     autoAlpha: 0.5,
+        //   }
+        // )
+        .from(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
         .to(".business_para_3", {
           autoAlpha: 1,
-          delay: 1,
-          duration: 7,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
         })
-        .to(".business_para_3", {
-          delay: 1,
-          autoAlpha: 0,
-          duration: 7,
-        })
-        .fromTo(
-          ".business_heading_3",
+        .addLabel("business_accordion_3")
+        .to(
+          ".business_para_3",
           {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0.5,
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
           }
+          // "+=50"
         )
+        .to(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
         .to(
           ".business_img_3",
           {
             autoAlpha: 0,
           },
-          "-=.5"
+          "<"
         )
         .to(
           ".business_img_4",
           {
             autoAlpha: 1,
           },
-          "-=.5"
+          ">"
         )
         .to(".small_icon", {
           top: "140px",
         })
+
+        // .addLabel("business_accordion_4")
+        // .fromTo(
+        //   ".business_heading_4",
+        //   {
+        //     autoAlpha: 0.5,
+        //   },
+        //   {
+        //     autoAlpha: 1,
+        //   }
+        // )
+        // .to(".business_para_4", {
+        //   autoAlpha: 1,
+        //   delay: 1,
+        //   duration: 7,
+        // })
+        // .to(".business_para_4", {
+        //   delay: 1,
+        //   autoAlpha: 0,
+        //   duration: 7,
+        // })
+        // .fromTo(
+        //   ".business_heading_4",
+        //   {
+        //     autoAlpha: 1,
+        //   },
+        //   {
+        //     autoAlpha: 0.5,
+        //   }
+        // )
         .addLabel("business_accordion_4")
-        .fromTo(
-          ".business_heading_4",
-          {
-            autoAlpha: 0.5,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        .from(".business_heading_4", {
+          autoAlpha: 0.5,
+        })
         .to(".business_para_4", {
           autoAlpha: 1,
-          delay: 1,
-          duration: 7,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
         })
-        .to(".business_para_4", {
-          delay: 1,
-          autoAlpha: 0,
-          duration: 7,
-        })
-        .fromTo(
-          ".business_heading_4",
+        .addLabel("business_accordion_4")
+        .to(
+          ".business_para_4",
           {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0.5,
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
           }
+          // "+=50"
         )
+        .to(".business_heading_4", {
+          autoAlpha: 0.5,
+        })
+
         .fromTo(
           ".main_text",
           {
@@ -591,7 +667,7 @@ const Business = () => {
                     src={businessIconSmall}
                     alt="small-arrow-icon"
                   />
-                  <div className=" ps-5 ps-xxl-0">
+                  <div className="ps-5 ps-xxl-0">
                     <h3
                       className="font_5xl color_dark_gray business_heading_1 cursor_pointer"
                       onClick={() => moveTo("servizi", "business_accordion_1")}
@@ -604,41 +680,41 @@ const Business = () => {
                       e native advertising
                     </p>
                   </div>
-                  <div className=" ps-5 ps-xxl-0 pt-3">
+                  <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
                       className="font_5xl color_dark_gray business_heading_2 cursor_pointer"
                       onClick={() => moveTo("servizi", "business_accordion_2")}
                     >
                       LANDING CONVERSAZIONALE
                     </h3>
-                    <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_2 color_dark_gray pe-xl-5 m_w_business_text">
+                    <p className="overflow-hidden ff_mundial_light font_2xl business_para_2 color_dark_gray pe-xl-5 m_w_business_text">
                       Landingpage su misura per i nostri partner e conformi
                       al&nbsp;
                       <span className="ff_mundial_bold">regolamento GDPR</span>
                       &nbsp; per l’acquisizione di contatti qualificati.
                     </p>
                   </div>
-                  <div className=" ps-5 ps-xxl-0 pt-3">
+                  <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
                       className="font_5xl color_dark_gray business_heading_3 cursor_pointer"
                       onClick={() => moveTo("servizi", "business_accordion_3")}
                     >
                       VALIDAZIONE AUTOMATICA DEI DATI
                     </h3>
-                    <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_3 color_dark_gray pe-xl-5 m_w_business_text">
+                    <p className="overflow-hidden ff_mundial_light font_2xl business_para_3 color_dark_gray pe-xl-5 m_w_business_text">
                       Meno tempo e maggiore conversione grazie al nostro&nbsp;
                       <span className="ff_mundial_bold">software di I.A.</span>
                       &nbsp; per la validazione real-time dei dati degli utenti
                     </p>
                   </div>
-                  <div className=" ps-5 ps-xxl-0 pt-3">
+                  <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
                       className="font_5xl color_dark_gray business_heading_4 cursor_pointer"
                       onClick={() => moveTo("servizi", "business_accordion_4")}
                     >
                       TRASMISSIONE LEAD
                     </h3>
-                    <p className="ff_mundial_light mt-3 pt-5 font_2xl position-absolute business_para_4 color_dark_gray pe-xl-5 m_w_business_text">
+                    <p className="overflow-hidden ff_mundial_light font_2xl business_para_4 color_dark_gray pe-xl-5 m_w_business_text">
                       I lead generati vengono sottoposti ad un attento processo
                       di filtraggio e controllo tramite API o integrazione con
                       il CRM del partner prima di essere inviati
