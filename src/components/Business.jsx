@@ -39,7 +39,7 @@ const Business = () => {
           {
             scale: 0.5,
             duration: 5,
-            autoAlpha: 0,
+            autoAlpha: 0.5,
           },
           {
             scale: 1,
@@ -290,7 +290,7 @@ const Business = () => {
           {
             scale: 0.5,
             duration: 5,
-            autoAlpha: 0,
+            autoAlpha: 0.5,
           }
         )
         // .to(
@@ -333,6 +333,19 @@ const Business = () => {
         },
       });
       busniessParentt
+        .fromTo(
+          ".main_text",
+          {
+            scale: 0.5,
+            duration: 5,
+            autoAlpha: 0.5,
+          },
+          {
+            scale: 1,
+            duration: 5,
+            autoAlpha: 1,
+          }
+        )
         .to(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -556,13 +569,26 @@ const Business = () => {
           }
         )
 
-        .to(
+        .fromTo(
           ".main_text",
           {
-            autoAlpha: 0,
+            scale: 1,
+            duration: 5,
+            autoAlpha: 1,
           },
-          "+=.5"
+          {
+            scale: 0.5,
+            duration: 5,
+            autoAlpha: 0.5,
+          }
         )
+        // .to(
+        //   ".main_text",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=.5"
+        // )
         .to(
           ".business_left_icon",
           {
