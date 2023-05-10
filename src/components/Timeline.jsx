@@ -47,7 +47,7 @@ const FifthSection = () => {
           end: "bottom top",
           scrub: 5,
           pin: true,
-          pinSpacing: true,
+          pinSpacing: false,
         },
       });
       timeline
