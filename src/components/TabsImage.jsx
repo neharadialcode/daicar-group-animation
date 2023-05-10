@@ -9,6 +9,7 @@ import tabImg4 from "../assets/images/png/tab-4.png";
 import tabImg5 from "../assets/images/png/tab-5.png";
 import tabImg6 from "../assets/images/png/tab-6.png";
 import smallTabImg from "../assets/images/png/small-tab-img.png";
+
 const TabsImage = () => {
   gsap.registerPlugin(ScrollTrigger);
   const buttonData = [
@@ -358,7 +359,7 @@ const TabsImage = () => {
         .to(
           ".side_icon",
           {
-            bottom: "50%",
+            bottom: "45%",
           },
           "-=.5"
         )
