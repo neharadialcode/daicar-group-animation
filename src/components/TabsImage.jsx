@@ -51,7 +51,8 @@ const TabsImage = () => {
         scrollTrigger: {
           trigger: ".tab_parent",
           start: "top top",
-          end: "bottom top",
+          // end: "bottom top",
+          end: "+=400%",
           scrub: 1,
           pin: true,
         },
