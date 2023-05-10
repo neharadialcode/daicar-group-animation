@@ -63,9 +63,8 @@ const Business = () => {
           height: "200px",
           duration: 7,
         })
-        .addLabel("business_accordion_1")
         .fromTo(
-          "business_heading_1",
+          ".business_heading_1",
           {
             autoAlpha: 0.5,
           },
@@ -73,6 +72,7 @@ const Business = () => {
             autoAlpha: 1,
           }
         )
+        .addLabel("business_accordion_1")
         .to(".business_para_1", {
           autoAlpha: 1,
           delay: 1,
@@ -123,7 +123,7 @@ const Business = () => {
         })
         .addLabel("business_accordion_2")
         .fromTo(
-          "business_heading_2",
+          ".business_heading_2",
           {
             autoAlpha: 0.5,
           },
@@ -151,7 +151,7 @@ const Business = () => {
         )
         .addLabel("business_accordion_3")
         .fromTo(
-          "business_heading_3",
+          ".business_heading_3",
           {
             autoAlpha: 1,
           },
@@ -239,7 +239,7 @@ const Business = () => {
         })
         .addLabel("business_accordion_4")
         .fromTo(
-          "business_heading_4",
+          ".business_heading_4",
           {
             autoAlpha: 0.5,
           },
@@ -576,25 +576,25 @@ const Business = () => {
         },
       });
 
-      tl.addLabel("business_accordion_1") //
+      tl.addLabel("business_accordion_1")
         .from(".business_tab_1", {
           xPercent: "-150",
           stagger: 0.3,
           duration: 1,
         })
-        .addLabel("business_accordion_2") //
+        .addLabel("business_accordion_2")
         .from(".business_tab_2", {
           xPercent: "150",
           stagger: 0.3,
           duration: 1,
         })
-        .addLabel("business_accordion_3") //
+        .addLabel("business_accordion_3")
         .from(".business_tab_3", {
           xPercent: "-150",
           stagger: 0.3,
           duration: 1,
         })
-        .addLabel("business_accordion_4") //
+        .addLabel("business_accordion_4")
         .from(".business_tab_4", {
           xPercent: "150",
           stagger: 0.3,
@@ -603,11 +603,21 @@ const Business = () => {
     });
   }, []);
 
-  const moveTo = (id) => {
-    const pos = Math.ceil(
-      document.body.scrollHeight * (tl.labels[id] / tl.duration())
+  // const moveTo = (id) => {
+  //   const pos = Math.ceil(
+  //     document.body.scrollHeight * (tl.labels[id] / tl.duration())
+  //   );
+  //   gsap.to(window, { duration: 0.3, scrollTo: pos, ease: "linear" });
+  // };
+
+  const moveTo = (sectionId, id) => {
+    const section = document.querySelector(`#${sectionId}`);
+    const pos1 = Math.ceil(
+      section.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
+        section.parentNode.offsetTop
     );
-    gsap.to(window, { duration: 0.3, scrollTo: pos, ease: "linear" });
+    console.log(pos1);
+    gsap.to(window, { duration: 0.3, scrollTo: pos1, ease: "linear" });
   };
   return (
     <div
@@ -673,7 +683,7 @@ const Business = () => {
                 <div className="heading_1 ps-5 ps-xxl-0">
                   <h3
                     className="font_5xl color_dark_gray business_heading_1 cursor_pointer"
-                    onClick={() => moveTo("business_accordion_1")}
+                    onClick={() => moveTo("servizi", "business_accordion_1")}
                   >
                     GENERAZIONE TRAFFICO
                   </h3>
@@ -686,7 +696,7 @@ const Business = () => {
                 <div className="heading_2 ps-5 ps-xxl-0 pt-3">
                   <h3
                     className="font_5xl color_dark_gray business_heading_2 cursor_pointer"
-                    onClick={() => moveTo("business_accordion_2")}
+                    onClick={() => moveTo("servizi", "business_accordion_2")}
                   >
                     LANDING CONVERSAZIONALE
                   </h3>
@@ -700,7 +710,7 @@ const Business = () => {
                 <div className="heading_3 ps-5 ps-xxl-0 pt-3">
                   <h3
                     className="font_5xl color_dark_gray business_heading_3 cursor_pointer"
-                    onClick={() => moveTo("business_accordion_3")}
+                    onClick={() => moveTo("servizi", "business_accordion_3")}
                   >
                     VALIDAZIONE AUTOMATICA DEI DATI
                   </h3>
@@ -713,7 +723,7 @@ const Business = () => {
                 <div className="heading_4 ps-5 ps-xxl-0 pt-3">
                   <h3
                     className="font_5xl color_dark_gray business_heading_4 cursor_pointer"
-                    onClick={() => moveTo("business_accordion_4")}
+                    onClick={() => moveTo("servizi", "business_accordion_4")}
                   >
                     TRASMISSIONE LEAD
                   </h3>
