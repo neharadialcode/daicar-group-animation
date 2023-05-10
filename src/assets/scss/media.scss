@@ -408,6 +408,12 @@
   .timeline_arrow_icon {
     top: 53%;
   }
+  .arrow_tabs {
+    transform: scale(1.4);
+  }
+  .tab_right_icon {
+    right: -9% !important;
+  }
 }
 
 @media (max-width: 1199.98px) {

@@ -411,7 +411,6 @@ const TabsImage = () => {
           end: "bottom top",
           scrub: 1,
           pin: true,
-          pinSpacing: true,
         },
       });
       tabimageparent2.fromTo(
