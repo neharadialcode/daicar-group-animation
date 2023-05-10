@@ -54,22 +54,9 @@ const TabsImage = () => {
           end: "bottom top",
           scrub: 1,
           pin: true,
-          // pinSpacing: false,
         },
       });
       tabimageparent
-        .to(".left_text_2", {
-          autoAlpha: 0,
-        })
-        .to(".left_text_3", {
-          autoAlpha: 0,
-        })
-        .to(".left_text_4", {
-          autoAlpha: 0,
-        })
-        .to(".left_text_5", {
-          autoAlpha: 0,
-        })
         .to(
           ".active_button_0",
           {
