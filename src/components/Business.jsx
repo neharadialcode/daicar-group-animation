@@ -112,10 +112,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "45px",
         })
-        // .to(".heading_2", {
-        //   height: "200px",
-        //   duration: 7,
-        // })
         .addLabel("business_accordion_2")
         .fromTo(
           ".business_heading_2",
@@ -136,14 +132,6 @@ const Business = () => {
           delay: 1,
           duration: 7,
         })
-        // .to(
-        //   ".heading_2",
-        //   {
-        //     height: "40px",
-        //     duration: 7,
-        //   },
-        //   "-=.5"
-        // )
         .addLabel("business_accordion_3")
         .fromTo(
           ".business_heading_3",
@@ -171,10 +159,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "85px",
         })
-        // .to(".heading_3", {
-        //   height: "200px",
-        //   duration: 7,
-        // })
         .fromTo(
           ".business_heading_3",
           {
@@ -194,14 +178,6 @@ const Business = () => {
           autoAlpha: 0,
           duration: 7,
         })
-        // .to(
-        //   ".heading_3",
-        //   {
-        //     height: "40px",
-        //     duration: 7,
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".business_heading_3",
           {
@@ -228,10 +204,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "125px",
         })
-        // .to(".heading_4", {
-        //   height: "200px",
-        //   duration: 7,
-        // })
         .addLabel("business_accordion_4")
         .fromTo(
           ".business_heading_4",
@@ -252,14 +224,6 @@ const Business = () => {
           autoAlpha: 0,
           duration: 7,
         })
-        // .to(
-        //   ".heading_4",
-        //   {
-        //     height: "40px",
-        //     duration: 7,
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".business_heading_4",
           {
@@ -332,10 +296,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "5px",
         })
-        .to(".heading_1", {
-          height: "150px",
-          duration: 7,
-        })
         .from(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -379,10 +339,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "60px",
         })
-        // .to(".heading_2", {
-        //   height: "150px",
-        //   duration: 7,
-        // })
         .addLabel("business_accordion_2")
         .from(".business_heading_2", {
           autoAlpha: 0.5,
@@ -395,14 +351,6 @@ const Business = () => {
           delay: 1,
           duration: 7,
         })
-        // .to(
-        //   ".heading_2",
-        //   {
-        //     height: "40px",
-        //     duration: 7,
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".business_heading_2",
           {
@@ -429,10 +377,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "100px",
         })
-        // .to(".heading_3", {
-        //   height: "150px",
-        //   duration: 7,
-        // })
         .addLabel("business_accordion_3")
         .fromTo(
           ".business_heading_3",
@@ -453,10 +397,6 @@ const Business = () => {
           autoAlpha: 0,
           duration: 7,
         })
-        // .to(".heading_3", {
-        //   height: "40px",
-        //   duration: 7,
-        // })
         .fromTo(
           ".business_heading_3",
           {
@@ -483,10 +423,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "140px",
         })
-        // .to(".heading_4", {
-        //   height: "40px",
-        //   duration: 7,
-        // })
         .addLabel("business_accordion_4")
         .fromTo(
           ".business_heading_4",
@@ -507,10 +443,6 @@ const Business = () => {
           autoAlpha: 0,
           duration: 7,
         })
-        // .to(".heading_4", {
-        //   height: "40px",
-        //   duration: 7,
-        // })
         .fromTo(
           ".business_heading_4",
           {
