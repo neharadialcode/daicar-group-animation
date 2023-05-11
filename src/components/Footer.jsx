@@ -143,11 +143,11 @@ function Footer() {
             </div>
 
             <div className="col-12 col-sm-4 col-md-3 col-lg-2">
-              <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 gap-3 gap-xl-4 social_links_parent">
+              <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 social_links_parent">
                 <a target="blank" href="https://www.instagram.com/">
                   <img src={icon_1} alt="icon_1" />
                 </a>
-                <a target="blank" href="https://www.facebook.com/">
+                <a target="blank" href="https://www.facebook.com/" className="px-3">
                   <img src={icon_2} alt="icon_2" />
                 </a>
                 <a target="blank" href="https://in.linkedin.com/">
