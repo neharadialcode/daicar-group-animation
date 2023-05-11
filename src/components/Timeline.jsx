@@ -44,7 +44,6 @@ const FifthSection = () => {
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
-          // end: "bottom top",
           end: "+=400%",
           scrub: 1,
           pin: true,
@@ -297,7 +296,6 @@ const FifthSection = () => {
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
-          // end: "bottom top",
           end: "+=400%",
           scrub: 5,
           pin: true,
@@ -318,7 +316,7 @@ const FifthSection = () => {
         .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-100vw",
+            left: "-90vw",
           },
           {
             left: "-80vw",
@@ -328,7 +326,7 @@ const FifthSection = () => {
         .fromTo(
           ".timeline_text_1",
           {
-            autoAlpha: 0,
+            autoAlpha: 0.3,
             duration: 2,
           },
           {
