@@ -290,7 +290,7 @@ const Business = () => {
           top: "-25%",
         })
         .to(".small_icon", {
-          top: "5px",
+          top: "13px",
         })
 
         .from(".business_heading_1", {
@@ -334,7 +334,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "60px",
+          top: "73px",
         })
 
         // .addLabel("business_accordion_2")
@@ -400,7 +400,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "100px",
+          top: "138px",
         })
 
         // .addLabel("business_accordion_3")
@@ -471,7 +471,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "140px",
+          top: "200px",
         })
 
         // .addLabel("business_accordion_4")
