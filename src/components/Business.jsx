@@ -256,7 +256,7 @@ const Business = () => {
           trigger: ".business_parent",
           start: "top top",
           // end: "bottom top",
-          end: "+=400%",
+          end: "+=600%",
           scrub: 1,
           pin: true,
         },
@@ -378,8 +378,8 @@ const Business = () => {
             duration: 7,
             height: "0px",
             margin: "0",
-          }
-          // "+=50"
+          },
+          "+=50"
         )
         .to(".business_heading_2", {
           autoAlpha: 0.5,
@@ -450,8 +450,8 @@ const Business = () => {
             duration: 7,
             height: "0px",
             margin: "0",
-          }
-          // "+=50"
+          },
+          "+=50"
         )
         .to(".business_heading_3", {
           autoAlpha: 0.5,
@@ -522,8 +522,8 @@ const Business = () => {
             duration: 7,
             height: "0px",
             margin: "0",
-          }
-          // "+=50"
+          },
+          "+=50"
         )
         .to(".business_heading_4", {
           autoAlpha: 0.5,
