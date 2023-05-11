@@ -70,7 +70,7 @@ const Business = () => {
           top: "-20%",
         })
         .to(".small_icon", {
-          top: "5px",
+          top: "-5px",
         })
 
         .from(".business_heading_1", {
@@ -112,7 +112,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "45px",
+          top: "60px",
         })
 
         .from(".business_heading_2", {
@@ -159,7 +159,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "85px",
+          top: "128px",
         })
         .to(".business_heading_3", {
           autoAlpha: 0.5,
@@ -200,7 +200,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "125px",
+          top: "198px",
         })
 
         .addLabel("business_accordion_4")
@@ -256,7 +256,7 @@ const Business = () => {
           trigger: ".business_parent",
           start: "top top",
           // end: "bottom top",
-          end: "+=400%",
+          end: "+=600%",
           scrub: 1,
           pin: true,
         },
@@ -290,7 +290,7 @@ const Business = () => {
           top: "-25%",
         })
         .to(".small_icon", {
-          top: "5px",
+          top: "13px",
         })
 
         .from(".business_heading_1", {
@@ -334,7 +334,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "60px",
+          top: "73px",
         })
 
         // .addLabel("business_accordion_2")
@@ -378,8 +378,8 @@ const Business = () => {
             duration: 7,
             height: "0px",
             margin: "0",
-          }
-          // "+=50"
+          },
+          "+=50"
         )
         .to(".business_heading_2", {
           autoAlpha: 0.5,
@@ -400,7 +400,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "100px",
+          top: "138px",
         })
 
         // .addLabel("business_accordion_3")
@@ -450,8 +450,8 @@ const Business = () => {
             duration: 7,
             height: "0px",
             margin: "0",
-          }
-          // "+=50"
+          },
+          "+=50"
         )
         .to(".business_heading_3", {
           autoAlpha: 0.5,
@@ -471,7 +471,7 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "140px",
+          top: "200px",
         })
 
         // .addLabel("business_accordion_4")
@@ -522,8 +522,8 @@ const Business = () => {
             duration: 7,
             height: "0px",
             margin: "0",
-          }
-          // "+=50"
+          },
+          "+=50"
         )
         .to(".business_heading_4", {
           autoAlpha: 0.5,
