@@ -1066,6 +1066,9 @@
     vertical-align: middle !important;
     padding: 7px 16px 7px !important;
   }
+  .timeline_text_3 {
+    margin-top: -50px;
+  }
 }
 
 @media (max-width: 379.98px) {
@@ -1080,7 +1083,7 @@
       width: 198px !important;
       padding-left: 0px !important;
     }
-    top: -22% !important;
+    top: -27% !important;
     right: 20px !important;
   }
 }
@@ -1088,6 +1091,10 @@
 @media (min-width: 380px) and (max-width: 400px) {
   .timeline_arrow_icon {
     top: 58.5%;
+  }
+  .icon_3 {
+    top: -20% !important;
+    right: 10% !important;
   }
 }
 
@@ -1097,7 +1104,7 @@
     padding: 5px 12px;
   }
   .icon_2 {
-    top: -50% !important;
+    top: -32% !important;
   }
   .meeting_para {
     min-width: 100% !important;
@@ -1105,5 +1112,8 @@
   }
   .meeting_para .common_button {
     font-size: 18px !important;
+  }
+  .timeline_arrow_icon {
+    top: 60.5%;
   }
 }

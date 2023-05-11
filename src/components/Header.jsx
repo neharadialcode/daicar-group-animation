@@ -157,7 +157,7 @@ const Header = () => {
               </li>
               <a
                 onClick={() => setNavShow(false)}
-                className="mb-0 ff_mundial_bold font_lg color_white_off parliamone sentia_link"
+                className="mb-0 ff_mundial_bold font_lg color_white_off sentia_link"
                 href="#"
               >
                 Sentiamoci
