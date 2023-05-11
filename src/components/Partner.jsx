@@ -93,11 +93,11 @@ const Partner = () => {
               </div>
             </div>
             <div className="pb-lg-5">
-              <div className="row flex-md-wrap justify-content-center align-items-center d-none d-lg-flex my-xl-5 pt-5 pb-xl-4 gap_5 gap_xxl_66">
+              <div className="row flex-md-wrap justify-content-center align-items-center d-none d-lg-flex my-xl-5 pt-5 pb-xl-4 custom_partner_gap custom_gap_partner">
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="leasyslogo cursor_pointer z_index2"
+                      className="leasyslogo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={leasyslogo}
@@ -108,7 +108,7 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="enelexlogo cursor_pointer z_index2"
+                      className="enelexlogo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={enelexlogo}
@@ -119,7 +119,7 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="athlonlogo cursor_pointer z_index2"
+                      className="athlonlogo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={athlonlogo}
@@ -130,7 +130,7 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="insuramalogo cursor_pointer z_index2"
+                      className="insuramalogo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={insurama}
@@ -141,7 +141,7 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="aldlogo cursor_pointer z_index2"
+                      className="aldlogo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={aldlogo}
@@ -152,7 +152,7 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="bmwlogo cursor_pointer z_index2"
+                      className="bmwlogo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={bmwlogo}
@@ -163,7 +163,7 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="toyatologo cursor_pointer z_index2"
+                      className="toyatologo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={toyatologo}
@@ -174,7 +174,7 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="audilogo cursor_pointer z_index2"
+                      className="audilogo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={audilogo}
@@ -185,7 +185,7 @@ const Partner = () => {
                 <div className="col-auto">
                   <div className="w-100">
                     <img
-                      className="jaguarlogo cursor_pointer z_index2"
+                      className="jaguarlogo cursor_pointer z_2"
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                       src={jaguarlogo}
@@ -193,7 +193,10 @@ const Partner = () => {
                     />
                   </div>
                 </div>
-                <div className="parent_para" style={{ opacity: hover ? 1 : 0 }}>
+                <div
+                  className="custom_transition"
+                  style={{ opacity: hover ? 1 : 0 }}
+                >
                   <ParentLogoPara />
                 </div>
               </div>

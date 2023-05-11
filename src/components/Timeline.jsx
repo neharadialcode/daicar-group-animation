@@ -553,7 +553,7 @@ const FifthSection = () => {
         className="vh-100 overflow-hidden timeline_parent z-10"
         id="daicar-group"
       >
-        <div className="text-center pt-sm-5 px-sm-5 px-lg-0 forth_heading z-10 position-absolute timeline_text_heading">
+        <div className="text-center pt-sm-5 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
           <p className="font_5xl text-white px-mdx-5 px-lg-0 mx-mdx-5 mx-lg-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
@@ -565,7 +565,7 @@ const FifthSection = () => {
           <img src={timelineLeftIcon} alt="timeline-left-icon" />
         </div>
         <div className="bg_dark_gray vh-100 position-absolute w-100"></div>
-        <div className="vh-100 d-flex flex-column justify-content-center z_index2 position-relative">
+        <div className="vh-100 d-flex flex-column justify-content-center z_2 position-relative">
           <div className="d-flex timeline_slide_content justify-content-center">
             <div
               className="timeline_text_1 text-white"
@@ -580,7 +580,7 @@ const FifthSection = () => {
                 Carplanner.com nasce nel 2015 posizionandosi nel settore
                 automotive, specializzata nella lead generation innovativa.
               </p>
-              <button className="font_xl fw-normal color_white_off timeline_btn pulse bg-transparent">
+              <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
                 automotive
               </button>
             </div>
@@ -609,13 +609,13 @@ const FifthSection = () => {
                 qualificate.
               </p>
               <div className="d-flex align-items-center gap-1 gap-sm-3 mt-4 mt-lg-0">
-                <button className="font_xl fw-normal color_white_off timeline_btn pulse bg-transparent">
+                <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
                   finanza
                 </button>
-                <button className="font_xl fw-normal color_white_off timeline_btn pulse bg-transparent">
+                <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
                   assicurazione
                 </button>
-                <button className="font_xl fw-normal color_white_off timeline_btn pulse bg-transparent">
+                <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
                   telco
                 </button>
               </div>

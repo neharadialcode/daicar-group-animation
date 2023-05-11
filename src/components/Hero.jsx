@@ -40,7 +40,7 @@ const Hero = () => {
     });
 
     secondSlide
-      .to(".second_slide_parent", {
+      .to(".hero_slide_parent", {
         yPercent: -100,
         duration: 1,
         delay: 1,
@@ -117,7 +117,7 @@ const Hero = () => {
       )
 
       .to(
-        ".second_slide_parent",
+        ".hero_slide_parent",
         {
           scale: 0.8,
           duration: 1,
@@ -227,7 +227,7 @@ const Hero = () => {
                 <Icon4_2 />
               </div>
             </div>
-            <div className="second_slide_parent">
+            <div className="hero_slide_parent">
               <div className="i_pad_img">
                 <img
                   className="w-100 d-none d-lg-block"
@@ -245,11 +245,11 @@ const Hero = () => {
                   alt="i_pad_img2"
                 />
               </div>
-              <div className="w-100 d-flex flex-column justify-content-center second_section_text align-items-center text-white vh-100 ">
+              <div className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white vh-100 ">
                 <div className="hero_slide_1">
                   <h2 className="ff_mundial_regular font_4xl mb-0 text-center flex align-items-center">
                     Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-2 mx-lg-3">
+                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-2 mx-lg-3">
                       vendite
                     </span>
                     è digitale
@@ -257,12 +257,12 @@ const Hero = () => {
                   <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     200.000
                   </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 slide_para_1">
+                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 hero_slide_para_1">
                     Lead
                     <span className="ff_mundial_bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 slide_para_2">
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 hero_slide_para_2">
                     Daicar aiuta a far
                     <span className="ff_mundial_bold mx-2">crescere</span> la
                     tua azienda, <br className="d-none d-sm-block" />
@@ -273,7 +273,7 @@ const Hero = () => {
                 <div className="hero_slide_2">
                   <h2 className="ff_mundial_regular font_4xl mb-0 text-center flex align-items-center">
                     Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-2 mx-lg-3">
+                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-2 mx-lg-3">
                       vendite
                     </span>
                     è digitale
@@ -281,12 +281,12 @@ const Hero = () => {
                   <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     10.000
                   </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 slide_para_1">
+                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 hero_slide_para_1">
                     Campagne
                     <span className="ff_mundial_bold mx-2">Generate</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 slide_para_2">
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 hero_slide_para_2">
                     Campaign management
                     <span className="ff_mundial_bold mx-2">flessibile</span> e
                     altamente

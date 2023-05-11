@@ -403,7 +403,7 @@ const TabsImage = () => {
   }, []);
   return (
     <div
-      className="vh-100 d-flex flex-column justify-content-center tab_parent bg_light_white overflow-hidden z_index2"
+      className="vh-100 d-flex flex-column justify-content-center tab_parent bg_light_white overflow-hidden z_2"
       id="main-assets"
     >
       <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">

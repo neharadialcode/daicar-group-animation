@@ -2,22 +2,12 @@
   .common_gap {
     gap: 19px;
   }
-  // .common_button {
-  //   padding: 8px 6px;
-  // }
-  // .meeting_top_space{
-  //   margin-top: 100px;
-  // }
-  .margin_top36 {
+  .custom_margin_footer {
     margin-top: 24px !important;
   }
   .custom_content_padding {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
-  }
-  .padding_y55 {
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
   .social_links_parent a img {
     width: 36px;
@@ -33,37 +23,15 @@
   .common_gap {
     gap: 20px;
   }
-  // .common_button {
-  //   padding: 13.3px 34.1px;
-  // }
-  // .meeting_top_space{
-  //   margin-top: 143px;
-  // }
-  // .Calendly_button {
-  //   background: rgba(126, 228, 156, 0.5);
-  //   border: 1px solid #edfafb;
-  //   border-radius: 10px;
-  //   padding: 20px 124px;
-  //   font-weight: 400;
-  // }
   .custom_content_padding {
     padding-top: 15px !important;
     padding-bottom: 50px !important;
-  }
-  .padding_y55 {
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
 }
 
 @media (min-width: 992px) {
   .custom_content_padding {
-    // padding-top: 163px !important;
     padding-bottom: 163px !important;
-  }
-  .padding_y55 {
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
   .contact_icon {
     width: 39px;
@@ -85,21 +53,31 @@
     width: 46px;
     height: 46px;
   }
+  .navbar_links .font_sm {
+    font-size: 16px !important;
+  }
+  .navbar_btn {
+    font-size: 24px !important;
+  }
+  .common_gap {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1399.98px) {
+  .common_container {
+    max-width: 1280px !important;
+  }
 }
 
 @media (min-width: 1400px) {
-  .margin_top36 {
+  .custom_margin_footer {
     margin-top: 30px !important;
-  }
-  .padding_y55 {
-    padding-top: 55px;
-    padding-bottom: 55px;
   }
   .common_gap {
     gap: 55px;
   }
   .common_container {
-    // max-width: 1475px;
     margin-left: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
@@ -111,26 +89,26 @@
 }
 
 @media (min-width: 1600px) {
-  .roadmap_icon_2 {
+  .about_icon_2 {
     max-width: 600px !important;
   }
-  .roadmap_icon_1 {
+  .about_icon_1 {
     max-width: 600px !important;
   }
-  .roadmap_col_content {
+  .about_col_content {
     max-width: 660px !important;
   }
-  .roadmap_text_1 {
+  .about_text_1 {
     h4 {
       max-width: 900px;
     }
   }
-  .roadmap_text_2 {
+  .about_text_2 {
     h4 {
       max-width: 840px;
     }
   }
-  .roadmap_text_3 {
+  .about_text_3 {
     h4 {
       max-width: 840px;
     }
@@ -217,7 +195,7 @@
     max-width: 280.38px;
     min-height: 85.83px;
   }
-  .gap_xxl_66 {
+  .custom_gap_partner {
     gap: 66px !important;
   }
   .heading_1 .m_w_business_text {
@@ -277,7 +255,7 @@
     transform: translateY(20px) !important;
     padding-top: 14px !important;
   }
-  .roadmap_text_1 {
+  .about_text_1 {
     width: 710px !important;
     margin-left: -60px;
   }
@@ -331,7 +309,6 @@
   .timeline_arrow_icon {
     top: 51%;
   }
-
   .timeline_text_4 {
     max-width: 150px;
   }
@@ -341,12 +318,6 @@
   .custom_size_timeline_text {
     font-size: 16px;
   }
-  // .timeline_text_heading {
-  //   left: 24%;
-  // }
-  // .meeting_top_space {
-  //   margin-top: 50px;
-  // }
   .arrow_tabs {
     transform: scale(1.5);
   }
@@ -376,16 +347,11 @@
 }
 
 @media (max-width: 1399.98px) {
-  .roadmap_icon_2 {
+  .about_icon_2 {
     max-width: 370px;
   }
-  .roadmap_icon_1 {
+  .about_icon_1 {
     max-width: 370px;
-  }
-  .roadmapline_set {
-    left: -220px;
-    z-index: 1;
-    width: 100% !important;
   }
   .small_icon {
     left: 0%;
@@ -431,11 +397,18 @@
       max-width: 42px;
     }
   }
-  .roadmap_icon_1 {
+  .about_icon_1 {
     max-width: 300px !important;
   }
-  .roadmap_icon_2 {
+  .about_icon_2 {
     max-width: 300px !important;
+  }
+  .navbar_links.font_sm {
+    font-size: 14px !important;
+  }
+  .navbar_btn {
+    width: 87px;
+    height: 42px;
   }
   .icon_1 {
     top: 6% !important;
@@ -481,9 +454,6 @@
   .footer_background_set {
     height: 650px;
   }
-  // .timeline_text_heading {
-  //   left: 17%;
-  // }
   .timeline_line_img {
     max-width: 710px;
   }
@@ -533,11 +503,40 @@
   .audilogo {
     max-width: 100px;
   }
-  .gap_5 {
+  .custom_partner_gap {
     gap: 40px;
   }
   .noi_btn {
     padding: 8px 24px 12px !important;
+  }
+  .parliamone {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 1.69px;
+      border: 1px solid var(--color-white-off);
+      opacity: 0.5;
+      background-color: var(--color-white-off);
+      right: -25px;
+      top: -16px;
+    }
+  }
+  .btn_close_position {
+    top: 35px;
+    right: 25px;
+    width: 3%;
+  }
+  .logo_width {
+    max-width: 210px;
+  }
+  .navbar_links .font_sm {
+    font-size: 14px !important;
+  }
+  .navbar_btn {
+    width: 87px;
+    height: 42px;
+    padding: 7px 24px 10px;
   }
 }
 
@@ -547,11 +546,6 @@
   }
   .carplanner_logo {
     max-width: 280px;
-  }
-  .roadmapline_set {
-    left: -100px;
-    z-index: 1;
-    width: 100% !important;
   }
   .small_icon_arrow_2 {
     top: 65%;
@@ -573,10 +567,10 @@
     background-color: var(--color-light-green_2);
     height: 100% !important;
   }
-  .roadmap_icon_1 {
+  .about_icon_1 {
     display: none !important;
   }
-  .roadmap_icon_2 {
+  .about_icon_2 {
     display: none !important;
   }
   .roadmap_para {
@@ -625,9 +619,6 @@
   .i_pad_img {
     width: 150%;
   }
-  // .third_sec_height {
-  //   height: unset;
-  // }
   .leasyslogo {
     max-width: 169.39px;
     min-height: 34.16px;
@@ -687,33 +678,25 @@
     max-width: 252.54px;
     min-height: 112.79px;
   }
-  .img_set {
-    height: 130px;
-    display: flex;
-    align-items: center;
-  }
   .hero_slide_1 h3,
   .hero_slide_2 h3 {
     font-size: 80px !important;
     margin-top: 132px !important;
   }
-  .slide_3_btn {
+  .hero_slide_3_btn {
     font-size: 28px !important;
     padding: 2px 20px 13px !important;
   }
-  .slide_para_1 {
+  .hero_slide_para_1 {
     font-size: 24px !important;
   }
-  .slide_para_2 {
+  .hero_slide_para_2 {
     font-size: 32px !important;
   }
   .hero_slide_1 h2,
   .hero_slide_2 h2 {
     font-size: 32px !important;
   }
-  // .timeline_text_heading {
-  //   left: unset;
-  // }
   .custom_size_timeline_text {
     font-size: 24px;
   }
@@ -757,6 +740,41 @@
   .timeline_text_4 {
     top: 40% !important;
     max-width: 200px;
+  }
+  .btn_close_position {
+    top: 46px;
+    right: 48px;
+    width: 3%;
+  }
+  .btn_close_position svg {
+    width: 40px;
+    height: 40px;
+  }
+  .parliamone {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100.69px;
+      border: 1px solid var(--color-white-off);
+      opacity: 0.5;
+      background-color: var(--color-white-off);
+      right: -5px;
+      top: 35px;
+    }
+  }
+  .parliamone {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      border: 1px solid transparent;
+      opacity: 0.5;
+      background-color: transparent;
+      right: -30px;
+      top: -20px;
+    }
   }
 }
 
@@ -803,9 +821,6 @@
       width: 300px !important;
     }
   }
-  .iconsBar {
-    min-width: 150px !important;
-  }
   .crm_slider {
     height: unset;
   }
@@ -837,6 +852,19 @@
   .timeline_text_heading {
     white-space: inherit;
     width: 100%;
+  }
+  .parliamone {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100.69px;
+      border: 1px solid var(--color-white-off);
+      opacity: 0.5;
+      background-color: var(--color-white-off);
+      right: -15px;
+      top: 30px;
+    }
   }
 }
 
@@ -878,7 +906,7 @@
   .common_gap {
     gap: 10px;
   }
-  .margin_top {
+  .meeting_custom_top_space {
     margin-top: 10px;
   }
   .contact_icon {
@@ -891,16 +919,8 @@
     margin-top: 120px;
     margin-bottom: 77px;
   }
-  .margin_top36 {
+  .custom_margin_footer {
     margin-top: 16px;
-  }
-  .text_sm {
-    font-size: 16px !important;
-    font-weight: 500;
-  }
-  .padding_y55 {
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
   .icon_1 {
     svg {
@@ -927,7 +947,7 @@
   .business_parent {
     background: #7ee49c;
   }
-  .slide_para_2 {
+  .hero_slide_para_2 {
     font-size: 20px !important;
   }
   .hero_slide_1 h2,
@@ -981,7 +1001,7 @@
   .icon_2 {
     left: 50% !important;
   }
-  .forth_heading p {
+  .about_text_size p {
     font-size: 28px !important;
   }
   .noi_btn {
@@ -993,6 +1013,54 @@
   }
   .custom_size_timeline_text {
     font-size: 14px;
+  }
+  .logo_width {
+    max-width: 175px;
+    min-height: 30.93px;
+  }
+  .btn_close_position {
+    top: 43px;
+    right: 32px;
+    width: 5%;
+  }
+  .btn_close_position svg {
+    width: 20px;
+    height: 20px;
+  }
+  .navbar_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    max-width: 101px;
+    min-height: 35px;
+    background: rgba(126, 228, 156, 0.5);
+    border: 1px solid var(--color-white-off);
+    border-radius: 10px;
+  }
+  .navbar_overlay_links ul li a,
+  .sentia_link {
+    font-size: 4vw !important;
+  }
+  .navbar_btn {
+    transform: scale(1.1);
+  }
+  .toggle_icon svg {
+    max-width: 26px !important;
+  }
+  .hero_section_heading {
+    max-width: 265px !important;
+  }
+  .hero_section_heading h2 {
+    font-size: 32px !important;
+  }
+  .hero_heading_btn {
+    font-size: 24px !important;
+    height: 42px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    padding: 7px 16px 7px !important;
   }
 }
 

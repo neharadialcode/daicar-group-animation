@@ -16,7 +16,6 @@ const About = () => {
         scrollTrigger: {
           trigger: ".about_parent",
           start: "top top",
-          // end: "bottom top",
           end: "+=400%",
           scrub: 1,
           pin: true,
@@ -24,7 +23,7 @@ const About = () => {
       });
       secondSection4
         .fromTo(
-          ".left_text_forth",
+          ".left_text_about",
           {
             autoAlpha: 0,
           },
@@ -33,7 +32,7 @@ const About = () => {
           }
         )
         .to(
-          ".left_text_forth",
+          ".left_text_about",
           {
             bottom: "0%",
           },
@@ -42,7 +41,7 @@ const About = () => {
 
         // FIRST VALUES
         .fromTo(
-          ".roadmap_icon_1",
+          ".about_icon_1",
           {
             left: "-40%",
           },
@@ -52,7 +51,7 @@ const About = () => {
           }
         )
         .fromTo(
-          ".roadmap_icon_2",
+          ".about_icon_2",
           {
             left: "-40%",
           },
@@ -64,7 +63,7 @@ const About = () => {
         )
 
         .fromTo(
-          ".roadmap_text_1",
+          ".about_text_1",
           {
             autoAlpha: 0,
           },
@@ -77,7 +76,7 @@ const About = () => {
 
         // SECOND VALUES
         .fromTo(
-          ".roadmap_icon_1",
+          ".about_icon_1",
           {
             left: "0%",
           },
@@ -87,7 +86,7 @@ const About = () => {
           }
         )
         .fromTo(
-          ".roadmap_icon_2",
+          ".about_icon_2",
           {
             left: "10%",
           },
@@ -98,7 +97,7 @@ const About = () => {
           "-=.5"
         )
         .to(
-          ".roadmap_text_1",
+          ".about_text_1",
           {
             autoAlpha: 0,
           },
@@ -106,7 +105,7 @@ const About = () => {
           "-=.5"
         )
         .fromTo(
-          ".roadmap_text_2",
+          ".about_text_2",
           {
             autoAlpha: 0,
           },
@@ -117,7 +116,7 @@ const About = () => {
           "-=.1"
         )
         .to(
-          ".left_text_forth",
+          ".left_text_about",
           {
             bottom: "25%",
           },
@@ -126,7 +125,7 @@ const About = () => {
 
         // THIRD VALUES
         .fromTo(
-          ".roadmap_icon_1",
+          ".about_icon_1",
           {
             left: "6%",
           },
@@ -136,7 +135,7 @@ const About = () => {
           }
         )
         .fromTo(
-          ".roadmap_icon_2",
+          ".about_icon_2",
           {
             left: "16%",
           },
@@ -147,7 +146,7 @@ const About = () => {
           "-=.5"
         )
         .to(
-          ".roadmap_text_2",
+          ".about_text_2",
           {
             autoAlpha: 0,
           },
@@ -155,7 +154,7 @@ const About = () => {
           "-=.5"
         )
         .fromTo(
-          ".roadmap_text_3",
+          ".about_text_3",
           {
             autoAlpha: 0,
           },
@@ -166,7 +165,7 @@ const About = () => {
           "-=.1"
         )
         .to(
-          ".left_text_forth",
+          ".left_text_about",
           {
             bottom: "50%",
           },
@@ -179,7 +178,6 @@ const About = () => {
         scrollTrigger: {
           trigger: ".about_parent",
           start: "top top",
-          // end: "bottom top",
           end: "+=400%",
           scrub: 1,
           pin: true,
@@ -189,7 +187,7 @@ const About = () => {
 
         // FIRST VALUES
         .fromTo(
-          ".roadmap_icon_1",
+          ".about_icon_1",
           {
             left: "-50%",
           },
@@ -199,7 +197,7 @@ const About = () => {
           }
         )
         .fromTo(
-          ".roadmap_icon_2",
+          ".about_icon_2",
           {
             left: "-50%",
           },
@@ -211,7 +209,7 @@ const About = () => {
         )
 
         .fromTo(
-          ".roadmap_text_1",
+          ".about_text_1",
           {
             autoAlpha: 0,
           },
@@ -224,7 +222,7 @@ const About = () => {
 
         // SECOND VALUES
         .fromTo(
-          ".roadmap_icon_1",
+          ".about_icon_1",
           {
             left: "5%",
           },
@@ -234,7 +232,7 @@ const About = () => {
           }
         )
         .fromTo(
-          ".roadmap_icon_2",
+          ".about_icon_2",
           {
             left: "10%",
           },
@@ -245,7 +243,7 @@ const About = () => {
           "-=.5"
         )
         .to(
-          ".roadmap_text_1",
+          ".about_text_1",
           {
             autoAlpha: 0,
           },
@@ -253,7 +251,7 @@ const About = () => {
           "-=.5"
         )
         .fromTo(
-          ".roadmap_text_2",
+          ".about_text_2",
           {
             autoAlpha: 0,
           },
@@ -266,7 +264,7 @@ const About = () => {
 
         // THIRD VALUES
         .fromTo(
-          ".roadmap_icon_1",
+          ".about_icon_1",
           {
             left: "10%",
           },
@@ -276,7 +274,7 @@ const About = () => {
           }
         )
         .fromTo(
-          ".roadmap_icon_2",
+          ".about_icon_2",
           {
             left: "15%",
           },
@@ -287,7 +285,7 @@ const About = () => {
           "-=.5"
         )
         .to(
-          ".roadmap_text_2",
+          ".about_text_2",
           {
             autoAlpha: 0,
           },
@@ -295,7 +293,7 @@ const About = () => {
           "-=.5"
         )
         .fromTo(
-          ".roadmap_text_3",
+          ".about_text_3",
           {
             autoAlpha: 0,
           },
@@ -334,10 +332,10 @@ const About = () => {
   }, []);
 
   return (
-    <div className="vh-100 overflow-hidden about_parent bg_light_green">
+    <div className="vh-100 overflow-hidden about_parent bg_light_green z_5">
       <div className="position-relative h-100 z_1">
-        <img className="roadmap_icon_1" src={roadmapImg1} alt="roadmapImg1" />
-        <img className="roadmap_icon_2" src={roadmapImg2} alt="roadmapImg1" />
+        <img className="about_icon_1" src={roadmapImg1} alt="roadmapImg1" />
+        <img className="about_icon_2" src={roadmapImg2} alt="roadmapImg1" />
         <div className="position-absolute d-none d-sm-block d-lg-none z_negative">
           <img
             className="w-100 small_tab_arrow_img_forth"
@@ -345,8 +343,8 @@ const About = () => {
             alt="arrow-tab-img"
           />
         </div>
-        <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 forth_heading z_1">
-          <p className="font_5xl fw-normal text-white pt-xl-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing">
+        <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 about_text_size z_1">
+          <p className="font_5xl text-white pt-xl-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
@@ -354,13 +352,13 @@ const About = () => {
             <span className="text-black">.</span>
           </p>
         </div>
-        <div className="position-absolute z-1 end-0 d-none d-xxl-block pe-5 left_text_forth">
+        <div className="position-absolute z-1 end-0 d-none d-xxl-block pe-5 left_text_about">
           <img src={lefttextImg} alt="business-small-arrow-2" />
         </div>
         <div className="container h-100 pb-5 pb-lg-0">
           <div className="row justify-content-lg-end align-items-center mb-sm-5 my-lg-0">
-            <div className="col-6 roadmap_col_content d-none d-lg-block">
-              <div className="roadmap_text_1 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
+            <div className="col-6 about_col_content d-none d-lg-block">
+              <div className="about_text_1 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
@@ -379,7 +377,7 @@ const About = () => {
                     src={bigFounder}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                  <p className="font_2xl color_dark_gray ps-3 mb-0">
                     Federico,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       CF Tecnology Officer
@@ -388,7 +386,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="roadmap_text_2 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
+              <div className="about_text_2 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
@@ -407,7 +405,7 @@ const About = () => {
                     src={bigFounder2}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                  <p className="font_2xl color_dark_gray ps-3 mb-0">
                     Matteo,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       Business Developmet Manager
@@ -416,7 +414,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="roadmap_text_3 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
+              <div className="about_text_3 text_one_arrow position-absolute ps-3 ps-sm-5 ps-lg-0">
                 <div className="position-absolute small_icon_arrow">
                   <UpArrowNoiIcon />
                 </div>
@@ -435,7 +433,7 @@ const About = () => {
                     src={bigFounder3}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-3 mb-0">
+                  <p className="font_2xl color_dark_gray ps-3 mb-0">
                     Federico,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       IT Manager
@@ -465,7 +463,7 @@ const About = () => {
                     src={bigFounder}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-sm-3 mb-0">
+                  <p className="font_2xl color_dark_gray ps-sm-3 mb-0">
                     Marta Daina,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       Founder
@@ -494,7 +492,7 @@ const About = () => {
                     src={bigFounder2}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-sm-3 mb-0">
+                  <p className="font_2xl color_dark_gray ps-sm-3 mb-0">
                     Matteo,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       Business Developmet Manager
@@ -523,7 +521,7 @@ const About = () => {
                     src={bigFounder3}
                     alt="arrow-founder"
                   />
-                  <p className="font_2xl color_dark_gray fw-normal ps-sm-3 mb-0">
+                  <p className="font_2xl color_dark_gray ps-sm-3 mb-0">
                     Francesca,
                     <span className="fw-light ff_mundial_ligh ms-2">
                       Responsabile Marketing

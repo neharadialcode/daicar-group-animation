@@ -57,43 +57,43 @@ function Meeting() {
             <span className="common_button mx-2 font_2xl mx-sm-3">vendite</span>
             è digitale e hai scoperto
             <br className="d-none d-lg-block"></br>
-            <span className="common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 margin_top">
+            <span className="common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
               come
             </span>
             usiamo il
-            <span className="common_button me-2 font_2xl mx-sm-3 margin_top">
+            <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
               marketing converazionale
             </span>
             e gli
-            <span className="common_button font_2xl mx-2 ms-lg-3 me-sm-3 margin_top">
+            <span className="common_button font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
               strumenti tech-driven
             </span>
             da noi sviluppati&nbsp;
             <br className="d-none d-xl-block"></br>per ottenere una
-            <span className="common_button font_2xl me-2 ms-lg-3 me-sm-3 margin_top">
+            <span className="common_button font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
               qualifica digitale real-time
             </span>
             e trasmetterti così i dati.<br className="d-md-block d-none"></br>
             Vogliamo utilizzare l’esperienza acquisita nel
-            <span className="common_button mx-2 font_2xl mx-sm-3 margin_top">
+            <span className="common_button mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
               tempo
             </span>
             per ideare una strategia
-            <span className="common_button mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 margin_top">
+            <span className="common_button mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
               personalizzata
             </span>
             <br className="d-none d-xl-block"></br>
             proprio come se fossimo il tuo
-            <span className="common_button me-2 font_2xl mx-sm-3 margin_top">
+            <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
               partner
             </span>
             integrato nel tuo team e nel tuo
-            <span className="common_button mx-2 font_2xl me-sm-0 ms-sm-3 margin_top">
+            <span className="common_button mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
               CRM
             </span>
           </p>
 
-          <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_index2">
+          <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2">
             <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
               <button className="ff_mundial_regular hero_btn me-4 me-lg-5 mt-5 mt-sm-0">
                 <span className="d-sm-none">F</span>
@@ -111,11 +111,11 @@ function Meeting() {
                 alt="meetingManImg"
               />
               <p className="mb-0 ff_mundial_regular font_md color_gray d-none d-xl-block">
-                <span className="fw_light">Matteo,</span> Business Development
+                <span className="fw_200">Matteo,</span> Business Development
                 Manager
               </p>
               <p className="mb-0 ff_mundial_regular font_md color_gray d-xl-none">
-                <span className="fw_light">Matteo,</span>
+                <span className="fw_200">Matteo,</span>
                 <br className="d-sm-none" />
                 <span className="ff_mundial_light">
                   Business Development Manager

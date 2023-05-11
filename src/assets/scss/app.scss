@@ -1,6 +1,3 @@
-/* ============DEFINE HERO SECTION CSS START============ */
-/* =================DEFINE CRM SLIDER CODE CSS================= */
-/* =====================BACK TO TOP===================== */
 @-webkit-keyframes up-down {
   50% {
     -webkit-transform: translateY(-10px);
@@ -13,7 +10,6 @@
     transform: translateY(-10px);
   }
 }
-
 .hero_parent {
   height: 100vh;
   overflow: hidden;
@@ -31,7 +27,6 @@
   color: var(--color-white-off) !important;
   background: var(--color-light-green);
 }
-
 .hero_heading {
   height: 100vh;
   display: flex;
@@ -75,12 +70,11 @@
   right: 0;
   bottom: 0;
 }
-
-.second_slide_parent {
+.hero_slide_parent {
   position: relative;
   z-index: -1;
 }
-.second_section_text {
+.hero_section_text {
   min-height: 100vh;
 }
 .i_pad_img {
@@ -108,7 +102,6 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .carplanner_logo {
   max-width: 490px;
 }
@@ -189,22 +182,18 @@
 .business_para_1 {
   top: 0;
   opacity: 0;
-  // transform: rotate(-50deg);
 }
 .business_para_2 {
   top: 40px;
   opacity: 0;
-  // transform: rotate(-50deg);
 }
 .business_para_3 {
   top: 80px;
   opacity: 0;
-  // transform: rotate(-50deg);
 }
 .business_para_4 {
   top: 120px;
   opacity: 0;
-  // transform: rotate(-50deg);
 }
 .small_icon {
   position: absolute;
@@ -213,50 +202,37 @@
 .custom_business_img_height {
   height: 400px;
 }
-.cursor_pointer {
-  cursor: pointer;
-}
-.roadmap_icon_2 {
+.about_icon_2 {
   position: absolute;
   max-width: 400px;
   left: 0;
   top: 50%;
   transform: translateY(-42%);
 }
-.roadmap_icon_1 {
+.about_icon_1 {
   position: absolute;
   max-width: 400px;
   left: 0;
   top: 50%;
   transform: translateY(-42%);
 }
-.roadmap_text_1 {
+.about_text_1 {
   position: absolute;
   opacity: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-.roadmap_text_2 {
+.about_text_2 {
   position: absolute;
   opacity: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-.roadmap_text_3 {
+.about_text_3 {
   position: absolute;
   opacity: 0;
   top: 50%;
   transform: translateY(-50%);
-}
-.z_1 {
-  z-index: 1;
-}
-
-.about_parent {
-  z-index: 5;
-}
-.z_negative {
-  z-index: -1;
 }
 .timeline_arrow_icon {
   position: absolute;
@@ -273,14 +249,6 @@
 .business_icon_img_2 {
   top: 50%;
 }
-
-.opacity_0 {
-  opacity: 0;
-}
-
-// .third_sec_height {
-//   height: 200vh;
-// }
 .timeline_with_dot {
   height: 2px;
   background-color: var(--bg-light-white);
@@ -336,13 +304,13 @@
 .common_padding {
   padding-top: 23px;
 }
-.margin_top {
+.meeting_custom_top_space {
   margin-top: 23px;
 }
-.margin_top36 {
+.custom_margin_footer {
   margin-top: 36px;
 }
-.footer_iocns_hover {
+.footer_icons_hover {
   &:hover {
     img {
       transform: scale(1.2);
@@ -352,31 +320,14 @@
     transition: all 300ms ease-in-out;
   }
 }
-.text_hover {
-  &:hover {
-    color: rgba(83, 132, 153, 0.5);
-  }
-}
 .list_item_text {
   &:hover {
     color: var(--color-light-green);
   }
   transition: all 400ms ease-in-out;
 }
-.svg {
-  &:hover {
-    transform: scale(1.2);
-  }
-  transition: all 400ms ease-in-out;
-}
 .common_margin {
   margin-top: 40px !important;
-}
-.z_index2 {
-  z-index: 2 !important;
-}
-.letter_spacing {
-  letter-spacing: 0.285714px;
 }
 .small_icon_arrow {
   top: 12%;
@@ -433,7 +384,6 @@
 .year_4 {
   right: 10%;
 }
-
 .timeline_slide_content {
   max-width: 845px;
 }
@@ -444,21 +394,6 @@
   position: relative;
   cursor: pointer !important;
   transition: all 0.3s ease-in-out !important;
-}
-.pulse {
-  &:focus {
-    -webkit-animation: pulse 1s;
-    animation: pulse 1s;
-    box-shadow: 0 0 0 0.7em transparent;
-  }
-  &:hover {
-    -webkit-animation: pulse 1s;
-    animation: pulse 1s;
-    box-shadow: 0 0 0 0.7em transparent;
-  }
-}
-.z-10 {
-  z-index: 10;
 }
 .ipad_image {
   width: 160vw;
@@ -471,11 +406,9 @@
   color: var(--color-white-off);
   right: 0;
 }
-
 .partner_para {
   line-height: 167%;
 }
-
 .leasyslogo {
   max-width: 233.07px;
   min-height: 47px;
@@ -544,14 +477,13 @@
   max-width: 280.38px;
   min-height: 85.83px;
 }
-.gap_5 {
+.custom_partner_gap {
   gap: 48px;
 }
 .arrowbtn_set {
   right: 9%;
   top: 10%;
 }
-
 .daicar_arrow_set {
   right: 80px;
   top: 40px;
@@ -564,10 +496,6 @@
   left: 60%;
   top: -14px;
   transform: translateX(-60%);
-}
-.roadmapline_set {
-  left: -350px;
-  z-index: 1;
 }
 .roadmaparrow_left1 {
   left: -26px;
@@ -588,10 +516,6 @@
   width: 100%;
   height: 750px;
 }
-.fw_light {
-  font-weight: 200px !important;
-}
-
 .hero_section_heading {
   transform: translateY(-148px);
 }
@@ -603,10 +527,7 @@
   border: 1px solid var(--color-white-off) !important;
   border-radius: 10px !important;
 }
-.letter_spacing_01 {
-  letter-spacing: -0.01em !important;
-}
-.slide_3_btn {
+.hero_slide_3_btn {
   font-size: var(--font-xl) !important;
   padding: 11px 15px 14px !important;
 }
@@ -628,15 +549,10 @@
     transform: scale(0.94);
   }
 }
-.custom_letter_spacing {
-  letter-spacing: -0.01em !important;
-}
-
 .crm_left_icon {
   right: 5%;
   top: 10%;
 }
-
 .meeting_para {
   line-height: 236% !important;
   max-width: 1302px !important;
@@ -653,4 +569,127 @@
 }
 .tab-side-effect {
   transform: rotate(90deg);
+}
+
+/* HEADER-CSS */
+@-webkit-keyframes navbar_btn {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes navbar_btn {
+  0% {
+    -webkit-box-shadow: 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+.navbar_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 24px 10px;
+  width: 97px;
+  height: 52px;
+  background: rgba(126, 228, 156, 0.5);
+  border: 1px solid var(--color-white-off);
+  border-radius: 10px;
+  transition: all 300ms linear;
+  &:hover {
+    -webkit-animation: navbar_btn 1s;
+    animation: navbar_btn 1s;
+    -webkit-box-shadow: 0 0 0 0.7em transparent;
+    box-shadow: 0 0 0 0.7em transparent;
+  }
+  &:focus {
+    -webkit-animation: navbar_btn 1s;
+    animation: navbar_btn 1s;
+    -webkit-box-shadow: 0 0 0 0.7em transparent;
+    box-shadow: 0 0 0 0.7em transparent;
+  }
+}
+.header_btn {
+  &:hover {
+    background: rgba(57, 176, 93, 0.5);
+    color: white;
+  }
+}
+.parliamone {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 70.47px;
+    width: 1.69px;
+    border: 1px solid var(--color-white-off);
+    opacity: 0.5;
+    background-color: var(--color-white-off);
+    right: -30px;
+    top: -20px;
+  }
+}
+.nav-fix {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  transition: all 700ms ease-in-out !important;
+  display: flex;
+  background: var(--color-dark-gray) !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+  z-index: 12 !important;
+}
+.fix-navbar {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  transition: all 700ms ease-in-out !important;
+  display: flex;
+  background: var(--color-dark-gray) !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+  z-index: 12 !important;
+}
+.nav_bg {
+  background: var(--color-dark-gray) !important;
+}
+.nav_hover {
+  transition: all 400ms ease-in-out;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -7px;
+    background-color: var(--color-light-green);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 500ms ease-in-out;
+  }
+  &:hover {
+    color: var(--color-white-off);
+    &::after {
+      width: 100%;
+    }
+  }
+}
+.btn_close_position {
+  top: 30px;
+  right: 30px;
+  width: 10%;
+}
+.sentia_link {
+  transition: all 500ms ease-in-out;
+  letter-spacing: -0.01em;
+}
+.sentia_link:hover {
+  color: var(--color-light-green);
 }
