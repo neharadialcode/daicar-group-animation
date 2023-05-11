@@ -705,7 +705,8 @@ const Business = () => {
                     <p className="overflow-hidden ff_mundial_light font_2xl business_para_3 color_dark_gray pe-xl-5 m_w_business_text">
                       Meno tempo e maggiore conversione grazie al nostro&nbsp;
                       <span className="ff_mundial_bold">software di I.A.</span>
-                      &nbsp; per la validazione real-time dei dati degli utenti
+                      &nbsp; per la validazione real
+                      <span class="ff_math">-</span>time dei dati degli utenti
                     </p>
                   </div>
                   <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">

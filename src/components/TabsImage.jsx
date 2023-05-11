@@ -24,12 +24,12 @@ const TabsImage = () => {
       para: "usiamo il",
     },
     {
-      buttonText: "strumenti tech-driven",
+      buttonText: `strumenti tech<span class="ff_math">-</span>driven`,
       card_img: tabImg4,
       para: "e gli ",
     },
     {
-      buttonText: "qualifica digitale real-time",
+      buttonText: `qualifica digitale real<span class="ff_math">-</span>time`,
       card_img: tabImg5,
       para: "da noi sviluppati",
     },
@@ -419,7 +419,7 @@ const TabsImage = () => {
         </div>
         <div className="d-flex align-items-center tab-side-effect left_text_3">
           <p className="me-4 color_light_green mb-0">
-            strumenti tech-driven lo facciamo
+            strumenti tech<span className="ff_math">-</span>driven lo facciamo
           </p>
           <TabRightIcon />
         </div>
@@ -464,8 +464,9 @@ const TabsImage = () => {
                   {obj.buttonText && (
                     <button
                       className={`active_button_${index} tabs_btn ms-3 font_2xl color_gray`}
+                      dangerouslySetInnerHTML={{ __html: obj.buttonText }}
                     >
-                      {obj.buttonText}
+                      {/* {obj.buttonText} */}
                     </button>
                   )}
                 </div>
