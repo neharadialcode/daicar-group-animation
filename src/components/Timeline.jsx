@@ -606,11 +606,11 @@ const FifthSection = () => {
                 conversazionale e nella tecnologia proprietaria per la
                 validazione e generazione di lead altamente qualificate.
               </p>
-              <div className="d-flex align-items-center gap-1 gap-sm-3 mt-4 mt-lg-0">
+              <div className="d-flex align-items-center gap-1gap-sm-3 mt-4 mt-lg-0">
                 <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
                   finanza
                 </button>
-                <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
+                <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent mx-2 mx-sm-3">
                   assicurazione
                 </button>
                 <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
