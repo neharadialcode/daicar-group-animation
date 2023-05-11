@@ -3,12 +3,13 @@ import footer_logo from "../assets/images/svg/footer_logo.svg";
 import smsImg from "../assets/images/svg/sms_img.svg";
 import phoneImg from "../assets/images/svg/phone.svg";
 import iconImg from "../assets/images/svg/icon.svg";
-import icon_1 from "../assets/images/svg/icon-1.svg";
-import icon_2 from "../assets/images/svg/icon-2.svg";
-import icon_3 from "../assets/images/svg/icon-3.svg";
+// import icon_1 from "../assets/images/svg/icon-1.svg";
+// import icon_2 from "../assets/images/svg/icon-2.svg";
+// import icon_3 from "../assets/images/svg/icon-3.svg";
 import footerbg from "../assets/images/png/footer_bg.png";
 import footerMobilebg from "../assets/images/png/footer-bg-mobile-sc.png";
 import BackToTop from "./BackToTopButton";
+import { FbIcon, InstagramIcon, Linkedin } from "./Icons";
 
 function Footer() {
   const getnewyear = new Date().getFullYear();
@@ -44,7 +45,7 @@ function Footer() {
                 <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_montserrat">
                   P.IVA 056382975839
                 </p>
-                <p className="mb-0 font_xsm fw_medium color_light_gray list_item_text mt-1 ff_montserrat">
+                <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_montserrat">
                   Designed & developed<br className="d-md-block d-none"></br>
                   alfatauristudio.com
                 </p>
@@ -144,14 +145,29 @@ function Footer() {
 
             <div className="col-12 col-sm-4 col-md-3 col-lg-2">
               <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 social_links_parent">
-                <a target="blank" href="https://www.instagram.com/">
-                  <img src={icon_1} alt="icon_1" />
+                <a
+                  target="blank"
+                  href="https://www.instagram.com/"
+                  className="footer_social_icon"
+                >
+                  <InstagramIcon />
+                  {/* <img src={icon_1} alt="icon_1" /> */}
                 </a>
-                <a target="blank" href="https://www.facebook.com/" className="px-3 px-sm-4">
-                  <img src={icon_2} alt="icon_2" />
+                <a
+                  target="blank"
+                  href="https://www.facebook.com/"
+                  className="px-3 px-sm-4 footer_social_icon"
+                >
+                  <FbIcon />
+                  {/* <img src={icon_2} alt="icon_2" /> */}
                 </a>
-                <a target="blank" href="https://in.linkedin.com/">
-                  <img src={icon_3} alt="icon_3" />
+                <a
+                  target="blank"
+                  href="https://in.linkedin.com/"
+                  className="footer_social_icon"
+                >
+                  <Linkedin />
+                  {/* <img src={icon_3} alt="icon_3" /> */}
                 </a>
               </div>
               <p className="pt-3 pt-sm-0 mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">

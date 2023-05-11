@@ -570,6 +570,17 @@
 .tab-side-effect {
   transform: rotate(90deg);
 }
+.footer_social_icon {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    svg {
+      path {
+        fill: #7ee49c;
+      }
+    }
+  }
+}
 
 /* HEADER-CSS */
 @-webkit-keyframes navbar_btn {
