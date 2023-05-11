@@ -44,8 +44,9 @@ const FifthSection = () => {
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
-          end: "bottom top",
-          scrub: 5,
+          // end: "bottom top",
+          end: "+=400%",
+          scrub: 1,
           pin: true,
         },
       });
@@ -296,7 +297,8 @@ const FifthSection = () => {
         scrollTrigger: {
           trigger: ".timeline_parent",
           start: "top top",
-          end: "bottom top",
+          // end: "bottom top",
+          end: "+=400%",
           scrub: 5,
           pin: true,
         },
