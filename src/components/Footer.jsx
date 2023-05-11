@@ -3,9 +3,6 @@ import footer_logo from "../assets/images/svg/footer_logo.svg";
 import smsImg from "../assets/images/svg/sms_img.svg";
 import phoneImg from "../assets/images/svg/phone.svg";
 import iconImg from "../assets/images/svg/icon.svg";
-// import icon_1 from "../assets/images/svg/icon-1.svg";
-// import icon_2 from "../assets/images/svg/icon-2.svg";
-// import icon_3 from "../assets/images/svg/icon-3.svg";
 import footerbg from "../assets/images/png/footer_bg.png";
 import footerMobilebg from "../assets/images/png/footer-bg-mobile-sc.png";
 import BackToTop from "./BackToTopButton";
@@ -148,18 +145,16 @@ function Footer() {
                 <a
                   target="blank"
                   href="https://www.instagram.com/"
-                  className="footer_social_icon"
+                  className="footer_social_icon  insta_icon"
                 >
                   <InstagramIcon />
-                  {/* <img src={icon_1} alt="icon_1" /> */}
                 </a>
                 <a
                   target="blank"
                   href="https://www.facebook.com/"
-                  className="px-3 px-sm-4 footer_social_icon"
+                  className="mx-3 mx-sm-4 footer_social_icon"
                 >
                   <FbIcon />
-                  {/* <img src={icon_2} alt="icon_2" /> */}
                 </a>
                 <a
                   target="blank"
@@ -167,7 +162,6 @@ function Footer() {
                   className="footer_social_icon"
                 >
                   <Linkedin />
-                  {/* <img src={icon_3} alt="icon_3" /> */}
                 </a>
               </div>
               <p className="pt-3 pt-sm-0 mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
