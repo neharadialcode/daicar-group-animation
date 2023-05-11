@@ -147,7 +147,7 @@ function Footer() {
                 <a target="blank" href="https://www.instagram.com/">
                   <img src={icon_1} alt="icon_1" />
                 </a>
-                <a target="blank" href="https://www.facebook.com/" className="px-3">
+                <a target="blank" href="https://www.facebook.com/" className="px-3 px-sm-4">
                   <img src={icon_2} alt="icon_2" />
                 </a>
                 <a target="blank" href="https://in.linkedin.com/">
