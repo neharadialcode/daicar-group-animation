@@ -662,7 +662,7 @@ const Business = () => {
                     alt="business-big-arrow"
                   />
                 </div>
-                <div className="col-7 col-xl-5 position-relative business-content">
+                <div className="col-6 col-xl-5 position-relative business-content">
                   <img
                     className="small_icon d-none d-lg-block"
                     src={businessIconSmall}
