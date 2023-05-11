@@ -66,12 +66,12 @@ function Meeting() {
             </span>
             e gli
             <span className="common_button font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
-              strumenti tech-driven
+              strumenti tech<span className="ff_math">-</span>driven
             </span>
             da noi sviluppati&nbsp;
             <br className="d-none d-xl-block"></br>per ottenere una
             <span className="common_button font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
-              qualifica digitale real-time
+              qualifica digitale real<span className="ff_math">-</span>time
             </span>
             e trasmetterti così i dati.<br className="d-md-block d-none"></br>
             Vogliamo utilizzare l’esperienza acquisita nel

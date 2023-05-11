@@ -570,16 +570,23 @@
 .tab-side-effect {
   transform: rotate(90deg);
 }
-.footer_social_icon {
+.footer_social_icon,
+.footer_social_icon svg path,
+.insta_icon svg path {
   transition: all 0.3s ease-in-out;
+  border-radius: 50%;
   &:hover {
-    transform: scale(1.2);
+    background-color: var(--color-light-green);
     svg {
       path {
-        fill: #7ee49c;
+        fill: var(--color-dark-gray);
       }
     }
   }
+}
+.insta_icon svg:hover path {
+  fill: var(--color-light-green) !important;
+  stroke: var(--color-dark-gray) !important;
 }
 
 /* HEADER-CSS */

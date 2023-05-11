@@ -599,12 +599,12 @@ const FifthSection = () => {
             >
               <img className="w100" src={timelineImg2} alt="timelineImg2" />
               <p className="font_2xl custom_size_timeline_text fw-normal text-white mb-3 pe-3 pe-sm-5 pe-lg-0 me-sm-3 me-lg-0">
-                Nasce TiGuido.io che trasferisce l’elevato know-how e la
-                tecnologia sviluppata in ambito automotive al servizio di nuovi
-                mercati. Si afferma come Digital Media Partner, pioniere
-                nell’uso del marketing conversazionale e nella tecnologia
-                proprietaria per la validazione e generazione di lead altamente
-                qualificate.
+                Nasce TiGuido.io che trasferisce l’elevato know
+                <span class="ff_math">-</span>how e la tecnologia sviluppata in
+                ambito automotive al servizio di nuovi mercati. Si afferma come
+                Digital Media Partner, pioniere nell’uso del marketing
+                conversazionale e nella tecnologia proprietaria per la
+                validazione e generazione di lead altamente qualificate.
               </p>
               <div className="d-flex align-items-center gap-1gap-sm-3 mt-4 mt-lg-0">
                 <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
