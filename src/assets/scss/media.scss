@@ -871,7 +871,7 @@
     margin-left: -230px;
   }
   .timeline_btn {
-    padding: 0px 20px 4px;
+    padding: 4px 20px 4px;
     vertical-align: middle !important;
   }
   .timeline_text_4 {
@@ -1002,8 +1002,14 @@
   .meeting_para .common_button {
     font-size: 24px !important;
     height: 37px !important;
-    padding: 6.4px 16px !important;
+    // padding: 6.4px 16px !important;
+    padding: 8.4px 16px 6.4px !important;
   }
+
+  .timeline_btn {
+    padding: 6px 20px 4px;
+  }
+
   .meeting_btn_parent button {
     font-size: 20px !important;
     height: 54px !important;
