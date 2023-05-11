@@ -22,7 +22,7 @@ html,
 body {
   font-family: Mundial-regular;
   overflow-x: hidden;
-  background-color: var(--bg-light-white);
+  background-color: var(--color-white-off);
 }
 
 * {
@@ -73,7 +73,6 @@ body {
   --color-light-green: #7ee49c;
   --color-light-green_2: #b5efcb;
   --color-dark-gray: #29424d;
-  --bg-light-white: #edfafb;
 }
 @media (max-width: 1599.98px) {
   :root {
@@ -209,7 +208,7 @@ body {
   font-size: var(--font-8xl);
 }
 .bg_light_white {
-  background-color: var(--bg-light-white);
+  background-color: var(--color-white-off);
 }
 .bg_light_green {
   background-color: var(--color-light-green_2);

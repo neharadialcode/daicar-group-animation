@@ -255,7 +255,6 @@ const Business = () => {
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
-          // end: "bottom top",
           end: "+=600%",
           scrub: 1,
           pin: true,
@@ -589,13 +588,6 @@ const Business = () => {
         });
     });
   }, []);
-
-  // const moveTo = (id) => {
-  //   const pos = Math.ceil(
-  //     document.body.scrollHeight * (tl.labels[id] / tl.duration())
-  //   );
-  //   gsap.to(window, { duration: 0.3, scrollTo: pos, ease: "linear" });
-  // };
 
   const moveTo = (sectionId, id) => {
     const section = document.querySelector(`#${sectionId}`);

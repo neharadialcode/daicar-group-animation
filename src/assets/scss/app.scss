@@ -17,7 +17,7 @@
   position: relative;
   margin-top: -2px !important;
   z-index: 10;
-  background-color: var(--bg-light-white);
+  background-color: var(--color-white-off);
 }
 .hero_btn {
   font-size: var(--font-2xl) !important;
@@ -251,7 +251,7 @@
 }
 .timeline_with_dot {
   height: 2px;
-  background-color: var(--bg-light-white);
+  background-color: var(--color-white-off);
   position: relative;
   &::after {
     position: absolute;

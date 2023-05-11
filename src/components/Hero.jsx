@@ -10,7 +10,6 @@ import Header from "./Header";
 const Hero = () => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    // gsap.from("nav", { yPercent: -50, opacity: 0, duration: 1 });
     gsap.from(".hero_heading", {
       filter: "blur(2px)",
       duration: 3,
@@ -32,7 +31,6 @@ const Hero = () => {
       scrollTrigger: {
         trigger: ".hero_parent",
         start: "top top",
-        // end: "bottom top",
         end: "+=400%",
         scrub: 2,
         pin: true,
@@ -186,10 +184,6 @@ const Hero = () => {
         height: "0vh",
         delay: 2,
       });
-    // .to(".hero_parent", {
-    //   autoAlpha: 0,
-    //   duration: 1,
-    // });
   }, []);
 
   return (

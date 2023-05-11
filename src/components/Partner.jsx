@@ -50,10 +50,8 @@ const Partner = () => {
           trigger: ".partner_slider_parent",
           start: "top top",
           end: "bottom center",
-          // end: "+=100%",
           scrub: 1,
           pin: true,
-          // pinSpacing: true,
         },
       });
       partnerSlider.fromTo(
