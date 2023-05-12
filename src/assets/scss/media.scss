@@ -364,6 +364,9 @@
 }
 
 @media (max-width: 1399.98px) {
+  .big_icon {
+    transform: scale(2);
+  }
   .icon_4 {
     left: 6.5%;
   }
@@ -417,6 +420,9 @@
 }
 
 @media (max-width: 1199.98px) {
+  .arrow_tabs {
+    left: 5%;
+  }
   .icon_4 {
     left: -4.5%;
   }
