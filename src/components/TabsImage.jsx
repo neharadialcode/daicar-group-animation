@@ -7,7 +7,6 @@ import tabImg3 from "../assets/images/png/tab-3.png";
 import tabImg4 from "../assets/images/png/tab-4.png";
 import tabImg5 from "../assets/images/png/tab-5.png";
 import tabImg6 from "../assets/images/png/tab-6.png";
-import smallTabImg from "../assets/images/png/small-tab-img.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 const TabsImage = () => {
@@ -54,9 +53,6 @@ const TabsImage = () => {
   ];
 
   useEffect(() => {
-    let mm = gsap.matchMedia();
-
-    mm.add("(min-width:768px)", () => {
       tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".tab_parent",
@@ -370,27 +366,6 @@ const TabsImage = () => {
             top: "10px",
           }
         );
-    });
-    mm.add("(max-width:767.98px)", () => {
-      tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".tab_parent",
-          start: "top top",
-          end: "bottom top",
-          scrub: 1,
-          pin: true,
-        },
-      });
-      tl2.fromTo(
-        ".small_tab",
-        {
-          scale: 1.5,
-        },
-        {
-          scale: 1,
-        }
-      );
-    });
   }, []);
 
   const moveToIt = (sectionId, id) => {
@@ -435,8 +410,8 @@ const TabsImage = () => {
         </div>
       </div>
 
-      <div className="max_width_tabs position-relative d-none d-md-block">
-        <div className="arrow_tabs position-absolute">
+      <div className="max_width_tabs position-relative">
+        <div className="arrow_tabs position-absolute d-none d-md-block">
           <Icon5 />
         </div>
         <img
@@ -445,9 +420,9 @@ const TabsImage = () => {
           alt="img"
         />
         <div className="text-center">
-          <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-5 pt-lg-0">
+          <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0">
             {buttonData.map((obj, index) => (
-              <div className="px-2 pt-2" key={index}>
+              <div className="px-2 pt-sm-2" key={index}>
                 <div className={`card_img_${index}`}>
                   <img
                     className={`${
@@ -459,7 +434,7 @@ const TabsImage = () => {
                     alt="card_img"
                   />
                 </div>
-                <div className="d-none d-md-flex align-items-center pt-3 pt-lg-0">
+                <div className="d-flex align-items-center pt-2 pt-sm-3 pt-lg-0">
                   <p className="font_2xl color_gray pt-3">{obj.para}</p>
                   {obj.buttonText &&
                     (console.log(obj.buttonId, "hello"),
@@ -475,9 +450,6 @@ const TabsImage = () => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="d-md-none small_tab">
-        <img className="w-100" src={smallTabImg} alt="small-tab-img" />
       </div>
     </div>
   );

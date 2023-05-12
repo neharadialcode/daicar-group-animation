@@ -490,7 +490,6 @@
   .custom_height_tab_img {
     height: 550px;
     max-height: 450px;
-    left: 15% !important;
   }
   .i_pad_img_2 {
     margin-left: 155px;
@@ -934,6 +933,17 @@
 }
 
 @media (max-width: 575.98px) {
+  .i_pad_img_2 {
+    margin-left: unset;
+  }
+  .custom_height_tab_img {
+    left: 0% !important;
+    width: 100% !important;
+    height: unset;
+  }
+  .tabs_btn {
+    padding: 8px 14px;
+  }
   .icon_4 {
     left: -32.5%;
   }

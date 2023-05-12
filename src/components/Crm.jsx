@@ -9,16 +9,6 @@ import { gsap } from "gsap";
 const Crm = () => {
   useEffect(() => {
     let crmValues = gsap.matchMedia();
-    // crmValues.add("(min-width:992px)", () => {
-    //   let crm = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: ".crm_parent",
-    //       pin: true,
-    //       pinSpacing: false,
-    //     },
-    //   });
-    // });
-
     crmValues.add("(min-width:576px) and (max-width:991.98px)", () => {
       let crmicons = gsap.timeline({
         scrollTrigger: {
