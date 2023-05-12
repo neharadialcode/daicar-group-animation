@@ -288,9 +288,9 @@
 .small_tab_arrow_img {
   height: 155vh;
 }
-.small_tab_arrow_img_forth {
-  height: 110vh;
-}
+// .small_tab_arrow_img_forth {
+//   height: 110vh;
+// }
 .common_button {
   background: rgba(126, 228, 156, 0.5);
   border: 1px solid var(--color-white-off);
@@ -710,4 +710,8 @@
 }
 .sentia_link:hover {
   color: var(--color-light-green);
+}
+
+.top_minus_space {
+  margin-top: -2px;
 }

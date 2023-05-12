@@ -6,6 +6,7 @@ import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
 import bigFounder3 from "../assets/images/png/big-founder-federico-img-2.png";
 import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
+import topArrow from "../assets/images/png/about-top-arrow.png";
 import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 const About = () => {
@@ -332,8 +333,11 @@ const About = () => {
   }, []);
 
   return (
-    <div className="vh-100 overflow-hidden about_parent bg_light_green z_5">
+    <div className="vh-100 overflow-hidden about_parent bg_light_green z_5 top_minus_space">
       <div className="position-relative h-100 z_1">
+        <div className="position-absolute z_negative d-none d-lg-block">
+          <img className="w-100" src={topArrow} alt="about-top-arrow" />
+        </div>
         <img className="about_icon_1" src={roadmapImg1} alt="roadmapImg1" />
         <img className="about_icon_2" src={roadmapImg2} alt="roadmapImg1" />
         <div className="position-absolute d-none d-sm-block d-lg-none z_negative">
