@@ -89,6 +89,9 @@
 }
 
 @media (min-width: 1600px) {
+  .icon_4 {
+    left: 21.5%;
+  }
   .about_icon_2 {
     max-width: 600px !important;
   }
@@ -285,6 +288,9 @@
       width: 450px !important;
     }
   }
+  .icon_4 {
+    left: 13.5%;
+  }
   .custom_height_tab_img {
     max-height: 565px;
     width: 70% !important;
@@ -327,6 +333,13 @@
 }
 
 @media (max-width: 1499.98px) {
+  .icon_4 {
+    left: 11.5%;
+  }
+  // .icon_3 {
+  //   top: 30% !important;
+  //   right: 86px !important;
+  // }
   .m_w_business_text {
     max-width: 500px;
   }
@@ -351,6 +364,12 @@
 }
 
 @media (max-width: 1399.98px) {
+  .big_icon {
+    transform: scale(2);
+  }
+  .icon_4 {
+    left: 6.5%;
+  }
   .about_icon_2 {
     max-width: 370px;
   }
@@ -401,6 +420,12 @@
 }
 
 @media (max-width: 1199.98px) {
+  .arrow_tabs {
+    left: 5%;
+  }
+  .icon_4 {
+    left: -4.5%;
+  }
   .carplanner_cards {
     width: 420px;
   }
@@ -572,6 +597,9 @@
 }
 
 @media (max-width: 991.98px) {
+  .icon_4 {
+    left: -23.5%;
+  }
   .carplanner_cards {
     width: 350px;
   }
@@ -900,6 +928,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .icon_4 {
+    left: -32.5%;
+  }
   .small_icon_arrow {
     top: 0%;
     left: -2%;
