@@ -265,8 +265,6 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        // .addLabel("button_3")
-        //////////
         .to(
           ".arrow_tabs",
           {
