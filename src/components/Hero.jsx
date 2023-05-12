@@ -87,7 +87,7 @@ const Hero = () => {
         },
         {
           yPercent: -65,
-          xPercent: -50,
+          // xPercent: -50,
           duration: 3,
         },
         "-=1"
@@ -158,7 +158,7 @@ const Hero = () => {
       })
       .to(".icon_4", {
         yPercent: -155,
-        xPercent: -50,
+        // xPercent: -50,
         duration: 3,
         scale: 0.8,
       })
@@ -172,7 +172,7 @@ const Hero = () => {
       )
       .to(".icon_4", {
         yPercent: -255,
-        xPercent: -50,
+        // xPercent: -50,
         duration: 5,
         scale: 0.5,
       })
