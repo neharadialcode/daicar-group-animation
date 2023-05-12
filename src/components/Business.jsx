@@ -335,30 +335,7 @@ const Business = () => {
         .to(".small_icon", {
           top: "73px",
         })
-
-        // .addLabel("business_accordion_2")
-        // .from(".business_heading_2", {
-        //   autoAlpha: 0.5,
-        // })
-        // .to(".business_para_2", {
-        //   autoAlpha: 1,
-        // })
-        // .to(".business_para_2", {
-        //   autoAlpha: 0,
-        //   delay: 1,
-        //   duration: 7,
-        // })
-
-        // .fromTo(
-        //   ".business_heading_2",
-        //   {
-        //     autoAlpha: 1,
-        //   },
-        //   {
-        //     autoAlpha: 0.5,
-        //   }
-        // )
-
+        //////////
         .from(".business_heading_2", {
           autoAlpha: 0.5,
         })
@@ -401,36 +378,7 @@ const Business = () => {
         .to(".small_icon", {
           top: "138px",
         })
-
-        // .addLabel("business_accordion_3")
-        // .fromTo(
-        //   ".business_heading_3",
-        //   {
-        //     autoAlpha: 0.5,
-        //   },
-        //   {
-        //     autoAlpha: 1,
-        //   }
-        // )
-        // .to(".business_para_3", {
-        //   autoAlpha: 1,
-        //   delay: 1,
-        //   duration: 7,
-        // })
-        // .to(".business_para_3", {
-        //   delay: 1,
-        //   autoAlpha: 0,
-        //   duration: 7,
-        // })
-        // .fromTo(
-        //   ".business_heading_3",
-        //   {
-        //     autoAlpha: 1,
-        //   },
-        //   {
-        //     autoAlpha: 0.5,
-        //   }
-        // )
+        //////////
         .from(".business_heading_3", {
           autoAlpha: 0.5,
         })
@@ -472,36 +420,7 @@ const Business = () => {
         .to(".small_icon", {
           top: "200px",
         })
-
-        // .addLabel("business_accordion_4")
-        // .fromTo(
-        //   ".business_heading_4",
-        //   {
-        //     autoAlpha: 0.5,
-        //   },
-        //   {
-        //     autoAlpha: 1,
-        //   }
-        // )
-        // .to(".business_para_4", {
-        //   autoAlpha: 1,
-        //   delay: 1,
-        //   duration: 7,
-        // })
-        // .to(".business_para_4", {
-        //   delay: 1,
-        //   autoAlpha: 0,
-        //   duration: 7,
-        // })
-        // .fromTo(
-        //   ".business_heading_4",
-        //   {
-        //     autoAlpha: 1,
-        //   },
-        //   {
-        //     autoAlpha: 0.5,
-        //   }
-        // )
+        //////////
         .addLabel("business_accordion_4")
         .from(".business_heading_4", {
           autoAlpha: 0.5,
@@ -698,7 +617,8 @@ const Business = () => {
                       Meno tempo e maggiore conversione grazie al nostro&nbsp;
                       <span className="ff_mundial_bold">software di I.A.</span>
                       &nbsp; per la validazione real
-                      <span class="ff_math">-</span>time dei dati degli utenti
+                      <span className="ff_math">-</span>time dei dati degli
+                      utenti
                     </p>
                   </div>
                   <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
