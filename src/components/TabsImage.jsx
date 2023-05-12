@@ -456,7 +456,7 @@ const TabsImage = () => {
                         ? "d-none"
                         : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img d-sm-none"
                     }`}
-                    src={obj.card_img}
+                    src={obj.card_img2}
                     alt="card_img"
                   />
                 </div>
