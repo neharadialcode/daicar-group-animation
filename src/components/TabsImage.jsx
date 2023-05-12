@@ -399,7 +399,6 @@ const TabsImage = () => {
       section2.parentNode.scrollHeight * (tl2.labels[id] / tl2.duration()) +
         section2.parentNode.offsetTop
     );
-    // console.log(pos2);
     gsap.to(window, { duration: 0.3, scrollTo: pos2, ease: "linear" });
   };
   return (
@@ -485,4 +484,3 @@ const TabsImage = () => {
 };
 
 export default TabsImage;
-// hhh
