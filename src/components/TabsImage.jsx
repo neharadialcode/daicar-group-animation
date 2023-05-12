@@ -239,7 +239,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-
+        .addLabel("button_3")
+        //////////
         .fromTo(
           ".card_img_3",
           {
@@ -264,7 +265,7 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        .addLabel("button_3")
+        // .addLabel("button_3")
         //////////
         .to(
           ".arrow_tabs",
