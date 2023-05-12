@@ -7,6 +7,12 @@ import tabImg3 from "../assets/images/png/tab-3.png";
 import tabImg4 from "../assets/images/png/tab-4.png";
 import tabImg5 from "../assets/images/png/tab-5.png";
 import tabImg6 from "../assets/images/png/tab-6.png";
+import smallTabImg1 from "../assets/images/png/small-tab-img-1.png";
+import smallTabImg2 from "../assets/images/png/small-tab-img-2.png";
+import smallTabImg3 from "../assets/images/png/small-tab-img-3.png";
+import smallTabImg4 from "../assets/images/png/small-tab-img-4.png";
+import smallTabImg5 from "../assets/images/png/small-tab-img-5.png";
+import smallTabImg6 from "../assets/images/png/small-tab-img-6.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 const TabsImage = () => {
@@ -18,354 +24,360 @@ const TabsImage = () => {
       buttonText: "come",
       buttonId: "button_0",
       card_img: tabImg2,
+      card_img2: smallTabImg2,
       para: "Scopri",
     },
     {
       buttonText: "marketing conversazionale",
       buttonId: "button_1",
       card_img: tabImg3,
+      card_img2: smallTabImg3,
       para: "usiamo il",
     },
     {
       buttonText: `strumenti tech<span class="ff_math">-</span>driven`,
       buttonId: "button_2",
       card_img: tabImg4,
+      card_img2: smallTabImg4,
       para: "e gli ",
     },
     {
       buttonText: `qualifica digitale real<span class="ff_math">-</span>time`,
       buttonId: "button_3",
       card_img: tabImg5,
+      card_img2: smallTabImg5,
       para: "da noi sviluppati",
     },
     {
       buttonText: "CRM",
       buttonId: "button_4",
       card_img: tabImg6,
+      card_img2: smallTabImg6,
       para: "per ottenere una",
     },
     {
       buttonText: "",
       buttonId: "",
       card_img: "",
+      card_img2: "",
       para: "e trasmettere i dati sul tuo",
     },
   ];
 
   useEffect(() => {
-      tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".tab_parent",
-          start: "top top",
-          end: "+=400%",
-          scrub: 1,
-          pin: true,
+    tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".tab_parent",
+        start: "top top",
+        end: "+=400%",
+        scrub: 1,
+        pin: true,
+      },
+    });
+
+    tl2
+      .to(
+        ".active_button_0",
+        {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
         },
-      });
+        "-=.5"
+      )
+      .addLabel("button_0")
+      //////////
+      .fromTo(
+        ".left_text_1",
+        {
+          autoAlpha: 0,
+        },
+        {
+          autoAlpha: 1,
+        }
+      )
+      .to(
+        ".side_icon",
+        {
+          bottom: "10%",
+        },
+        "-=.5"
+      )
+      .fromTo(
+        ".arrow_tabs",
+        {
+          top: "100%",
+        },
+        {
+          top: "80%",
+        }
+      )
+      .fromTo(
+        ".card_img_0",
+        {
+          opacity: 0,
+          top: "50px",
+        },
+        {
+          opacity: 1,
+          top: "0px",
+        }
+      )
+      .to(
+        ".arrow_tabs",
+        {
+          top: "70%",
+        },
+        "-=.5"
+      )
 
-      tl2
-        .to(
-          ".active_button_0",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .addLabel("button_0")
-        //////////
-        .fromTo(
-          ".left_text_1",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "10%",
-          },
-          "-=.5"
-        )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .fromTo(
-          ".card_img_0",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+      .fromTo(
+        ".card_img_1",
+        {
+          opacity: 0,
+          top: "50px",
+        },
+        {
+          opacity: 1,
+          top: "0px",
+        }
+      )
 
-        .fromTo(
-          ".card_img_1",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
+      .to(".active_button_0", {
+        background: "rgba(126, 228, 156, 0.5)",
+        rotate: 0,
+      })
+      .to(
+        ".active_button_1",
+        {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        },
+        "-=.5"
+      )
+      .addLabel("button_1")
+      //////////
+      .to(
+        ".arrow_tabs",
+        {
+          top: "60%",
+        },
+        "-=.5"
+      )
+      .fromTo(
+        ".left_text_1",
+        {
+          autoAlpha: 1,
+        },
+        {
+          autoAlpha: 0,
+        }
+      )
+      .fromTo(
+        ".left_text_2",
+        {
+          autoAlpha: 0,
+        },
+        {
+          autoAlpha: 1,
+        }
+      )
+      .to(
+        ".side_icon",
+        {
+          bottom: "30%",
+        },
+        "-=.5"
+      )
 
-        .to(".active_button_0", {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        })
-        .to(
-          ".active_button_1",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .addLabel("button_1")
-        //////////
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
-        .fromTo(
-          ".left_text_1",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_2",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "30%",
-          },
-          "-=.5"
-        )
+      .fromTo(
+        ".card_img_2",
+        {
+          opacity: 0,
+          top: "50px",
+        },
+        {
+          opacity: 1,
+          top: "0px",
+        }
+      )
 
-        .fromTo(
-          ".card_img_2",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
+      .to(".active_button_1", {
+        background: "rgba(126, 228, 156, 0.5)",
+        rotate: 0,
+      })
+      .to(
+        ".active_button_2",
+        {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        },
+        "-=.5"
+      )
+      .addLabel("button_2")
+      //////////
+      .to(
+        ".arrow_tabs",
+        {
+          top: "50%",
+        },
+        "-=.5"
+      )
+      .fromTo(
+        ".left_text_2",
+        {
+          autoAlpha: 1,
+        },
+        {
+          autoAlpha: 0,
+        }
+      )
+      .fromTo(
+        ".left_text_3",
+        {
+          autoAlpha: 0,
+        },
+        {
+          autoAlpha: 1,
+        }
+      )
+      .to(
+        ".side_icon",
+        {
+          bottom: "35%",
+        },
+        "-=.5"
+      )
+      .addLabel("button_3")
+      //////////
+      .fromTo(
+        ".card_img_3",
+        {
+          opacity: 0,
+          top: "50px",
+        },
+        {
+          opacity: 1,
+          top: "0px",
+        }
+      )
 
-        .to(".active_button_1", {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        })
-        .to(
-          ".active_button_2",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .addLabel("button_2")
-        //////////
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
-        .fromTo(
-          ".left_text_2",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_3",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "35%",
-          },
-          "-=.5"
-        )
-        .addLabel("button_3")
-        //////////
-        .fromTo(
-          ".card_img_3",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
+      .to(".active_button_2", {
+        background: "rgba(126, 228, 156, 0.5)",
+        rotate: 0,
+      })
+      .to(
+        ".active_button_3",
+        {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        },
+        "-=.5"
+      )
+      .to(
+        ".arrow_tabs",
+        {
+          top: "40%",
+        },
+        "-=.5"
+      )
+      .fromTo(
+        ".left_text_3",
+        {
+          autoAlpha: 1,
+        },
+        {
+          autoAlpha: 0,
+        }
+      )
+      .fromTo(
+        ".left_text_4",
+        {
+          autoAlpha: 0,
+        },
+        {
+          autoAlpha: 1,
+        }
+      )
+      .to(
+        ".side_icon",
+        {
+          bottom: "40%",
+        },
+        "-=.5"
+      )
+      .fromTo(
+        ".card_img_4",
+        {
+          opacity: 0,
+          top: "50px",
+        },
+        {
+          opacity: 1,
+          top: "0px",
+        }
+      )
 
-        .to(".active_button_2", {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        })
-        .to(
-          ".active_button_3",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
-        .fromTo(
-          ".left_text_3",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_4",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "40%",
-          },
-          "-=.5"
-        )
-        .fromTo(
-          ".card_img_4",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
+      .to(".active_button_3", {
+        background: "rgba(126, 228, 156, 0.5)",
+        rotate: 0,
+      })
+      .to(
+        ".active_button_4",
+        {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        },
+        "-=.5"
+      )
+      .addLabel("button_4")
+      //////////
+      .fromTo(
+        ".arrow_tabs",
+        {
+          top: "40%",
+        },
+        {
+          top: "-40%",
+        },
+        "-=.5"
+      )
+      .fromTo(
+        ".left_text_4",
+        {
+          autoAlpha: 1,
+        },
+        {
+          autoAlpha: 0,
+        }
+      )
+      .fromTo(
+        ".left_text_5",
+        {
+          autoAlpha: 0,
+        },
+        {
+          autoAlpha: 1,
+        }
+      )
+      .to(
+        ".side_icon",
+        {
+          bottom: "45%",
+        },
+        "-=.5"
+      )
 
-        .to(".active_button_3", {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        })
-        .to(
-          ".active_button_4",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .addLabel("button_4")
-        //////////
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
-        .fromTo(
-          ".left_text_4",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_5",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "45%",
-          },
-          "-=.5"
-        )
-
-        .fromTo(
-          ".card_img_5",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "10px",
-          }
-        );
+      .fromTo(
+        ".card_img_5",
+        {
+          opacity: 0,
+          top: "50px",
+        },
+        {
+          opacity: 1,
+          top: "10px",
+        }
+      );
   }, []);
 
   const moveToIt = (sectionId, id) => {
@@ -415,8 +427,13 @@ const TabsImage = () => {
           <Icon5 />
         </div>
         <img
-          className="i_pad_img_2 pt-3 w-100 custom_height_tab_img"
+          className="i_pad_img_2 pt-3 w-100 custom_height_tab_img d-none d-sm-block"
           src={tabImg1}
+          alt="img"
+        />
+        <img
+          className="i_pad_img_2 pt-3 w-100 custom_height_tab_img d-sm-none"
+          src={smallTabImg1}
           alt="img"
         />
         <div className="text-center pb-sm-5 pb-xxl-0">
@@ -427,20 +444,29 @@ const TabsImage = () => {
                   <img
                     className={`${
                       index === 5
-                        ? "d-none "
-                        : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img"
+                        ? "d-none"
+                        : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img d-none d-sm-block"
+                    }`}
+                    src={obj.card_img}
+                    alt="card_img"
+                  />
+                  <img
+                    className={`${
+                      index === 5
+                        ? "d-none"
+                        : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img d-sm-none"
                     }`}
                     src={obj.card_img}
                     alt="card_img"
                   />
                 </div>
-                <div className="d-flex align-items-center pt-2 pt-sm-3 pt-lg-0">
+                <div className="d-flex align-items-center pt-sm-3 pt-lg-0">
                   <p className="font_2xl color_gray pt-3">{obj.para}</p>
                   {obj.buttonText &&
                     (console.log(obj.buttonId, "hello"),
                     (
                       <button
-                        className={`active_button_${index} tabs_btn ms-3 font_2xl color_gray`}
+                        className={`active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
                         dangerouslySetInnerHTML={{ __html: obj.buttonText }}
                         onClick={() => moveToIt("main-assets", obj.buttonId)}
                       ></button>
