@@ -89,6 +89,9 @@
 }
 
 @media (min-width: 1600px) {
+  .meeting_text_color {
+    color: var(--color-dark-gray);
+  }
   .icon_4 {
     left: 21.5%;
   }
@@ -265,6 +268,9 @@
 }
 
 @media (max-width: 1599.98px) {
+  .meeting_text_color {
+    color: white;
+  }
   .icon_1 {
     top: 23% !important;
     left: 15% !important;
@@ -319,7 +325,7 @@
     max-width: 150px;
   }
   .footer_background_set {
-    height: 700px;
+    height: 720px;
   }
   .custom_size_timeline_text {
     font-size: 16px;
@@ -506,7 +512,7 @@
     padding: 14.4px 16px !important;
   }
   .footer_background_set {
-    height: 650px;
+    height: 530px;
   }
   .timeline_line_img {
     max-width: 710px;

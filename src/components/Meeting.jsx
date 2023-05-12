@@ -67,12 +67,15 @@ function Meeting() {
                 src={meetingManImg}
                 alt="meetingManImg"
               />
-              <p className="mb-0 ff_mundial_regular font_md color_gray d-none d-xl-block">
-                <span className="fw_200">Matteo,</span> Business Development
-                Manager
+              <p className="mb-0 font_md d-none d-xxl-block meeting_text_color">
+                Matteo,{" "}
+                <span className="ff_mundial_light">
+                  {" "}
+                  Business Development Manager
+                </span>
               </p>
-              <p className="mb-0 ff_mundial_regular font_md color_gray d-xl-none">
-                <span className="fw_200">Matteo,</span>
+              <p className="mb-0 font_md color_gray d-xxl-none">
+                Matteo,
                 <br className="d-sm-none" />
                 <span className="ff_mundial_light">
                   Business Development Manager
