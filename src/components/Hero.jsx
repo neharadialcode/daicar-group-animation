@@ -133,15 +133,35 @@ const Hero = () => {
         },
         "-=1"
       )
+      // .fromTo(
+      //   ".hero_slide_2",
+      //   { top: "200vh", position: "absolute", delay: 1, yPercent: -50 },
+      //   {
+      //     delay: 1,
+      //     top: "50%",
+      //     position: "absolute",
+      //     duration: 1,
+      //     yPercent: -50,
+      //   }
+      // )
       .fromTo(
         ".hero_slide_2",
-        { top: "200vh", position: "absolute", delay: 1, yPercent: -50 },
+        {
+          top: "50vh",
+          position: "absolute",
+          delay: 1,
+          yPercent: -50,
+          opacity: 0,
+          duration: 1,
+          delay: 1,
+        },
         {
           delay: 1,
           top: "50%",
           position: "absolute",
           duration: 1,
           yPercent: -50,
+          opacity: 1,
         }
       )
       .to(
