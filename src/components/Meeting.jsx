@@ -1,50 +1,50 @@
 import React, { useEffect } from "react";
 import meetingManImg from "../assets/images/svg/meeting_man_img.svg";
-import gsap from "gsap";
+// import gsap from "gsap";
 
 function Meeting() {
-  useEffect(() => {
-    let meetingValue = gsap.matchMedia();
-    meetingValue.add("(min-width:1600px)", () => {
-      let meeting = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".meeting_parent",
-          start: "top top",
-          end: "bottom center",
-          scrub: 1,
-        },
-      });
-      meeting.fromTo(
-        ".meeting_parent",
-        {
-          yPercent: 0,
-        },
-        {
-          yPercent: -20,
-        }
-      );
-    });
-    meetingValue.add("(min-width:992px) and (max-width:1599.98px)", () => {
-      let meeting = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".meeting_parent",
-          markers: false,
-          start: "top top",
-          end: "bottom center",
-          scrub: 1,
-        },
-      });
-      meeting.fromTo(
-        ".meeting_parent",
-        {
-          yPercent: 0,
-        },
-        {
-          yPercent: -40,
-        }
-      );
-    });
-  }, []);
+  // useEffect(() => {
+  //   let meetingValue = gsap.matchMedia();
+  //   meetingValue.add("(min-width:1600px)", () => {
+  //     let meeting = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".meeting_parent",
+  //         start: "top top",
+  //         end: "bottom center",
+  //         scrub: 1,
+  //       },
+  //     });
+  //     meeting.fromTo(
+  //       ".meeting_parent",
+  //       {
+  //         yPercent: 0,
+  //       },
+  //       {
+  //         yPercent: -20,
+  //       }
+  //     );
+  //   });
+  //   meetingValue.add("(min-width:992px) and (max-width:1599.98px)", () => {
+  //     let meeting = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: ".meeting_parent",
+  //         markers: false,
+  //         start: "top top",
+  //         end: "bottom center",
+  //         scrub: 1,
+  //       },
+  //     });
+  //     meeting.fromTo(
+  //       ".meeting_parent",
+  //       {
+  //         yPercent: 0,
+  //       },
+  //       {
+  //         yPercent: -40,
+  //       }
+  //     );
+  //   });
+  // }, []);
   return (
     <>
       <div

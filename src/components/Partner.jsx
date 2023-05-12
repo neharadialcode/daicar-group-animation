@@ -15,15 +15,15 @@ import ParentLogoPara from "../common/ParentLogoPara";
 const Partner = () => {
   useEffect(() => {
     let partnerValues = gsap.matchMedia();
-    partnerValues.add("(min-width:992px)", () => {
-      let partners = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".partner_main",
-          pin: true,
-          pinSpacing: false,
-        },
-      });
-    });
+    // partnerValues.add("(min-width:992px)", () => {
+    //   let partners = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: ".partner_main",
+    //       pin: true,
+    //       pinSpacing: false,
+    //     },
+    //   });
+    // });
     partnerValues.add("(min-width:576px) and (max-width:991.98px)", () => {
       let partnerSlider = gsap.timeline({
         scrollTrigger: {

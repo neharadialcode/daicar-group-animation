@@ -8,7 +8,6 @@ import tabImg4 from "../assets/images/png/tab-4.png";
 import tabImg5 from "../assets/images/png/tab-5.png";
 import tabImg6 from "../assets/images/png/tab-6.png";
 import smallTabImg from "../assets/images/png/small-tab-img.png";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 const TabsImage = () => {
@@ -77,8 +76,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        //////////
         .addLabel("button_0")
+        //////////
         .fromTo(
           ".left_text_1",
           {
@@ -116,14 +115,6 @@ const TabsImage = () => {
           }
         )
         .to(
-          ".active_button_0",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .to(
           ".arrow_tabs",
           {
             top: "70%",
@@ -143,6 +134,10 @@ const TabsImage = () => {
           }
         )
 
+        .to(".active_button_0", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
         .to(
           ".active_button_1",
           {
@@ -151,8 +146,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        //////////
         .addLabel("button_1")
+        //////////
         .to(
           ".arrow_tabs",
           {
@@ -185,14 +180,6 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        .to(
-          ".active_button_0",
-          {
-            background: "rgba(126, 228, 156, 0.5)",
-            rotate: 0,
-          },
-          "-=.5"
-        )
 
         .fromTo(
           ".card_img_2",
@@ -206,6 +193,10 @@ const TabsImage = () => {
           }
         )
 
+        .to(".active_button_1", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
         .to(
           ".active_button_2",
           {
@@ -214,16 +205,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        //////////
         .addLabel("button_2")
-        .to(
-          ".active_button_1",
-          {
-            background: "rgba(126, 228, 156, 0.5)",
-            rotate: 0,
-          },
-          "-=.5"
-        )
+        //////////
         .to(
           ".arrow_tabs",
           {
@@ -269,6 +252,10 @@ const TabsImage = () => {
           }
         )
 
+        .to(".active_button_2", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
         .to(
           ".active_button_3",
           {
@@ -277,8 +264,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        //////////
         .addLabel("button_3")
+        //////////
         .to(
           ".arrow_tabs",
           {
@@ -311,14 +298,6 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        .to(
-          ".active_button_2",
-          {
-            background: "rgba(126, 228, 156, 0.5)",
-            rotate: 0,
-          },
-          "-=.5"
-        )
         .fromTo(
           ".card_img_4",
           {
@@ -331,6 +310,10 @@ const TabsImage = () => {
           }
         )
 
+        .to(".active_button_3", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
         .to(
           ".active_button_4",
           {
@@ -339,8 +322,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        //////////
         .addLabel("button_4")
+        //////////
         .fromTo(
           ".arrow_tabs",
           {
@@ -376,14 +359,6 @@ const TabsImage = () => {
           },
           "-=.5"
         )
-        .to(
-          ".active_button_3",
-          {
-            background: "rgba(126, 228, 156, 0.5)",
-            rotate: 0,
-          },
-          "-=.5"
-        )
 
         .fromTo(
           ".card_img_5",
@@ -395,18 +370,7 @@ const TabsImage = () => {
             opacity: 1,
             top: "10px",
           }
-        )
-
-        .to(
-          ".active_button_4",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
         );
-      //////////
-      // .addLabel("button_4")
     });
     mm.add("(max-width:767.98px)", () => {
       tl2 = gsap.timeline({
