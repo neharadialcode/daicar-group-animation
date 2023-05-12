@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Icon5, TabRightIcon } from "./Icons";
 import tabImg1 from "../assets/images/png/tab-1.png";
 import tabImg2 from "../assets/images/png/tab-2.png";
@@ -10,44 +9,56 @@ import tabImg5 from "../assets/images/png/tab-5.png";
 import tabImg6 from "../assets/images/png/tab-6.png";
 import smallTabImg from "../assets/images/png/small-tab-img.png";
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 const TabsImage = () => {
-  gsap.registerPlugin(ScrollTrigger);
+  let tl2;
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
   const buttonData = [
     {
       buttonText: "come",
+      buttonId: "button_0",
       card_img: tabImg2,
       para: "Scopri",
     },
     {
       buttonText: "marketing conversazionale",
+      buttonId: "button_1",
       card_img: tabImg3,
       para: "usiamo il",
     },
     {
       buttonText: `strumenti tech<span class="ff_math">-</span>driven`,
+      buttonId: "button_2",
       card_img: tabImg4,
       para: "e gli ",
     },
     {
       buttonText: `qualifica digitale real<span class="ff_math">-</span>time`,
+      buttonId: "button_3",
       card_img: tabImg5,
       para: "da noi sviluppati",
     },
     {
       buttonText: "CRM",
+      buttonId: "button_4",
       card_img: tabImg6,
       para: "per ottenere una",
     },
     {
       buttonText: "",
+      buttonId: "",
       card_img: "",
       para: "e trasmettere i dati sul tuo",
     },
   ];
+
   useEffect(() => {
-    let tabImage = gsap.matchMedia();
-    tabImage.add("(min-width:768px)", () => {
-      let tabimageparent = gsap.timeline({
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width:768px)", () => {
+      tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".tab_parent",
           start: "top top",
@@ -56,7 +67,8 @@ const TabsImage = () => {
           pin: true,
         },
       });
-      tabimageparent
+
+      tl2
         .to(
           ".active_button_0",
           {
@@ -65,6 +77,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
+        //////////
+        .addLabel("button_0")
         .fromTo(
           ".left_text_1",
           {
@@ -128,6 +142,7 @@ const TabsImage = () => {
             top: "0px",
           }
         )
+
         .to(
           ".active_button_1",
           {
@@ -136,6 +151,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
+        //////////
+        .addLabel("button_1")
         .to(
           ".arrow_tabs",
           {
@@ -188,6 +205,7 @@ const TabsImage = () => {
             top: "0px",
           }
         )
+
         .to(
           ".active_button_2",
           {
@@ -196,6 +214,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
+        //////////
+        .addLabel("button_2")
         .to(
           ".active_button_1",
           {
@@ -248,6 +268,7 @@ const TabsImage = () => {
             top: "0px",
           }
         )
+
         .to(
           ".active_button_3",
           {
@@ -256,6 +277,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
+        //////////
+        .addLabel("button_3")
         .to(
           ".arrow_tabs",
           {
@@ -307,6 +330,7 @@ const TabsImage = () => {
             top: "0px",
           }
         )
+
         .to(
           ".active_button_4",
           {
@@ -315,6 +339,8 @@ const TabsImage = () => {
           },
           "-=.5"
         )
+        //////////
+        .addLabel("button_4")
         .fromTo(
           ".arrow_tabs",
           {
@@ -370,6 +396,7 @@ const TabsImage = () => {
             top: "10px",
           }
         )
+
         .to(
           ".active_button_4",
           {
@@ -378,9 +405,11 @@ const TabsImage = () => {
           },
           "-=.5"
         );
+      //////////
+      // .addLabel("button_4")
     });
-    tabImage.add("(max-width:767.98px)", () => {
-      let tabimageparent2 = gsap.timeline({
+    mm.add("(max-width:767.98px)", () => {
+      tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".tab_parent",
           start: "top top",
@@ -389,7 +418,7 @@ const TabsImage = () => {
           pin: true,
         },
       });
-      tabimageparent2.fromTo(
+      tl2.fromTo(
         ".small_tab",
         {
           scale: 1.5,
@@ -400,6 +429,16 @@ const TabsImage = () => {
       );
     });
   }, []);
+
+  const moveToIt = (sectionId, id) => {
+    const section2 = document.querySelector(`#${sectionId}`);
+    const pos2 = Math.ceil(
+      section2.parentNode.scrollHeight * (tl2.labels[id] / tl2.duration()) +
+        section2.parentNode.offsetTop
+    );
+    // console.log(pos2);
+    gsap.to(window, { duration: 0.3, scrollTo: pos2, ease: "linear" });
+  };
   return (
     <div
       className="vh-100 d-flex flex-column justify-content-center tab_parent bg_light_white overflow-hidden z_2"
@@ -455,19 +494,20 @@ const TabsImage = () => {
                         : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img"
                     }`}
                     src={obj.card_img}
-                    alt=""
+                    alt="card_img"
                   />
                 </div>
                 <div className="d-none d-md-flex align-items-center pt-3 pt-lg-0">
                   <p className="font_2xl color_gray pt-3">{obj.para}</p>
-                  {obj.buttonText && (
-                    <button
-                      className={`active_button_${index} tabs_btn ms-3 font_2xl color_gray`}
-                      dangerouslySetInnerHTML={{ __html: obj.buttonText }}
-                    >
-                      {/* {obj.buttonText} */}
-                    </button>
-                  )}
+                  {obj.buttonText &&
+                    (console.log(obj.buttonId, "hello"),
+                    (
+                      <button
+                        className={`active_button_${index} tabs_btn ms-3 font_2xl color_gray`}
+                        dangerouslySetInnerHTML={{ __html: obj.buttonText }}
+                        onClick={() => moveToIt("main-assets", obj.buttonId)}
+                      ></button>
+                    ))}
                 </div>
               </div>
             ))}
@@ -482,3 +522,4 @@ const TabsImage = () => {
 };
 
 export default TabsImage;
+// hhh
