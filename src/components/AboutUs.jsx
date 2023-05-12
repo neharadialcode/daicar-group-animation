@@ -454,8 +454,8 @@ const About = () => {
                 </div>
                 <div className="position-relative">
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
-                    Qualifichiamo i dati in tempo reale consentendo di
-                    incrementare il ROI delle azioni di lead generation.
+                    Il futuro della lead generation è basato sulla creazione di
+                    relazioni di fiducia, sostenute dalla tecnologia.
                   </h4>
                   <div className="position-absolute small_icon_arrow_2">
                     <DownArrowNoiIcon />
