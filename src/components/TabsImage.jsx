@@ -419,7 +419,7 @@ const TabsImage = () => {
           src={tabImg1}
           alt="img"
         />
-        <div className="text-center">
+        <div className="text-center pb-sm-5 pb-xxl-0">
           <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0">
             {buttonData.map((obj, index) => (
               <div className="px-2 pt-sm-2" key={index}>
