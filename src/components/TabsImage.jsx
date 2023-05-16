@@ -1,20 +1,15 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { Icon5, TabRightIcon } from "./Icons";
-import tabImg1 from "../assets/images/png/tab-1.png";
-import tabImg2 from "../assets/images/png/tab-2.png";
-import tabImg3 from "../assets/images/png/tab-3.png";
-import tabImg4 from "../assets/images/png/tab-4.png";
-import tabImg5 from "../assets/images/png/tab-5.png";
-import tabImg6 from "../assets/images/png/tab-6.png";
-import smallTabImg1 from "../assets/images/png/small-tab-img-1.png";
-import smallTabImg2 from "../assets/images/png/small-tab-img-2.png";
-import smallTabImg3 from "../assets/images/png/small-tab-img-3.png";
-import smallTabImg4 from "../assets/images/png/small-tab-img-4.png";
-import smallTabImg5 from "../assets/images/png/small-tab-img-5.png";
-import smallTabImg6 from "../assets/images/png/small-tab-img-6.png";
+import tabImg1 from "../assets/images/png/tab-frame.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import Lottie from "react-lottie-player";
+import comeLottie from "../assets/lotties/tabs-1.json";
+import marketingLottie from "../assets/lotties/tabs-2.json";
+import techDrivenLottie from "../assets/lotties/tabs-3.json";
+import realTimeLottie from "../assets/lotties/tabs-4.json";
+import crmLottie from "../assets/lotties/tabs-5.json";
 const TabsImage = () => {
   let tl2;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -23,43 +18,37 @@ const TabsImage = () => {
     {
       buttonText: "come",
       buttonId: "button_0",
-      card_img: tabImg2,
-      card_img2: smallTabImg2,
+      card_img: comeLottie,
       para: "Scopri",
     },
     {
       buttonText: "marketing conversazionale",
       buttonId: "button_1",
-      card_img: tabImg3,
-      card_img2: smallTabImg3,
+      card_img: marketingLottie,
       para: "usiamo il",
     },
     {
       buttonText: `strumenti tech<span class="ff_math">-</span>driven`,
       buttonId: "button_2",
-      card_img: tabImg4,
-      card_img2: smallTabImg4,
+      card_img: techDrivenLottie,
       para: "e gli ",
     },
     {
       buttonText: `qualifica digitale real<span class="ff_math">-</span>time`,
       buttonId: "button_3",
-      card_img: tabImg5,
-      card_img2: smallTabImg5,
+      card_img: realTimeLottie,
       para: "da noi sviluppati",
     },
     {
       buttonText: "CRM",
       buttonId: "button_4",
-      card_img: tabImg6,
-      card_img2: smallTabImg6,
+      card_img: crmLottie,
       para: "per ottenere una",
     },
     {
       buttonText: "",
       buttonId: "",
       card_img: "",
-      card_img2: "",
       para: "e trasmettere i dati sul tuo",
     },
   ];
@@ -87,6 +76,16 @@ const TabsImage = () => {
       .addLabel("button_0")
       //////////
       .fromTo(
+        ".card_img_0",
+        {
+          top: "50px",
+        },
+        {
+          opacity: 1,
+          top: "0px",
+        }
+      )
+      .fromTo(
         ".left_text_1",
         {
           autoAlpha: 0,
@@ -111,17 +110,6 @@ const TabsImage = () => {
           top: "80%",
         }
       )
-      .fromTo(
-        ".card_img_0",
-        {
-          opacity: 0,
-          top: "50px",
-        },
-        {
-          opacity: 1,
-          top: "0px",
-        }
-      )
       .to(
         ".arrow_tabs",
         {
@@ -130,6 +118,15 @@ const TabsImage = () => {
         "-=.5"
       )
 
+      .fromTo(
+        ".card_img_0",
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }
+      )
       .fromTo(
         ".card_img_1",
         {
@@ -190,6 +187,15 @@ const TabsImage = () => {
       )
 
       .fromTo(
+        ".card_img_1",
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }
+      )
+      .fromTo(
         ".card_img_2",
         {
           opacity: 0,
@@ -247,8 +253,18 @@ const TabsImage = () => {
         },
         "-=.5"
       )
+
       .addLabel("button_3")
       //////////
+      .fromTo(
+        ".card_img_2",
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }
+      )
       .fromTo(
         ".card_img_3",
         {
@@ -304,6 +320,15 @@ const TabsImage = () => {
           bottom: "40%",
         },
         "-=.5"
+      )
+      .fromTo(
+        ".card_img_3",
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }
       )
       .fromTo(
         ".card_img_4",
@@ -365,18 +390,6 @@ const TabsImage = () => {
           bottom: "45%",
         },
         "-=.5"
-      )
-
-      .fromTo(
-        ".card_img_5",
-        {
-          opacity: 0,
-          top: "50px",
-        },
-        {
-          opacity: 1,
-          top: "10px",
-        }
       );
   }, []);
 
@@ -427,13 +440,8 @@ const TabsImage = () => {
           <Icon5 />
         </div>
         <img
-          className="i_pad_img_2 pt-3 w-100 custom_height_tab_img d-none d-sm-block"
+          className="i_pad_img_2 pt-3 w-100 custom_height_tab_img_ipad"
           src={tabImg1}
-          alt="img"
-        />
-        <img
-          className="i_pad_img_2 pt-3 w-100 custom_height_tab_img d-sm-none"
-          src={smallTabImg1}
           alt="img"
         />
         <div className="text-center pb-sm-5 pb-xxl-0">
@@ -441,24 +449,24 @@ const TabsImage = () => {
             {buttonData.map((obj, index) => (
               <div className="px-2 pt-sm-2" key={index}>
                 <div className={`card_img_${index}`}>
-                  <img
+                  <div
                     className={`${
                       index === 5
                         ? "d-none"
-                        : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img d-none d-sm-block"
+                        : `${
+                            index === 0
+                              ? "tabs_lottie_1 position-absolute start-0 custom_height_tab_img tabs_img"
+                              : "position-absolute start-0 w-100 pt-3 custom_height_tab_img tabs_img tabs_lottie"
+                          }`
                     }`}
-                    src={obj.card_img}
-                    alt="card_img"
-                  />
-                  <img
-                    className={`${
-                      index === 5
-                        ? "d-none"
-                        : "position-absolute top-0 start-0 w-100 pt-3 custom_height_tab_img tabs_img d-sm-none"
-                    }`}
-                    src={obj.card_img2}
-                    alt="card_img"
-                  />
+                  >
+                    <Lottie
+                      className="tabs_lottie_width"
+                      animationData={obj.card_img}
+                      loop={true}
+                      play
+                    />
+                  </div>
                 </div>
                 <div className="d-flex align-items-center pt-sm-3 pt-lg-0">
                   <p className="font_2xl color_gray pt-3">{obj.para}</p>

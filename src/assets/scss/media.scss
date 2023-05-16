@@ -89,6 +89,12 @@
 }
 
 @media (min-width: 1600px) {
+  .custom_height_tab_img_ipad {
+    width: 100% !important;
+  }
+  .tabs_lottie_1 {
+    top: 10%;
+  }
   .meeting_text_color {
     color: var(--color-dark-gray);
   }
@@ -302,6 +308,14 @@
     width: 70% !important;
     left: 15% !important;
   }
+  .custom_height_tab_img_ipad {
+    max-height: 565px;
+    width: 70% !important;
+    left: 15% !important;
+  }
+  .tabs_lottie_1 {
+    top: 75px;
+  }
   .i_pad_img_2 {
     margin-left: 180px;
   }
@@ -432,6 +446,9 @@
   }
 }
 @media (max-width: 1199.98px) {
+  .tabs_lottie_1 {
+    top: 60px;
+  }
   .arrow_tabs {
     left: 5%;
   }
@@ -608,6 +625,9 @@
 }
 
 @media (max-width: 991.98px) {
+  .custom_height_tab_img_ipad {
+    width: 90% !important;
+  }
   .icon_4 {
     left: -23.5%;
   }
@@ -676,7 +696,7 @@
     margin-left: 28% !important;
   }
   .i_pad_img_2 {
-    margin-left: 39px;
+    margin-left: 35px;
   }
   .arrow_tabs {
     left: -2%;
@@ -939,8 +959,21 @@
 }
 
 @media (max-width: 575.98px) {
+  .custom_height_tab_img_ipad {
+    width: 99% !important;
+    height: 40%;
+  }
   .i_pad_img_2 {
     margin-left: unset;
+  }
+  .tabs_lottie {
+    top: 0%;
+  }
+  .tabs_lottie_width {
+    width: 100%;
+  }
+  .tabs_lottie_1 {
+    top: 20px;
   }
   .custom_height_tab_img {
     left: 0% !important;
