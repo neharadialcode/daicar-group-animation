@@ -3,6 +3,7 @@ import { Icon1, Icon2, Icon3, Icon4, Icon4_2 } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ipadScrollFit from "../assets/images/png/ipad-scroll-fit-img.png";
+import heroEtext from "../assets/images/svg/hero-e-text.svg";
 import iPadSmallImg from "../assets/images/png/hero-ipad-mockupImg.png";
 import iPadFrameimg from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import Header from "./Header";
@@ -217,10 +218,17 @@ const Hero = () => {
               <div className="hero_section_heading">
                 <h2 className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01">
                   Il futuro delle tue
-                  <span className="d-inline-block hero_heading_btn me-2 mt-3 mt-sm-0 mx-sm-3">
+                  <span className="d-inline-block hero_heading_btn me-2 mx-sm-3">
                     vendite
                   </span>
-                  è digitale
+                  <span>
+                    <img
+                      className="hero_e_text"
+                      src={heroEtext}
+                      alt="hero-e-text"
+                    />
+                  </span>{" "}
+                  digitale
                 </h2>
               </div>
             </div>
@@ -259,14 +267,21 @@ const Hero = () => {
                   alt="i_pad_img2"
                 />
               </div>
-              <div className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white vh-100 ">
+              <div className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white vh-100">
                 <div className="hero_slide_1">
-                  <h2 className="ff_mundial_regular font_4xl mb-0 text-center flex align-items-center">
+                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
                     Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-2 mx-lg-3">
+                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
                     </span>
-                    è digitale
+                    <span>
+                      <img
+                        className="hero_e_text"
+                        src={heroEtext}
+                        alt="hero-e-text"
+                      />
+                    </span>{" "}
+                    digitale
                   </h2>
                   <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     200.000
@@ -285,12 +300,19 @@ const Hero = () => {
                 </div>
 
                 <div className="hero_slide_2">
-                  <h2 className="ff_mundial_regular font_4xl mb-0 text-center flex align-items-center">
+                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
                     Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mt-3 mt-sm-0 mx-sm-2 mx-lg-3">
+                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
                     </span>
-                    è digitale
+                    <span>
+                      <img
+                        className="hero_e_text"
+                        src={heroEtext}
+                        alt="hero-e-text"
+                      />
+                    </span>
+                    &nbsp;digitale
                   </h2>
                   <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
                     10.000
