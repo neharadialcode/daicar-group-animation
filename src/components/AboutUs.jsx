@@ -353,7 +353,7 @@ const About = () => {
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
             <span className="hero_btn noi_btn bg_light_green mx-2">tempo</span>
-            <span className="text-black">.</span>
+            <span className="color_dark_gray">.</span>
           </p>
         </div>
         <div className="position-absolute z-1 end-0 d-none d-xxl-block pe-5 left_text_about">

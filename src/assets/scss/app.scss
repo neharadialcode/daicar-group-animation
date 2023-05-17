@@ -74,9 +74,9 @@
   position: relative;
   z-index: -1;
 }
-.hero_section_text {
-  min-height: 100vh;
-}
+// .hero_section_text {
+//   min-height: 100vh;
+// }
 .i_pad_img {
   position: absolute;
   z-index: -1;
@@ -717,8 +717,7 @@
 .tabs_lottie {
   top: 8%;
 }
-.tabs_lottie_width{
+.tabs_lottie_width {
   width: 90%;
   margin: 0 auto;
 }
-
