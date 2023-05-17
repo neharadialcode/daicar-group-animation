@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Icon1, Icon2, Icon3, Icon4, Icon4_2 } from "./Icons";
+import { Icon4 } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -9,520 +9,366 @@ import Header from "./Header";
 import ipad from "../assets/ipad.png";
 import ipadWhite from "../assets/ipad-white.png";
 import arrow from "../assets/arrow.svg";
-import Lottie from "react-lottie-player";
-import comeLottie from "../assets/lotties/tabs-1.json";
-import marketingLottie from "../assets/lotties/tabs-2.json";
-import techDrivenLottie from "../assets/lotties/tabs-3.json";
-import realTimeLottie from "../assets/lotties/tabs-4.json";
-import crmLottie from "../assets/lotties/tabs-5.json";
 
 const Hero = () => {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-  let tl;
 
   useEffect(() => {
-    gsap.from("#hero-main-heading", {
-      yPercent: 100,
-      opacity: 0,
-    });
-    gsap.set(".arrow-hero-two", {
-      xPercent: 100,
-      scale: 0.4,
-    });
+    let tl = gsap.matchMedia();
 
-    gsap.set(".arrow-hero-three", {
-      xPercent: -100,
-      y: -130,
-      scale: 0.2,
-    });
-    // gsap.set("#hero-large-arrow", {
-    //   left: "50%",
-    //   xPercent: -50,
-    //   top: "75%",
-    // });
-    // gsap.set("#intro-content", {
-    //   display: "none",
-    // });
-    gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-      y: 100,
-      stagger: 0.1,
-    });
-
-    gsap.set(
-      [
-        "#hero-sub-heading-one",
-        "#hero-sub-heading-two",
-        "#hero-para-one",
-        "#hero-para-two",
-      ],
-      {
-        autoAlpha: 0,
-      }
-    );
-
-    gsap.set("#hero-outline-arrow", {
-      autoAlpha: 0,
-      yPercent: 100,
-    });
-
-    gsap.set(["#hero-ipad", "#hero-ipad-white"], {
-      scale: 2,
-      top: "50%",
-      left: "50%",
-      xPercent: -50,
-      yPercent: -50,
-    });
-
-    tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#hero",
-        start: "top top",
-        end: "+=200%",
-        pin: true,
-        scrub: 1,
-        // pinSpacing: false,
-      },
-    });
-
-    tl.to(".arrow-hero-one", {
-      yPercent: -200,
-      autoAlpha: 0,
-    })
-      .to(
-        ".arrow-hero-three",
-        {
-          yPercent: -300,
-          autoAlpha: 0,
-        },
-        "<"
-      )
-      .to("#hero-main-heading", {
+    tl.add("(min-width: 1400px)", () => {
+      gsap.from("#hero-main-heading", {
         yPercent: 100,
-        opacity: 0,
-      })
-      .to(
-        ".arrow-hero-two",
-        {
-          scale: 0.2,
-          rotate: "45deg",
-        },
-        "<"
-      )
-      .set("#hero-outline-arrow", {
-        autoAlpha: 1,
-      })
-      .set(
-        "#hero-ipad",
-        {
-          autoAlpha: 1,
-        },
-        "<"
-      )
-      .to(["#hero-sub-heading-one", "#hero-para-one"], {
-        autoAlpha: 1,
-      })
-      .to("#hero-ipad", {
-        scale: 1,
-      })
-      .to(
-        "#main-content",
-        {
-          scale: 1,
-        },
-        "<"
-      )
-      .to("#hero-outline-arrow", {
-        yPercent: -200,
-        duration: 5,
-      })
-      .to(
-        ["#hero-sub-heading-one", "#hero-para-one"],
+        // opacity: 0,
+      });
+      gsap.set(".arrow-hero-two", {
+        xPercent: 100,
+        scale: 0.4,
+      });
+
+      gsap.set(".arrow-hero-three", {
+        xPercent: -100,
+        y: -130,
+        scale: 0.2,
+      });
+      // gsap.set("#hero-large-arrow", {
+      //   left: "50%",
+      //   xPercent: -50,
+      //   top: "75%",
+      // });
+      // gsap.set("#intro-content", {
+      //   display: "none",
+      // });
+      gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
+        y: 100,
+        stagger: 0.1,
+      });
+
+      gsap.set(
+        [
+          "#hero-sub-heading-one",
+          "#hero-sub-heading-two",
+          "#hero-para-one",
+          "#hero-para-two",
+        ],
         {
           autoAlpha: 0,
-        },
-        "<1"
-      )
-      .to(
-        ["#hero-sub-heading-two", "#hero-para-two"],
-        {
-          autoAlpha: 1,
-        },
-        "<"
-      )
-      .to(
-        "#white-section",
-        {
-          height: 0,
-          duration: 2,
-        },
-        "<"
-      )
-      .set(
-        "#hero-ipad-white",
-        {
-          scale: 1,
-        },
-        ">"
-      )
-      .to(
-        "#hero-ipad",
-        {
-          autoAlpha: 0,
-        },
-        ">"
-      )
-      .to(
-        "#hero-ipad-white",
-        {
-          opacity: 1,
-        },
-        "<"
-      )
-      .to(
-        "#hero-ipad-white",
-        {
-          scale: 0.8,
-        },
-        ">"
-      )
-      .set(
-        "#main-content",
-        {
-          display: "none",
-        },
-        "<"
-      )
-      // .set(
-      //   "#intro-content",
-      //   {
-      //     display: "block",
-      //   },
-      //   "<"
-      // )
-      // .addLabel("btn-1")
-      // .to("#intro-image-1-btn", {
-      //   rotate: 10,
-      // })
-      // .to(
-      //   "#intro-image-1",
-      //   {
-      //     autoAlpha: 0,
-      //   },
-      //   "+=2"
-      // )
-      // .addLabel("btn-2")
-      // .to(
-      //   "#intro-image-1-btn",
-      //   {
-      //     rotate: 0,
-      //   },
-      //   ">"
-      // )
-      // .to("#intro-image-2-btn", {
-      //   rotate: 10,
-      // })
-      // .to(
-      //   "#intro-image-2",
-      //   {
-      //     autoAlpha: 0,
-      //   },
-      //   "+=2"
-      // )
-      // .addLabel("btn-3")
-      // .to(
-      //   "#intro-image-2-btn",
-      //   {
-      //     rotate: 0,
-      //   },
-      //   ">"
-      // )
-      // .to("#intro-image-3-btn", {
-      //   rotate: 10,
-      // })
-      // .to(
-      //   "#intro-image-3",
-      //   {
-      //     autoAlpha: 0,
-      //   },
-      //   "+=2"
-      // )
-      // .addLabel("btn-4")
-      // .to(
-      //   "#intro-image-3-btn",
-      //   {
-      //     rotate: 0,
-      //   },
-      //   ">"
-      // )
-      // .to("#intro-image-4-btn", {
-      //   rotate: 10,
-      // })
-      .to(
-        "#root",
-        {
-          backgroundColor: "#29424D",
-        },
-        "+=2"
+        }
       );
-    // .to("#hero-main-heading", {
-    //   yPercent: 100,
-    //   opacity: 1,
-    // });
-  });
 
-  const moveTo = (sectionId, id) => {
-    const section = document.querySelector(`#${sectionId}`);
-    const pos = Math.ceil(
-      section.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
-        section.parentNode.offsetTop
-    );
+      gsap.set("#hero-outline-arrow", {
+        autoAlpha: 0,
+        yPercent: 100,
+      });
 
-    gsap.to(window, { duration: 0.3, scrollTo: pos, ease: "linear" });
-  };
+      gsap.set(["#hero-ipad", "#hero-ipad-white"], {
+        scale: 2,
+        top: "50%",
+        left: "50%",
+        xPercent: -50,
+        yPercent: -50,
+      });
 
-  // ======================================================
-  // gsap.registerPlugin(ScrollTrigger);
-  // useEffect(() => {
-  //   gsap.from(".hero_heading", {
-  //     filter: "blur(2px)",
-  //     duration: 3,
-  //   });
-  //   gsap.from(".icon_1", {
-  //     yPercent: 100,
-  //     duration: 2,
-  //   });
-  //   gsap.from(".icon_2", {
-  //     y: "50%",
-  //     duration: 2,
-  //   });
-  //   gsap.from(".icon_3", {
-  //     yPercent: 100,
-  //     duration: 2,
-  //     zIndex: 1,
-  //   });
-  //   let secondSlide = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".hero_parent",
-  //       start: "top top",
-  //       end: "+=400%",
-  //       scrub: 2,
-  //       pin: true,
-  //     },
-  //   });
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 1,
+          // markers: true,
+        },
+      });
 
-  //   secondSlide
-  //     .to(".hero_slide_parent", {
-  //       yPercent: -100,
-  //       duration: 1,
-  //       delay: 1,
-  //     })
-  //     .to(
-  //       ".hero_heading",
-  //       {
-  //         opacity: 0,
-  //         duration: 1,
-  //       },
-  //       "-=1"
-  //     )
-  //     .to(
-  //       ".icon_1",
-  //       {
-  //         y: "-100vh",
-  //         duration: 1,
-  //       },
-  //       "-=1"
-  //     )
-  //     .to(
-  //       ".icon_2",
-  //       {
-  //         yPercent: -100,
-  //         duration: 1,
-  //       },
-  //       "-=1"
-  //     )
-  //     .to(
-  //       ".icon_3",
-  //       {
-  //         rotate: 20,
-  //         y: "-75%",
-  //         x: "10%",
-  //         scale: 0.7,
-  //         duration: 2,
-  //         zIndex: 1,
-  //       },
-  //       "-=1"
-  //     )
-  //     .fromTo(
-  //       ".icon_4",
-  //       {
-  //         yPercent: 80,
-  //         duration: 3,
-  //       },
-  //       {
-  //         yPercent: -65,
-  //         // xPercent: -50,
-  //         duration: 3,
-  //       },
-  //       "-=1"
-  //     )
-  //     .fromTo(
-  //       ".i_pad_img",
-  //       {
-  //         opacity: 0,
-  //         xPercent: -50,
-  //         left: "50%",
-  //         scale: 3,
-  //         top: "50%",
-  //         yPercent: -50,
-  //         duration: 3,
-  //       },
-  //       {
-  //         opacity: 1,
-  //         scale: 0.8,
-  //         xPercent: -50,
-  //         left: "50%",
-  //         top: "50%",
-  //         yPercent: -50,
-  //         duration: 3,
-  //       }
-  //     )
+      tl.to(".arrow-hero-one", {
+        yPercent: -200,
+        autoAlpha: 0,
+      })
+        .to(
+          ".arrow-hero-three",
+          {
+            yPercent: -300,
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to("#hero-main-heading", {
+          yPercent: 100,
+          opacity: 0,
+        })
+        .to(
+          ".arrow-hero-two",
+          {
+            scale: 0.2,
+            rotate: "45deg",
+          },
+          "<"
+        )
+        .set("#hero-outline-arrow", {
+          autoAlpha: 1,
+        })
+        .set(
+          "#hero-ipad",
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(["#hero-sub-heading-one", "#hero-para-one"], {
+          autoAlpha: 1,
+        })
+        .to("#hero-ipad", {
+          scale: 1,
+        })
+        .to(
+          "#main-content",
+          {
+            scale: 1,
+          },
+          "<"
+        )
+        .to("#hero-outline-arrow", {
+          yPercent: -200,
+          duration: 5,
+        })
+        .to(
+          ["#hero-sub-heading-one", "#hero-para-one"],
+          {
+            autoAlpha: 0,
+          },
+          "<1"
+        )
+        .to(
+          ["#hero-sub-heading-two", "#hero-para-two"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(
+          "#white-section",
+          {
+            height: 0,
+            duration: 2,
+          },
+          "<"
+        )
+        .set(
+          "#hero-ipad-white",
+          {
+            scale: 1,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad",
+          {
+            autoAlpha: 0,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            opacity: 1,
+          },
+          "<"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            scale: 0.8,
+          },
+          ">"
+        )
+        .set(
+          "#main-content",
+          {
+            display: "none",
+          },
+          "<"
+        )
+        .to(
+          "#root",
+          {
+            backgroundColor: "#29424D",
+          },
+          "+=2"
+        );
+    });
 
-  //     .to(
-  //       ".hero_slide_parent",
-  //       {
-  //         scale: 0.8,
-  //         duration: 1,
-  //         delay: 1,
-  //       },
-  //       "-=1"
-  //     )
-  //     .to(
-  //       ".icon_3",
-  //       {
-  //         scale: 0.4,
-  //         top: "55%",
-  //         left: "50%",
-  //         zIndex: 1,
-  //       },
-  //       "-=1"
-  //     )
-  //     // .fromTo(
-  //     //   ".hero_slide_2",
-  //     //   { top: "200vh", position: "absolute", delay: 1, yPercent: -50 },
-  //     //   {
-  //     //     delay: 1,
-  //     //     top: "50%",
-  //     //     position: "absolute",
-  //     //     duration: 1,
-  //     //     yPercent: -50,
-  //     //   }
-  //     // )
-  //     .fromTo(
-  //       ".hero_slide_2",
-  //       {
-  //         top: "50vh",
-  //         position: "absolute",
-  //         delay: 1,
-  //         yPercent: -50,
-  //         opacity: 0,
-  //         duration: 1,
-  //         delay: 1,
-  //       },
-  //       {
-  //         delay: 1,
-  //         top: "50%",
-  //         position: "absolute",
-  //         duration: 1,
-  //         yPercent: -50,
-  //         opacity: 1,
-  //       }
-  //     )
-  //     .to(
-  //       ".hero_slide_1",
-  //       {
-  //         opacity: 0,
-  //         yPercent: "-100vh",
-  //       },
-  //       "-=1"
-  //     )
-  //     .to(".hero_text_parent", {
-  //       height: "100vh",
-  //       duration: 0.1,
-  //     })
-  //     .to(".icon_4", {
-  //       yPercent: -155,
-  //       // xPercent: -50,
-  //       duration: 3,
-  //       scale: 0.8,
-  //     })
-  //     .to(
-  //       ".hero_text_parent",
-  //       {
-  //         height: "50vh",
-  //         duration: 1,
-  //       },
-  //       "-=1"
-  //     )
-  //     .to(".icon_4", {
-  //       yPercent: -255,
-  //       // xPercent: -50,
-  //       duration: 5,
-  //       scale: 0.5,
-  //     })
-  //     .to(".hero_text_parent", {
-  //       height: "0vh",
-  //       duration: 1,
-  //     })
-  //     .to(".hero_text_parent", {
-  //       height: "0vh",
-  //       delay: 2,
-  //     });
-  // }, []);
+    tl.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+      gsap.from("#hero-main-heading", {
+        yPercent: 100,
+        // opacity: 0,
+      });
+      gsap.set(".arrow-hero-two", {
+        xPercent: 100,
+        scale: 0.4,
+      });
 
-  // const buttonData = [
-  //   {
-  //     buttonText: "come",
-  //     buttonId: "intro-image-1-btn",
-  //     label: "btn-1",
-  //     card_img: comeLottie,
-  //     para: "Scopri",
-  //   },
-  //   {
-  //     buttonText: "marketing conversazionale",
-  //     buttonId: "intro-image-2-btn",
-  //     label: "btn-2",
-  //     card_img: marketingLottie,
-  //     para: "usiamo il",
-  //   },
-  //   {
-  //     buttonText: `strumenti tech<span class="ff_math">-</span>driven`,
-  //     buttonId: "intro-image-3-btn",
-  //     label: "btn-3",
-  //     card_img: techDrivenLottie,
-  //     para: "e gli ",
-  //   },
-  //   {
-  //     buttonText: `qualifica digitale real<span class="ff_math">-</span>time`,
-  //     buttonId: "intro-image-4-btn",
-  //     label: "btn-4",
-  //     card_img: realTimeLottie,
-  //     para: "da noi sviluppati",
-  //   },
-  //   {
-  //     buttonText: "CRM",
-  //     buttonId: "intro-image-5-btn",
-  //     label: "btn-5",
-  //     card_img: crmLottie,
-  //     para: "per ottenere una",
-  //   },
-  //   {
-  //     buttonText: "",
-  //     buttonId: "",
-  //     label: "",
-  //     card_img: "",
-  //     para: "e trasmettere i dati sul tuo",
-  //   },
-  // ];
+      gsap.set(".arrow-hero-three", {
+        xPercent: -100,
+        y: -130,
+        scale: 0.2,
+      });
+      gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
+        y: 100,
+        stagger: 0.1,
+      });
+
+      gsap.set(
+        [
+          "#hero-sub-heading-one",
+          "#hero-sub-heading-two",
+          "#hero-para-one",
+          "#hero-para-two",
+        ],
+        {
+          autoAlpha: 0,
+        }
+      );
+
+      gsap.set("#hero-outline-arrow", {
+        autoAlpha: 0,
+        yPercent: 100,
+      });
+
+      gsap.set(["#hero-ipad", "#hero-ipad-white"], {
+        scale: 2,
+        top: "50%",
+        left: "50%",
+        xPercent: -50,
+        yPercent: -50,
+      });
+
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 1,
+        },
+      });
+
+      tl.to(".arrow-hero-one", {
+        yPercent: -200,
+        autoAlpha: 0,
+      })
+        .to(
+          ".arrow-hero-three",
+          {
+            yPercent: -300,
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to("#hero-main-heading", {
+          yPercent: 100,
+          opacity: 0,
+        })
+        .to(
+          ".arrow-hero-two",
+          {
+            scale: 0.2,
+            rotate: "45deg",
+          },
+          "<"
+        )
+        .set("#hero-outline-arrow", {
+          autoAlpha: 1,
+        })
+        .set(
+          "#hero-ipad",
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(["#hero-sub-heading-one", "#hero-para-one"], {
+          autoAlpha: 1,
+        })
+        .to("#hero-ipad", {
+          scale: 1,
+        })
+        .to(
+          "#main-content",
+          {
+            scale: 1,
+          },
+          "<"
+        )
+        .to("#hero-outline-arrow", {
+          yPercent: -200,
+          duration: 5,
+        })
+        .to(
+          ["#hero-sub-heading-one", "#hero-para-one"],
+          {
+            autoAlpha: 0,
+          },
+          "<1"
+        )
+        .to(
+          ["#hero-sub-heading-two", "#hero-para-two"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(
+          "#white-section",
+          {
+            height: 0,
+            duration: 2,
+          },
+          "<"
+        )
+        .set(
+          "#hero-ipad-white",
+          {
+            scale: 1,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad",
+          {
+            autoAlpha: 0,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            opacity: 1,
+          },
+          "<"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            scale: 0.8,
+          },
+          ">"
+        )
+        .set(
+          "#main-content",
+          {
+            display: "none",
+          },
+          "<"
+        )
+        .to(
+          "#root",
+          {
+            backgroundColor: "#29424D",
+          },
+          "+=2"
+        );
+    });
+  }, []);
 
   return (
     <>
