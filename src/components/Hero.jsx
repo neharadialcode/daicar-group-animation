@@ -264,6 +264,10 @@ const Hero = () => {
         },
         "+=2"
       );
+    // .to("#hero-main-heading", {
+    //   yPercent: 100,
+    //   opacity: 1,
+    // });
   });
 
   const moveTo = (sectionId, id) => {
@@ -524,136 +528,6 @@ const Hero = () => {
     <>
       <div className="bg_dark_gray">
         <Header />
-
-        {/* =============================================== */}
-        {/* <div className="hero_parent">
-          <div className="value">
-            <div className="hero_text_parent bg_dark_gray position-absolute top-0 end-0 w-100 h-100 z_negative"></div>
-            <div className="hero_heading">
-              <div className="hero_section_heading">
-                <h2 className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01">
-                  Il futuro delle tue
-                  <span className="d-inline-block hero_heading_btn me-2 mx-sm-3">
-                    vendite
-                  </span>
-                  <span>
-                    <img
-                      className="hero_e_text"
-                      src={heroEtext}
-                      alt="hero-e-text"
-                    />
-                  </span>{" "}
-                  digitale
-                </h2>
-              </div>
-            </div>
-            <div className="icon_1">
-              <Icon1 />
-            </div>
-            <div className="icon_2">
-              <Icon2 className="w-100" />
-            </div>
-            <div className="icon_3">
-              <Icon3 />
-            </div>
-            <div className="icon_4">
-              <div className="d-none d-sm-block">
-                <Icon4 />
-              </div>
-              <div className="d-sm-none">
-                <Icon4_2 />
-              </div>
-            </div>
-            <div className="hero_slide_parent">
-              <div className="i_pad_img">
-                <img
-                  className="w-100 d-none d-lg-block"
-                  src={ipadScrollFit}
-                  alt="i_pad_img"
-                />
-                <img
-                  className="w-100 d-none d-sm-block d-lg-none"
-                  src={iPadFrameimg}
-                  alt="i_pad_img"
-                />
-                <img
-                  className="ipad_image d-sm-none"
-                  src={iPadSmallImg}
-                  alt="i_pad_img2"
-                />
-              </div>
-              <div className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white vh-100">
-                <div className="hero_slide_1">
-                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
-                    Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
-                      vendite
-                    </span>
-                    <span>
-                      <img
-                        className="hero_e_text"
-                        src={heroEtext}
-                        alt="hero-e-text"
-                      />
-                    </span>{" "}
-                    digitale
-                  </h2>
-                  <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
-                    200.000
-                  </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 hero_slide_para_1">
-                    Lead
-                    <span className="ff_mundial_bold mx-2">Qualificati</span>
-                    nel 2022
-                  </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 hero_slide_para_2">
-                    Daicar aiuta a far
-                    <span className="ff_mundial_bold mx-2">crescere</span> la
-                    tua azienda, <br className="d-none d-sm-block" />
-                    creando contatti e generando vendite
-                  </p>
-                </div>
-
-                <div className="hero_slide_2">
-                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
-                    Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
-                      vendite
-                    </span>
-                    <span>
-                      <img
-                        className="hero_e_text"
-                        src={heroEtext}
-                        alt="hero-e-text"
-                      />
-                    </span>
-                    &nbsp;digitale
-                  </h2>
-                  <h3 className="font_8xl fw-bold mt-xl-5 pt-4 pt-xl-5 pb-4 text-center color_light_green">
-                    10.000
-                  </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 hero_slide_para_1">
-                    Campagne
-                    <span className="ff_mundial_bold mx-2">Generate</span>
-                    nel 2022
-                  </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-5 pb-4 hero_slide_para_2">
-                    Campaign management
-                    <span className="ff_mundial_bold mx-2">flessibile</span> e
-                    altamente
-                    <br className="d-none d-sm-block" />
-                    <span className="ff_mundial_bold mx-2">
-                      personalizzabile
-                    </span>
-                    sulle criticità di ogni partner
-                    <br />
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div id="hero" className="color_dark_gray z-10 overflow-hidden">
           <div className="container vh-100 z-0 position-relative">
             <div
