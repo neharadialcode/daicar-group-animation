@@ -44,7 +44,22 @@ const Partners = () => {
       window.innerWidth < 576.99 && setIsMobileDevice(true);
       window.innerWidth > 576.99 && setIsMobileDevice(false);
     });
-
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#partners",
+        start: "top bottom",
+        end: "top 10%",
+        scrub: 1,
+        fastScrollEnd: true,
+      },
+    });
+      tl.to(
+        "#root",
+        {
+          backgroundColor: "#EDFAFB",
+        },
+        "-=3"
+      );
     const ctx = gsap.context(() => {
       const tl2 = gsap.timeline({
         scrollTrigger: {

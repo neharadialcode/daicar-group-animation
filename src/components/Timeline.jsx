@@ -45,7 +45,6 @@ const FifthSection = () => {
         start: "top bottom",
         end: "top 50%",
         scrub: true,
-        // markers: true,
       },
     });
     tl.to("#root", {
@@ -59,24 +58,25 @@ const FifthSection = () => {
           end: "+=400%",
           scrub: 1,
           pin: true,
+          markers: true,
         },
       });
       timeline
-        .fromTo(
-          ".timeline_line_img",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        // .fromTo(
+        //   ".timeline_line_img",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   {
+        //     autoAlpha: 1,
+        //   }
+        // )
 
         // FIRST VALUES
         .fromTo(
           ".timeline_arrow_icon",
           {
-            left: "-90vw",
+            left: "-100vw",
           },
           {
             left: "-80vw",
