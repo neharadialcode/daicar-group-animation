@@ -7,11 +7,44 @@ import footerbg from "../assets/images/png/footer_bg.png";
 import footerMobilebg from "../assets/images/png/footer-bg-mobile-sc.png";
 import BackToTop from "./BackToTopButton";
 import { FbIcon, InstagramIcon, Linkedin } from "./Icons";
+import meetingManImg from "../assets/images/svg/meeting_man_img.svg";
 
 function Footer() {
   const getnewyear = new Date().getFullYear();
   return (
     <>
+      <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2">
+        <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
+          <button className="ff_mundial_regular hero_btn me-4 me-lg-5 mt-5 mt-sm-0">
+            <span className="d-sm-none">F</span>
+            <span className="d-none d-sm-inline-block">f</span>issa un meeting
+          </button>
+          <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3 d-none d-sm-block">
+            chat
+          </button>
+        </div>
+        <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center fissa-meeting-content-parent">
+          <img
+            className="meeting_man_img me-2"
+            src={meetingManImg}
+            alt="meetingManImg"
+          />
+          <p className="mb-0 font_md d-none d-xxl-block meeting_text_color">
+            Matteo,
+            <span className="ff_mundial_light">
+              &nbsp;Business Development Manager
+            </span>
+          </p>
+          <p className="mb-0 font_md color_gray d-xxl-none">
+            Matteo,
+            <br className="d-sm-none" />
+            <span className="ff_mundial_light">
+              Business Development Manager
+            </span>
+          </p>
+        </div>
+      </div>
+
       <section className="pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center">
         <BackToTop />
         <img

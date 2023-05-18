@@ -4,7 +4,7 @@ import TabsImage from "./components/TabsImage";
 import Business from "./components/Business";
 import AboutUs from "./components/AboutUs";
 import Timeline from "./components/Timeline";
-import Partner from "./components/Partner";
+import Partners from "./components/partners/Partners";
 import Crm from "./components/Crm";
 import Meeting from "./components/Meeting";
 import Footer from "./components/Footer";
@@ -16,16 +16,14 @@ import largeArrow2 from "./assets/arrow-large-2.svg";
 function App() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <TabsImage />
       <Business />
       <AboutUs />
       <Timeline />
-      <div className="bg_light_white">
-        <Partner />
-        <Crm />
-        <Meeting />
-      </div>
+      <Partners />
+      <Crm />
+      <Meeting />
       <Footer />
       <img
         src={largeArrow}
@@ -37,7 +35,7 @@ function App() {
         id="hero-large-arrow-2"
         className="fixed z-0 pointer-events-none hidden"
       />
-      <ScrollChatIcon />
+      {/* <ScrollChatIcon /> */}
     </>
   );
 }
