@@ -198,20 +198,44 @@ const Hero = () => {
     });
 
     tl.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+      gsap.set("#main-content", {
+        y: "-60px",
+      });
+      gsap.set(".arrow-hero-one", {
+        scale: 0.8,
+      });
+      gsap.set(".arrow-hero-two", {
+        xPercent: 75,
+        scale: 0.3,
+      });
+      gsap.set(".arrow-hero-three", {
+        xPercent: -55,
+        yPercent: -5,
+        scale: 0.15,
+      });
+
       gsap.from("#hero-main-heading", {
         yPercent: 100,
         // opacity: 0,
       });
-      gsap.set(".arrow-hero-two", {
-        xPercent: 100,
-        scale: 0.4,
-      });
+      // gsap.set(".arrow-hero-two", {
+      //   xPercent: 100,
+      //   scale: 0.4,
+      // });
 
-      gsap.set(".arrow-hero-three", {
-        xPercent: -100,
-        y: -130,
-        scale: 0.2,
-      });
+      // gsap.set(".arrow-hero-three", {
+      //   xPercent: -100,
+      //   y: -130,
+      //   scale: 0.2,
+      // });
+      // gsap.set("#hero-large-arrow", {
+      //   left: "50%",
+      //   xPercent: -50,
+      //   top: "75%",
+      // });
+      // gsap.set("#intro-content", {
+      //   display: "none",
+      // });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
@@ -249,6 +273,403 @@ const Hero = () => {
           end: "+=200%",
           pin: true,
           scrub: 1,
+          // markers: true,
+        },
+      });
+
+      tl.to(".arrow-hero-one", {
+        yPercent: -200,
+        autoAlpha: 0,
+      })
+        .to(
+          ".arrow-hero-three",
+          {
+            yPercent: -300,
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to("#hero-main-heading", {
+          yPercent: 100,
+          opacity: 0,
+        })
+        .to(
+          ".arrow-hero-two",
+          {
+            scale: 0.2,
+            rotate: "45deg",
+          },
+          "<"
+        )
+        .set("#hero-outline-arrow", {
+          autoAlpha: 1,
+        })
+        .set(
+          "#hero-ipad",
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(["#hero-sub-heading-one", "#hero-para-one"], {
+          autoAlpha: 1,
+        })
+        .to("#hero-ipad", {
+          scale: 1,
+        })
+        .to(
+          "#main-content",
+          {
+            scale: 1,
+          },
+          "<"
+        )
+        .to("#hero-outline-arrow", {
+          yPercent: -200,
+          duration: 5,
+        })
+        .to(
+          ["#hero-sub-heading-one", "#hero-para-one"],
+          {
+            autoAlpha: 0,
+          },
+          "<1"
+        )
+        .to(
+          ["#hero-sub-heading-two", "#hero-para-two"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(
+          "#white-section",
+          {
+            height: 0,
+            duration: 2,
+          },
+          "<"
+        )
+        .set(
+          "#hero-ipad-white",
+          {
+            scale: 1,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad",
+          {
+            autoAlpha: 0,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            opacity: 1,
+          },
+          "<"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            scale: 0.8,
+          },
+          ">"
+        )
+        .set(
+          "#main-content",
+          {
+            display: "none",
+          },
+          "<"
+        )
+        .to(
+          "#root",
+          {
+            backgroundColor: "#29424D",
+          },
+          "+=2"
+        );
+    });
+
+    tl.add("(min-width: 576px) and (max-width:991.98px)", () => {
+      gsap.set("#main-content", {
+        y: "-60px",
+      });
+      gsap.set(".arrow-hero-one", {
+        scale: 0.8,
+      });
+      gsap.set(".arrow-hero-two", {
+        xPercent: 58,
+        yPercent: 48,
+        scale: 0.3,
+      });
+      gsap.set(".arrow-hero-three", {
+        xPercent: -54,
+        yPercent: -15,
+        scale: 0.15,
+      });
+
+      gsap.from("#hero-main-heading", {
+        yPercent: 100,
+        // opacity: 0,
+      });
+      // gsap.set(".arrow-hero-two", {
+      //   xPercent: 100,
+      //   scale: 0.4,
+      // });
+
+      // gsap.set(".arrow-hero-three", {
+      //   xPercent: -100,
+      //   y: -130,
+      //   scale: 0.2,
+      // });
+      // gsap.set("#hero-large-arrow", {
+      //   left: "50%",
+      //   xPercent: -50,
+      //   top: "75%",
+      // });
+      // gsap.set("#intro-content", {
+      //   display: "none",
+      // });
+      gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
+        y: 100,
+        stagger: 0.1,
+      });
+
+      gsap.set(
+        [
+          "#hero-sub-heading-one",
+          "#hero-sub-heading-two",
+          "#hero-para-one",
+          "#hero-para-two",
+        ],
+        {
+          autoAlpha: 0,
+        }
+      );
+
+      gsap.set("#hero-outline-arrow", {
+        autoAlpha: 0,
+        yPercent: 100,
+      });
+
+      gsap.set(["#hero-ipad", "#hero-ipad-white"], {
+        scale: 2,
+        top: "50%",
+        left: "50%",
+        xPercent: -50,
+        yPercent: -50,
+      });
+
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 1,
+          // markers: true,
+        },
+      });
+
+      tl.to(".arrow-hero-one", {
+        yPercent: -200,
+        autoAlpha: 0,
+      })
+        .to(
+          ".arrow-hero-three",
+          {
+            yPercent: -300,
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to("#hero-main-heading", {
+          yPercent: 100,
+          opacity: 0,
+        })
+        .to(
+          ".arrow-hero-two",
+          {
+            scale: 0.2,
+            rotate: "45deg",
+          },
+          "<"
+        )
+        .set("#hero-outline-arrow", {
+          autoAlpha: 1,
+        })
+        .set(
+          "#hero-ipad",
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(["#hero-sub-heading-one", "#hero-para-one"], {
+          autoAlpha: 1,
+        })
+        .to("#hero-ipad", {
+          scale: 1,
+        })
+        .to(
+          "#main-content",
+          {
+            scale: 1,
+          },
+          "<"
+        )
+        .to("#hero-outline-arrow", {
+          yPercent: -200,
+          duration: 5,
+        })
+        .to(
+          ["#hero-sub-heading-one", "#hero-para-one"],
+          {
+            autoAlpha: 0,
+          },
+          "<1"
+        )
+        .to(
+          ["#hero-sub-heading-two", "#hero-para-two"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(
+          "#white-section",
+          {
+            height: 0,
+            duration: 2,
+          },
+          "<"
+        )
+        .set(
+          "#hero-ipad-white",
+          {
+            scale: 1,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad",
+          {
+            autoAlpha: 0,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            opacity: 1,
+          },
+          "<"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            scale: 0.8,
+          },
+          ">"
+        )
+        .set(
+          "#main-content",
+          {
+            display: "none",
+          },
+          "<"
+        )
+        .to(
+          "#root",
+          {
+            backgroundColor: "#29424D",
+          },
+          "+=2"
+        );
+    });
+
+    tl.add("(max-width:575.98px)", () => {
+      gsap.set("#main-content", {
+        y: "-60px",
+      });
+      gsap.set(".arrow-hero-one", {
+        scale: 0.6,
+      });
+      gsap.set(".arrow-hero-two", {
+        xPercent: 29,
+        yPercent: -31,
+        scale: 0.15,
+      });
+      gsap.set(".arrow-hero-three", {
+        xPercent: -54,
+        yPercent: -15,
+        scale: 0.15,
+      });
+
+      gsap.from("#hero-main-heading", {
+        yPercent: 100,
+        // opacity: 0,
+      });
+      // gsap.set(".arrow-hero-two", {
+      //   xPercent: 100,
+      //   scale: 0.4,
+      // });
+
+      // gsap.set(".arrow-hero-three", {
+      //   xPercent: -100,
+      //   y: -130,
+      //   scale: 0.2,
+      // });
+      // gsap.set("#hero-large-arrow", {
+      //   left: "50%",
+      //   xPercent: -50,
+      //   top: "75%",
+      // });
+      // gsap.set("#intro-content", {
+      //   display: "none",
+      // });
+      gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
+        y: 100,
+        stagger: 0.1,
+      });
+
+      gsap.set(
+        [
+          "#hero-sub-heading-one",
+          "#hero-sub-heading-two",
+          "#hero-para-one",
+          "#hero-para-two",
+        ],
+        {
+          autoAlpha: 0,
+        }
+      );
+
+      gsap.set("#hero-outline-arrow", {
+        autoAlpha: 0,
+        yPercent: 100,
+      });
+
+      gsap.set(["#hero-ipad", "#hero-ipad-white"], {
+        scale: 2,
+        top: "50%",
+        left: "50%",
+        xPercent: -50,
+        yPercent: -50,
+      });
+
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "+=200%",
+          pin: true,
+          scrub: 1,
+          // markers: true,
         },
       });
 
