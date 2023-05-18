@@ -9,6 +9,8 @@ import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.p
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
 
+import outlineArrow from "../assets/outlineArrow.svg";
+
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Business = () => {
@@ -30,6 +32,12 @@ const Business = () => {
     gsap.set(".business_para_4", {
       height: 0,
     });
+    gsap.set("#solution-outilneArrow", {
+      left: "50%",
+      top: "50%",
+      yPercent: -50,
+      xPercent: -50,
+    });
 
     mm.add("(min-width:1600px)", () => {
       tl = gsap
@@ -46,7 +54,15 @@ const Business = () => {
           scale: 1.5,
           top: "20%",
           immediateRender: false,
-        });
+        })
+        .to(
+          "#solution-outilneArrow",
+          {
+            yPercent: -120,
+            immediateRender: false,
+          },
+          "<"
+        );
       tl.fromTo(
         ".main_text",
         {
@@ -272,7 +288,15 @@ const Business = () => {
           scale: 1.5,
           top: "20%",
           immediateRender: false,
-        });
+        })
+        .to(
+          "#solution-outilneArrow",
+          {
+            yPercent: -120,
+            immediateRender: false,
+          },
+          "<"
+        );
       tl.fromTo(
         ".main_text",
         {
@@ -732,6 +756,11 @@ const Business = () => {
             </div>
           </div>
         </div>
+        <img
+          id="solution-outilneArrow"
+          className="position-absolute pointer-events-none origin-center h-[70vh]"
+          src={outlineArrow}
+        />
       </div>
     </>
   );

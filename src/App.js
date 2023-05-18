@@ -37,7 +37,7 @@ function App() {
           className="position-fixed z-0 pointer-events-none overflow-hidden"
         /> */}
       </div>
-      {/* <ScrollChatIcon /> */}
+      <ScrollChatIcon />
     </>
   );
 }
