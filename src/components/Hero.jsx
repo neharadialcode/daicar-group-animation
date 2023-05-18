@@ -206,7 +206,7 @@ const Hero = () => {
           },
           "<"
         )
-        // kjbkjn===========================================================================================
+
         .to(
           ".active_button_0",
           {
@@ -216,7 +216,6 @@ const Hero = () => {
           "-=.5"
         )
         .addLabel("button_0")
-        //////////
         .fromTo(
           ".card_img_0",
           {
@@ -534,7 +533,7 @@ const Hero = () => {
           "-=.5"
         )
 
-        // kjonovdjsz=========================================================================================================
+        // =========================================================================================================
         // .addLabel("btn-1")
         // .to("#intro-image-1-btn", {
         //   rotate: 10,
@@ -1272,7 +1271,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="bg_dark_gra">
+      <div>
         <Header />
         <div id="hero" className="color_dark_gray z-10 overflow-hidden">
           <div className="container vh-100 z-0 position-relative">
@@ -1397,7 +1396,7 @@ const Hero = () => {
                 className="vh-100 d-flex flex-column justify-content-center tab_parent overflow-hidden z_2"
                 id="main-assets"
               >
-                <div className="side_icon position-absolute tab_right_icon d-none d-xl-block">
+                <div className="side_icon position-absolute tab_right_icon d-none d-xxl-block">
                   <div className="d-flex align-items-center tab-side-effect left_text_5">
                     <p className="me-4 color_light_green mb-0">
                       CRM lo facciamo
@@ -1479,9 +1478,7 @@ const Hero = () => {
                                   dangerouslySetInnerHTML={{
                                     __html: obj.buttonText,
                                   }}
-                                  onClick={() =>
-                                    moveToIt("main-assets", obj.buttonId)
-                                  }
+                                  onClick={() => moveToIt("hero", obj.buttonId)}
                                 ></button>
                               ))}
                           </div>

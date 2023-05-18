@@ -9,6 +9,8 @@ import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.p
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
 
+import outlineArrow from "../assets/outlineArrow.svg";
+
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Business = () => {
@@ -30,6 +32,12 @@ const Business = () => {
     gsap.set(".business_para_4", {
       height: 0,
     });
+    gsap.set("#solution-outilneArrow", {
+      left: "50%",
+      top: "50%",
+      yPercent: -50,
+      xPercent: -50,
+    });
 
     mm.add("(min-width:1600px)", () => {
       tl = gsap
@@ -46,7 +54,15 @@ const Business = () => {
           scale: 1.5,
           top: "20%",
           immediateRender: false,
-        });
+        })
+        .to(
+          "#solution-outilneArrow",
+          {
+            yPercent: -120,
+            immediateRender: false,
+          },
+          "<"
+        );
       tl.fromTo(
         ".main_text",
         {
@@ -272,7 +288,15 @@ const Business = () => {
           scale: 1.5,
           top: "20%",
           immediateRender: false,
-        });
+        })
+        .to(
+          "#solution-outilneArrow",
+          {
+            yPercent: -120,
+            immediateRender: false,
+          },
+          "<"
+        );
       tl.fromTo(
         ".main_text",
         {
@@ -556,7 +580,7 @@ const Business = () => {
           <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
             <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
           </div>
-          <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
+          <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center z-10">
             <div className="main_text d-none d-lg-block pb-5">
               <div className="row justify-content-evenly divide_space_text">
                 <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center ">
@@ -732,6 +756,11 @@ const Business = () => {
             </div>
           </div>
         </div>
+        <img
+          id="solution-outilneArrow"
+          className="position-absolute pointer-events-none origin-center h-[70vh]"
+          src={outlineArrow}
+        />
       </div>
     </>
   );

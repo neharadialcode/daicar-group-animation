@@ -9,6 +9,9 @@ import smallbgImg from "../assets/images/png/small-bg-forth.png";
 import topArrow from "../assets/images/png/about-top-arrow.png";
 import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
+
+import aboutArrow from "../assets/about-arrow.png";
+
 const About = () => {
   useEffect(() => {
     let mm = gsap.matchMedia();
@@ -391,8 +394,9 @@ const About = () => {
         {/* <div className="position-absolute z_negative d-none d-lg-block">
           <img className="w-100" src={topArrow} alt="about-top-arrow" />
         </div> */}
-        <img className="about_icon_1" src={roadmapImg1} alt="roadmapImg1" />
-        <img className="about_icon_2" src={roadmapImg2} alt="roadmapImg1" />
+        {/* <img className="about_icon_1" src={roadmapImg1} alt="roadmapImg1" /> */}
+        {/* <img className="about_icon_2" src={roadmapImg2} alt="roadmapImg1" /> */}
+        <img className="about_icon_2" src={aboutArrow} alt="aboutArrow" />
         <div className="position-absolute d-none d-sm-block d-lg-none z_negative">
           <img
             className="w-100 small_tab_arrow_img_forth"
