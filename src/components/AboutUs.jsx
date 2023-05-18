@@ -13,6 +13,22 @@ const About = () => {
   useEffect(() => {
     let aboutValue = gsap.matchMedia();
     aboutValue.add("(min-width: 1400px)", () => {
+      const tl1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".about_parent",
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          fastScrollEnd: true,
+        },
+      });
+      tl1.to(
+        "#root",
+        {
+          backgroundColor: "#7EE49C80",
+        },
+        "<2"
+      );
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
@@ -333,7 +349,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="vh-100 overflow-hidden about_parent bg_light_green z_5 top_minus_space">
+    <div className="vh-100 overflow-hidden about_parent z_5 top_minus_space">
       <div className="position-relative h-100 z_1">
         <div className="position-absolute z_negative d-none d-lg-block">
           <img className="w-100" src={topArrow} alt="about-top-arrow" />
