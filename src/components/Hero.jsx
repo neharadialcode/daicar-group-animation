@@ -875,7 +875,7 @@ const Hero = () => {
             </div>
             <img
               id="hero-ipad"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-xl-none"
               src={ipad_mockup}
             />
             <img
