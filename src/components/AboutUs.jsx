@@ -11,30 +11,30 @@ import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 const About = () => {
   useEffect(() => {
-    let aboutValue = gsap.matchMedia();
-    aboutValue.add("(min-width: 1400px)", () => {
-      const tl1 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".about_parent",
-          start: "top bottom",
-          end: "top top",
-          scrub: true,
-          fastScrollEnd: true,
+    const tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".about_parent",
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+        fastScrollEnd: true,
+      },
+    });
+    tl1
+      .to("#hero-large-arrow", {
+        scale: 1.2,
+        top: "-80%",
+        duration: 5,
+      })
+      .to(
+        "#root",
+        {
+          backgroundColor: "#7EE49C80",
         },
-      });
-      tl1
-        .to("#hero-large-arrow", {
-          scale: 1.2,
-          top: "-80%",
-          duration: 5,
-        })
-        .to(
-          "#root",
-          {
-            backgroundColor: "#7EE49C80",
-          },
-          "<2"
-        );
+        "<2"
+      );
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 1400px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
@@ -195,7 +195,8 @@ const About = () => {
           "-=.5"
         );
     });
-    aboutValue.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+
+    mm.add("(min-width: 992px) and (max-width:1399.98px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
@@ -326,7 +327,7 @@ const About = () => {
           "-=.1"
         );
     });
-    aboutValue.add("(max-width:991.98px)", () => {
+    mm.add("(max-width:991.98px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
