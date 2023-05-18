@@ -258,15 +258,21 @@ const Business = () => {
     });
 
     mm.add("(min-width:992px) and (max-width:1599.98px)", () => {
-      tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".business_parent",
-          start: "top top",
-          end: "+=600%",
-          scrub: 1,
-          pin: true,
-        },
-      });
+      tl = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".business_parent",
+            start: "top top",
+            end: "+=600%",
+            scrub: 1,
+            pin: true,
+          },
+        })
+        .to("#hero-large-arrow", {
+          scale: 1.5,
+          top: "20%",
+          immediateRender: false,
+        });
       tl.fromTo(
         ".main_text",
         {

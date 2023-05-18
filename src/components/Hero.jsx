@@ -623,7 +623,11 @@ const Hero = () => {
         yPercent: -5,
         scale: 0.15,
       });
-
+      gsap.set("#hero-large-arrow", {
+        left: "50%",
+        xPercent: -50,
+        top: "75%",
+      });
       gsap.from("#hero-main-heading", {
         yPercent: 100,
       });
@@ -869,7 +873,11 @@ const Hero = () => {
         yPercent: -15,
         scale: 0.15,
       });
-
+      gsap.set("#hero-large-arrow", {
+        left: "50%",
+        xPercent: -50,
+        top: "75%",
+      });
       gsap.from("#hero-main-heading", {
         yPercent: 100,
       });
@@ -1047,7 +1055,11 @@ const Hero = () => {
         yPercent: 36,
         scale: 0.1,
       });
-
+      gsap.set("#hero-large-arrow", {
+        left: "50%",
+        xPercent: -50,
+        top: "75%",
+      });
       gsap.from("#hero-main-heading", {
         yPercent: 100,
       });
