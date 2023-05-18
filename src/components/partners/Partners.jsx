@@ -53,7 +53,20 @@ const Partners = () => {
         fastScrollEnd: true,
       },
     });
-      tl.to(
+    tl
+      .to(".timeline-content", {
+      autoAlpha: 0,
+      xPercent: 20,
+    })
+      .to(
+        ".timeline_arrow_icon",
+        {
+          right: "-100%",
+          duration: 4,
+        },
+        "<"
+      )
+      .to(
         "#root",
         {
           backgroundColor: "#EDFAFB",
@@ -69,7 +82,6 @@ const Partners = () => {
           pin: true,
         },
       });
-
       tl2
         .from("#partners-content-heading", {
           y: -20,
@@ -87,9 +99,9 @@ const Partners = () => {
   return (
     <div
       id="partners"
-      className="bg_light_white  partner_parent d-flex justify-content-center align-items-center overflow-hidden min-vh-100"
+      className="partner_parent d-flex justify-content-center align-items-center overflow-hidden min-vh-100"
     >
-      <div className="container ">
+      <div className="container">
         <div className="position-absolute arrowbtn_set">
           <img src={leftTextImg} alt="partner-left-text-img" />
         </div>

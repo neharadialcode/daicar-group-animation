@@ -11,8 +11,8 @@ import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 const About = () => {
   useEffect(() => {
-    let aboutValue = gsap.matchMedia();
-    aboutValue.add("(min-width: 1400px)", () => {
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 1400px)", () => {
       const tl1 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
@@ -190,7 +190,7 @@ const About = () => {
         );
     });
 
-    aboutValue.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+    mm.add("(min-width: 992px) and (max-width:1399.98px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
@@ -321,7 +321,7 @@ const About = () => {
           "-=.1"
         );
     });
-    aboutValue.add("(max-width:991.98px)", () => {
+    mm.add("(max-width:991.98px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
