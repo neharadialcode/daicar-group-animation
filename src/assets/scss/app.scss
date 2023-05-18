@@ -693,7 +693,7 @@
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .timeline_text1_max_w {
-  max-width: 24rem;
+  max-width: 34rem;
 }
 .border_radius_99 {
   border-radius: 9999px;
@@ -705,15 +705,30 @@
   background-color: white;
 }
 .timeline_line_img {
-  left: 4px;
+  left: 25px;
   right: 4px;
-  height: 1px;
+  height: 2px;
+  max-width: 1000px !important;
 }
 .timeline_years {
-  height: 250px;
+  height: 50px;
   width: 400px;
 }
 
 .timeline_arrow_img {
   display: none;
+}
+.text_parent_height{
+  height: 71%;
+}
+
+.timeline_text_one{
+  top: 30%;
+}
+
+.timeline_car_icon{
+  max-width: 400px;
+}
+.timeline_tiguido_icon{
+  max-width: 200px;
 }

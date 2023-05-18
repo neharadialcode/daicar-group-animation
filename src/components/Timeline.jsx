@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 // import { gsap } from "gsap";
 // import icon1 from "../assets/images/svg/roadmap_side_icon.svg";
 // import timelineLeftIcon from "../assets/images/png/timeline-left-icon.png";
-// import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
-// import timelineImg2 from "../assets/images/png/timeline-content-img-2.png";
-// import timelineImg3 from "../assets/images/png/timeline-content-cake-img-3.png";
+import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
+import timelineImg2 from "../assets/images/png/timeline-content-img-2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import cake from "../assets/images/svg/timeline-cake.svg";
@@ -578,6 +577,7 @@ const Timeline = () => {
   //   });
   // }, []);
   useEffect(() => {
+    let mm = gsap.matchMedia();
     gsap.set(
       [
         "#timeline-heading-1",
@@ -593,31 +593,85 @@ const Timeline = () => {
         autoAlpha: 0,
       }
     );
-
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#timeline",
         start: "top bottom",
         end: "top 50%",
         scrub: true,
-        // markers: true,
       },
     });
-
-    tl.to("#hero-large-arrow-2", {
-      bottom: "-58%",
-      display: "block",
+    tl.to("#hero-large-arrow", {
+      top: "-150%",
       autoAlpha: 0,
       immediateRender: false,
-    })
-      .to("#hero-large-arrow", {
-        top: "-150%",
+    }).to("#root", {
+      backgroundColor: "#29424D",
+    });
+    mm.add("(min-width: 1600px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-52%",
+        display: "block",
         autoAlpha: 0,
         immediateRender: false,
-      })
-      .to("#root", {
-        backgroundColor: "#29424D",
       });
+    });
+    mm.add("(max-width: 1599.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-86%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 1299.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-80%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 1199.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-117%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
 
     const tl2 = gsap.timeline({
       scrollTrigger: {
@@ -626,6 +680,7 @@ const Timeline = () => {
         end: "+=400%",
         scrub: 1,
         pin: true,
+        markers: true,
       },
     });
     tl2
@@ -748,8 +803,8 @@ const Timeline = () => {
             .right -
           document
             .querySelector("#timeline-heading-container")
-            .parentNode.getBoundingClientRect().left +
-          100
+            .parentNode.getBoundingClientRect().left -
+          50
         }px`,
       })
       .to(
@@ -774,51 +829,84 @@ const Timeline = () => {
           <div className="container position-relative h-100">
             <div
               id="timeline-content"
-              className="d-flex align-items-center flex-column justify-content-between position-relative h-100 py-5 mt-5 z-10"
+              className="d-flex align-items-center flex-column justify-content-between position-relative h-100 py-5 z-10"
             >
               <h2 className="font_5xl text-white">
                 Ideata da grazie all’esperienza acquisita nel
               </h2>
-              <div className="d-flex justify-content-between flex-column align-items-center flex-grow-1 w-100 text_parent_max_w">
-                <div className="h-100 w-100 position-relative">
+              <div className="d-flex justify-contentbetween flex-column align-items-center flex-grow-1 w-100 text_parent_max_w">
+                <div className="text_parent_height w-100 position-relative">
                   <div
                     id="timeline-heading-container"
-                    className="position-absolute top-50 -translate-y-1/2 w-100 timeline_text1_max_w"
+                    className="position-absolute -translate-y-1/2 w-100 timeline_text1_max_w timeline_text_one"
                   >
-                    <h2
+                    <div
                       id="timeline-heading-1"
-                      className="font_2xl text-white position-absolute w-100"
+                      className="position-absolute w-100"
                     >
-                      Carplanner.com nasce nel 2015 posizionandosi nel settore
-                      automotive, specializzata nella lead generation
-                      innovativa.
-                    </h2>
+                      <img
+                        className="w-100 mb-3 mb-sm-5 mb-lg-3 mb-xl-5 timeline_car_icon"
+                        src={timelineImg1}
+                        alt="timelineImg1"
+                      />
+                      <p className="font_2xl custom_size_timeline_text text-white mb-3">
+                        Carplanner.com nasce nel 2015 posizionandosi nel settore
+                        automotive, specializzata nella lead generation
+                        innovativa.
+                      </p>
+                      <button className="font_xl color_white_off timeline_btn bg-transparent">
+                        automotive
+                      </button>
+                    </div>
                     <h2
                       id="timeline-heading-2"
-                      className="font_2xl text-white position-absolute w-100"
+                      className="font_2xl text-white position-absolute w-100 timeline_text_two"
                     >
                       Sviluppiamo la nostra piattaforma proprietaria tramite
                       tecnologia A.I. Nello stesso anno entriamo a far parte di
                       Facebook Success Case per lo sviluppo di chatbot sulla
                       piattaforma Messenger
                     </h2>
-                    <h2
+                    <div
                       id="timeline-heading-3"
-                      className="font_2xl text-white position-absolute w-100"
+                      className="position-absolute w-100 timeline_text_three"
                     >
-                      Nasce TiGuido.io che trasferisce l’elevato know-how e la
-                      tecnologia sviluppata in ambito automotive al servizio di
-                      nuovi mercati. Si afferma come Digital Media Partner,
-                      pioniere nell’uso del marketing conversazionale e nella
-                      tecnologia proprietaria per la validazione e generazione
-                      di lead altamente qualificate.
-                    </h2>
-                    <h2
+                      <img
+                        className="timeline_tiguido_icon w-100"
+                        src={timelineImg2}
+                        alt="timelineImg2"
+                      />{" "}
+                      <p className="font_2xl custom_size_timeline_text text-white mb-3 pe-3 pe-sm-5 pe-lg-0 me-sm-3 me-lg-0">
+                        Nasce TiGuido.io che trasferisce l’elevato know{" "}
+                        <span className="ff_math">-</span>how e la tecnologia
+                        sviluppata in ambito automotive al servizio di nuovi
+                        mercati. Si afferma come Digital Media Partner, pioniere
+                        nell’uso del marketing conversazionale e nella
+                        tecnologia proprietaria per la validazione e generazione
+                        di lead altamente qualificate.{" "}
+                      </p>
+                      <div className="d-flex align-items-center gap-1gap-sm-3 mt-4 mt-lg-0">
+                        <button className="font_xl color_white_off timeline_btn bg-transparent">
+                          finanza
+                        </button>
+                        <button className="font_xl color_white_off timeline_btn bg-transparent mx-2 mx-sm-3">
+                          assicurazione
+                        </button>
+                        <button className="font_xl color_white_off timeline_btn bg-transparent">
+                          telco
+                        </button>
+                      </div>
+                    </div>
+                    <div
                       id="timeline-heading-4"
-                      className="font_2xl text-white position-absolute w-100"
+                      className="font_2xl text-white position-absolute w-100 timeline_text_four"
                     >
-                      <img src={cake} alt="cake-img" />
-                    </h2>
+                      <img
+                        src={cake}
+                        alt="cake-img"
+                        className="timeline_cake_img"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="w-100 position-relative d-flex align-items-center justify-content-between mb-5 pb-5">
@@ -828,7 +916,7 @@ const Timeline = () => {
                   <div id="timeline-dot-4" className="timeline_dots"></div>
                   <div
                     id="timeline-dot-line"
-                    className="position-absolute bg-white top-50 timeline_line_img"
+                    className="position-absolute bg-white timeline_line_img"
                   ></div>
                   <div className="position-absolute end-0 top-0 timeline_years">
                     <h2
@@ -853,9 +941,9 @@ const Timeline = () => {
                       id="timeline-year-4"
                       className="position-absolute font_9xl fw-bold text-white top-50 end-0 -translate-y-1/2"
                     >
-                      <p className="font_2xl opacity_05">orem ipsum</p>
+                      <p className="font_2xl opacity_05 mb-0">2 Ottobre</p>
                       2023
-                      <p className="font_2xl opacity_05">orem ipsum</p>
+                      <p className="font_2xl opacity_05">Otto anni</p>
                     </div>
                   </div>
                 </div>
@@ -897,11 +985,11 @@ const Timeline = () => {
     //               src={timelineImg1}
     //               alt="timelineImg1"
     //             />
-    //             <p className="font_2xl custom_size_timeline_text fw-normal text-white mb-3">
+    //             <p className="font_2xl custom_size_timeline_text text-white mb-3">
     //               Carplanner.com nasce nel 2015 posizionandosi nel settore
     //               automotive, specializzata nella lead generation innovativa.
     //             </p>
-    //             <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
+    //             <button className="font_xl color_white_off timeline_btn bg-transparent">
     //               automotive
     //             </button>
     //           </div>
@@ -909,7 +997,7 @@ const Timeline = () => {
     //             className="timeline_text_2 text-white position-absolute ps-2"
     //             style={{ left: `${leftSpacing - 10}px` }}
     //           >
-    //             <p className="font_2xl custom_size_timeline_text fw-normal text-white mb-3">
+    //             <p className="font_2xl custom_size_timeline_text text-white mb-3">
     //               Sviluppiamo la nostra piattaforma proprietaria tramite
     //               tecnologia A.I. Nello stesso anno entriamo a far parte di
     //               Facebook Success Case per lo sviluppo di chatbot sulla
@@ -921,7 +1009,7 @@ const Timeline = () => {
     //             style={{ left: `${leftSpacing2 - 10}px` }}
     //           >
     //             <img className="w100" src={timelineImg2} alt="timelineImg2" />
-    //             <p className="font_2xl custom_size_timeline_text fw-normal text-white mb-3 pe-3 pe-sm-5 pe-lg-0 me-sm-3 me-lg-0">
+    //             <p className="font_2xl custom_size_timeline_text text-white mb-3 pe-3 pe-sm-5 pe-lg-0 me-sm-3 me-lg-0">
     //               Nasce TiGuido.io che trasferisce l’elevato know
     //               <span className="ff_math">-</span>how e la tecnologia
     //               sviluppata in ambito automotive al servizio di nuovi mercati.
@@ -930,13 +1018,13 @@ const Timeline = () => {
     //               la validazione e generazione di lead altamente qualificate.
     //             </p>
     //             <div className="d-flex align-items-center gap-1gap-sm-3 mt-4 mt-lg-0">
-    //               <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
+    //               <button className="font_xl color_white_off timeline_btn bg-transparent">
     //                 finanza
     //               </button>
-    //               <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent mx-2 mx-sm-3">
+    //               <button className="font_xl color_white_off timeline_btn bg-transparent mx-2 mx-sm-3">
     //                 assicurazione
     //               </button>
-    //               <button className="font_xl fw-normal color_white_off timeline_btn bg-transparent">
+    //               <button className="font_xl color_white_off timeline_btn bg-transparent">
     //                 telco
     //               </button>
     //             </div>
