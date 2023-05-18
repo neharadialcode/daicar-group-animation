@@ -9,7 +9,6 @@ import Crm from "./components/Crm";
 import Meeting from "./components/Meeting";
 import Footer from "./components/Footer";
 import ScrollChatIcon from "./components/ScrollChatIcon";
-
 import largeArrow from "./assets/largeArrow.svg";
 import largeArrow2 from "./assets/arrow-large-2.svg";
 
@@ -31,11 +30,11 @@ function App() {
           id="hero-large-arrow"
           className="position-fixed z-0 pointer-events-none"
         />
-        {/* <img
+        <img
           src={largeArrow2}
           id="hero-large-arrow-2"
-          className="position-fixed z-0 pointer-events-none overflow-hidden"
-        /> */}
+          className="position-fixed z-0 pointer-events-none timeline_arrow_img"
+        />
       </div>
       {/* <ScrollChatIcon /> */}
     </>

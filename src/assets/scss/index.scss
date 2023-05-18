@@ -208,6 +208,9 @@ body {
 .font_8xl {
   font-size: var(--font-8xl);
 }
+.font_9xl {
+  font-size: var(--font-9xl);
+}
 .bg_light_white {
   background-color: var(--color-white-off);
 }
@@ -258,6 +261,9 @@ body {
 }
 .opacity_0 {
   opacity: 0;
+}
+.opacity_05 {
+  opacity: 0.5;
 }
 .cursor_pointer {
   cursor: pointer;

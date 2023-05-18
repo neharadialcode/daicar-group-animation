@@ -53,13 +53,12 @@ const Partners = () => {
         fastScrollEnd: true,
       },
     });
-    tl
-      .to(".timeline-content", {
+    tl.to("#timeline-content", {
       autoAlpha: 0,
       xPercent: 20,
     })
       .to(
-        ".timeline_arrow_icon",
+        "#hero-large-arrow-2",
         {
           right: "-100%",
           duration: 4,
