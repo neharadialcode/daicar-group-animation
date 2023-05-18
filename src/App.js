@@ -16,7 +16,7 @@ import largeArrow2 from "./assets/arrow-large-2.svg";
 function App() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <TabsImage />
       <Business />
       <AboutUs />
@@ -25,7 +25,7 @@ function App() {
       <Crm />
       <Meeting />
       <Footer />
-      <img
+      {/* <img
         src={largeArrow}
         id="hero-large-arrow"
         className="fixed z-0 pointer-events-none"
@@ -34,7 +34,7 @@ function App() {
         src={largeArrow2}
         id="hero-large-arrow-2"
         className="fixed z-0 pointer-events-none hidden"
-      />
+      /> */}
       {/* <ScrollChatIcon /> */}
     </>
   );
