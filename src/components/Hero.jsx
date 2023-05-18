@@ -1207,32 +1207,6 @@ const Hero = () => {
     });
   }, []);
 
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-
-  // const moveTo = (sectionId, id) => {
-  //   const section = document.querySelector(`#${sectionId}`);
-  //   const pos = Math.ceil(
-  //     section.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
-  //       section.parentNode.offsetTop
-  //   );
-
-  //   gsap.to(window, { duration: 0.3, scrollTo: pos, ease: "linear" });
-  // };
-
   const buttonData = [
     {
       buttonText: "come",
@@ -1388,6 +1362,7 @@ const Hero = () => {
               >
                 <Icon4 />
               </div>
+
               <img
                 className="arrow-hero-one position-absolute -z-10 pointer-events-none"
                 src={arrow}
@@ -1402,7 +1377,6 @@ const Hero = () => {
               />
             </div>
 
-            {/* ============================== */}
             <div id="intro-content" className="position-relative h-100 w-100">
               <div
                 className="vh-100 d-flex flex-column justify-content-center tab_parent overflow-hidden z_2"
@@ -1443,9 +1417,9 @@ const Hero = () => {
                 </div>
 
                 <div className="max_width_tabs position-relative">
-                  <div className="arrow_tabs position-absolute d-none d-md-block">
+                  {/* <div className="arrow_tabs position-absolute d-none d-md-block">
                     <Icon5 />
-                  </div>
+                  </div> */}
                   <img
                     className="i_pad_img_2 pt-3 w-100 custom_height_tab_img_ipad"
                     src={tabImg1}
@@ -1499,62 +1473,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-
-              {/* <img
-                id="intro-image-4"
-                src={arrow}
-                className="position-absolute custom_position w-tabs_lottie object-cover"
-              />
-              <img
-                id="intro-image-3"
-                src={arrow}
-                className="position-absolute custom_position w-tabs_lottie object-cover"
-              />
-              <img
-                id="intro-image-2"
-                src={arrow}
-                className="position-absolute custom_position w-tabs_lottie object-cover"
-              />
-              <img
-                id="intro-image-1"
-                src={arrow}
-                className="position-absolute custom_position w-tabs_lottie object-cover"
-              />
-              <div
-                id="intro-navigation"
-                className="intro-navigation position-absolute w-100 d-flex justify-content-center align-items-center"
-              >
-                <div
-                  id="intro-image-1-btn"
-                  className="bg_light_green px-4 py-2 font-bold"
-                  onClick={() => moveTo("hero", "btn-1")}
-                >
-                  Image 1
-                </div>
-                <div
-                  id="intro-image-2-btn"
-                  className="bg_light_green px-4 py-2 font-bold"
-                  onClick={() => moveTo("hero", "btn-2")}
-                >
-                  Image 2
-                </div>
-                <div
-                  id="intro-image-3-btn"
-                  className="bg_light_green px-4 py-2 font-bold"
-                  onClick={() => moveTo("hero", "btn-3")}
-                >
-                  Image 3
-                </div>
-                <div
-                  id="intro-image-4-btn"
-                  className="bg_light_green px-4 py-2 font-bold"
-                  onClick={() => moveTo("hero", "btn-4")}
-                >
-                  Image 4
-                </div>
-              </div> */}
             </div>
-            {/* ============================== */}
 
             <img
               id="hero-ipad"
