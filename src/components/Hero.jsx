@@ -415,26 +415,7 @@ const Hero = () => {
 
       gsap.from("#hero-main-heading", {
         yPercent: 100,
-        // opacity: 0,
       });
-      // gsap.set(".arrow-hero-two", {
-      //   xPercent: 100,
-      //   scale: 0.4,
-      // });
-
-      // gsap.set(".arrow-hero-three", {
-      //   xPercent: -100,
-      //   y: -130,
-      //   scale: 0.2,
-      // });
-      // gsap.set("#hero-large-arrow", {
-      //   left: "50%",
-      //   xPercent: -50,
-      //   top: "75%",
-      // });
-      // gsap.set("#intro-content", {
-      //   display: "none",
-      // });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
@@ -472,7 +453,6 @@ const Hero = () => {
           end: "+=200%",
           pin: true,
           scrub: 1,
-          // markers: true,
         },
       });
 
@@ -483,8 +463,6 @@ const Hero = () => {
         .to(
           ".arrow-hero-two",
           {
-            // scale: 0.2,
-            // rotate: "45deg",
             yPercent: -200,
             autoAlpha: 0,
           },
@@ -600,7 +578,7 @@ const Hero = () => {
         y: "-60px",
       });
       gsap.set(".arrow-hero-one", {
-        scale: 0.6,
+        scale: 0.5,
       });
       gsap.set(".arrow-hero-two", {
         xPercent: 29,
@@ -608,33 +586,14 @@ const Hero = () => {
         scale: 0.15,
       });
       gsap.set(".arrow-hero-three", {
-        xPercent: -54,
-        yPercent: -15,
-        scale: 0.15,
+        xPercent: -24,
+        yPercent: 36,
+        scale: 0.1,
       });
 
       gsap.from("#hero-main-heading", {
         yPercent: 100,
-        // opacity: 0,
       });
-      // gsap.set(".arrow-hero-two", {
-      //   xPercent: 100,
-      //   scale: 0.4,
-      // });
-
-      // gsap.set(".arrow-hero-three", {
-      //   xPercent: -100,
-      //   y: -130,
-      //   scale: 0.2,
-      // });
-      // gsap.set("#hero-large-arrow", {
-      //   left: "50%",
-      //   xPercent: -50,
-      //   top: "75%",
-      // });
-      // gsap.set("#intro-content", {
-      //   display: "none",
-      // });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
@@ -672,10 +631,8 @@ const Hero = () => {
           end: "+=200%",
           pin: true,
           scrub: 1,
-          // markers: true,
         },
       });
-
       tl.to(".arrow-hero-one", {
         yPercent: -200,
         autoAlpha: 0,
@@ -695,7 +652,9 @@ const Hero = () => {
         .to(
           ".arrow-hero-two",
           {
-            scale: 0.2,
+            xPercent: 28,
+            yPercent: -11,
+            scale: 0.1,
             rotate: "45deg",
           },
           "<"
@@ -812,7 +771,7 @@ const Hero = () => {
                 <span className="d-inline-block hero_heading_btn me-2 mx-sm-3">
                   vendite
                 </span>
-                <span>
+                <span className="me-2">
                   <img
                     className="hero_e_text"
                     src={heroEtext}
@@ -851,9 +810,11 @@ const Hero = () => {
                   </p>
                   <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-0 pb-4 hero_slide_para_2">
                     Daicar aiuta a far
-                    <span className="ff_mundial_bold mx-2">crescere</span> la
-                    tua azienda, <br className="d-none d-xl-block" />
-                    creando contatti e generando vendite
+                    <span className="ff_mundial_bold mx-1 mx-sm-2">
+                      crescere
+                    </span>
+                    la tua azienda, <br className="d-none d-xl-block" /> creando
+                    contatti e generando vendite
                   </p>
                 </div>
 

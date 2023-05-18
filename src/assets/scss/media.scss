@@ -1089,6 +1089,7 @@
   }
   .hero_slide_para_2 {
     font-size: 20px !important;
+    // width: 375px;
   }
   .hero_slide_1 h2,
   .hero_slide_2 h2 {
@@ -1209,6 +1210,20 @@
   }
   .timeline_text_3 {
     margin-top: -50px;
+  }
+
+  #hero-main-heading {
+    max-width: 254px !important;
+    margin: 0 auto !important;
+    font-size: 32px !important;
+  }
+  .hero_e_text {
+    width: 12px !important;
+  }
+  .hero_slide_1 h3,
+  .hero_slide_2 h3 {
+    font-size: 60px !important;
+    margin-top: 48px !important;
   }
 }
 
