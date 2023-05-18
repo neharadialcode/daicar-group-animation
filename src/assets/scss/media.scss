@@ -451,6 +451,7 @@
     left: 13%;
   }
 }
+
 @media (max-width: 1199.98px) {
   .hero_e_text {
     width: 13px;
@@ -795,6 +796,10 @@
   .hero_slide_para_2 {
     font-size: 32px !important;
   }
+  .campagne_para {
+    max-width: 520px !important;
+    margin: auto !important;
+  }
   .hero_slide_1 h2,
   .hero_slide_2 h2 {
     font-size: 32px !important;
@@ -877,6 +882,10 @@
       right: -30px;
       top: -20px;
     }
+  }
+
+  .ipad_img {
+    height: 94vh !important;
   }
 }
 
