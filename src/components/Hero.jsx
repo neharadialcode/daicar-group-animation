@@ -12,6 +12,7 @@ import ipad_mockup from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import arrow from "../assets/arrow.svg";
 
 const Hero = () => {
+  let tl;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
   useEffect(() => {
@@ -20,7 +21,6 @@ const Hero = () => {
     tl.add("(min-width: 1400px)", () => {
       gsap.from("#hero-main-heading", {
         yPercent: 100,
-        // opacity: 0,
       });
       gsap.set(".arrow-hero-two", {
         xPercent: 100,
@@ -32,14 +32,14 @@ const Hero = () => {
         y: -130,
         scale: 0.2,
       });
-      // gsap.set("#hero-large-arrow", {
-      //   left: "50%",
-      //   xPercent: -50,
-      //   top: "75%",
-      // });
-      // gsap.set("#intro-content", {
-      //   display: "none",
-      // });
+      gsap.set("#hero-large-arrow", {
+        left: "50%",
+        xPercent: -50,
+        top: "75%",
+      });
+      gsap.set("#intro-content", {
+        display: "none",
+      });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
@@ -74,10 +74,9 @@ const Hero = () => {
         scrollTrigger: {
           trigger: "#hero",
           start: "top top",
-          end: "+=200%",
+          end: "+=500%",
           pin: true,
           scrub: 1,
-          // markers: true,
         },
       });
 
@@ -189,6 +188,75 @@ const Hero = () => {
           },
           "<"
         )
+
+        //////////////////////////
+        .set(
+          "#intro-content",
+          {
+            display: "block",
+          },
+          "<"
+        )
+        .addLabel("btn-1")
+        .to("#intro-image-1-btn", {
+          rotate: 10,
+        })
+        .to(
+          "#intro-image-1",
+          {
+            autoAlpha: 0,
+          },
+          "+=2"
+        )
+        .addLabel("btn-2")
+        .to(
+          "#intro-image-1-btn",
+          {
+            rotate: 0,
+          },
+          ">"
+        )
+        .to("#intro-image-2-btn", {
+          rotate: 10,
+        })
+        .to(
+          "#intro-image-2",
+          {
+            autoAlpha: 0,
+          },
+          "+=2"
+        )
+        .addLabel("btn-3")
+        .to(
+          "#intro-image-2-btn",
+          {
+            rotate: 0,
+          },
+          ">"
+        )
+        .to("#intro-image-3-btn", {
+          rotate: 10,
+        })
+        .to(
+          "#intro-image-3",
+          {
+            autoAlpha: 0,
+          },
+          "+=2"
+        )
+        .addLabel("btn-4")
+        .to(
+          "#intro-image-3-btn",
+          {
+            rotate: 0,
+          },
+          ">"
+        )
+        .to("#intro-image-4-btn", {
+          rotate: 10,
+        })
+        //////////////////////////
+
         .to(
           "#root",
           {
@@ -217,26 +285,10 @@ const Hero = () => {
 
       gsap.from("#hero-main-heading", {
         yPercent: 100,
-        // opacity: 0,
       });
-      // gsap.set(".arrow-hero-two", {
-      //   xPercent: 100,
-      //   scale: 0.4,
-      // });
-
-      // gsap.set(".arrow-hero-three", {
-      //   xPercent: -100,
-      //   y: -130,
-      //   scale: 0.2,
-      // });
-      // gsap.set("#hero-large-arrow", {
-      //   left: "50%",
-      //   xPercent: -50,
-      //   top: "75%",
-      // });
-      // gsap.set("#intro-content", {
-      //   display: "none",
-      // });
+      gsap.set("#intro-content", {
+        display: "none",
+      });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
@@ -274,7 +326,6 @@ const Hero = () => {
           end: "+=200%",
           pin: true,
           scrub: 1,
-          // markers: true,
         },
       });
 
@@ -386,6 +437,71 @@ const Hero = () => {
           },
           "<"
         )
+        .set(
+          "#intro-content",
+          {
+            display: "block",
+          },
+          "<"
+        )
+        .addLabel("btn-1")
+        .to("#intro-image-1-btn", {
+          rotate: 10,
+        })
+        .to(
+          "#intro-image-1",
+          {
+            autoAlpha: 0,
+          },
+          "+=2"
+        )
+        .addLabel("btn-2")
+        .to(
+          "#intro-image-1-btn",
+          {
+            rotate: 0,
+          },
+          ">"
+        )
+        .to("#intro-image-2-btn", {
+          rotate: 10,
+        })
+        .to(
+          "#intro-image-2",
+          {
+            autoAlpha: 0,
+          },
+          "+=2"
+        )
+        .addLabel("btn-3")
+        .to(
+          "#intro-image-2-btn",
+          {
+            rotate: 0,
+          },
+          ">"
+        )
+        .to("#intro-image-3-btn", {
+          rotate: 10,
+        })
+        .to(
+          "#intro-image-3",
+          {
+            autoAlpha: 0,
+          },
+          "+=2"
+        )
+        .addLabel("btn-4")
+        .to(
+          "#intro-image-3-btn",
+          {
+            rotate: 0,
+          },
+          ">"
+        )
+        .to("#intro-image-4-btn", {
+          rotate: 10,
+        })
         .to(
           "#root",
           {
@@ -753,9 +869,35 @@ const Hero = () => {
     });
   }, []);
 
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+
+  const moveTo = (sectionId, id) => {
+    const section = document.querySelector(`#${sectionId}`);
+    const pos = Math.ceil(
+      section.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
+        section.parentNode.offsetTop
+    );
+
+    gsap.to(window, { duration: 0.3, scrollTo: pos, ease: "linear" });
+  };
+
   return (
     <>
-      <div className="bg_dark_gray">
+      <div className="bg_dark_gra">
         <Header />
         <div id="hero" className="color_dark_gray z-10 overflow-hidden">
           <div className="container vh-100 z-0 position-relative">
@@ -786,7 +928,7 @@ const Hero = () => {
                 className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white"
               >
                 <div className="hero_slide_1" id="hero-sub-heading-one">
-                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
+                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center">
                     Il futuro delle tue&nbsp;
                     <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
@@ -817,9 +959,8 @@ const Hero = () => {
                     contatti e generando vendite
                   </p>
                 </div>
-
                 <div className="hero_slide_2" id="hero-sub-heading-two">
-                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center flex align-items-center">
+                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center">
                     Il futuro delle tue&nbsp;
                     <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
@@ -854,6 +995,7 @@ const Hero = () => {
                   </p>
                 </div>
               </div>
+
               <div
                 id="hero-outline-arrow"
                 className="position-absolute z-10 pointer-events-none"
@@ -873,6 +1015,65 @@ const Hero = () => {
                 src={arrow}
               />
             </div>
+
+            {/* ============================== */}
+            <div id="intro-content" className="position-relative h-100 w-100">
+              <img
+                id="intro-image-4"
+                src={arrow}
+                className="position-absolute custom_position w-tabs_lottie object-cover"
+              />
+              <img
+                id="intro-image-3"
+                src={arrow}
+                className="position-absolute custom_position w-tabs_lottie object-cover"
+              />
+              <img
+                id="intro-image-2"
+                src={arrow}
+                className="position-absolute custom_position w-tabs_lottie object-cover"
+              />
+              <img
+                id="intro-image-1"
+                src={arrow}
+                className="position-absolute custom_position w-tabs_lottie object-cover"
+              />
+              <div
+                id="intro-navigation"
+                className="intro-navigation position-absolute w-100 d-flex justify-content-center align-items-center"
+              >
+                <div
+                  id="intro-image-1-btn"
+                  className="bg_light_green px-4 py-2 font-bold"
+                  onClick={() => moveTo("hero", "btn-1")}
+                >
+                  Image 1
+                </div>
+                <div
+                  id="intro-image-2-btn"
+                  className="bg_light_green px-4 py-2 font-bold"
+                  onClick={() => moveTo("hero", "btn-2")}
+                >
+                  Image 2
+                </div>
+                <div
+                  id="intro-image-3-btn"
+                  className="bg_light_green px-4 py-2 font-bold"
+                  onClick={() => moveTo("hero", "btn-3")}
+                >
+                  Image 3
+                </div>
+                <div
+                  id="intro-image-4-btn"
+                  className="bg_light_green px-4 py-2 font-bold"
+                  onClick={() => moveTo("hero", "btn-4")}
+                >
+                  Image 4
+                </div>
+              </div>
+            </div>
+            {/* ============================== */}
+
             <img
               id="hero-ipad"
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-xl-none"
@@ -889,6 +1090,10 @@ const Hero = () => {
               src={ipadWhite}
             />
           </div>
+          <div
+            id="white-section"
+            className="bg_dark_gray position-absolute inset-0 -z-10"
+          ></div>
         </div>
       </div>
     </>

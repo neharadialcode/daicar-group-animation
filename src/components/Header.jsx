@@ -33,7 +33,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="header_parent">
+    <div className="header_parent bg_dark_gray">
       <div className="container-lg common_container py-2 py-lg-0">
         <div className="header_section d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 py-lg-5 navbar_links">
           <a href="#">
