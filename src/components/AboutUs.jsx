@@ -11,30 +11,30 @@ import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 const About = () => {
   useEffect(() => {
-    const tl1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".about_parent",
-        start: "top bottom",
-        end: "top top",
-        scrub: true,
-        fastScrollEnd: true,
-      },
-    });
-    tl1
-      .to("#hero-large-arrow", {
-        scale: 1.2,
-        top: "-80%",
-        duration: 5,
-      })
-      .to(
-        "#root",
-        {
-          backgroundColor: "#7EE49C80",
-        },
-        "<2"
-      );
     let mm = gsap.matchMedia();
-    mm.add("(min-width: 1400px)", () => {
+    mm.add("(min-width: 1600px)", () => {
+      const tl1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".about_parent",
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          fastScrollEnd: true,
+        },
+      });
+      tl1
+        .to("#hero-large-arrow", {
+          scale: 1.2,
+          top: "-80%",
+          duration: 5,
+        })
+        .to(
+          "#root",
+          {
+            backgroundColor: "#7EE49C80",
+          },
+          "<2"
+        );
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
@@ -193,10 +193,36 @@ const About = () => {
             bottom: "50%",
           },
           "-=.5"
-        );
+        )
+        .to("#hero-large-arrow", {
+          scale: 1.2,
+          top: "-200%",
+          duration: 5,
+        });
     });
-
-    mm.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+    mm.add("(min-width: 992px) and (max-width:1599.98px)", () => {
+      const tl1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".about_parent",
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          fastScrollEnd: true,
+        },
+      });
+      tl1
+        .to("#hero-large-arrow", {
+          scale: 1.2,
+          top: "-120%",
+          duration: 5,
+        })
+        .to(
+          "#root",
+          {
+            backgroundColor: "#7EE49C80",
+          },
+          "<2"
+        );
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
@@ -325,7 +351,12 @@ const About = () => {
             duration: 5,
           },
           "-=.1"
-        );
+        )
+        .to("#hero-large-arrow", {
+          scale: 1.2,
+          top: "-200%",
+          duration: 5,
+        });
     });
     mm.add("(max-width:991.98px)", () => {
       let secondSection4 = gsap.timeline({
