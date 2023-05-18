@@ -4,7 +4,7 @@ import TabsImage from "./components/TabsImage";
 import Business from "./components/Business";
 import AboutUs from "./components/AboutUs";
 import Timeline from "./components/Timeline";
-import Partner from "./components/Partner";
+import Partners from "./components/partners/Partners";
 import Crm from "./components/Crm";
 import Meeting from "./components/Meeting";
 import Footer from "./components/Footer";
@@ -13,18 +13,16 @@ import ScrollChatIcon from "./components/ScrollChatIcon";
 function App() {
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <TabsImage />
       <Business />
-      <AboutUs />
-      <Timeline />
-      <div className="bg_light_white">
-        <Partner />
-        <Crm />
-        <Meeting />
-      </div>
+      <AboutUs /> */}
+      {/* <Timeline /> */}
+      <Partners />
+      <Crm />
+      <Meeting />
       <Footer />
-      <ScrollChatIcon />
+      {/* <ScrollChatIcon /> */}
     </>
   );
 }

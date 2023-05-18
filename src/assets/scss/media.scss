@@ -17,6 +17,10 @@
     width: 32px;
     height: 32px;
   }
+
+  .w-sm-unset {
+    width: unset !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -530,9 +534,6 @@
   .hero_slide_2 h3 {
     font-size: 62px !important;
   }
-  .crm_slider {
-    min-width: 150px;
-  }
   .meeting_para .common_button {
     font-size: 20px !important;
     padding: 14.4px 16px !important;
@@ -923,9 +924,6 @@
       width: 300px !important;
     }
   }
-  .crm_slider {
-    height: unset;
-  }
   .custom_size_timeline_text {
     font-size: 16px;
   }
@@ -1125,9 +1123,7 @@
   .social_links_parent a img {
     max-width: 24px !important;
   }
-  .partner_parent {
-    min-height: 100% !important;
-  }
+
   .list_item_text {
     font-size: 14px !important;
   }

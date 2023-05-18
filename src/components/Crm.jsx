@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import salesfortlogo from "../assets/images/svg/salesforce-logo.svg";
 import amazonlogo from "../assets/images/svg/amazon-logo.svg";
 import hubsportlogo from "../assets/images/svg/hubsport-logo.svg";
@@ -6,85 +6,167 @@ import pipedrivelogo from "../assets/images/svg/pipedrive-logo.svg";
 import zendexlogo from "../assets/images/svg/zendesk-suite-logo.svg";
 import crmLeftIcon from "../assets/images/png/crm-left-icon.png";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+gsap.registerPlugin(ScrollTrigger);
 const Crm = () => {
+  const [isMobileDevice, setIsMobileDevice] = useState(false);
+
+  var settings = {
+    dots: false,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    centerMode: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   useEffect(() => {
-    let crmValues = gsap.matchMedia();
-    crmValues.add("(min-width:576px) and (max-width:991.98px)", () => {
-      let crmicons = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".crm_parent",
-          start: "top top",
-          end: "bottom center",
-          scrub: 3,
-          pin: true,
-        },
-      });
-      crmicons.fromTo(
-        ".crm_parent_img",
-        {
-          xPercent: 0,
-        },
-        {
-          xPercent: -80,
-        }
-      );
+    window.innerWidth < 576.99 && setIsMobileDevice(true);
+    window.innerWidth > 576.99 && setIsMobileDevice(false);
+    window.addEventListener("resize", () => {
+      window.innerWidth < 576.99 && setIsMobileDevice(true);
+      window.innerWidth > 576.99 && setIsMobileDevice(false);
     });
-    crmValues.add("(max-width:575.98px)", () => {
-      let crmicons = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".crm_parent",
-          start: "top top",
-          end: "bottom center",
-          scrub: 3,
-          pin: true,
-        },
-      });
-      crmicons.fromTo(
-        ".crm_parent_img",
-        {
-          xPercent: 0,
-        },
-        {
-          xPercent: -150,
-        }
-      );
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#CRM",
+        start: "top top",
+        scrub: 1,
+        pin: true,
+      },
+    });
+
+    tl.from("#CRM-content-heading", {
+      y: -20,
+      autoAlpha: 0,
+    }).from("#CRM-img-container img", {
+      x: -50,
+      autoAlpha: 0,
+      stagger: 0.07,
     });
   }, []);
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center crm_parent overflow-hidden bg_light_white">
+      <div
+        id="CRM"
+        className="d-flex justify-content-center align-items-center crm_parent overflow-hidden bg_light_white min-vh-100"
+      >
         <div className="position-absolute crm_left_icon d-none d-lg-block z_negative">
           <img src={crmLeftIcon} alt="crm-left-icon" />
         </div>
         <div className="container custom_container crm_text">
-          <div className="d-sm-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0 text-center text-sm-start">
+          <div
+            id="CRM-content-heading"
+            className="d-sm-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0 text-center text-sm-start"
+          >
             <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
-              É possibile integrare i dati con il tuo
+              <svg
+                style={{
+                  height: "1em",
+                  marginBottom: "0.4em",
+                  marginRight: "0.2em",
+                }}
+                width="15"
+                height="27"
+                viewBox="0 0 15 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.9414 5.42285L8.16797 0.530273H11.4199L8.44629 5.42285H5.9414ZM14.2764 27H0.0234375V7.10742H13.9687V9.90527H3.09961V15.3838H12.4307V18.1816H3.09961V24.2021H14.2764V27Z"
+                  fill="#29424D"
+                />
+              </svg>
+              possibile integrare i dati con il tuo
             </p>
             <button className="font_2xl color_dark_gray common_button common_btn">
               CRM
             </button>
             <span className="font_lg">.</span>
           </div>
-          <div className="pb-lg-5 crm_parent_img">
-            <div className="pb-lg-5 d-flex justify-content-between align-items-center my-xxl-5 py-5 crm_img">
-              <div className="crm_slider text-center">
-                <img className="w-100" src={salesfortlogo} alt="icon-1" />
-              </div>
-              <div className="crm_slider text-center ps-5">
-                <img className="w-100" src={amazonlogo} alt="icon-1" />
-              </div>
-              <div className="crm_slider text-center ps-5">
-                <img className="w-100" src={hubsportlogo} alt="icon-2" />
-              </div>
-              <div className="crm_slider text-center ps-5">
-                <img className="w-100" src={pipedrivelogo} alt="icon-3" />
-              </div>
-              <div className="crm_slider text-center ps-5">
-                <img className="w-100" src={zendexlogo} alt="icon-4" />
+          {!isMobileDevice && (
+            <div className="pb-lg-5 crm_parent_img">
+              <div className="pb-lg-5 d-flex justify-content-between align-items-center flex-wrap my-xxl-5 py-5 crm_img">
+                <div id="CRM-img-container" className="p-4 text-center">
+                  <img
+                    width={180}
+                    height={126}
+                    src={salesfortlogo}
+                    alt="icon-1"
+                  />
+                </div>
+                <div id="CRM-img-container" className="p-4 text-center ps-5">
+                  <img width={181} height={76} src={amazonlogo} alt="icon-1" />
+                </div>
+                <div id="CRM-img-container" className="p-4 text-center ps-5">
+                  <img
+                    width={152}
+                    height={43}
+                    src={hubsportlogo}
+                    alt="icon-2"
+                  />
+                </div>
+                <div id="CRM-img-container" className="p-4 text-center ps-5">
+                  <img
+                    width={196}
+                    height={52}
+                    src={pipedrivelogo}
+                    alt="icon-3"
+                  />
+                </div>
+                <div id="CRM-img-container" className="p-4 text-center ps-5">
+                  <img width={280} height={85} src={zendexlogo} alt="icon-4" />
+                </div>
               </div>
             </div>
-          </div>
+          )}
+          {isMobileDevice && (
+            <Slider {...settings}>
+              <div
+                id="CRM-img-container"
+                className="p-4 d-flex justify-content-center"
+              >
+                <img
+                  width={180}
+                  height={126}
+                  src={salesfortlogo}
+                  alt="icon-1"
+                />
+              </div>
+              <div
+                id="CRM-img-container"
+                className="p-4 d-flex justify-content-center ps-5"
+              >
+                <img width={181} height={76} src={amazonlogo} alt="icon-1" />
+              </div>
+              <div
+                id="CRM-img-container"
+                className="p-4 d-flex justify-content-center ps-5"
+              >
+                <img width={152} height={43} src={hubsportlogo} alt="icon-2" />
+              </div>
+              <div
+                id="CRM-img-container"
+                className="p-4 d-flex justify-content-center ps-5"
+              >
+                <img width={196} height={52} src={pipedrivelogo} alt="icon-3" />
+              </div>
+              <div
+                id="CRM-img-container"
+                className="p-4 d-flex justify-content-center ps-5"
+              >
+                <img width={280} height={85} src={zendexlogo} alt="icon-4" />
+              </div>
+            </Slider>
+          )}
         </div>
       </div>
     </>
