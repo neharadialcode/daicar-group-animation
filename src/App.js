@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import ScrollChatIcon from "./components/ScrollChatIcon";
 
 import largeArrow from "./assets/largeArrow.svg";
-import largeArrow2 from "./assets/arrow-large-2.svg";
+// import largeArrow2 from "./assets/arrow-large-2.svg";
 
 function App() {
   return (

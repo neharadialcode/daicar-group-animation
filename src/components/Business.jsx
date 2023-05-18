@@ -580,7 +580,7 @@ const Business = () => {
           <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
             <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
           </div>
-          <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
+          <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center z-10">
             <div className="main_text d-none d-lg-block pb-5">
               <div className="row justify-content-evenly divide_space_text">
                 <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center ">
