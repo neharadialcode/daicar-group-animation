@@ -1326,7 +1326,7 @@
 #hero-sub-heading-two,
 #hero-para-one,
 #hero-para-two,
-#white-section {
+#hero_section {
   position: absolute;
 }
 .z-0 {
@@ -1334,4 +1334,7 @@
 }
 .-z-10 {
   z-index: -10;
+}
+#main-content {
+  display: flex;
 }
