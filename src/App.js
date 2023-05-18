@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Hero />
-      <TabsImage />
+      {/* <TabsImage /> */}
       <Business />
       <AboutUs />
       <Timeline />
