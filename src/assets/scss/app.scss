@@ -148,13 +148,10 @@
 .tabs_wrap {
   flex-wrap: wrap;
 }
-.crm_slider {
-  min-width: 220px;
-  max-width: 220px;
-  height: 250px;
-  display: flex;
-  align-items: center;
-}
+// .crm_slider img {
+//   width: 220px;
+//   height: 250px;
+// }
 .topscroll {
   position: absolute;
   right: 15px;
@@ -409,42 +406,6 @@
 .partner_para {
   line-height: 167%;
 }
-.leasyslogo {
-  max-width: 233.07px;
-  min-height: 47px;
-}
-.enelexlogo {
-  max-width: 236px;
-  min-height: 48px;
-}
-.athlonlogo {
-  max-width: 194px;
-  min-height: 74px;
-}
-.insuramalogo {
-  max-width: 214px;
-  min-height: 67px;
-}
-.aldlogo {
-  max-width: 198px;
-  min-height: 73px;
-}
-.bmwlogo {
-  max-width: 154px;
-  min-height: 89px;
-}
-.toyatologo {
-  max-width: 154px;
-  min-height: 89px;
-}
-.audilogo {
-  max-width: 125px;
-  min-height: 79px;
-}
-.jaguarlogo {
-  max-width: 142px;
-  min-height: 79px;
-}
 .carousel-control-next-icon {
   display: none !important;
 }
@@ -563,6 +524,7 @@
 .meeting_btn_parent .meeting_border_line::after {
   height: 82px !important;
   right: 127px !important;
+  display: none;
 }
 .social_links_parent a img {
   transition: all 400ms ease-in-out;

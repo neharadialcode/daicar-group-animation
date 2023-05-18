@@ -1,7 +1,28 @@
-import React from "react";
-import meetingManImg from "../assets/images/svg/meeting_man_img.svg";
+import React, { useEffect } from "react";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Meeting() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#contatti",
+        start: "top top",
+        scrub: 1,
+        pin: true,
+      },
+    });
+
+    tl.from(["#meeting-paragraph-container p", "#meeting-paragraph"], {
+      y: -20,
+      autoAlpha: 0,
+      stagger: 0.07,
+    });
+  }, []);
+
   return (
     <>
       <div
@@ -9,11 +30,67 @@ function Meeting() {
         id="contatti"
       >
         <div className="custom_container container about_text pt-xxl-5">
-          <p className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0">
+          <div
+            id="meeting-paragraph-container"
+            className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-none d-xl-block"
+          >
+            <p>
+              Ora hai compreso che il futuro delle tue
+              <span className="common_button mx-2 font_2xl mx-sm-3">
+                vendite
+              </span>
+              è digitale e hai scoperto
+            </p>
+            <p>
+              <span className="common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
+                come
+              </span>
+              usiamo il
+              <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
+                marketing converazionale
+              </span>
+              e gli
+              <span className="common_button font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
+                strumenti tech<span className="ff_math">-</span>driven
+              </span>
+              da noi sviluppati
+            </p>
+            <p>
+              per ottenere una
+              <span className="common_button font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
+                qualifica digitale real<span className="ff_math">-</span>time
+              </span>
+              e trasmetterti così i dati.
+            </p>
+            <p>
+              Vogliamo utilizzare l’esperienza acquisita nel
+              <span className="common_button mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
+                tempo
+              </span>
+              per ideare una strategia
+              <span className="common_button mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
+                personalizzata
+              </span>
+            </p>
+            <p>
+              proprio come se fossimo il tuo
+              <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
+                partner
+              </span>
+              integrato nel tuo team e nel tuo
+              <span className="common_button mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
+                CRM
+              </span>
+            </p>
+          </div>
+
+          <div
+            id="meeting-paragraph"
+            className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-xl-none"
+          >
             Ora hai compreso che il futuro delle tue
             <span className="common_button mx-2 font_2xl mx-sm-3">vendite</span>
             è digitale e hai scoperto
-            <br className="d-none d-lg-block"></br>
             <span className="common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
               come
             </span>
@@ -25,8 +102,7 @@ function Meeting() {
             <span className="common_button font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
               strumenti tech<span className="ff_math">-</span>driven
             </span>
-            da noi sviluppati&nbsp;
-            <br className="d-none d-xl-block"></br>per ottenere una
+            da noi sviluppati&nbsp; per ottenere una
             <span className="common_button font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
               qualifica digitale real<span className="ff_math">-</span>time
             </span>
@@ -39,7 +115,6 @@ function Meeting() {
             <span className="common_button mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
               personalizzata
             </span>
-            <br className="d-none d-xl-block"></br>
             proprio come se fossimo il tuo
             <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
               partner
@@ -48,40 +123,6 @@ function Meeting() {
             <span className="common_button mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
               CRM
             </span>
-          </p>
-
-          <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2">
-            <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
-              <button className="ff_mundial_regular hero_btn me-4 me-lg-5 mt-5 mt-sm-0">
-                <span className="d-sm-none">F</span>
-                <span className="d-none d-sm-inline-block">f</span>issa un
-                meeting
-              </button>
-              <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3 d-none d-sm-block">
-                chat
-              </button>
-            </div>
-            <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center fissa-meeting-content-parent">
-              <img
-                className="meeting_man_img me-2"
-                src={meetingManImg}
-                alt="meetingManImg"
-              />
-              <p className="mb-0 font_md d-none d-xxl-block meeting_text_color">
-                Matteo,{" "}
-                <span className="ff_mundial_light">
-                  {" "}
-                  Business Development Manager
-                </span>
-              </p>
-              <p className="mb-0 font_md color_gray d-xxl-none">
-                Matteo,
-                <br className="d-sm-none" />
-                <span className="ff_mundial_light">
-                  Business Development Manager
-                </span>
-              </p>
-            </div>
           </div>
         </div>
       </div>
