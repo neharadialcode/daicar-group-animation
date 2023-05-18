@@ -19,7 +19,7 @@ function Footer() {
             <span className="d-sm-none">F</span>
             <span className="d-none d-sm-inline-block">f</span>issa un meeting
           </button>
-          <p className="custom_line"></p>
+          <p className="custom_line d-none d-sm-block"></p>
           <button className="ff_mundial_regular hero_btn meeting_border_line parliamone d-none d-sm-block">
             chat
           </button>
@@ -30,19 +30,20 @@ function Footer() {
             src={meetingManImg}
             alt="meetingManImg"
           />
-          <p className="mb-0 font_md d-none d-lg-block meeting_text_color">
+          <p className="mb-0 font_md d-non d-lg-block meeting_text_color">
             Matteo,
+            <br className="d-sm-none" />
             <span className="ff_mundial_light">
               &nbsp;Business Development Manager
             </span>
           </p>
-          <p className="mb-0 font_md color_gray d-lg-none">
+          {/* <p className="mb-0 font_md color_gray d-lg-none">
             Matteo,
             <br className="d-sm-none" />
             <span className="ff_mundial_light">
               Business Development Manager
             </span>
-          </p>
+          </p> */}
         </div>
       </div>
 

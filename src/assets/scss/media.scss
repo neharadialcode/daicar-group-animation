@@ -894,6 +894,10 @@
   .ipad_img {
     height: 94vh !important;
   }
+
+  .manager_content {
+    transform: translateY(-50px);
+  }
 }
 
 @media (max-width: 799.98px) {
@@ -1229,6 +1233,9 @@
   .hero_slide_2 h3 {
     font-size: 60px !important;
     margin-top: 48px !important;
+  }
+  .manager_content {
+    transform: translateY(-10px);
   }
 }
 
