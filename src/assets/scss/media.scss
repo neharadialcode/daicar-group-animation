@@ -100,7 +100,7 @@
     top: 10%;
   }
   .meeting_text_color {
-    color: var(--color-dark-gray);
+    color: var(--color-white-off);
   }
   // .icon_4 {
   //   left: 21.5%;
@@ -453,6 +453,9 @@
     max-width: 30px !important;
     left: 15px !important;
   }
+  .manager_content {
+    transform: translateY(-160px);
+  }
 }
 
 @media (max-width: 1299.98px) {
@@ -647,6 +650,9 @@
   .business-content p {
     font-size: 16px !important;
     max-width: 360px !important;
+  }
+  .manager_content {
+    transform: translateY(50px);
   }
 }
 
@@ -902,6 +908,10 @@
 
   .ipad_img {
     height: 94vh !important;
+  }
+
+  .manager_content {
+    transform: translateY(-50px);
   }
 }
 
@@ -1238,6 +1248,9 @@
   .hero_slide_2 h3 {
     font-size: 60px !important;
     margin-top: 48px !important;
+  }
+  .manager_content {
+    transform: translateY(-10px);
   }
 }
 

@@ -13,39 +13,41 @@ function Footer() {
   const getnewyear = new Date().getFullYear();
   return (
     <>
-      <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2">
+      <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2 manager_content">
         <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
-          <button className="ff_mundial_regular hero_btn me-4 me-lg-5 mt-5 mt-sm-0">
+          <button className="ff_mundial_regular hero_btn mt-5 mt-sm-0">
             <span className="d-sm-none">F</span>
             <span className="d-none d-sm-inline-block">f</span>issa un meeting
           </button>
-          <button className="ff_mundial_regular hero_btn meeting_border_line parliamone ms-3 d-none d-sm-block">
+          <p className="custom_line d-none d-sm-block"></p>
+          <button className="ff_mundial_regular hero_btn meeting_border_line parliamone d-none d-sm-block">
             chat
           </button>
         </div>
-        <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-4 mt-2 align-items-center fissa-meeting-content-parent">
+        <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-3 mt-xl-4 mt-2 align-items-center fissa-meeting-content-parent">
           <img
             className="meeting_man_img me-2"
             src={meetingManImg}
             alt="meetingManImg"
           />
-          <p className="mb-0 font_md d-none d-xxl-block meeting_text_color">
+          <p className="mb-0 font_md d-non d-lg-block meeting_text_color">
             Matteo,
+            <br className="d-sm-none" />
             <span className="ff_mundial_light">
               &nbsp;Business Development Manager
             </span>
           </p>
-          <p className="mb-0 font_md color_gray d-xxl-none">
+          {/* <p className="mb-0 font_md color_gray d-lg-none">
             Matteo,
             <br className="d-sm-none" />
             <span className="ff_mundial_light">
               Business Development Manager
             </span>
-          </p>
+          </p> */}
         </div>
       </div>
 
-      <section className="pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center">
+      <div className="pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center">
         <BackToTop />
         <img
           className="position-absolute footer_background_set d-sm-none"
@@ -57,7 +59,7 @@ function Footer() {
           src={footerbg}
           alt="footerbg"
         />
-        <div className="container position-relative z_2 pb-5">
+        <div className="container position-relative z_2 pb-5 pt-lg-5 pt-xl-0">
           <div className="row justify-content-md-center justify-content-between gap-lg-5 text-center text-sm-start px-xxl-5">
             <div className="col-12 col-sm-3 col-lg-2 d-flex flex-column justify-content-between">
               <a href="#">
@@ -211,7 +213,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }

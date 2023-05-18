@@ -26,7 +26,7 @@ function Meeting() {
   return (
     <>
       <div
-        className="bg_light_white custom_content_padding meeting_parent min-vh-100 overflow-hidden"
+        className="contatti_section bg_light_white custom_content_padding meeting_parent min-vh-100 overflow-hidden"
         id="contatti"
       >
         <div className="custom_container container about_text pt-xxl-5">

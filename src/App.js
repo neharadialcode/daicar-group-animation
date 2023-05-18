@@ -24,7 +24,7 @@ function App() {
       <Crm />
       <Meeting />
       <Footer />
-      <div>
+      <div className="d-none d-lg-block">
         <img
           src={largeArrow}
           id="hero-large-arrow"

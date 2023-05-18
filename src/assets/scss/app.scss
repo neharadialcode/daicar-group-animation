@@ -518,8 +518,20 @@
   line-height: 236% !important;
   max-width: 1302px !important;
 }
+
+.manager_content {
+  transform: translateY(-140px);
+}
+.custom_line {
+  width: 1px;
+  height: 83px;
+  background-color: var(--color-white-off);
+  margin: 0px 31px;
+}
 .meeting_btn_parent button {
   color: var(--color-dark-gray) !important;
+  min-height: 61px !important;
+  font-size: 24px !important;
 }
 .meeting_btn_parent .meeting_border_line::after {
   height: 82px !important;
