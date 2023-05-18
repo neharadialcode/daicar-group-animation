@@ -39,6 +39,18 @@ const FifthSection = () => {
 
   useEffect(() => {
     let timelineMedia = gsap.matchMedia();
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".timeline_parent",
+        start: "top bottom",
+        end: "top 50%",
+        scrub: true,
+        // markers: true,
+      },
+    });
+    tl.to("#root", {
+      backgroundColor: "#29424D",
+    });
     timelineMedia.add("(min-width: 992px)", () => {
       let timeline = gsap.timeline({
         scrollTrigger: {
@@ -552,7 +564,7 @@ const FifthSection = () => {
         id="daicar-group"
       >
         <div className="text-center pt-4 pt-sm-5 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
-          <p className="font_5xl text-white px-mdx-5 px-lg-0 mx-mdx-5 mx-lg-0">
+          <p className="font_5xl text-white px-mdx-5px-lg-0mx-mdx-5mx-lg-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
@@ -562,7 +574,7 @@ const FifthSection = () => {
         <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block">
           <img src={timelineLeftIcon} alt="timeline-left-icon" />
         </div>
-        <div className="bg_dark_gray vh-100 position-absolute w-100"></div>
+        <div className="bg_darkgray vh-100 position-absolute w-100"></div>
         <div className="vh-100 d-flex flex-column justify-content-center z_2 position-relative">
           <div className="d-flex timeline_slide_content justify-content-center">
             <div
