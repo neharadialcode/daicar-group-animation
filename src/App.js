@@ -25,16 +25,18 @@ function App() {
       <Crm />
       <Meeting />
       <Footer />
-      {/* <img
-        src={largeArrow}
-        id="hero-large-arrow"
-        className="fixed z-0 pointer-events-none"
-      />
-      <img
-        src={largeArrow2}
-        id="hero-large-arrow-2"
-        className="fixed z-0 pointer-events-none hidden"
-      /> */}
+      <div>
+        <img
+          src={largeArrow}
+          id="hero-large-arrow"
+          className="position-fixed z-0 pointer-events-none"
+        />
+        {/* <img
+          src={largeArrow2}
+          id="hero-large-arrow-2"
+          className="position-fixed z-0 pointer-events-none overflow-hidden"
+        /> */}
+      </div>
       {/* <ScrollChatIcon /> */}
     </>
   );

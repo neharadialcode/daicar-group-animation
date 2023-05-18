@@ -22,13 +22,19 @@ const About = () => {
           fastScrollEnd: true,
         },
       });
-      tl1.to(
-        "#root",
-        {
-          backgroundColor: "#7EE49C80",
-        },
-        "<2"
-      );
+      tl1
+        .to("#hero-large-arrow", {
+          scale: 1.2,
+          top: "-80%",
+          duration: 5,
+        })
+        .to(
+          "#root",
+          {
+            backgroundColor: "#7EE49C80",
+          },
+          "<2"
+        );
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
@@ -189,7 +195,6 @@ const About = () => {
           "-=.5"
         );
     });
-
     aboutValue.add("(min-width: 992px) and (max-width:1399.98px)", () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
@@ -351,9 +356,9 @@ const About = () => {
   return (
     <div className="vh-100 overflow-hidden about_parent z_5 top_minus_space">
       <div className="position-relative h-100 z_1">
-        <div className="position-absolute z_negative d-none d-lg-block">
+        {/* <div className="position-absolute z_negative d-none d-lg-block">
           <img className="w-100" src={topArrow} alt="about-top-arrow" />
-        </div>
+        </div> */}
         <img className="about_icon_1" src={roadmapImg1} alt="roadmapImg1" />
         <img className="about_icon_2" src={roadmapImg2} alt="roadmapImg1" />
         <div className="position-absolute d-none d-sm-block d-lg-none z_negative">

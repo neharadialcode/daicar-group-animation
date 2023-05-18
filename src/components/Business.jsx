@@ -32,25 +32,31 @@ const Business = () => {
     });
 
     mm.add("(min-width:1600px)", () => {
-      tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".business_parent",
-          start: "top top",
-          end: "+=400%",
-          scrub: 3,
-          pin: true,
-        },
-      });
+      tl = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".business_parent",
+            start: "top top",
+            end: "+=400%",
+            scrub: 3,
+            pin: true,
+          },
+        })
+        .to("#hero-large-arrow", {
+          scale: 1.5,
+          top: "20%",
+          immediateRender: false,
+        });
       tl.fromTo(
         ".main_text",
         {
           scale: 0.5,
-          duration: 5,
+          // duration: 5,
           autoAlpha: 0.5,
         },
         {
           scale: 1,
-          duration: 5,
+          // duration: 5,
           autoAlpha: 1,
         }
       )
@@ -170,6 +176,7 @@ const Business = () => {
           marginTop: "16px",
           marginBottom: "16px",
         })
+
         .addLabel("business_accordion_3")
         .to(
           ".business_para_3",
@@ -524,11 +531,6 @@ const Business = () => {
         id="servizi"
       >
         <div className="d-flex flex-column justify-content-center">
-          <img
-            className="w-100 position-absolute big_icon d-none d-lg-block"
-            src={iconImg}
-            alt="iconImg"
-          />
           <div className="position-absolute d-none d-sm-block d-lg-none">
             <img
               className="w-100 small_tab_arrow_img"
@@ -551,7 +553,7 @@ const Business = () => {
           <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center">
             <div className="main_text d-none d-lg-block pb-5">
               <div className="row justify-content-evenly divide_space_text">
-                <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center">
+                <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center ">
                   <img
                     className="w-100 business_img_1 position-absolute"
                     src={businessOne}

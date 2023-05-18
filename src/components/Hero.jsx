@@ -155,7 +155,7 @@ const Hero = () => {
           "<"
         )
         .to(
-          "#white-section",
+          "#hero_section",
           {
             height: 0,
             duration: 2,
@@ -535,64 +535,64 @@ const Hero = () => {
         )
 
         // kjonovdjsz=========================================================================================================
-        .addLabel("btn-1")
-        .to("#intro-image-1-btn", {
-          rotate: 10,
-        })
-        .to(
-          "#intro-image-1",
-          {
-            autoAlpha: 0,
-          },
-          "+=2"
-        )
-        .addLabel("btn-2")
-        .to(
-          "#intro-image-1-btn",
-          {
-            rotate: 0,
-          },
-          ">"
-        )
-        .to("#intro-image-2-btn", {
-          rotate: 10,
-        })
-        .to(
-          "#intro-image-2",
-          {
-            autoAlpha: 0,
-          },
-          "+=2"
-        )
-        .addLabel("btn-3")
-        .to(
-          "#intro-image-2-btn",
-          {
-            rotate: 0,
-          },
-          ">"
-        )
-        .to("#intro-image-3-btn", {
-          rotate: 10,
-        })
-        .to(
-          "#intro-image-3",
-          {
-            autoAlpha: 0,
-          },
-          "+=2"
-        )
-        .addLabel("btn-4")
-        .to(
-          "#intro-image-3-btn",
-          {
-            rotate: 0,
-          },
-          ">"
-        )
-        .to("#intro-image-4-btn", {
-          rotate: 10,
-        })
+        // .addLabel("btn-1")
+        // .to("#intro-image-1-btn", {
+        //   rotate: 10,
+        // })
+        // .to(
+        //   "#intro-image-1",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=2"
+        // )
+        // .addLabel("btn-2")
+        // .to(
+        //   "#intro-image-1-btn",
+        //   {
+        //     rotate: 0,
+        //   },
+        //   ">"
+        // )
+        // .to("#intro-image-2-btn", {
+        //   rotate: 10,
+        // })
+        // .to(
+        //   "#intro-image-2",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=2"
+        // )
+        // .addLabel("btn-3")
+        // .to(
+        //   "#intro-image-2-btn",
+        //   {
+        //     rotate: 0,
+        //   },
+        //   ">"
+        // )
+        // .to("#intro-image-3-btn", {
+        //   rotate: 10,
+        // })
+        // .to(
+        //   "#intro-image-3",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=2"
+        // )
+        // .addLabel("btn-4")
+        // .to(
+        //   "#intro-image-3-btn",
+        //   {
+        //     rotate: 0,
+        //   },
+        //   ">"
+        // )
+        // .to("#intro-image-4-btn", {
+        //   rotate: 10,
+        // })
         //////////////////////////
 
         .to(
@@ -601,7 +601,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        );
+        )
+        .to("#para_text_01", {
+          opacity: 0,
+        });
     });
 
     mm.add("(min-width: 992px) and (max-width:1399.98px)", () => {
@@ -733,7 +736,7 @@ const Hero = () => {
           "<"
         )
         .to(
-          "#white-section",
+          "#hero_section",
           {
             height: 0,
             duration: 2,
@@ -976,7 +979,7 @@ const Hero = () => {
           "<"
         )
         .to(
-          "#white-section",
+          "#hero_section",
           {
             height: 0,
             duration: 2,
@@ -1155,7 +1158,7 @@ const Hero = () => {
           "<"
         )
         .to(
-          "#white-section",
+          "#hero_section",
           {
             height: 0,
             duration: 2,
@@ -1449,7 +1452,10 @@ const Hero = () => {
                               />
                             </div>
                           </div>
-                          <div className="d-flex align-items-center pt-sm-3 pt-lg-0">
+                          <div
+                            className="d-flex align-items-center pt-sm-3 pt-lg-0"
+                            id="para_text_01"
+                          >
                             <p className="font_2xl color_gray pt-3">
                               {obj.para}
                             </p>
@@ -1492,7 +1498,7 @@ const Hero = () => {
             />
           </div>
           <div
-            id="white-section"
+            id="hero_section"
             className="bg_dark_gray position-absolute inset-0 -z-10"
           ></div>
         </div>
