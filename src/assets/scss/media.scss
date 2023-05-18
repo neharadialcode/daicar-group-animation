@@ -1278,9 +1278,7 @@
 .pointer-events-none {
   pointer-events: none;
 }
-.-z-10 {
-  z-index: -10;
-}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1330,4 +1328,10 @@
 #hero-para-two,
 #white-section {
   position: absolute;
+}
+.z-0 {
+  z-index: 0;
+}
+.-z-10 {
+  z-index: -10;
 }
