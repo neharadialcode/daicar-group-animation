@@ -756,11 +756,13 @@ const Business = () => {
             </div>
           </div>
         </div>
-        <img
-          id="solution-outilneArrow"
-          className="position-absolute pointer-events-none origin-center h-[70vh]"
-          src={outlineArrow}
-        />
+        <div className="">
+          <img
+            id="solution-outilneArrow"
+            className="position-absolute pointer-events-none origin-center h-[70vh] w-100"
+            src={outlineArrow}
+          />
+        </div>
       </div>
     </>
   );
