@@ -698,7 +698,87 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-60%",
+        bottom: "-48%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 768.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-59%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 575.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-107%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 390.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-80%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 376.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-107%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 361.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-94%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -871,7 +951,6 @@ const Timeline = () => {
           end: "+=400%",
           scrub: 1,
           pin: true,
-          markers: true,
         },
       });
       tl2

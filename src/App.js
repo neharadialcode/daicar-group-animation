@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Hero from "./components/Hero";
-import TabsImage from "./components/TabsImage";
+// import TabsImage from "./components/TabsImage";
 import Business from "./components/Business";
 import AboutUs from "./components/AboutUs";
 import Timeline from "./components/Timeline";
@@ -15,22 +15,22 @@ import largeArrow2 from "./assets/arrow-large-2.svg";
 function App() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       {/* <TabsImage /> */}
-      {/* <Business />
-      <AboutUs /> */}
-      <div className="min-vh-100 bg-info"></div>
+      <Business />
+      <AboutUs />
+      {/* <div className="min-vh-100 bg-info"></div> */}
       <Timeline />
-      <div className="min-vh-100 bg-info"></div>
-      {/* <Partners />
+      {/* <div className="min-vh-100 bg-info"></div> */}
+      <Partners />
       <Crm />
       <Meeting />
-      <Footer /> */}
-      <div className="d-none d-lg-block">
+      <Footer />
+      <div className="w-100 overflow-hidden">
         <img
           src={largeArrow}
           id="hero-large-arrow"
-          className="position-fixed z-0 pointer-events-none"
+          className="position-fixed z-0 pointer-events-none d-none d-lg-block"
         />
         <img
           src={largeArrow2}

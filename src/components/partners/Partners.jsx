@@ -44,34 +44,98 @@ const Partners = () => {
       window.innerWidth < 576.99 && setIsMobileDevice(true);
       window.innerWidth > 576.99 && setIsMobileDevice(false);
     });
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#partners",
-        start: "top bottom",
-        end: "top 10%",
-        scrub: 1,
-        fastScrollEnd: true,
-      },
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 1200px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#partners",
+          start: "top bottom",
+          end: "top 10%",
+          scrub: 1,
+          fastScrollEnd: true,
+        },
+      });
+      tl.to("#timeline-content", {
+        autoAlpha: 0,
+        xPercent: 20,
+      })
+        .to(
+          "#hero-large-arrow-2",
+          {
+            right: "-150%",
+            duration: 4,
+          },
+          "<"
+        )
+        .to(
+          "#root",
+          {
+            backgroundColor: "#EDFAFB",
+          },
+          "-=3"
+        );
     });
-    tl.to("#timeline-content", {
-      autoAlpha: 0,
-      xPercent: 20,
-    })
-      .to(
-        "#hero-large-arrow-2",
-        {
-          right: "-100%",
-          duration: 4,
+    mm.add("(max-width: 1199.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#partners",
+          start: "top bottom",
+          end: "top 10%",
+          scrub: 1,
+          fastScrollEnd: true,
         },
-        "<"
-      )
-      .to(
-        "#root",
-        {
-          backgroundColor: "#EDFAFB",
+      });
+      tl.to("#timeline-content", {
+        autoAlpha: 0,
+        xPercent: 20,
+      })
+        .to(
+          "#hero-large-arrow-2",
+          {
+            right: "-250%",
+            duration: 4,
+          },
+          "<"
+        )
+        .to(
+          "#root",
+          {
+            backgroundColor: "#EDFAFB",
+          },
+          "-=3"
+        );
+    });
+    mm.add("(max-width: 576.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#partners",
+          start: "top bottom",
+          end: "top 10%",
+          scrub: 1,
+          fastScrollEnd: true,
         },
-        "-=3"
-      );
+      });
+      tl.to("#timeline-content", {
+        autoAlpha: 0,
+        xPercent: 20,
+      })
+        .to(
+          "#hero-large-arrow-2",
+          {
+            right: "-550%",
+            duration: 4,
+          },
+          "<"
+        )
+        .to(
+          "#root",
+          {
+            backgroundColor: "#EDFAFB",
+          },
+          "-=3"
+        );
+    });
+
     const ctx = gsap.context(() => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
