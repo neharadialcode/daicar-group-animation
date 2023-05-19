@@ -648,7 +648,7 @@ const Hero = () => {
         scrollTrigger: {
           trigger: "#hero",
           start: "top top",
-          end: "+=200%",
+          end: "+=500%",
           pin: true,
           scrub: 1,
         },
@@ -762,6 +762,7 @@ const Hero = () => {
           },
           "<"
         )
+
         //////////////////////////
         .set(
           "#intro-content",
@@ -770,6 +771,7 @@ const Hero = () => {
           },
           "<"
         )
+        //////////
         .addLabel("button_0")
         .to(
           ".active_button_0",
@@ -990,7 +992,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-
         .to(
           ".arrow_tabs",
           {
@@ -1057,7 +1058,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-
         .fromTo(
           ".arrow_tabs",
           {
@@ -1093,8 +1093,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        //////////////////////////
-
         .to(
           "#root",
           {
@@ -1166,7 +1164,7 @@ const Hero = () => {
         scrollTrigger: {
           trigger: "#hero",
           start: "top top",
-          end: "+=200%",
+          end: "+=500%",
           pin: true,
           scrub: 1,
         },
@@ -1289,6 +1287,7 @@ const Hero = () => {
           },
           "<"
         )
+        //////////
         .addLabel("button_0")
         .to(
           ".active_button_0",
@@ -1428,7 +1427,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-
         //////////
         .addLabel("button_2")
         .to(".active_button_1", {
@@ -1510,7 +1508,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-
         .to(
           ".arrow_tabs",
           {
@@ -1612,8 +1609,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        //////////////////////////
-
         .to(
           "#root",
           {
@@ -1622,7 +1617,7 @@ const Hero = () => {
           "+=2"
         )
         .to("#para_text_01", {
-          opacity: 0.5,
+          opacity: 0,
         });
     });
 
@@ -1685,7 +1680,7 @@ const Hero = () => {
         scrollTrigger: {
           trigger: "#hero",
           start: "top top",
-          end: "+=200%",
+          end: "+=500%",
           pin: true,
           scrub: 1,
         },
@@ -1809,6 +1804,7 @@ const Hero = () => {
           },
           "<"
         )
+        //////////
         .addLabel("button_0")
         .to(
           ".active_button_0",
@@ -2130,7 +2126,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        //////////////////////////
         .to(
           "#root",
           {
