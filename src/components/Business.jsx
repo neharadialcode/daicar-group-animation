@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import iconImg from "../assets/images/svg/big-icon.svg";
 import { gsap } from "gsap";
 import businessOne from "../assets/images/png/business-1.png";
 import businessTwo from "../assets/images/png/business-2.png";
@@ -8,9 +7,7 @@ import businessFour from "../assets/images/png/business-4.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
-
 import outlineArrow from "../assets/outlineArrow.svg";
-
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Business = () => {
@@ -32,9 +29,9 @@ const Business = () => {
     gsap.set(".business_para_4", {
       height: 0,
     });
-    gsap.set("#solution-outilneArrow", {
+    gsap.set("#solution-outlineArrow", {
       left: "50%",
-      top: "50%",
+      top: "80%",
       yPercent: -50,
       xPercent: -50,
     });
@@ -56,9 +53,9 @@ const Business = () => {
           immediateRender: false,
         })
         .to(
-          "#solution-outilneArrow",
+          "#solution-outlineArrow",
           {
-            yPercent: -120,
+            yPercent: -80,
             immediateRender: false,
           },
           "<"
@@ -67,12 +64,11 @@ const Business = () => {
         ".main_text",
         {
           scale: 0.5,
-          // duration: 5,
-          autoAlpha: 0.5,
+          autoAlpha: 0,
         },
         {
           scale: 1,
-          // duration: 5,
+          duration: 1,
           autoAlpha: 1,
         }
       )
@@ -87,9 +83,6 @@ const Business = () => {
         })
         .to(".business_heading_4", {
           autoAlpha: 0.5,
-        })
-        .to(".big_icon", {
-          top: "-11%",
         })
         .to(".small_icon", {
           top: "-5px",
@@ -251,19 +244,6 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         })
-        .fromTo(
-          ".main_text",
-          {
-            scale: 1,
-            duration: 5,
-            autoAlpha: 1,
-          },
-          {
-            scale: 0.5,
-            duration: 5,
-            autoAlpha: 0.5,
-          }
-        )
         .to(
           ".business_left_icon",
           {
@@ -290,7 +270,7 @@ const Business = () => {
           immediateRender: false,
         })
         .to(
-          "#solution-outilneArrow",
+          "#solution-outlineArrow",
           {
             yPercent: -120,
             immediateRender: false,
@@ -301,12 +281,10 @@ const Business = () => {
         ".main_text",
         {
           scale: 0.5,
-          duration: 5,
-          autoAlpha: 0.5,
+          autoAlpha: 0,
         },
         {
           scale: 1,
-          duration: 5,
           autoAlpha: 1,
         }
       )
@@ -321,9 +299,6 @@ const Business = () => {
         })
         .to(".business_heading_4", {
           autoAlpha: 0.5,
-        })
-        .to(".big_icon", {
-          top: "-8%",
         })
         .to(".small_icon", {
           top: "13px",
@@ -483,20 +458,6 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         })
-
-        .fromTo(
-          ".main_text",
-          {
-            scale: 1,
-            duration: 5,
-            autoAlpha: 1,
-          },
-          {
-            scale: 0.5,
-            duration: 5,
-            autoAlpha: 0.5,
-          }
-        )
         .to(
           ".business_left_icon",
           {
@@ -580,7 +541,7 @@ const Business = () => {
           <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
             <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
           </div>
-          <div className="container pb-5 min-vh-100 d-lg-flex flex-column justify-content-center z-10">
+          <div className="container pb-lg-5 min-vh-100 d-lg-flex flex-column justify-content-center z-10">
             <div className="main_text d-none d-lg-block pb-5">
               <div className="row justify-content-evenly divide_space_text">
                 <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center ">
@@ -592,17 +553,17 @@ const Business = () => {
                   <img
                     className="w-100 business_img_2 opacity_0 position-absolute"
                     src={businessTwo}
-                    alt="business-big-arrow"
+                    alt="business-big-arrow2"
                   />
                   <img
                     className="w-100 business_img_3 opacity_0 position-absolute"
                     src={businessThree}
-                    alt="business-big-arrow"
+                    alt="business-big-arrow3"
                   />
                   <img
                     className="w-100 business_img_4 opacity_0 position-absolute"
                     src={businessFour}
-                    alt="business-big-arrow"
+                    alt="business-big-arrow4"
                   />
                 </div>
                 <div className="col-6 col-xl-5 position-relative business-content">
@@ -756,9 +717,9 @@ const Business = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div>
           <img
-            id="solution-outilneArrow"
+            id="solution-outlineArrow"
             className="position-absolute pointer-events-none origin-center h-[70vh] w-100"
             src={outlineArrow}
           />

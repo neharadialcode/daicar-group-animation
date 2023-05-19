@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import roadmapImg1 from "../assets/images/png/roadmap_img1.png";
-import roadmapImg2 from "../assets/images/png/roadmap_img2.png";
 import bigFounder from "../assets/images/png/big-founder-federico-img.png";
 import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
 import bigFounder3 from "../assets/images/png/big-founder-federico-img-2.png";
 import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
-import topArrow from "../assets/images/png/about-top-arrow.png";
+import aboutEText from "../assets/images/svg/about-e-text.svg";
 import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 
@@ -391,11 +389,6 @@ const About = () => {
   return (
     <div className="vh-100 overflow-hidden about_parent z_5 top_minus_space">
       <div className="position-relative h-100 z_1">
-        {/* <div className="position-absolute z_negative d-none d-lg-block">
-          <img className="w-100" src={topArrow} alt="about-top-arrow" />
-        </div> */}
-        {/* <img className="about_icon_1" src={roadmapImg1} alt="roadmapImg1" /> */}
-        {/* <img className="about_icon_2" src={roadmapImg2} alt="roadmapImg1" /> */}
         <img className="about_icon_2" src={aboutArrow} alt="aboutArrow" />
         <div className="position-absolute d-none d-sm-block d-lg-none z_negative">
           <img
@@ -404,8 +397,8 @@ const About = () => {
             alt="arrow-tab-img"
           />
         </div>
-        <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 about_text_size z_1">
-          <p className="font_5xl text-white pt-xl-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing px-2 px-sm-0">
+        <div className="text-center pt-5 mt-sm-5mt-lg-0 px-sm-4 px-lg-0 about_text_size z_1">
+          <p className="font_5xl text-white pt-sm-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing px-2 px-sm-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
@@ -428,8 +421,16 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5">
-                    Il futuro della lead generation è basato sulla creazione di
-                    relazioni di fiducia, sostenute dalla tecnologia.
+                    Il futuro della lead generation{" "}
+                    <span>
+                      <img
+                        className="mb-2 about_e_text"
+                        src={aboutEText}
+                        alt="about-e-text"
+                      />
+                    </span>{" "}
+                    basato sulla creazione di relazioni di fiducia, sostenute
+                    dalla tecnologia.
                   </h4>
                 </div>
                 <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3 px-lg-4">
@@ -511,8 +512,16 @@ const About = () => {
                 </div>
                 <div className="position-relative">
                   <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
-                    Il futuro della lead generation è basato sulla creazione di
-                    relazioni di fiducia, sostenute dalla tecnologia.
+                    Il futuro della lead generation{" "}
+                    <span>
+                      <img
+                        className="mb-2 about_e_text"
+                        src={aboutEText}
+                        alt="about-e-text"
+                      />
+                    </span>{" "}
+                    basato sulla creazione di relazioni di fiducia, sostenute
+                    dalla tecnologia.
                   </h4>
                   <div className="position-absolute small_icon_arrow_2">
                     <DownArrowNoiIcon />
