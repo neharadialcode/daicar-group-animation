@@ -462,14 +462,10 @@ const Hero = () => {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
-        .to(
-          ".active_button_3",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          }
-          // "-=.5"
-        )
+        .to(".active_button_3", {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -984,14 +980,10 @@ const Hero = () => {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
-        .to(
-          ".active_button_3",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          }
-          // "-=.5"
-        )
+        .to(".active_button_3", {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -1500,14 +1492,10 @@ const Hero = () => {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
-        .to(
-          ".active_button_3",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          }
-          // "-=.5"
-        )
+        .to(".active_button_3", {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -2017,14 +2005,10 @@ const Hero = () => {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
-        .to(
-          ".active_button_3",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          }
-          // "-=.5"
-        )
+        .to(".active_button_3", {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        })
         .to(
           ".arrow_tabs",
           {
