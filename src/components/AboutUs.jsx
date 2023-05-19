@@ -64,16 +64,16 @@ const About = () => {
         )
 
         // FIRST VALUES
-        .fromTo(
-          ".about_icon_1",
-          {
-            left: "-40%",
-          },
-          {
-            left: "5%",
-            duration: 5,
-          }
-        )
+        // .fromTo(
+        //   ".about_icon_1",
+        //   {
+        //     left: "-40%",
+        //   },
+        //   {
+        //     left: "5%",
+        //     duration: 5,
+        //   }
+        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -99,16 +99,16 @@ const About = () => {
         )
 
         // SECOND VALUES
-        .fromTo(
-          ".about_icon_1",
-          {
-            left: "0%",
-          },
-          {
-            left: "6%",
-            duration: 5,
-          }
-        )
+        // .fromTo(
+        //   ".about_icon_1",
+        //   {
+        //     left: "0%",
+        //   },
+        //   {
+        //     left: "6%",
+        //     duration: 5,
+        //   }
+        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -148,16 +148,16 @@ const About = () => {
         )
 
         // THIRD VALUES
-        .fromTo(
-          ".about_icon_1",
-          {
-            left: "6%",
-          },
-          {
-            left: "10%",
-            duration: 5,
-          }
-        )
+        // .fromTo(
+        //   ".about_icon_1",
+        //   {
+        //     left: "6%",
+        //   },
+        //   {
+        //     left: "10%",
+        //     duration: 5,
+        //   }
+        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -236,16 +236,16 @@ const About = () => {
       secondSection4
 
         // FIRST VALUES
-        .fromTo(
-          ".about_icon_1",
-          {
-            left: "-50%",
-          },
-          {
-            left: "5%",
-            duration: 5,
-          }
-        )
+        // .fromTo(
+        //   ".about_icon_1",
+        //   {
+        //     left: "-50%",
+        //   },
+        //   {
+        //     left: "5%",
+        //     duration: 5,
+        //   }
+        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -271,16 +271,16 @@ const About = () => {
         )
 
         // SECOND VALUES
-        .fromTo(
-          ".about_icon_1",
-          {
-            left: "5%",
-          },
-          {
-            duration: 5,
-            left: "10%",
-          }
-        )
+        // .fromTo(
+        //   ".about_icon_1",
+        //   {
+        //     left: "5%",
+        //   },
+        //   {
+        //     duration: 5,
+        //     left: "10%",
+        //   }
+        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -313,16 +313,16 @@ const About = () => {
         )
 
         // THIRD VALUES
-        .fromTo(
-          ".about_icon_1",
-          {
-            left: "10%",
-          },
-          {
-            left: "15%",
-            duration: 5,
-          }
-        )
+        // .fromTo(
+        //   ".about_icon_1",
+        //   {
+        //     left: "10%",
+        //   },
+        //   {
+        //     left: "15%",
+        //     duration: 5,
+        //   }
+        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -389,7 +389,11 @@ const About = () => {
   return (
     <div className="vh-100 overflow-hidden about_parent z_5 top_minus_space">
       <div className="position-relative h-100 z_1">
-        <img className="about_icon_2" src={aboutArrow} alt="aboutArrow" />
+        <img
+          className="about_icon_2 d-none d-lg-block"
+          src={aboutArrow}
+          alt="aboutArrow"
+        />
         <div className="position-absolute d-none d-sm-block d-lg-none z_negative">
           <img
             className="w-100 small_tab_arrow_img_forth"
