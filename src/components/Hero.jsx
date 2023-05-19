@@ -249,7 +249,8 @@ const Hero = () => {
           },
           "<"
         )
-
+        //////////
+        .addLabel("button_0")
         .to(
           ".active_button_0",
           {
@@ -258,7 +259,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_0")
         .fromTo(
           ".card_img_0",
           {
@@ -322,7 +322,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -335,8 +336,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_1")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -457,7 +456,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -470,8 +470,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_3")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -524,7 +522,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -537,8 +536,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_4")
-        //////////
         .fromTo(
           ".arrow_tabs",
           {
@@ -574,68 +571,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-
-        // =========================================================================================================
-        // .addLabel("btn-1")
-        // .to("#intro-image-1-btn", {
-        //   rotate: 10,
-        // })
-        // .to(
-        //   "#intro-image-1",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=2"
-        // )
-        // .addLabel("btn-2")
-        // .to(
-        //   "#intro-image-1-btn",
-        //   {
-        //     rotate: 0,
-        //   },
-        //   ">"
-        // )
-        // .to("#intro-image-2-btn", {
-        //   rotate: 10,
-        // })
-        // .to(
-        //   "#intro-image-2",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=2"
-        // )
-        // .addLabel("btn-3")
-        // .to(
-        //   "#intro-image-2-btn",
-        //   {
-        //     rotate: 0,
-        //   },
-        //   ">"
-        // )
-        // .to("#intro-image-3-btn", {
-        //   rotate: 10,
-        // })
-        // .to(
-        //   "#intro-image-3",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=2"
-        // )
-        // .addLabel("btn-4")
-        // .to(
-        //   "#intro-image-3-btn",
-        //   {
-        //     rotate: 0,
-        //   },
-        //   ">"
-        // )
-        // .to("#intro-image-4-btn", {
-        //   rotate: 10,
-        // })
-        //////////////////////////
-
         .to(
           "#root",
           {
@@ -827,72 +762,6 @@ const Hero = () => {
           },
           "<"
         )
-        // .set(
-        //   "#intro-content",
-        //   {
-        //     display: "block",
-        //   },
-        //   "<"
-        // )
-        // .addLabel("btn-1")
-        // .to("#intro-image-1-btn", {
-        //   rotate: 10,
-        // })
-        // .to(
-        //   "#intro-image-1",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=2"
-        // )
-        // .addLabel("btn-2")
-        // .to(
-        //   "#intro-image-1-btn",
-        //   {
-        //     rotate: 0,
-        //   },
-        //   ">"
-        // )
-        // .to("#intro-image-2-btn", {
-        //   rotate: 10,
-        // })
-        // .to(
-        //   "#intro-image-2",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=2"
-        // )
-        // .addLabel("btn-3")
-        // .to(
-        //   "#intro-image-2-btn",
-        //   {
-        //     rotate: 0,
-        //   },
-        //   ">"
-        // )
-        // .to("#intro-image-3-btn", {
-        //   rotate: 10,
-        // })
-        // .to(
-        //   "#intro-image-3",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=2"
-        // )
-        // .addLabel("btn-4")
-        // .to(
-        //   "#intro-image-3-btn",
-        //   {
-        //     rotate: 0,
-        //   },
-        //   ">"
-        // )
-        // .to("#intro-image-4-btn", {
-        //   rotate: 10,
-        // })
-
         //////////////////////////
         .set(
           "#intro-content",
@@ -901,7 +770,7 @@ const Hero = () => {
           },
           "<"
         )
-
+        .addLabel("button_0")
         .to(
           ".active_button_0",
           {
@@ -910,7 +779,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_0")
         .fromTo(
           ".card_img_0",
           {
@@ -974,7 +842,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -987,8 +856,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_1")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -1109,7 +976,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -1122,8 +990,7 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_3")
-        //////////
+
         .to(
           ".arrow_tabs",
           {
@@ -1176,7 +1043,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -1189,8 +1057,7 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_4")
-        //////////
+
         .fromTo(
           ".arrow_tabs",
           {
@@ -1422,7 +1289,7 @@ const Hero = () => {
           },
           "<"
         )
-
+        .addLabel("button_0")
         .to(
           ".active_button_0",
           {
@@ -1431,7 +1298,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_0")
         .fromTo(
           ".card_img_0",
           {
@@ -1495,7 +1361,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -1508,8 +1375,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_1")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -1631,7 +1496,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -1644,8 +1510,7 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_3")
-        //////////
+
         .to(
           ".arrow_tabs",
           {
@@ -1698,7 +1563,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -1711,8 +1577,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_4")
-        //////////
         .fromTo(
           ".arrow_tabs",
           {
@@ -1758,7 +1622,7 @@ const Hero = () => {
           "+=2"
         )
         .to("#para_text_01", {
-          opacity: 0,
+          opacity: 0.5,
         });
     });
 
@@ -1945,7 +1809,7 @@ const Hero = () => {
           },
           "<"
         )
-
+        .addLabel("button_0")
         .to(
           ".active_button_0",
           {
@@ -1954,7 +1818,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_0")
         .fromTo(
           ".card_img_0",
           {
@@ -2018,7 +1881,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -2031,8 +1895,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_1")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -2086,7 +1948,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-
         //////////
         .addLabel("button_2")
         .to(".active_button_1", {
@@ -2154,7 +2015,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-
         //////////
         .addLabel("button_3")
         .to(".active_button_2", {
@@ -2221,7 +2081,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -2234,8 +2095,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_4")
-        //////////
         .fromTo(
           ".arrow_tabs",
           {
@@ -2272,7 +2131,6 @@ const Hero = () => {
           "-=.5"
         )
         //////////////////////////
-
         .to(
           "#root",
           {
