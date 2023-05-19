@@ -1301,7 +1301,10 @@ const Hero = () => {
                 id="hero-sub-heading"
                 className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white"
               >
-                <div className="hero_slide_1" id="hero-sub-heading-one">
+                <div
+                  className="hero_slide_1 pt-lg-5 pt-xxl-0"
+                  id="hero-sub-heading-one"
+                >
                   <h2 className="ff_mundial_regular font_6xl mb-0 text-center">
                     Il futuro delle tue&nbsp;
                     <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
@@ -1319,21 +1322,24 @@ const Hero = () => {
                   <h3 className="font_8xl fw-bold number_heading pt-4 pb-4 text-center color_light_green">
                     200.000
                   </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 hero_slide_para_1">
+                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-xl-4 hero_slide_para_1">
                     Lead
                     <span className="ff_mundial_bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-0 pb-4 hero_slide_para_2">
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
                     Daicar aiuta a far
                     <span className="ff_mundial_bold mx-1 mx-sm-2">
                       crescere
                     </span>
-                    la tua azienda, <br className="d-none d-xl-block" /> creando
+                    la tua azienda, <br className="d-none d-lg-block" /> creando
                     contatti e generando vendite
                   </p>
                 </div>
-                <div className="hero_slide_2" id="hero-sub-heading-two">
+                <div
+                  className="hero_slide_2 pt-lg-5 pt-xxl-0"
+                  id="hero-sub-heading-two"
+                >
                   <h2 className="ff_mundial_regular font_6xl mb-0 text-center">
                     Il futuro delle tue&nbsp;
                     <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
@@ -1351,16 +1357,16 @@ const Hero = () => {
                   <h3 className="font_8xl fw-bold number_heading pt-4 pb-4 text-center color_light_green">
                     10.000
                   </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-4 hero_slide_para_1">
+                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-xl-4 hero_slide_para_1">
                     Campagne
                     <span className="ff_mundial_bold mx-2">Generate</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-0 pb-4 hero_slide_para_2 campagne_para">
+                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
                     Campaign management
                     <span className="ff_mundial_bold mx-2">flessibile</span> e
                     altamente
-                    <br className="d-none d-xl-block" />
+                    <br className="d-none d-lg-block" />
                     <span className="ff_mundial_bold mx-2">
                       personalizzabile
                     </span>
@@ -1492,17 +1498,17 @@ const Hero = () => {
 
             <img
               id="hero-ipad"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-xl-none"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-lg-none"
               src={ipad_mockup}
             />
             <img
               id="hero-ipad"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-none d-xl-block"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-none d-lg-block"
               src={ipad}
             />
             <img
               id="hero-ipad-white"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity-0 d-none d-xl-block"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity-0 d-none d-lg-block"
               src={ipadWhite}
             />
           </div>
