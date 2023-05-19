@@ -1,24 +1,18 @@
 import React, { useEffect, useState } from "react";
-
 import leftTextImg from "../../assets/images/png/partner-left-text-img.png";
 import Slider from "react-slick";
-
 import Image from "./Image";
 import ParentLogoPara from "./ParentLogoPara";
 import data from "./data";
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 gsap.registerPlugin(ScrollTrigger);
-
 const Partners = () => {
   const [partnerNname, setPartnerNname] = useState("");
   const [isMobileDevice, setIsMobileDevice] = useState(false);
-
   const handleMouseEnter = (name) => {
     setPartnerNname(name);
   };
@@ -75,7 +69,7 @@ const Partners = () => {
           "-=3"
         );
     });
-    mm.add("()min-width:576px) and (max-width: 1199.98px)", () => {
+    mm.add("(min-width:576px) and (max-width: 1199.98px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#partners",
@@ -116,18 +110,6 @@ const Partners = () => {
         },
       });
       tl
-        //   .to("#timeline-content", {
-        //   autoAlpha: 0,
-        //   xPercent: 0,
-        // })
-        //   .to(
-        //     ".timeline_arrow_icon",
-        //     {
-        //       right: "-550%",
-        //       duration: 4,
-        //     },
-        //     "<"
-        //   )
         .to(
           "#root",
           {
@@ -136,7 +118,6 @@ const Partners = () => {
           "-=3"
         );
     });
-
     const ctx = gsap.context(() => {
       const tl2 = gsap.timeline({
         scrollTrigger: {

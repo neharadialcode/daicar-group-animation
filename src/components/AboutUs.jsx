@@ -405,7 +405,7 @@ const About = () => {
           />
         </div>
         <div className="text-center pt-5 mt-sm-5 mt-lg-0 px-sm-4 px-lg-0 about_text_size z_1">
-          <p className="font_5xl text-white pt-xl-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing">
+          <p className="font_5xl text-white pt-xl-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing px-2 px-sm-0">
             Ideata da
             <span className="hero_btn noi_btn bg_light_green mx-2">noi</span>
             grazie all’esperienza acquisita nel
