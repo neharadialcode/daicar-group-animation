@@ -390,7 +390,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -403,8 +404,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_2")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -1043,7 +1042,8 @@ const Hero = () => {
             top: "0px",
           }
         )
-
+        //////////
+        .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -1056,8 +1056,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_2")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -1566,6 +1564,8 @@ const Hero = () => {
           }
         )
 
+        //////////
+        .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -1578,8 +1578,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_2")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -2089,6 +2087,8 @@ const Hero = () => {
           }
         )
 
+        //////////
+        .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -2101,8 +2101,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_2")
-        //////////
         .to(
           ".arrow_tabs",
           {
@@ -2157,6 +2155,8 @@ const Hero = () => {
           }
         )
 
+        //////////
+        .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -2169,8 +2169,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .addLabel("button_3")
-        //////////
         .to(
           ".arrow_tabs",
           {
