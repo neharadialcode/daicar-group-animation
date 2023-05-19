@@ -673,154 +673,314 @@ const Timeline = () => {
       });
     });
 
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#timeline",
-        start: "top top",
-        end: "+=400%",
-        scrub: 1,
-        pin: true,
-        markers: true,
-      },
-    });
-    tl2
-      .fromTo(
-        "#hero-large-arrow-2",
-        {
-          right: "130%",
+    mm.add("(min-width: 992px)", () => {
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top top",
+          end: "+=400%",
+          scrub: 1,
+          pin: true,
         },
-        {
+      });
+      tl2
+        .fromTo(
+          "#hero-large-arrow-2",
+          {
+            right: "130%",
+          },
+          {
+            right: `${
+              document.querySelector("#timeline-dot-4").getBoundingClientRect()
+                .right
+            }px`,
+            autoAlpha: 1,
+          }
+        )
+        .from(
+          [
+            "#timeline-dot-1",
+            "#timeline-dot-2",
+            "#timeline-dot-3",
+            "#timeline-dot-4",
+          ],
+          {
+            autoAlpha: 0,
+            xPercent: -100,
+            stagger: 0.4,
+          },
+          "<"
+        )
+        .from(
+          "#timeline-dot-line",
+          {
+            width: 0,
+            duration: 1,
+          },
+          ">20%"
+        )
+        .to(
+          ["#timeline-heading-1", "#timeline-year-1"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to("#hero-large-arrow-2", {
           right: `${
-            document.querySelector("#timeline-dot-4").getBoundingClientRect()
+            document.querySelector("#timeline-dot-3").getBoundingClientRect()
               .right
           }px`,
-          autoAlpha: 1,
-        }
-      )
-      .from(
-        [
-          "#timeline-dot-1",
-          "#timeline-dot-2",
-          "#timeline-dot-3",
-          "#timeline-dot-4",
-        ],
-        {
-          autoAlpha: 0,
-          xPercent: -100,
-          stagger: 0.4,
-        },
-        "<"
-      )
-      .from(
-        "#timeline-dot-line",
-        {
-          width: 0,
-          duration: 1,
-        },
-        ">20%"
-      )
-      .to(
-        ["#timeline-heading-1", "#timeline-year-1"],
-        {
-          autoAlpha: 1,
-        },
-        "<"
-      )
-      .to("#hero-large-arrow-2", {
-        right: `${
-          document.querySelector("#timeline-dot-3").getBoundingClientRect()
-            .right
-        }px`,
-        duration: 4,
-      })
-      .to("#timeline-heading-container", {
-        left: `${
-          document.querySelector("#timeline-dot-2").getBoundingClientRect()
-            .right -
-          document
-            .querySelector("#timeline-heading-container")
-            .parentNode.getBoundingClientRect().left
-        }px`,
-      })
-      .to(
-        ["#timeline-heading-1", "#timeline-year-1"],
-        {
-          autoAlpha: 0,
-        },
-        "<"
-      )
-      .to(
-        ["#timeline-heading-2", "#timeline-year-2"],
-        {
-          autoAlpha: 1,
-        },
-        "<"
-      )
-      .to("#hero-large-arrow-2", {
-        right: `${
-          document.querySelector("#timeline-dot-2").getBoundingClientRect()
-            .right
-        }px`,
-        duration: 4,
-      })
-      .to("#timeline-heading-container", {
-        left: `${
-          document.querySelector("#timeline-dot-3").getBoundingClientRect()
-            .right -
-          document
-            .querySelector("#timeline-heading-container")
-            .parentNode.getBoundingClientRect().left
-        }px`,
-      })
-      .to(
-        ["#timeline-heading-2", "#timeline-year-2"],
-        {
-          autoAlpha: 0,
-        },
-        "<"
-      )
-      .to(
-        ["#timeline-heading-3", "#timeline-year-3"],
-        {
-          autoAlpha: 1,
-        },
-        "<"
-      )
-      .to("#hero-large-arrow-2", {
-        right: `${
-          document.querySelector("#timeline-dot-1").getBoundingClientRect()
-            .right
-        }px`,
-        duration: 4,
-      })
+          duration: 4,
+        })
+        .to("#timeline-heading-container", {
+          left: `${
+            document.querySelector("#timeline-dot-2").getBoundingClientRect()
+              .right -
+            document
+              .querySelector("#timeline-heading-container")
+              .parentNode.getBoundingClientRect().left
+          }px`,
+        })
+        .to(
+          ["#timeline-heading-1", "#timeline-year-1"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-2", "#timeline-year-2"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to("#hero-large-arrow-2", {
+          right: `${
+            document.querySelector("#timeline-dot-2").getBoundingClientRect()
+              .right
+          }px`,
+          duration: 4,
+        })
+        .to("#timeline-heading-container", {
+          left: `${
+            document.querySelector("#timeline-dot-3").getBoundingClientRect()
+              .right -
+            document
+              .querySelector("#timeline-heading-container")
+              .parentNode.getBoundingClientRect().left
+          }px`,
+        })
+        .to(
+          ["#timeline-heading-2", "#timeline-year-2"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-3", "#timeline-year-3"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to("#hero-large-arrow-2", {
+          right: `${
+            document.querySelector("#timeline-dot-1").getBoundingClientRect()
+              .right
+          }px`,
+          duration: 4,
+        })
 
-      .to(["#timeline-heading-3", "#timeline-year-3"], {
-        autoAlpha: 0,
-      })
-      .to("#timeline-heading-container", {
-        left: `${
-          document.querySelector("#timeline-dot-4").getBoundingClientRect()
-            .right -
-          document
-            .querySelector("#timeline-heading-container")
-            .parentNode.getBoundingClientRect().left -
-          50
-        }px`,
-      })
-      .to(
-        ["#timeline-heading-4", "#timeline-year-4"],
-        {
-          autoAlpha: 1,
+        .to(["#timeline-heading-3", "#timeline-year-3"], {
+          autoAlpha: 0,
+        })
+        .to("#timeline-heading-container", {
+          left: `${
+            document.querySelector("#timeline-dot-4").getBoundingClientRect()
+              .right -
+            document
+              .querySelector("#timeline-heading-container")
+              .parentNode.getBoundingClientRect().left -
+            50
+          }px`,
+        })
+        .to(
+          ["#timeline-heading-4", "#timeline-year-4"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-4", "#timeline-year-4"],
+          {
+            autoAlpha: 1,
+          },
+          "+=4"
+        );
+      // .fromTo(
+      //   "#hero-large-arrow-2",
+      //   {
+      //     xPercent: 0,
+      //   },
+      //   {
+      //     xPercent: 500,
+      //   }
+      // );
+    });
+    mm.add("(max-width: 991.98px)", () => {
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top top",
+          end: "+=400%",
+          scrub: 1,
+          pin: true,
+          markers: true,
         },
-        "<"
-      )
-      .to(
-        ["#timeline-heading-4", "#timeline-year-4"],
-        {
-          autoAlpha: 1,
-        },
-        "+=4"
-      );
+      });
+      tl2
+        .fromTo(
+          "#hero-large-arrow-2",
+          {
+            right: "130%",
+          },
+          {
+            right: `${
+              document.querySelector("#timeline-dot-4").getBoundingClientRect()
+                .right
+            }px`,
+            autoAlpha: 1,
+          }
+        )
+        .from(
+          [
+            "#timeline-dot-1",
+            "#timeline-dot-2",
+            "#timeline-dot-3",
+            "#timeline-dot-4",
+          ],
+          {
+            autoAlpha: 0,
+            xPercent: -100,
+            stagger: 0.4,
+          },
+          "<"
+        )
+        .from(
+          "#timeline-dot-line",
+          {
+            width: 0,
+            duration: 1,
+          },
+          ">20%"
+        )
+        .to(
+          ["#timeline-heading-1", "#timeline-year-1"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to("#hero-large-arrow-2", {
+          right: `${
+            document.querySelector("#timeline-dot-3").getBoundingClientRect()
+              .right
+          }px`,
+          duration: 4,
+        })
+        // .to("#timeline-heading-container", {
+        //   left: `${
+        //     document.querySelector("#timeline-dot-2").getBoundingClientRect()
+        //       .right -
+        //     document
+        //       .querySelector("#timeline-heading-container")
+        //       .parentNode.getBoundingClientRect().left
+        //   }px`,
+        // })
+        .to(
+          ["#timeline-heading-1", "#timeline-year-1"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-2", "#timeline-year-2"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to("#hero-large-arrow-2", {
+          right: `${
+            document.querySelector("#timeline-dot-2").getBoundingClientRect()
+              .right
+          }px`,
+          duration: 4,
+        })
+        // .to("#timeline-heading-container", {
+        //   left: `${
+        //     document.querySelector("#timeline-dot-3").getBoundingClientRect()
+        //       .right -
+        //     document
+        //       .querySelector("#timeline-heading-container")
+        //       .parentNode.getBoundingClientRect().left
+        //   }px`,
+        // })
+        .to(
+          ["#timeline-heading-2", "#timeline-year-2"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-3", "#timeline-year-3"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to("#hero-large-arrow-2", {
+          right: `${
+            document.querySelector("#timeline-dot-1").getBoundingClientRect()
+              .right
+          }px`,
+          duration: 4,
+        })
+
+        .to(["#timeline-heading-3", "#timeline-year-3"], {
+          autoAlpha: 0,
+        })
+        // .to("#timeline-heading-container", {
+        //   left: `${
+        //     document.querySelector("#timeline-dot-4").getBoundingClientRect()
+        //       .right -
+        //     document
+        //       .querySelector("#timeline-heading-container")
+        //       .parentNode.getBoundingClientRect().left -
+        //     50
+        //   }px`,
+        // })
+        .to(
+          ["#timeline-heading-4", "#timeline-year-4"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-4", "#timeline-year-4"],
+          {
+            autoAlpha: 1,
+          },
+          "+=4"
+        );
+    });
   }, []);
   return (
     <>
@@ -838,7 +998,7 @@ const Timeline = () => {
                 <div className="text_parent_height w-100 position-relative">
                   <div
                     id="timeline-heading-container"
-                    className="position-absolute -translate-y-1/2 w-100 timeline_text1_max_w timeline_text_one"
+                    className="position-absolute -translate-y-1/2 w-100 timeline_text1_max_w"
                   >
                     <div
                       id="timeline-heading-1"
@@ -860,7 +1020,7 @@ const Timeline = () => {
                     </div>
                     <h2
                       id="timeline-heading-2"
-                      className="font_2xl text-white position-absolute w-100 timeline_text_two"
+                      className="font_2xl text-white position-absolute w-100"
                     >
                       Sviluppiamo la nostra piattaforma proprietaria tramite
                       tecnologia A.I. Nello stesso anno entriamo a far parte di
@@ -869,14 +1029,14 @@ const Timeline = () => {
                     </h2>
                     <div
                       id="timeline-heading-3"
-                      className="position-absolute w-100 timeline_text_three"
+                      className="position-absolute w-100"
                     >
                       <img
                         className="timeline_tiguido_icon w-100"
                         src={timelineImg2}
                         alt="timelineImg2"
                       />{" "}
-                      <p className="font_2xl custom_size_timeline_text text-white mb-3 pe-3 pe-sm-5 pe-lg-0 me-sm-3 me-lg-0">
+                      <p className="font_2xl custom_size_timeline_text text-white mb-3 pe-3 pe-sm-5 pe-xl-0 me-sm-3 me-xl-0">
                         Nasce TiGuido.io che trasferisce l’elevato know{" "}
                         <span className="ff_math">-</span>how e la tecnologia
                         sviluppata in ambito automotive al servizio di nuovi
@@ -899,7 +1059,7 @@ const Timeline = () => {
                     </div>
                     <div
                       id="timeline-heading-4"
-                      className="font_2xl text-white position-absolute w-100 timeline_text_four"
+                      className="font_2xl text-white position-absolute w-100 timeline_cake_img_parent"
                     >
                       <img
                         src={cake}
@@ -941,9 +1101,9 @@ const Timeline = () => {
                       id="timeline-year-4"
                       className="position-absolute font_9xl fw-bold text-white top-50 end-0 -translate-y-1/2"
                     >
-                      <p className="font_2xl opacity_05 mb-0">2 Ottobre</p>
+                      <p className="font_2xl opacity_05 mb-0 text-end d-none d-sm-block">2 Ottobre</p>
                       2023
-                      <p className="font_2xl opacity_05">Otto anni</p>
+                      <p className="font_2xl opacity_05 text-end">Otto anni</p>
                     </div>
                   </div>
                 </div>
