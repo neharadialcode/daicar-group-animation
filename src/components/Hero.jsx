@@ -11,7 +11,7 @@ import ipadWhite from "../assets/ipad-white.png";
 import ipad_mockup from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import arrow from "../assets/arrow.svg";
 
-import { Icon5, TabRightIcon } from "./Icons";
+import { TabRightIcon } from "./Icons";
 import tabImg1 from "../assets/images/png/tab-frame.png";
 import Lottie from "react-lottie-player";
 import comeLottie from "../assets/lotties/tabs-1.json";
@@ -28,17 +28,24 @@ const Hero = () => {
     let mm = gsap.matchMedia();
 
     mm.add("(min-width: 1400px)", () => {
-      gsap.from("#hero-main-heading", {
-        yPercent: 100,
+      // gsap.from("#hero-main-heading", {
+      //   yPercent: 100,
+      // });
+      gsap.set("#hero-main-heading", {
+        y: "-150px",
+      });
+      gsap.set(".arrow-hero-one", {
+        y: "30px",
+        scale: 1.1,
       });
       gsap.set(".arrow-hero-two", {
+        yPercent: -9,
         xPercent: 100,
         scale: 0.4,
       });
-
       gsap.set(".arrow-hero-three", {
-        xPercent: -100,
-        y: -130,
+        xPercent: -90,
+        yPercent: -26,
         scale: 0.2,
       });
       gsap.set("#hero-large-arrow", {
@@ -53,7 +60,6 @@ const Hero = () => {
         y: 100,
         stagger: 0.1,
       });
-
       gsap.set(
         [
           "#hero-sub-heading-one",
@@ -65,12 +71,10 @@ const Hero = () => {
           autoAlpha: 0,
         }
       );
-
       gsap.set("#hero-outline-arrow", {
         autoAlpha: 0,
         yPercent: 100,
       });
-
       gsap.set(["#hero-ipad", "#hero-ipad-white"], {
         scale: 2,
         top: "50%",
