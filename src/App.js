@@ -19,7 +19,7 @@ function App() {
       {/* <TabsImage /> */}
       <Business />
       <AboutUs />
-      {/* <Timeline /> */}
+      <Timeline />
       <Partners />
       <Crm />
       <Meeting />
