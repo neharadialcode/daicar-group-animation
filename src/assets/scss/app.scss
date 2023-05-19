@@ -35,31 +35,6 @@
   align-items: center;
   color: #fff;
 }
-// .icon_1 {
-//   position: absolute;
-//   top: 36%;
-//   left: 15%;
-// }
-// .icon_2 {
-//   position: absolute;
-//   bottom: 9%;
-//   left: 50%;
-//   transform: translate(-50%, 0);
-//   z-index: -1;
-// }
-// .icon_2 svg {
-//   transform: scale(1.22);
-// }
-// .icon_3 {
-//   position: absolute;
-//   top: 33%;
-//   right: 7%;
-// }
-// .icon_4 {
-//   position: absolute;
-//   left: 11.5%;
-//   z-index: 1;
-// }
 .arrow_tabs {
   transform: scale(1.7);
   max-width: 500px;
@@ -74,9 +49,6 @@
   position: relative;
   z-index: -1;
 }
-// .hero_section_text {
-//   min-height: 100vh;
-// }
 .i_pad_img {
   position: absolute;
   z-index: -1;
@@ -148,10 +120,6 @@
 .tabs_wrap {
   flex-wrap: wrap;
 }
-// .crm_slider img {
-//   width: 220px;
-//   height: 250px;
-// }
 .topscroll {
   position: absolute;
   right: 15px;
@@ -340,26 +308,6 @@
   [data-bs-target] {
     background-color: #373737 !important;
   }
-}
-.salesforcelogo {
-  max-width: 179.67px;
-  min-height: 125.57px;
-}
-.amazonlogo {
-  max-width: 181.2px;
-  min-height: 76.29px;
-}
-.hubsportlogo {
-  max-width: 151.63px;
-  min-height: 43px;
-}
-.pipedrivelogo {
-  max-width: 225.74px;
-  min-height: 75.92px;
-}
-.zendexlogo {
-  max-width: 280.38px;
-  min-height: 85.83px;
 }
 .custom_partner_gap {
   gap: 48px;
@@ -656,18 +604,11 @@
   height: 71%;
 }
 
-.timeline_text_one {
-  top: 30%;
-}
-
 .timeline_car_icon {
   max-width: 400px;
 }
 .timeline_tiguido_icon {
   max-width: 200px;
-}
-.overflow-hidden {
-  overflow: hidden !important;
 }
 .about_e_text{
   width: 22px;
