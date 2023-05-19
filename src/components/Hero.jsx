@@ -614,16 +614,20 @@ const Hero = () => {
       gsap.set("#main-content", {
         y: "-60px",
       });
+      gsap.set("#hero-main-heading", {
+        y: "-150px",
+      });
       gsap.set(".arrow-hero-one", {
         scale: 0.8,
       });
       gsap.set(".arrow-hero-two", {
+        yPercent: -11,
         xPercent: 75,
         scale: 0.3,
       });
       gsap.set(".arrow-hero-three", {
-        xPercent: -55,
-        yPercent: -5,
+        xPercent: -65,
+        yPercent: -22,
         scale: 0.15,
       });
       gsap.set("#hero-large-arrow", {
