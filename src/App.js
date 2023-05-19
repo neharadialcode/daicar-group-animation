@@ -35,7 +35,7 @@ function App() {
         <img
           src={largeArrow2}
           id="hero-large-arrow-2"
-          className="position-fixed z-0 pointer-events-none timeline_arrow_img"
+          className="position-fixed z-0 pointer-events-none timeline_arrow_img d-none d-sm-block"
         />
       </div>
       <ScrollChatIcon />

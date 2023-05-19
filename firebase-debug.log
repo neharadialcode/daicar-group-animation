@@ -1,0 +1,32 @@
+[debug] [2023-05-19T06:59:14.715Z] ----------------------------------------------------------------------
+[debug] [2023-05-19T06:59:14.717Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anjal\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-19T06:59:14.717Z] CLI Version:   11.1.0
+[debug] [2023-05-19T06:59:14.717Z] Platform:      win32
+[debug] [2023-05-19T06:59:14.717Z] Node Version:  v16.15.0
+[debug] [2023-05-19T06:59:14.721Z] Time:          Fri May 19 2023 12:29:14 GMT+0530 (India Standard Time)
+[debug] [2023-05-19T06:59:14.721Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-19T06:59:14.773Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-19T06:59:14.773Z] > authorizing via signed-in user (anjalichanda2019@gmail.com)
+[debug] [2023-05-19T06:59:14.773Z] [iam] checking project daicar-group-animation for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-19T06:59:14.775Z] > refreshing access token with scopes: []
+[debug] [2023-05-19T06:59:14.776Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-19T06:59:14.776Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-19T06:59:15.034Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-19T06:59:15.034Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-19T06:59:15.041Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/daicar-group-animation:testIamPermissions [none]
+[debug] [2023-05-19T06:59:15.042Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/daicar-group-animation:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-19T06:59:16.517Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/daicar-group-animation:testIamPermissions 200
+[debug] [2023-05-19T06:59:16.518Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/daicar-group-animation:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-19T06:59:16.519Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/daicar-group-animation [none]
+[debug] [2023-05-19T06:59:17.179Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/daicar-group-animation 200
+[debug] [2023-05-19T06:59:17.179Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/daicar-group-animation {"projectId":"daicar-group-animation","projectNumber":"60209306152","displayName":"Daicar-group-animation","name":"projects/daicar-group-animation","resources":{"hostingSite":"daicar-group-animation"},"state":"ACTIVE","etag":"1_633549db-d381-4b95-b34a-1dc6aa4e787a"}
+[info] 
+[info] === Deploying to 'daicar-group-animation'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-19T06:59:17.182Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/daicar-group-animation [none]
+[debug] [2023-05-19T06:59:18.002Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/daicar-group-animation 200
+[debug] [2023-05-19T06:59:18.002Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/daicar-group-animation {"projectId":"daicar-group-animation","projectNumber":"60209306152","displayName":"Daicar-group-animation","name":"projects/daicar-group-animation","resources":{"hostingSite":"daicar-group-animation"},"state":"ACTIVE","etag":"1_633549db-d381-4b95-b34a-1dc6aa4e787a"}
+[debug] [2023-05-19T06:59:18.004Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/60209306152/sites/daicar-group-animation/versions [none]
+[debug] [2023-05-19T06:59:18.004Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/60209306152/sites/daicar-group-animation/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}

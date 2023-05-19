@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 // import { gsap } from "gsap";
 // import icon1 from "../assets/images/svg/roadmap_side_icon.svg";
-// import timelineLeftIcon from "../assets/images/png/timeline-left-icon.png";
+import timelineLeftIcon from "../assets/images/png/timeline-left-icon.png";
 import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
 import timelineImg2 from "../assets/images/png/timeline-content-img-2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import cake from "../assets/images/svg/timeline-cake.svg";
+import largeArrow2 from "../assets/arrow-large-2.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Timeline = () => {
@@ -704,7 +706,7 @@ const Timeline = () => {
         immediateRender: false,
       });
     });
-    mm.add("(max-width: 768.98px)", () => {
+    mm.add("(min-width: 576px) and (max-width:769.98px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#timeline",
@@ -720,70 +722,71 @@ const Timeline = () => {
         immediateRender: false,
       });
     });
-    mm.add("(max-width: 575.98px)", () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#timeline",
-          start: "top bottom",
-          end: "top 50%",
-          scrub: true,
-        },
-      });
-      tl.to("#hero-large-arrow-2", {
-        bottom: "-107%",
-        display: "block",
-        autoAlpha: 0,
-        immediateRender: false,
-      });
-    });
-    mm.add("(max-width: 390.98px)", () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#timeline",
-          start: "top bottom",
-          end: "top 50%",
-          scrub: true,
-        },
-      });
-      tl.to("#hero-large-arrow-2", {
-        bottom: "-80%",
-        display: "block",
-        autoAlpha: 0,
-        immediateRender: false,
-      });
-    });
-    mm.add("(max-width: 376.98px)", () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#timeline",
-          start: "top bottom",
-          end: "top 50%",
-          scrub: true,
-        },
-      });
-      tl.to("#hero-large-arrow-2", {
-        bottom: "-107%",
-        display: "block",
-        autoAlpha: 0,
-        immediateRender: false,
-      });
-    });
-    mm.add("(max-width: 361.98px)", () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#timeline",
-          start: "top bottom",
-          end: "top 50%",
-          scrub: true,
-        },
-      });
-      tl.to("#hero-large-arrow-2", {
-        bottom: "-94%",
-        display: "block",
-        autoAlpha: 0,
-        immediateRender: false,
-      });
-    });
+
+    // mm.add("(max-width: 575.98px)", () => {
+    //   const tl = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: "#timeline",
+    //       start: "top bottom",
+    //       end: "top 50%",
+    //       scrub: true,
+    //     },
+    //   });
+    //   tl.to("#hero-large-arrow-2", {
+    //     bottom: "-107%",
+    //     display: "block",
+    //     autoAlpha: 0,
+    //     immediateRender: false,
+    //   });
+    // });
+    // mm.add("(max-width: 390.98px)", () => {
+    //   const tl = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: "#timeline",
+    //       start: "top bottom",
+    //       end: "top 50%",
+    //       scrub: true,
+    //     },
+    //   });
+    //   tl.to("#hero-large-arrow-2", {
+    //     bottom: "-80%",
+    //     display: "block",
+    //     autoAlpha: 0,
+    //     immediateRender: false,
+    //   });
+    // });
+    // mm.add("(max-width: 376.98px)", () => {
+    //   const tl = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: "#timeline",
+    //       start: "top bottom",
+    //       end: "top 50%",
+    //       scrub: true,
+    //     },
+    //   });
+    //   tl.to("#hero-large-arrow-2", {
+    //     bottom: "-107%",
+    //     display: "block",
+    //     autoAlpha: 0,
+    //     immediateRender: false,
+    //   });
+    // });
+    // mm.add("(max-width: 361.98px)", () => {
+    //   const tl = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: "#timeline",
+    //       start: "top bottom",
+    //       end: "top 50%",
+    //       scrub: true,
+    //     },
+    //   });
+    //   tl.to("#hero-large-arrow-2", {
+    //     bottom: "-94%",
+    //     display: "block",
+    //     autoAlpha: 0,
+    //     immediateRender: false,
+    //   });
+    // });
 
     mm.add("(min-width: 992px)", () => {
       const tl2 = gsap.timeline({
@@ -943,7 +946,7 @@ const Timeline = () => {
       //   }
       // );
     });
-    mm.add("(max-width: 991.98px)", () => {
+    mm.add("(min-width: 576px) and (max-width: 991.98px)", () => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#timeline",
@@ -1092,19 +1095,215 @@ const Timeline = () => {
           "+=4"
         );
     });
+    mm.add("(max-width: 575.98px)", () => {
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top top",
+          end: "+=400%",
+          scrub: 1,
+          pin: true,
+        },
+      });
+      tl2
+        .fromTo(
+          ".timeline_arrow_icon",
+          {
+            left: "-100vw",
+          },
+          {
+            left: "-95vw",
+            delay: 1,
+          }
+        )
+        // .fromTo(
+        //   "#hero-large-arrow-2",
+        //   {
+        //     right: "130%",
+        //   },
+        //   {
+        //     right: `${
+        //       document.querySelector("#timeline-dot-4").getBoundingClientRect()
+        //         .right
+        //     }px`,
+        //     autoAlpha: 1,
+        //   }
+        // )
+        .from(
+          [
+            "#timeline-dot-1",
+            "#timeline-dot-2",
+            "#timeline-dot-3",
+            "#timeline-dot-4",
+          ],
+          {
+            autoAlpha: 0,
+            xPercent: -100,
+            stagger: 0.4,
+          },
+          "<"
+        )
+        .from(
+          "#timeline-dot-line",
+          {
+            width: 0,
+            duration: 1,
+          },
+          ">20%"
+        )
+        .to(
+          ["#timeline-heading-1", "#timeline-year-1"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .fromTo(
+          ".timeline_arrow_icon",
+          {
+            left: "-95vw",
+          },
+          {
+            left: "-60vw",
+            delay: 1,
+          }
+        )
+        // .to("#hero-large-arrow-2", {
+        //   right: `${
+        //     document.querySelector("#timeline-dot-3").getBoundingClientRect()
+        //       .right
+        //   }px`,
+        //   duration: 4,
+        // })
+        // .to("#timeline-heading-container", {
+        //   left: `${
+        //     document.querySelector("#timeline-dot-2").getBoundingClientRect()
+        //       .right -
+        //     document
+        //       .querySelector("#timeline-heading-container")
+        //       .parentNode.getBoundingClientRect().left
+        //   }px`,
+        // })
+        .to(
+          ["#timeline-heading-1", "#timeline-year-1"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-2", "#timeline-year-2"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .fromTo(
+          ".timeline_arrow_icon",
+          {
+            left: "-60vw",
+          },
+          {
+            left: "-35vw",
+            delay: 1,
+          }
+        )
+        // .to("#hero-large-arrow-2", {
+        //   right: `${
+        //     document.querySelector("#timeline-dot-2").getBoundingClientRect()
+        //       .right
+        //   }px`,
+        //   duration: 4,
+        // })
+        // .to("#timeline-heading-container", {
+        //   left: `${
+        //     document.querySelector("#timeline-dot-3").getBoundingClientRect()
+        //       .right -
+        //     document
+        //       .querySelector("#timeline-heading-container")
+        //       .parentNode.getBoundingClientRect().left
+        //   }px`,
+        // })
+        .to(
+          ["#timeline-heading-2", "#timeline-year-2"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-3", "#timeline-year-3"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .fromTo(
+          ".timeline_arrow_icon",
+          {
+            left: "-35vw",
+          },
+          {
+            left: "-5vw",
+            delay: 1,
+          }
+        )
+        // .to("#hero-large-arrow-2", {
+        //   right: `${
+        //     document.querySelector("#timeline-dot-1").getBoundingClientRect()
+        //       .right
+        //   }px`,
+        //   duration: 4,
+        // })
+
+        .to(["#timeline-heading-3", "#timeline-year-3"], {
+          autoAlpha: 0,
+        })
+        // .to("#timeline-heading-container", {
+        //   left: `${
+        //     document.querySelector("#timeline-dot-4").getBoundingClientRect()
+        //       .right -
+        //     document
+        //       .querySelector("#timeline-heading-container")
+        //       .parentNode.getBoundingClientRect().left -
+        //     50
+        //   }px`,
+        // })
+        .to(
+          ["#timeline-heading-4", "#timeline-year-4"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-4", "#timeline-year-4"],
+          {
+            autoAlpha: 1,
+          },
+          "+=4"
+        );
+    });
   }, []);
   return (
     <>
       <div id="timeline" className="min-vh-100 w-100 z-10">
         <div className="position-relative h-100 w-100">
+          <span
+            // style={{ marginLeft: `${leftMargin - 16}px` }}
+            className="d-sm-none"
+          >
+            <img
+              className="timeline_arrow_icon w-100"
+              src={largeArrow2}
+              alt="largeArrow2"
+            />
+          </span>
           <div className="container position-relative h-100">
             <div
               id="timeline-content"
               className="d-flex align-items-center flex-column justify-content-between position-relative h-100 pt-4 pb-5 py-sm-5 z-10"
             >
-              {/* <h2 className="font_5xl text-white text-center">
-                Ideata da grazie all’esperienza acquisita nel
-              </h2> */}
               <div className="text-center pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
                 <p className="font_5xl text-white text-center">
                   Ideata da{" "}
@@ -1116,6 +1315,9 @@ const Timeline = () => {
                     tempo{" "}
                   </span>{" "}
                 </p>
+              </div>
+              <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block">
+                <img src={timelineLeftIcon} alt="timeline-left-icon" />{" "}
               </div>
               <div className="d-flex justify-contentbetween flex-column align-items-center flex-grow-1 w-100 text_parent_max_w">
                 <div className="text_parent_height w-100 position-relative">

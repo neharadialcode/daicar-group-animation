@@ -75,7 +75,7 @@ const Partners = () => {
           "-=3"
         );
     });
-    mm.add("(max-width: 1199.98px)", () => {
+    mm.add("()min-width:576px) and (max-width: 1199.98px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#partners",
@@ -105,28 +105,29 @@ const Partners = () => {
           "-=3"
         );
     });
-    mm.add("(max-width: 576.98px)", () => {
+    mm.add("(max-width: 575.98px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#partners",
-          start: "top bottom",
+          start: "top 50%",
           end: "top 10%",
           scrub: 1,
           fastScrollEnd: true,
         },
       });
-      tl.to("#timeline-content", {
-        autoAlpha: 0,
-        xPercent: 20,
-      })
-        .to(
-          "#hero-large-arrow-2",
-          {
-            right: "-550%",
-            duration: 4,
-          },
-          "<"
-        )
+      tl
+        //   .to("#timeline-content", {
+        //   autoAlpha: 0,
+        //   xPercent: 0,
+        // })
+        //   .to(
+        //     ".timeline_arrow_icon",
+        //     {
+        //       right: "-550%",
+        //       duration: 4,
+        //     },
+        //     "<"
+        //   )
         .to(
           "#root",
           {

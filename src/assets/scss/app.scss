@@ -344,8 +344,9 @@
   white-space: nowrap;
 }
 .timeline_left_icon {
-  right: 4%;
-  top: 6px;
+  right: -12%;
+  top: 10%;
+  transform: rotate(90deg);
 }
 .timeline_parent {
   .timeline_text_1 {
