@@ -92,6 +92,9 @@
 }
 
 @media (min-width: 1600px) {
+  .timeline_left_icon {
+    right: -30%;
+  }
   .custom_height_tab_img_ipad {
     width: 100% !important;
   }
@@ -340,6 +343,9 @@
 }
 
 @media (max-width: 1399.98px) {
+  .about_e_text {
+    width: 19px;
+  }
   .timeline_text1_max_w {
     max-width: 25rem;
   }
@@ -400,6 +406,9 @@
 }
 
 @media (max-width: 1199.98px) {
+  .about_e_text {
+    width: 17px;
+  }
   .text_parent_height {
     height: 75%;
   }
@@ -567,6 +576,9 @@
 }
 
 @media (max-width: 991.98px) {
+  .about_e_text {
+    width: 20px;
+  }
   .timeline_cake_img {
     max-width: 200px;
   }
