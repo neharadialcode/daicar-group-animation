@@ -618,13 +618,13 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-52%",
+        bottom: "-51%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
       });
     });
-    mm.add("(max-width: 1599.98px)", () => {
+    mm.add("(min-width: 1500px) and (max-width:1599.98px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#timeline",
@@ -634,7 +634,23 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-86%",
+        bottom: "-85%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 1499.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-83%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -650,7 +666,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-80%",
+        bottom: "-79%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -667,6 +683,22 @@ const Timeline = () => {
       });
       tl.to("#hero-large-arrow-2", {
         bottom: "-117%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(max-width: 991.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-60%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -989,11 +1021,23 @@ const Timeline = () => {
           <div className="container position-relative h-100">
             <div
               id="timeline-content"
-              className="d-flex align-items-center flex-column justify-content-between position-relative h-100 py-5 z-10"
+              className="d-flex align-items-center flex-column justify-content-between position-relative h-100 pt-4 pb-5 py-sm-5 z-10"
             >
-              <h2 className="font_5xl text-white">
+              {/* <h2 className="font_5xl text-white text-center">
                 Ideata da grazie all’esperienza acquisita nel
-              </h2>
+              </h2> */}
+              <div className="text-center pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
+                <p className="font_5xl text-white text-center">
+                  Ideata da{" "}
+                  <span className="hero_btn noi_btn bg_light_green mx-2">
+                    noi
+                  </span>
+                  grazie all’esperienza acquisita nel{" "}
+                  <span className="hero_btn noi_btn bg_light_green mx-2">
+                    tempo{" "}
+                  </span>{" "}
+                </p>
+              </div>
               <div className="d-flex justify-contentbetween flex-column align-items-center flex-grow-1 w-100 text_parent_max_w">
                 <div className="text_parent_height w-100 position-relative">
                   <div
@@ -1101,9 +1145,13 @@ const Timeline = () => {
                       id="timeline-year-4"
                       className="position-absolute font_9xl fw-bold text-white top-50 end-0 -translate-y-1/2"
                     >
-                      <p className="font_2xl opacity_05 mb-0 text-end d-none d-sm-block">2 Ottobre</p>
+                      <p className="font_2xl opacity_05 mb-0 text-end d-none d-sm-block">
+                        2 Ottobre
+                      </p>
                       2023
-                      <p className="font_2xl opacity_05 text-end">Otto anni</p>
+                      <p className="font_2xl opacity_05 text-end mb-0">
+                        Otto anni
+                      </p>
                     </div>
                   </div>
                 </div>

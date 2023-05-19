@@ -472,6 +472,9 @@
 }
 
 @media (max-width: 1199.98px) {
+  .text_parent_height {
+    height: 75%;
+  }
   .timeline_cake_img {
     max-width: 115px;
   }
@@ -672,7 +675,7 @@
     right: -38%;
   }
   .text_parent_height {
-    top: 25%;
+    top: 18%;
   }
   .timeline_btn {
     padding: 3px 25px 8px;
@@ -1034,7 +1037,11 @@
     left: 18px;
   }
   .text_parent_height {
-    top: 10%;
+    top: 20%;
+    height: 80%;
+  }
+  .timeline_cake_img {
+    max-width: 150px;
   }
   .custom_height_tab_img_ipad {
     width: 99% !important;
@@ -1172,7 +1179,7 @@
   }
 
   .timeline_btn {
-    padding: 6px 20px 4px;
+    padding: 0px 20px 4px;
   }
 
   .meeting_btn_parent button {
@@ -1202,7 +1209,7 @@
   //   left: 50% !important;
   // }
   .about_text_size p {
-    font-size: 28px !important;
+    font-size: 18px !important;
   }
   .noi_btn {
     font-size: 24px !important;

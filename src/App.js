@@ -15,15 +15,17 @@ import largeArrow2 from "./assets/arrow-large-2.svg";
 function App() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       {/* <TabsImage /> */}
-      <Business />
-      <AboutUs />
-      {/* <Timeline /> */}
-      <Partners />
+      {/* <Business />
+      <AboutUs /> */}
+      <div className="min-vh-100 bg-info"></div>
+      <Timeline />
+      <div className="min-vh-100 bg-info"></div>
+      {/* <Partners />
       <Crm />
       <Meeting />
-      <Footer />
+      <Footer /> */}
       <div className="d-none d-lg-block">
         <img
           src={largeArrow}
