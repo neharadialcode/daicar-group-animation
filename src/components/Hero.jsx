@@ -1378,7 +1378,7 @@ const Hero = () => {
 
               <div
                 id="hero-outline-arrow"
-                className="position-absolute z-10 pointer-events-none"
+                className="position-absolute z-10 pointer-events-none hero-outline-arrow"
               >
                 <Icon4 />
               </div>

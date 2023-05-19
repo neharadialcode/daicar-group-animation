@@ -933,6 +933,10 @@
   .manager_content {
     transform: translateY(-50px);
   }
+
+  .hero-outline-arrow svg {
+    width: 100vw;
+  }
 }
 
 @media (max-width: 799.98px) {
