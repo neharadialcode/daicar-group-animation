@@ -7,9 +7,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Header = () => {
   const [navShow, setNavShow] = useState(false);
   if (navShow) {
+    document.documentElement.classList.add("overflow-hidden");
     document.body.classList.add("overflow-hidden");
     document.body.classList.add("vh-100");
   } else {
+    document.documentElement.classList.remove("overflow-hidden");
     document.body.classList.remove("overflow-hidden");
     document.body.classList.remove("vh-100");
   }
