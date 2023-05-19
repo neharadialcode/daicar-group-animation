@@ -24,6 +24,45 @@ const Hero = () => {
   let tl;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+  const buttonData = [
+    {
+      buttonText: "come",
+      buttonId: "button_0",
+      card_img: comeLottie,
+      para: "Scopri",
+    },
+    {
+      buttonText: "marketing conversazionale",
+      buttonId: "button_1",
+      card_img: marketingLottie,
+      para: "usiamo il",
+    },
+    {
+      buttonText: `strumenti tech<span class="ff_math">-</span>driven`,
+      buttonId: "button_2",
+      card_img: techDrivenLottie,
+      para: "e gli ",
+    },
+    {
+      buttonText: `qualifica digitale real<span class="ff_math">-</span>time`,
+      buttonId: "button_3",
+      card_img: realTimeLottie,
+      para: "da noi sviluppati",
+    },
+    {
+      buttonText: "CRM",
+      buttonId: "button_4",
+      card_img: crmLottie,
+      para: "per ottenere una",
+    },
+    {
+      buttonText: "",
+      buttonId: "",
+      card_img: "",
+      para: "e trasmettere i dati sul tuo",
+    },
+  ];
+
   useEffect(() => {
     let mm = gsap.matchMedia();
 
@@ -2248,45 +2287,6 @@ const Hero = () => {
         });
     });
   }, []);
-
-  const buttonData = [
-    {
-      buttonText: "come",
-      buttonId: "button_0",
-      card_img: comeLottie,
-      para: "Scopri",
-    },
-    {
-      buttonText: "marketing conversazionale",
-      buttonId: "button_1",
-      card_img: marketingLottie,
-      para: "usiamo il",
-    },
-    {
-      buttonText: `strumenti tech<span class="ff_math">-</span>driven`,
-      buttonId: "button_2",
-      card_img: techDrivenLottie,
-      para: "e gli ",
-    },
-    {
-      buttonText: `qualifica digitale real<span class="ff_math">-</span>time`,
-      buttonId: "button_3",
-      card_img: realTimeLottie,
-      para: "da noi sviluppati",
-    },
-    {
-      buttonText: "CRM",
-      buttonId: "button_4",
-      card_img: crmLottie,
-      para: "per ottenere una",
-    },
-    {
-      buttonText: "",
-      buttonId: "",
-      card_img: "",
-      para: "e trasmettere i dati sul tuo",
-    },
-  ];
 
   const moveToIt = (sectionId, id) => {
     const section2 = document.querySelector(`#${sectionId}`);
