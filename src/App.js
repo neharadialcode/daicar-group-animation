@@ -19,9 +19,7 @@ function App() {
       {/* <TabsImage /> */}
       <Business />
       <AboutUs />
-      {/* <div className="min-vh-100 bg-info"></div> */}
       <Timeline />
-      {/* <div className="min-vh-100 bg-info"></div> */}
       <Partners />
       <Crm />
       <Meeting />
