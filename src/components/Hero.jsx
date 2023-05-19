@@ -467,8 +467,8 @@ const Hero = () => {
           {
             background: "rgba(83, 132, 153, 0.5)",
             rotate: "-3deg",
-          },
-          "-=.5"
+          }
+          // "-=.5"
         )
         .to(
           ".arrow_tabs",
@@ -989,8 +989,8 @@ const Hero = () => {
           {
             background: "rgba(83, 132, 153, 0.5)",
             rotate: "-3deg",
-          },
-          "-=.5"
+          }
+          // "-=.5"
         )
         .to(
           ".arrow_tabs",
@@ -1505,8 +1505,8 @@ const Hero = () => {
           {
             background: "rgba(83, 132, 153, 0.5)",
             rotate: "-3deg",
-          },
-          "-=.5"
+          }
+          // "-=.5"
         )
         .to(
           ".arrow_tabs",
@@ -2022,8 +2022,8 @@ const Hero = () => {
           {
             background: "rgba(83, 132, 153, 0.5)",
             rotate: "-3deg",
-          },
-          "-=.5"
+          }
+          // "-=.5"
         )
         .to(
           ".arrow_tabs",
