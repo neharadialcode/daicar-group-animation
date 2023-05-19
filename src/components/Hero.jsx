@@ -5,12 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import heroEtext from "../assets/images/svg/hero-e-text.svg";
 import Header from "./Header";
-
 import ipad from "../assets/ipad.png";
 import ipadWhite from "../assets/ipad-white.png";
 import ipad_mockup from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import arrow from "../assets/arrow.svg";
-
 import { TabRightIcon } from "./Icons";
 import tabImg1 from "../assets/images/png/tab-frame.png";
 import Lottie from "react-lottie-player";
@@ -2249,14 +2247,17 @@ const Hero = () => {
               <img
                 className="arrow-hero-one position-absolute -z-10 pointer-events-none"
                 src={arrow}
+                alt="arrow"
               />
               <img
                 className="arrow-hero-two position-absolute -z-10 pointer-events-none"
                 src={arrow}
+                alt="arrow"
               />
               <img
                 className="arrow-hero-three position-absolute -z-10  pointer-events-none"
                 src={arrow}
+                alt="arrow"
               />
             </div>
 

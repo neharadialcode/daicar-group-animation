@@ -62,7 +62,7 @@ function Footer() {
         <div className="container position-relative z_2 pb-5 pt-lg-5 pt-xl-0">
           <div className="row justify-content-md-center justify-content-between gap-lg-5 text-center text-sm-start px-xxl-5">
             <div className="col-12 col-sm-3 col-lg-2 d-flex flex-column justify-content-between">
-              <a href="#">
+              <a href="/">
                 <img
                   className="footer_logo"
                   src={footer_logo}
@@ -89,7 +89,7 @@ function Footer() {
                 <li className="list-unstyled">
                   <a
                     className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
-                    href="#"
+                    href="/"
                   >
                     Terms of Service
                   </a>
@@ -97,7 +97,7 @@ function Footer() {
                 <li className="mt-3 list-unstyled">
                   <a
                     className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
-                    href="#"
+                    href="/"
                   >
                     Privacy Policy
                   </a>
@@ -105,7 +105,7 @@ function Footer() {
                 <li className="mt-3 list-unstyled">
                   <a
                     className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
-                    href="#"
+                    href="/"
                   >
                     Partners <span className="ff_roboto pe-1">&</span>Affiliates
                   </a>
@@ -113,7 +113,7 @@ function Footer() {
                 <li className="mt-3 list-unstyled d-none d-md-block">
                   <a
                     className="font_xsm  text-decoration-none fw_medium color_white_off list_item_text ff_montserrat"
-                    href="#"
+                    href="/"
                   >
                     Sitemap
                   </a>
@@ -161,13 +161,13 @@ function Footer() {
                 <div className="flex-column d-flex d-inline-block">
                   <a
                     className="mb-0 list_item_text list-unstyled text-decoration-none font_sm fw-bold letter_spacing color_white_off ff_montserrat"
-                    href="#"
+                    href="/"
                   >
                     La nostra sede
                   </a>
                   <a
                     className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
-                    href="#"
+                    href="/"
                   >
                     480 Laurie Causeway Suite 088
                   </a>

@@ -26,11 +26,13 @@ function App() {
       <Footer />
       <div className="w-100 overflow-hidden">
         <img
+          alt="largeArrow"
           src={largeArrow}
           id="hero-large-arrow"
           className="position-fixed z-0 pointer-events-none d-none d-lg-block"
         />
         <img
+          alt="largeArrow2"
           src={largeArrow2}
           id="hero-large-arrow-2"
           className="position-fixed z-0 pointer-events-none timeline_arrow_img d-none d-sm-block"

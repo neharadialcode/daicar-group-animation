@@ -722,6 +722,7 @@ const Business = () => {
             id="solution-outlineArrow"
             className="position-absolute pointer-events-none origin-center h-[70vh] w-100"
             src={outlineArrow}
+            alt="outline-img"
           />
         </div>
       </div>

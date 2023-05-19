@@ -38,7 +38,7 @@ const Header = () => {
     <div className="header_parent bg_dark_gray">
       <div className="container-lg common_container py-2 py-lg-0">
         <div className="header_section d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 py-lg-5 navbar_links">
-          <a href="#">
+          <a href="/">
             <img
               className="logo_width logo_md_100"
               src={pagelogo}
@@ -88,7 +88,7 @@ const Header = () => {
           <div className="d-flex d-none d-lg-flex align-items-center gap-5">
             <a
               className="mb-0 ff_mundial_bold font_sm color_white_off parliamone sentia_link me-2"
-              href="#"
+              href="/"
             >
               Sentiamoci
             </a>
@@ -146,7 +146,7 @@ const Header = () => {
               <a
                 onClick={() => setNavShow(false)}
                 className="mb-0 ff_mundial_bold font_lg color_white_off sentia_link"
-                href="#"
+                href="/"
               >
                 Sentiamoci
               </a>
