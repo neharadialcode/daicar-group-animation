@@ -64,16 +64,6 @@ const About = () => {
         )
 
         // FIRST VALUES
-        // .fromTo(
-        //   ".about_icon_1",
-        //   {
-        //     left: "-40%",
-        //   },
-        //   {
-        //     left: "5%",
-        //     duration: 5,
-        //   }
-        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -99,16 +89,6 @@ const About = () => {
         )
 
         // SECOND VALUES
-        // .fromTo(
-        //   ".about_icon_1",
-        //   {
-        //     left: "0%",
-        //   },
-        //   {
-        //     left: "6%",
-        //     duration: 5,
-        //   }
-        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -148,16 +128,6 @@ const About = () => {
         )
 
         // THIRD VALUES
-        // .fromTo(
-        //   ".about_icon_1",
-        //   {
-        //     left: "6%",
-        //   },
-        //   {
-        //     left: "10%",
-        //     duration: 5,
-        //   }
-        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -236,16 +206,6 @@ const About = () => {
       secondSection4
 
         // FIRST VALUES
-        // .fromTo(
-        //   ".about_icon_1",
-        //   {
-        //     left: "-50%",
-        //   },
-        //   {
-        //     left: "5%",
-        //     duration: 5,
-        //   }
-        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -271,16 +231,6 @@ const About = () => {
         )
 
         // SECOND VALUES
-        // .fromTo(
-        //   ".about_icon_1",
-        //   {
-        //     left: "5%",
-        //   },
-        //   {
-        //     duration: 5,
-        //     left: "10%",
-        //   }
-        // )
         .fromTo(
           ".about_icon_2",
           {
@@ -311,18 +261,7 @@ const About = () => {
           },
           "-=.1"
         )
-
         // THIRD VALUES
-        // .fromTo(
-        //   ".about_icon_1",
-        //   {
-        //     left: "10%",
-        //   },
-        //   {
-        //     left: "15%",
-        //     duration: 5,
-        //   }
-        // )
         .fromTo(
           ".about_icon_2",
           {
