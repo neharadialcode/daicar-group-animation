@@ -781,6 +781,73 @@ const Hero = () => {
           },
           "<"
         )
+        // .set(
+        //   "#intro-content",
+        //   {
+        //     display: "block",
+        //   },
+        //   "<"
+        // )
+        // .addLabel("btn-1")
+        // .to("#intro-image-1-btn", {
+        //   rotate: 10,
+        // })
+        // .to(
+        //   "#intro-image-1",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=2"
+        // )
+        // .addLabel("btn-2")
+        // .to(
+        //   "#intro-image-1-btn",
+        //   {
+        //     rotate: 0,
+        //   },
+        //   ">"
+        // )
+        // .to("#intro-image-2-btn", {
+        //   rotate: 10,
+        // })
+        // .to(
+        //   "#intro-image-2",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=2"
+        // )
+        // .addLabel("btn-3")
+        // .to(
+        //   "#intro-image-2-btn",
+        //   {
+        //     rotate: 0,
+        //   },
+        //   ">"
+        // )
+        // .to("#intro-image-3-btn", {
+        //   rotate: 10,
+        // })
+        // .to(
+        //   "#intro-image-3",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=2"
+        // )
+        // .addLabel("btn-4")
+        // .to(
+        //   "#intro-image-3-btn",
+        //   {
+        //     rotate: 0,
+        //   },
+        //   ">"
+        // )
+        // .to("#intro-image-4-btn", {
+        //   rotate: 10,
+        // })
+
+        //////////////////////////
         .set(
           "#intro-content",
           {
@@ -788,71 +855,344 @@ const Hero = () => {
           },
           "<"
         )
-        .addLabel("btn-1")
-        .to("#intro-image-1-btn", {
-          rotate: 10,
-        })
+
         .to(
-          "#intro-image-1",
+          ".active_button_0",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_0")
+        .fromTo(
+          ".card_img_0",
+          {
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .fromTo(
+          ".left_text_1",
           {
             autoAlpha: 0,
           },
-          "+=2"
-        )
-        .addLabel("btn-2")
-        .to(
-          "#intro-image-1-btn",
           {
-            rotate: 0,
-          },
-          ">"
+            autoAlpha: 1,
+          }
         )
-        .to("#intro-image-2-btn", {
-          rotate: 10,
+        .to(
+          ".side_icon",
+          {
+            bottom: "10%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".arrow_tabs",
+          {
+            top: "100%",
+          },
+          {
+            top: "80%",
+          }
+        )
+        .to(
+          ".arrow_tabs",
+          {
+            top: "70%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_0",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_0", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
         })
         .to(
-          "#intro-image-2",
+          ".active_button_1",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_1")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "60%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_2",
           {
             autoAlpha: 0,
           },
-          "+=2"
-        )
-        .addLabel("btn-3")
-        .to(
-          "#intro-image-2-btn",
           {
-            rotate: 0,
-          },
-          ">"
+            autoAlpha: 1,
+          }
         )
-        .to("#intro-image-3-btn", {
-          rotate: 10,
+        .to(
+          ".side_icon",
+          {
+            bottom: "30%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_1", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
         })
         .to(
-          "#intro-image-3",
+          ".active_button_2",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_2")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "50%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_3",
           {
             autoAlpha: 0,
           },
-          "+=2"
-        )
-        .addLabel("btn-4")
-        .to(
-          "#intro-image-3-btn",
           {
-            rotate: 0,
-          },
-          ">"
+            autoAlpha: 1,
+          }
         )
-        .to("#intro-image-4-btn", {
-          rotate: 10,
+        .to(
+          ".side_icon",
+          {
+            bottom: "35%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_2", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
         })
+        .to(
+          ".active_button_3",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_3")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_4",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_3", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_4",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_4")
+        //////////
+        .fromTo(
+          ".arrow_tabs",
+          {
+            top: "40%",
+          },
+          {
+            top: "-40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_5",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "45%",
+          },
+          "-=.5"
+        )
+        //////////////////////////
+
         .to(
           "#root",
           {
             backgroundColor: "#29424D",
           },
           "+=2"
-        );
+        )
+        .to("#para_text_01", {
+          opacity: 0,
+        });
     });
 
     mm.add("(min-width: 576px) and (max-width:991.98px)", () => {
@@ -1028,13 +1368,353 @@ const Hero = () => {
           },
           "<"
         )
+
+        //////////////////////////
+        .set(
+          "#intro-content",
+          {
+            display: "block",
+          },
+          "<"
+        )
+
+        .to(
+          ".active_button_0",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_0")
+        .fromTo(
+          ".card_img_0",
+          {
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "10%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".arrow_tabs",
+          {
+            top: "100%",
+          },
+          {
+            top: "80%",
+          }
+        )
+        .to(
+          ".arrow_tabs",
+          {
+            top: "70%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_0",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_0", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_1",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_1")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "60%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "30%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_1", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_2",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_2")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "50%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "35%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_2", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_3",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_3")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_4",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_3", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_4",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_4")
+        //////////
+        .fromTo(
+          ".arrow_tabs",
+          {
+            top: "40%",
+          },
+          {
+            top: "-40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_5",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "45%",
+          },
+          "-=.5"
+        )
+        //////////////////////////
+
         .to(
           "#root",
           {
             backgroundColor: "#29424D",
           },
           "+=2"
-        );
+        )
+        .to("#para_text_01", {
+          opacity: 0,
+        });
     });
 
     mm.add("(max-width:575.98px)", () => {
@@ -1211,13 +1891,353 @@ const Hero = () => {
           },
           "<"
         )
+
+        //////////////////////////
+        .set(
+          "#intro-content",
+          {
+            display: "block",
+          },
+          "<"
+        )
+
+        .to(
+          ".active_button_0",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_0")
+        .fromTo(
+          ".card_img_0",
+          {
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "10%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".arrow_tabs",
+          {
+            top: "100%",
+          },
+          {
+            top: "80%",
+          }
+        )
+        .to(
+          ".arrow_tabs",
+          {
+            top: "70%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_0",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_0", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_1",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_1")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "60%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "30%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_1", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_2",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_2")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "50%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "35%",
+          },
+          "-=.5"
+        )
+
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_2", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_3",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_3")
+        //////////
+        .to(
+          ".arrow_tabs",
+          {
+            top: "40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_4",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+
+        .to(".active_button_3", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        .to(
+          ".active_button_4",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .addLabel("button_4")
+        //////////
+        .fromTo(
+          ".arrow_tabs",
+          {
+            top: "40%",
+          },
+          {
+            top: "-40%",
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          }
+        )
+        .fromTo(
+          ".left_text_5",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
+        .to(
+          ".side_icon",
+          {
+            bottom: "45%",
+          },
+          "-=.5"
+        )
+        //////////////////////////
+
         .to(
           "#root",
           {
             backgroundColor: "#29424D",
           },
           "+=2"
-        );
+        )
+        .to("#para_text_01", {
+          opacity: 0,
+        });
     });
   }, []);
 
@@ -1441,7 +2461,7 @@ const Hero = () => {
                     <Icon5 />
                   </div> */}
                   <img
-                    className="i_pad_img_2 pt-3 w-100 custom_height_tab_img_ipad"
+                    className="i_pad_img_2 pt-3 w-100 custom_height_tab_img_ipad tab-img-custom-size"
                     src={tabImg1}
                     alt="img"
                   />
@@ -1457,7 +2477,7 @@ const Hero = () => {
                                   : `${
                                       index === 0
                                         ? "tabs_lottie_1 position-absolute start-0 custom_height_tab_img tabs_img"
-                                        : "position-absolute start-0 w-100 pt-3 custom_height_tab_img tabs_img tabs_lottie"
+                                        : "position-absolute start-0 w-100 pt-3 custom_height_tab_img tabs_img tabs_lottie pt-4 pt-sm-0"
                                     }`
                               }`}
                             >
