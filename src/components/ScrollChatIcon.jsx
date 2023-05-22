@@ -24,7 +24,14 @@ const ScrollChatIcon = () => {
         {showContent && (
           <>
             <div className="show_chat_icon d-flex justify-content-center align-items-center cursor-pointer">
-              <ChatIcon />
+              <a
+                className="text-decoration-none"
+                href="https://www.instagram.com/alfatauristudio/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ChatIcon />
+              </a>
             </div>
           </>
         )}
