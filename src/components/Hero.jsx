@@ -64,7 +64,7 @@ const Hero = () => {
   useEffect(() => {
     let mm = gsap.matchMedia();
 
-    mm.add("(min-width: 1400px)", () => {
+    mm.add("(min-width: 1600px)", () => {
       // gsap.from("#hero-main-heading", {
       //   yPercent: 100,
       // });
@@ -149,7 +149,9 @@ const Hero = () => {
         .to(
           ".arrow-hero-two",
           {
-            scale: 0.2,
+            xPercent: 73,
+            yPercent: -8,
+            scale: 0.19,
             rotate: "45deg",
           },
           "<"
@@ -577,7 +579,7 @@ const Hero = () => {
         });
     });
 
-    mm.add("(min-width: 992px) and (max-width:1399.98px)", () => {
+    mm.add("(min-width: 992px) and (max-width:1599.98px)", () => {
       gsap.set("#main-content", {
         y: "-60px",
       });
@@ -667,7 +669,9 @@ const Hero = () => {
         .to(
           ".arrow-hero-two",
           {
-            scale: 0.2,
+            xPercent: 53,
+            yPercent: 3,
+            scale: 0.1,
             rotate: "45deg",
           },
           "<"
