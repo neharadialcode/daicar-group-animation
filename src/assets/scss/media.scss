@@ -249,6 +249,10 @@
     max-width: 39px !important;
     left: -60px !important;
   }
+  .meeting_e_icon {
+    max-width: 14px;
+    transform: translate(0px, 1px);
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -295,6 +299,10 @@
   }
   .manager_content {
     transform: translateY(-160px);
+  }
+  .meeting_e_icon {
+    max-width: 12px;
+    transform: translate(0px, 2px);
   }
 }
 
@@ -448,6 +456,10 @@
   }
   .manager_content {
     transform: translateY(50px);
+  }
+  .arrow-hero-two {
+    max-width: 443px;
+    margin-left: 24px;
   }
 }
 
@@ -606,6 +618,9 @@
   .tab-img-custom-size {
     margin-left: 0px;
     width: 100% !important;
+  }
+  .hero_heading_btn {
+    height: 48px !important;
   }
 }
 
@@ -863,11 +878,11 @@
     font-size: 32px !important;
   }
   .hero_heading_btn {
+    height: 44px !important;
     font-size: 24px !important;
-    height: 42px !important;
     display: inline-block !important;
     vertical-align: middle !important;
-    padding: 7px 16px 7px !important;
+    padding: 7px 16px !important;
   }
   .timeline_text_3 {
     margin-top: -50px;
@@ -912,7 +927,11 @@
   .timeline_arrow_icon {
     top: 72.5%;
   }
+  .meeting_e_icon {
+    max-width: 9px;
+  }
 }
+
 #hero {
   position: relative;
 }

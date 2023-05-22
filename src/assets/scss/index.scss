@@ -277,3 +277,10 @@ body {
 .custom_letter_spacing {
   letter-spacing: -0.01em !important;
 }
+.custom_tab_button_012 {
+  transition: all 0.3s ease-in-out;
+}
+.custom_tab_button_012:hover {
+  transform: rotate(-3deg) !important;
+  background: rgba(83, 132, 153, 0.5) !important;
+}

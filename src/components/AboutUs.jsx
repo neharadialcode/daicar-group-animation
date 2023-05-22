@@ -28,7 +28,7 @@ const About = () => {
       tl1
         .to("#hero-large-arrow", {
           scale: 1.2,
-          top: "-80%",
+          top: "-95%",
           duration: 5,
         })
         .to(

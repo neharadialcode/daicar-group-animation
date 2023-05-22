@@ -354,11 +354,13 @@
 }
 .hero_heading_btn {
   font-size: var(--font-5xl) !important;
-  padding: 4px 24px 11px !important;
+  // padding: 4px 24px 11px !important;
+  padding: 14px 24px 18px !important;
   color: var(--color-dark-gray) !important;
   background: rgba(126, 228, 156, 0.5) !important;
   border: 1px solid var(--color-white-off) !important;
   border-radius: 10px !important;
+  height: 52px;
 }
 .hero_slide_3_btn {
   font-size: var(--font-xl) !important;
@@ -623,4 +625,7 @@
 }
 .about_arrow_img_width {
   width: 10%;
+}
+.meeting_e_icon {
+  max-width: 16px;
 }
