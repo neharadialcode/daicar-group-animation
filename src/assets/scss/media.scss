@@ -662,6 +662,9 @@
       top: 30px;
     }
   }
+  .hero_heading_btn {
+    height: 48px !important;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -875,11 +878,11 @@
     font-size: 32px !important;
   }
   .hero_heading_btn {
+    height: 44px !important;
     font-size: 24px !important;
-    height: 42px !important;
     display: inline-block !important;
     vertical-align: middle !important;
-    padding: 7px 16px 7px !important;
+    padding: 7px 16px !important;
   }
   .timeline_text_3 {
     margin-top: -50px;

@@ -354,11 +354,14 @@
 }
 .hero_heading_btn {
   font-size: var(--font-5xl) !important;
-  padding: 4px 24px 11px !important;
+  // padding: 4px 24px 11px !important;
+  padding: 14px 24px 18px !important;
   color: var(--color-dark-gray) !important;
   background: rgba(126, 228, 156, 0.5) !important;
   border: 1px solid var(--color-white-off) !important;
   border-radius: 10px !important;
+
+  max-height: 52px;
 }
 .hero_slide_3_btn {
   font-size: var(--font-xl) !important;

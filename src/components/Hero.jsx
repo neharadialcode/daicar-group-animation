@@ -2197,10 +2197,10 @@ const Hero = () => {
             >
               <h1
                 id="hero-main-heading"
-                className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01"
+                className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex"
               >
                 Il futuro delle tue
-                <span className="d-inline-block hero_heading_btn me-2 mx-sm-3">
+                <span className="mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-2 mx-sm-3">
                   vendite
                 </span>
                 <span className="me-2">
