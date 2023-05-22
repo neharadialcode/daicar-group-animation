@@ -2266,7 +2266,7 @@ const Hero = () => {
                 className="vh-100 d-flex flex-column justify-content-center tab_parent overflow-hidden z_2"
                 id="main-assets"
               >
-                <div className="side_icon position-absolute tab_right_icon d-none d-xxl-block me-4">
+                <div className="side_icon position-absolute tab_right_icon d-none d-xl-block me-4">
                   <div className="d-flex align-items-center tab-side-effect left_text_5">
                     <p className="me-4 color_light_green mb-0">
                       CRM lo facciamo
