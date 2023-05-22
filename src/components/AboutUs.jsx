@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import bigFounder from "../assets/images/png/big-founder-federico-img.png";
-import bigFounder2 from "../assets/images/png/big-founder-matteo-img.png";
-import bigFounder3 from "../assets/images/png/big-founder-federico-img-2.png";
+import bigFounder from "../assets/images/svg/big-founder-img-1.svg";
+import bigFounder2 from "../assets/images/svg/big-founder-img-2.svg";
+import bigFounder3 from "../assets/images/svg/big-founder-img-3.svg";
 import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
 import aboutEText from "../assets/images/svg/about-e-text.svg";
@@ -385,7 +385,7 @@ const About = () => {
                   <p className="font_2xl color_dark_gray ps-3 mb-0">
                     Federico,
                     <span className="fw-light ff_mundial_ligh ms-2">
-                      CF Tecnology Officer
+                      Chief Technology Officer
                     </span>
                   </p>
                 </div>
@@ -439,9 +439,9 @@ const About = () => {
                     alt="arrow-founder"
                   />
                   <p className="font_2xl color_dark_gray ps-3 mb-0">
-                    Federico,
+                    Francesca,
                     <span className="fw-light ff_mundial_ligh ms-2">
-                      IT Manager
+                      Marketing Manager
                     </span>
                   </p>
                 </div>
