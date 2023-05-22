@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Hero from "./components/Hero";
-// import TabsImage from "./components/TabsImage";
 import Business from "./components/Business";
 import AboutUs from "./components/AboutUs";
 import Timeline from "./components/Timeline";
@@ -16,7 +15,6 @@ function App() {
   return (
     <>
       <Hero />
-      {/* <TabsImage /> */}
       <Business />
       <AboutUs />
       <Timeline />
