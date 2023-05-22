@@ -349,7 +349,7 @@ const About = () => {
             <span className="color_dark_gray">.</span>
           </p>
         </div>
-        <div className="position-absolute z-1 end-0 d-none d-xxl-block pe-5 left_text_about">
+        <div className="position-absolute z-1 end-0 d-none d-xxl-block pe-5 me-5 left_text_about">
           <img src={lefttextImg} alt="business-small-arrow-2" />
         </div>
         <div className="container h-100 pb-5 pb-lg-0">

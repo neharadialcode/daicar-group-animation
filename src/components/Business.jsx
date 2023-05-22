@@ -538,7 +538,7 @@ const Business = () => {
               &nbsp; per il tuo business
             </p>
           </div>
-          <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 business_left_icon">
+          <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 me-5 business_left_icon">
             <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
           </div>
           <div className="container pb-lg-5 min-vh-100 d-lg-flex flex-column justify-content-center z-10">
