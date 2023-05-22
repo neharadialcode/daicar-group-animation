@@ -40,7 +40,7 @@ const Timeline = () => {
     }).to("#root", {
       backgroundColor: "#29424D",
     });
-    mm.add("(min-width: 1600px)", () => {
+    mm.add("(min-width: 1800px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#timeline",
@@ -51,6 +51,22 @@ const Timeline = () => {
       });
       tl.to("#hero-large-arrow-2", {
         bottom: "-51%",
+        display: "block",
+        autoAlpha: 0,
+        immediateRender: false,
+      });
+    });
+    mm.add("(min-width: 1600px) and (max-width:1799.98px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top bottom",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+      tl.to("#hero-large-arrow-2", {
+        bottom: "-48%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -163,6 +179,7 @@ const Timeline = () => {
           pin: true,
         },
       });
+      // FIRST VALUE
       tl2
         .fromTo(
           "#hero-large-arrow-2",
@@ -206,6 +223,8 @@ const Timeline = () => {
           },
           "<"
         )
+
+        // SECOND VALUE
         .to("#hero-large-arrow-2", {
           right: `${
             document.querySelector("#timeline-dot-3").getBoundingClientRect()
@@ -213,15 +232,19 @@ const Timeline = () => {
           }px`,
           duration: 4,
         })
-        .to("#timeline-heading-container", {
-          left: `${
-            document.querySelector("#timeline-dot-2").getBoundingClientRect()
-              .right -
-            document
-              .querySelector("#timeline-heading-container")
-              .parentNode.getBoundingClientRect().left
-          }px`,
-        })
+        .to(
+          "#timeline-heading-container",
+          {
+            left: `${
+              document.querySelector("#timeline-dot-2").getBoundingClientRect()
+                .right -
+              document
+                .querySelector("#timeline-heading-container")
+                .parentNode.getBoundingClientRect().left
+            }px`,
+          },
+          "<"
+        )
         .to(
           ["#timeline-heading-1", "#timeline-year-1"],
           {
@@ -236,6 +259,8 @@ const Timeline = () => {
           },
           "<"
         )
+
+        // THIRD VALUE
         .to("#hero-large-arrow-2", {
           right: `${
             document.querySelector("#timeline-dot-2").getBoundingClientRect()
@@ -243,15 +268,19 @@ const Timeline = () => {
           }px`,
           duration: 4,
         })
-        .to("#timeline-heading-container", {
-          left: `${
-            document.querySelector("#timeline-dot-3").getBoundingClientRect()
-              .right -
-            document
-              .querySelector("#timeline-heading-container")
-              .parentNode.getBoundingClientRect().left
-          }px`,
-        })
+        .to(
+          "#timeline-heading-container",
+          {
+            left: `${
+              document.querySelector("#timeline-dot-3").getBoundingClientRect()
+                .right -
+              document
+                .querySelector("#timeline-heading-container")
+                .parentNode.getBoundingClientRect().left
+            }px`,
+          },
+          "<"
+        )
         .to(
           ["#timeline-heading-2", "#timeline-year-2"],
           {
@@ -266,6 +295,8 @@ const Timeline = () => {
           },
           "<"
         )
+
+        // FOURTH VALUE
         .to("#hero-large-arrow-2", {
           right: `${
             document.querySelector("#timeline-dot-1").getBoundingClientRect()
@@ -273,20 +304,27 @@ const Timeline = () => {
           }px`,
           duration: 4,
         })
-
-        .to(["#timeline-heading-3", "#timeline-year-3"], {
-          autoAlpha: 0,
-        })
-        .to("#timeline-heading-container", {
-          left: `${
-            document.querySelector("#timeline-dot-4").getBoundingClientRect()
-              .right -
-            document
-              .querySelector("#timeline-heading-container")
-              .parentNode.getBoundingClientRect().left -
-            50
-          }px`,
-        })
+        .to(
+          "#timeline-heading-container",
+          {
+            left: `${
+              document.querySelector("#timeline-dot-4").getBoundingClientRect()
+                .right -
+              document
+                .querySelector("#timeline-heading-container")
+                .parentNode.getBoundingClientRect().left -
+              50
+            }px`,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-3", "#timeline-year-3"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
         .to(
           ["#timeline-heading-4", "#timeline-year-4"],
           {
@@ -299,7 +337,7 @@ const Timeline = () => {
           {
             autoAlpha: 1,
           },
-          "+=4"
+          "+=2"
         );
     });
     mm.add("(min-width: 576px) and (max-width: 991.98px)", () => {
@@ -554,9 +592,7 @@ const Timeline = () => {
     <>
       <div id="timeline" className="min-vh-100 w-100 z-10">
         <div className="position-relative h-100 w-100">
-          <span
-            className="d-sm-none"
-          >
+          <span className="d-sm-none">
             <img
               className="timeline_arrow_icon w-100"
               src={largeArrow2}
@@ -570,18 +606,18 @@ const Timeline = () => {
             >
               <div className="text-center pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
                 <p className="font_5xl text-white text-center">
-                  Ideata da{" "}
+                  Ideata da
                   <span className="hero_btn noi_btn bg_light_green mx-2">
                     noi
                   </span>
-                  grazie all’esperienza acquisita nel{" "}
+                  grazie all’esperienza acquisita nel
                   <span className="hero_btn noi_btn bg_light_green mx-2">
-                    tempo{" "}
-                  </span>{" "}
+                    tempo
+                  </span>
                 </p>
               </div>
-              <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block">
-                <img src={timelineLeftIcon} alt="timeline-left-icon" />{" "}
+              <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block me-5">
+                <img src={timelineLeftIcon} alt="timeline-left-icon" />
               </div>
               <div className="d-flex justify-contentbetween flex-column align-items-center flex-grow-1 w-100 text_parent_max_w">
                 <div className="text_parent_height w-100 position-relative">
@@ -624,15 +660,15 @@ const Timeline = () => {
                         className="timeline_tiguido_icon w-100"
                         src={timelineImg2}
                         alt="timelineImg2"
-                      />{" "}
+                      />
                       <p className="font_2xl custom_size_timeline_text text-white mb-3 pe-3 pe-sm-5 pe-xl-0 me-sm-3 me-xl-0">
-                        Nasce TiGuido.io che trasferisce l’elevato know{" "}
+                        Nasce TiGuido.io che trasferisce l’elevato know
                         <span className="ff_math">-</span>how e la tecnologia
                         sviluppata in ambito automotive al servizio di nuovi
                         mercati. Si afferma come Digital Media Partner, pioniere
                         nell’uso del marketing conversazionale e nella
                         tecnologia proprietaria per la validazione e generazione
-                        di lead altamente qualificate.{" "}
+                        di lead altamente qualificate.
                       </p>
                       <div className="d-flex align-items-center gap-1gap-sm-3 mt-4 mt-lg-0">
                         <button className="font_xl color_white_off timeline_btn bg-transparent">
