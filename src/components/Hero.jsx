@@ -206,33 +206,37 @@ const Hero = () => {
           "<"
         )
         .set(
-          "#hero-ipad-white",
-          {
-            scale: 1,
-          },
-          ">"
-        )
-        .to(
-          "#hero-ipad",
+          ["#hero-ipad-white,#intro-content"],
           {
             autoAlpha: 0,
+            scale: 0.3,
           },
           ">"
         )
         .to(
-          "#hero-ipad-white",
+          ["#hero-ipad", "#main-content"],
           {
-            opacity: 1,
-          },
-          "<"
-        )
-        .to(
-          "#hero-ipad-white",
-          {
-            scale: 0.8,
+            autoAlpha: 0,
+            scale: 0.3,
           },
           ">"
         )
+        .to(
+          ["#hero-ipad-white,#intro-content"],
+          {
+            // opacity: 1,
+            autoAlpha: 1,
+            scale: 1,
+          },
+          "<.5"
+        )
+        // .to(
+        //   "#hero-ipad-white",
+        //   {
+        //     scale: 0.8,
+        //   },
+        //   ">"
+        // )
         .set(
           "#main-content",
           {
