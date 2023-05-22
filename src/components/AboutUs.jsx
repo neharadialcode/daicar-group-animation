@@ -384,7 +384,7 @@ const About = () => {
                   />
                   <p className="font_2xl color_dark_gray ps-3 mb-0">
                     Federico,
-                    <span className="fw-light ff_mundial_ligh ms-2">
+                    <span className="ff_mundial_light ms-2">
                       Chief Technology Officer
                     </span>
                   </p>
@@ -412,7 +412,7 @@ const About = () => {
                   />
                   <p className="font_2xl color_dark_gray ps-3 mb-0">
                     Matteo,
-                    <span className="fw-light ff_mundial_ligh ms-2">
+                    <span className="ff_mundial_light ms-2">
                       Business Developmet Manager
                     </span>
                   </p>
@@ -440,7 +440,7 @@ const About = () => {
                   />
                   <p className="font_2xl color_dark_gray ps-3 mb-0">
                     Francesca,
-                    <span className="fw-light ff_mundial_ligh ms-2">
+                    <span className="ff_mundial_light ms-2">
                       Marketing Manager
                     </span>
                   </p>
