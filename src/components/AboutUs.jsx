@@ -40,7 +40,7 @@ const About = () => {
         scrollTrigger: {
           trigger: ".about_parent",
           start: "top top",
-          end: "+=400%",
+          end: "+=300%",
           scrub: 1,
           pin: true,
         },
@@ -198,7 +198,7 @@ const About = () => {
         scrollTrigger: {
           trigger: ".about_parent",
           start: "top top",
-          end: "+=400%",
+          end: "+=300%",
           scrub: 1,
           pin: true,
         },
