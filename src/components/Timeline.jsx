@@ -243,7 +243,7 @@ const Timeline = () => {
                 .parentNode.getBoundingClientRect().left
             }px`,
           },
-          "<"
+          "<1"
         )
         .to(
           ["#timeline-heading-1", "#timeline-year-1"],
@@ -279,7 +279,7 @@ const Timeline = () => {
                 .parentNode.getBoundingClientRect().left
             }px`,
           },
-          "<"
+          "<1"
         )
         .to(
           ["#timeline-heading-2", "#timeline-year-2"],
@@ -316,7 +316,7 @@ const Timeline = () => {
               50
             }px`,
           },
-          "<"
+          "<1"
         )
         .to(
           ["#timeline-heading-3", "#timeline-year-3"],
@@ -392,7 +392,8 @@ const Timeline = () => {
             autoAlpha: 1,
           },
           "<"
-        )
+      )
+        
         .to("#hero-large-arrow-2", {
           right: `${
             document.querySelector("#timeline-dot-3").getBoundingClientRect()
@@ -413,7 +414,8 @@ const Timeline = () => {
             autoAlpha: 1,
           },
           "<"
-        )
+      )
+        
         .to("#hero-large-arrow-2", {
           right: `${
             document.querySelector("#timeline-dot-2").getBoundingClientRect()
@@ -434,7 +436,8 @@ const Timeline = () => {
             autoAlpha: 1,
           },
           "<"
-        )
+      )
+        
         .to("#hero-large-arrow-2", {
           right: `${
             document.querySelector("#timeline-dot-1").getBoundingClientRect()
@@ -442,7 +445,6 @@ const Timeline = () => {
           }px`,
           duration: 4,
         })
-
         .to(["#timeline-heading-3", "#timeline-year-3"], {
           autoAlpha: 0,
         })
