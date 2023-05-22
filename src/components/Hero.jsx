@@ -224,7 +224,6 @@ const Hero = () => {
         .to(
           ["#hero-ipad-white,#intro-content"],
           {
-            // opacity: 1,
             autoAlpha: 1,
             scale: 1,
           },
@@ -730,33 +729,57 @@ const Hero = () => {
           "<"
         )
         .set(
-          "#hero-ipad-white",
-          {
-            scale: 1,
-          },
-          ">"
-        )
-        .to(
-          "#hero-ipad",
+          ["#hero-ipad-white,#intro-content"],
           {
             autoAlpha: 0,
+            scale: 0.3,
           },
           ">"
         )
         .to(
-          "#hero-ipad-white",
+          ["#hero-ipad", "#main-content"],
           {
-            opacity: 1,
-          },
-          "<"
-        )
-        .to(
-          "#hero-ipad-white",
-          {
-            scale: 0.8,
+            autoAlpha: 0,
+            scale: 0.3,
           },
           ">"
         )
+        .to(
+          ["#hero-ipad-white,#intro-content"],
+          {
+            autoAlpha: 1,
+            scale: 1,
+          },
+          "<.5"
+        )
+        // .set(
+        //   "#hero-ipad-white",
+        //   {
+        //     scale: 1,
+        //   },
+        //   ">"
+        // )
+        // .to(
+        //   "#hero-ipad",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   ">"
+        // )
+        // .to(
+        //   "#hero-ipad-white",
+        //   {
+        //     opacity: 1,
+        //   },
+        //   "<"
+        // )
+        // .to(
+        //   "#hero-ipad-white",
+        //   {
+        //     scale: 0.8,
+        //   },
+        //   ">"
+        // )
         .set(
           "#main-content",
           {
@@ -1242,33 +1265,57 @@ const Hero = () => {
           "<"
         )
         .set(
-          "#hero-ipad-white",
-          {
-            scale: 1,
-          },
-          ">"
-        )
-        .to(
-          "#hero-ipad",
+          ["#hero-ipad-white,#intro-content"],
           {
             autoAlpha: 0,
+            scale: 0.3,
           },
           ">"
         )
         .to(
-          "#hero-ipad-white",
+          ["#hero-ipad", "#main-content"],
           {
-            opacity: 1,
-          },
-          "<"
-        )
-        .to(
-          "#hero-ipad-white",
-          {
-            scale: 0.8,
+            autoAlpha: 0,
+            scale: 0.3,
           },
           ">"
         )
+        .to(
+          ["#hero-ipad-white,#intro-content"],
+          {
+            autoAlpha: 1,
+            scale: 1,
+          },
+          "<.5"
+        )
+        // .set(
+        //   "#hero-ipad-white",
+        //   {
+        //     scale: 1,
+        //   },
+        //   ">"
+        // )
+        // .to(
+        //   "#hero-ipad",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   ">"
+        // )
+        // .to(
+        //   "#hero-ipad-white",
+        //   {
+        //     opacity: 1,
+        //   },
+        //   "<"
+        // )
+        // .to(
+        //   "#hero-ipad-white",
+        //   {
+        //     scale: 0.8,
+        //   },
+        //   ">"
+        // )
         .set(
           "#main-content",
           {
