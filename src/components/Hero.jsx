@@ -634,7 +634,7 @@ const Hero = () => {
 
       gsap.set(["#hero-ipad", "#hero-ipad-white"], {
         scale: 2,
-        top: "50%",
+        top: "45%",
         left: "50%",
         xPercent: -50,
         yPercent: -50,
