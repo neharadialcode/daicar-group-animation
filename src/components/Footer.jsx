@@ -15,10 +15,15 @@ function Footer() {
     <>
       <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2 manager_content">
         <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
-          <button className="ff_mundial_regular hero_btn mt-5 mt-sm-0">
+          <a
+            className="ff_mundial_regular hero_btn mt-5 mt-sm-0"
+            href="https://calendly.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span className="d-sm-none">F</span>
             <span className="d-none d-sm-inline-block">f</span>issa un meeting
-          </button>
+          </a>
           <p className="custom_line d-none d-sm-block"></p>
           <button className="ff_mundial_regular hero_btn meeting_border_line parliamone d-none d-sm-block">
             chat
