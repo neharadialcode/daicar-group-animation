@@ -616,3 +616,11 @@
 .about_e_text {
   width: 22px;
 }
+.about_img {
+  object-fit: cover;
+  overflow: visible;
+  height: 400px;
+}
+.about_arrow_img_width {
+  width: 10%;
+}
