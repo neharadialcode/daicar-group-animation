@@ -11,7 +11,7 @@ function Meeting() {
       scrollTrigger: {
         trigger: "#contatti",
         start: "top top",
-        scrub: 1,
+        // scrub: 1,
         pin: true,
       },
     });
