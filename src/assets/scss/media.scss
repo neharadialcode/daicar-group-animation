@@ -249,6 +249,10 @@
     max-width: 39px !important;
     left: -60px !important;
   }
+  .meeting_e_icon {
+    max-width: 14px;
+    transform: translate(0px, 1px);
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -295,6 +299,10 @@
   }
   .manager_content {
     transform: translateY(-160px);
+  }
+  .meeting_e_icon {
+    max-width: 12px;
+    transform: translate(0px, 2px);
   }
 }
 
@@ -912,7 +920,11 @@
   .timeline_arrow_icon {
     top: 72.5%;
   }
+  .meeting_e_icon {
+    max-width: 9px;
+  }
 }
+
 #hero {
   position: relative;
 }
