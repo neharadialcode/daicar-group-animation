@@ -88,7 +88,7 @@ const Hero = () => {
       gsap.set("#hero-large-arrow", {
         left: "50%",
         xPercent: -50,
-        top: "75%",
+        top: "70%",
       });
       gsap.set("#intro-content", {
         display: "none",
@@ -262,6 +262,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "73%",
+        })
         .fromTo(
           ".card_img_0",
           {
@@ -339,6 +342,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "70%",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -406,6 +412,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "68%",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -468,6 +477,9 @@ const Hero = () => {
         .to(".active_button_3", {
           background: "rgba(83, 132, 153, 0.5)",
           rotate: "-3deg",
+        })
+        .to("#hero-large-arrow", {
+          top: "66%",
         })
         .to(
           ".arrow_tabs",
@@ -535,6 +547,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "64%",
+        })
         .fromTo(
           ".arrow_tabs",
           {
@@ -806,6 +821,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "73%",
+        })
         .fromTo(
           ".card_img_0",
           {
@@ -874,6 +892,9 @@ const Hero = () => {
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
+        })
+        .to("#hero-large-arrow", {
+          top: "70%",
         })
         .to(
           ".active_button_1",
@@ -950,6 +971,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "68%",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -1012,6 +1036,9 @@ const Hero = () => {
         .to(".active_button_3", {
           background: "rgba(83, 132, 153, 0.5)",
           rotate: "-3deg",
+        })
+        .to("#hero-large-arrow", {
+          top: "66%",
         })
         .to(
           ".arrow_tabs",
@@ -1079,6 +1106,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "64%",
+        })
         .fromTo(
           ".arrow_tabs",
           {
@@ -1342,6 +1372,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "73%",
+        })
         .fromTo(
           ".card_img_0",
           {
@@ -1419,6 +1452,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "70%",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -1486,6 +1522,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "68%",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -1548,6 +1587,9 @@ const Hero = () => {
         .to(".active_button_3", {
           background: "rgba(83, 132, 153, 0.5)",
           rotate: "-3deg",
+        })
+        .to("#hero-large-arrow", {
+          top: "66%",
         })
         .to(
           ".arrow_tabs",
@@ -1615,6 +1657,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "64%",
+        })
         .fromTo(
           ".arrow_tabs",
           {
@@ -1855,6 +1900,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "73%",
+        })
         .fromTo(
           ".card_img_0",
           {
@@ -1932,6 +1980,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "70%",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -1999,6 +2050,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "68%",
+        })
         .to(
           ".arrow_tabs",
           {
@@ -2061,6 +2115,9 @@ const Hero = () => {
         .to(".active_button_3", {
           background: "rgba(83, 132, 153, 0.5)",
           rotate: "-3deg",
+        })
+        .to("#hero-large-arrow", {
+          top: "66%",
         })
         .to(
           ".arrow_tabs",
@@ -2128,6 +2185,9 @@ const Hero = () => {
           },
           "-=.5"
         )
+        .to("#hero-large-arrow", {
+          top: "64%",
+        })
         .fromTo(
           ".arrow_tabs",
           {
@@ -2399,7 +2459,7 @@ const Hero = () => {
                               (console.log(obj.buttonId, "hello"),
                               (
                                 <button
-                                  className={`active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
+                                  className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
                                   dangerouslySetInnerHTML={{
                                     __html: obj.buttonText,
                                   }}
