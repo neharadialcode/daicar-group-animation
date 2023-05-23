@@ -5,7 +5,7 @@ const ParentLogoPara = ({ partnerNname }) => {
     <>
       <p
         id="partner-description"
-        className="ff_mundial_light font_5xl color_light_gray my-4 my-xxl-5 partner_para custom_letter_spacing text-center"
+        className="fw_light font_5xl color_light_gray my-4 my-xxl-5 partner_para custom_letter_spacing text-center"
       >
         <span className="ff_math mb-1">&gt;</span>Title
         <span className="ff_math mb-1">_</span>

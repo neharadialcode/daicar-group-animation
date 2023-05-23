@@ -581,7 +581,7 @@ const Business = () => {
                     >
                       GENERAZIONE TRAFFICO
                     </h3>
-                    <p className="overflow-hidden ff_mundial_light font_2xl business_para_1 color_dark_gray pe-xl-5 m_w_business_text">
+                    <p className="overflow-hidden fw_light font_2xl business_para_1 color_dark_gray pe-xl-5 m_w_business_text">
                       Strategie di marketing costruite ad hoc per generare
                       traffico qualificato da veicolare sui social media, Google
                       e native advertising
@@ -594,7 +594,7 @@ const Business = () => {
                     >
                       LANDING CONVERSAZIONALE
                     </h3>
-                    <p className="overflow-hidden ff_mundial_light font_2xl business_para_2 color_dark_gray pe-xl-5 m_w_business_text">
+                    <p className="overflow-hidden fw_light font_2xl business_para_2 color_dark_gray pe-xl-5 m_w_business_text">
                       Landingpage su misura per i nostri partner e conformi
                       al&nbsp;
                       <span className="ff_mundial_bold">regolamento GDPR</span>
@@ -608,7 +608,7 @@ const Business = () => {
                     >
                       VALIDAZIONE AUTOMATICA DEI DATI
                     </h3>
-                    <p className="overflow-hidden ff_mundial_light font_2xl business_para_3 color_dark_gray pe-xl-5 m_w_business_text">
+                    <p className="overflow-hidden fw_light font_2xl business_para_3 color_dark_gray pe-xl-5 m_w_business_text">
                       Meno tempo e maggiore conversione grazie al nostro&nbsp;
                       <span className="ff_mundial_bold">software di I.A.</span>
                       &nbsp; per la validazione real
@@ -623,7 +623,7 @@ const Business = () => {
                     >
                       TRASMISSIONE LEAD
                     </h3>
-                    <p className="overflow-hidden ff_mundial_light font_2xl business_para_4 color_dark_gray pe-xl-5 m_w_business_text">
+                    <p className="overflow-hidden fw_light font_2xl business_para_4 color_dark_gray pe-xl-5 m_w_business_text">
                       I lead generati vengono sottoposti ad un attento processo
                       di filtraggio e controllo tramite API o integrazione con
                       il CRM del partner prima di essere inviati

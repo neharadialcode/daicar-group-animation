@@ -38,17 +38,8 @@ function Footer() {
           <p className="mb-0 font_md d-non d-lg-block meeting_text_color">
             Matteo,
             <br className="d-sm-none" />
-            <span className="ff_mundial_light">
-              &nbsp;Business Development Manager
-            </span>
+            <span className="fw_light">&nbsp;Business Development Manager</span>
           </p>
-          {/* <p className="mb-0 font_md color_gray d-lg-none">
-            Matteo,
-            <br className="d-sm-none" />
-            <span className="ff_mundial_light">
-              Business Development Manager
-            </span>
-          </p> */}
         </div>
       </div>
 

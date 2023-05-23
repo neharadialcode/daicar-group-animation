@@ -3,7 +3,7 @@ import { Icon4 } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import heroEtext from "../assets/images/svg/hero-e-text.svg";
+// import heroEtext from "../assets/images/svg/hero-e-text.svg";
 import Header from "./Header";
 import ipad from "../assets/ipad.png";
 import ipadWhite from "../assets/ipad-white.png";
@@ -2263,14 +2263,14 @@ const Hero = () => {
                 <span className="mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-2 mx-sm-3">
                   vendite
                 </span>
-                <span className="me-2">
+                {/* <span className="me-2">
                   <img
                     className="hero_e_text"
                     src={heroEtext}
                     alt="hero-e-text"
                   />
-                </span>
-                digitale
+                </span> */}
+                è digitale
               </h1>
 
               <div
@@ -2286,14 +2286,14 @@ const Hero = () => {
                     <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
                     </span>
-                    <span className="me-2">
+                    {/* <span className="me-2">
                       <img
                         className="hero_e_text"
                         src={heroEtext}
                         alt="hero-e-text"
                       />
-                    </span>
-                    digitale
+                    </span> */}
+                    è digitale
                   </h2>
                   <h3 className="font_8xl fw-bold number_heading pt-4 pb-4 text-center color_light_green">
                     200.000
@@ -2321,14 +2321,14 @@ const Hero = () => {
                     <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
                     </span>
-                    <span>
+                    {/* <span>
                       <img
                         className="hero_e_text"
                         src={heroEtext}
                         alt="hero-e-text"
                       />
-                    </span>
-                    &nbsp;digitale
+                    </span> */}
+                    {/* &nbsp; */}è digitale
                   </h2>
                   <h3 className="font_8xl fw-bold number_heading pt-4 pb-4 text-center color_light_green">
                     10.000
