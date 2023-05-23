@@ -204,37 +204,58 @@ const Hero = () => {
           },
           "<"
         )
-        .set(
-          ["#hero-ipad-white,#intro-content"],
-          {
-            autoAlpha: 0,
-            scale: 0.3,
-          },
-          ">"
-        )
-        .to(
-          ["#hero-ipad", "#main-content"],
-          {
-            autoAlpha: 0,
-            scale: 0.3,
-          },
-          ">"
-        )
-        .to(
-          ["#hero-ipad-white,#intro-content"],
-          {
-            autoAlpha: 1,
-            scale: 1,
-          },
-          "<.5"
-        )
-        // .to(
-        //   "#hero-ipad-white",
+        // .set(
+        //   ["#hero-ipad-white,#intro-content"],
         //   {
-        //     scale: 0.8,
+        //     autoAlpha: 0,
+        //     scale: 0.3,
         //   },
         //   ">"
         // )
+        // .to(
+        //   ["#hero-ipad", "#main-content"],
+        //   {
+        //     autoAlpha: 0,
+        //     scale: 0.3,
+        //   },
+        //   ">"
+        // )
+        // .to(
+        //   ["#hero-ipad-white,#intro-content"],
+        //   {
+        //     autoAlpha: 1,
+        //     scale: 1,
+        //   },
+        //   "<.5"
+        // )
+        .set(
+          "#hero-ipad-white",
+          {
+            scale: 1,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad",
+          {
+            autoAlpha: 0,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            opacity: 1,
+          },
+          "<"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            scale: 0.8,
+          },
+          ">"
+        )
         .set(
           "#main-content",
           {
@@ -2390,7 +2411,7 @@ const Hero = () => {
 
                 <div className="max_width_tabs position-relative">
                   <img
-                    className="i_pad_img_2 pt-3 w-100 custom_height_tab_img_ipad tab-img-custom-size"
+                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img"
                     src={tabImg1}
                     alt="img"
                   />
@@ -2443,6 +2464,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
+              4a
             </div>
 
             <img
@@ -2472,3 +2494,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// transform: scale(1.099);
+// margin-top: 137px;
+// margin-left: -8px;
