@@ -778,16 +778,16 @@ const Timeline = () => {
               <div className="text-center pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
                 <p className="font_5xl text-white text-center">
                   Ideata da
-                  <span className="hero_btn noi_btn bg_light_green mx-2">
+                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
                     noi
-                  </span>
+                  </button>
                   grazie all’esperienza acquisita nel
-                  <span className="hero_btn noi_btn bg_light_green mx-2">
+                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
                     tempo
-                  </span>
+                  </button>
                 </p>
               </div>
-              <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block me-5">
+              <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block me-2">
                 <img src={timelineLeftIcon} alt="timeline-left-icon" />
               </div>
               <div className="d-flex justify-contentbetween flex-column align-items-center flex-grow-1 w-100 text_parent_max_w">
@@ -810,7 +810,7 @@ const Timeline = () => {
                         automotive, specializzata nella lead generation
                         innovativa.
                       </p>
-                      <button className="font_xl color_white_off timeline_btn bg-transparent">
+                      <button className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent">
                         automotive
                       </button>
                     </div>
@@ -842,13 +842,13 @@ const Timeline = () => {
                         di lead altamente qualificate.
                       </p>
                       <div className="d-flex align-items-center gap-1gap-sm-3 mt-4 mt-lg-0">
-                        <button className="font_xl color_white_off timeline_btn bg-transparent">
+                        <button className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent">
                           finanza
                         </button>
-                        <button className="font_xl color_white_off timeline_btn bg-transparent mx-2 mx-sm-3">
+                        <button className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent mx-2 mx-sm-3">
                           assicurazione
                         </button>
-                        <button className="font_xl color_white_off timeline_btn bg-transparent">
+                        <button className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent">
                           telco
                         </button>
                       </div>

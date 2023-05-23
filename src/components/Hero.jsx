@@ -3,7 +3,6 @@ import { Icon4 } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-// import heroEtext from "../assets/images/svg/hero-e-text.svg";
 import Header from "./Header";
 import ipad from "../assets/ipad.png";
 import ipadWhite from "../assets/ipad-white.png";
@@ -205,37 +204,58 @@ const Hero = () => {
           },
           "<"
         )
-        .set(
-          ["#hero-ipad-white,#intro-content"],
-          {
-            autoAlpha: 0,
-            scale: 0.3,
-          },
-          ">"
-        )
-        .to(
-          ["#hero-ipad", "#main-content"],
-          {
-            autoAlpha: 0,
-            scale: 0.3,
-          },
-          ">"
-        )
-        .to(
-          ["#hero-ipad-white,#intro-content"],
-          {
-            autoAlpha: 1,
-            scale: 1,
-          },
-          "<.5"
-        )
-        // .to(
-        //   "#hero-ipad-white",
+        // .set(
+        //   ["#hero-ipad-white,#intro-content"],
         //   {
-        //     scale: 0.8,
+        //     autoAlpha: 0,
+        //     scale: 0.3,
         //   },
         //   ">"
         // )
+        // .to(
+        //   ["#hero-ipad", "#main-content"],
+        //   {
+        //     autoAlpha: 0,
+        //     scale: 0.3,
+        //   },
+        //   ">"
+        // )
+        // .to(
+        //   ["#hero-ipad-white,#intro-content"],
+        //   {
+        //     autoAlpha: 1,
+        //     scale: 1,
+        //   },
+        //   "<.5"
+        // )
+        .set(
+          "#hero-ipad-white",
+          {
+            scale: 1,
+          },
+          ">"
+        )
+        // .to(
+        //   "#hero-ipad",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   ">"
+        // )
+        .to(
+          "#hero-ipad-white",
+          {
+            opacity: 1,
+          },
+          "<"
+        )
+        .to(
+          "#hero-ipad-white",
+          {
+            scale: 0.8,
+          },
+          ">"
+        )
         .set(
           "#main-content",
           {
@@ -243,7 +263,13 @@ const Hero = () => {
           },
           "<"
         )
-
+        .to(
+          "#hero-ipad",
+          {
+            autoAlpha: 0,
+          },
+          ">"
+        )
         //////////////////////////
         .set(
           "#intro-content",
@@ -591,10 +617,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        )
-        .to("#para_text_01", {
-          opacity: 0,
-        });
+        );
+      // .to("#para_text_01", {
+      //   opacity: 0,
+      // });
     });
 
     mm.add("(min-width: 992px) and (max-width:1599.98px)", () => {
@@ -1150,10 +1176,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        )
-        .to("#para_text_01", {
-          opacity: 0,
-        });
+        );
+      // .to("#para_text_01", {
+      //   opacity: 0,
+      // });
     });
 
     mm.add("(min-width: 576px) and (max-width:991.98px)", () => {
@@ -1701,10 +1727,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        )
-        .to("#para_text_01", {
-          opacity: 0,
-        });
+        );
+      // .to("#para_text_01", {
+      //   opacity: 0,
+      // });
     });
 
     mm.add("(max-width:575.98px)", () => {
@@ -2229,10 +2255,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        )
-        .to("#para_text_01", {
-          opacity: 0,
-        });
+        );
+      // .to("#para_text_01", {
+      //   opacity: 0,
+      // });
     });
   }, []);
 
@@ -2260,16 +2286,9 @@ const Hero = () => {
                 className=" color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex"
               >
                 Il futuro delle tue
-                <span className="mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-2 mx-sm-3">
+                <button className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-2 mx-sm-3">
                   vendite
-                </span>
-                {/* <span className="me-2">
-                  <img
-                    className="hero_e_text"
-                    src={heroEtext}
-                    alt="hero-e-text"
-                  />
-                </span> */}
+                </button>
                 è digitale
               </h1>
 
@@ -2283,16 +2302,9 @@ const Hero = () => {
                 >
                   <h2 className=" font_6xl mb-0 text-center">
                     Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
+                    <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
-                    </span>
-                    {/* <span className="me-2">
-                      <img
-                        className="hero_e_text"
-                        src={heroEtext}
-                        alt="hero-e-text"
-                      />
-                    </span> */}
+                    </button>
                     è digitale
                   </h2>
                   <h3 className="font_8xl fw-bold number_heading pt-4 pb-4 text-center color_light_green">
@@ -2315,18 +2327,11 @@ const Hero = () => {
                   id="hero-sub-heading-two"
                 >
                   <h2 className=" font_6xl mb-0 text-center">
-                    Il futuro delle tue&nbsp;
-                    <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
+                    Il futuro delle tue
+                    <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
-                    </span>
-                    {/* <span>
-                      <img
-                        className="hero_e_text"
-                        src={heroEtext}
-                        alt="hero-e-text"
-                      />
-                    </span> */}
-                    {/* &nbsp; */}è digitale
+                    </button>
+                    è digitale
                   </h2>
                   <h3 className="font_8xl fw-bold number_heading pt-4 pb-4 text-center color_light_green">
                     10.000
@@ -2411,11 +2416,8 @@ const Hero = () => {
                 </div>
 
                 <div className="max_width_tabs position-relative">
-                  {/* <div className="arrow_tabs position-absolute d-none d-md-block">
-                    <Icon5 />
-                  </div> */}
                   <img
-                    className="i_pad_img_2 pt-3 w-100 custom_height_tab_img_ipad tab-img-custom-size"
+                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img"
                     src={tabImg1}
                     alt="img"
                   />
@@ -2468,6 +2470,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
+              4a
             </div>
 
             <img
@@ -2497,3 +2500,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// transform: scale(1.099);
+// margin-top: 137px;
+// margin-left: -8px;

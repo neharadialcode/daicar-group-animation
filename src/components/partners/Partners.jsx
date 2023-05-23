@@ -158,7 +158,7 @@ const Partners = () => {
               <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
                 Non cerchiamo clienti ma
               </p>
-              <button className="font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
+              <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
                 partner
               </button>
               <span className="font_lg">.</span>

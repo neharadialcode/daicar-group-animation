@@ -98,11 +98,21 @@
   .timeline_left_icon {
     right: -25%;
   }
-  .custom_height_tab_img_ipad {
+  // .custom_height_tab_img_ipad {
+  //   width: 100% !important;
+  // }
+  .custom_size_white_tab_ipad_img {
     width: 100% !important;
+    transform: scale(1.099);
+    margin-top: 137px;
+    margin-left: -8px;
+  }
+  .tabs_lottie {
+    top: 18%;
+    // border: 4px solid red;
   }
   .tabs_lottie_1 {
-    top: 10%;
+    top: 18%;
   }
   .meeting_text_color {
     color: var(--color-white-off);

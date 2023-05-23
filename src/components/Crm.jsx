@@ -70,7 +70,7 @@ const Crm = () => {
             <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
               É possibile integrare i dati con il tuo
             </p>
-            <button className="font_2xl color_dark_gray common_button common_btn">
+            <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button common_btn">
               CRM
             </button>
             <span className="font_lg">.</span>
