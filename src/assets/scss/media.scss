@@ -95,9 +95,6 @@
   .timeline_left_icon {
     right: -25%;
   }
-  // .custom_height_tab_img_ipad {
-  //   width: 100% !important;
-  // }
   .custom_size_white_tab_ipad_img {
     width: 100% !important;
     transform: scale(1.099);
@@ -106,7 +103,6 @@
   }
   .tabs_lottie {
     top: 18%;
-    // border: 4px solid red;
   }
   .tabs_lottie_1 {
     top: 18%;
@@ -223,11 +219,16 @@
     width: 70% !important;
     left: 15% !important;
   }
+  .tabs_lottie {
+    top: 20%;
+  }
   .tabs_lottie_1 {
-    top: 75px;
+    top: 205px;
   }
   .i_pad_img_2 {
-    margin-left: 180px;
+    transform: scale(0.76);
+    margin-top: 64px;
+    margin-left: -6px;
   }
   .footer_background_set {
     height: 720px;
@@ -240,6 +241,9 @@
   }
   .tab_right_icon {
     right: -11% !important;
+  }
+  .tab_text_position {
+    transform: translateY(-120px);
   }
 }
 
@@ -262,6 +266,13 @@
   .meeting_e_icon {
     max-width: 14px;
     transform: translate(0px, 1px);
+  }
+  .i_pad_img_2 {
+    transform: scale(0.78);
+    margin-top: 52px;
+  }
+  .tabs_lottie {
+    top: 21%;
   }
 }
 
@@ -314,12 +325,22 @@
     max-width: 12px;
     transform: translate(0px, 2px);
   }
+  .i_pad_img_2 {
+    transform: scale(0.84);
+    margin-top: 86px;
+  }
+  .tab_text_position {
+    transform: translateY(-76px);
+  }
 }
 
 @media (max-width: 1299.98px) {
   .arrow_tabs {
     transform: scale(1.3);
     left: 13%;
+  }
+  .i_pad_img_2 {
+    transform: scale(0.87);
   }
 }
 
