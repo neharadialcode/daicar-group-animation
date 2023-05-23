@@ -9,6 +9,7 @@ import ipadWhite from "../assets/ipad-white.png";
 import ipad_mockup from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import arrow from "../assets/arrow.svg";
 import { TabRightIcon } from "./Icons";
+import tabSmImg from "../assets/tab-frame-sm.png";
 import tabImg1 from "../assets/images/png/tab-frame.png";
 import Lottie from "react-lottie-player";
 import comeLottie from "../assets/lotties/tabs-1.json";
@@ -2308,7 +2309,12 @@ const Hero = () => {
 
                 <div className="max_width_tabs position-relative">
                   <img
-                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img"
+                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img d-lg-none"
+                    src={tabSmImg}
+                    alt="img"
+                  />
+                  <img
+                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img d-none d-lg-block"
                     src={tabImg1}
                     alt="img"
                   />
@@ -2337,14 +2343,14 @@ const Hero = () => {
                             </div>
                           </div>
                           <div
-                            className=" tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0"
+                            className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0"
                             id="para_text_01"
                           >
-                            <p className="font_2xl color_gray pt-3">
+                            <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
                               {obj.para}
                             </p>
                             {obj.buttonText &&
-                              (console.log(obj.buttonId, "hello"),
+                              (console.log(obj.buttonId, "hero_btn"),
                               (
                                 <button
                                   className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}

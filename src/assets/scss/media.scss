@@ -427,8 +427,8 @@
     max-height: 450px;
   }
   .i_pad_img_2 {
-    margin-left: -5px;
     transform: scale(0.67);
+    margin-left: -5px;
     margin-top: 81px;
   }
   .hero_slide_1 h3,
@@ -529,6 +529,25 @@
 }
 
 @media (max-width: 991.98px) {
+  .i_pad_img_2 {
+    max-height: 750px;
+    transform: unset;
+    object-fit: contain;
+    margin-top: 50px;
+  }
+  .tab_text_position {
+    transform: translateY(-50px) !important;
+  }
+  .tabs_lottie {
+    top: 17% !important;
+  }
+  .tabs_lottie_1 {
+    top: 280px;
+  }
+  .custom_content_size p,
+  .custom_content_size button {
+    font-size: 22px !important;
+  }
   .timeline_icon_3 {
     max-width: 200px;
   }
@@ -593,15 +612,12 @@
   .custom_top_spacing {
     margin-top: 8vh;
   }
-  .i_pad_img_2 {
-    margin-left: 35px;
-  }
   .arrow_tabs {
     left: -2%;
     transform: unset;
   }
   .custom_height_tab_img {
-    left: 5% !important;
+    left: 4% !important;
     width: 90% !important;
   }
   .i_pad_img {
@@ -696,6 +712,22 @@
   .hero_slide_para_2 {
     max-width: 526px;
     margin: auto;
+  }
+  .i_pad_img_2 {
+    max-height: 670px;
+  }
+  .tab_text_position {
+    transform: translateY(-50px) !important;
+  }
+  .tabs_lottie {
+    left: 12% !important;
+    width: 75% !important;
+    top: 20% !important;
+  }
+  .tabs_lottie_1 {
+    top: 280px !important;
+    left: 1% !important;
+    width: 90% !important;
   }
 }
 
