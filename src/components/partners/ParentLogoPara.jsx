@@ -9,15 +9,13 @@ const ParentLogoPara = ({ partnerNname }) => {
       >
         <span className="ff_math mb-1">&gt;</span>Title
         <span className="ff_math mb-1">_</span>
-        <span className="color_light_green ff_mundial_regular">
+        <span className="color_light_green">
           Lead Generation <span className="text-uppercase">{partnerNname}</span>
         </span>
         &nbsp;KPI<span className="ff_math mb-1">_</span>
-        <span className="color_light_green ff_mundial_regular">
-          Validazione numero di Telfono
-        </span>
+        <span className="color_light_green">Validazione numero di Telfono</span>
         &nbsp;Year<span className="ff_math mb-1">_</span>
-        <span className="color_light_green ff_mundial_regular">2022</span>
+        <span className="color_light_green">2022</span>
       </p>
     </>
   );

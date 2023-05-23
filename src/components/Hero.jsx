@@ -2257,7 +2257,7 @@ const Hero = () => {
             >
               <h1
                 id="hero-main-heading"
-                className="ff_mundial_regular color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex"
+                className=" color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex"
               >
                 Il futuro delle tue
                 <span className="mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-2 mx-sm-3">
@@ -2281,7 +2281,7 @@ const Hero = () => {
                   className="hero_slide_1 pt-lg-5 pt-xxl-0"
                   id="hero-sub-heading-one"
                 >
-                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center">
+                  <h2 className=" font_6xl mb-0 text-center">
                     Il futuro delle tue&nbsp;
                     <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
@@ -2298,12 +2298,12 @@ const Hero = () => {
                   <h3 className="font_8xl fw-bold number_heading pt-4 pb-4 text-center color_light_green">
                     200.000
                   </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-xl-4 hero_slide_para_1">
+                  <p className="font_xl color_white_off  text-center pb-xl-4 hero_slide_para_1">
                     Lead
                     <span className="ff_mundial_bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
+                  <p className="font_4xl color_white_off  text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
                     Daicar aiuta a far
                     <span className="ff_mundial_bold mx-1 mx-sm-2">
                       crescere
@@ -2316,7 +2316,7 @@ const Hero = () => {
                   className="hero_slide_2 pt-lg-5 pt-xxl-0"
                   id="hero-sub-heading-two"
                 >
-                  <h2 className="ff_mundial_regular font_6xl mb-0 text-center">
+                  <h2 className=" font_6xl mb-0 text-center">
                     Il futuro delle tue&nbsp;
                     <span className="d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
@@ -2333,12 +2333,12 @@ const Hero = () => {
                   <h3 className="font_8xl fw-bold number_heading pt-4 pb-4 text-center color_light_green">
                     10.000
                   </h3>
-                  <p className="font_xl color_white_off ff_mundial_regular text-center pb-xl-4 hero_slide_para_1">
+                  <p className="font_xl color_white_off  text-center pb-xl-4 hero_slide_para_1">
                     Campagne
                     <span className="ff_mundial_bold mx-2">Generate</span>
                     nel 2022
                   </p>
-                  <p className="font_4xl color_white_off ff_mundial_regular text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
+                  <p className="font_4xl color_white_off  text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
                     Campaign management
                     <span className="ff_mundial_bold mx-2">flessibile</span> e
                     altamente

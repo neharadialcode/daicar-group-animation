@@ -109,14 +109,13 @@ const Partners = () => {
           fastScrollEnd: true,
         },
       });
-      tl
-        .to(
-          "#root",
-          {
-            backgroundColor: "#EDFAFB",
-          },
-          "-=3"
-        );
+      tl.to(
+        "#root",
+        {
+          backgroundColor: "#EDFAFB",
+        },
+        "-=3"
+      );
     });
     const ctx = gsap.context(() => {
       const tl2 = gsap.timeline({
@@ -156,10 +155,10 @@ const Partners = () => {
               id="partners-content-heading"
               className="d-flex align-items-center gap-2 justify-content-center "
             >
-              <p className="ff_mundial_regular font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
+              <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
                 Non cerchiamo clienti ma
               </p>
-              <button className="ff_mundial_regular font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
+              <button className="font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
                 partner
               </button>
               <span className="font_lg">.</span>

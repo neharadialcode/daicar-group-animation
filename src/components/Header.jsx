@@ -55,7 +55,7 @@ const Header = () => {
             <li className="ps-4 ps-xxl-5">
               <a
                 href="#main-assets"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
+                className="font_sm color_white_off nav_hover ms-2"
               >
                 Main Assets
               </a>
@@ -63,7 +63,7 @@ const Header = () => {
             <li className="ps-4 ps-xxl-5">
               <a
                 href="#servizi"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
+                className="font_sm color_white_off nav_hover ms-2"
               >
                 Servizi
               </a>
@@ -71,7 +71,7 @@ const Header = () => {
             <li className="ps-4 ps-xxl-5">
               <a
                 href="#daicar-group"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
+                className="font_sm color_white_off nav_hover ms-2"
               >
                 Daicar Group
               </a>
@@ -79,7 +79,7 @@ const Header = () => {
             <li className="ps-4 ps-xxl-5">
               <a
                 href="#contatti"
-                className="ff_mundial_regular font_sm color_white_off nav_hover ms-2"
+                className="font_sm color_white_off nav_hover ms-2"
               >
                 Contatti
               </a>
@@ -92,7 +92,7 @@ const Header = () => {
             >
               Sentiamoci
             </a>
-            <button className="ff_mundial_regular navbar_btn font_2xl color_dark_gray">
+            <button className="navbar_btn font_2xl color_dark_gray">
               chat
             </button>
           </div>
@@ -111,7 +111,7 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   href="#main-assets"
-                  className="ff_mundial_regular font_lg color_white_off nav_hover"
+                  className="font_lg color_white_off nav_hover"
                 >
                   Main Assets
                 </a>
@@ -120,7 +120,7 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   href="#servizi"
-                  className="ff_mundial_regular font_lg color_white_off nav_hover"
+                  className="font_lg color_white_off nav_hover"
                 >
                   Servizi
                 </a>
@@ -129,7 +129,7 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   href="#daicar-group"
-                  className="ff_mundial_regular font_lg color_white_off nav_hover"
+                  className="font_lg color_white_off nav_hover"
                 >
                   Daicar Group
                 </a>
@@ -138,7 +138,7 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   href="#contatti"
-                  className="ff_mundial_regular font_lg color_white_off nav_hover"
+                  className="font_lg color_white_off nav_hover"
                 >
                   Contatti
                 </a>
@@ -150,7 +150,7 @@ const Header = () => {
               >
                 Sentiamoci
               </a>
-              <button className="navbar_btn ff_mundial_regular font_2xl color_dark_gray mt-2 mt-sm-4">
+              <button className="navbar_btn font_2xl color_dark_gray mt-2 mt-sm-4">
                 chat
               </button>
             </ul>
