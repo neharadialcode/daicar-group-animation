@@ -34,49 +34,49 @@ function Meeting() {
           >
             <p>
               Ora hai compreso che il futuro delle tue
-              <span className="common_button mx-2 font_2xl mx-sm-3">
+              <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl mx-sm-3">
                 vendite
               </span>
               è digitale e hai scoperto
             </p>
             <p>
-              <span className="common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
+              <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
                 come
               </span>
               usiamo il
-              <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
+              <span className="custom_tab_button_012 cursor-pointer common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
                 marketing converazionale
               </span>
               e gli
-              <span className="common_button font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
+              <span className="custom_tab_button_012 cursor-pointer common_button font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
                 strumenti tech<span className="ff_math">-</span>driven
               </span>
               da noi sviluppati
             </p>
             <p>
               per ottenere una
-              <span className="common_button font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
+              <span className="custom_tab_button_012 cursor-pointer common_button font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
                 qualifica digitale real<span className="ff_math">-</span>time
               </span>
               e trasmetterti così i dati.
             </p>
             <p>
               Vogliamo utilizzare l’esperienza acquisita nel
-              <span className="common_button mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
+              <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
                 tempo
               </span>
               per ideare una strategia
-              <span className="common_button mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
+              <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
                 personalizzata
               </span>
             </p>
             <p>
               proprio come se fossimo il tuo
-              <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
+              <span className="custom_tab_button_012 cursor-pointer common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
                 partner
               </span>
               integrato nel tuo team e nel tuo
-              <span className="common_button mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
+              <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
                 CRM
               </span>
             </p>
@@ -87,38 +87,40 @@ function Meeting() {
             className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-xl-none"
           >
             Ora hai compreso che il futuro delle tue
-            <span className="common_button mx-2 font_2xl mx-sm-3">vendite</span>
+            <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl mx-sm-3">
+              vendite
+            </span>
             è digitale e hai scoperto
-            <span className="common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
+            <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
               come
             </span>
             usiamo il
-            <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
+            <span className="custom_tab_button_012 cursor-pointer common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
               marketing converazionale
             </span>
             e gli
-            <span className="common_button font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
+            <span className="custom_tab_button_012 cursor-pointer common_button font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
               strumenti tech<span className="ff_math">-</span>driven
             </span>
             da noi sviluppati&nbsp; per ottenere una
-            <span className="common_button font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
+            <span className="custom_tab_button_012 cursor-pointer common_button font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
               qualifica digitale real<span className="ff_math">-</span>time
             </span>
             e trasmetterti così i dati.<br className="d-md-block d-none"></br>
             Vogliamo utilizzare l’esperienza acquisita nel
-            <span className="common_button mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
+            <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
               tempo
             </span>
             per ideare una strategia
-            <span className="common_button mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
+            <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
               personalizzata
             </span>
             proprio come se fossimo il tuo
-            <span className="common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
+            <span className="custom_tab_button_012 cursor-pointer common_button me-2 font_2xl mx-sm-3 meeting_custom_top_space">
               partner
             </span>
             integrato nel tuo team e nel tuo
-            <span className="common_button mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
+            <span className="custom_tab_button_012 cursor-pointer common_button mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
               CRM
             </span>
           </div>

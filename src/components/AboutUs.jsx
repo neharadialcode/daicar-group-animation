@@ -289,13 +289,13 @@ const About = () => {
             <div className="d-flex align-items-center flex-column justify-content-between position-relative h-100 top_csutom_space z-10">
               <p className="font_5xl text-white pt-sm-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing px-2 px-sm-0">
                 Ideata da
-                <span className="hero_btn noi_btn bg_light_green mx-2">
+                <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
                   noi
-                </span>
+                </button>
                 grazie all’esperienza acquisita nel
-                <span className="hero_btn noi_btn bg_light_green mx-2">
+                <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
                   tempo
-                </span>
+                </button>
                 <span className="color_dark_gray">.</span>
               </p>
               <div
@@ -429,13 +429,13 @@ const About = () => {
             <div className="text-center pt-5">
               <p className="font_5xl text-white pt-sm-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing px-2 px-sm-0">
                 Ideata da
-                <span className="hero_btn noi_btn bg_light_green mx-2">
+                <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
                   noi
-                </span>
+                </button>
                 grazie all’esperienza acquisita nel
-                <span className="hero_btn noi_btn bg_light_green mx-2">
+                <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
                   tempo
-                </span>
+                </button>
                 <span className="color_dark_gray">.</span>
               </p>
             </div>

@@ -2300,7 +2300,7 @@ const Hero = () => {
                   id="hero-sub-heading-two"
                 >
                   <h2 className=" font_6xl mb-0 text-center">
-                    Il futuro delle tue&nbsp;
+                    Il futuro delle tue
                     <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                       vendite
                     </button>
