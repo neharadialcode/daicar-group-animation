@@ -546,7 +546,7 @@
   }
   .custom_content_size p,
   .custom_content_size button {
-    font-size: 22px !important;
+    font-size: 24px !important;
   }
   .timeline_icon_3 {
     max-width: 200px;
@@ -768,6 +768,24 @@
 }
 
 @media (max-width: 575.98px) {
+  .custom_content_size p,
+  .custom_content_size button {
+    font-size: 16px !important;
+  }
+  .i_pad_img_2 {
+    max-height: 400px;
+    margin-top: -40px !important;
+  }
+  .tab_text_position {
+    transform: translateY(0px) !important;
+    margin-bottom: 4px !important;
+  }
+  .tabs_lottie_1 {
+    top: 80px !important;
+  }
+  .tabs_lottie {
+    top: 4% !important;
+  }
   .timeline_icon_3 {
     max-width: 150px;
   }

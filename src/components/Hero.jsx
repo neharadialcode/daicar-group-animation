@@ -1781,6 +1781,9 @@ const Hero = () => {
           },
           ">"
         )
+        .to("#hero-ipad", {
+          yPercent: -200,
+        })
         .to(
           "#hero-ipad-white",
           {
@@ -2233,7 +2236,7 @@ const Hero = () => {
                     <span className="fw_bold mx-2">Generate</span>
                     nel 2022
                   </p>
-                  <p className="custom_lh_132 font_4xl color_white_off  text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
+                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
                     Campaign management
                     <span className="fw_bold mx-2">flessibile</span> e altamente
                     <br className="d-none d-lg-block" />
