@@ -68,24 +68,7 @@ const Crm = () => {
             className="d-sm-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0 text-center text-sm-start"
           >
             <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
-              <svg
-                style={{
-                  height: "1em",
-                  marginBottom: "0.4em",
-                  marginRight: "0.2em",
-                }}
-                width="15"
-                height="27"
-                viewBox="0 0 15 27"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.9414 5.42285L8.16797 0.530273H11.4199L8.44629 5.42285H5.9414ZM14.2764 27H0.0234375V7.10742H13.9687V9.90527H3.09961V15.3838H12.4307V18.1816H3.09961V24.2021H14.2764V27Z"
-                  fill="#29424D"
-                />
-              </svg>
-              possibile integrare i dati con il tuo
+              É possibile integrare i dati con il tuo
             </p>
             <button className="font_2xl color_dark_gray common_button common_btn">
               CRM

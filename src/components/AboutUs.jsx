@@ -4,7 +4,6 @@ import bigFounder2 from "../assets/images/svg/big-founder-img-2.svg";
 import bigFounder3 from "../assets/images/svg/big-founder-img-3.svg";
 import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
-import aboutEText from "../assets/images/svg/about-e-text.svg";
 import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 import aboutArrow from "../assets/about-arrow.png";
@@ -326,16 +325,9 @@ const About = () => {
                       </div>
                       <div>
                         <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-4 ps-xl-5">
-                          Il futuro della lead generation{" "}
-                          <span>
-                            <img
-                              className="mb-2 about_e_text"
-                              src={aboutEText}
-                              alt="about-e-text"
-                            />
-                          </span>{" "}
-                          basato sulla creazione di relazioni di fiducia,
-                          sostenute dalla tecnologia.
+                          Il futuro della lead generation è basato sulla
+                          creazione di relazioni di fiducia, sostenute dalla
+                          tecnologia.
                         </h4>
                       </div>
                       <div className="d-flex align-items-center ps-xl-5 pt-4 mt-xl-3 px-lg-4">
@@ -455,16 +447,8 @@ const About = () => {
                   </div>
                   <div className="position-relative">
                     <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
-                      Il futuro della lead generation{" "}
-                      <span>
-                        <img
-                          className="mb-2 about_e_text"
-                          src={aboutEText}
-                          alt="about-e-text"
-                        />
-                      </span>{" "}
-                      basato sulla creazione di relazioni di fiducia, sostenute
-                      dalla tecnologia.
+                      Il futuro della lead generation è basato sulla creazione
+                      di relazioni di fiducia, sostenute dalla tecnologia.
                     </h4>
                     <div className="position-absolute small_icon_arrow_2">
                       <DownArrowNoiIcon />

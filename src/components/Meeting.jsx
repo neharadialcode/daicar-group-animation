@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import aboutEText from "../assets/images/svg/about-e-text.svg";
-
 gsap.registerPlugin(ScrollTrigger);
 
 function Meeting() {
@@ -40,14 +37,7 @@ function Meeting() {
               <span className="common_button mx-2 font_2xl mx-sm-3">
                 vendite
               </span>
-              <span>
-                <img
-                  className="mb-2 me-2 w-100 h-100 meeting_e_icon"
-                  src={aboutEText}
-                  alt="about-e-text"
-                />
-              </span>
-              digitale e hai scoperto
+              è digitale e hai scoperto
             </p>
             <p>
               <span className="common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
@@ -98,14 +88,7 @@ function Meeting() {
           >
             Ora hai compreso che il futuro delle tue
             <span className="common_button mx-2 font_2xl mx-sm-3">vendite</span>
-            <span>
-              <img
-                className="mb-2 me-2 w-100 h-100 meeting_e_icon"
-                src={aboutEText}
-                alt="about-e-text"
-              />
-            </span>
-            digitale e hai scoperto
+            è digitale e hai scoperto
             <span className="common_button mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
               come
             </span>
