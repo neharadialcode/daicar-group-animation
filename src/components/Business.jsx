@@ -596,7 +596,7 @@ const Business = () => {
                     <p className="overflow-hidden fw_light font_2xl business_para_2 color_dark_gray pe-xl-5 m_w_business_text">
                       Landingpage su misura per i nostri partner e conformi
                       al&nbsp;
-                      <span className="ff_mundial_bold">regolamento GDPR</span>
+                      <span className="fw_bold">regolamento GDPR</span>
                       &nbsp; per l’acquisizione di contatti qualificati.
                     </p>
                   </div>
@@ -609,7 +609,7 @@ const Business = () => {
                     </h3>
                     <p className="overflow-hidden fw_light font_2xl business_para_3 color_dark_gray pe-xl-5 m_w_business_text">
                       Meno tempo e maggiore conversione grazie al nostro&nbsp;
-                      <span className="ff_mundial_bold">software di I.A.</span>
+                      <span className="fw_bold">software di I.A.</span>
                       &nbsp; per la validazione real
                       <span className="ff_math">-</span>time dei dati degli
                       utenti
@@ -669,7 +669,7 @@ const Business = () => {
                     </h3>
                     <p className="font_2xl text-white pe-xl-5 pt-2">
                       Landingpage su misura per i nostri partner e conformi al
-                      <span className="ff_mundial_bold">regolamento GDPR</span>
+                      <span className="fw_bold">regolamento GDPR</span>
                       &nbsp; per l’acquisizione di contatti qualificati.
                     </p>
                   </div>
@@ -690,7 +690,7 @@ const Business = () => {
                     </h3>
                     <p className="font_2xl text-white pe-xl-5 pt-2">
                       Meno tempo e maggiore conversione grazie al nostro&nbsp;
-                      <span className="ff_mundial_bold">software di I.A.</span>
+                      <span className="fw_bold">software di I.A.</span>
                       &nbsp; per la validazione real-time dei dati degli utenti
                     </p>
                   </div>

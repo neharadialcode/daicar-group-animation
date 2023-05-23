@@ -2300,14 +2300,12 @@ const Hero = () => {
                   </h3>
                   <p className="font_xl color_white_off  text-center pb-xl-4 hero_slide_para_1">
                     Lead
-                    <span className="ff_mundial_bold mx-2">Qualificati</span>
+                    <span className="fw_bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
                   <p className="font_4xl color_white_off  text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
                     Daicar aiuta a far
-                    <span className="ff_mundial_bold mx-1 mx-sm-2">
-                      crescere
-                    </span>
+                    <span className="fw_bold mx-1 mx-sm-2">crescere</span>
                     la tua azienda, <br className="d-none d-lg-block" /> creando
                     contatti e generando vendite
                   </p>
@@ -2335,17 +2333,14 @@ const Hero = () => {
                   </h3>
                   <p className="font_xl color_white_off  text-center pb-xl-4 hero_slide_para_1">
                     Campagne
-                    <span className="ff_mundial_bold mx-2">Generate</span>
+                    <span className="fw_bold mx-2">Generate</span>
                     nel 2022
                   </p>
                   <p className="font_4xl color_white_off  text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
                     Campaign management
-                    <span className="ff_mundial_bold mx-2">flessibile</span> e
-                    altamente
+                    <span className="fw_bold mx-2">flessibile</span> e altamente
                     <br className="d-none d-lg-block" />
-                    <span className="ff_mundial_bold mx-2">
-                      personalizzabile
-                    </span>
+                    <span className="fw_bold mx-2">personalizzabile</span>
                     sulle criticità di ogni partner
                     <br />
                   </p>
