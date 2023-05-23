@@ -4,7 +4,7 @@ import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
 import timelineImg2 from "../assets/images/png/timeline-content-img-2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import cake from "../assets/images/svg/timeline-cake.svg";
+// import cake from "../assets/images/svg/timeline-cake.svg";
 import largeArrow2 from "../assets/arrow-large-2.svg";
 gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
@@ -169,7 +169,7 @@ const Timeline = () => {
       });
     });
 
-    mm.add("(min-width: 992px)", () => {
+    mm.add("(min-width: 1200px)", () => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#timeline",
@@ -312,8 +312,177 @@ const Timeline = () => {
                 .right -
               document
                 .querySelector("#timeline-heading-container")
-                .parentNode.getBoundingClientRect().left -
-              50
+                .parentNode.getBoundingClientRect().left
+            }px`,
+          },
+          "<1"
+        )
+        .to(
+          ["#timeline-heading-3", "#timeline-year-3"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-4", "#timeline-year-4"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-4", "#timeline-year-4"],
+          {
+            autoAlpha: 1,
+          },
+          "+=2"
+        );
+    });
+    mm.add("(min-width: 992px) and (max-width:1199.98px)", () => {
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#timeline",
+          start: "top top",
+          end: "+=400%",
+          scrub: 1,
+          pin: true,
+        },
+      });
+      // FIRST VALUE
+      tl2
+        .fromTo(
+          "#hero-large-arrow-2",
+          {
+            right: "130%",
+          },
+          {
+            right: `${
+              document.querySelector("#timeline-dot-4").getBoundingClientRect()
+                .right
+            }px`,
+            autoAlpha: 1,
+          }
+        )
+        .from(
+          [
+            "#timeline-dot-1",
+            "#timeline-dot-2",
+            "#timeline-dot-3",
+            "#timeline-dot-4",
+          ],
+          {
+            autoAlpha: 0,
+            xPercent: -100,
+            stagger: 0.4,
+          },
+          "<"
+        )
+        .from(
+          "#timeline-dot-line",
+          {
+            width: 0,
+            duration: 1,
+          },
+          ">20%"
+        )
+        .to(
+          ["#timeline-heading-1", "#timeline-year-1"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+
+        // SECOND VALUE
+        .to("#hero-large-arrow-2", {
+          right: `${
+            document.querySelector("#timeline-dot-3").getBoundingClientRect()
+              .right
+          }px`,
+          duration: 4,
+        })
+        .to(
+          "#timeline-heading-container",
+          {
+            left: `${
+              document.querySelector("#timeline-dot-2").getBoundingClientRect()
+                .right -
+              document
+                .querySelector("#timeline-heading-container")
+                .parentNode.getBoundingClientRect().left
+            }px`,
+          },
+          "<1"
+        )
+        .to(
+          ["#timeline-heading-1", "#timeline-year-1"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-2", "#timeline-year-2"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+
+        // THIRD VALUE
+        .to("#hero-large-arrow-2", {
+          right: `${
+            document.querySelector("#timeline-dot-2").getBoundingClientRect()
+              .right
+          }px`,
+          duration: 4,
+        })
+        .to(
+          "#timeline-heading-container",
+          {
+            left: `${
+              document.querySelector("#timeline-dot-3").getBoundingClientRect()
+                .right -
+              document
+                .querySelector("#timeline-heading-container")
+                .parentNode.getBoundingClientRect().left
+            }px`,
+          },
+          "<1"
+        )
+        .to(
+          ["#timeline-heading-2", "#timeline-year-2"],
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ["#timeline-heading-3", "#timeline-year-3"],
+          {
+            autoAlpha: 1,
+          },
+          "<"
+        )
+
+        // FOURTH VALUE
+        .to("#hero-large-arrow-2", {
+          right: `${
+            document.querySelector("#timeline-dot-1").getBoundingClientRect()
+              .right
+          }px`,
+          duration: 4,
+        })
+        .to(
+          "#timeline-heading-container",
+          {
+            left: `${
+              document.querySelector("#timeline-dot-4").getBoundingClientRect()
+                .right -
+              document
+                .querySelector("#timeline-heading-container")
+                .parentNode.getBoundingClientRect().left-60
             }px`,
           },
           "<1"
@@ -686,13 +855,19 @@ const Timeline = () => {
                     </div>
                     <div
                       id="timeline-heading-4"
-                      className="font_2xl text-white position-absolute w-100 timeline_cake_img_parent"
+                      className="font_2xl text-white position-absolute w-100 timeline_cake_img_parent pt-5"
                     >
                       <img
-                        src={cake}
-                        alt="cake-img"
-                        className="timeline_cake_img"
+                        src={timelineImg2}
+                        alt="timeline-content-img-2"
+                        className="timeline_icon_3"
                       />
+                      <p className="font_md color_white_off">
+                        Il 2 Ottobre faremo <br /> otto anni.
+                      </p>
+                      <button className="font_sm color_white_off timeline_btn bg-transparent">
+                        compleanno
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -708,34 +883,34 @@ const Timeline = () => {
                   <div className="position-absolute end-0 top-0 timeline_years">
                     <h2
                       id="timeline-year-1"
-                      className="position-absolute font_9xl fw-bold text-white top-50 end-0 -translate-y-1/2"
+                      className="position-absolute font_9xl fw_light text-white top-50 end-0 -translate-y-1/2"
                     >
                       2015
                     </h2>
                     <h2
                       id="timeline-year-2"
-                      className="position-absolute font_9xl fw-bold text-white top-50 end-0 -translate-y-1/2"
+                      className="position-absolute font_9xl fw_light text-white top-50 end-0 -translate-y-1/2"
                     >
                       2018
                     </h2>
                     <h2
                       id="timeline-year-3"
-                      className="position-absolute font_9xl fw-bold text-white top-50 end-0 -translate-y-1/2"
+                      className="position-absolute font_9xl fw_light text-white top-50 end-0 -translate-y-1/2"
                     >
                       2022
                     </h2>
-                    <div
+                    <h2
                       id="timeline-year-4"
-                      className="position-absolute font_9xl fw-bold text-white top-50 end-0 -translate-y-1/2"
+                      className="position-absolute font_9xl fw_light text-white top-50 end-0 -translate-y-1/2"
                     >
-                      <p className="font_2xl opacity_05 mb-0 text-end d-none d-sm-block">
+                      {/* <p className="font_2xl opacity_05 mb-0 text-end d-none d-sm-block">
                         2 Ottobre
-                      </p>
+                      </p> */}
                       2023
-                      <p className="font_2xl opacity_05 text-end mb-0">
+                      {/* <p className="font_2xl opacity_05 text-end mb-0">
                         Otto anni
-                      </p>
-                    </div>
+                      </p> */}
+                    </h2>
                   </div>
                 </div>
               </div>
