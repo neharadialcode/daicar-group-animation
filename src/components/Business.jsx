@@ -531,11 +531,11 @@ const Business = () => {
             />
           </div>
           <div className="text-center px-4 px-lg-0 z_1 third_heading">
-            <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_business_heading">
+            <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 mb-0 custom_business_heading d-flex align-items-center justify-content-center flex-wrap">
               Progettiamo soluzioni
-              <span className="mt-2 mt-md-1 dflex align-items-center justify-content-center business_btn hero_heading_btn color_dark_gray bg_light_green my-2 my-sm-0 mx-3">
+              <button className="custom_tab_button_012 cursor-pointer align-middle d-flex align-items-center justify-content-center business_btn hero_heading_btn color_dark_gray bg_light_green my-2 mb-sm-0 mt-sm-2 mx-3">
                 personalizzate
-              </span>
+              </button>
               per il tuo business
             </p>
           </div>
