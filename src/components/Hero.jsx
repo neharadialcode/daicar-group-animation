@@ -235,13 +235,13 @@ const Hero = () => {
           },
           ">"
         )
-        .to(
-          "#hero-ipad",
-          {
-            autoAlpha: 0,
-          },
-          ">"
-        )
+        // .to(
+        //   "#hero-ipad",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   ">"
+        // )
         .to(
           "#hero-ipad-white",
           {
@@ -263,7 +263,13 @@ const Hero = () => {
           },
           "<"
         )
-
+        .to(
+          "#hero-ipad",
+          {
+            autoAlpha: 0,
+          },
+          ">"
+        )
         //////////////////////////
         .set(
           "#intro-content",
@@ -611,10 +617,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        )
-        .to("#para_text_01", {
-          opacity: 0,
-        });
+        );
+      // .to("#para_text_01", {
+      //   opacity: 0,
+      // });
     });
 
     mm.add("(min-width: 992px) and (max-width:1599.98px)", () => {
@@ -1170,10 +1176,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        )
-        .to("#para_text_01", {
-          opacity: 0,
-        });
+        );
+      // .to("#para_text_01", {
+      //   opacity: 0,
+      // });
     });
 
     mm.add("(min-width: 576px) and (max-width:991.98px)", () => {
@@ -1721,10 +1727,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        )
-        .to("#para_text_01", {
-          opacity: 0,
-        });
+        );
+      // .to("#para_text_01", {
+      //   opacity: 0,
+      // });
     });
 
     mm.add("(max-width:575.98px)", () => {
@@ -2249,10 +2255,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        )
-        .to("#para_text_01", {
-          opacity: 0,
-        });
+        );
+      // .to("#para_text_01", {
+      //   opacity: 0,
+      // });
     });
   }, []);
 
