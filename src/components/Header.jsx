@@ -87,7 +87,7 @@ const Header = () => {
           </ul>
           <div className="d-flex d-none d-lg-flex align-items-center gap-5">
             <a
-              className="mb-0 fw_bold font_sm color_white_off parliamone sentia_link me-2"
+              className="mb-0 fw-bold font_sm color_white_off parliamone sentia_link me-2"
               href="/"
             >
               Sentiamoci
@@ -145,7 +145,7 @@ const Header = () => {
               </li>
               <a
                 onClick={() => setNavShow(false)}
-                className="mb-0 fw_bold font_lg color_white_off sentia_link"
+                className="mb-0 fw-bold font_lg color_white_off sentia_link"
                 href="/"
               >
                 Sentiamoci
