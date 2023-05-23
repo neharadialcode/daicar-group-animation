@@ -1259,6 +1259,9 @@ const Hero = () => {
           },
           ">"
         )
+        .to("#hero-ipad", {
+          yPercent: -200,
+        })
         .to(
           "#hero-ipad-white",
           {
