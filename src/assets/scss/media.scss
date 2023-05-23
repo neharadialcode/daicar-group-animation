@@ -372,8 +372,18 @@
   .hero_e_text {
     width: 13px;
   }
+  .tabs_lottie {
+    top: 27% !important;
+    width: 60% !important;
+    left: 19% !important;
+  }
   .tabs_lottie_1 {
-    top: 60px;
+    top: 230px;
+    width: 60% !important;
+    left: 19% !important;
+  }
+  .tab_text_position {
+    transform: translateY(-106px) !important;
   }
   .arrow_tabs {
     left: 5%;
@@ -418,12 +428,22 @@
   }
   .i_pad_img_2 {
     margin-left: -5px;
-    transform: scale(0.78);
-    margin-top: 116px;
+    transform: scale(0.67);
+    margin-top: 81px;
   }
   .hero_slide_1 h3,
   .hero_slide_2 h3 {
-    font-size: 62px !important;
+    font-size: 54px !important;
+  }
+  .ipad_img {
+    height: 65vh !important;
+    padding-bottom: 30px;
+  }
+  #main-content {
+    transform: translate3d(0px, -70px, 0px) !important;
+  }
+  .hero_slide_para_2 {
+    font-size: 23px !important;
   }
   .meeting_para .common_button {
     font-size: 20px !important;
@@ -743,11 +763,11 @@
   .i_pad_img_2 {
     margin-left: unset;
   }
-  .tabs_lottie {
-    top: 0%;
-  }
   .tabs_lottie_width {
     width: 100%;
+  }
+  .tabs_lottie {
+    top: 0%;
   }
   .tabs_lottie_1 {
     top: 20px;
