@@ -10,6 +10,7 @@ import businessTabImg from "../assets/images/png/arrow-tab-img.png";
 import outlineArrow from "../assets/outlineArrow.svg";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const Business = () => {
   let tl;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);

@@ -424,7 +424,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
       <div className="vh-100 overflow-hidden about_parent z_5 top_minus_space d-lg-none">
         <div className="position-relative h-100 z_1">
           <div className="position-absolute d-none d-sm-block d-lg-none z_negative">
