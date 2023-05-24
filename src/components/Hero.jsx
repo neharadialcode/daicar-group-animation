@@ -1123,9 +1123,9 @@ const Hero = () => {
         scale: 0.8,
       });
       gsap.set(".arrow-hero-two", {
-        xPercent: 58,
+        xPercent: 80,
         yPercent: 48,
-        scale: 0.3,
+        scale: 0.4,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -54,
