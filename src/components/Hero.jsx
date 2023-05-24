@@ -1169,6 +1169,9 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -50,
       });
+      // gsap.set(".ipad_img_2", {
+      //   scale: 2,
+      // });
 
       tl = gsap.timeline({
         scrollTrigger: {
@@ -1260,9 +1263,13 @@ const Hero = () => {
           },
           ">"
         )
-        .to("#hero-ipad", {
+        .to(["#hero-ipad", "#main-content"], {
           yPercent: -200,
         })
+        // .to("#main-content", {
+        //   yPercent: -200,
+        //   autoAlpha: 0,
+        // })
         .to(
           "#hero-ipad-white",
           {
