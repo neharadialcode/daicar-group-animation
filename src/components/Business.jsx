@@ -480,25 +480,22 @@ const Business = () => {
         },
       });
 
-      tl.addLabel("business_accordion_1")
+      tl
         .from(".business_tab_1", {
           xPercent: "-150",
           stagger: 0.3,
           duration: 1,
         })
-        .addLabel("business_accordion_2")
         .from(".business_tab_2", {
           xPercent: "150",
           stagger: 0.3,
           duration: 1,
         })
-        .addLabel("business_accordion_3")
         .from(".business_tab_3", {
           xPercent: "-150",
           stagger: 0.3,
           duration: 1,
         })
-        .addLabel("business_accordion_4")
         .from(".business_tab_4", {
           xPercent: "150",
           stagger: 0.3,
