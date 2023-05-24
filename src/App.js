@@ -42,3 +42,6 @@ function App() {
 }
 
 export default App;
+// .to(["#para_text_01 button", "#para_text_01 p"], {
+//   color: "white",
+// });
