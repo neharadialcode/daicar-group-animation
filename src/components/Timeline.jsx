@@ -4,8 +4,7 @@ import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
 import timelineImg2 from "../assets/images/png/timeline-content-img-2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import cake from "../assets/images/svg/timeline-cake.svg";
-import largeArrow2 from "../assets/arrow-large-2.svg";
+import largeArrow2 from "../assets/images/svg/arrow-large-2.svg";
 gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
   useEffect(() => {
@@ -482,7 +481,8 @@ const Timeline = () => {
                 .right -
               document
                 .querySelector("#timeline-heading-container")
-                .parentNode.getBoundingClientRect().left-60
+                .parentNode.getBoundingClientRect().left -
+              60
             }px`,
           },
           "<1"
@@ -778,19 +778,23 @@ const Timeline = () => {
               <div className="text-center pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
                 <p className="font_5xl text-white text-center">
                   Ideata da
-                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                    noi
-                  </button>
+                  <a href="#partners">
+                    <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                      noi
+                    </button>
+                  </a>
                   grazie all’esperienza acquisita nel
-                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                    tempo
-                  </button>
+                  <a href="#partners">
+                    <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                      tempo
+                    </button>
+                  </a>
                 </p>
               </div>
               <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block me-2">
                 <img src={timelineLeftIcon} alt="timeline-left-icon" />
               </div>
-              <div className="d-flex justify-contentbetween flex-column align-items-center flex-grow-1 w-100 text_parent_max_w">
+              <div className="flex-grow-1 w-100 text_parent_max_w">
                 <div className="text_parent_height w-100 position-relative">
                   <div
                     id="timeline-heading-container"
@@ -865,7 +869,7 @@ const Timeline = () => {
                       <p className="font_md color_white_off">
                         Il 2 Ottobre faremo <br /> otto anni.
                       </p>
-                      <button className="font_sm color_white_off timeline_btn bg-transparent">
+                      <button className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012">
                         compleanno
                       </button>
                     </div>

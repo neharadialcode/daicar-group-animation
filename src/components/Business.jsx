@@ -7,7 +7,7 @@ import businessFour from "../assets/images/png/business-4.png";
 import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
-import outlineArrow from "../assets/outlineArrow.svg";
+import outlineArrow from "../assets/images/svg/outlineArrow.svg";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -533,9 +533,11 @@ const Business = () => {
           <div className="text-center px-4 px-lg-0 z_1 third_heading">
             <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-3 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 mb-0 custom_business_heading d-flex align-items-center justify-content-center flex-wrap">
               Progettiamo soluzioni
-              <button className="custom_tab_button_012 cursor-pointer align-middle d-flex align-items-center justify-content-center business_btn hero_heading_btn color_dark_gray bg_light_green my-2 mb-sm-0 mt-sm-2 mx-3">
-                personalizzate
-              </button>
+              <a href="#about_section">
+                <button className="custom_tab_button_012 cursor-pointer align-middle d-flex align-items-center justify-content-center business_btn hero_heading_btn color_dark_gray bg_light_green my-2 mb-sm-0 mt-sm-2 mx-3">
+                  personalizzate
+                </button>
+              </a>
               per il tuo business
             </p>
           </div>

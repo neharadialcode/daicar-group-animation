@@ -42,7 +42,7 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center">
+      <div className="pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center" id="footer">
         <BackToTop />
         <img
           className="position-absolute footer_background_set d-sm-none"

@@ -8,8 +8,8 @@ import Crm from "./components/Crm";
 import Meeting from "./components/Meeting";
 import Footer from "./components/Footer";
 import ScrollChatIcon from "./components/ScrollChatIcon";
-import largeArrow from "./assets/largeArrow.svg";
-import largeArrow2 from "./assets/arrow-large-2.svg";
+import largeArrow from "./assets/images/svg/largeArrow.svg";
+import largeArrow2 from "./assets/images/svg/arrow-large-2.svg";
 
 function App() {
   return (

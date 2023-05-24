@@ -6,7 +6,7 @@ import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
 import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
-import aboutArrow from "../assets/about-arrow.png";
+import aboutArrow from "../assets/images/png/about-arrow.png";
 
 const About = () => {
   useEffect(() => {
@@ -280,7 +280,7 @@ const About = () => {
 
   return (
     <>
-      <div className="position-relative">
+      <div className="position-relative" id="about_section">
         <div id="about" className="vh-100 w-100 z-10 d-none d-lg-block">
           <div className="position-absolute z-1 end-0 d-none d-xxl-block pe-5 me-5 left_text_about">
             <img src={lefttextImg} alt="business-small-arrow-2" />
@@ -289,13 +289,17 @@ const About = () => {
             <div className="d-flex align-items-center flex-column justify-content-between position-relative h-100 top_csutom_space z-10">
               <p className="font_5xl text-white pt-sm-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing px-2 px-sm-0">
                 Ideata da
-                <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                  noi
-                </button>
+                <a href="#timeline">
+                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                    noi
+                  </button>
+                </a>
                 grazie all’esperienza acquisita nel
-                <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                  tempo
-                </button>
+                <a href="#timeline">
+                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                    tempo
+                  </button>
+                </a>
                 <span className="color_dark_gray">.</span>
               </p>
               <div
@@ -429,13 +433,17 @@ const About = () => {
             <div className="text-center pt-5">
               <p className="font_5xl text-white pt-sm-5 px-sm-5 px-lg-0 mx-sm-5 mx-lg-0 custom_letter_spacing px-2 px-sm-0">
                 Ideata da
-                <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                  noi
-                </button>
+                <a href="#timeline">
+                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                    noi
+                  </button>
+                </a>
                 grazie all’esperienza acquisita nel
-                <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                  tempo
-                </button>
+                <a href="#timeline">
+                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                    tempo
+                  </button>
+                </a>
                 <span className="color_dark_gray">.</span>
               </p>
             </div>

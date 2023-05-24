@@ -146,7 +146,7 @@ const Partners = () => {
       className="partner_parent d-flex justify-content-center align-items-center overflow-hidden min-vh-100"
     >
       <div className="container">
-        <div className="position-absolute arrowbtn_set">
+        <div className="position-absolute arrowbtn_set d-none d-lg-block">
           <img src={leftTextImg} alt="partner-left-text-img" />
         </div>
         <div className="partner_text">
@@ -158,9 +158,11 @@ const Partners = () => {
               <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
                 Non cerchiamo clienti ma
               </p>
-              <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
-                partner
-              </button>
+              <a href="#CRM">
+                <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
+                  partner
+                </button>
+              </a>
               <span className="font_lg">.</span>
             </div>
           </div>

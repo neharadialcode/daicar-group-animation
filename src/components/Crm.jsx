@@ -8,7 +8,6 @@ import crmLeftIcon from "../assets/images/png/crm-left-icon.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -70,9 +69,11 @@ const Crm = () => {
             <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
               É possibile integrare i dati con il tuo
             </p>
-            <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button common_btn">
-              CRM
-            </button>
+            <a href="#contatti">
+              <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button common_btn">
+                CRM
+              </button>
+            </a>
             <span className="font_lg">.</span>
           </div>
           {!isMobileDevice && (
