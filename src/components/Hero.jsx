@@ -2188,7 +2188,7 @@ const Hero = () => {
                 className=" color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center"
               >
                 Il futuro delle tue
-                <button className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-2 mx-sm-3">
+                <button className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3">
                   vendite
                 </button>
                 è digitale
