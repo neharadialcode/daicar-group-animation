@@ -587,7 +587,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        );
+        )
+        .to(["#para_text_01 button", "#para_text_01 p"], {
+          color: "white",
+        });
     });
 
     mm.add("(min-width: 992px) and (max-width:1599.98px)", () => {
@@ -1112,7 +1115,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        );
+        )
+        .to(["#para_text_01 button", "#para_text_01 p"], {
+          color: "white",
+        });
     });
 
     mm.add("(min-width: 576px) and (max-width:991.98px)", () => {
@@ -1169,10 +1175,6 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -50,
       });
-      // gsap.set(".ipad_img_2", {
-      //   scale: 2,
-      // });
-
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
@@ -1266,10 +1268,6 @@ const Hero = () => {
         .to(["#hero-ipad", "#main-content"], {
           yPercent: -200,
         })
-        // .to("#main-content", {
-        //   yPercent: -200,
-        //   autoAlpha: 0,
-        // })
         .to(
           "#hero-ipad-white",
           {
@@ -1639,7 +1637,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        );
+        )
+        .to(["#para_text_01 button", "#para_text_01 p"], {
+          color: "white",
+        });
     });
 
     mm.add("(max-width:575.98px)", () => {
@@ -2160,7 +2161,10 @@ const Hero = () => {
             backgroundColor: "#29424D",
           },
           "+=2"
-        );
+        )
+        .to(["#para_text_01 button", "#para_text_01 p"], {
+          color: "white",
+        });
     });
   }, []);
 
