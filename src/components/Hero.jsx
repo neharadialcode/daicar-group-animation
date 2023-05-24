@@ -88,7 +88,7 @@ const Hero = () => {
       gsap.set("#hero-large-arrow", {
         left: "50%",
         xPercent: -50,
-        top: "70%",
+        top: "76%",
       });
       gsap.set("#intro-content", {
         display: "none",
@@ -409,7 +409,7 @@ const Hero = () => {
           "-=.5"
         )
         .to("#hero-large-arrow", {
-          top: "68%",
+          top: "64%",
         })
         .to(
           ".arrow_tabs",
@@ -475,7 +475,7 @@ const Hero = () => {
           rotate: "-3deg",
         })
         .to("#hero-large-arrow", {
-          top: "66%",
+          top: "58%",
         })
         .to(
           ".arrow_tabs",
@@ -544,7 +544,7 @@ const Hero = () => {
           "-=.5"
         )
         .to("#hero-large-arrow", {
-          top: "64%",
+          top: "52%",
         })
         .fromTo(
           ".arrow_tabs",
@@ -613,7 +613,7 @@ const Hero = () => {
       gsap.set("#hero-large-arrow", {
         left: "50%",
         xPercent: -50,
-        top: "75%",
+        top: "70%",
       });
       gsap.from("#hero-main-heading", {
         yPercent: 100,
@@ -784,7 +784,7 @@ const Hero = () => {
           "-=.5"
         )
         .to("#hero-large-arrow", {
-          top: "73%",
+          top: "68%",
         })
         .fromTo(
           ".card_img_0",
@@ -856,7 +856,7 @@ const Hero = () => {
           rotate: 0,
         })
         .to("#hero-large-arrow", {
-          top: "70%",
+          top: "63%",
         })
         .to(
           ".active_button_1",
@@ -934,7 +934,7 @@ const Hero = () => {
           "-=.5"
         )
         .to("#hero-large-arrow", {
-          top: "68%",
+          top: "58%",
         })
         .to(
           ".arrow_tabs",
@@ -1000,7 +1000,7 @@ const Hero = () => {
           rotate: "-3deg",
         })
         .to("#hero-large-arrow", {
-          top: "66%",
+          top: "53%",
         })
         .to(
           ".arrow_tabs",
@@ -1069,7 +1069,7 @@ const Hero = () => {
           "-=.5"
         )
         .to("#hero-large-arrow", {
-          top: "64%",
+          top: "48%",
         })
         .fromTo(
           ".arrow_tabs",
@@ -1123,9 +1123,9 @@ const Hero = () => {
         scale: 0.8,
       });
       gsap.set(".arrow-hero-two", {
-        xPercent: 58,
+        xPercent: 80,
         yPercent: 48,
-        scale: 0.3,
+        scale: 0.4,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -54,
@@ -1169,6 +1169,9 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -50,
       });
+      // gsap.set(".ipad_img_2", {
+      //   scale: 2,
+      // });
 
       tl = gsap.timeline({
         scrollTrigger: {
@@ -1260,9 +1263,13 @@ const Hero = () => {
           },
           ">"
         )
-        .to("#hero-ipad", {
+        .to(["#hero-ipad", "#main-content"], {
           yPercent: -200,
         })
+        // .to("#main-content", {
+        //   yPercent: -200,
+        //   autoAlpha: 0,
+        // })
         .to(
           "#hero-ipad-white",
           {
