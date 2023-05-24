@@ -32,22 +32,21 @@ const Business = () => {
     });
     gsap.set("#solution-outlineArrow", {
       left: "50%",
-      top: "80%",
+      top: "50%",
       yPercent: -50,
       xPercent: -50,
     });
 
     mm.add("(min-width:1600px)", () => {
-      tl = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".business_parent",
-            start: "top top",
-            end: "+=400%",
-            scrub: 3,
-            pin: true,
-          },
-        })
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".business_parent",
+          start: "top bottom",
+          scrub: true,
+        },
+      });
+
+      tl2
         .to("#hero-large-arrow", {
           scale: 1.5,
           top: "20%",
@@ -56,35 +55,35 @@ const Business = () => {
         .to(
           "#solution-outlineArrow",
           {
-            yPercent: -80,
+            yPercent: -120,
             immediateRender: false,
           },
           "<"
         );
-      tl.fromTo(
-        ".main_text",
-        {
-          scale: 0.5,
-          autoAlpha: 0,
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".business_parent",
+          start: "top top",
+          end: "+=400%",
+          scrub: 3,
+          pin: true,
         },
-        {
-          scale: 1,
-          duration: 1,
-          autoAlpha: 1,
-        }
-      )
-        .to(".business_heading_1", {
-          autoAlpha: 0.5,
-        })
-        .to(".business_heading_2", {
-          autoAlpha: 0.5,
-        })
-        .to(".business_heading_3", {
-          autoAlpha: 0.5,
-        })
-        .to(".business_heading_4", {
-          autoAlpha: 0.5,
-        })
+      });
+      tl.from(".main_text", {
+        autoAlpha: 0,
+        scale: 0.5,
+      })
+        .to(
+          [
+            ".business_heading_1",
+            ".business_heading_2",
+            ".business_heading_3",
+            ".business_heading_4",
+          ],
+          {
+            autoAlpha: 0.5,
+          }
+        )
         .to(".small_icon", {
           top: "-5px",
         })
@@ -255,16 +254,15 @@ const Business = () => {
     });
 
     mm.add("(min-width:992px) and (max-width:1599.98px)", () => {
-      tl = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".business_parent",
-            start: "top top",
-            end: "+=600%",
-            scrub: 1,
-            pin: true,
-          },
-        })
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".business_parent",
+          start: "top bottom",
+          scrub: true,
+        },
+      });
+
+      tl2
         .to("#hero-large-arrow", {
           scale: 1.5,
           top: "20%",
@@ -273,34 +271,35 @@ const Business = () => {
         .to(
           "#solution-outlineArrow",
           {
-            yPercent: -120,
+            yPercent: -150,
             immediateRender: false,
           },
           "<"
         );
-      tl.fromTo(
-        ".main_text",
-        {
-          scale: 0.5,
-          autoAlpha: 0,
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".business_parent",
+          start: "top top",
+          end: "+=600%",
+          scrub: 1,
+          pin: true,
         },
-        {
-          scale: 1,
-          autoAlpha: 1,
-        }
-      )
-        .to(".business_heading_1", {
-          autoAlpha: 0.5,
-        })
-        .to(".business_heading_2", {
-          autoAlpha: 0.5,
-        })
-        .to(".business_heading_3", {
-          autoAlpha: 0.5,
-        })
-        .to(".business_heading_4", {
-          autoAlpha: 0.5,
-        })
+      });
+      tl.from(".main_text", {
+        autoAlpha: 0,
+        scale: 0.5,
+      })
+        .to(
+          [
+            ".business_heading_1",
+            ".business_heading_2",
+            ".business_heading_3",
+            ".business_heading_4",
+          ],
+          {
+            autoAlpha: 0.5,
+          }
+        )
         .to(".small_icon", {
           top: "13px",
         })
@@ -480,12 +479,11 @@ const Business = () => {
         },
       });
 
-      tl
-        .from(".business_tab_1", {
-          xPercent: "-150",
-          stagger: 0.3,
-          duration: 1,
-        })
+      tl.from(".business_tab_1", {
+        xPercent: "-150",
+        stagger: 0.3,
+        duration: 1,
+      })
         .from(".business_tab_2", {
           xPercent: "150",
           stagger: 0.3,
@@ -519,7 +517,7 @@ const Business = () => {
         className="business_parent overflow-hidden third_sec_height z_1 pt-5 min-vh-100"
         id="servizi"
       >
-        <div className="d-flex flex-column justify-content-center">
+        <div className="d-flex flex-column justify-content-center pt-5">
           <div className="position-absolute d-none d-sm-block d-lg-none">
             <img
               className="w-100 small_tab_arrow_img"
@@ -720,7 +718,7 @@ const Business = () => {
         <div>
           <img
             id="solution-outlineArrow"
-            className="position-absolute pointer-events-none origin-center h-[70vh] w-100"
+            className="position-absolute pointer-events-none origin-center w-100 business_outline_img"
             src={outlineArrow}
             alt="outline-img"
           />
