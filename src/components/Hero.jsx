@@ -1288,9 +1288,6 @@ const Hero = () => {
           },
           ">"
         )
-        .to(".tabs_content_parent", {
-          autoAlpha: 0,
-        })
         .to(
           "#hero-ipad-white",
           {
@@ -1298,6 +1295,9 @@ const Hero = () => {
           },
           "<"
         )
+        .to(".tabs_content_parent", {
+          autoAlpha: 0,
+        })
         .to(
           "#hero-ipad-white",
           {
@@ -1960,6 +1960,9 @@ const Hero = () => {
           },
           "<"
         )
+        .to(".tabs_content_parent", {
+          autoAlpha: 0,
+        })
         .to(
           "#hero-ipad-white",
           {
@@ -1968,6 +1971,9 @@ const Hero = () => {
           },
           ">"
         )
+        .to(".tabs_content_parent", {
+          autoAlpha: 1,
+        })
         .set(
           "#main-content",
           {
