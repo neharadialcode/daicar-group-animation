@@ -223,13 +223,15 @@ const Hero = () => {
           },
           "<"
         )
-        .to(
-          "#hero-ipad-white",
-          {
-            scale: 0.8,
-          }, //[\pt]]\
-          ">"
-        )
+        .to(".tabs_content_parent", {
+          autoAlpha: 0,
+        })
+        .to("#hero-ipad-white", {
+          scale: 0.8,
+        })
+        .to(".tabs_content_parent", {
+          autoAlpha: 1,
+        })
         .set(
           "#main-content",
           {
@@ -764,13 +766,15 @@ const Hero = () => {
           },
           "<"
         )
-        .to(
-          "#hero-ipad-white",
-          {
-            scale: 0.8,
-          },
-          ">"
-        )
+        .to(".tabs_content_parent", {
+          autoAlpha: 0,
+        })
+        .to("#hero-ipad-white", {
+          scale: 0.8,
+        })
+        .to(".tabs_content_parent", {
+          autoAlpha: 1,
+        })
         .set(
           "#main-content",
           {
@@ -1415,6 +1419,9 @@ const Hero = () => {
           },
           ">"
         )
+        .to(".tabs_content_parent", {
+          autoAlpha: 0,
+        })
         .to(
           "#hero-ipad-white",
           {
@@ -1430,6 +1437,9 @@ const Hero = () => {
           },
           ">"
         )
+        .to(".tabs_content_parent", {
+          autoAlpha: 1,
+        })
         .set(
           "#main-content",
           {
@@ -2494,7 +2504,7 @@ const Hero = () => {
                     alt="img"
                   /> */}
                   <div className="text-center pb-sm-5 tabs_parent d-flex align-items-end">
-                    <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0">
+                    <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0 tabs_content_parent">
                       {buttonData.map((obj, index) => (
                         <div className="px-2 pt-sm-2" key={index}>
                           <div className={`card_img_${index}`}>
