@@ -6,11 +6,11 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
 import ipadWhite from "../assets/images/png/ipad-white.png";
-import ipad_mockup from "../assets/images/png/hero_slide_iPad_mockup_02.png";
+// import ipad_mockup from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
-import tabSmImg from "../assets/images/png/tab-frame-sm.png";
-import tabImg1 from "../assets/images/png/tab-frame.png";
+// import tabSmImg from "../assets/images/png/tab-frame-sm.png";
+// import tabImg1 from "../assets/images/png/tab-frame.png";
 import Lottie from "react-lottie-player";
 import comeLottie from "../assets/lotties/tabs-1.json";
 import marketingLottie from "../assets/lotties/tabs-2.json";
@@ -1173,141 +1173,10 @@ const Hero = () => {
           autoAlpha: 0,
         }
       );
-
       gsap.set("#hero-outline-arrow", {
         autoAlpha: 0,
         yPercent: 100,
       });
-
-      // gsap.set(["#hero-ipad", "#hero-ipad-white"], {
-      //   scale: 2,
-      //   top: "50%",
-      //   left: "50%",
-      //   xPercent: -50,
-      //   yPercent: -50,
-      // });
-      // tl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: "#hero",
-      //     start: "top top",
-      //     end: "+=500%",
-      //     pin: true,
-      //     scrub: 1,
-      //   },
-      // });
-
-      // tl.to(".arrow-hero-one", {
-      //   yPercent: -200,
-      //   autoAlpha: 0,
-      // })
-      //   .to(
-      //     ".arrow-hero-two",
-      //     {
-      //       yPercent: -200,
-      //       autoAlpha: 0,
-      //     },
-      //     "<"
-      //   )
-      //   .to(
-      //     ".arrow-hero-three",
-      //     {
-      //       yPercent: -300,
-      //       autoAlpha: 0,
-      //     },
-      //     "<"
-      //   )
-      //   .to("#hero-main-heading", {
-      //     yPercent: 100,
-      //     opacity: 0,
-      //   })
-      //   .set("#hero-outline-arrow", {
-      //     autoAlpha: 1,
-      //   })
-      //   .set(
-      //     "#hero-ipad",
-      //     {
-      //       autoAlpha: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(["#hero-sub-heading-one", "#hero-para-one"], {
-      //     autoAlpha: 1,
-      //   })
-      //   .to("#hero-ipad", {
-      //     scale: 1,
-      //   })
-      //   .to(
-      //     "#main-content",
-      //     {
-      //       scale: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to("#hero-outline-arrow", {
-      //     yPercent: -200,
-      //     duration: 5,
-      //   })
-      //   .to(
-      //     ["#hero-sub-heading-one", "#hero-para-one"],
-      //     {
-      //       autoAlpha: 0,
-      //     },
-      //     "<1"
-      //   )
-      //   .to(
-      //     ["#hero-sub-heading-two", "#hero-para-two"],
-      //     {
-      //       autoAlpha: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(
-      //     "#hero_section",
-      //     {
-      //       height: 0,
-      //       duration: 2,
-      //     },
-      //     "<"
-      //   )
-      //   .set(
-      //     "#hero-ipad-white",
-      //     {
-      //       scale: 1,
-      //     },
-      //     ">"
-      //   )
-      //   .to(
-      //     "#hero-ipad",
-      //     {
-      //       autoAlpha: 0,
-      //     },
-      //     ">"
-      //   )
-      //   .to(["#hero-ipad", "#main-content"], {
-      //     yPercent: -200,
-      //   })
-      //   .to(
-      //     "#hero-ipad-white",
-      //     {
-      //       opacity: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(
-      //     "#hero-ipad-white",
-      //     {
-      //       scale: 0.8,
-      //     },
-      //     ">"
-      //   )
-      //   .set(
-      //     "#main-content",
-      //     {
-      //       display: "none",
-      //     },
-      //     "<"
-      //   )
-
       gsap.set(["#hero-ipad", "#hero-ipad-white"], {
         scale: 2,
         top: "45%",
@@ -1832,18 +1701,147 @@ const Hero = () => {
           autoAlpha: 0,
         }
       );
-
       gsap.set("#hero-outline-arrow", {
         autoAlpha: 0,
         yPercent: 100,
       });
 
+      // gsap.set(["#hero-ipad", "#hero-ipad-white"], {
+      //   scale: 2,
+      //   top: "50%",
+      //   left: "50%",
+      //   xPercent: -50,
+      //   yPercent: -50,
+      // });
+      // tl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: "#hero",
+      //     start: "top top",
+      //     end: "+=500%",
+      //     pin: true,
+      //     scrub: 1,
+      //   },
+      // });
+      // tl.to(".arrow-hero-one", {
+      //   yPercent: -200,
+      //   autoAlpha: 0,
+      // })
+      //   .to(
+      //     ".arrow-hero-three",
+      //     {
+      //       yPercent: -300,
+      //       autoAlpha: 0,
+      //     },
+      //     "<"
+      //   )
+      //   .to("#hero-main-heading", {
+      //     yPercent: 100,
+      //     opacity: 0,
+      //   })
+      //   .to(
+      //     ".arrow-hero-two",
+      //     {
+      //       xPercent: 28,
+      //       yPercent: -11,
+      //       scale: 0.1,
+      //       rotate: "45deg",
+      //     },
+      //     "<"
+      //   )
+      //   .set("#hero-outline-arrow", {
+      //     autoAlpha: 1,
+      //   })
+      //   .set(
+      //     "#hero-ipad",
+      //     {
+      //       autoAlpha: 1,
+      //     },
+      //     "<"
+      //   )
+      //   .to(["#hero-sub-heading-one", "#hero-para-one"], {
+      //     autoAlpha: 1,
+      //   })
+      //   .to("#hero-ipad", {
+      //     scale: 1,
+      //   })
+      //   .to(
+      //     "#main-content",
+      //     {
+      //       scale: 1,
+      //     },
+      //     "<"
+      //   )
+      //   .to("#hero-outline-arrow", {
+      //     yPercent: -200,
+      //     duration: 5,
+      //   })
+      //   .to(
+      //     ["#hero-sub-heading-one", "#hero-para-one"],
+      //     {
+      //       autoAlpha: 0,
+      //     },
+      //     "<1"
+      //   )
+      //   .to(
+      //     ["#hero-sub-heading-two", "#hero-para-two"],
+      //     {
+      //       autoAlpha: 1,
+      //     },
+      //     "<"
+      //   )
+      //   .to(
+      //     "#hero_section",
+      //     {
+      //       height: 0,
+      //       duration: 2,
+      //     },
+      //     "<"
+      //   )
+      //   .set(
+      //     "#hero-ipad-white",
+      //     {
+      //       scale: 1,
+      //     },
+      //     ">"
+      //   )
+      //   .to(
+      //     "#hero-ipad",
+      //     {
+      //       autoAlpha: 0,
+      //     },
+      //     ">"
+      //   )
+      //   .to("#hero-ipad", {
+      //     yPercent: -200,
+      //   })
+      //   .to(
+      //     "#hero-ipad-white",
+      //     {
+      //       opacity: 1,
+      //     },
+      //     "<"
+      //   )
+      //   .to(
+      //     "#hero-ipad-white",
+      //     {
+      //       scale: 0.8,
+      //     },
+      //     ">"
+      //   )
+      //   .set(
+      //     "#main-content",
+      //     {
+      //       display: "none",
+      //     },
+      //     "<"
+      //   )
+
       gsap.set(["#hero-ipad", "#hero-ipad-white"], {
         scale: 2,
-        top: "50%",
+        top: "45%",
         left: "50%",
         xPercent: -50,
-        yPercent: -50,
+        yPercent: -44,
       });
 
       tl = gsap.timeline({
@@ -1855,6 +1853,7 @@ const Hero = () => {
           scrub: 1,
         },
       });
+
       tl.to(".arrow-hero-one", {
         yPercent: -200,
         autoAlpha: 0,
@@ -1874,8 +1873,8 @@ const Hero = () => {
         .to(
           ".arrow-hero-two",
           {
-            xPercent: 28,
-            yPercent: -11,
+            xPercent: 53,
+            yPercent: 3,
             scale: 0.1,
             rotate: "45deg",
           },
@@ -1944,9 +1943,6 @@ const Hero = () => {
           },
           ">"
         )
-        .to("#hero-ipad", {
-          yPercent: -200,
-        })
         .to(
           "#hero-ipad-white",
           {
@@ -1958,6 +1954,7 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             scale: 0.8,
+            top: "35%",
           },
           ">"
         )
