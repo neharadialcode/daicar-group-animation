@@ -700,19 +700,26 @@
   .i_pad_img_2 {
     max-height: 670px;
   }
-  .tab_text_position {
-    transform: translateY(-50px) !important;
+  #main-assets {
+    transform: translateY(70px);
   }
-  .tabs_lottie {
-    left: 12% !important;
-    width: 75% !important;
-    top: 20% !important;
-  }
+  .tabs_lottie,
   .tabs_lottie_1 {
-    top: 280px !important;
-    left: 1% !important;
-    width: 90% !important;
+    top: 36% !important;
   }
+  // .tab_text_position {
+  //   transform: translateY(-50px) !important;
+  // }
+  // .tabs_lottie {
+  //   left: 12% !important;
+  //   width: 75% !important;
+  //   top: 20% !important;
+  // }
+  // .tabs_lottie_1 {
+  //   top: 280px !important;
+  //   left: 1% !important;
+  //   width: 90% !important;
+  // }
 }
 
 @media (max-width: 767.98px) {
