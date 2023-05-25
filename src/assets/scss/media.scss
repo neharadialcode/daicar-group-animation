@@ -127,9 +127,9 @@
   // .about_icon_2 {
   //   max-width: 570px !important;
   // }
-  .about_col_content {
-    max-width: 660px !important;
-  }
+  // .about_col_content {
+  //   max-width: 660px !important;
+  // }
   // .about_text_1 {
   //   h4 {
   //     max-width: 900px;
@@ -229,11 +229,15 @@
   //   width: 70% !important;
   //   left: 15% !important;
   // }
+  .tabs_parent {
+    height: 144vh;
+  }
   .tabs_lottie {
     top: 20%;
   }
+  .tabs_lottie,
   .tabs_lottie_1 {
-    top: 205px;
+    top: 38% !important;
   }
   .i_pad_img_2 {
     transform: scale(0.76);
@@ -273,32 +277,26 @@
     max-width: 39px !important;
     left: -60px !important;
   }
-  // .meeting_e_icon {
-  //   max-width: 14px;
-  //   transform: translate(0px, 1px);
-  // }
   .i_pad_img_2 {
     transform: scale(0.78);
     margin-top: 52px;
   }
-  .tabs_lottie {
-    top: 21%;
+  // .tabs_lottie {
+  //   top: 21%;
+  // }
+  // .tabs_lottie_width {
+  //   width: 70%;
+  // }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 36.5% !important;
   }
 }
 
 @media (max-width: 1399.98px) {
-  // .about_e_text {
-  //   width: 19px;
-  // }
   .timeline_text1_max_w {
     max-width: 25rem;
   }
-  // .big_icon {
-  //   transform: scale(2);
-  // }
-  // .about_icon_2 {
-  //   max-width: 370px;
-  // }
   .small_icon {
     left: 0%;
   }
@@ -331,16 +329,19 @@
   .manager_content {
     transform: translateY(-160px);
   }
-  // .meeting_e_icon {
-  //   max-width: 12px;
-  //   transform: translate(0px, 2px);
-  // }
   .i_pad_img_2 {
     transform: scale(0.84);
     margin-top: 86px;
   }
   .tab_text_position {
     transform: translateY(-76px);
+  }
+  #main-assets {
+    padding-bottom: 104px;
+  }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 41% !important;
   }
 }
 
@@ -367,9 +368,6 @@
   .timeline_car_icon {
     max-width: 260px;
   }
-  // .about_e_text {
-  //   width: 17px;
-  // }
   .text_parent_height {
     height: 75%;
   }
@@ -380,12 +378,12 @@
   //   width: 13px;
   // }
   .tabs_lottie {
-    top: 27% !important;
+    top: 44% !important;
     width: 60% !important;
     left: 19% !important;
   }
   .tabs_lottie_1 {
-    top: 230px;
+    top: 44% !important;
     width: 60% !important;
     left: 19% !important;
   }
@@ -395,12 +393,6 @@
   .arrow_tabs {
     left: 5%;
   }
-  // .carplanner_cards {
-  //   width: 420px;
-  // }
-  // .carplanner_logo {
-  //   max-width: 350px;
-  // }
   .small_icon_arrow {
     top: -5%;
     left: 0%;
@@ -415,9 +407,6 @@
       max-width: 42px;
     }
   }
-  // .about_icon_2 {
-  //   max-width: 300px !important;
-  // }
   .navbar_links.font_sm {
     font-size: 14px !important;
   }
@@ -428,10 +417,6 @@
   .hero_btn {
     padding: 8px 16px !important;
     border-radius: 6px !important;
-  }
-  .custom_height_tab_img {
-    height: 550px;
-    max-height: 450px;
   }
   .i_pad_img_2 {
     transform: scale(0.67);
@@ -481,9 +466,6 @@
     right: 2%;
     top: 3%;
   }
-  // .custom_partner_gap {
-  //   gap: 40px;
-  // }
   .noi_btn {
     padding: 8px 24px 12px !important;
   }
@@ -530,6 +512,9 @@
     max-width: 443px;
     margin-left: 24px;
   }
+  .tabs_parent {
+    height: 164vh;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -555,10 +540,6 @@
   .timeline_icon_3 {
     max-width: 200px;
   }
-  // .about_e_text {
-  //   width: 20px;
-  // }
-
   .timeline_text1_max_w {
     max-width: 45rem;
     top: 10%;
@@ -689,15 +670,13 @@
       top: -20px;
     }
   }
-
   .ipad_img {
-    height: 94vh !important;
+    height: 70vh !important;
+    max-width: 100%;
   }
-
   .manager_content {
     transform: translateY(-50px);
   }
-
   .hero-outline-arrow svg {
     width: 100vw;
   }
