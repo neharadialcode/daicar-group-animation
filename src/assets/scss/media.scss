@@ -365,9 +365,6 @@
   .timeline_car_icon {
     max-width: 260px;
   }
-  // .about_e_text {
-  //   width: 17px;
-  // }
   .text_parent_height {
     height: 75%;
   }
@@ -378,12 +375,12 @@
     width: 13px;
   }
   .tabs_lottie {
-    top: 27% !important;
+    top: 44% !important;
     width: 60% !important;
     left: 19% !important;
   }
   .tabs_lottie_1 {
-    top: 230px;
+    top: 44% !important;
     width: 60% !important;
     left: 19% !important;
   }
@@ -393,12 +390,6 @@
   .arrow_tabs {
     left: 5%;
   }
-  // .carplanner_cards {
-  //   width: 420px;
-  // }
-  // .carplanner_logo {
-  //   max-width: 350px;
-  // }
   .small_icon_arrow {
     top: -5%;
     left: 0%;
@@ -413,9 +404,6 @@
       max-width: 42px;
     }
   }
-  // .about_icon_2 {
-  //   max-width: 300px !important;
-  // }
   .navbar_links.font_sm {
     font-size: 14px !important;
   }
@@ -427,10 +415,10 @@
     padding: 8px 16px !important;
     border-radius: 6px !important;
   }
-  .custom_height_tab_img {
-    height: 550px;
-    max-height: 450px;
-  }
+  // .custom_height_tab_img {
+  //   height: 550px;
+  //   max-height: 450px;
+  // }
   .i_pad_img_2 {
     transform: scale(0.67);
     margin-left: -3px;
@@ -479,9 +467,6 @@
     right: 2%;
     top: 3%;
   }
-  // .custom_partner_gap {
-  //   gap: 40px;
-  // }
   .noi_btn {
     padding: 8px 24px 12px !important;
   }
@@ -527,6 +512,9 @@
   .arrow-hero-two {
     max-width: 443px;
     margin-left: 24px;
+  }
+  .tabs_parent {
+    height: 164vh;
   }
 }
 
