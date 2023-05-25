@@ -10,15 +10,15 @@
     transform: translateY(-10px);
   }
 }
-.hero_parent {
-  height: 100vh;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  margin-top: -2px !important;
-  z-index: 10;
-  background-color: var(--color-white-off);
-}
+// .hero_parent {
+//   height: 100vh;
+//   overflow: hidden;
+//   width: 100%;
+//   position: relative;
+//   margin-top: -2px !important;
+//   z-index: 10;
+//   background-color: var(--color-white-off);
+// }
 .hero_btn {
   font-size: var(--font-2xl) !important;
   border: 1px solid var(--color-white-off);
@@ -45,10 +45,10 @@
   right: 0;
   bottom: 0;
 }
-.hero_slide_parent {
-  position: relative;
-  z-index: -1;
-}
+// .hero_slide_parent {
+//   position: relative;
+//   z-index: -1;
+// }
 .i_pad_img {
   position: absolute;
   z-index: -1;
@@ -74,37 +74,37 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.carplanner_logo {
-  max-width: 490px;
-}
-.carplanner_cards {
-  width: 565px;
-}
-.carplanner_btn {
-  padding: 8px 36px 8px 36px;
-  background: rgba(83, 132, 153, 0.5);
-  border-radius: 10.9063px;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background: #ffffff;
-    color: var(--color-dark-gray) !important;
-    .car_img {
-      transform: scale(1.2) !important;
-    }
-    svg {
-      path {
-        fill: rgba(83, 132, 153, 1) !important;
-      }
-    }
-  }
-  svg {
-    transition: all 0.3s ease-in-out;
-  }
-  .car_img {
-    transform: scale(1) !important;
-    transition: all 0.3s ease-in-out;
-  }
-}
+// .carplanner_logo {
+//   max-width: 490px;
+// }
+// .carplanner_cards {
+//   width: 565px;
+// }
+// .carplanner_btn {
+//   padding: 8px 36px 8px 36px;
+//   background: rgba(83, 132, 153, 0.5);
+//   border-radius: 10.9063px;
+//   transition: all 0.3s ease-in-out;
+//   &:hover {
+//     background: #ffffff;
+//     color: var(--color-dark-gray) !important;
+//     .car_img {
+//       transform: scale(1.2) !important;
+//     }
+//     svg {
+//       path {
+//         fill: rgba(83, 132, 153, 1) !important;
+//       }
+//     }
+//   }
+//   svg {
+//     transition: all 0.3s ease-in-out;
+//   }
+//   .car_img {
+//     transform: scale(1) !important;
+//     transition: all 0.3s ease-in-out;
+//   }
+// }
 .car_img {
   height: 24px !important;
 }
@@ -139,11 +139,11 @@
     box-shadow: 0px 4px 30px var(--color-light-green);
   }
 }
-.big_icon {
-  top: 0;
-  z-index: -1;
-  transform: scale(1.5);
-}
+// .big_icon {
+//   top: 0;
+//   z-index: -1;
+//   transform: scale(1.5);
+// }
 .business_para_1 {
   top: 0;
   opacity: 0;
@@ -167,38 +167,38 @@
 .custom_business_img_height {
   height: 400px;
 }
-.about_icon_2 {
-  position: absolute;
-  max-width: 400px;
-  left: 0;
-  top: 50%;
-  transform: translateY(-42%);
-}
-.about_icon_1 {
-  position: absolute;
-  max-width: 400px;
-  left: 0;
-  top: 50%;
-  transform: translateY(-42%);
-}
-.about_text_1 {
-  position: absolute;
-  opacity: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.about_text_2 {
-  position: absolute;
-  opacity: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.about_text_3 {
-  position: absolute;
-  opacity: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+// .about_icon_2 {
+//   position: absolute;
+//   max-width: 400px;
+//   left: 0;
+//   top: 50%;
+//   transform: translateY(-42%);
+// }
+// .about_icon_1 {
+//   position: absolute;
+//   max-width: 400px;
+//   left: 0;
+//   top: 50%;
+//   transform: translateY(-42%);
+// }
+// .about_text_1 {
+//   position: absolute;
+//   opacity: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+// .about_text_2 {
+//   position: absolute;
+//   opacity: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+// .about_text_3 {
+//   position: absolute;
+//   opacity: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
 .timeline_arrow_icon {
   position: absolute;
   z-index: -1;
@@ -207,10 +207,10 @@
   top: 50%;
   left: 0;
 }
-.small_icon_2 {
-  position: absolute;
-  z-index: -1;
-}
+// .small_icon_2 {
+//   position: absolute;
+//   z-index: -1;
+// }
 .business_icon_img_2 {
   top: 6%;
 }
@@ -229,9 +229,9 @@
   height: 52px;
   line-height: 76%;
 }
-.common_padding {
-  padding-top: 23px;
-}
+// .common_padding {
+//   padding-top: 23px;
+// }
 .meeting_custom_top_space {
   margin-top: 23px;
 }
@@ -254,9 +254,9 @@
   }
   transition: all 400ms ease-in-out;
 }
-.common_margin {
-  margin-top: 40px !important;
-}
+// .common_margin {
+//   margin-top: 40px !important;
+// }
 .small_icon_arrow {
   top: 12%;
   left: -20px;
@@ -288,70 +288,70 @@
   cursor: pointer !important;
   transition: all 0.3s ease-in-out !important;
 }
-.ipad_image {
-  width: 160vw;
-  height: 156vh;
-  margin-left: -20px;
-}
+// .ipad_image {
+//   width: 160vw;
+//   height: 156vh;
+//   margin-left: -20px;
+// }
 
 .partner_para {
   line-height: 167%;
 }
-.carousel-control-next-icon {
-  display: none !important;
-}
-.carousel-control-prev-icon {
-  display: none !important;
-}
-.carousel-indicators {
-  bottom: -50px !important;
-  [data-bs-target] {
-    background-color: #373737 !important;
-  }
-}
-.custom_partner_gap {
-  gap: 48px;
-}
+// .carousel-control-next-icon {
+//   display: none !important;
+// }
+// .carousel-control-prev-icon {
+//   display: none !important;
+// }
+// .carousel-indicators {
+//   bottom: -50px !important;
+//   [data-bs-target] {
+//     background-color: #373737 !important;
+//   }
+// }
+// .custom_partner_gap {
+//   gap: 48px;
+// }
 .arrowbtn_set {
   right: 2%;
   top: 10%;
   transform: rotate(90deg);
 }
-.daicar_arrow_set {
-  right: 80px;
-  top: 40px;
-}
-.roadmaparrow_left {
-  left: -26px;
-  top: -14px;
-}
-.roadmaparrow_center {
-  left: 60%;
-  top: -14px;
-  transform: translateX(-60%);
-}
-.roadmaparrow_left1 {
-  left: -26px;
-  top: -26px;
-  z-index: 2;
-}
-.tiguido_card {
-  width: 710px;
-}
-.candlecake_icon {
-  left: 74%;
-  top: -29px;
-  z-index: 2;
-}
+// .daicar_arrow_set {
+//   right: 80px;
+//   top: 40px;
+// }
+// .roadmaparrow_left {
+//   left: -26px;
+//   top: -14px;
+// }
+// .roadmaparrow_center {
+//   left: 60%;
+//   top: -14px;
+//   transform: translateX(-60%);
+// }
+// .roadmaparrow_left1 {
+//   left: -26px;
+//   top: -26px;
+//   z-index: 2;
+// }
+// .tiguido_card {
+//   width: 710px;
+// }
+// .candlecake_icon {
+//   left: 74%;
+//   top: -29px;
+//   z-index: 2;
+// }
 .footer_background_set {
   bottom: 0;
   left: 0 !important;
   width: 100%;
   height: 750px;
 }
-.hero_section_heading {
-  transform: translateY(-148px);
-}
+// .hero_section_heading {
+//   transform: translateY(-148px);
+// }
 .hero_heading_btn {
   font-size: var(--font-5xl) !important;
   // padding: 4px 24px 11px !important;
@@ -477,12 +477,12 @@
     box-shadow: 0 0 0 0.7em transparent;
   }
 }
-.header_btn {
-  &:hover {
-    background: rgba(57, 176, 93, 0.5);
-    color: white;
-  }
-}
+// .header_btn {
+//   &:hover {
+//     background: rgba(57, 176, 93, 0.5);
+//     color: white;
+//   }
+// }
 .parliamone {
   position: relative;
   &::after {
@@ -577,12 +577,12 @@
 .timeline_text_parent_max_w {
   max-width: 1024px;
 }
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
+// .-translate-y-1\/2 {
+//   --tw-translate-y: -50%;
+//   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+//     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+//     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+// }
 .timeline_text1_max_w {
   max-width: 34rem;
   top: 30%;
@@ -618,9 +618,9 @@
 .timeline_tiguido_icon {
   max-width: 200px;
 }
-.about_e_text {
-  width: 22px;
-}
+// .about_e_text {
+//   width: 22px;
+// }
 .about_img {
   object-fit: cover;
   overflow: visible;
@@ -629,9 +629,9 @@
 .about_arrow_img_width {
   width: 35%;
 }
-.meeting_e_icon {
-  max-width: 16px;
-}
+// .meeting_e_icon {
+//   max-width: 16px;
+// }
 
 .timeline_icon_3 {
   max-width: 170px;

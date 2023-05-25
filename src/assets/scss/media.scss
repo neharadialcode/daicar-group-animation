@@ -124,27 +124,27 @@
   .meeting_text_color {
     color: var(--color-white-off);
   }
-  .about_icon_2 {
-    max-width: 570px !important;
-  }
+  // .about_icon_2 {
+  //   max-width: 570px !important;
+  // }
   .about_col_content {
     max-width: 660px !important;
   }
-  .about_text_1 {
-    h4 {
-      max-width: 900px;
-    }
-  }
-  .about_text_2 {
-    h4 {
-      max-width: 840px;
-    }
-  }
-  .about_text_3 {
-    h4 {
-      max-width: 840px;
-    }
-  }
+  // .about_text_1 {
+  //   h4 {
+  //     max-width: 900px;
+  //   }
+  // }
+  // .about_text_2 {
+  //   h4 {
+  //     max-width: 840px;
+  //   }
+  // }
+  // .about_text_3 {
+  //   h4 {
+  //     max-width: 840px;
+  //   }
+  // }
   .divide_space_text {
     justify-content: space-between !important;
   }
@@ -209,10 +209,10 @@
     transform: translateY(20px) !important;
     padding-top: 14px !important;
   }
-  .about_text_1 {
-    width: 710px !important;
-    margin-left: -60px;
-  }
+  // .about_text_1 {
+  //   width: 710px !important;
+  //   margin-left: -60px;
+  // }
 }
 
 @media (max-width: 1599.98px) {
@@ -273,10 +273,10 @@
     max-width: 39px !important;
     left: -60px !important;
   }
-  .meeting_e_icon {
-    max-width: 14px;
-    transform: translate(0px, 1px);
-  }
+  // .meeting_e_icon {
+  //   max-width: 14px;
+  //   transform: translate(0px, 1px);
+  // }
   .i_pad_img_2 {
     transform: scale(0.78);
     margin-top: 52px;
@@ -287,18 +287,18 @@
 }
 
 @media (max-width: 1399.98px) {
-  .about_e_text {
-    width: 19px;
-  }
+  // .about_e_text {
+  //   width: 19px;
+  // }
   .timeline_text1_max_w {
     max-width: 25rem;
   }
-  .big_icon {
-    transform: scale(2);
-  }
-  .about_icon_2 {
-    max-width: 370px;
-  }
+  // .big_icon {
+  //   transform: scale(2);
+  // }
+  // .about_icon_2 {
+  //   max-width: 370px;
+  // }
   .small_icon {
     left: 0%;
   }
@@ -331,10 +331,10 @@
   .manager_content {
     transform: translateY(-160px);
   }
-  .meeting_e_icon {
-    max-width: 12px;
-    transform: translate(0px, 2px);
-  }
+  // .meeting_e_icon {
+  //   max-width: 12px;
+  //   transform: translate(0px, 2px);
+  // }
   .i_pad_img_2 {
     transform: scale(0.84);
     margin-top: 86px;
@@ -367,9 +367,9 @@
   .timeline_car_icon {
     max-width: 260px;
   }
-  .about_e_text {
-    width: 17px;
-  }
+  // .about_e_text {
+  //   width: 17px;
+  // }
   .text_parent_height {
     height: 75%;
   }
@@ -395,12 +395,12 @@
   .arrow_tabs {
     left: 5%;
   }
-  .carplanner_cards {
-    width: 420px;
-  }
-  .carplanner_logo {
-    max-width: 350px;
-  }
+  // .carplanner_cards {
+  //   width: 420px;
+  // }
+  // .carplanner_logo {
+  //   max-width: 350px;
+  // }
   .small_icon_arrow {
     top: -5%;
     left: 0%;
@@ -415,9 +415,9 @@
       max-width: 42px;
     }
   }
-  .about_icon_2 {
-    max-width: 300px !important;
-  }
+  // .about_icon_2 {
+  //   max-width: 300px !important;
+  // }
   .navbar_links.font_sm {
     font-size: 14px !important;
   }
@@ -481,9 +481,9 @@
     right: 2%;
     top: 3%;
   }
-  .custom_partner_gap {
-    gap: 40px;
-  }
+  // .custom_partner_gap {
+  //   gap: 40px;
+  // }
   .noi_btn {
     padding: 8px 24px 12px !important;
   }
@@ -555,9 +555,9 @@
   .timeline_icon_3 {
     max-width: 200px;
   }
-  .about_e_text {
-    width: 20px;
-  }
+  // .about_e_text {
+  //   width: 20px;
+  // }
 
   .timeline_text1_max_w {
     max-width: 45rem;
@@ -579,12 +579,12 @@
   .custom_height_tab_img_ipad {
     width: 90% !important;
   }
-  .carplanner_cards {
-    width: 350px;
-  }
-  .carplanner_logo {
-    max-width: 280px;
-  }
+  // .carplanner_cards {
+  //   width: 350px;
+  // }
+  // .carplanner_logo {
+  //   max-width: 280px;
+  // }
   .small_icon_arrow_2 {
     top: 65%;
     right: 25%;
@@ -896,9 +896,9 @@
     max-width: 285px !important;
     margin: auto !important;
   }
-  .hero_section_heading {
-    transform: translateY(-98px);
-  }
+  // .hero_section_heading {
+  //   transform: translateY(-98px);
+  // }
   .custom_business_heading {
     font-size: 28px !important;
     line-height: 90% !important;
@@ -918,9 +918,9 @@
   .timeline_btn {
     padding: 4px 20px 4px;
   }
-  .about_e_text {
-    width: 14px;
-  }
+  // .about_e_text {
+  //   width: 14px;
+  // }
   .meeting_btn_parent button {
     font-size: 20px !important;
     height: 54px !important;
@@ -992,12 +992,12 @@
   .toggle_icon svg {
     max-width: 26px !important;
   }
-  .hero_section_heading {
-    max-width: 265px !important;
-  }
-  .hero_section_heading h2 {
-    font-size: 32px !important;
-  }
+  // .hero_section_heading {
+  //   max-width: 265px !important;
+  // }
+  // .hero_section_heading h2 {
+  //   font-size: 32px !important;
+  // }
   .hero_heading_btn {
     height: 44px !important;
     font-size: 24px !important;
@@ -1048,7 +1048,7 @@
   .timeline_arrow_icon {
     top: 72.5%;
   }
-  .meeting_e_icon {
-    max-width: 9px;
-  }
+  // .meeting_e_icon {
+  //   max-width: 9px;
+  // }
 }
