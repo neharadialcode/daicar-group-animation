@@ -38,7 +38,6 @@ const Crm = () => {
       scrollTrigger: {
         trigger: "#CRM",
         start: "top top",
-        scrub: 1,
         pin: true,
       },
     });
