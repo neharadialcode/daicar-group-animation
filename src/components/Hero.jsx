@@ -1342,6 +1342,14 @@ const Hero = () => {
           },
           ">"
         )
+        .set(
+          "#main-content",
+          {
+            scale: 0.8,
+            top: "-13%",
+          },
+          "<"
+        )
         .to(".tabs_content_parent", {
           autoAlpha: 1,
         })
@@ -1889,7 +1897,13 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -44,
       });
-
+      // gsap.to(
+      //   "#hero-ipad-white",
+      //   {
+      //     minHeight: "80vh",
+      //   },
+      //   ">"
+      // );
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
@@ -2014,10 +2028,18 @@ const Hero = () => {
         .to(
           "#hero-ipad-white",
           {
-            scale: 0.8,
-            top: "35%",
+            scale: 0.7,
+            top: "30%",
           },
           ">"
+        )
+        .set(
+          "#main-content",
+          {
+            scale: 0.7,
+            top: "-9%",
+          },
+          "<"
         )
         .to(".tabs_content_parent", {
           autoAlpha: 1,
