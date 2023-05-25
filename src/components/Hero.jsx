@@ -65,9 +65,6 @@ const Hero = () => {
     let mm = gsap.matchMedia();
 
     mm.add("(min-width: 1600px)", () => {
-      // gsap.from("#hero-main-heading", {
-      //   yPercent: 100,
-      // });
       gsap.set("#hero-main-heading", {
         y: "-150px",
       });
@@ -2327,11 +2324,11 @@ const Hero = () => {
                     src={tabSmImg}
                     alt="img"
                   />
-                  <img
-                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img d-none d-lg-block"
+                  {/* <img
+                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img hero-ipad-white d-none d-lg-block"
                     src={tabImg1}
                     alt="img"
-                  />
+                  /> */}
                   <div className="text-center pb-sm-5 pb-xxl-0">
                     <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0">
                       {buttonData.map((obj, index) => (
@@ -2395,7 +2392,7 @@ const Hero = () => {
             />
             <img
               id="hero-ipad-white"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity-0 d-none d-lg-block"
+              className="position-absolute -z-10 pointer-events-none origin-center  d-none d-lg-block"
               src={ipadWhite}
             />
           </div>
