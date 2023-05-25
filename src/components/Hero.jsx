@@ -223,6 +223,18 @@ const Hero = () => {
           },
           "<"
         )
+        .to(
+          [
+            "#hero-main-heading",
+            ".hero_slide_para_1",
+            ".hero_slide_para_2",
+            ".hero_text_2",
+          ],
+          {
+            color: "black",
+          },
+          "<"
+        )
         .to(".tabs_content_parent", {
           autoAlpha: 0,
         })
@@ -766,6 +778,18 @@ const Hero = () => {
           },
           "<"
         )
+        .to(
+          [
+            "#hero-main-heading",
+            ".hero_slide_para_1",
+            ".hero_slide_para_2",
+            ".hero_text_2",
+          ],
+          {
+            color: "black",
+          },
+          "<"
+        )
         .to(".tabs_content_parent", {
           autoAlpha: 0,
         })
@@ -1292,6 +1316,18 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
+          },
+          "<"
+        )
+        .to(
+          [
+            "#hero-main-heading",
+            ".hero_slide_para_1",
+            ".hero_slide_para_2",
+            ".hero_text_2",
+          ],
+          {
+            color: "black",
           },
           "<"
         )
@@ -1960,6 +1996,18 @@ const Hero = () => {
           },
           "<"
         )
+        .to(
+          [
+            "#hero-main-heading",
+            ".hero_slide_para_1",
+            ".hero_slide_para_2",
+            ".hero_text_2",
+          ],
+          {
+            color: "black",
+          },
+          "<"
+        )
         .to(".tabs_content_parent", {
           autoAlpha: 0,
         })
@@ -2404,7 +2452,7 @@ const Hero = () => {
                   className="hero_slide_2 pt-xl-5 pt-xxl-0"
                   id="hero-sub-heading-two"
                 >
-                  <h2 className="font_6xl mb-0 text-center">
+                  <h2 className="font_6xl mb-0 text-center hero_text_2">
                     Il futuro delle tue
                     <a className="text-decoration-none" href="#servizi">
                       <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
