@@ -675,15 +675,14 @@
       top: -20px;
     }
   }
-
   .ipad_img {
-    height: 94vh !important;
+    // height: 94vh !important;
+    height: 70vh !important;
+    max-width: 100%;
   }
-
   .manager_content {
     transform: translateY(-50px);
   }
-
   .hero-outline-arrow svg {
     width: 100vw;
   }
