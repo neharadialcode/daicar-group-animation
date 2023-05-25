@@ -1426,6 +1426,7 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             scale: 0.8,
+            top: "35%",
           },
           ">"
         )

@@ -524,14 +524,19 @@
     object-fit: contain;
     margin-top: 50px;
   }
+  #main-assets {
+    padding-bottom: 394px;
+    transform: translateY(0px);
+  }
   .tab_text_position {
     transform: translateY(-50px) !important;
   }
-  .tabs_lottie {
-    top: 17% !important;
+  .tabs_parent {
+    height: 131vh;
   }
+  .tabs_lottie,
   .tabs_lottie_1 {
-    top: 280px;
+    top: 40% !important;
   }
   .custom_content_size p,
   .custom_content_size button {
@@ -544,7 +549,6 @@
     max-width: 45rem;
     top: 10%;
   }
-
   .timeline_content_4_parent {
     right: -38%;
   }
@@ -586,7 +590,6 @@
     background-color: var(--color-light-green_2);
     height: 100% !important;
   }
-
   .roadmap_para {
     max-width: 621px;
     margin: auto;
@@ -600,8 +603,8 @@
     transform: unset;
   }
   .custom_height_tab_img {
-    left: 4% !important;
-    width: 90% !important;
+    left: 0% !important;
+    width: 100% !important;
   }
   .i_pad_img {
     width: 150%;
