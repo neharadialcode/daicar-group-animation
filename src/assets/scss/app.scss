@@ -74,6 +74,12 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+#main-assets {
+  transform: translateY(-70px);
+}
+.tabs_parent {
+  height: 100vh;
+}
 .carplanner_logo {
   max-width: 490px;
 }
@@ -354,7 +360,6 @@
 }
 .hero_heading_btn {
   font-size: var(--font-5xl) !important;
-  // padding: 4px 24px 11px !important;
   padding: 14px 24px 18px !important;
   color: var(--color-dark-gray) !important;
   background: rgba(126, 228, 156, 0.5) !important;
@@ -565,10 +570,15 @@
   margin-top: -2px;
 }
 .tabs_lottie {
-  top: 18%;
+  top: 33% !important;
+  // background-color: aqua;
+}
+.tabs_lottie_1 {
+  top: 34% !important;
 }
 .tabs_lottie_width {
-  width: 100%;
+  width: 76%;
+  // width: 100%;
   margin: 0 auto;
 }
 .about_text_parent_max_w {

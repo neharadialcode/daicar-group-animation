@@ -227,7 +227,7 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             scale: 0.8,
-          },
+          }, //[\pt]]\
           ">"
         )
         .set(
@@ -2206,227 +2206,229 @@ const Hero = () => {
     <>
       <div className="position-relative z-10">
         <Header />
-      <div id="hero" className="color_dark_gray z-10 overflow-hidden">
-        <div className="container vh-100 z-0 position-relative">
-          <div
-            id="main-content"
-            className="align-items-center flex-column justify-content-center position-relative h-100"
-          >
-            <h1
-              id="hero-main-heading"
-              className=" color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5"
-            >
-              Il futuro delle tue
-              <button className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3">
-                vendite
-              </button>
-              è digitale
-            </h1>
-
+        <div id="hero" className="color_dark_gray z-10 overflow-hidden">
+          <div className="container vh-100 z-0 position-relative">
             <div
-              id="hero-sub-heading"
-              className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white"
+              id="main-content"
+              className="align-items-center flex-column justify-content-center position-relative h-100"
             >
-              <div
-                className="hero_slide_1 pt-xl-5 pt-xxl-0"
-                id="hero-sub-heading-one"
+              <h1
+                id="hero-main-heading"
+                className=" color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5"
               >
-                <h2 className=" font_6xl mb-0 text-center">
-                  Il futuro delle tue&nbsp;
-                  <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
-                    vendite
-                  </button>
-                  è digitale
-                </h2>
-                <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green">
-                  200.000
-                </h3>
-                <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
-                  Lead
-                  <span className="fw_bold mx-2">Qualificati</span>
-                  nel 2022
-                </p>
-                <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
-                  Daicar aiuta a far
-                  <span className="fw_bold mx-1 mx-sm-2">crescere</span>
-                  la tua azienda, <br className="d-none d-lg-block" /> creando
-                  contatti e generando vendite
-                </p>
-              </div>
+                Il futuro delle tue
+                <button className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3">
+                  vendite
+                </button>
+                è digitale
+              </h1>
+
               <div
-                className="hero_slide_2 pt-xl-5 pt-xxl-0"
-                id="hero-sub-heading-two"
+                id="hero-sub-heading"
+                className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white"
               >
-                <h2 className="font_6xl mb-0 text-center">
-                  Il futuro delle tue
-                  <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
-                    vendite
-                  </button>
-                  è digitale
-                </h2>
-                <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green">
-                  10.000
-                </h3>
-                <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
-                  Campagne
-                  <span className="fw_bold mx-2">Generate</span>
-                  nel 2022
-                </p>
-                <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
-                  Campaign management
-                  <span className="fw_bold mx-2">flessibile</span> e altamente
-                  <br className="d-none d-lg-block" />
-                  <span className="fw_bold mx-2">personalizzabile</span>
-                  sulle criticità di ogni partner
-                  <br />
-                </p>
+                <div
+                  className="hero_slide_1 pt-xl-5 pt-xxl-0"
+                  id="hero-sub-heading-one"
+                >
+                  <h2 className=" font_6xl mb-0 text-center">
+                    Il futuro delle tue&nbsp;
+                    <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
+                      vendite
+                    </button>
+                    è digitale
+                  </h2>
+                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green">
+                    200.000
+                  </h3>
+                  <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
+                    Lead
+                    <span className="fw_bold mx-2">Qualificati</span>
+                    nel 2022
+                  </p>
+                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
+                    Daicar aiuta a far
+                    <span className="fw_bold mx-1 mx-sm-2">crescere</span>
+                    la tua azienda, <br className="d-none d-lg-block" /> creando
+                    contatti e generando vendite
+                  </p>
+                </div>
+                <div
+                  className="hero_slide_2 pt-xl-5 pt-xxl-0"
+                  id="hero-sub-heading-two"
+                >
+                  <h2 className="font_6xl mb-0 text-center">
+                    Il futuro delle tue
+                    <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
+                      vendite
+                    </button>
+                    è digitale
+                  </h2>
+                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green">
+                    10.000
+                  </h3>
+                  <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
+                    Campagne
+                    <span className="fw_bold mx-2">Generate</span>
+                    nel 2022
+                  </p>
+                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
+                    Campaign management
+                    <span className="fw_bold mx-2">flessibile</span> e altamente
+                    <br className="d-none d-lg-block" />
+                    <span className="fw_bold mx-2">personalizzabile</span>
+                    sulle criticità di ogni partner
+                    <br />
+                  </p>
+                </div>
               </div>
+
+              <div
+                id="hero-outline-arrow"
+                className="position-absolute z-10 pointer-events-none hero-outline-arrow"
+              >
+                <Icon4 />
+              </div>
+
+              <img
+                className="arrow-hero-one position-absolute -z-10 pointer-events-none mt-lg-3 mt-xl-0"
+                src={arrow}
+                alt="arrow"
+              />
+              <img
+                className="arrow-hero-two position-absolute -z-10 pointer-events-none"
+                src={arrow}
+                alt="arrow"
+              />
+              <img
+                className="arrow-hero-three position-absolute -z-10  pointer-events-none"
+                src={arrow}
+                alt="arrow"
+              />
             </div>
 
-            <div
-              id="hero-outline-arrow"
-              className="position-absolute z-10 pointer-events-none hero-outline-arrow"
-            >
-              <Icon4 />
-            </div>
+            <div id="intro-content" className="position-relative h-100 w-100">
+              <div
+                className="vh-100 d-flex flex-column justify-content-center tab_parent overflow-hidden z_2"
+                id="main-assets"
+              >
+                <div className="side_icon position-absolute tab_right_icon d-none d-xl-block me-4">
+                  <div className="d-flex align-items-center tab-side-effect left_text_5">
+                    <p className="me-4 color_light_green mb-0">
+                      CRM lo facciamo
+                    </p>
+                    <TabRightIcon />
+                  </div>
+                  <div className="d-flex align-items-center tab-side-effect left_text_4">
+                    <p className="me-4 color_light_green mb-0">
+                      qualifica digitale real-time lo facciamo
+                    </p>
+                    <TabRightIcon />
+                  </div>
+                  <div className="d-flex align-items-center tab-side-effect left_text_3">
+                    <p className="me-4 color_light_green mb-0">
+                      strumenti tech<span className="ff_math">-</span>driven lo
+                      facciamo
+                    </p>
+                    <TabRightIcon />
+                  </div>
+                  <div className="d-flex align-items-center tab-side-effect left_text_2">
+                    <p className="me-4 color_light_green mb-0">
+                      marketing conversazionale lo facciamo
+                    </p>
+                    <TabRightIcon />
+                  </div>
+                  <div className="d-flex align-items-center tab-side-effect left_text_1">
+                    <p className="me-4 color_light_green mb-0">
+                      come lo facciamo
+                    </p>
+                    <TabRightIcon />
+                  </div>
+                </div>
 
-            <img
-              className="arrow-hero-one position-absolute -z-10 pointer-events-none mt-lg-3 mt-xl-0"
-              src={arrow}
-              alt="arrow"
-            />
-            <img
-              className="arrow-hero-two position-absolute -z-10 pointer-events-none"
-              src={arrow}
-              alt="arrow"
-            />
-            <img
-              className="arrow-hero-three position-absolute -z-10  pointer-events-none"
-              src={arrow}
-              alt="arrow"
-            />
-          </div>
-
-          <div id="intro-content" className="position-relative h-100 w-100">
-            <div
-              className="vh-100 d-flex flex-column justify-content-center tab_parent overflow-hidden z_2"
-              id="main-assets"
-            >
-              <div className="side_icon position-absolute tab_right_icon d-none d-xl-block me-4">
-                <div className="d-flex align-items-center tab-side-effect left_text_5">
-                  <p className="me-4 color_light_green mb-0">CRM lo facciamo</p>
-                  <TabRightIcon />
-                </div>
-                <div className="d-flex align-items-center tab-side-effect left_text_4">
-                  <p className="me-4 color_light_green mb-0">
-                    qualifica digitale real-time lo facciamo
-                  </p>
-                  <TabRightIcon />
-                </div>
-                <div className="d-flex align-items-center tab-side-effect left_text_3">
-                  <p className="me-4 color_light_green mb-0">
-                    strumenti tech<span className="ff_math">-</span>driven lo
-                    facciamo
-                  </p>
-                  <TabRightIcon />
-                </div>
-                <div className="d-flex align-items-center tab-side-effect left_text_2">
-                  <p className="me-4 color_light_green mb-0">
-                    marketing conversazionale lo facciamo
-                  </p>
-                  <TabRightIcon />
-                </div>
-                <div className="d-flex align-items-center tab-side-effect left_text_1">
-                  <p className="me-4 color_light_green mb-0">
-                    come lo facciamo
-                  </p>
-                  <TabRightIcon />
-                </div>
-              </div>
-
-              <div className="max_width_tabs position-relative">
-                {/* <img
+                <div className="max_width_tabs position-relative">
+                  {/* <img
                   className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img d-lg-none"
                   src={tabSmImg}
                   alt="img"
                 /> */}
-                {/* <img
-                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img hero-ipad-white d-none d-lg-block"
+                  {/* <img
+                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img hero-ipad-white d-none d-lg-block invisible"
                     src={tabImg1}
                     alt="img"
                   /> */}
-                <div className="text-center pb-sm-5 pb-xxl-0">
-                  <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0">
-                    {buttonData.map((obj, index) => (
-                      <div className="px-2 pt-sm-2" key={index}>
-                        <div className={`card_img_${index}`}>
+                  <div className="text-center pb-sm-5 pb-xxl-0 tabs_parent d-flex align-items-end">
+                    <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0">
+                      {buttonData.map((obj, index) => (
+                        <div className="px-2 pt-sm-2" key={index}>
+                          <div className={`card_img_${index}`}>
+                            <div
+                              className={`${
+                                index === 5
+                                  ? "d-none"
+                                  : `${
+                                      index === 0
+                                        ? "tabs_lottie_1 position-absolute start-0 custom_height_tab_img tabs_img"
+                                        : "position-absolute start-0 w-100 pt-3 custom_height_tab_img tabs_img tabs_lottie pt-4 pt-sm-0"
+                                    }`
+                              }`}
+                            >
+                              <Lottie
+                                className="tabs_lottie_width"
+                                animationData={obj.card_img}
+                                loop={true}
+                                play
+                              />
+                            </div>
+                          </div>
                           <div
-                            className={` ${
-                              index === 5
-                                ? "d-none"
-                                : `${
-                                    index === 0
-                                      ? "tabs_lottie_1 position-absolute start-0 custom_height_tab_img tabs_img"
-                                      : "position-absolute start-0 w-100 pt-3 custom_height_tab_img tabs_img tabs_lottie pt-4 pt-sm-0"
-                                  }`
-                            }`}
+                            className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0"
+                            id="para_text_01"
                           >
-                            <Lottie
-                              className="tabs_lottie_width"
-                              animationData={obj.card_img}
-                              loop={true}
-                              play
-                            />
+                            <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
+                              {obj.para}
+                            </p>
+                            {obj.buttonText &&
+                              (console.log(obj.buttonId, "hero_btn"),
+                              (
+                                <button
+                                  className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
+                                  dangerouslySetInnerHTML={{
+                                    __html: obj.buttonText,
+                                  }}
+                                  onClick={() => moveToIt("hero", obj.buttonId)}
+                                ></button>
+                              ))}
                           </div>
                         </div>
-                        <div
-                          className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0"
-                          id="para_text_01"
-                        >
-                          <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
-                            {obj.para}
-                          </p>
-                          {obj.buttonText &&
-                            (console.log(obj.buttonId, "hero_btn"),
-                            (
-                              <button
-                                className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
-                                dangerouslySetInnerHTML={{
-                                  __html: obj.buttonText,
-                                }}
-                                onClick={() => moveToIt("hero", obj.buttonId)}
-                              ></button>
-                            ))}
-                        </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* <img
+            {/* <img
             id="hero-ipad"
             className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-lg-none"
             src={ipad_mockup}
           /> */}
-          <img
-            id="hero-ipad"
-            className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
-            src={ipad}
-          />
-          <img
-            id="hero-ipad-white"
-            className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
-            src={ipadWhite}
-          />
+            <img
+              id="hero-ipad"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
+              src={ipad}
+            />
+            <img
+              id="hero-ipad-white"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
+              src={ipadWhite}
+            />
+          </div>
+          <div
+            id="hero_section"
+            className="bg_dark_gray position-absolute inset-0 -z-10"
+          ></div>
         </div>
-        <div
-          id="hero_section"
-          className="bg_dark_gray position-absolute inset-0 -z-10"
-        ></div>
-      </div>
       </div>
     </>
   );
