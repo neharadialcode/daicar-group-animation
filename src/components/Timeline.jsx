@@ -859,7 +859,7 @@ const Timeline = () => {
                     </div>
                     <div
                       id="timeline-heading-4"
-                      className="font_2xl text-white position-absolute w-100 timeline_cake_img_parent pt-5"
+                      className="font_2xl text-white position-absolute w-100 timeline_content_4_parent pt-5"
                     >
                       <img
                         src={timelineImg2}
