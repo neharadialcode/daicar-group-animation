@@ -2347,9 +2347,11 @@ const Hero = () => {
                 className=" color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5"
               >
                 Il futuro delle tue
-                <button className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3">
-                  vendite
-                </button>
+                <a className="text-decoration-none" href="#servizi">
+                  <button className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3">
+                    vendite
+                  </button>
+                </a>
                 è digitale
               </h1>
 
@@ -2363,9 +2365,11 @@ const Hero = () => {
                 >
                   <h2 className=" font_6xl mb-0 text-center">
                     Il futuro delle tue&nbsp;
-                    <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
-                      vendite
-                    </button>
+                    <a className="text-decoration-none" href="#servizi">
+                      <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
+                        vendite
+                      </button>
+                    </a>
                     è digitale
                   </h2>
                   <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green">
@@ -2389,9 +2393,11 @@ const Hero = () => {
                 >
                   <h2 className="font_6xl mb-0 text-center">
                     Il futuro delle tue
-                    <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
-                      vendite
-                    </button>
+                    <a className="text-decoration-none" href="#servizi">
+                      <button className="custom_tab_button_012 cursor-pointer d-inline-block hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
+                        vendite
+                      </button>
+                    </a>
                     è digitale
                   </h2>
                   <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green">
