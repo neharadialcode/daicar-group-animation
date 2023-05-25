@@ -2266,7 +2266,7 @@ const Hero = () => {
               </div>
 
               <img
-                className="arrow-hero-one position-absolute -z-10 pointer-events-none"
+                className="arrow-hero-one position-absolute -z-10 pointer-events-none mt-lg-3 mt-xl-0"
                 src={arrow}
                 alt="arrow"
               />
