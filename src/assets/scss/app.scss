@@ -637,6 +637,29 @@
   line-height: 132% !important;
 }
 
-.business_outline_img{
+.business_outline_img {
   height: 75vh;
+}
+
+#hero {
+  position: relative;
+}
+
+.ipad_img {
+  height: 70vh;
+}
+
+#hero-sub-heading-one,
+#hero-sub-heading-two,
+#hero-para-one,
+#hero-para-two,
+#hero_section {
+  position: absolute;
+}
+
+#main-content {
+  display: flex;
+}
+.tab_text_position .custom_tab_button_012 {
+  transition: unset !important;
 }

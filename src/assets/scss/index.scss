@@ -271,12 +271,27 @@ body {
 .opacity_0 {
   opacity: 0;
 }
+
 .opacity_05 {
   opacity: 0.5;
 }
-.cursor_pointer {
-  cursor: pointer;
+
+.pointer-events-none {
+  pointer-events: none;
 }
+.origin-center {
+  transform-origin: center;
+}
+.inset-0 {
+  inset: 0;
+}
+.z-0 {
+  z-index: 0;
+}
+.-z-10 {
+  z-index: -10;
+}
+
 .letter_spacing {
   letter-spacing: 0.285714px;
 }
@@ -296,6 +311,4 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
-.tab_text_position .custom_tab_button_012 {
-  transition: unset !important;
-}
+

@@ -572,7 +572,7 @@ const Business = () => {
                   />
                   <div className="ps-5 ps-xxl-0">
                     <h3
-                      className="font_5xl color_dark_gray business_heading_1 cursor_pointer"
+                      className="font_5xl color_dark_gray business_heading_1 cursor-pointer"
                       onClick={() => moveTo("servizi", "business_accordion_1")}
                     >
                       GENERAZIONE TRAFFICO
@@ -585,7 +585,7 @@ const Business = () => {
                   </div>
                   <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
-                      className="font_5xl color_dark_gray business_heading_2 cursor_pointer"
+                      className="font_5xl color_dark_gray business_heading_2 cursor-pointer"
                       onClick={() => moveTo("servizi", "business_accordion_2")}
                     >
                       LANDING CONVERSAZIONALE
@@ -599,7 +599,7 @@ const Business = () => {
                   </div>
                   <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
-                      className="font_5xl color_dark_gray business_heading_3 cursor_pointer"
+                      className="font_5xl color_dark_gray business_heading_3 cursor-pointer"
                       onClick={() => moveTo("servizi", "business_accordion_3")}
                     >
                       VALIDAZIONE AUTOMATICA DEI DATI
@@ -614,7 +614,7 @@ const Business = () => {
                   </div>
                   <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
-                      className="font_5xl color_dark_gray business_heading_4 cursor_pointer"
+                      className="font_5xl color_dark_gray business_heading_4 cursor-pointer"
                       onClick={() => moveTo("servizi", "business_accordion_4")}
                     >
                       TRASMISSIONE LEAD

@@ -2395,7 +2395,7 @@ const Hero = () => {
             />
             <img
               id="hero-ipad-white"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity-0 d-none d-lg-block"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0 d-none d-lg-block"
               src={ipadWhite}
             />
           </div>
