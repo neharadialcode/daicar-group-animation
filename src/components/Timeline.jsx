@@ -794,7 +794,7 @@ const Timeline = () => {
               <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block me-2">
                 <img src={timelineLeftIcon} alt="timeline-left-icon" />
               </div>
-              <div className="flex-grow-1 w-100 text_parent_max_w">
+              <div className="flex-grow-1 w-100 timeline_text_parent_max_w">
                 <div className="text_parent_height w-100 position-relative">
                   <div
                     id="timeline-heading-container"

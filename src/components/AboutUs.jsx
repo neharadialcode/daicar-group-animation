@@ -59,7 +59,7 @@ const About = () => {
             width: "90%",
           },
           {
-            width: "82%",
+            width: "70%",
           },
           "<3"
         )
@@ -72,10 +72,10 @@ const About = () => {
         .fromTo(
           "#about-image-block",
           {
-            width: "82%",
+            width: "70%",
           },
           {
-            width: "80%",
+            width: "60%",
           },
           "<3"
         )
@@ -135,7 +135,7 @@ const About = () => {
         .fromTo(
           "#about-image-block",
           {
-            width: "80%",
+            width: "90%",
           },
           {
             width: "70%",
@@ -304,7 +304,7 @@ const About = () => {
               </p>
               <div
                 id="about-content-2"
-                className="d-flex justify-content-end align-items-center flex-grow-1 w-100 text_parent_max_w"
+                className="d-flex justify-content-end align-items-center flex-grow-1 w-100 about_text_parent_max_w"
               >
                 <div className="h-100 d-flex align-items-center justify-content-end position-relative about_arrow_img_width">
                   <img
@@ -420,7 +420,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="vh-100 overflow-hidden about_parent z_5 top_minus_space d-lg-none">
+      <div
+        className="vh-100 overflow-hidden about_parent z_5 top_minus_space d-lg-none"
+        id="about_section"
+      >
         <div className="position-relative h-100 z_1">
           <div className="position-absolute d-none d-sm-block d-lg-none z_negative">
             <img
