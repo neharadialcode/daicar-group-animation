@@ -759,6 +759,12 @@
 }
 
 @media (max-width: 575.98px) {
+  .timeline_heading_4_btn {
+    font-size: 13px;
+  }
+  .navbar_btn {
+    height: 35px;
+  }
   .custom_content_size p,
   .custom_content_size button {
     font-size: 16px !important;
@@ -896,7 +902,7 @@
     line-height: 90% !important;
   }
   .meeting_para {
-    min-width: 370px !important;
+    min-width: 355px !important;
     max-width: 370px !important;
     font-size: 24px !important;
     line-height: 208% !important;

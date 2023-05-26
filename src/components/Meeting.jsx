@@ -101,7 +101,7 @@ function Meeting() {
 
           <div
             id="meeting-paragraph"
-            className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-xl-none"
+            className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto text-center d-xl-none"
           >
             Ora hai compreso che il futuro delle tue
             <a href="#footer">

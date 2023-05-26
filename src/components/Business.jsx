@@ -14,10 +14,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Business = () => {
   let tl;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
   useEffect(() => {
     let mm = gsap.matchMedia();
-
     gsap.set(".business_para_1", {
       height: 0,
     });
@@ -36,7 +34,6 @@ const Business = () => {
       yPercent: -50,
       xPercent: -50,
     });
-
     mm.add("(min-width:1600px)", () => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
@@ -45,7 +42,6 @@ const Business = () => {
           scrub: true,
         },
       });
-
       tl2
         .to("#hero-large-arrow", {
           scale: 1.5,
@@ -154,7 +150,6 @@ const Business = () => {
         .to(".business_heading_2", {
           autoAlpha: 0.5,
         })
-
         .addLabel("business_accordion_3")
         .from(".business_heading_3", {
           autoAlpha: 0.5,
@@ -185,7 +180,6 @@ const Business = () => {
           marginTop: "16px",
           marginBottom: "16px",
         })
-
         .addLabel("business_accordion_3")
         .to(
           ".business_para_3",
@@ -218,7 +212,6 @@ const Business = () => {
         .to(".small_icon", {
           top: "198px",
         })
-
         .addLabel("business_accordion_4")
         .from(".business_heading_4", {
           autoAlpha: 0.5,
@@ -478,7 +471,6 @@ const Business = () => {
           end: "bottom top",
         },
       });
-
       tl.from(".business_tab_1", {
         xPercent: "-150",
         stagger: 0.3,
@@ -514,10 +506,10 @@ const Business = () => {
   return (
     <>
       <div
-        className="business_parent overflow-hidden third_sec_height z_1 pt-5 min-vh-100"
+        className="business_parent overflow-hidden third_sec_height z_1 pb-5 pb-sm-0 pt-5 min-vh-100"
         id="servizi"
       >
-        <div className="d-flex flex-column justify-content-center pt-5">
+        <div className="d-flex flex-column justify-content-center pt-sm-5">
           <div className="position-absolute d-none d-sm-block d-lg-none">
             <img
               className="w-100 small_tab_arrow_img"
@@ -631,7 +623,7 @@ const Business = () => {
 
             <div className="d-lg-none">
               <div className="business_tab_1">
-                <div className="row justify-content-evenly pt-5">
+                <div className="row justify-content-evenly pt-4 pt-sm-5">
                   <div className="col-8 col-sm-4">
                     <img
                       className="w-100"
@@ -643,7 +635,7 @@ const Business = () => {
                     <h3 className="font_5xl text-white">
                       GENERAZIONE TRAFFICO
                     </h3>
-                    <p className="font_2xl text-white pe-xl-5 pt-2">
+                    <p className="font_2xl text-white pe-xl-5 pt-sm-2">
                       Strategie di marketing costruite ad hoc per generare
                       traffico qualificato da veicolare sui social media, Google
                       e native advertising
@@ -652,7 +644,7 @@ const Business = () => {
                 </div>
               </div>
               <div className="business_tab_2">
-                <div className="row justify-content-evenly pt-5 mt-sm-3">
+                <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-8 col-sm-4">
                     <img
                       className="w-100"
@@ -664,7 +656,7 @@ const Business = () => {
                     <h3 className="font_5xl text-white">
                       LANDING CONVERSAZIONALE
                     </h3>
-                    <p className="font_2xl text-white pe-xl-5 pt-2">
+                    <p className="font_2xl text-white pe-xl-5 pt-sm-2">
                       Landingpage su misura per i nostri partner e conformi al
                       <span className="fw-bold">regolamento GDPR</span>
                       &nbsp; per l’acquisizione di contatti qualificati.
@@ -673,7 +665,7 @@ const Business = () => {
                 </div>
               </div>
               <div className="business_tab_3">
-                <div className="row justify-content-evenly pt-5 mt-sm-3">
+                <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-8 col-sm-4">
                     <img
                       className="w-100"
@@ -685,7 +677,7 @@ const Business = () => {
                     <h3 className="font_5xl text-white">
                       VALIDAZIONE AUTOMATICA DEI DATI
                     </h3>
-                    <p className="font_2xl text-white pe-xl-5 pt-2">
+                    <p className="font_2xl text-white pe-xl-5 pt-sm-2">
                       Meno tempo e maggiore conversione grazie al nostro&nbsp;
                       <span className="fw-bold">software di I.A.</span>
                       &nbsp; per la validazione real-time dei dati degli utenti
@@ -694,7 +686,7 @@ const Business = () => {
                 </div>
               </div>
               <div className="business_tab_4">
-                <div className="row justify-content-evenly pt-5 mt-sm-3">
+                <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-sm-4 d-flex align-items-center">
                     <img
                       className="w-100"
@@ -704,7 +696,7 @@ const Business = () => {
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column">
                     <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
-                    <p className="font_2xl text-white pe-xl-5 pt-2">
+                    <p className="font_2xl text-white pe-xl-5 pt-sm-2 mb-0">
                       I lead generati vengono sottoposti ad un attento processo
                       di filtraggio e controllo tramite API o integrazione con
                       il CRM del partner prima di essere inviati”

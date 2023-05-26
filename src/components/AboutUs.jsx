@@ -465,7 +465,7 @@ const About = () => {
                       <DownArrowNoiIcon />
                     </div>
                   </div>
-                  <div className="d-flex align-items-sm-center ps-xl-5 pt-3 pt-4 mt-xl-3">
+                  <div className="d-flex align-items-sm-center ps-xl-5 pt-2 pt-sm-3 mt-xl-3">
                     <img
                       className="founder_img d-none d-sm-block"
                       src={bigFounder}
@@ -486,7 +486,7 @@ const About = () => {
                     <UpArrowNoiIcon />
                   </div>
                   <div className="position-relative">
-                    <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5 mb-0">
+                    <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-5">
                       Obiettivi chiari e definiti perseguiti con un approccio
                       personalizzato verso risultati concreti e misurabili.
                     </h4>
@@ -494,7 +494,7 @@ const About = () => {
                       <DownArrowNoiIcon />
                     </div>
                   </div>
-                  <div className="d-flex align-items-sm-center ps-xl-5 pt-3 pt-4 mt-xl-3">
+                  <div className="d-flex align-items-sm-center ps-xl-5 pt-2 pt-sm-3 mt-xl-3">
                     <img
                       className="founder_img d-none d-sm-block"
                       src={bigFounder2}
@@ -515,7 +515,7 @@ const About = () => {
                     <UpArrowNoiIcon />
                   </div>
                   <div className="position-relative">
-                    <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-4 mb-0">
+                    <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 px-lg-4 ps-xl-5 pe-xxl-5 me-xxl-4">
                       Qualifichiamo i dati in tempo reale consentendo di
                       incrementare il ROI delle azioni di lead generation.
                       <div className="position-absolute small_icon_arrow_2">
@@ -523,7 +523,7 @@ const About = () => {
                       </div>
                     </h4>
                   </div>
-                  <div className="d-flex align-items-sm-center ps-xl-5 pt-3 pt-4 mt-xl-3">
+                  <div className="d-flex align-items-sm-center ps-xl-5 pt-2 pt-sm-3 mt-xl-3">
                     <img
                       className="founder_img d-none d-sm-block"
                       src={bigFounder3}

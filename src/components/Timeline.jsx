@@ -869,7 +869,7 @@ const Timeline = () => {
                       <p className="font_md color_white_off">
                         Il 2 Ottobre faremo <br /> otto anni.
                       </p>
-                      <button className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012">
+                      <button className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012 timeline_heading_4_btn">
                         compleanno
                       </button>
                     </div>
