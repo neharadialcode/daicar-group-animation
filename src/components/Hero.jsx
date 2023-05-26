@@ -2349,12 +2349,12 @@ const Hero = () => {
                   </h3>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Lead
-                    <span className="fw_bold mx-2">Qualificati</span>
+                    <span className="fw-bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
                   <p className="custom_lh_132 font_4xl color_white_off text-center pt-3 pt-sm-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
                     Daicar aiuta a far
-                    <span className="fw_bold mx-1 mx-sm-2">crescere</span>
+                    <span className="fw-bold mx-1 mx-sm-2">crescere</span>
                     la tua azienda, <br className="d-none d-lg-block" /> creando
                     contatti e generando vendite
                   </p>
@@ -2377,14 +2377,14 @@ const Hero = () => {
                   </h3>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Campagne
-                    <span className="fw_bold mx-2">Generate</span>
+                    <span className="fw-bold mx-2">Generate</span>
                     nel 2022
                   </p>
                   <p className="custom_lh_132 font_4xl color_white_off text-center pt-3 pt-sm-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
                     Campaign management
-                    <span className="fw_bold mx-2">flessibile</span> e altamente
+                    <span className="fw-bold mx-2">flessibile</span> e altamente
                     <br className="d-none d-lg-block" />
-                    <span className="fw_bold mx-2">personalizzabile</span>
+                    <span className="fw-bold mx-2">personalizzabile</span>
                     sulle criticità di ogni partner
                     <br />
                   </p>
