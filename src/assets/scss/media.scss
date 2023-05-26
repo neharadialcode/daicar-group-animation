@@ -448,6 +448,13 @@
 }
 
 @media (max-width: 991.98px) {
+  .custom_content_padding {
+    padding-top: 70px !important;
+    padding-bottom: 50px !important;
+  }
+  .meeting_para {
+    max-width: 560px !important;
+  }
   .navbar_btn {
     width: 135px;
     height: 55px;
@@ -662,6 +669,10 @@
 }
 
 @media (max-width: 575.98px) {
+  .footer_social_icon svg {
+    width: 23px;
+    height: 23px;
+  }
   .timeline_heading_4_btn {
     font-size: 13px;
   }
@@ -768,8 +779,12 @@
   .footer_logo {
     width: 114px;
     height: 46px;
-    margin-top: 120px;
+    margin-top: 20px;
     margin-bottom: 77px;
+  }
+  .meeting_btn_parent a {
+    min-height: 35px !important;
+    font-size: 20px;
   }
   .custom_margin_footer {
     margin-top: 16px;
@@ -823,7 +838,11 @@
     font-size: 14px !important;
   }
   .footer_background_set {
-    height: 820px;
+    height: 685px;
+  }
+  .footer_social_icons1 {
+    width: 23px;
+    height: 23px;
   }
   .about_text_size p {
     font-size: 18px !important;
@@ -895,6 +914,9 @@
   .ipad_img {
     height: 75vh !important;
     max-width: 110%;
+  }
+  .crm_image_size {
+    min-height: 126px;
   }
 }
 

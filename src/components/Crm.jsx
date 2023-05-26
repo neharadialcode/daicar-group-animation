@@ -22,7 +22,7 @@ const Crm = () => {
     autoplay: true,
     centerMode: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
   };
 
@@ -115,38 +115,63 @@ const Crm = () => {
             <Slider {...settings}>
               <div
                 id="CRM-img-container"
-                className="p-4 d-flex justify-content-center"
+                className="p4 d-flex justify-content-center"
               >
                 <img
                   width={180}
                   height={126}
                   src={salesfortlogo}
                   alt="icon-1"
+                  className="px-3 w-100 crm_image_size"
                 />
               </div>
               <div
                 id="CRM-img-container"
-                className="p-4 d-flex justify-content-center ps-5"
+                className="p4 d-flex justify-content-center"
               >
-                <img width={181} height={76} src={amazonlogo} alt="icon-1" />
+                <img
+                  width={181}
+                  height={76}
+                  src={amazonlogo}
+                  alt="icon-1"
+                  className="px-3 w-100 crm_image_size"
+                />
               </div>
               <div
                 id="CRM-img-container"
-                className="p-4 d-flex justify-content-center ps-5"
+                className="p4 d-flex justify-content-center"
               >
-                <img width={152} height={43} src={hubsportlogo} alt="icon-2" />
+                <img
+                  width={152}
+                  height={43}
+                  src={hubsportlogo}
+                  alt="icon-2"
+                  className="px-3 w-100 crm_image_size"
+                />
               </div>
               <div
                 id="CRM-img-container"
-                className="p-4 d-flex justify-content-center ps-5"
+                className="p4 d-flex justify-content-center"
               >
-                <img width={196} height={52} src={pipedrivelogo} alt="icon-3" />
+                <img
+                  width={196}
+                  height={52}
+                  src={pipedrivelogo}
+                  alt="icon-3"
+                  className="px-3 w-100 crm_image_size"
+                />
               </div>
               <div
                 id="CRM-img-container"
-                className="p-4 d-flex justify-content-center ps-5"
+                className="p4 d-flex justify-content-center"
               >
-                <img width={280} height={85} src={zendexlogo} alt="icon-4" />
+                <img
+                  width={280}
+                  height={85}
+                  src={zendexlogo}
+                  alt="icon-4"
+                  className="px-3 w-100 crm_image_size"
+                />
               </div>
             </Slider>
           )}

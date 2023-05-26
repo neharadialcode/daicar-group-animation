@@ -506,7 +506,7 @@ const Business = () => {
   return (
     <>
       <div
-        className="business_parent overflow-hidden third_sec_height z_1 pb-5 pb-sm-0 pt-5 min-vh-100"
+        className="business_parent third_sec_height z_1 pb-5 pb-sm-0 pt-5 min-vh-100"
         id="servizi"
       >
         <div className="d-flex flex-column justify-content-center pt-xl-5">
