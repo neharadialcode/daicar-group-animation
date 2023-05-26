@@ -16,28 +16,28 @@ const Header = () => {
     document.body.classList.remove("vh-100");
   }
 
-  gsap.registerPlugin(ScrollTrigger);
-  useEffect(() => {
-    let headerValue = gsap.matchMedia();
-    headerValue.add("(min-width:992px)", () => {
-      gsap.fromTo(
-        ".header_section",
-        {
-          yPercent: "-70",
-          duration: 2,
-        },
-        {
-          yPercent: "10",
-          duration: 2,
-        }
-      );
-    });
-  }, []);
+  // gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   let headerValue = gsap.matchMedia();
+  //   headerValue.add("(min-width:992px)", () => {
+  //     gsap.fromTo(
+  //       ".header_section",
+  //       {
+  //         yPercent: "-70",
+  //         duration: 2,
+  //       },
+  //       {
+  //         yPercent: "10",
+  //         duration: 2,
+  //       }
+  //     );
+  //   });
+  // }, []);
 
   return (
     <div className="header_parent bg_dark_gray">
-      <div className="container-lg common_container py-2 py-lg-0">
-        <div className="header_section d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 py-xl-5 navbar_links">
+      <div className="container-lg common_container py-2 py-lg-1">
+        <div className="header_section d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 navbar_links">
           <a href="/">
             <img
               className="logo_width logo_md_100"
