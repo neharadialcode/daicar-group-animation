@@ -464,6 +464,9 @@
   height: 50px;
   width: 400px;
 }
+.timeline_years h2{
+  letter-spacing: -10px;
+}
 .timeline_arrow_img {
   display: none;
 }
@@ -479,7 +482,7 @@
 .about_img {
   object-fit: cover;
   overflow: visible;
-  height: 500px;
+  height: 450px;
 }
 .about_arrow_img_width {
   width: 35%;
