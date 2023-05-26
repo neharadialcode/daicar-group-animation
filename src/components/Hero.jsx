@@ -116,6 +116,9 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -50,
       });
+      gsap.set("#main-content", {
+        y: "-70px",
+      });
 
       tl = gsap.timeline({
         scrollTrigger: {
@@ -241,6 +244,14 @@ const Hero = () => {
         .to("#hero-ipad-white", {
           scale: 0.8,
         })
+        .set(
+          "#main-content",
+          {
+            scale: 0.7,
+            top: "3%",
+          },
+          "<"
+        )
         .to(".tabs_content_parent", {
           autoAlpha: 1,
         })
@@ -671,6 +682,9 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -50,
       });
+      gsap.set("#main-content", {
+        y: "-70px",
+      });
 
       tl = gsap.timeline({
         scrollTrigger: {
@@ -796,6 +810,14 @@ const Hero = () => {
         .to("#hero-ipad-white", {
           scale: 0.8,
         })
+        .set(
+          "#main-content",
+          {
+            scale: 0.8,
+            top: "-3%",
+          },
+          "<"
+        )
         .to(".tabs_content_parent", {
           autoAlpha: 1,
         })
@@ -1759,136 +1781,6 @@ const Hero = () => {
         autoAlpha: 0,
         yPercent: 100,
       });
-
-      // gsap.set(["#hero-ipad", "#hero-ipad-white"], {
-      //   scale: 2,
-      //   top: "50%",
-      //   left: "50%",
-      //   xPercent: -50,
-      //   yPercent: -50,
-      // });
-      // tl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: "#hero",
-      //     start: "top top",
-      //     end: "+=500%",
-      //     pin: true,
-      //     scrub: 1,
-      //   },
-      // });
-      // tl.to(".arrow-hero-one", {
-      //   yPercent: -200,
-      //   autoAlpha: 0,
-      // })
-      //   .to(
-      //     ".arrow-hero-three",
-      //     {
-      //       yPercent: -300,
-      //       autoAlpha: 0,
-      //     },
-      //     "<"
-      //   )
-      //   .to("#hero-main-heading", {
-      //     yPercent: 100,
-      //     opacity: 0,
-      //   })
-      //   .to(
-      //     ".arrow-hero-two",
-      //     {
-      //       xPercent: 28,
-      //       yPercent: -11,
-      //       scale: 0.1,
-      //       rotate: "45deg",
-      //     },
-      //     "<"
-      //   )
-      //   .set("#hero-outline-arrow", {
-      //     autoAlpha: 1,
-      //   })
-      //   .set(
-      //     "#hero-ipad",
-      //     {
-      //       autoAlpha: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(["#hero-sub-heading-one", "#hero-para-one"], {
-      //     autoAlpha: 1,
-      //   })
-      //   .to("#hero-ipad", {
-      //     scale: 1,
-      //   })
-      //   .to(
-      //     "#main-content",
-      //     {
-      //       scale: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to("#hero-outline-arrow", {
-      //     yPercent: -200,
-      //     duration: 5,
-      //   })
-      //   .to(
-      //     ["#hero-sub-heading-one", "#hero-para-one"],
-      //     {
-      //       autoAlpha: 0,
-      //     },
-      //     "<1"
-      //   )
-      //   .to(
-      //     ["#hero-sub-heading-two", "#hero-para-two"],
-      //     {
-      //       autoAlpha: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(
-      //     "#hero_section",
-      //     {
-      //       height: 0,
-      //       duration: 2,
-      //     },
-      //     "<"
-      //   )
-      //   .set(
-      //     "#hero-ipad-white",
-      //     {
-      //       scale: 1,
-      //     },
-      //     ">"
-      //   )
-      //   .to(
-      //     "#hero-ipad",
-      //     {
-      //       autoAlpha: 0,
-      //     },
-      //     ">"
-      //   )
-      //   .to("#hero-ipad", {
-      //     yPercent: -200,
-      //   })
-      //   .to(
-      //     "#hero-ipad-white",
-      //     {
-      //       opacity: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(
-      //     "#hero-ipad-white",
-      //     {
-      //       scale: 0.8,
-      //     },
-      //     ">"
-      //   )
-      //   .set(
-      //     "#main-content",
-      //     {
-      //       display: "none",
-      //     },
-      //     "<"
-      //   )
 
       gsap.set(["#hero-ipad", "#hero-ipad-white"], {
         scale: 2,
