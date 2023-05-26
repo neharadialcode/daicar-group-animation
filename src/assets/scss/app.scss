@@ -427,12 +427,12 @@
 }
 .tabs_parent {
   height: 114vh;
-  // background-color: rgb(167, 241, 241);
+  // background-color: rgba(167, 241, 241, 0.525);
 }
 .tabs_lottie,
 .tabs_lottie_1 {
   top: 37% !important;
-  // background-color: rgba(0, 255, 255, 0.276);
+  // background-color: rgba(0, 255, 98, 0.276);
 }
 .tabs_lottie_width {
   width: 60%;
@@ -512,12 +512,6 @@
 .tab_text_position .custom_tab_button_012 {
   transition: unset !important;
 }
-@media (min-width: 1600px) and (min-height: 900px) {
-  .tabs_parent {
-    height: 106vh;
-  }
-}
-
 /* PRELOADER ANIMATION ADDED */
 .loader_fullscreen {
   width: 100%;

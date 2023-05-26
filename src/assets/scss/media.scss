@@ -691,9 +691,6 @@
     transform: translateY(0px) !important;
     margin-bottom: 4px !important;
   }
-  .tabs_lottie {
-    top: 4% !important;
-  }
   .timeline_icon_3 {
     max-width: 150px;
   }
@@ -717,14 +714,8 @@
   #main-assets {
     transform: translateY(48px);
   }
-  .tabs_parent {
-    height: 138vh;
-  }
   .tabs_lottie_width {
     width: 100%;
-  }
-  .tabs_lottie_1 {
-    top: 39% !important;
   }
   .tabs_lottie {
     top: 38% !important;
@@ -943,25 +934,58 @@
   }
 }
 
+@media (max-width: 575.98px) and (max-height: 699.98px) {
+  .tabs_parent {
+    height: 138vh;
+  }
+  .tabs_lottie {
+    top: 4% !important;
+  }
+  .tabs_lottie_1 {
+    top: 39% !important;
+  }
+}
+@media (max-width: 575.98px) and (min-height: 700px) {
+  .tabs_parent {
+    height: 841px;
+  }
+  .tabs_lottie {
+    top: 28% !important;
+  }
+  .tabs_lottie_1 {
+    top: 31% !important;
+  }
+}
 @media (max-width: 575.98px) and (min-height: 800px) {
   .tabs_parent {
     height: 1021px;
   }
 }
-
+@media (min-width: 1600px) and (min-height: 900px) {
+  .tabs_parent {
+    height: 110vh;
+  }
+}
 @media (min-width: 1600px) and (max-height: 959.98px) {
   #main-assets {
     padding-bottom: 174px;
     transform: translateY(0px);
   }
   .tabs_parent {
-    height: 1021px;
+    min-height: 951px;
+    // background-color: rgba(255, 0, 0, 0.217);
   }
   .tabs_lottie,
   .tabs_lottie_1 {
-    top: 42% !important;
+    top: 45% !important;
   }
   .tabs_lottie_width {
-    width: 50%;
+    width: 40%;
+  }
+  .hero_custom_container {
+    margin-top: -40px;
+  }
+  .ipad_img {
+    height: 62vh;
   }
 }
