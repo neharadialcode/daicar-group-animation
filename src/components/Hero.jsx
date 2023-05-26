@@ -1786,13 +1786,6 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -44,
       });
-      // gsap.to(
-      //   "#hero-ipad-white",
-      //   {
-      //     minHeight: "80vh",
-      //   },
-      //   ">"
-      // );
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
@@ -1925,8 +1918,8 @@ const Hero = () => {
         .set(
           "#main-content",
           {
-            scale: 0.7,
-            top: "-17%",
+            scale: 0.66,
+            top: "-16%",
           },
           "<"
         )
