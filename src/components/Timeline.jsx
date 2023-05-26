@@ -798,7 +798,7 @@ const Timeline = () => {
                 <div className="text_parent_height w-100 position-relative">
                   <div
                     id="timeline-heading-container"
-                    className="position-absolute -translate-y-1/2 w-100 timeline_text1_max_w"
+                    className="position-absolute w-100 timeline_text1_max_w"
                   >
                     <div
                       id="timeline-heading-1"
@@ -887,33 +887,27 @@ const Timeline = () => {
                   <div className="position-absolute end-0 top-0 timeline_years">
                     <h2
                       id="timeline-year-1"
-                      className="position-absolute font_9xl fw_light text-white top-50 end-0 -translate-y-1/2"
+                      className="position-absolute font_9xl fw-normal text-white top-50 end-0"
                     >
                       2015
                     </h2>
                     <h2
                       id="timeline-year-2"
-                      className="position-absolute font_9xl fw_light text-white top-50 end-0 -translate-y-1/2"
+                      className="position-absolute font_9xl fw-normal text-white top-50 end-0"
                     >
                       2018
                     </h2>
                     <h2
                       id="timeline-year-3"
-                      className="position-absolute font_9xl fw_light text-white top-50 end-0 -translate-y-1/2"
+                      className="position-absolute font_9xl fw-normal text-white top-50 end-0"
                     >
                       2022
                     </h2>
                     <h2
                       id="timeline-year-4"
-                      className="position-absolute font_9xl fw_light text-white top-50 end-0 -translate-y-1/2"
+                      className="position-absolute font_9xl fw-normal text-white top-50 end-0"
                     >
-                      {/* <p className="font_2xl opacity_05 mb-0 text-end d-none d-sm-block">
-                        2 Ottobre
-                      </p> */}
                       2023
-                      {/* <p className="font_2xl opacity_05 text-end mb-0">
-                        Otto anni
-                      </p> */}
                     </h2>
                   </div>
                 </div>
