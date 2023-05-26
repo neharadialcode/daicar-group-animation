@@ -92,7 +92,7 @@ const Header = () => {
             >
               Sentiamoci
             </a>
-            <button className="navbar_btn font_2xl color_dark_gray">
+            <button className="navbar_btn font_2xl color_dark_gray  custom_tab_button_012">
               chat
             </button>
           </div>
@@ -150,7 +150,7 @@ const Header = () => {
               >
                 Sentiamoci
               </a>
-              <button className="navbar_btn font_2xl color_dark_gray mt-4">
+              <button className="navbar_btn font_2xl color_dark_gray mt-4  custom_tab_button_012">
                 chat
               </button>
             </ul>
