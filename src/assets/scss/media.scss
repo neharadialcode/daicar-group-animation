@@ -777,9 +777,6 @@
     transform: translateY(0px) !important;
     margin-bottom: 4px !important;
   }
-  // .tabs_lottie_1 {
-  //   top: 80px !important;
-  // }
   .tabs_lottie {
     top: 4% !important;
   }
@@ -800,13 +797,11 @@
     top: 20%;
     height: 80%;
   }
-
-  // .custom_height_tab_img_ipad {
-  //   width: 99% !important;
-  //   height: 40%;
-  // }
   .i_pad_img_2 {
     margin-left: unset;
+  }
+  #main-assets {
+    transform: translateY(48px);
   }
   .tabs_parent {
     height: 138vh;
@@ -815,18 +810,11 @@
     width: 100%;
   }
   .tabs_lottie_1 {
-    top: 41% !important;
-  }
-  .tabs_lottie {
     top: 39% !important;
   }
-  // .custom_height_tab_img {
-  //   left: 0% !important;
-  //   width: 100% !important;
-  //   height: unset;
-  //   transform: scale(0.8) !important;
-  //   margin-bottom: -34px !important;
-  // }
+  .tabs_lottie {
+    top: 38% !important;
+  }
   .tabs_btn {
     padding: 8px;
   }
@@ -894,9 +882,6 @@
     max-width: 285px !important;
     margin: auto !important;
   }
-  // .hero_section_heading {
-  //   transform: translateY(-98px);
-  // }
   .custom_business_heading {
     font-size: 28px !important;
     line-height: 90% !important;
@@ -912,13 +897,9 @@
     height: 37px !important;
     padding: 8.4px 16px 6.4px !important;
   }
-
   .timeline_btn {
     padding: 4px 20px 4px;
   }
-  // .about_e_text {
-  //   width: 14px;
-  // }
   .meeting_btn_parent button {
     font-size: 20px !important;
     height: 54px !important;
@@ -935,7 +916,6 @@
   .social_links_parent a img {
     max-width: 24px !important;
   }
-
   .list_item_text {
     font-size: 14px !important;
   }
@@ -990,12 +970,6 @@
   .toggle_icon svg {
     max-width: 26px !important;
   }
-  // .hero_section_heading {
-  //   max-width: 265px !important;
-  // }
-  // .hero_section_heading h2 {
-  //   font-size: 32px !important;
-  // }
   .hero_heading_btn {
     height: 44px !important;
     font-size: 24px !important;
@@ -1011,13 +985,12 @@
   .hero_slide_1 h3,
   .hero_slide_2 h3 {
     font-size: 60px !important;
-    // margin-top: 48px !important;
   }
   .manager_content {
     transform: translateY(-10px);
   }
   .ipad_img {
-    height: 80vh !important;
+    height: 75vh !important;
     max-width: 110%;
   }
 }
@@ -1043,9 +1016,6 @@
   .timeline_arrow_icon {
     top: 72.5%;
   }
-  // .meeting_e_icon {
-  //   max-width: 9px;
-  // }
 }
 
 @media (max-width: 575.98px) and (min-height: 800px) {

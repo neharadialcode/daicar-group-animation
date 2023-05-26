@@ -1918,7 +1918,7 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             scale: 0.7,
-            top: "30%",
+            top: "25%",
           },
           ">"
         )
@@ -1926,7 +1926,7 @@ const Hero = () => {
           "#main-content",
           {
             scale: 0.7,
-            top: "-9%",
+            top: "-17%",
           },
           "<"
         )
