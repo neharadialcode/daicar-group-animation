@@ -602,3 +602,7 @@
   pointer-events: none;
 }
 /* PRELOADER ANIMATION ENDS */
+.not-scroll-before-loading {
+  overflow: hidden;
+  height: 100vh;
+}

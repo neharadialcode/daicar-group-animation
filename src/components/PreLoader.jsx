@@ -8,7 +8,6 @@ const PreLoader = ({ loading }) => {
         className={`loader_fullscreen ${loading ? "" : "preloader_reverse"}`}
       >
         <img className="loader-img" src={preloaderImg} alt="preloaderImg" />
-        {/* <h1 className="p-5 text-ceneter bg-danger">Hello</h1> */}
       </div>
     </>
   );
