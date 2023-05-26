@@ -512,3 +512,8 @@
 .tab_text_position .custom_tab_button_012 {
   transition: unset !important;
 }
+@media (min-width: 1600px) and (min-height: 900px) {
+  .tabs_parent {
+    height: 106vh;
+  }
+}
