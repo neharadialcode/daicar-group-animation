@@ -80,10 +80,10 @@ function Footer() {
             </div>
 
             <div className="col-5 col-md-3 col-lg-2 pe-0 pe-sm-2 ps-0 mx-auto mx-sm-0">
-              <ul className="ps-sm-0 text-start mb-5 mb-sm-0 pb-4 pb-sm-0 text-nowrap px-2 px-sm-0 mx-auto mx-sm-0">
+              <ul className="ps-sm-0 text-start mb-5 mb-sm-0 p pb-sm-0 text-nowrap px-2 px-sm-0 mx-auto mx-sm-0">
                 <li className="list-unstyled">
                   <a
-                    className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
+                    className="font_xsm text-decoration-none fw_medium color_white_off list_item_text ff_montserrat"
                     href="/"
                   >
                     Terms of Service
@@ -91,7 +91,7 @@ function Footer() {
                 </li>
                 <li className="mt-3 list-unstyled">
                   <a
-                    className="font_xsm  text-decoration-none  fw_medium color_white_off list_item_text ff_montserrat"
+                    className="font_xsm text-decoration-none fw_medium color_white_off list_item_text ff_montserrat"
                     href="/"
                   >
                     Privacy Policy
@@ -175,14 +175,14 @@ function Footer() {
                 <a
                   target="blank"
                   href="https://www.instagram.com/"
-                  className="footer_social_icon  insta_icon"
+                  className="footer_social_icon insta_icon"
                 >
                   <InstagramIcon />
                 </a>
                 <a
                   target="blank"
                   href="https://www.facebook.com/"
-                  className="mx-3 mx-sm-4 footer_social_icon"
+                  className="mx-2 mx-sm-4 footer_social_icon"
                 >
                   <FbIcon />
                 </a>
