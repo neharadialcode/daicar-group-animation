@@ -6,11 +6,8 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
 import ipadWhite from "../assets/images/png/ipad-white.png";
-// import ipad_mockup from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
-// import tabSmImg from "../assets/images/png/tab-frame-sm.png";
-// import tabImg1 from "../assets/images/png/tab-frame.png";
 import Lottie from "react-lottie-player";
 import comeLottie from "../assets/lotties/tabs-1.json";
 import marketingLottie from "../assets/lotties/tabs-2.json";
@@ -115,6 +112,9 @@ const Hero = () => {
         left: "50%",
         xPercent: -50,
         yPercent: -50,
+      });
+      gsap.set("#main-content", {
+        y: "-70px",
       });
 
       tl = gsap.timeline({
@@ -241,6 +241,14 @@ const Hero = () => {
         .to("#hero-ipad-white", {
           scale: 0.8,
         })
+        .set(
+          "#main-content",
+          {
+            scale: 0.7,
+            top: "3%",
+          },
+          "<"
+        )
         .to(".tabs_content_parent", {
           autoAlpha: 1,
         })
@@ -671,6 +679,9 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -50,
       });
+      gsap.set("#main-content", {
+        y: "-70px",
+      });
 
       tl = gsap.timeline({
         scrollTrigger: {
@@ -796,6 +807,14 @@ const Hero = () => {
         .to("#hero-ipad-white", {
           scale: 0.8,
         })
+        .set(
+          "#main-content",
+          {
+            scale: 0.8,
+            top: "-3%",
+          },
+          "<"
+        )
         .to(".tabs_content_parent", {
           autoAlpha: 1,
         })
@@ -1760,136 +1779,6 @@ const Hero = () => {
         yPercent: 100,
       });
 
-      // gsap.set(["#hero-ipad", "#hero-ipad-white"], {
-      //   scale: 2,
-      //   top: "50%",
-      //   left: "50%",
-      //   xPercent: -50,
-      //   yPercent: -50,
-      // });
-      // tl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: "#hero",
-      //     start: "top top",
-      //     end: "+=500%",
-      //     pin: true,
-      //     scrub: 1,
-      //   },
-      // });
-      // tl.to(".arrow-hero-one", {
-      //   yPercent: -200,
-      //   autoAlpha: 0,
-      // })
-      //   .to(
-      //     ".arrow-hero-three",
-      //     {
-      //       yPercent: -300,
-      //       autoAlpha: 0,
-      //     },
-      //     "<"
-      //   )
-      //   .to("#hero-main-heading", {
-      //     yPercent: 100,
-      //     opacity: 0,
-      //   })
-      //   .to(
-      //     ".arrow-hero-two",
-      //     {
-      //       xPercent: 28,
-      //       yPercent: -11,
-      //       scale: 0.1,
-      //       rotate: "45deg",
-      //     },
-      //     "<"
-      //   )
-      //   .set("#hero-outline-arrow", {
-      //     autoAlpha: 1,
-      //   })
-      //   .set(
-      //     "#hero-ipad",
-      //     {
-      //       autoAlpha: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(["#hero-sub-heading-one", "#hero-para-one"], {
-      //     autoAlpha: 1,
-      //   })
-      //   .to("#hero-ipad", {
-      //     scale: 1,
-      //   })
-      //   .to(
-      //     "#main-content",
-      //     {
-      //       scale: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to("#hero-outline-arrow", {
-      //     yPercent: -200,
-      //     duration: 5,
-      //   })
-      //   .to(
-      //     ["#hero-sub-heading-one", "#hero-para-one"],
-      //     {
-      //       autoAlpha: 0,
-      //     },
-      //     "<1"
-      //   )
-      //   .to(
-      //     ["#hero-sub-heading-two", "#hero-para-two"],
-      //     {
-      //       autoAlpha: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(
-      //     "#hero_section",
-      //     {
-      //       height: 0,
-      //       duration: 2,
-      //     },
-      //     "<"
-      //   )
-      //   .set(
-      //     "#hero-ipad-white",
-      //     {
-      //       scale: 1,
-      //     },
-      //     ">"
-      //   )
-      //   .to(
-      //     "#hero-ipad",
-      //     {
-      //       autoAlpha: 0,
-      //     },
-      //     ">"
-      //   )
-      //   .to("#hero-ipad", {
-      //     yPercent: -200,
-      //   })
-      //   .to(
-      //     "#hero-ipad-white",
-      //     {
-      //       opacity: 1,
-      //     },
-      //     "<"
-      //   )
-      //   .to(
-      //     "#hero-ipad-white",
-      //     {
-      //       scale: 0.8,
-      //     },
-      //     ">"
-      //   )
-      //   .set(
-      //     "#main-content",
-      //     {
-      //       display: "none",
-      //     },
-      //     "<"
-      //   )
-
       gsap.set(["#hero-ipad", "#hero-ipad-white"], {
         scale: 2,
         top: "45%",
@@ -2460,12 +2349,12 @@ const Hero = () => {
                   </h3>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Lead
-                    <span className="fw_bold mx-2">Qualificati</span>
+                    <span className="fw-bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
-                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
+                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-3 pt-sm-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
                     Daicar aiuta a far
-                    <span className="fw_bold mx-1 mx-sm-2">crescere</span>
+                    <span className="fw-bold mx-1 mx-sm-2">crescere</span>
                     la tua azienda, <br className="d-none d-lg-block" /> creando
                     contatti e generando vendite
                   </p>
@@ -2488,14 +2377,14 @@ const Hero = () => {
                   </h3>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Campagne
-                    <span className="fw_bold mx-2">Generate</span>
+                    <span className="fw-bold mx-2">Generate</span>
                     nel 2022
                   </p>
-                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
+                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-3 pt-sm-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
                     Campaign management
-                    <span className="fw_bold mx-2">flessibile</span> e altamente
+                    <span className="fw-bold mx-2">flessibile</span> e altamente
                     <br className="d-none d-lg-block" />
-                    <span className="fw_bold mx-2">personalizzabile</span>
+                    <span className="fw-bold mx-2">personalizzabile</span>
                     sulle criticità di ogni partner
                     <br />
                   </p>
@@ -2566,16 +2455,6 @@ const Hero = () => {
                 </div>
 
                 <div className="max_width_tabs position-relative">
-                  {/* <img
-                  className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img d-lg-none"
-                  src={tabSmImg}
-                  alt="img"
-                /> */}
-                  {/* <img
-                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img hero-ipad-white d-none d-lg-block invisible"
-                    src={tabImg1}
-                    alt="img"
-                  /> */}
                   <div className="text-center pb-sm-5 tabs_parent d-flex align-items-end">
                     <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0 tabs_content_parent">
                       {buttonData.map((obj, index) => (
@@ -2627,11 +2506,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* <img
-            id="hero-ipad"
-            className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-lg-none"
-            src={ipad_mockup}
-          /> */}
             <img
               id="hero-ipad"
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
