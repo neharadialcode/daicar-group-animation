@@ -6,11 +6,8 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
 import ipadWhite from "../assets/images/png/ipad-white.png";
-// import ipad_mockup from "../assets/images/png/hero_slide_iPad_mockup_02.png";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
-// import tabSmImg from "../assets/images/png/tab-frame-sm.png";
-// import tabImg1 from "../assets/images/png/tab-frame.png";
 import Lottie from "react-lottie-player";
 import comeLottie from "../assets/lotties/tabs-1.json";
 import marketingLottie from "../assets/lotties/tabs-2.json";
@@ -2355,7 +2352,7 @@ const Hero = () => {
                     <span className="fw_bold mx-2">Qualificati</span>
                     nel 2022
                   </p>
-                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
+                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-3 pt-sm-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2">
                     Daicar aiuta a far
                     <span className="fw_bold mx-1 mx-sm-2">crescere</span>
                     la tua azienda, <br className="d-none d-lg-block" /> creando
@@ -2383,7 +2380,7 @@ const Hero = () => {
                     <span className="fw_bold mx-2">Generate</span>
                     nel 2022
                   </p>
-                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
+                  <p className="custom_lh_132 font_4xl color_white_off text-center pt-3 pt-sm-5 pt-lg-2 pt-xl-0 pb-xl-4 hero_slide_para_2 campagne_para">
                     Campaign management
                     <span className="fw_bold mx-2">flessibile</span> e altamente
                     <br className="d-none d-lg-block" />
@@ -2458,16 +2455,6 @@ const Hero = () => {
                 </div>
 
                 <div className="max_width_tabs position-relative">
-                  {/* <img
-                  className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img d-lg-none"
-                  src={tabSmImg}
-                  alt="img"
-                /> */}
-                  {/* <img
-                    className="i_pad_img_2 pt-3 w-100 custom_size_white_tab_ipad_img hero-ipad-white d-none d-lg-block invisible"
-                    src={tabImg1}
-                    alt="img"
-                  /> */}
                   <div className="text-center pb-sm-5 tabs_parent d-flex align-items-end">
                     <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0 tabs_content_parent">
                       {buttonData.map((obj, index) => (
@@ -2519,11 +2506,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* <img
-            id="hero-ipad"
-            className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-lg-none"
-            src={ipad_mockup}
-          /> */}
             <img
               id="hero-ipad"
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
