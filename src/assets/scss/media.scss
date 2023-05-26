@@ -968,3 +968,8 @@
     width: 50%;
   }
 }
+@media (min-width: 1100px), (max-width: 1199.98px) and (max-height: 859.98px) {
+  .tabs_parent {
+    height: 138vh;
+  }
+}
