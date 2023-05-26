@@ -146,7 +146,7 @@ const Partners = () => {
       className="partner_parent d-flex justify-content-center align-items-center overflow-hidden min-vh-100"
     >
       <div className="container">
-        <div className="position-absolute arrowbtn_set d-none d-lg-block">
+        <div className="position-absolute arrowbtn_set d-none d-xl-block">
           <img src={leftTextImg} alt="partner-left-text-img" />
         </div>
         <div className="partner_text">

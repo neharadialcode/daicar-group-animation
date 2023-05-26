@@ -104,17 +104,6 @@
   .timeline_left_icon {
     right: -25%;
   }
-  // #hero-ipad {
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%) !important;
-  // }
-  // #hero-ipad,
-  // .custom_size_white_tab_ipad_img {
-  //   width: 100% !important;
-  //   transform: scale(1.099);
-  //   margin-left: -8px;
-  // }
   .tabs_lottie {
     top: 10%;
   }
@@ -124,27 +113,6 @@
   .meeting_text_color {
     color: var(--color-white-off);
   }
-  // .about_icon_2 {
-  //   max-width: 570px !important;
-  // }
-  // .about_col_content {
-  //   max-width: 660px !important;
-  // }
-  // .about_text_1 {
-  //   h4 {
-  //     max-width: 900px;
-  //   }
-  // }
-  // .about_text_2 {
-  //   h4 {
-  //     max-width: 840px;
-  //   }
-  // }
-  // .about_text_3 {
-  //   h4 {
-  //     max-width: 840px;
-  //   }
-  // }
   .divide_space_text {
     justify-content: space-between !important;
   }
@@ -153,13 +121,7 @@
     margin: 0 auto;
     padding: 0 12px;
   }
-  // .heading_1 .m_w_business_text {
-  //   max-width: 474px;
-  // }
-  // .m_w_business_text {
-  //   max-width: 525px;
-  //   line-height: 142%;
-  // }
+
   .business_img_1 {
     margin-left: 32px !important;
   }
@@ -209,10 +171,6 @@
     transform: translateY(20px) !important;
     padding-top: 14px !important;
   }
-  // .about_text_1 {
-  //   width: 710px !important;
-  //   margin-left: -60px;
-  // }
 }
 
 @media (max-width: 1599.98px) {
@@ -224,11 +182,6 @@
     width: 70% !important;
     left: 15% !important;
   }
-  // .custom_height_tab_img_ipad {
-  //   max-height: 565px;
-  //   width: 70% !important;
-  //   left: 15% !important;
-  // }
   .tabs_parent {
     height: 144vh;
   }
@@ -262,9 +215,6 @@
 }
 
 @media (max-width: 1499.98px) {
-  // .m_w_business_text {
-  //   max-width: 500px;
-  // }
   .meeting_para {
     line-height: 260% !important;
     max-width: 1072px !important;
@@ -281,12 +231,6 @@
     transform: scale(0.78);
     margin-top: 52px;
   }
-  // .tabs_lottie {
-  //   top: 21%;
-  // }
-  // .tabs_lottie_width {
-  //   width: 70%;
-  // }
   .tabs_lottie,
   .tabs_lottie_1 {
     top: 36.5% !important;
@@ -374,9 +318,6 @@
   .timeline_text1_max_w {
     top: 20%;
   }
-  // .hero_e_text {
-  //   width: 13px;
-  // }
   .tabs_lottie {
     top: 44% !important;
     width: 60% !important;
@@ -441,17 +382,6 @@
   .footer_background_set {
     height: 530px;
   }
-  // .timeline_parent .timeline_text_3 img {
-  //   max-width: 160.29px !important;
-  // }
-  // .timeline_text_3 {
-  //   padding-right: 65px;
-  // }
-  // .timeline_text_4 {
-  //   top: 50% !important;
-  //   right: 2% !important;
-  //   max-width: 120px;
-  // }
   .custom_size_timeline_text {
     font-size: 13px;
   }
@@ -518,6 +448,10 @@
 }
 
 @media (max-width: 991.98px) {
+  .navbar_btn {
+    width: 135px;
+    height: 55px;
+  }
   .i_pad_img_2 {
     max-height: 750px;
     transform: unset;
@@ -558,18 +492,7 @@
   .timeline_btn {
     padding: 3px 25px 8px;
   }
-  // .hero_e_text {
-  //   width: 17px;
-  // }
-  // .custom_height_tab_img_ipad {
-  //   width: 90% !important;
-  // }
-  // .carplanner_cards {
-  //   width: 350px;
-  // }
-  // .carplanner_logo {
-  //   max-width: 280px;
-  // }
+
   .small_icon_arrow_2 {
     top: 65%;
     right: 25%;
@@ -683,10 +606,6 @@
   .hero-outline-arrow svg {
     width: 100vw;
   }
-  // .tab-img-custom-size {
-  //   margin-left: 0px;
-  //   width: 100% !important;
-  // }
   .hero_heading_btn {
     height: 48px !important;
   }
@@ -707,28 +626,12 @@
   .tabs_lottie_1 {
     top: 36% !important;
   }
-  // .tab_text_position {
-  //   transform: translateY(-50px) !important;
-  // }
-  // .tabs_lottie {
-  //   left: 12% !important;
-  //   width: 75% !important;
-  //   top: 20% !important;
-  // }
-  // .tabs_lottie_1 {
-  //   top: 280px !important;
-  //   left: 1% !important;
-  //   width: 90% !important;
-  // }
 }
 
 @media (max-width: 767.98px) {
   .roadmap_para {
     max-width: 100%;
   }
-  // .crm_slider {
-  //   height: unset;
-  // }
   .custom_size_timeline_text {
     font-size: 16px;
   }
@@ -777,9 +680,6 @@
     transform: translateY(0px) !important;
     margin-bottom: 4px !important;
   }
-  // .tabs_lottie_1 {
-  //   top: 80px !important;
-  // }
   .tabs_lottie {
     top: 4% !important;
   }
@@ -800,11 +700,6 @@
     top: 20%;
     height: 80%;
   }
-
-  // .custom_height_tab_img_ipad {
-  //   width: 99% !important;
-  //   height: 40%;
-  // }
   .i_pad_img_2 {
     margin-left: unset;
   }
@@ -820,13 +715,6 @@
   .tabs_lottie {
     top: 39% !important;
   }
-  // .custom_height_tab_img {
-  //   left: 0% !important;
-  //   width: 100% !important;
-  //   height: unset;
-  //   transform: scale(0.8) !important;
-  //   margin-bottom: -34px !important;
-  // }
   .tabs_btn {
     padding: 8px;
   }
@@ -894,9 +782,6 @@
     max-width: 285px !important;
     margin: auto !important;
   }
-  // .hero_section_heading {
-  //   transform: translateY(-98px);
-  // }
   .custom_business_heading {
     font-size: 28px !important;
     line-height: 90% !important;
@@ -916,9 +801,6 @@
   .timeline_btn {
     padding: 4px 20px 4px;
   }
-  // .about_e_text {
-  //   width: 14px;
-  // }
   .meeting_btn_parent button {
     font-size: 20px !important;
     height: 54px !important;
@@ -990,12 +872,6 @@
   .toggle_icon svg {
     max-width: 26px !important;
   }
-  // .hero_section_heading {
-  //   max-width: 265px !important;
-  // }
-  // .hero_section_heading h2 {
-  //   font-size: 32px !important;
-  // }
   .hero_heading_btn {
     height: 44px !important;
     font-size: 24px !important;
@@ -1011,7 +887,6 @@
   .hero_slide_1 h3,
   .hero_slide_2 h3 {
     font-size: 60px !important;
-    // margin-top: 48px !important;
   }
   .manager_content {
     transform: translateY(-10px);
@@ -1043,9 +918,6 @@
   .timeline_arrow_icon {
     top: 72.5%;
   }
-  // .meeting_e_icon {
-  //   max-width: 9px;
-  // }
 }
 
 @media (max-width: 575.98px) and (min-height: 800px) {

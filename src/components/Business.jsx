@@ -509,7 +509,7 @@ const Business = () => {
         className="business_parent overflow-hidden third_sec_height z_1 pb-5 pb-sm-0 pt-5 min-vh-100"
         id="servizi"
       >
-        <div className="d-flex flex-column justify-content-center pt-sm-5">
+        <div className="d-flex flex-column justify-content-center pt-xl-5">
           <div className="position-absolute d-none d-sm-block d-lg-none">
             <img
               className="w-100 small_tab_arrow_img"

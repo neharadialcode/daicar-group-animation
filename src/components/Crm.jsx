@@ -57,7 +57,7 @@ const Crm = () => {
         id="CRM"
         className="d-flex justify-content-center align-items-center crm_parent overflow-hidden bg_light_white min-vh-100"
       >
-        <div className="position-absolute crm_left_icon d-none d-lg-block z_negative">
+        <div className="position-absolute crm_left_icon d-none d-xl-block z_negative">
           <img src={crmLeftIcon} alt="crm-left-icon" />
         </div>
         <div className="container custom_container crm_text">

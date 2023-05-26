@@ -111,7 +111,7 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   href="#main-assets"
-                  className="font_lg color_white_off nav_hover"
+                  className="font_2xl color_white_off nav_hover"
                 >
                   Main Assets
                 </a>
@@ -120,7 +120,7 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   href="#servizi"
-                  className="font_lg color_white_off nav_hover"
+                  className="font_2xl color_white_off nav_hover"
                 >
                   Servizi
                 </a>
@@ -129,7 +129,7 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   href="#daicar-group"
-                  className="font_lg color_white_off nav_hover"
+                  className="font_2xl color_white_off nav_hover"
                 >
                   Daicar Group
                 </a>
@@ -138,14 +138,14 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   href="#contatti"
-                  className="font_lg color_white_off nav_hover"
+                  className="font_2xl color_white_off nav_hover"
                 >
                   Contatti
                 </a>
               </li>
               <a
                 onClick={() => setNavShow(false)}
-                className="mb-0 fw-bold font_lg color_white_off sentia_link pt-2"
+                className="mb-0 fw-bold font_2xl color_white_off sentia_link pt-2"
                 href="/"
               >
                 Sentiamoci
