@@ -80,10 +80,10 @@ const Business = () => {
             autoAlpha: 0.5,
           }
         )
+
         .to(".small_icon", {
           top: "-5px",
         })
-
         .from(".business_heading_1", {
           autoAlpha: 0.5,
         })
@@ -126,6 +126,7 @@ const Business = () => {
           top: "60px",
         })
 
+        ///////////
         .from(".business_heading_2", {
           autoAlpha: 0.5,
         })
@@ -150,10 +151,6 @@ const Business = () => {
         .to(".business_heading_2", {
           autoAlpha: 0.5,
         })
-        .addLabel("business_accordion_3")
-        .from(".business_heading_3", {
-          autoAlpha: 0.5,
-        })
         .to(
           ".business_img_2",
           {
@@ -169,9 +166,11 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
-          top: "128px",
+          top: "130px",
         })
-        .to(".business_heading_3", {
+
+        //////////
+        .from(".business_heading_3", {
           autoAlpha: 0.5,
         })
         .to(".business_para_3", {
@@ -210,9 +209,20 @@ const Business = () => {
           ">"
         )
         .to(".small_icon", {
+          top: "128px",
+        })
+
+        //////////
+        .to(
+          ".business_img_4",
+          {
+            autoAlpha: 1,
+          },
+          ">"
+        )
+        .to(".small_icon", {
           top: "198px",
         })
-        .addLabel("business_accordion_4")
         .from(".business_heading_4", {
           autoAlpha: 0.5,
         })
