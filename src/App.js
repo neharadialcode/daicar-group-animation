@@ -10,10 +10,20 @@ import Footer from "./components/Footer";
 import ScrollChatIcon from "./components/ScrollChatIcon";
 import largeArrow from "./assets/images/svg/largeArrow.svg";
 import largeArrow2 from "./assets/images/svg/arrow-large-2.svg";
+import PreLoader from "./components/PreLoader";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <>
+      {<PreLoader loading={loading} />}
       <Hero />
       <Business />
       <AboutUs />
