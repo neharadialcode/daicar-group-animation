@@ -926,3 +926,20 @@
     height: 1021px;
   }
 }
+
+@media (min-width: 1600px) and (max-height: 959.98px) {
+  #main-assets {
+    padding-bottom: 174px;
+    transform: translateY(0px);
+  }
+  .tabs_parent {
+    height: 1021px;
+  }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 42% !important;
+  }
+  .tabs_lottie_width {
+    width: 50%;
+  }
+}
