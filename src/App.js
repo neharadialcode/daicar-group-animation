@@ -42,6 +42,3 @@ function App() {
 }
 
 export default App;
-// tabs_lottie
-// tabs_lottie_1
-// tabs_parent
