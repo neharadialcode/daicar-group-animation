@@ -887,25 +887,25 @@ const Timeline = () => {
                   <div className="position-absolute end-0 top-0 timeline_years">
                     <h2
                       id="timeline-year-1"
-                      className="position-absolute font_9xl fw-normal text-white top-50 end-0"
+                      className="position-absolute font_9xl fw-normal color_white_off top-50 end-0"
                     >
                       2015
                     </h2>
                     <h2
                       id="timeline-year-2"
-                      className="position-absolute font_9xl fw-normal text-white top-50 end-0"
+                      className="position-absolute font_9xl fw-normal color_white_off top-50 end-0"
                     >
                       2018
                     </h2>
                     <h2
                       id="timeline-year-3"
-                      className="position-absolute font_9xl fw-normal text-white top-50 end-0"
+                      className="position-absolute font_9xl fw-normal color_white_off top-50 end-0"
                     >
                       2022
                     </h2>
                     <h2
                       id="timeline-year-4"
-                      className="position-absolute font_9xl fw-normal text-white top-50 end-0"
+                      className="position-absolute font_9xl fw-normal color_white_off top-50 end-0"
                     >
                       2023
                     </h2>
