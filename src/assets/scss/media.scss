@@ -544,10 +544,6 @@
     font-size: 80px !important;
     // margin-top: 132px !important;
   }
-  .hero_slide_3_btn {
-    font-size: 28px !important;
-    padding: 2px 20px 13px !important;
-  }
   .hero_slide_para_1 {
     font-size: 24px !important;
   }
@@ -615,6 +611,11 @@
   }
   .hero_heading_btn {
     height: 48px !important;
+  }
+  .hero_slide_3_btn {
+    font-size: 28px !important;
+    height: 42px !important;
+    width: 136px !important;
   }
 }
 
@@ -897,6 +898,10 @@
     vertical-align: middle !important;
     padding: 7px 16px !important;
   }
+  .hero_slide_3_btn {
+    height: 37px !important;
+    width: 114px !important;
+  }
   #hero-main-heading {
     max-width: 254px !important;
     margin: 0 auto !important;
@@ -916,7 +921,6 @@
   .crm_image_size {
     min-height: 126px;
   }
-
   .loader_fullscreen img {
     width: 160px;
     height: 160px;
@@ -968,6 +972,7 @@
     width: 50%;
   }
 }
+
 @media (min-width: 1100px), (max-width: 1199.98px) and (max-height: 859.98px) {
   .tabs_parent {
     height: 138vh;
