@@ -2333,7 +2333,10 @@ const Hero = () => {
                 >
                   <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center">
                     Il futuro delle tue
-                    <a className="text-decoration-none mt-sm-2" href="#servizi">
+                    <a
+                      className="text-decoration-none mt-sm-2 mt-xxl-3"
+                      href="#servizi"
+                    >
                       <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                         vendite
                       </button>
@@ -2361,7 +2364,10 @@ const Hero = () => {
                 >
                   <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center hero_text_2">
                     Il futuro delle tue
-                    <a className="text-decoration-none mt-sm-2" href="#servizi">
+                    <a
+                      className="text-decoration-none mt-sm-2 mt-xxl-3"
+                      href="#servizi"
+                    >
                       <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                         vendite
                       </button>
