@@ -239,6 +239,9 @@
   .tabs_lottie_1 {
     top: 36.5% !important;
   }
+  .hero_slide_3_btn {
+    font-size: 28px !important;
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -461,6 +464,11 @@
   .crm_parent_img .crm_img_size img {
     max-width: 150px;
   }
+  .hero_slide_3_btn {
+    font-size: 24px !important;
+    height: 42px !important;
+    width: 136px !important;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -630,8 +638,6 @@
   }
   .hero_slide_3_btn {
     font-size: 28px !important;
-    height: 42px !important;
-    width: 136px !important;
   }
   .crm_parent_img .crm_img_size {
     transform: scale(1);
