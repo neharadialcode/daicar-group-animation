@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      {/* {<PreLoader loading={loading} />} */}
+      {<PreLoader loading={loading} />}
       <Hero />
       <Business />
       <AboutUs />
