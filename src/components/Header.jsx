@@ -16,23 +16,25 @@ const Header = () => {
     document.body.classList.remove("vh-100");
   }
 
-  // gsap.registerPlugin(ScrollTrigger);
-  // useEffect(() => {
-  //   let headerValue = gsap.matchMedia();
-  //   headerValue.add("(min-width:992px)", () => {
-  //     gsap.fromTo(
-  //       ".header_section",
-  //       {
-  //         yPercent: "-70",
-  //         duration: 2,
-  //       },
-  //       {
-  //         yPercent: "10",
-  //         duration: 2,
-  //       }
-  //     );
-  //   });
-  // }, []);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    let headerValue = gsap.matchMedia();
+    headerValue.add("(min-width:992px)", () => {
+      gsap.fromTo(
+        ".header_section",
+        {
+          yPercent: "-70",
+          duration: 2,
+          delay: 2,
+        },
+        {
+          yPercent: "10",
+          duration: 2,
+          delay: 2,
+        }
+      );
+    });
+  }, []);
 
   return (
     <div className="header_parent bg_dark_gray">
