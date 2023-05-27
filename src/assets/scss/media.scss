@@ -242,6 +242,9 @@
   .hero_slide_3_btn {
     font-size: 28px !important;
   }
+  .show_chat_icon {
+    right: 95px;
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -647,6 +650,9 @@
     min-width: 210px;
     padding: 0 16px;
     height: 146px;
+  }
+  .show_chat_icon {
+    right: 35px;
   }
 }
 
