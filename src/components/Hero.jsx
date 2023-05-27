@@ -2301,7 +2301,10 @@ const Hero = () => {
     <>
       <div className="position-relative z-10">
         <Header />
-        <div id="hero" className="color_dark_gray z-10 overflow-hidden">
+        <div
+          id="hero"
+          className="color_dark_gray z-10 overflow-hidden bg-primar"
+        >
           <div className="container vh-100 z-0 position-relative hero_custom_container">
             <div
               id="main-content"
@@ -2418,8 +2421,9 @@ const Hero = () => {
             </div>
 
             <div id="intro-content" className="position-relative h-100 w-100">
+              {/* overflow-hidden */}
               <div
-                className="vh-100 d-flex flex-column justify-content-center tab_parent overflow-hidden z_2"
+                className="vh-100 d-flex flex-column justify-content-center tab_parent z_2"
                 id="main-assets"
               >
                 <div className="side_icon position-absolute tab_right_icon d-none d-xl-block me-4">
@@ -2455,7 +2459,6 @@ const Hero = () => {
                     <TabRightIcon />
                   </div>
                 </div>
-
                 <div className="max_width_tabs position-relative">
                   <div className="text-center pb-sm-5 tabs_parent d-flex align-items-end">
                     <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0 tabs_content_parent">
