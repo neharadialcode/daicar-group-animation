@@ -814,9 +814,12 @@ const Timeline = () => {
                         automotive, specializzata nella lead generation
                         innovativa.
                       </p>
-                      <button className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent">
+                      <a
+                        className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent"
+                        href="#partners"
+                      >
                         automotive
-                      </button>
+                      </a>
                     </div>
                     <h2
                       id="timeline-heading-2"
@@ -846,15 +849,24 @@ const Timeline = () => {
                         di lead altamente qualificate.
                       </p>
                       <div className="d-flex align-items-center gap-1gap-sm-3 mt-4 mt-lg-0">
-                        <button className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent">
+                        <a
+                          className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent"
+                          href="#partners"
+                        >
                           finanza
-                        </button>
-                        <button className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent mx-2 mx-sm-3">
+                        </a>
+                        <a
+                          className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent mx-2 mx-sm-3"
+                          href="#partners"
+                        >
                           assicurazione
-                        </button>
-                        <button className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent">
+                        </a>
+                        <a
+                          className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent"
+                          href="#partners"
+                        >
                           telco
-                        </button>
+                        </a>
                       </div>
                     </div>
                     <div
@@ -869,9 +881,12 @@ const Timeline = () => {
                       <p className="font_md color_white_off">
                         Il 2 Ottobre faremo <br /> otto anni.
                       </p>
-                      <button className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012 timeline_heading_4_btn">
+                      <a
+                        className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012 timeline_heading_4_btn"
+                        href="#partners"
+                      >
                         compleanno
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
