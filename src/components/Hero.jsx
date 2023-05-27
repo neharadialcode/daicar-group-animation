@@ -1735,7 +1735,7 @@ const Hero = () => {
 
     mm.add("(max-width:575.98px)", () => {
       gsap.set("#main-content", {
-        y: "-60px",
+        y: "-90px",
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.5,
