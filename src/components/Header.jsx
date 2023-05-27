@@ -20,19 +20,11 @@ const Header = () => {
   useEffect(() => {
     let headerValue = gsap.matchMedia();
     headerValue.add("(min-width:992px)", () => {
-      gsap.fromTo(
-        ".header_section",
-        {
-          yPercent: "-70",
-          duration: 2,
-          delay: 2,
-        },
-        {
-          yPercent: "10",
-          duration: 2,
-          delay: 2,
-        }
-      );
+      gsap.from(".header_section", {
+        yPercent: "-70",
+        duration: 1,
+        delay: 3,
+      });
     });
   }, []);
 
