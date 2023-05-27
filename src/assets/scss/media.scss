@@ -291,6 +291,15 @@
   .tabs_lottie_1 {
     top: 41% !important;
   }
+  .crm_parent_img {
+    flex-wrap: wrap;
+  }
+  .crm_parent_img .crm_img_size {
+    transform: scale(0.9);
+  }
+  .crm_parent_img .crm_img_size img {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 1299.98px) {
@@ -448,6 +457,9 @@
   }
   .tabs_parent {
     height: 164vh;
+  }
+  .crm_parent_img .crm_img_size img {
+    max-width: 150px;
   }
 }
 
@@ -621,6 +633,15 @@
     height: 42px !important;
     width: 136px !important;
   }
+  .crm_parent_img .crm_img_size {
+    transform: scale(1);
+  }
+  .crm_parent_img .crm_img_size img {
+    max-width: 210px;
+    min-width: 210px;
+    padding: 0 16px;
+    height: 146px;
+  }
 }
 
 @media (max-width: 799.98px) {
@@ -670,6 +691,12 @@
       right: -15px;
       top: 30px;
     }
+  }
+  .crm_parent_img .crm_img_size img {
+    max-width: 140px;
+    min-width: 140px;
+    height: 86px;
+    padding: 0 12px;
   }
 }
 

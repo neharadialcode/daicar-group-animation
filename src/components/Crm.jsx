@@ -76,37 +76,62 @@ const Crm = () => {
             <span className="font_lg">.</span>
           </div>
           {!isMobileDevice && (
-            <div className="pb-lg-5 crm_parent_img">
-              <div className="pb-lg-5 d-flex justify-content-between align-items-center flex-wrap my-xxl-5 py-5 crm_img">
-                <div id="CRM-img-container" className="p-4 text-center">
+            <div className="pb-lg-5">
+              <div className="pb-lg-5 d-flex justify-content-center justify-content-lg-between align-items-center my-xxl-5 py-5 crm_parent_img">
+                <div
+                  id="CRM-img-container"
+                  className="p-xxl-4 text-center crm_img_size mt-2 mt-lg-0"
+                >
                   <img
                     width={180}
                     height={126}
                     src={salesfortlogo}
-                    alt="icon-1"
+                    alt="crm-icon-1"
                   />
                 </div>
-                <div id="CRM-img-container" className="p-4 text-center ps-5">
-                  <img width={181} height={76} src={amazonlogo} alt="icon-1" />
+                <div
+                  id="CRM-img-container"
+                  className="p-xxl-4 text-center crm_img_size mt-2 mt-lg-0"
+                >
+                  <img
+                    width={181}
+                    height={76}
+                    src={amazonlogo}
+                    alt="crm-icon-2"
+                  />
                 </div>
-                <div id="CRM-img-container" className="p-4 text-center ps-5">
+                <div
+                  id="CRM-img-container"
+                  className="p-xxl-4 text-center crm_img_size mt-2 mt-lg-0"
+                >
                   <img
                     width={152}
                     height={43}
                     src={hubsportlogo}
-                    alt="icon-2"
+                    alt="crm-icon-3"
                   />
                 </div>
-                <div id="CRM-img-container" className="p-4 text-center ps-5">
+                <div
+                  id="CRM-img-container"
+                  className="p-xxl-4 text-center crm_img_size mt-2 mt-lg-0"
+                >
                   <img
                     width={196}
                     height={52}
                     src={pipedrivelogo}
-                    alt="icon-3"
+                    alt="crm-icon-4"
                   />
                 </div>
-                <div id="CRM-img-container" className="p-4 text-center ps-5">
-                  <img width={280} height={85} src={zendexlogo} alt="icon-4" />
+                <div
+                  id="CRM-img-container"
+                  className="p-xxl-4 text-center crm_img_size mt-2 mt-lg-0"
+                >
+                  <img
+                    width={280}
+                    height={85}
+                    src={zendexlogo}
+                    alt="crm-icon-5"
+                  />
                 </div>
               </div>
             </div>
@@ -115,7 +140,7 @@ const Crm = () => {
             <Slider {...settings}>
               <div
                 id="CRM-img-container"
-                className="p4 d-flex justify-content-center"
+                className="d-flex justify-content-center"
               >
                 <img
                   width={180}
@@ -127,7 +152,7 @@ const Crm = () => {
               </div>
               <div
                 id="CRM-img-container"
-                className="p4 d-flex justify-content-center"
+                className="d-flex justify-content-center"
               >
                 <img
                   width={181}
@@ -139,7 +164,7 @@ const Crm = () => {
               </div>
               <div
                 id="CRM-img-container"
-                className="p4 d-flex justify-content-center"
+                className="d-flex justify-content-center"
               >
                 <img
                   width={152}
@@ -151,7 +176,7 @@ const Crm = () => {
               </div>
               <div
                 id="CRM-img-container"
-                className="p4 d-flex justify-content-center"
+                className="d-flex justify-content-center"
               >
                 <img
                   width={196}
@@ -163,7 +188,7 @@ const Crm = () => {
               </div>
               <div
                 id="CRM-img-container"
-                className="p4 d-flex justify-content-center"
+                className="d-flex justify-content-center"
               >
                 <img
                   width={280}
