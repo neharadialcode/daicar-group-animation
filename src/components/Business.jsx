@@ -44,7 +44,7 @@ const Business = () => {
       });
       tl2
         .to("#hero-large-arrow", {
-          scale: 1.5,
+          scale: 1.8,
           top: "20%",
           immediateRender: false,
         })
@@ -65,10 +65,10 @@ const Business = () => {
           pin: true,
         },
       });
-      tl.from(".main_text", {
-        autoAlpha: 0,
-        scale: 0.5,
-      })
+        tl.from(".main_text", {
+          autoAlpha: 0,
+          scale: 0.5,
+        })
         .to(
           [
             ".business_heading_1",
@@ -267,7 +267,7 @@ const Business = () => {
 
       tl2
         .to("#hero-large-arrow", {
-          scale: 1.5,
+          scale: 1.8,
           top: "20%",
           immediateRender: false,
         })
