@@ -20,18 +20,26 @@ const Header = () => {
   useEffect(() => {
     let headerValue = gsap.matchMedia();
     headerValue.add("(min-width:992px)", () => {
-      gsap.from(".header_section", {
-        yPercent: "-70",
+      const tl = gsap.timeline({});
+      tl.from(".header_section", {
+        autoAlpha: 0,
+      }).from(".header_section", {
+        top: "-100px",
         duration: 1,
         delay: 3,
       });
+      // tl.from(".header_section", {
+      //   yPercent: -150,
+      //   duration: 1,
+      //   delay: 3,
+      // });
     });
   }, []);
 
   return (
-    <div className="header_parent bg_dark_gray">
-      <div className="container-lg common_container py-2 py-lg-1">
-        <div className="header_section d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 navbar_links">
+    <div className="header_parent bg_dark_gray" style={{ height: "100px" }}>
+      <div className="container-lg common_container py-2 py-lg-1 position-relative">
+        <div className="header_section position-absolute w-100 d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 navbar_links">
           <a href="/">
             <img
               className="logo_width logo_md_100"
