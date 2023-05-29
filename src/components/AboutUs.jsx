@@ -48,11 +48,6 @@ const About = () => {
       });
 
       tl2
-        // .from("#about-content-2", {
-        //   xPercent: -50,
-        //   autoAlpha: 0,
-        //   scale: 0.8,
-        // })
         .from("#about-arrow-img", {
           xPercent: -50,
           autoAlpha: 0,
@@ -64,8 +59,7 @@ const About = () => {
             autoAlpha: 0,
             scale: 0,
             xPercent: -50,
-          },
-          "<"
+          }
         )
         .fromTo(
           "#about-image-block",
@@ -152,8 +146,7 @@ const About = () => {
             autoAlpha: 0,
             scale: 0,
             xPercent: -50,
-          },
-          "<"
+          }
         )
         .fromTo(
           "#about-image-block",
@@ -240,8 +233,7 @@ const About = () => {
             autoAlpha: 0,
             scale: 0,
             xPercent: -50,
-          },
-          "<"
+          }
         )
         .fromTo(
           "#about-image-block",

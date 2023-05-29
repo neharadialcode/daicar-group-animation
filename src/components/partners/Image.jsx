@@ -2,7 +2,7 @@ import ParentLogoPara from "./ParentLogoPara";
 
 const Image = ({ src, alt, height, width, onMouseEnter, onMouseLeave }) => {
   return (
-    <div className="d-flex flex-column align-items-center w-100 w-sm-unset px-5 px-sm-0">
+    <div className="d-flex flex-column align-items-center w-100 w-sm-unset px-5 px-sm-0 partners_icons">
       <img
         className="cursor-pointer z_2"
         src={src}

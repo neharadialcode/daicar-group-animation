@@ -121,115 +121,128 @@ const Partners = () => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#partners",
-          start: "top top",
-          pin: true,
+          start: "top 70%",
+          // scrub: 1,
+          // pin: true,
         },
       });
-      tl2.from("#partner-img-container img", {
-        x: -50,
-        autoAlpha: 0,
-        stagger: 0.07,
-      });
+      tl2
+        .from("#partners-content-heading", {
+          y: -20,
+          autoAlpha: 0,
+        })
+        .from("#partner-img-container img", {
+          x: -50,
+          autoAlpha: 0,
+          stagger: 0.07,
+        });
     });
+
     return () => ctx.revert();
   }, []);
   return (
-    <>
-      <div id="partners" className="min-vh-100 overflow-hidden d-sm-flex d-lg-block justify-content-center flex-column">
-        <div
-          id="partners-content-heading"
-          className="d-flex align-items-center gap-2 justify-content-center pt-5"
-        >
-          <p className="font_5xl color_dark_gray mb-0 custom_letter_spacing">
-            Non cerchiamo clienti ma
-          </p>
-          <a href="#CRM">
-            <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
-              partner
-            </button>
-          </a>
-          <span className="font_lg">.</span>
+    <div
+      id="partners"
+      className="partner_parent d-flex justify-content-center align-items-center overflow-hidden min-vh-100"
+    >
+      <div className="container">
+        <div className="position-absolute arrowbtn_set d-none d-xl-block">
+          <img src={leftTextImg} alt="partner-left-text-img" />
         </div>
-        <div className="mt-5 pt-3 pt-xl-5">
-          <div className="container custom_top_space_partner_logos">
-            <div className="position-absolute arrowbtn_set d-none d-xl-block">
-              <img src={leftTextImg} alt="partner-left-text-img" />
+        <div className="partner_text">
+          <div className="my-3 my-lg-4 my-xxl-5">
+            <div
+              id="partners-content-heading"
+              className="d-flex align-items-center gap-2 justify-content-center "
+            >
+              <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
+                Non cerchiamo clienti ma
+              </p>
+              <a href="#CRM">
+                <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
+                  partner
+                </button>
+              </a>
+              <span className="font_lg">.</span>
             </div>
-            {!isMobileDevice && (
-              <>
-                {data.map((d, index) => (
-                  <div
-                    id="partner-img-container"
-                    key={index}
-                    className={`d-none ${
-                      index === 1
-                        ? "justify-content-around"
-                        : "justify-content-between"
-                    } align-items-center d-lg-flex py-lg-4 py-xxl-5`}
-                  >
-                    {d.map((item, _i) => (
-                      <Image
-                        key={_i}
-                        src={item.src}
-                        alt={item.alt}
-                        height={item.height}
-                        width={item.width}
-                        onMouseEnter={() => handleMouseEnter(item.alt)}
-                        onMouseLeave={() => handleMouseLeave()}
-                      />
-                    ))}
-                  </div>
-                ))}
-
-                {/* for less than 992 */}
+          </div>
+          {!isMobileDevice && (
+            <>
+              {data.map((d, index) => (
                 <div
                   id="partner-img-container"
-                  className="d-none d-sm-flex justify-content-center gap-4 align-items-center d-lg-none flex-wrap  py-5"
+                  key={index}
+                  className={`d-none ${
+                    index === 1
+                      ? "justify-content-around"
+                      : "justify-content-between"
+                  } align-items-center d-lg-flex py-lg-4 py-xxl-5`}
                 >
-                  {data.map((d) =>
-                    d.map((item, _i) => (
-                      <Image
-                        key={_i}
-                        src={item.src}
-                        alt={item.alt}
-                        height={item.height}
-                        width={item.width}
-                        onMouseEnter={() => handleMouseEnter(item.alt)}
-                        onMouseLeave={() => handleMouseLeave()}
-                      />
-                    ))
-                  )}
+                  {d.map((item, _i) => (
+                    <Image
+                      key={_i}
+                      src={item.src}
+                      alt={item.alt}
+                      height={item.height}
+                      width={item.width}
+                      onMouseEnter={() => handleMouseEnter(item.alt)}
+                      onMouseLeave={() => handleMouseLeave()}
+                    />
+                  ))}
                 </div>
-              </>
-            )}
-            {/* for less than 576 */}
-            {isMobileDevice && (
-              <div className="py-5 d-sm-none">
-                <Slider {...settings}>
-                  {data.map((d) =>
-                    d.map((item, _i) => (
-                      <Image
-                        key={_i}
-                        src={item.src}
-                        alt={item.alt}
-                        height={item.height}
-                        width={item.width}
-                      />
-                    ))
-                  )}
-                </Slider>
+              ))}
+
+              {/* for less than 992 */}
+              <div
+                id="partner-img-container"
+                className="d-none d-sm-flex justify-content-center gap-4 align-items-center d-lg-none flex-wrap  py-5"
+              >
+                {data.map((d) =>
+                  d.map((item, _i) => (
+                    <Image
+                      key={_i}
+                      src={item.src}
+                      alt={item.alt}
+                      height={item.height}
+                      width={item.width}
+                      onMouseEnter={() => handleMouseEnter(item.alt)}
+                      onMouseLeave={() => handleMouseLeave()}
+                      className="partners_iocns"
+                    />
+                  ))
+                )}
               </div>
-            )}
-            <div
-              style={{ opacity: partnerNname ? "1" : "0" }}
-              className="d-none d-sm-block"
-            >
-              <ParentLogoPara partnerNname={partnerNname} />
+            </>
+          )}
+
+          {/* for less than 576 */}
+          {isMobileDevice && (
+            <div className="py-5 d-sm-none">
+              <Slider {...settings}>
+                {data.map((d) =>
+                  d.map((item, _i) => (
+                    <Image
+                      key={_i}
+                      src={item.src}
+                      alt={item.alt}
+                      height={item.height}
+                      width={item.width}
+                    />
+                  ))
+                )}
+              </Slider>
             </div>
+          )}
+
+          <div
+            style={{ opacity: partnerNname ? "1" : "0" }}
+            className="d-none d-sm-block"
+          >
+            <ParentLogoPara partnerNname={partnerNname} />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

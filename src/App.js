@@ -14,18 +14,18 @@ import PreLoader from "./components/PreLoader";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    document.body.classList.add("not-scroll-before-loading");
-    setTimeout(() => {
-      setLoading(false);
-      document.body.classList.remove("not-scroll-before-loading");
-    }, 2000);
-  }, []);
+  // const [loading, setLoading] = useState(true);
+  // useEffect(() => {
+  //   document.body.classList.add("not-scroll-before-loading");
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //     document.body.classList.remove("not-scroll-before-loading");
+  //   }, 2000);
+  // }, []);
 
   return (
     <>
-      {<PreLoader loading={loading} />}
+      {/* {<PreLoader loading={loading} />} */}
       <Hero />
       <Business />
       <AboutUs />
@@ -41,12 +41,14 @@ function App() {
           id="hero-large-arrow"
           className="position-fixed z-0 pointer-events-none d-none d-lg-block"
         />
-        <img
-          alt="largeArrow2"
-          src={largeArrow2}
-          id="hero-large-arrow-2"
-          className="position-fixed z-0 pointer-events-none timeline_arrow_img d-none d-sm-block"
-        />
+        <div className="timeline_arrow_img">
+          <img
+            alt="largeArrow2"
+            src={largeArrow2}
+            id="hero-large-arrow-2"
+            className="position-fixed z-0 pointer-events-none d-none d-sm-block"
+          />
+        </div>
       </div>
       <ScrollChatIcon />
     </>
