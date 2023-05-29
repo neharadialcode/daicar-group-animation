@@ -210,11 +210,22 @@ const Hero = () => {
           ">"
         )
         .to(
-          "#hero-ipad",
+          ["#hero-ipad", ".hero_slide_2"],
           {
             scale: 0.8,
+            // background: "red",
           },
           ">"
+        )
+        .to(
+          ".arrow-hero-two",
+          {
+            xPercent: 58,
+            yPercent: -8,
+            scale: 0.13,
+            rotate: "45deg",
+          },
+          "<"
         )
         .to(
           "#hero-ipad",
