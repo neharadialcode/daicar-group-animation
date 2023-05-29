@@ -2224,10 +2224,7 @@ const Hero = () => {
     <>
       <div className="position-relative z-10">
         <Header />
-        <div
-          id="hero"
-          className="color_dark_gray z-10 overflow-hidden bg-primar"
-        >
+        <div id="hero" className="color_dark_gray z-10 overflow-hidden vh-100">
           <div className="container vh-100 z-0 position-relative hero_custom_container">
             <div
               id="main-content"
