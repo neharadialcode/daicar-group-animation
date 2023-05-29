@@ -63,6 +63,7 @@ const About = () => {
           {
             autoAlpha: 0,
             scale: 0,
+            xPercent: -50,
           },
           "<"
         )
@@ -150,6 +151,7 @@ const About = () => {
           {
             autoAlpha: 0,
             scale: 0,
+            xPercent: -50,
           },
           "<"
         )
@@ -237,6 +239,7 @@ const About = () => {
           {
             autoAlpha: 0,
             scale: 0,
+            xPercent: -50,
           },
           "<"
         )

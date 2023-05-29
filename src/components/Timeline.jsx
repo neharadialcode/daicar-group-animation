@@ -888,7 +888,7 @@ const Timeline = () => {
                       </p>
                       <div className="timeline_all_btns_hover">
                         <a
-                          className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012 timeline_heading_4_btn"
+                          className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012"
                           href="#partners"
                         >
                           compleanno
