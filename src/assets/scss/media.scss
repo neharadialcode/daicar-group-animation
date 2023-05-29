@@ -41,12 +41,6 @@
     width: 39px;
     height: 39px;
   }
-  .partner_parent {
-    min-height: 100vh;
-  }
-  .crm_parent {
-    min-height: 100vh;
-  }
   .footer_year_line {
     white-space: nowrap;
   }
@@ -95,6 +89,9 @@
 }
 
 @media (min-width: 1600px) {
+  .custom_top_space_partner_logos {
+    padding-top: 130px;
+  }
   .about_img {
     height: 570px;
   }
