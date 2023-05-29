@@ -28,11 +28,6 @@ const Header = () => {
         duration: 1,
         delay: 3,
       });
-      // tl.from(".header_section", {
-      //   yPercent: -150,
-      //   duration: 1,
-      //   delay: 3,
-      // });
     });
   }, []);
 
