@@ -495,7 +495,7 @@
   line-height: 132% !important;
 }
 .business_outline_img {
-  height: 75vh;
+  height: 85vh;
 }
 #hero {
   position: relative;
@@ -612,22 +612,14 @@
   0% {
     transform: scale(1);
   }
-  25% {
-    transform: scale(0.95);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.1);
-  }
   100% {
-    opacity: 0;
-    transform: scale(0.3);
+    transform: scale(0.5);
   }
 }
-.timeline_all_btns_hover a{
+.timeline_all_btns_hover a {
   transition: all 0.3s ease-in-out;
 }
 
-.timeline_all_btns_hover a:hover{
+.timeline_all_btns_hover a:hover {
   color: var(--color-white-off);
 }
