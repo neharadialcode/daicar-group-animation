@@ -997,9 +997,29 @@
 }
 
 // TABS CSS ==========>
+@media (max-width: 1199.98px) and (min-height: 700px) {
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 42% !important;
+  }
+  .tabs_lottie_width {
+    width: 80% !important;
+  }
+  .tabs_parent {
+    height: 140vh !important;
+  }
+}
+
+@media (max-width: 799.98px) and (max-height: 1199.98px) {
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 36% !important;
+  }
+}
+
 @media (max-width: 575.98px) and (max-height: 699.98px) {
   .tabs_parent {
-    height: 138vh;
+    height: 138vh !important;
   }
   .tabs_lottie {
     top: 4% !important;
@@ -1011,7 +1031,7 @@
 
 @media (max-width: 575.98px) and (min-height: 700px) {
   .tabs_parent {
-    height: 841px;
+    height: 841px !important;
   }
   .tabs_lottie {
     top: 28% !important;
@@ -1019,11 +1039,23 @@
   .tabs_lottie_1 {
     top: 31% !important;
   }
+  .tabs_lottie_width {
+    width: 100% !important;
+  }
+}
+@media (max-width: 575.98px) and (min-height: 730px) {
+  .tabs_parent {
+    height: 951px !important;
+  }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 38% !important;
+  }
 }
 
 @media (max-width: 575.98px) and (min-height: 800px) {
   .tabs_parent {
-    height: 1021px;
+    height: 1021px !important;
   }
 }
 
@@ -1067,27 +1099,8 @@
   }
 }
 
-@media (max-width: 1199.98px) and (min-height: 700px) {
-  .tabs_lottie,
-  .tabs_lottie_1 {
-    top: 42% !important;
-  }
-  .tabs_lottie_width {
-    width: 80% !important;
-  }
-  .tabs_parent {
-    height: 140vh !important;
-  }
-}
-
 // @media (min-width: 1100px), (max-width: 1199.98px) and (max-height: 859.98px) {
 //   .tabs_parent {
 //     height: 138vh;
 //   }
 // }
-@media (max-width: 799.98px) and (max-height: 1199.98px) {
-  .tabs_lottie,
-  .tabs_lottie_1 {
-    top: 36% !important;
-  }
-}
