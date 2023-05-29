@@ -802,20 +802,20 @@ const Timeline = () => {
                   >
                     <div
                       id="timeline-heading-1"
-                      className="position-absolute w-100"
+                      className="position-absolute w-100 pe-xxl-5 me-xxl-5"
                     >
                       <img
                         className="w-100 mb-3 mb-sm-5 mb-lg-3 mb-xl-5 timeline_car_icon"
                         src={timelineImg1}
                         alt="timelineImg1"
                       />
-                      <p className="font_2xl custom_size_timeline_text text-white mb-3">
+                      <p className="font_md color_white_off mb-4 pe-xxl-5 me-xxl-5">
                         Carplanner.com nasce nel 2015 posizionandosi nel settore
                         automotive, specializzata nella lead generation
                         innovativa.
                       </p>
                       <a
-                        className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent"
+                        className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent"
                         href="#partners"
                       >
                         automotive
@@ -823,11 +823,11 @@ const Timeline = () => {
                     </div>
                     <h2
                       id="timeline-heading-2"
-                      className="font_2xl text-white position-absolute w-100"
+                      className="font_md color_white_off position-absolute w-100"
                     >
-                      Sviluppiamo la nostra piattaforma proprietaria tramite
-                      tecnologia A.I. Nello stesso anno entriamo a far parte di
-                      Facebook Success Case per lo sviluppo di chatbot sulla
+                      Sviluppiamo la nostra piattaforma proprietaria <br /> tramite
+                      tecnologia A.I. Nello stesso anno entriamo <br /> a far parte di
+                      Facebook Success Case per lo <br /> sviluppo di chatbot sulla
                       piattaforma Messenger
                     </h2>
                     <div
@@ -839,7 +839,7 @@ const Timeline = () => {
                         src={timelineImg2}
                         alt="timelineImg2"
                       />
-                      <p className="font_2xl custom_size_timeline_text text-white mb-3 pe-3 pe-sm-5 pe-xl-0 me-sm-3 me-xl-0">
+                      <p className="font_md color_white_off mb-3 pe-3 pe-sm-5 pe-xl-0 me-sm-3 me-xxl-5 pe-xxl-4">
                         Nasce TiGuido.io che trasferisce l’elevato know
                         <span className="ff_math">-</span>how e la tecnologia
                         sviluppata in ambito automotive al servizio di nuovi
@@ -871,7 +871,7 @@ const Timeline = () => {
                     </div>
                     <div
                       id="timeline-heading-4"
-                      className="font_2xl text-white position-absolute w-100 timeline_content_4_parent pt-5"
+                      className="position-absolute w-100 timeline_content_4_parent pt-5"
                     >
                       <img
                         src={timelineImg2}
