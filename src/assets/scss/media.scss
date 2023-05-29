@@ -504,7 +504,10 @@
   }
   .tabs_lottie,
   .tabs_lottie_1 {
-    top: 40% !important;
+    top: 38% !important;
+  }
+  .tabs_lottie_width {
+    width: 100%;
   }
   .custom_content_size p,
   .custom_content_size button {
@@ -1061,6 +1064,15 @@
   }
   .ipad_img {
     height: 66vh;
+  }
+}
+
+@media (max-width: 1199.98px) and (min-height: 700px) {
+  .tabs_lottie_1 {
+    top: 42% !important;
+  }
+  .tabs_lottie_width {
+    width: 80%;
   }
 }
 
