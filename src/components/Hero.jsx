@@ -227,7 +227,6 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -757,7 +756,6 @@ const Hero = () => {
           ".hero_slide_2",
           {
             top: "28%",
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -772,7 +770,6 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -1298,7 +1295,6 @@ const Hero = () => {
           ".hero_slide_2",
           {
             top: "20%",
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -1313,7 +1309,6 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -1840,7 +1835,6 @@ const Hero = () => {
           ".hero_slide_2",
           {
             top: "15%",
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -1855,7 +1849,6 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
-            // backgroundColor: "red",
           },
           "<"
         )
