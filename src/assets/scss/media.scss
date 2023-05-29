@@ -1073,6 +1073,93 @@
   }
 }
 
+// MOBILE-SCREEN-ROATE-HERO-SECTION
+@media (max-width: 767.98px) and (max-height: 399.98px) {
+  #main-content {
+    transform: translate(0px, -30px) !important;
+  }
+  .tabs_lottie_width {
+    width: 60% !important;
+  }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 50% !important;
+    // background: rgba(255, 0, 0, 0.176);
+  }
+  .custom_content_size p,
+  .custom_content_size button {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 991.98px) and (max-height: 399.98px) {
+  #main-content {
+    transform: translate(0px, -50px) !important;
+  }
+  .arrow-hero-one {
+    transform: scale(0.4) !important;
+  }
+  .arrow-hero-two {
+    max-width: 390px !important;
+    margin-left: 150px !important;
+    margin-top: 30px !important;
+  }
+  .hero_slide_1 h3,
+  .hero_slide_2 h3 {
+    font-size: 32px !important;
+  }
+  .hero_slide_1 h2,
+  .hero_slide_2 h2 {
+    font-size: 16px !important;
+  }
+  .hero_slide_para_1,
+  .hero_slide_para_2 {
+    font-size: 18px !important;
+    max-width: 450px !important;
+    margin-bottom: 0px !important;
+  }
+  .hero_slide_2 {
+    margin-top: 20px;
+  }
+  .campagne_para {
+    max-width: 440px !important;
+    padding-top: 24px !important;
+  }
+  .hero_slide_3_btn {
+    font-size: 16px !important;
+    height: 32px !important;
+    width: 96px !important;
+  }
+  .tabs_parent {
+    height: 1500px !important;
+  }
+  .tabs_lottie_width {
+    width: 50% !important;
+  }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 54.3% !important;
+    // background: rgba(255, 0, 0, 0.176);
+  }
+  .ipad_img {
+    height: 90vh !important;
+    margin-top: 40px;
+  }
+  .custom_content_size p,
+  .custom_content_size button {
+    font-size: 20px !important;
+  }
+  #hero-main-heading {
+    margin-bottom: 40px !important;
+  }
+  .logo_width {
+    max-width: 190px;
+  }
+  .toggle_icon svg {
+    max-width: 30px !important;
+  }
+}
+
 @media (min-width: 1600px) and (min-height: 800px) {
   .tabs_parent {
     min-height: 1051px;
@@ -1112,9 +1199,3 @@
     height: 66vh;
   }
 }
-
-// @media (min-width: 1100px), (max-width: 1199.98px) and (max-height: 859.98px) {
-//   .tabs_parent {
-//     height: 138vh;
-//   }
-// }
