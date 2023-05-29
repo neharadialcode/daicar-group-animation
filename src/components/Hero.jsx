@@ -205,7 +205,14 @@ const Hero = () => {
         .set(
           "#hero-ipad-white",
           {
-            scale: 1,
+            scale: 0.8,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad",
+          {
+            scale: 0.8,
           },
           ">"
         )
@@ -220,38 +227,12 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
+            // ///////////////////////////////////////////////////////////////////
+            // backgroundColor: "red",
+            // scale: 0.8,
           },
           "<"
         )
-        .to(
-          [
-            "#hero-main-heading",
-            ".hero_slide_para_1",
-            ".hero_slide_para_2",
-            ".hero_text_2",
-          ],
-          {
-            color: "black",
-          },
-          "<"
-        )
-        .to(".tabs_content_parent", {
-          autoAlpha: 0,
-        })
-        .to("#hero-ipad-white", {
-          scale: 0.8,
-        })
-        .set(
-          "#main-content",
-          {
-            scale: 0.7,
-            top: "3%",
-          },
-          "<"
-        )
-        .to(".tabs_content_parent", {
-          autoAlpha: 1,
-        })
         .set(
           "#main-content",
           {
@@ -259,6 +240,50 @@ const Hero = () => {
           },
           "<"
         )
+        .set(
+          "#intro-content",
+          {
+            display: "block",
+          },
+          "<"
+        )
+        // ///////////////////////////////////////////////////////////////////////
+        // .to(
+        //   [
+        //     "#hero-main-heading",
+        //     ".hero_slide_para_1",
+        //     ".hero_slide_para_2",
+        //     ".hero_text_2",
+        //   ],
+        //   {
+        //     color: "black",
+        //   },
+        //   "<"
+        // )
+        // .to(".tabs_content_parent", {
+        //   autoAlpha: 0,
+        // })
+        // .to("#hero-ipad-white", {
+        //   scale: 0.8,
+        // })
+        // .set(
+        //   "#main-content",
+        //   {
+        //     scale: 0.7,
+        //     top: "3%",
+        //   },
+        //   "<"
+        // )
+        // .to(".tabs_content_parent", {
+        //   autoAlpha: 1,
+        // })
+        // .set(
+        //   "#main-content",
+        //   {
+        //     display: "none",
+        //   },
+        //   "<"
+        // )
         // .to(
         //   "#hero-ipad",
         //   {
@@ -267,13 +292,13 @@ const Hero = () => {
         //   ">"
         // )
         //////////////////////////
-        .set(
-          "#intro-content",
-          {
-            display: "block",
-          },
-          "<"
-        )
+        // .set(
+        //   "#intro-content",
+        //   {
+        //     display: "block",
+        //   },
+        //   "<"
+        // )
         //////////
         .addLabel("button_0")
         .to(
