@@ -817,7 +817,7 @@ const Timeline = () => {
                       </p>
                       <div className="timeline_all_btns_hover">
                         <a
-                          className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent"
+                          className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent d-inline-block"
                           href="#partners"
                         >
                           automotive
@@ -888,7 +888,7 @@ const Timeline = () => {
                       </p>
                       <div className="timeline_all_btns_hover">
                         <a
-                          className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012"
+                          className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012 d-inline-block"
                           href="#partners"
                         >
                           compleanno
