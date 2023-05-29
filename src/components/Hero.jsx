@@ -227,9 +227,6 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
-            // ///////////////////////////////////////////////////////////////////
-            // backgroundColor: "red",
-            // scale: 0.8,
           },
           "<"
         )
@@ -247,58 +244,6 @@ const Hero = () => {
           },
           "<"
         )
-        // ///////////////////////////////////////////////////////////////////////
-        // .to(
-        //   [
-        //     "#hero-main-heading",
-        //     ".hero_slide_para_1",
-        //     ".hero_slide_para_2",
-        //     ".hero_text_2",
-        //   ],
-        //   {
-        //     color: "black",
-        //   },
-        //   "<"
-        // )
-        // .to(".tabs_content_parent", {
-        //   autoAlpha: 0,
-        // })
-        // .to("#hero-ipad-white", {
-        //   scale: 0.8,
-        // })
-        // .set(
-        //   "#main-content",
-        //   {
-        //     scale: 0.7,
-        //     top: "3%",
-        //   },
-        //   "<"
-        // )
-        // .to(".tabs_content_parent", {
-        //   autoAlpha: 1,
-        // })
-        // .set(
-        //   "#main-content",
-        //   {
-        //     display: "none",
-        //   },
-        //   "<"
-        // )
-        // .to(
-        //   "#hero-ipad",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   ">"
-        // )
-        //////////////////////////
-        // .set(
-        //   "#intro-content",
-        //   {
-        //     display: "block",
-        //   },
-        //   "<"
-        // )
         //////////
         .addLabel("button_0")
         .to(
@@ -811,7 +756,6 @@ const Hero = () => {
           ".hero_slide_2",
           {
             top: "28%",
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -826,9 +770,6 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
-            // ///////////////////////////////////////////////////////////////////
-            // backgroundColor: "red",
-            // scale: 0.8,
           },
           "<"
         )
@@ -846,50 +787,6 @@ const Hero = () => {
           },
           "<"
         )
-        // .to(
-        //   [
-        //     "#hero-main-heading",
-        //     ".hero_slide_para_1",
-        //     ".hero_slide_para_2",
-        //     ".hero_text_2",
-        //   ],
-        //   {
-        //     color: "black",
-        //   },
-        //   "<"
-        // )
-        // .to(".tabs_content_parent", {
-        //   autoAlpha: 0,
-        // })
-        // .to("#hero-ipad-white", {
-        //   scale: 0.8,
-        // })
-        // .set(
-        //   "#main-content",
-        //   {
-        //     scale: 0.8,
-        //     top: "-3%",
-        //   },
-        //   "<"
-        // )
-        // .to(".tabs_content_parent", {
-        //   autoAlpha: 1,
-        // })
-        // .set(
-        //   "#main-content",
-        //   {
-        //     display: "none",
-        //   },
-        //   "<"
-        // )
-        // //////////////////////////
-        // .set(
-        //   "#intro-content",
-        //   {
-        //     display: "block",
-        //   },
-        //   "<"
-        // )
         //////////
         .addLabel("button_0")
         .to(
@@ -966,7 +863,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
         .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
@@ -1399,7 +1295,6 @@ const Hero = () => {
           ".hero_slide_2",
           {
             top: "20%",
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -1414,9 +1309,6 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
-            // ///////////////////////////////////////////////////////////////////
-            // backgroundColor: "red",
-            // scale: 0.8,
           },
           "<"
         )
@@ -1434,55 +1326,6 @@ const Hero = () => {
           },
           "<"
         )
-        // .to(
-        //   [
-        //     "#hero-main-heading",
-        //     ".hero_slide_para_1",
-        //     ".hero_slide_para_2",
-        //     ".hero_text_2",
-        //   ],
-        //   {
-        //     color: "black",
-        //   },
-        //   "<"
-        // )
-        // .to(".tabs_content_parent", {
-        //   autoAlpha: 0,
-        // })
-        // .to(
-        //   "#hero-ipad-white",
-        //   {
-        //     scale: 0.8,
-        //     top: "35%",
-        //   },
-        //   ">"
-        // )
-        // .set(
-        //   "#main-content",
-        //   {
-        //     scale: 0.8,
-        //     top: "-13%",
-        //   },
-        //   "<"
-        // )
-        // .to(".tabs_content_parent", {
-        //   autoAlpha: 1,
-        // })
-        // .set(
-        //   "#main-content",
-        //   {
-        //     display: "none",
-        //   },
-        //   "<"
-        // )
-        // //////////////////////////
-        // .set(
-        //   "#intro-content",
-        //   {
-        //     display: "block",
-        //   },
-        //   "<"
-        // )
         //////////
         .addLabel("button_0")
         .to(
@@ -1969,9 +1812,31 @@ const Hero = () => {
         .set(
           "#hero-ipad-white",
           {
-            scale: 1,
+            scale: 0.7,
+            top: "25%",
           },
           ">"
+        )
+        .to(
+          ["#hero-ipad", ".hero_slide_2"],
+          {
+            scale: 0.7,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad",
+          {
+            top: "25%",
+          },
+          "<"
+        )
+        .to(
+          ".hero_slide_2",
+          {
+            top: "15%",
+          },
+          "<"
         )
         .to(
           "#hero-ipad",
@@ -1987,40 +1852,6 @@ const Hero = () => {
           },
           "<"
         )
-        .to(
-          [
-            "#hero-main-heading",
-            ".hero_slide_para_1",
-            ".hero_slide_para_2",
-            ".hero_text_2",
-          ],
-          {
-            color: "black",
-          },
-          "<"
-        )
-        .to(".tabs_content_parent", {
-          autoAlpha: 0,
-        })
-        .to(
-          "#hero-ipad-white",
-          {
-            scale: 0.7,
-            top: "25%",
-          },
-          ">"
-        )
-        .set(
-          "#main-content",
-          {
-            scale: 0.66,
-            top: "-16%",
-          },
-          "<"
-        )
-        .to(".tabs_content_parent", {
-          autoAlpha: 1,
-        })
         .set(
           "#main-content",
           {
@@ -2028,8 +1859,6 @@ const Hero = () => {
           },
           "<"
         )
-
-        //////////////////////////
         .set(
           "#intro-content",
           {
@@ -2232,7 +2061,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-
         .fromTo(
           ".card_img_2",
           {
