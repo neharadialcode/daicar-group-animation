@@ -48,11 +48,24 @@ const About = () => {
       });
 
       tl2
-        .from("#about-content-2", {
+        // .from("#about-content-2", {
+        //   xPercent: -50,
+        //   autoAlpha: 0,
+        //   scale: 0.8,
+        // })
+        .from("#about-arrow-img", {
           xPercent: -50,
           autoAlpha: 0,
           scale: 0.8,
         })
+        .from(
+          "#about-image-block",
+          {
+            autoAlpha: 0,
+            scale: 0,
+          },
+          "<"
+        )
         .fromTo(
           "#about-image-block",
           {
@@ -127,11 +140,19 @@ const About = () => {
       });
 
       tl2
-        .from("#about-content-2", {
+        .from("#about-arrow-img", {
           xPercent: -50,
           autoAlpha: 0,
           scale: 0.8,
         })
+        .from(
+          "#about-image-block",
+          {
+            autoAlpha: 0,
+            scale: 0,
+          },
+          "<"
+        )
         .fromTo(
           "#about-image-block",
           {
@@ -206,11 +227,19 @@ const About = () => {
       });
 
       tl2
-        .from("#about-content-2", {
+        .from("#about-arrow-img", {
           xPercent: -50,
           autoAlpha: 0,
           scale: 0.8,
         })
+        .from(
+          "#about-image-block",
+          {
+            autoAlpha: 0,
+            scale: 0,
+          },
+          "<"
+        )
         .fromTo(
           "#about-image-block",
           {
@@ -306,7 +335,10 @@ const About = () => {
                 id="about-content-2"
                 className="d-flex justify-content-end align-items-center flex-grow-1 w-100 about_text_parent_max_w"
               >
-                <div className="h-100 d-flex align-items-center justify-content-end position-relative about_arrow_img_width">
+                <div
+                  className="h-100 d-flex align-items-center justify-content-end position-relative about_arrow_img_width"
+                  id="about-arrow-img"
+                >
                   <img
                     src={aboutArrow}
                     className="position-absolute end-0 about_img"
