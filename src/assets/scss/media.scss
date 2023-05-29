@@ -716,6 +716,12 @@
     height: 86px;
     padding: 0 12px;
   }
+  .logo_width {
+    max-width: 175px;
+  }
+  .toggle_icon svg {
+    max-width: 26px !important;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -944,9 +950,6 @@
   .navbar_btn {
     transform: scale(1.1);
   }
-  .toggle_icon svg {
-    max-width: 26px !important;
-  }
   .hero_heading_btn {
     height: 44px !important;
     font-size: 24px !important;
@@ -1053,6 +1056,7 @@
     width: 100% !important;
   }
 }
+
 @media (max-width: 575.98px) and (min-height: 730px) {
   .tabs_parent {
     height: 951px !important;
