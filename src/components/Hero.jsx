@@ -1376,9 +1376,32 @@ const Hero = () => {
         .set(
           "#hero-ipad-white",
           {
-            scale: 1,
+            scale: 0.8,
+            top: "35%",
           },
           ">"
+        )
+        .to(
+          ["#hero-ipad", ".hero_slide_2"],
+          {
+            scale: 0.8,
+          },
+          ">"
+        )
+        .to(
+          "#hero-ipad",
+          {
+            top: "35%",
+          },
+          "<"
+        )
+        .to(
+          ".hero_slide_2",
+          {
+            top: "20%",
+            // backgroundColor: "red",
+          },
+          "<"
         )
         .to(
           "#hero-ipad",
@@ -1391,43 +1414,12 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             opacity: 1,
+            // ///////////////////////////////////////////////////////////////////
+            // backgroundColor: "red",
+            // scale: 0.8,
           },
           "<"
         )
-        .to(
-          [
-            "#hero-main-heading",
-            ".hero_slide_para_1",
-            ".hero_slide_para_2",
-            ".hero_text_2",
-          ],
-          {
-            color: "black",
-          },
-          "<"
-        )
-        .to(".tabs_content_parent", {
-          autoAlpha: 0,
-        })
-        .to(
-          "#hero-ipad-white",
-          {
-            scale: 0.8,
-            top: "35%",
-          },
-          ">"
-        )
-        .set(
-          "#main-content",
-          {
-            scale: 0.8,
-            top: "-13%",
-          },
-          "<"
-        )
-        .to(".tabs_content_parent", {
-          autoAlpha: 1,
-        })
         .set(
           "#main-content",
           {
@@ -1435,8 +1427,6 @@ const Hero = () => {
           },
           "<"
         )
-
-        //////////////////////////
         .set(
           "#intro-content",
           {
@@ -1444,6 +1434,55 @@ const Hero = () => {
           },
           "<"
         )
+        // .to(
+        //   [
+        //     "#hero-main-heading",
+        //     ".hero_slide_para_1",
+        //     ".hero_slide_para_2",
+        //     ".hero_text_2",
+        //   ],
+        //   {
+        //     color: "black",
+        //   },
+        //   "<"
+        // )
+        // .to(".tabs_content_parent", {
+        //   autoAlpha: 0,
+        // })
+        // .to(
+        //   "#hero-ipad-white",
+        //   {
+        //     scale: 0.8,
+        //     top: "35%",
+        //   },
+        //   ">"
+        // )
+        // .set(
+        //   "#main-content",
+        //   {
+        //     scale: 0.8,
+        //     top: "-13%",
+        //   },
+        //   "<"
+        // )
+        // .to(".tabs_content_parent", {
+        //   autoAlpha: 1,
+        // })
+        // .set(
+        //   "#main-content",
+        //   {
+        //     display: "none",
+        //   },
+        //   "<"
+        // )
+        // //////////////////////////
+        // .set(
+        //   "#intro-content",
+        //   {
+        //     display: "block",
+        //   },
+        //   "<"
+        // )
         //////////
         .addLabel("button_0")
         .to(
