@@ -42,10 +42,8 @@ const Crm = () => {
       },
     });
 
-    tl.from("#CRM-content-heading", {
-      y: -20,
-      autoAlpha: 0,
-    }).from("#CRM-img-container img", {
+    tl
+      .from("#CRM-img-container img", {
       x: -50,
       autoAlpha: 0,
       stagger: 0.07,
@@ -55,7 +53,7 @@ const Crm = () => {
     <>
       <div
         id="CRM"
-        className="d-flex justify-content-center align-items-center crm_parent overflow-hidden bg_light_white min-vh-100"
+        className="d-flex justify-content-center align-items-center overflow-hidden bg_light_white min-vh-100"
       >
         <div className="position-absolute crm_left_icon d-none d-xl-block z_negative">
           <img src={crmLeftIcon} alt="crm-left-icon" />
@@ -65,7 +63,7 @@ const Crm = () => {
             id="CRM-content-heading"
             className="d-sm-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0 text-center text-sm-start"
           >
-            <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
+            <p className="font_5xl color_dark_gray mb-0 custom_letter_spacing">
               É possibile integrare i dati con il tuo
             </p>
             <a href="#contatti">
