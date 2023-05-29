@@ -5,6 +5,7 @@ import timelineImg2 from "../assets/images/png/timeline-content-img-2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import largeArrow2 from "../assets/images/svg/arrow-large-2.svg";
+import pagelogo from "../assets/images/svg/page-logo.svg";
 gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
   useEffect(() => {
@@ -805,41 +806,45 @@ const Timeline = () => {
                       className="position-absolute w-100 pe-xxl-5 me-xxl-5"
                     >
                       <img
-                        className="w-100 mb-3 mb-sm-5 mb-lg-3 mb-xl-5 timeline_car_icon"
+                        className="w-100 mb-3 mb-3 mb-xl-5 timeline_car_icon"
                         src={timelineImg1}
                         alt="timelineImg1"
                       />
-                      <p className="font_md color_white_off mb-4 pe-xxl-5 me-xxl-5">
+                      <p className="font_md color_white_off mb-sm-4 pe-5 pe-lg-0 me-5 me-lg-0 pe-xxl-5 me-xxl-5">
                         Carplanner.com nasce nel 2015 posizionandosi nel settore
                         automotive, specializzata nella lead generation
                         innovativa.
                       </p>
-                      <a
-                        className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent"
-                        href="#partners"
-                      >
-                        automotive
-                      </a>
+                      <div className="timeline_all_btns_hover">
+                        <a
+                          className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent"
+                          href="#partners"
+                        >
+                          automotive
+                        </a>
+                      </div>
                     </div>
                     <h2
                       id="timeline-heading-2"
                       className="font_md color_white_off position-absolute w-100"
                     >
-                      Sviluppiamo la nostra piattaforma proprietaria <br /> tramite
-                      tecnologia A.I. Nello stesso anno entriamo <br /> a far parte di
-                      Facebook Success Case per lo <br /> sviluppo di chatbot sulla
-                      piattaforma Messenger
+                      Sviluppiamo la nostra piattaforma proprietaria
+                      <br className="d-xl-block" />
+                      tramite tecnologia A.I. Nello stesso anno entriamo
+                      <br className="d-xl-block" />a far parte di Facebook
+                      Success Case per lo <br className="d-xl-block" />
+                      sviluppo di chatbot sulla piattaforma Messenger
                     </h2>
                     <div
                       id="timeline-heading-3"
-                      className="position-absolute w-100"
+                      className="position-absolute w-100 me-xxl-5 pe-xxl-5"
                     >
                       <img
                         className="timeline_tiguido_icon w-100"
                         src={timelineImg2}
                         alt="timelineImg2"
                       />
-                      <p className="font_md color_white_off mb-3 pe-3 pe-sm-5 pe-xl-0 me-sm-3 me-xxl-5 pe-xxl-4">
+                      <p className="font_md color_white_off mb-3 pe-3 pe-sm-5 pe-xl-1 me-sm-3 me-xxl-5">
                         Nasce TiGuido.io che trasferisce l’elevato know
                         <span className="ff_math">-</span>how e la tecnologia
                         sviluppata in ambito automotive al servizio di nuovi
@@ -848,21 +853,21 @@ const Timeline = () => {
                         tecnologia proprietaria per la validazione e generazione
                         di lead altamente qualificate.
                       </p>
-                      <div className="d-flex align-items-center gap-1gap-sm-3 mt-4 mt-lg-0">
+                      <div className="d-flex align-items-center mt-4 mt-lg-0 timeline_all_btns_hover">
                         <a
-                          className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent"
+                          className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent"
                           href="#partners"
                         >
                           finanza
                         </a>
                         <a
-                          className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent mx-2 mx-sm-3"
+                          className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent mx-2 mx-sm-3"
                           href="#partners"
                         >
                           assicurazione
                         </a>
                         <a
-                          className="custom_tab_button_012 cursor-pointer font_xl color_white_off timeline_btn bg-transparent"
+                          className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent"
                           href="#partners"
                         >
                           telco
@@ -874,19 +879,21 @@ const Timeline = () => {
                       className="position-absolute w-100 timeline_content_4_parent pt-5"
                     >
                       <img
-                        src={timelineImg2}
+                        src={pagelogo}
                         alt="timeline-content-img-2"
                         className="timeline_icon_3"
                       />
-                      <p className="font_md color_white_off">
+                      <p className="font_md color_white_off py-sm-3">
                         Il 2 Ottobre faremo <br /> otto anni.
                       </p>
-                      <a
-                        className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012 timeline_heading_4_btn"
-                        href="#partners"
-                      >
-                        compleanno
-                      </a>
+                      <div className="timeline_all_btns_hover">
+                        <a
+                          className="font_sm color_white_off timeline_btn bg-transparent custom_tab_button_012 timeline_heading_4_btn"
+                          href="#partners"
+                        >
+                          compleanno
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

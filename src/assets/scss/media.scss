@@ -322,6 +322,9 @@
 }
 
 @media (max-width: 1199.98px) {
+  .timeline_years h2 {
+    letter-spacing: -5px;
+  }
   .about_img {
     height: 400px;
   }
@@ -521,7 +524,7 @@
     top: 10%;
   }
   .timeline_content_4_parent {
-    right: -38%;
+    right: -70%;
   }
   .text_parent_height {
     top: 18%;
@@ -592,7 +595,7 @@
     font-size: 24px;
   }
   .timeline_car_icon {
-    max-width: 450px;
+    max-width: 340px;
   }
   .btn_close_position {
     top: 46px;
@@ -716,12 +719,21 @@
 }
 
 @media (max-width: 575.98px) {
+  .timeline_content_4_parent {
+    right: -45%;
+  }
+  .timeline_tiguido_icon {
+    max-width: 145px;
+  }
+  .timeline_car_icon {
+    max-width: 175px;
+  }
   .footer_social_icon svg {
     width: 23px;
     height: 23px;
   }
   .timeline_heading_4_btn {
-    font-size: 13px;
+    font-size: 7px;
   }
   .custom_content_size p,
   .custom_content_size button {
@@ -860,7 +872,7 @@
     padding: 8.4px 16px 6.4px !important;
   }
   .timeline_btn {
-    padding: 4px 20px 4px;
+    padding: 4px 10px 4px;
   }
   .meeting_btn_parent button {
     font-size: 20px !important;

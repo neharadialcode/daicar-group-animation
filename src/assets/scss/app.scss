@@ -447,7 +447,7 @@
 }
 .timeline_text1_max_w {
   max-width: 34rem;
-  top: 30%;
+  top: 25%;
 }
 .timeline_dots {
   border-radius: 9999px;
@@ -623,4 +623,11 @@
     opacity: 0;
     transform: scale(0.3);
   }
+}
+.timeline_all_btns_hover a{
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline_all_btns_hover a:hover{
+  color: var(--color-white-off);
 }
