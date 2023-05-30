@@ -4,7 +4,7 @@ import businessOne from "../assets/images/png/business-1.png";
 import businessTwo from "../assets/images/png/business-2.png";
 import businessThree from "../assets/images/png/business-3.png";
 import businessFour from "../assets/images/png/business-4.png";
-import businessLeftTextIcon from "../assets/images/png/business-left-icon-text.png";
+import businessLeftTextIcon from "../assets/images/svg/small-arrow-icon.svg";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
 import outlineArrow from "../assets/images/svg/outlineArrow.svg";
@@ -65,10 +65,10 @@ const Business = () => {
           pin: true,
         },
       });
-        tl.from(".main_text", {
-          autoAlpha: 0,
-          scale: 0.5,
-        })
+      tl.from(".main_text", {
+        autoAlpha: 0,
+        scale: 0.5,
+      })
         .to(
           [
             ".business_heading_1",
@@ -538,8 +538,11 @@ const Business = () => {
               per il tuo business
             </p>
           </div>
-          <div className="position-absolute z-1 end-0 business_icon_img_2 d-none d-lg-block pe-5 me-5 business_left_icon">
-            <img src={businessLeftTextIcon} alt="business-small-arrow-2" />
+          <div className="position-absolute z-1 end-0 business_left_icon text_left_rotate d-none d-lg-flex align-items-center left_text_about pt-4 pe-xl-3">
+            <p className="color_white_off font_sm mb-0">Esperienza su misura</p>
+            <div className="ps-4">
+              <img src={businessLeftTextIcon} alt="business-small-arrow" />
+            </div>
           </div>
           <div className="container pb-lg-5 min-vh-100 d-lg-flex flex-column justify-content-center z-10">
             <div className="main_text d-none d-lg-block pb-5">

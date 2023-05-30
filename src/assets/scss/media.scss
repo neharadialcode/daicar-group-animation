@@ -7,7 +7,7 @@
   }
   .custom_content_padding {
     padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    // padding-bottom: 80px !important;
   }
   .social_links_parent a img {
     width: 36px;
@@ -29,14 +29,14 @@
   }
   .custom_content_padding {
     padding-top: 15px !important;
-    padding-bottom: 50px !important;
+    // padding-bottom: 50px !important;
   }
 }
 
 @media (min-width: 992px) {
-  .custom_content_padding {
-    padding-bottom: 163px !important;
-  }
+  // .custom_content_padding {
+  //   padding-bottom: 163px !important;
+  // }
   .contact_icon {
     width: 39px;
     height: 39px;
@@ -89,6 +89,9 @@
 }
 
 @media (min-width: 1600px) {
+  .footer_top_space {
+    padding-top: 260px;
+  }
   .custom_top_space_partner_logos {
     padding-top: 130px;
   }
@@ -257,6 +260,9 @@
 // }
 
 @media (max-width: 1399.98px) {
+  .footer_top_space {
+    padding-top: 190px;
+  }
   .timeline_text1_max_w {
     max-width: 25rem;
   }
@@ -335,6 +341,9 @@
 }
 
 @media (max-width: 1199.98px) {
+  .footer_top_space {
+    padding-top: 0px;
+  }
   .timeline_years h2 {
     letter-spacing: -5px;
   }
@@ -494,12 +503,15 @@
 }
 
 @media (max-width: 991.98px) {
-  .custom_content_padding {
-    padding-top: 70px !important;
-    padding-bottom: 50px !important;
-  }
+  // .custom_content_padding {
+  //   padding-top: 70px !important;
+  //   padding-bottom: 50px !important;
+  // }
   .meeting_para {
-    max-width: 560px !important;
+    max-width: 600px !important;
+  }
+  .footer_top_space {
+    padding-top: 120px;
   }
   .navbar_btn {
     width: 135px;

@@ -37,8 +37,7 @@ const Crm = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#CRM",
-        start: "top top",
-        pin: true,
+        start: "top 50%",
       },
     });
 
