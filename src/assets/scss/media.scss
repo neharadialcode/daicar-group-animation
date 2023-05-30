@@ -691,6 +691,9 @@
   .header_section {
     left: 0 !important;
   }
+  .intro_tab_frame {
+    height: 1170px;
+  }
 }
 
 @media (max-width: 799.98px) {
@@ -707,6 +710,9 @@
   .tabs_lottie,
   .tabs_lottie_1 {
     top: 36% !important;
+  }
+  .intro_tab_frame {
+    height: 950px;
   }
 }
 
@@ -1096,7 +1102,6 @@
   }
 }
 
-// MOBILE-SCREEN-ROATE-HERO-SECTION
 @media (max-width: 767.98px) and (max-height: 399.98px) {
   #main-content {
     transform: translate(0px, -30px) !important;
@@ -1189,6 +1194,7 @@
   }
 }
 
+// @media (max-width: 767.98px) and (max-height: 699.98px) {}
 @media (max-width: 1399.98px) and (max-height: 699.98px) {
   .ipad_img {
     height: 90vh;
@@ -1212,6 +1218,12 @@
   }
   .tab_text_position button {
     height: 38px !important;
+  }
+}
+
+@media (max-width: 1199.98px) and (max-height: 699.98px) {
+  .intro_tab_frame {
+    height: 624px;
   }
 }
 
