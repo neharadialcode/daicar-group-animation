@@ -764,13 +764,21 @@ const Timeline = () => {
     <>
       <div id="timeline" className="min-vh-100 w-100 z-10">
         <div className="position-relative h-100 w-100">
-          <span className="d-sm-none">
+          {/* <span className="d-sm-none">
             <img
               className="timeline_arrow_icon w-100"
               src={largeArrow2}
               alt="largeArrow2"
             />
-          </span>
+          </span> */}
+          <div className="">
+            <img
+              alt="largeArrow2"
+              src={largeArrow2}
+              id="hero-large-arrow-2"
+              className="position-fixed z-0 pointer-events-none d-none d-sm-block timeline_arrow_img"
+            />
+          </div>
           <div className="position-absolute end-0 timeline_left_icon d-none d-xl-flex align-items-center pt-4 me-2 pe-xl-4">
             <p className="color_white_off font_sm mb-0">Il nostro percorso</p>
             <div className="ps-4">

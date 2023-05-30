@@ -9,7 +9,7 @@ import Meeting from "./components/Meeting";
 // import Footer from "./components/Footer";
 import ScrollChatIcon from "./components/ScrollChatIcon";
 import largeArrow from "./assets/images/svg/largeArrow.svg";
-import largeArrow2 from "./assets/images/svg/arrow-large-2.svg";
+// import largeArrow2 from "./assets/images/svg/arrow-large-2.svg";
 import PreLoader from "./components/PreLoader";
 import { useEffect, useState } from "react";
 
@@ -41,14 +41,14 @@ function App() {
           id="hero-large-arrow"
           className="position-fixed z-0 pointer-events-none d-none d-lg-block"
         />
-        <div className="timeline_arrow_img">
+        {/* <div className="timeline_arrow_img">
           <img
             alt="largeArrow2"
             src={largeArrow2}
             id="hero-large-arrow-2"
             className="position-fixed z-0 pointer-events-none d-none d-sm-block"
           />
-        </div>
+        </div> */}
       </div>
       <ScrollChatIcon />
     </>
