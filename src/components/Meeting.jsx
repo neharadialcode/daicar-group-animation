@@ -13,7 +13,6 @@ function Meeting() {
           trigger: "#contatti",
           start: "top 50%",
           end: "bottom 30%",
-          toggleActions: "play complete none reverse",
         },
       });
       tl.from([".meeting_first_line"], {
@@ -35,7 +34,6 @@ function Meeting() {
           trigger: "#contatti",
           start: "top 10%",
           pin: true,
-          toggleActions: "play complete none reverse",
         },
       });
 
