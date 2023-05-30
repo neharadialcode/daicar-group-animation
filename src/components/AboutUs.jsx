@@ -297,7 +297,7 @@ const About = () => {
     <>
       <div className="position-relative" id="about_section">
         <div id="about" className="vh-100 w-100 z-10 d-none d-lg-block">
-          <div className="position-absolute z-1 end-0 text_left_rotate left_text_about d-none d-lg-flex align-items-center pe-5 me-3 me-xl-2 pt-5">
+          <div className="position-absolute end-0 text_left_rotate left_text_about d-none d-lg-flex align-items-center pe-5 me-3 me-xl-2 pt-5">
             <p className="color_white_off font_md mb-0">Su di noi</p>
             <div className="ps-4">
               <img src={businessLeftTextIcon} alt="about-small-arrow" />

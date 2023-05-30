@@ -4,7 +4,7 @@ import amazonlogo from "../assets/images/svg/amazon-logo.svg";
 import hubsportlogo from "../assets/images/svg/hubsport-logo.svg";
 import pipedrivelogo from "../assets/images/svg/pipedrive-logo.svg";
 import zendexlogo from "../assets/images/svg/zendesk-suite-logo.svg";
-import crmLeftIcon from "../assets/images/png/crm-left-icon.png";
+import businessLeftTextIcon2 from "../assets/images/svg/small-arrow-icon-2.svg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Slider from "react-slick";
@@ -41,8 +41,7 @@ const Crm = () => {
       },
     });
 
-    tl
-      .from("#CRM-img-container img", {
+    tl.from("#CRM-img-container img", {
       x: -50,
       autoAlpha: 0,
       stagger: 0.07,
@@ -52,10 +51,13 @@ const Crm = () => {
     <>
       <div
         id="CRM"
-        className="d-flex justify-content-center align-items-center overflow-hidden bg_light_white min-vh-100"
+        className="d-flex justify-content-center align-items-center overflow-hidden bg_light_white min-vh-100 position-relative"
       >
-        <div className="position-absolute crm_left_icon d-none d-xl-block z_negative">
-          <img src={crmLeftIcon} alt="crm-left-icon" />
+        <div className="position-absolute end-0 text_left_rotate d-none d-xl-flex align-items-center left_text_crm pt-4 pe-xl-5 me-2">
+          <p className="color_light_green font_sm mb-0">Integrazioni</p>
+          <div className="ps-4">
+            <img src={businessLeftTextIcon2} alt="crm-small-arrow" />
+          </div>
         </div>
         <div className="container custom_container crm_text">
           <div

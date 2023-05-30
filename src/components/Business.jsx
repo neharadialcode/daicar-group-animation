@@ -538,7 +538,7 @@ const Business = () => {
               per il tuo business
             </p>
           </div>
-          <div className="position-absolute z-1 end-0 business_left_icon text_left_rotate d-none d-lg-flex align-items-center left_text_about pt-4 pe-xl-3">
+          <div className="position-absolute end-0 business_left_icon text_left_rotate d-none d-lg-flex align-items-center left_text_about pt-4 pe-xl-3">
             <p className="color_white_off font_sm mb-0">Esperienza su misura</p>
             <div className="ps-4">
               <img src={businessLeftTextIcon} alt="business-small-arrow" />
