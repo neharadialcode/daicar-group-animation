@@ -1175,6 +1175,16 @@
   .ipad_img {
     height: 90vh;
   }
+  #hero-ipad-white {
+    transform: translate(-50%, -60%) scale(0.7, 0.7) !important;
+  }
+  .intro_tab_frame {
+    height: 670px;
+  }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 36% !important;
+  }
 }
 
 @media (min-width: 1600px) and (max-height: 799.98px) {
