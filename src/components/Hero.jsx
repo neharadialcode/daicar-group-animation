@@ -760,14 +760,14 @@ const Hero = () => {
           // ["#hero-ipad", ".hero_slide_2"],
           "#hero-ipad",
           {
-            scale: 0.7,
+            scale: 0.8,
           },
           ">"
         )
         .to(
           ".hero_slide_2",
           {
-            scale: 0.5,
+            scale: 0.4,
             top: "30%",
           },
           "<"
@@ -2453,18 +2453,16 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="ipad_parent">
-              <img
-                id="hero-ipad"
-                className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
-                src={ipad}
-              />
-              <img
-                id="hero-ipad-white"
-                className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
-                src={ipadWhite}
-              />
-            </div>
+            <img
+              id="hero-ipad"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
+              src={ipad}
+            />
+            <img
+              id="hero-ipad-white"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
+              src={ipadWhite}
+            />
           </div>
           <div
             id="hero_section"
