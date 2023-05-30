@@ -26,7 +26,7 @@ const Header = () => {
       }).from(".header_section", {
         top: "-100px",
         duration: 1,
-        delay: 3,
+        delay: 2.5,
       });
     });
   }, []);

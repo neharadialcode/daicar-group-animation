@@ -518,43 +518,44 @@
   align-items: center;
   transition: all 1s ease-in-out;
   z-index: 99;
-}
-.loader_fullscreen::after {
-  content: "";
   background-color: var(--color-dark-gray);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100vh;
-  z-index: -1;
-  transition: all 1s ease-in-out;
 }
-.loader_fullscreen::before {
-  content: "";
-  background-color: var(--color-dark-gray);
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100vh;
-  z-index: -1;
-  transition: all 1s ease-in-out;
-}
+// .loader_fullscreen::after {
+//   content: "";
+//   background-color: var(--color-dark-gray);
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 50%;
+//   height: 100vh;
+//   z-index: -1;
+//   transition: all 1s ease-in-out;
+// }
+// .loader_fullscreen::before {
+//   content: "";
+//   background-color: var(--color-dark-gray);
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   width: 50%;
+//   height: 100vh;
+//   z-index: -1;
+//   transition: all 1s ease-in-out;
+// }
 .loader_fullscreen img {
   width: 300px;
   height: 300px;
   // animation: preloader_animation 2s linear infinite alternate;
 }
-.preloader_reverse.loader_fullscreen::after,
-.preloader_reverse.loader_fullscreen::before {
-  width: 0%;
-}
-.preloader_reverse.loader_fullscreen img {
-  width: 0;
-  opacity: 0;
-  pointer-events: none;
-}
+// .preloader_reverse.loader_fullscreen::after,
+// .preloader_reverse.loader_fullscreen::before {
+//   width: 0%;
+// }
+// .preloader_reverse.loader_fullscreen img {
+//   width: 0;
+//   opacity: 0;
+//   pointer-events: none;
+// }
 // @keyframes preloader_animation {
 //   30% {
 //     transform: scale(1.2);
@@ -577,9 +578,9 @@
 //     transform: scale(0.1);
 //   }
 // }
-.preloader_reverse.loader_fullscreen {
-  pointer-events: none;
-}
+// .preloader_reverse.loader_fullscreen {
+//   pointer-events: none;
+// }
 /* PRELOADER ANIMATION ENDS */
 .bounce-out {
   animation: bounce-out 3s ease infinite;
@@ -599,6 +600,7 @@
     transform: scale(0);
   }
 }
+
 .timeline_all_btns_hover a {
   transition: all 0.3s ease-in-out;
 }
