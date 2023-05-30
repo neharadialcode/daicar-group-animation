@@ -143,9 +143,6 @@
   top: 50%;
   left: 0;
 }
-.business_icon_img_2 {
-  top: 6%;
-}
 .small_tab_arrow_img {
   height: 160vh;
 }
@@ -620,4 +617,12 @@
 
 .footer_top_space {
   padding-top: 125px;
+}
+
+.text_left_rotate {
+  transform: rotate(90deg);
+}
+
+.left_text_about {
+  top: 12%;
 }

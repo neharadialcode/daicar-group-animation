@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import timelineLeftIcon from "../assets/images/png/timeline-left-icon.png";
 import timelineImg1 from "../assets/images/png/timeline-content-img-1.png";
 import timelineImg2 from "../assets/images/png/timeline-content-img-2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import largeArrow2 from "../assets/images/svg/arrow-large-2.svg";
+import businessLeftTextIcon from "../assets/images/svg/small-arrow-icon.svg";
 import pagelogo from "../assets/images/svg/page-logo.svg";
 gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
@@ -771,6 +771,12 @@ const Timeline = () => {
               alt="largeArrow2"
             />
           </span>
+          <div className="position-absolute z-1 end-0 timeline_left_icon d-none d-xl-flex align-items-center pt-4 me-2 pe-xl-4">
+            <p className="color_white_off font_sm mb-0">Il nostro percorso</p>
+            <div className="ps-4">
+              <img src={businessLeftTextIcon} alt="business-small-arrow" />
+            </div>
+          </div>
           <div className="container position-relative h-100">
             <div
               id="timeline-content"
@@ -791,9 +797,6 @@ const Timeline = () => {
                     </button>
                   </a>
                 </p>
-              </div>
-              <div className="position-absolute timeline_left_icon pt-sm-5 z_1 d-none d-xxl-block me-2">
-                <img src={timelineLeftIcon} alt="timeline-left-icon" />
               </div>
               <div className="flex-grow-1 w-100 timeline_text_parent_max_w">
                 <div className="text_parent_height w-100 position-relative">

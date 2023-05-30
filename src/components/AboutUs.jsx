@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import bigFounder from "../assets/images/svg/big-founder-img-1.svg";
 import bigFounder2 from "../assets/images/svg/big-founder-img-2.svg";
 import bigFounder3 from "../assets/images/svg/big-founder-img-3.svg";
-import lefttextImg from "../assets/images/png/left-text-icon-img.png";
 import smallbgImg from "../assets/images/png/small-bg-forth.png";
 import { gsap } from "gsap";
 import { DownArrowNoiIcon, UpArrowNoiIcon } from "./Icons";
 import aboutArrow from "../assets/images/png/about-arrow.png";
+import businessLeftTextIcon from "../assets/images/svg/small-arrow-icon.svg";
 
 const About = () => {
   useEffect(() => {
@@ -53,14 +53,11 @@ const About = () => {
           autoAlpha: 0,
           scale: 0.8,
         })
-        .from(
-          "#about-image-block",
-          {
-            autoAlpha: 0,
-            scale: 0,
-            xPercent: -50,
-          }
-        )
+        .from("#about-image-block", {
+          autoAlpha: 0,
+          scale: 0,
+          xPercent: -50,
+        })
         .fromTo(
           "#about-image-block",
           {
@@ -140,14 +137,11 @@ const About = () => {
           autoAlpha: 0,
           scale: 0.8,
         })
-        .from(
-          "#about-image-block",
-          {
-            autoAlpha: 0,
-            scale: 0,
-            xPercent: -50,
-          }
-        )
+        .from("#about-image-block", {
+          autoAlpha: 0,
+          scale: 0,
+          xPercent: -50,
+        })
         .fromTo(
           "#about-image-block",
           {
@@ -227,14 +221,11 @@ const About = () => {
           autoAlpha: 0,
           scale: 0.8,
         })
-        .from(
-          "#about-image-block",
-          {
-            autoAlpha: 0,
-            scale: 0,
-            xPercent: -50,
-          }
-        )
+        .from("#about-image-block", {
+          autoAlpha: 0,
+          scale: 0,
+          xPercent: -50,
+        })
         .fromTo(
           "#about-image-block",
           {
@@ -306,8 +297,11 @@ const About = () => {
     <>
       <div className="position-relative" id="about_section">
         <div id="about" className="vh-100 w-100 z-10 d-none d-lg-block">
-          <div className="position-absolute z-1 end-0 d-none d-xxl-block pe-5 me-5 left_text_about">
-            <img src={lefttextImg} alt="business-small-arrow-2" />
+          <div className="position-absolute z-1 end-0 text_left_rotate left_text_about d-none d-lg-flex align-items-center pe-5 me-3 me-xl-2 pt-5">
+            <p className="color_white_off font_md mb-0">Su di noi</p>
+            <div className="ps-4">
+              <img src={businessLeftTextIcon} alt="about-small-arrow" />
+            </div>
           </div>
           <div className="container position-relative vh-100">
             <div className="d-flex align-items-center flex-column justify-content-between position-relative h-100 top_csutom_space z-10">
