@@ -217,6 +217,12 @@
   .tab_text_position {
     transform: translateY(-120px);
   }
+  .hero_slide_1 {
+    margin-top: -80px;
+  }
+  .hero_slide_2 {
+    margin-top: -72px;
+  }
 }
 
 @media (max-width: 1499.98px) {
@@ -247,6 +253,11 @@
     right: 95px;
   }
 }
+
+// .hero_slide_1,
+// .hero_slide_2 {
+//   background-color: red;
+// }
 
 @media (max-width: 1399.98px) {
   .footer_top_space {
@@ -309,6 +320,10 @@
   }
   .crm_parent_img .crm_img_size img {
     max-width: 200px;
+  }
+  .hero_slide_1,
+  .hero_slide_2 {
+    margin-top: 0px;
   }
 }
 
@@ -481,6 +496,9 @@
     font-size: 24px !important;
     height: 42px !important;
     width: 136px !important;
+  }
+  .intro_tab_frame {
+    height: 740px;
   }
 }
 
