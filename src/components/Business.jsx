@@ -256,7 +256,7 @@ const Business = () => {
         );
     });
 
-    mm.add("(min-width:992px) and (max-width:1599.98px)", () => {
+    mm.add("(min-width:1300px) and (max-width:1599.98px)", () => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".business_parent",
@@ -473,6 +473,440 @@ const Business = () => {
         });
     });
 
+    mm.add("(min-width:1100px) and (max-width:1299.98px)", () => {
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".business_parent",
+          start: "top bottom",
+          scrub: true,
+        },
+      });
+
+      tl2
+        .to("#hero-large-arrow", {
+          scale: 1.8,
+          top: "20%",
+          immediateRender: false,
+        })
+        .to(
+          "#solution-outlineArrow",
+          {
+            yPercent: -150,
+            immediateRender: false,
+          },
+          "<"
+        );
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".business_parent",
+          start: "top top",
+          end: "+=600%",
+          scrub: 1,
+          pin: true,
+        },
+      });
+      tl.from(".main_text", {
+        autoAlpha: 0,
+        scale: 0.5,
+      })
+        .to(
+          [
+            ".business_heading_1",
+            ".business_heading_2",
+            ".business_heading_3",
+            ".business_heading_4",
+          ],
+          {
+            autoAlpha: 0.5,
+          }
+        )
+        .to(".small_icon", {
+          top: "0px",
+        })
+
+        .from(".business_heading_1", {
+          autoAlpha: 0.5,
+        })
+        .to(
+          ".business_para_1",
+          {
+            autoAlpha: 1,
+            height: "auto",
+            marginTop: "16px",
+            marginBottom: "16px",
+          },
+          ">"
+        )
+        .addLabel("business_accordion_1")
+        .to(
+          ".business_para_1",
+          {
+            autoAlpha: 0,
+            height: "0",
+            margin: "0",
+          },
+          "+=50"
+        )
+        .to(".business_heading_1", {
+          autoAlpha: 0.5,
+        })
+        .to(
+          ".business_img_1",
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ".business_img_2",
+          {
+            autoAlpha: 1,
+          },
+          ">"
+        )
+        .to(".small_icon", {
+          top: "50px",
+        })
+        //////////
+        .from(".business_heading_2", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_para_2", {
+          autoAlpha: 1,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
+        })
+        .addLabel("business_accordion_2")
+        .to(
+          ".business_para_2",
+          {
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
+          },
+          "+=50"
+        )
+        .to(".business_heading_2", {
+          autoAlpha: 0.5,
+        })
+
+        .to(
+          ".business_img_2",
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ".business_img_3",
+          {
+            autoAlpha: 1,
+          },
+          ">"
+        )
+        .to(".small_icon", {
+          top: "100px",
+        })
+        //////////
+        .from(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_para_3", {
+          autoAlpha: 1,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
+        })
+        .addLabel("business_accordion_3")
+        .to(
+          ".business_para_3",
+          {
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
+          },
+          "+=50"
+        )
+        .to(".business_heading_3", {
+          autoAlpha: 0.5,
+        })
+        .to(
+          ".business_img_3",
+          {
+            autoAlpha: 0,
+          },
+          "<"
+        )
+        .to(
+          ".business_img_4",
+          {
+            autoAlpha: 1,
+          },
+          ">"
+        )
+        .to(".small_icon", {
+          top: "150px",
+        })
+        //////////
+        .addLabel("business_accordion_4")
+        .from(".business_heading_4", {
+          autoAlpha: 0.5,
+        })
+        .to(".business_para_4", {
+          autoAlpha: 1,
+          height: "auto",
+          marginTop: "16px",
+          marginBottom: "16px",
+        })
+        .addLabel("business_accordion_4")
+        .to(
+          ".business_para_4",
+          {
+            autoAlpha: 0,
+            delay: 1,
+            duration: 7,
+            height: "0px",
+            margin: "0",
+          },
+          "+=50"
+        )
+        .to(".business_heading_4", {
+          autoAlpha: 0.5,
+        })
+        .to(
+          ".business_left_icon",
+          {
+            autoAlpha: 0,
+          },
+          "+=.5"
+        )
+        .to(".third_heading", {
+          autoAlpha: 0,
+        });
+    });
+
+     mm.add("(min-width:992px) and (max-width:1099.98px)", () => {
+       const tl2 = gsap.timeline({
+         scrollTrigger: {
+           trigger: ".business_parent",
+           start: "top bottom",
+           scrub: true,
+         },
+       });
+
+       tl2
+         .to("#hero-large-arrow", {
+           scale: 1.8,
+           top: "20%",
+           immediateRender: false,
+         })
+         .to(
+           "#solution-outlineArrow",
+           {
+             yPercent: -150,
+             immediateRender: false,
+           },
+           "<"
+         );
+       tl = gsap.timeline({
+         scrollTrigger: {
+           trigger: ".business_parent",
+           start: "top top",
+           end: "+=600%",
+           scrub: 1,
+           pin: true,
+         },
+       });
+       tl.from(".main_text", {
+         autoAlpha: 0,
+         scale: 0.5,
+       })
+         .to(
+           [
+             ".business_heading_1",
+             ".business_heading_2",
+             ".business_heading_3",
+             ".business_heading_4",
+           ],
+           {
+             autoAlpha: 0.5,
+           }
+         )
+         .to(".small_icon", {
+           top: "0px",
+         })
+
+         .from(".business_heading_1", {
+           autoAlpha: 0.5,
+         })
+         .to(
+           ".business_para_1",
+           {
+             autoAlpha: 1,
+             height: "auto",
+             marginTop: "16px",
+             marginBottom: "16px",
+           },
+           ">"
+         )
+         .addLabel("business_accordion_1")
+         .to(
+           ".business_para_1",
+           {
+             autoAlpha: 0,
+             height: "0",
+             margin: "0",
+           },
+           "+=50"
+         )
+         .to(".business_heading_1", {
+           autoAlpha: 0.5,
+         })
+         .to(
+           ".business_img_1",
+           {
+             autoAlpha: 0,
+           },
+           "<"
+         )
+         .to(
+           ".business_img_2",
+           {
+             autoAlpha: 1,
+           },
+           ">"
+         )
+         .to(".small_icon", {
+           top: "45px",
+         })
+         //////////
+         .from(".business_heading_2", {
+           autoAlpha: 0.5,
+         })
+         .to(".business_para_2", {
+           autoAlpha: 1,
+           height: "auto",
+           marginTop: "16px",
+           marginBottom: "16px",
+         })
+         .addLabel("business_accordion_2")
+         .to(
+           ".business_para_2",
+           {
+             autoAlpha: 0,
+             delay: 1,
+             duration: 7,
+             height: "0px",
+             margin: "0",
+           },
+           "+=50"
+         )
+         .to(".business_heading_2", {
+           autoAlpha: 0.5,
+         })
+
+         .to(
+           ".business_img_2",
+           {
+             autoAlpha: 0,
+           },
+           "<"
+         )
+         .to(
+           ".business_img_3",
+           {
+             autoAlpha: 1,
+           },
+           ">"
+         )
+         .to(".small_icon", {
+           top: "92px",
+         })
+         //////////
+         .from(".business_heading_3", {
+           autoAlpha: 0.5,
+         })
+         .to(".business_para_3", {
+           autoAlpha: 1,
+           height: "auto",
+           marginTop: "16px",
+           marginBottom: "16px",
+         })
+         .addLabel("business_accordion_3")
+         .to(
+           ".business_para_3",
+           {
+             autoAlpha: 0,
+             delay: 1,
+             duration: 7,
+             height: "0px",
+             margin: "0",
+           },
+           "+=50"
+         )
+         .to(".business_heading_3", {
+           autoAlpha: 0.5,
+         })
+         .to(
+           ".business_img_3",
+           {
+             autoAlpha: 0,
+           },
+           "<"
+         )
+         .to(
+           ".business_img_4",
+           {
+             autoAlpha: 1,
+           },
+           ">"
+         )
+         .to(".small_icon", {
+           top: "140px",
+         })
+         //////////
+         .addLabel("business_accordion_4")
+         .from(".business_heading_4", {
+           autoAlpha: 0.5,
+         })
+         .to(".business_para_4", {
+           autoAlpha: 1,
+           height: "auto",
+           marginTop: "16px",
+           marginBottom: "16px",
+         })
+         .addLabel("business_accordion_4")
+         .to(
+           ".business_para_4",
+           {
+             autoAlpha: 0,
+             delay: 1,
+             duration: 7,
+             height: "0px",
+             margin: "0",
+           },
+           "+=50"
+         )
+         .to(".business_heading_4", {
+           autoAlpha: 0.5,
+         })
+         .to(
+           ".business_left_icon",
+           {
+             autoAlpha: 0,
+           },
+           "+=.5"
+         )
+         .to(".third_heading", {
+           autoAlpha: 0,
+         });
+     });
+    
     mm.add("(max-width:991.98px)", () => {
       tl = gsap.timeline({
         scrollTrigger: {
