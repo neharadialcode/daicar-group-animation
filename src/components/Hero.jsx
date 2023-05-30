@@ -210,11 +210,22 @@ const Hero = () => {
           ">"
         )
         .to(
-          "#hero-ipad",
+          ["#hero-ipad", ".hero_slide_2"],
           {
             scale: 0.8,
+            // background: "red",
           },
           ">"
+        )
+        .to(
+          ".arrow-hero-two",
+          {
+            xPercent: 58,
+            yPercent: -8,
+            scale: 0.13,
+            rotate: "45deg",
+          },
+          "<"
         )
         .to(
           "#hero-ipad",
@@ -2346,6 +2357,7 @@ const Hero = () => {
                 className="vh-100 d-flex flex-column justify-content-center tab_parent z_2"
                 id="main-assets"
               >
+                {/* ===== BREADCRUMBS STARTS ===== */}
                 <div className="side_icon position-absolute tab_right_icon d-none d-xl-block me-4">
                   <div className="d-flex align-items-center tab-side-effect left_text_5">
                     <p className="me-4 color_light_green mb-0">
@@ -2379,52 +2391,60 @@ const Hero = () => {
                     <TabRightIcon />
                   </div>
                 </div>
+                {/* ===== BREADCRUMBS ENDS ===== */}
+
                 <div className="max_width_tabs position-relative">
-                  <div className="text-center pb-sm-5 tabs_parent d-flex align-items-end">
-                    <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0 tabs_content_parent">
-                      {buttonData.map((obj, index) => (
-                        <div className="px-2 pt-sm-2" key={index}>
-                          <div className={`card_img_${index}`}>
+                  <div className="text-center pb-sm-5 tabs_parent h-100 d-flex flex-column align-items-en">
+                    <div className="intro_tab_frame my-4"></div>
+
+                    <div className="d-flex">
+                      <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0 tabs_content_parent">
+                        {buttonData.map((obj, index) => (
+                          <div className="px-2 pt-sm-2" key={index}>
+                            <div className={`card_img_${index}`}>
+                              <div
+                                className={`${
+                                  index === 5
+                                    ? "d-none"
+                                    : `${
+                                        index === 0
+                                          ? "tabs_lottie_1 position-absolute start-0 custom_height_tab_img tabs_img"
+                                          : "position-absolute start-0 w-100 pt-3 custom_height_tab_img tabs_img tabs_lottie pt-4 pt-sm-0"
+                                      }`
+                                }`}
+                              >
+                                <Lottie
+                                  className="tabs_lottie_width"
+                                  animationData={obj.card_img}
+                                  loop={true}
+                                  play
+                                />
+                              </div>
+                            </div>
                             <div
-                              className={`${
-                                index === 5
-                                  ? "d-none"
-                                  : `${
-                                      index === 0
-                                        ? "tabs_lottie_1 position-absolute start-0 custom_height_tab_img tabs_img"
-                                        : "position-absolute start-0 w-100 pt-3 custom_height_tab_img tabs_img tabs_lottie pt-4 pt-sm-0"
-                                    }`
-                              }`}
+                              className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0"
+                              id="para_text_01"
                             >
-                              <Lottie
-                                className="tabs_lottie_width"
-                                animationData={obj.card_img}
-                                loop={true}
-                                play
-                              />
+                              <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
+                                {obj.para}
+                              </p>
+                              {obj.buttonText &&
+                                (console.log(obj.buttonId, "hero_btn"),
+                                (
+                                  <button
+                                    className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
+                                    dangerouslySetInnerHTML={{
+                                      __html: obj.buttonText,
+                                    }}
+                                    onClick={() =>
+                                      moveToIt("hero", obj.buttonId)
+                                    }
+                                  ></button>
+                                ))}
                             </div>
                           </div>
-                          <div
-                            className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0"
-                            id="para_text_01"
-                          >
-                            <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
-                              {obj.para}
-                            </p>
-                            {obj.buttonText &&
-                              (console.log(obj.buttonId, "hero_btn"),
-                              (
-                                <button
-                                  className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
-                                  dangerouslySetInnerHTML={{
-                                    __html: obj.buttonText,
-                                  }}
-                                  onClick={() => moveToIt("hero", obj.buttonId)}
-                                ></button>
-                              ))}
-                          </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
