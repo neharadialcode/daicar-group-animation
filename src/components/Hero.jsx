@@ -757,7 +757,8 @@ const Hero = () => {
           ">"
         )
         .to(
-          ["#hero-ipad", ".hero_slide_2"],
+          // ["#hero-ipad", ".hero_slide_2"],
+          "#hero-ipad",
           {
             scale: 0.8,
           },
@@ -766,7 +767,8 @@ const Hero = () => {
         .to(
           ".hero_slide_2",
           {
-            top: "28%",
+            scale: 0.7,
+            top: "30%",
           },
           "<"
         )
