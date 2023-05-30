@@ -771,7 +771,7 @@ const Timeline = () => {
               alt="largeArrow2"
             />
           </span>
-          <div className="position-absolute z-1 end-0 timeline_left_icon d-none d-xl-flex align-items-center pt-4 me-2 pe-xl-4">
+          <div className="position-absolute end-0 timeline_left_icon d-none d-xl-flex align-items-center pt-4 me-2 pe-xl-4">
             <p className="color_white_off font_sm mb-0">Il nostro percorso</p>
             <div className="ps-4">
               <img src={businessLeftTextIcon} alt="business-small-arrow" />

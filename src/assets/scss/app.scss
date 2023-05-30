@@ -209,11 +209,11 @@
   cursor: pointer !important;
   transition: all 0.3s ease-in-out !important;
 }
-.arrowbtn_set {
-  right: 2%;
-  top: 10%;
-  transform: rotate(90deg);
-}
+// .arrowbtn_set {
+//   right: 2%;
+//   top: 10%;
+//   transform: rotate(90deg);
+// }
 .footer_background_set {
   bottom: 0;
   left: 0 !important;
@@ -251,11 +251,11 @@
     transform: scale(0.94);
   }
 }
-.crm_left_icon {
-  right: 2%;
-  top: 10%;
-  transform: rotate(90deg);
-}
+// .crm_left_icon {
+//   right: 2%;
+//   top: 10%;
+//   transform: rotate(90deg);
+// }
 .meeting_para {
   line-height: 236% !important;
   max-width: 1302px !important;
@@ -625,4 +625,10 @@
 
 .left_text_about {
   top: 12%;
+}
+.left_text_partner {
+  top: 23%;
+}
+.left_text_crm {
+  top: 35%;
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import leftTextImg from "../../assets/images/png/partner-left-text-img.png";
+import businessLeftTextIcon2 from "../../assets/images/svg/small-arrow-icon-2.svg";
 import Slider from "react-slick";
 import Image from "./Image";
 import ParentLogoPara from "./ParentLogoPara";
@@ -143,12 +143,15 @@ const Partners = () => {
   return (
     <div
       id="partners"
-      className="partner_parent d-flex justify-content-center align-items-center overflow-hidden min-vh-100"
+      className="d-flex justify-content-center align-items-center overflow-hidden min-vh-100 position-relative"
     >
-      <div className="container">
-        <div className="position-absolute arrowbtn_set d-none d-xl-block">
-          <img src={leftTextImg} alt="partner-left-text-img" />
+      <div className="position-absolute end-0 text_left_rotate d-none d-xl-flex align-items-center left_text_partner pt-4 pe-xl-5">
+        <p className="color_light_green font_sm mb-0">Chi ci ha scelto</p>
+        <div className="ps-4">
+          <img src={businessLeftTextIcon2} alt="partner-small-arrow" />
         </div>
+      </div>
+      <div className="container">
         <div className="partner_text">
           <div className="my-3 my-lg-4 my-xxl-5">
             <div
