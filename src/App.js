@@ -14,18 +14,18 @@ import PreLoader from "./components/PreLoader";
 import { useEffect, useState } from "react";
 
 function App() {
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   document.body.classList.add("not-scroll-before-loading");
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //     document.body.classList.remove("not-scroll-before-loading");
-  //   }, 2000);
-  // }, []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    document.body.classList.add("not-scroll-before-loading");
+    setTimeout(() => {
+      setLoading(false);
+      document.body.classList.remove("not-scroll-before-loading");
+    }, 2000);
+  }, []);
 
   return (
     <>
-      {/* {<PreLoader loading={loading} />} */}
+      {<PreLoader loading={loading} />}
       <Hero />
       <Business />
       <AboutUs />
