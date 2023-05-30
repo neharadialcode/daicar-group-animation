@@ -6,7 +6,7 @@ import Timeline from "./components/Timeline";
 import Partners from "./components/partners/Partners";
 import Crm from "./components/Crm";
 import Meeting from "./components/Meeting";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import ScrollChatIcon from "./components/ScrollChatIcon";
 import largeArrow from "./assets/images/svg/largeArrow.svg";
 import largeArrow2 from "./assets/images/svg/arrow-large-2.svg";
@@ -33,7 +33,7 @@ function App() {
       <Partners />
       <Crm />
       <Meeting />
-      <Footer />
+      {/* <Footer /> */}
       <div className="w-100 overflow-hidden">
         <img
           alt="largeArrow"
