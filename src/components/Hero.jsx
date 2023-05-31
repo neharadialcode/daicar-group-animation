@@ -14,8 +14,10 @@ import marketingLottie from "../assets/lotties/tabs-2.json";
 import techDrivenLottie from "../assets/lotties/tabs-3.json";
 import realTimeLottie from "../assets/lotties/tabs-4.json";
 import crmLottie from "../assets/lotties/tabs-5.json";
+import useResizeListener from "../hooks/useResizeListener";
 
 const Hero = () => {
+  const { windowWidth } = useResizeListener();
   let tl;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -2214,7 +2216,8 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-  }, []);
+    console.log(windowWidth, "windowWidth");
+  }, [windowWidth]);
 
   const moveToIt = (sectionId, id) => {
     const section2 = document.querySelector(`#${sectionId}`);
