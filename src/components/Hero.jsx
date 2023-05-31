@@ -62,7 +62,6 @@ const Hero = () => {
 
   useEffect(() => {
     let mm = gsap.matchMedia();
-
     mm.add("(min-width: 1600px)", () => {
       gsap.set("#hero-main-heading", {
         y: "-150px",
@@ -602,7 +601,11 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
+    console.log(windowWidth, "windowWidth");
+  }, [windowWidth]);
 
+  useEffect(() => {
+    let mm = gsap.matchMedia();
     mm.add("(min-width: 992px) and (max-width:1599.98px)", () => {
       gsap.set("#main-content", {
         y: "-60px",
@@ -1144,7 +1147,11 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
+    console.log(windowWidth, "windowWidth");
+  }, [windowWidth]);
 
+  useEffect(() => {
+    let mm = gsap.matchMedia();
     mm.add("(min-width: 576px) and (max-width:991.98px)", () => {
       gsap.set("#main-content", {
         y: "-60px",
@@ -1682,7 +1689,11 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
+    console.log(windowWidth, "windowWidth");
+  }, [windowWidth]);
 
+  useEffect(() => {
+    let mm = gsap.matchMedia();
     mm.add("(max-width:575.98px)", () => {
       gsap.set("#main-content", {
         y: "-90px",
