@@ -814,7 +814,7 @@ const Timeline = () => {
                   >
                     <div
                       id="timeline-heading-1"
-                      className="position-absolute w-100 pe-xxl-5 me-xxl-5"
+                      className="position-absolute w-100 pe-xxl-5 me-xxl-5 pt-sm-3 pt-md-0"
                     >
                       <img
                         className="w-100 mb-3 mb-3 mb-xl-5 timeline_car_icon"
@@ -837,7 +837,7 @@ const Timeline = () => {
                     </div>
                     <h2
                       id="timeline-heading-2"
-                      className="font_md color_white_off position-absolute w-100"
+                      className="font_md color_white_off position-absolute w-100 pt-sm-3 pt-md-0"
                     >
                       Sviluppiamo la nostra piattaforma proprietaria
                       <br className="d-xl-block" />
@@ -855,7 +855,7 @@ const Timeline = () => {
                         src={timelineImg2}
                         alt="timelineImg2"
                       />
-                      <p className="font_md color_white_off mb-3 pe-3 pe-sm-5 pe-xl-1 me-sm-3 me-xxl-5">
+                      <p className="font_md color_white_off mb-0 mb-md-3 pe-3 pe-sm-0 pe-md-5 pe-xl-1 me-md-3 me-xxl-5">
                         Nasce TiGuido.io che trasferisce l’elevato know
                         <span className="ff_math">-</span>how e la tecnologia
                         sviluppata in ambito automotive al servizio di nuovi
@@ -864,7 +864,7 @@ const Timeline = () => {
                         tecnologia proprietaria per la validazione e generazione
                         di lead altamente qualificate.
                       </p>
-                      <div className="d-flex align-items-center mt-4 mt-lg-0 timeline_all_btns_hover">
+                      <div className="d-flex align-items-center mt-4 mt-sm-2 mt-md-4 mt-lg-0 timeline_all_btns_hover">
                         <a
                           className="custom_tab_button_012 cursor-pointer font_sm color_white_off timeline_btn bg-transparent"
                           href="#partners"
