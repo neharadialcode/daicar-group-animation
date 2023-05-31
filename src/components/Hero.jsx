@@ -69,18 +69,19 @@ const Hero = () => {
       gsap.set(".arrow-hero-one", {
         y: "30px",
         scale: 1.1,
-        // background: "red",
         autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         yPercent: -9,
         xPercent: 100,
         scale: 0.4,
+        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -90,
         yPercent: -26,
         scale: 0.2,
+        autoAlpha: 1,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
