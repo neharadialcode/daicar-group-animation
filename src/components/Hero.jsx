@@ -68,6 +68,8 @@ const Hero = () => {
       gsap.set(".arrow-hero-one", {
         y: "30px",
         scale: 1.1,
+        // background: "red",
+        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         yPercent: -9,
@@ -92,6 +94,7 @@ const Hero = () => {
         stagger: 0.1,
         duration: 1,
         delay: 2.2,
+        autoAlpha: 0,
       });
       gsap.set(
         [
