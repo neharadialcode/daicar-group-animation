@@ -588,15 +588,11 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .to(
-          "#root",
-          {
-            backgroundColor: "#29424D",
-          },
-          "+=2"
-        )
         .to(["#para_text_01 button", "#para_text_01 p"], {
           color: "white",
+        })
+        .to("#root", {
+          backgroundColor: "#29424D",
         });
     });
 
@@ -1132,15 +1128,11 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .to(
-          "#root",
-          {
-            backgroundColor: "#29424D",
-          },
-          "+=2"
-        )
         .to(["#para_text_01 button", "#para_text_01 p"], {
           color: "white",
+        })
+        .to("#root", {
+          backgroundColor: "#29424D",
         });
     });
 
@@ -1672,15 +1664,11 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .to(
-          "#root",
-          {
-            backgroundColor: "#29424D",
-          },
-          "+=2"
-        )
         .to(["#para_text_01 button", "#para_text_01 p"], {
           color: "white",
+        })
+        .to("#root", {
+          backgroundColor: "#29424D",
         });
     });
 
@@ -2211,15 +2199,11 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .to(
-          "#root",
-          {
-            backgroundColor: "#29424D",
-          },
-          "+=2"
-        )
         .to(["#para_text_01 button", "#para_text_01 p"], {
           color: "white",
+        })
+        .to("#root", {
+          backgroundColor: "#29424D",
         });
     });
   }, []);
