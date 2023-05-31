@@ -2230,15 +2230,6 @@ const Hero = () => {
     console.log(windowWidth, "windowWidth");
   }, [windowWidth]);
 
-  // const moveToIt = (sectionId, id) => {
-  //   const section2 = document.querySelector(`#${sectionId}`);
-  //   const pos2 = Math.ceil(
-  //     section2.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
-  //       section2.parentNode.offsetTop
-  //   );
-  //   gsap.to(window, { duration: 0.3, scrollTo: pos2, ease: "linear" });
-  // };
-
   const moveToIt = (sectionId, id) => {
     const section2 = document.querySelector(`#${sectionId}`);
     if (tl) {
