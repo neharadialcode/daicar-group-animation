@@ -764,14 +764,14 @@ const Timeline = () => {
     <>
       <div id="timeline" className="min-vh-100 w-100 z-10">
         <div className="position-relative h-100 w-100">
-          {/* <span className="d-sm-none">
+          <span className="d-sm-none">
             <img
               className="timeline_arrow_icon w-100"
               src={largeArrow2}
               alt="largeArrow2"
             />
-          </span> */}
-          <div className="">
+          </span>
+          <div>
             <img
               alt="largeArrow2"
               src={largeArrow2}

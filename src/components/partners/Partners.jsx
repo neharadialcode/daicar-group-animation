@@ -210,7 +210,6 @@ const Partners = () => {
                       width={item.width}
                       onMouseEnter={() => handleMouseEnter(item.alt)}
                       onMouseLeave={() => handleMouseLeave()}
-                      className="partners_iocns"
                     />
                   ))
                 )}

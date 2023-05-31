@@ -639,13 +639,19 @@
 }
 @media (max-height: 1100px) {
   .timeline_arrow_img {
-    bottom: 81.5%;
+    bottom: 80.5%;
     transform: translateY(81.5%);
   }
 }
 @media (max-height: 1079px) {
   .timeline_arrow_img {
     bottom: 74%;
+    transform: translateY(74%);
+  }
+}
+@media (max-height: 1024px) {
+  .timeline_arrow_img {
+    bottom: 66.5%;
     transform: translateY(74%);
   }
 }
@@ -663,7 +669,7 @@
 }
 @media (max-height: 600px) {
   .timeline_arrow_img {
-    bottom: 60%;
+    bottom: 55%;
     transform: translateY(60%);
   }
 }
