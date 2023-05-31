@@ -50,7 +50,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-51%",
+        // bottom: "-51%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -66,7 +66,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-48%",
+        // bottom: "-48%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -82,7 +82,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-85%",
+        // bottom: "-85%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -98,7 +98,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-83%",
+        // bottom: "-83%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -114,7 +114,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-79%",
+        // bottom: "-79%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -130,7 +130,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-117%",
+        // bottom: "-117%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -146,7 +146,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-48%",
+        // bottom: "-48%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -162,7 +162,7 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        bottom: "-59%",
+        // bottom: "-59%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
