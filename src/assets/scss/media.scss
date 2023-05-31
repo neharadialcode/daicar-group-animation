@@ -790,6 +790,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .topscroll {
+    left: 3%;
+  }
   .timeline_content_4_parent {
     right: -45%;
   }
@@ -938,7 +941,7 @@
   .meeting_para .common_button {
     font-size: 24px !important;
     height: 37px !important;
-    padding: 8.4px 16px 6.4px !important;
+    padding: 6.4px 16px !important;
   }
   .timeline_btn {
     padding: 4px 10px 4px;
