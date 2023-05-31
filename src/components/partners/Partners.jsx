@@ -144,7 +144,6 @@ const Partners = () => {
         stagger: 0.07,
       });
     });
-
     mm.add("(max-width: 991.98px)", () => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
@@ -153,12 +152,11 @@ const Partners = () => {
           pin: true,
         },
       });
-      tl2
-        .from("#partner-img-container img", {
-          x: -50,
-          autoAlpha: 0,
-          stagger: 0.07,
-        });
+      tl2.from("#partner-img-container2 img", {
+        x: -50,
+        autoAlpha: 0,
+        stagger: 0.07,
+      });
     });
   }, []);
   return (
@@ -218,7 +216,7 @@ const Partners = () => {
 
               {/* for less than 992 */}
               <div
-                id="partner-img-container"
+                id="partner-img-container2"
                 className="d-none d-sm-flex justify-content-center gap-4 align-items-center d-lg-none flex-wrap  py-5"
               >
                 {data.map((d) =>

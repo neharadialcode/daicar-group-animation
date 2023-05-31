@@ -34,7 +34,7 @@ const Crm = () => {
       window.innerWidth > 576.99 && setIsMobileDevice(false);
     });
 
-    const tl = gsap.timeline({
+  const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#CRM",
         start: "top top",
