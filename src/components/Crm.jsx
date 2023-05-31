@@ -37,7 +37,8 @@ const Crm = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#CRM",
-        start: "top 50%",
+        start: "top top",
+        pin: true,
       },
     });
 
@@ -51,7 +52,7 @@ const Crm = () => {
     <>
       <div
         id="CRM"
-        className="d-flex justify-content-center align-items-center overflow-hidden bg_light_white min-vh-100 position-relative"
+        className="d-flex justify-content-center align-items-center overflow-hidden bg_light_white min-vh-100"
       >
         <div className="position-absolute end-0 text_left_rotate d-none d-xl-flex align-items-center left_text_crm pt-4 pe-xl-5 me-2">
           <p className="color_light_green font_sm mb-0">Integrazioni</p>

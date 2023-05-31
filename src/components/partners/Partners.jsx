@@ -117,68 +117,54 @@ const Partners = () => {
         "-=3"
       );
     });
-    // const ctx = gsap.context(() => {
-    // const tl2 = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: "#partners",
-    //     start: "top top",
-    //     scrub: 1,
-    //     pin: true,
-    //     markers: true,
-    //   },
-    // });
-    // tl2
-    //   .from("#partners-content-heading", {
-    //     y: -20,
-    //     autoAlpha: 0,
-    //   })
-    //   .from("#partner-img-container img", {
-    //     x: -50,
-    //     autoAlpha: 0,
-    //     stagger: 0.07,
-    //   });
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        // start: "top 50%",
-        // end: "bottom 30%",
-        trigger: "#partners",
-        start: "top 50%",
-        scrub: 1,
-        markers: true,
-        id: "one",
-      },
-    });
-    tl.from([".partners_logos_one"], {
-      x: -50,
-      autoAlpha: 0,
-      stagger: 0.07,
+
+    mm.add("(min-width: 992px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#partners",
+          start: "top 50%",
+        },
+      });
+      tl.from([".partners_logos_one"], {
+        x: -50,
+        autoAlpha: 0,
+        stagger: 0.07,
+      });
+
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#partners",
+          start: "top top",
+          pin: true,
+        },
+      });
+      tl2.from([".partners_logos_two"], {
+        x: -50,
+        autoAlpha: 0,
+        stagger: 0.07,
+      });
     });
 
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        // start: "top 10%",
-        trigger: "#partners",
-        start: "top 10%",
-        scrub: 1,
-        pin: true,
-        markers: true,
-        id: "two",
-      },
+    mm.add("(max-width: 991.98px)", () => {
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#partners",
+          start: "top top",
+          pin: true,
+        },
+      });
+      tl2
+        .from("#partner-img-container img", {
+          x: -50,
+          autoAlpha: 0,
+          stagger: 0.07,
+        });
     });
-
-    tl2.from([".partners_logos_two"], {
-      x: -50,
-      autoAlpha: 0,
-      stagger: 0.07,
-    });
-    // });
-
-    // return () => ctx.revert();
   }, []);
   return (
     <div
       id="partners"
-      className="d-flex justify-content-center align-items-center overflow-hidden min-vh-100 positionrelative"
+      className="d-flex justify-content-center align-items-center overflow-hidden min-vh-100"
     >
       <div className="position-absolute end-0 text_left_rotate d-none d-xl-flex align-items-center left_text_partner pt-4 pe-xl-5">
         <p className="color_light_green font_sm mb-0">Chi ci ha scelto</p>
