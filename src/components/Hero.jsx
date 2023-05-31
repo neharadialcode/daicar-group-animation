@@ -69,19 +69,16 @@ const Hero = () => {
       gsap.set(".arrow-hero-one", {
         y: "30px",
         scale: 1.1,
-        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         yPercent: -9,
         xPercent: 100,
         scale: 0.4,
-        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -90,
         yPercent: -26,
         scale: 0.2,
-        autoAlpha: 1,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
@@ -96,7 +93,6 @@ const Hero = () => {
         stagger: 0.1,
         duration: 1,
         delay: 2.2,
-        autoAlpha: 0,
       });
       gsap.set(
         [
@@ -616,19 +612,16 @@ const Hero = () => {
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.8,
-        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         yPercent: -11,
         xPercent: 75,
         scale: 0.3,
-        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -65,
         yPercent: -22,
         scale: 0.15,
-        autoAlpha: 1,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
@@ -646,7 +639,6 @@ const Hero = () => {
         stagger: 0.1,
         duration: 1,
         delay: 2.2,
-        autoAlpha: 0,
       });
 
       gsap.set(
@@ -1163,19 +1155,16 @@ const Hero = () => {
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.8,
-        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         xPercent: 80,
         yPercent: 48,
         scale: 0.4,
-        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -54,
         yPercent: -15,
         scale: 0.15,
-        autoAlpha: 1,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
@@ -1190,7 +1179,6 @@ const Hero = () => {
         stagger: 0.1,
         duration: 1,
         delay: 2.2,
-        autoAlpha: 0,
       });
 
       gsap.set(
@@ -1709,19 +1697,16 @@ const Hero = () => {
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.5,
-        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         xPercent: 29,
         yPercent: -31,
         scale: 0.15,
-        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -24,
         yPercent: 36,
         scale: 0.1,
-        autoAlpha: 1,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
@@ -1736,7 +1721,6 @@ const Hero = () => {
         stagger: 0.1,
         duration: 1,
         delay: 2.2,
-        autoAlpha: 0,
       });
 
       gsap.set(
@@ -2245,15 +2229,6 @@ const Hero = () => {
     });
     console.log(windowWidth, "windowWidth");
   }, [windowWidth]);
-
-  // const moveToIt = (sectionId, id) => {
-  //   const section2 = document.querySelector(`#${sectionId}`);
-  //   const pos2 = Math.ceil(
-  //     section2.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
-  //       section2.parentNode.offsetTop
-  //   );
-  //   gsap.to(window, { duration: 0.3, scrollTo: pos2, ease: "linear" });
-  // };
 
   const moveToIt = (sectionId, id) => {
     const section2 = document.querySelector(`#${sectionId}`);
