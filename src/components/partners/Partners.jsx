@@ -151,7 +151,6 @@ const Partners = () => {
           trigger: "#partners",
           start: "top top",
           pin: true,
-          markers: true,
         },
       });
       tl2
