@@ -80,7 +80,13 @@ function Footer() {
                   </p>
                   <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_montserrat">
                     Designed & developed<br className="d-md-block d-none"></br>
-                    alfatauristudio.com
+                    <a
+                      href="https://www.alfatauristudio.com/"
+                      target="_blank"
+                      className="color_light_gray list_item_text"
+                    >
+                      alfatauristudio.com
+                    </a>
                   </p>
                 </div>
               </div>
@@ -209,8 +215,14 @@ function Footer() {
                   P.IVA 14570951005
                 </p>
                 <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray list_item_text ff_montserrat">
-                  Designed & developed <br className="d-md-block d-none"></br>
-                  alfatauristudio.com
+                  Designed & developed <br />
+                  <a
+                    href="https://www.alfatauristudio.com/"
+                    target="_blank"
+                    className="color_light_gray"
+                  >
+                    alfatauristudio.com
+                  </a>
                 </p>
               </div>
             </div>
