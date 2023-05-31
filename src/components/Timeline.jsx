@@ -788,9 +788,9 @@ const Timeline = () => {
           <div className="container position-relative h-100">
             <div
               id="timeline-content"
-              className="d-flex align-items-center flex-column justify-content-between position-relative h-100 pt-4 pb-5 py-sm-5 z-10"
+              className="d-flex align-items-center flex-column justify-content-between position-relative h-100 pt-3 pb-5 py-md-5 z-10"
             >
-              <div className="text-center pt-sm-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
+              <div className="text-center pt-md-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
                 <p className="font_5xl text-white text-center">
                   Ideata da
                   <a href="#partners">
