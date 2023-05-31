@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <div className="header_parent bg_dark_gray" style={{ height: "100px" }}>
       <div className="container-lg common_container py-2 py-lg-1 position-relative">
-        <div className="header_section position-absolute w-100 d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-4 navbar_links">
+        <div className="header_section position-absolute w-100 d-flex align-items-center justify-content-between px-2 px-lg-0 mx-sm-1 mx-lg-0 py-2 py-sm-4 navbar_links">
           <a href="/">
             <img
               className="logo_width logo_md_100"
