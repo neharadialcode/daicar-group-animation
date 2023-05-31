@@ -616,16 +616,19 @@ const Hero = () => {
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.8,
+        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         yPercent: -11,
         xPercent: 75,
         scale: 0.3,
+        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -65,
         yPercent: -22,
         scale: 0.15,
+        autoAlpha: 1,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
@@ -643,6 +646,7 @@ const Hero = () => {
         stagger: 0.1,
         duration: 1,
         delay: 2.2,
+        autoAlpha: 0,
       });
 
       gsap.set(
@@ -1159,16 +1163,19 @@ const Hero = () => {
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.8,
+        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         xPercent: 80,
         yPercent: 48,
         scale: 0.4,
+        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -54,
         yPercent: -15,
         scale: 0.15,
+        autoAlpha: 1,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
@@ -1183,6 +1190,7 @@ const Hero = () => {
         stagger: 0.1,
         duration: 1,
         delay: 2.2,
+        autoAlpha: 0,
       });
 
       gsap.set(
@@ -1701,16 +1709,19 @@ const Hero = () => {
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.5,
+        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-two", {
         xPercent: 29,
         yPercent: -31,
         scale: 0.15,
+        autoAlpha: 1,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -24,
         yPercent: 36,
         scale: 0.1,
+        autoAlpha: 1,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
@@ -1725,6 +1736,7 @@ const Hero = () => {
         stagger: 0.1,
         duration: 1,
         delay: 2.2,
+        autoAlpha: 0,
       });
 
       gsap.set(
