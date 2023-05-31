@@ -90,6 +90,8 @@ const Hero = () => {
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
+        duration: 1,
+        delay: 2.2,
       });
       gsap.set(
         [
@@ -630,6 +632,8 @@ const Hero = () => {
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
+        duration: 1,
+        delay: 2.2,
       });
 
       gsap.set(
@@ -1164,6 +1168,8 @@ const Hero = () => {
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
+        duration: 1,
+        delay: 2.2,
       });
 
       gsap.set(
@@ -1700,6 +1706,8 @@ const Hero = () => {
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 100,
         stagger: 0.1,
+        duration: 1,
+        delay: 2.2,
       });
 
       gsap.set(
