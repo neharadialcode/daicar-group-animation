@@ -64,14 +64,17 @@ function Meeting() {
 
   return (
     <>
-      <div className="contatti_section bg_light_white custom_content_padding meeting_parent overflow-hidden">
+      <div
+        className="bg_light_white custom_content_padding overflow-hidden"
+        id="contatti"
+      >
         <div className="custom_container container">
           <div
             id="meeting-paragraph-container"
             className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-none d-xl-block"
           >
             <div>
-              <p className="meeting_first_line" id="contatti">
+              <p className="meeting_first_line">
                 Ora hai compreso che il futuro delle tue
                 <a href="#footer">
                   <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl mx-sm-3">

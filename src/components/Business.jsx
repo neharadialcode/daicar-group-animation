@@ -944,7 +944,7 @@ const Business = () => {
       section.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
         section.parentNode.offsetTop
     );
-    console.log(pos1);
+    // console.log(pos1);
     gsap.to(window, { duration: 0.3, scrollTo: pos1, ease: "linear" });
   };
   return (

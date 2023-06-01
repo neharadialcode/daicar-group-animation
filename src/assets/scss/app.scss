@@ -35,12 +35,12 @@
   align-items: center;
   color: #fff;
 }
-.arrow_tabs {
-  transform: scale(1.7);
-  max-width: 500px;
-  z-index: -1;
-  left: 10%;
-}
+// .arrow_tabs {
+//   transform: scale(1.7);
+//   max-width: 500px;
+//   z-index: -1;
+//   left: 10%;
+// }
 .side_icon {
   right: 0;
   bottom: 0;
@@ -454,7 +454,7 @@
 }
 .about_img {
   object-fit: cover;
-  overflow: visible;
+  // overflow: visible;
   height: 450px;
 }
 .about_arrow_img_width {

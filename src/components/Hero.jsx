@@ -297,22 +297,22 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "100%",
+        //   },
+        //   {
+        //     top: "80%",
+        //   }
+        // )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "70%",
+        //   },
+        //   "-=.5"
+        // )
 
         .fromTo(
           ".card_img_0",
@@ -351,13 +351,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "60%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_1",
           {
@@ -421,13 +421,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "50%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_2",
           {
@@ -487,13 +487,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "58%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_3",
           {
@@ -556,16 +556,16 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "52%",
         })
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_4",
           {
@@ -598,7 +598,7 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    console.log(windowWidth, "windowWidth");
+    // console.log(windowWidth, "windowWidth");
   }, [windowWidth]);
 
   useEffect(() => {
@@ -844,22 +844,22 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "100%",
+        //   },
+        //   {
+        //     top: "80%",
+        //   }
+        // )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "70%",
+        //   },
+        //   "-=.5"
+        // )
 
         .fromTo(
           ".card_img_0",
@@ -897,13 +897,13 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "60%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_1",
           {
@@ -967,13 +967,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "58%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "50%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_2",
           {
@@ -1033,13 +1033,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "53%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_3",
           {
@@ -1102,16 +1102,16 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "48%",
         })
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_4",
           {
@@ -1144,7 +1144,7 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    console.log(windowWidth, "windowWidth");
+    // console.log(windowWidth, "windowWidth");
   }, [windowWidth]);
 
   useEffect(() => {
@@ -1385,22 +1385,22 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "100%",
+        //   },
+        //   {
+        //     top: "80%",
+        //   }
+        // )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "70%",
+        //   },
+        //   "-=.5"
+        // )
 
         .fromTo(
           ".card_img_0",
@@ -1439,13 +1439,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "60%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_1",
           {
@@ -1509,13 +1509,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "68%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "50%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_2",
           {
@@ -1575,13 +1575,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "66%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_3",
           {
@@ -1644,16 +1644,16 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_4",
           {
@@ -1686,7 +1686,7 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    console.log(windowWidth, "windowWidth");
+    // console.log(windowWidth, "windowWidth");
   }, [windowWidth]);
 
   useEffect(() => {
@@ -1927,22 +1927,22 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "100%",
+        //   },
+        //   {
+        //     top: "80%",
+        //   }
+        // )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "70%",
+        //   },
+        //   "-=.5"
+        // )
 
         .fromTo(
           ".card_img_0",
@@ -1981,13 +1981,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "60%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_1",
           {
@@ -2051,13 +2051,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "68%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "50%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_2",
           {
@@ -2116,13 +2116,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "66%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_3",
           {
@@ -2185,16 +2185,16 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_4",
           {
@@ -2227,7 +2227,7 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    console.log(windowWidth, "windowWidth");
+    // console.log(windowWidth, "windowWidth");
   }, [windowWidth]);
 
   const moveToIt = (sectionId, id) => {
@@ -2438,9 +2438,11 @@ const Hero = () => {
                               <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
                                 {obj.para}
                               </p>
-                              {obj.buttonText &&
-                                (console.log(obj.buttonId, "hero_btn"),
-                                (
+                              {/* {obj.buttonText
+                                &&
+                                (console.log(obj.buttonId, "hero_btn")
+                                  ,
+                                ( */}
                                   <button
                                     className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
                                     dangerouslySetInnerHTML={{
@@ -2450,7 +2452,7 @@ const Hero = () => {
                                       moveToIt("hero", obj.buttonId)
                                     }
                                   ></button>
-                                ))}
+                                {/* ))} */}
                             </div>
                           </div>
                         ))}
