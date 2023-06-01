@@ -27,6 +27,8 @@ const Crm = () => {
   };
 
   useEffect(() => {
+    window.addEventListener("resize", gsap.matchMediaRefresh);
+
     window.innerWidth < 576.99 && setIsMobileDevice(true);
     window.innerWidth > 576.99 && setIsMobileDevice(false);
     window.addEventListener("resize", () => {
@@ -34,7 +36,7 @@ const Crm = () => {
       window.innerWidth > 576.99 && setIsMobileDevice(false);
     });
 
-  const tl = gsap.timeline({
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#CRM",
         start: "top top",
