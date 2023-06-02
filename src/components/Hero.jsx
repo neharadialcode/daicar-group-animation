@@ -2274,20 +2274,23 @@ const Hero = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 1700, ease: "linear" });
     }
   };
-  // const moveToIt = (id) => {
-  //   if (id === 0) {
-  //     gsap.to(window, { duration: 0.3, scrollTo: 500, ease: "linear" });
-  //   }
-  //   if (id === 1) {
-  //     gsap.to(window, { duration: 0.3, scrollTo: 800, ease: "linear" });
-  //   }
-  //   if (id === 2) {
-  //     gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
-  //   }
-  //   if (id === 3) {
-  //     gsap.to(window, { duration: 0.3, scrollTo: 1400, ease: "linear" });
-  //   }
-  // };
+  const moveToIt = (id) => {
+    if (id === 0) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1000, ease: "linear" });
+    }
+    if (id === 1) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1100, ease: "linear" });
+    }
+    if (id === 2) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
+    }
+    if (id === 3) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
+    }
+    if (id === 4) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1400, ease: "linear" });
+    }
+  };
 
   return (
     <>
@@ -2503,7 +2506,7 @@ const Hero = () => {
                                     dangerouslySetInnerHTML={{
                                       __html: obj.buttonText,
                                     }}
-                                    // onClick={() => moveToIt(index)}
+                                    onClick={() => moveToIt(index)}
                                   ></button>
                                 ))}
                             </div>
