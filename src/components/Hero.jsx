@@ -14,10 +14,8 @@ import marketingLottie from "../assets/lotties/tabs-2.json";
 import techDrivenLottie from "../assets/lotties/tabs-3.json";
 import realTimeLottie from "../assets/lotties/tabs-4.json";
 import crmLottie from "../assets/lotties/tabs-5.json";
-import useResizeListener from "../hooks/useResizeListener";
 
 const Hero = () => {
-  const { windowWidth } = useResizeListener();
   let tl;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -62,6 +60,8 @@ const Hero = () => {
 
   useEffect(() => {
     let mm = gsap.matchMedia();
+    window.addEventListener("resize", gsap.matchMediaRefresh);
+
     mm.add("(min-width: 1600px)", () => {
       gsap.set("#hero-main-heading", {
         y: "-150px",
@@ -297,22 +297,22 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "100%",
+        //   },
+        //   {
+        //     top: "80%",
+        //   }
+        // )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "70%",
+        //   },
+        //   "-=.5"
+        // )
 
         .fromTo(
           ".card_img_0",
@@ -334,12 +334,14 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_1")
+        // //////////
+        // .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_1")
         .to(
           ".active_button_1",
           {
@@ -351,13 +353,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "60%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_1",
           {
@@ -404,12 +406,14 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_2")
+        // //////////
+        // .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_2")
         .to(
           ".active_button_2",
           {
@@ -421,13 +425,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "50%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_2",
           {
@@ -474,12 +478,14 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_3")
+        // //////////
+        // .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_3")
         .to(".active_button_3", {
           background: "rgba(83, 132, 153, 0.5)",
           rotate: "-3deg",
@@ -487,13 +493,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "58%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_3",
           {
@@ -539,12 +545,14 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_4")
+        // //////////
+        // .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_4")
         .to(
           ".active_button_4",
           {
@@ -556,16 +564,16 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "52%",
         })
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_4",
           {
@@ -598,8 +606,8 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    console.log(windowWidth, "windowWidth");
-  }, [windowWidth]);
+    // console.log(windowWidth, "windowWidth");
+  }, []);
 
   useEffect(() => {
     let mm = gsap.matchMedia();
@@ -844,22 +852,22 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "100%",
+        //   },
+        //   {
+        //     top: "80%",
+        //   }
+        // )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "70%",
+        //   },
+        //   "-=.5"
+        // )
 
         .fromTo(
           ".card_img_0",
@@ -897,13 +905,13 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "60%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_1",
           {
@@ -967,13 +975,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "58%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "50%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_2",
           {
@@ -1033,13 +1041,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "53%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_3",
           {
@@ -1102,16 +1110,16 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "48%",
         })
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_4",
           {
@@ -1144,8 +1152,8 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    console.log(windowWidth, "windowWidth");
-  }, [windowWidth]);
+    // console.log(windowWidth, "windowWidth");
+  }, []);
 
   useEffect(() => {
     let mm = gsap.matchMedia();
@@ -1385,22 +1393,22 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "100%",
+        //   },
+        //   {
+        //     top: "80%",
+        //   }
+        // )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "70%",
+        //   },
+        //   "-=.5"
+        // )
 
         .fromTo(
           ".card_img_0",
@@ -1439,13 +1447,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "60%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_1",
           {
@@ -1509,13 +1517,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "68%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "50%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_2",
           {
@@ -1575,13 +1583,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "66%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_3",
           {
@@ -1644,16 +1652,16 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_4",
           {
@@ -1686,8 +1694,8 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    console.log(windowWidth, "windowWidth");
-  }, [windowWidth]);
+    // console.log(windowWidth, "windowWidth");
+  }, []);
 
   useEffect(() => {
     let mm = gsap.matchMedia();
@@ -1927,22 +1935,22 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "100%",
-          },
-          {
-            top: "80%",
-          }
-        )
-        .to(
-          ".arrow_tabs",
-          {
-            top: "70%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "100%",
+        //   },
+        //   {
+        //     top: "80%",
+        //   }
+        // )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "70%",
+        //   },
+        //   "-=.5"
+        // )
 
         .fromTo(
           ".card_img_0",
@@ -1981,13 +1989,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "60%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "60%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_1",
           {
@@ -2051,13 +2059,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "68%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "50%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "50%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_2",
           {
@@ -2116,13 +2124,13 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "66%",
         })
-        .to(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          "-=.5"
-        )
+        // .to(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_3",
           {
@@ -2185,16 +2193,16 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .fromTo(
-          ".arrow_tabs",
-          {
-            top: "40%",
-          },
-          {
-            top: "-40%",
-          },
-          "-=.5"
-        )
+        // .fromTo(
+        //   ".arrow_tabs",
+        //   {
+        //     top: "40%",
+        //   },
+        //   {
+        //     top: "-40%",
+        //   },
+        //   "-=.5"
+        // )
         .fromTo(
           ".left_text_4",
           {
@@ -2227,8 +2235,8 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    console.log(windowWidth, "windowWidth");
-  }, [windowWidth]);
+    // console.log(windowWidth, "windowWidth");
+  }, []);
 
   const moveToIt = (id) => {
     if (id === 0) {
@@ -2443,7 +2451,7 @@ const Hero = () => {
                                 {obj.para}
                               </p>
                               {obj.buttonText &&
-                                (console.log(obj.buttonId, "hero_btn"),
+                                (console.log(obj.buttonId),
                                 (
                                   <button
                                     className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}

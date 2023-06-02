@@ -6,6 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Meeting() {
   useEffect(() => {
+    window.addEventListener("resize", gsap.matchMediaRefresh);
+
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1200px)", () => {
       const tl = gsap.timeline({
@@ -65,7 +67,7 @@ function Meeting() {
   return (
     <>
       <div
-        className="contatti_section bg_light_white custom_content_padding meeting_parent overflow-hidden"
+        className="bg_light_white custom_content_padding overflow-hidden"
         id="contatti"
       >
         <div className="custom_container container">
