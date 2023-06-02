@@ -2239,13 +2239,40 @@ const Hero = () => {
   }, []);
 
   const venditeItbtn = () => {
-    gsap.to(window, { duration: 0.3, scrollTo: 450, ease: "linear" });
+    if (window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 600, ease: "linear" });
+    }
+    if (window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 500, ease: "linear" });
+    }
+    if (window.innerWidth < 900) {
+      gsap.to(window, { duration: 0.3, scrollTo: 800, ease: "linear" });
+    }
+    if (window.innerWidth < 500) {
+      gsap.to(window, { duration: 0.3, scrollTo: 500, ease: "linear" });
+    }
   };
   const venditeItbtn2 = () => {
-    gsap.to(window, { duration: 0.3, scrollTo: 960, ease: "linear" });
+    if (window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1400, ease: "linear" });
+    }
+    if (window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 975, ease: "linear" });
+    }
+    if (window.innerWidth < 1200) {
+      gsap.to(window, { duration: 0.3, scrollTo: 760, ease: "linear" });
+    }
   };
   const venditeItbtn3 = () => {
-    gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
+    if (window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1600, ease: "linear" });
+    }
+    if (window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
+    }
+    if (window.innerWidth < 900) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1700, ease: "linear" });
+    }
   };
   // const moveToIt = (id) => {
   //   if (id === 0) {
