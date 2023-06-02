@@ -940,10 +940,13 @@ const Business = () => {
 
   const moveTo1 = () => {
     if (window.innerWidth > 1600) {
-      gsap.to(window, { duration: 0.3, scrollTo: 8000, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 7000, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 5000, ease: "linear" });
+    }
+    if (window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 4000, ease: "linear" });
     }
   };
   const moveTo2 = () => {
@@ -953,6 +956,9 @@ const Business = () => {
     if (window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 6500, ease: "linear" });
     }
+    if (window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 5000, ease: "linear" });
+    }
   }
   const moveTo3 = () => {
     if (window.innerWidth > 1600) {
@@ -961,6 +967,12 @@ const Business = () => {
     if (window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 7000, ease: "linear" });
     }
+    if (window.innerWidth < 1300) {
+      gsap.to(window, { duration: 0.3, scrollTo: 7500, ease: "linear" });
+    }
+    if (window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 6000, ease: "linear" });
+    }
   };
   const moveTo4 = () => {
     if (window.innerWidth > 1600) {
@@ -968,6 +980,9 @@ const Business = () => {
     }
     if (window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 8500, ease: "linear" });
+    }
+    if (window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 6500, ease: "linear" });
     }
   };
   return (
