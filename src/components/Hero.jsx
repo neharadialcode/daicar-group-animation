@@ -2230,14 +2230,18 @@ const Hero = () => {
     console.log(windowWidth, "windowWidth");
   }, [windowWidth]);
 
-  const moveToIt = (sectionId, id) => {
-    const section2 = document.querySelector(`#${sectionId}`);
-    if (tl) {
-      const pos2 = Math.ceil(
-        section2.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
-          section2.parentNode.offsetTop
-      );
-      gsap.to(window, { duration: 0.3, scrollTo: pos2, ease: "linear" });
+  const moveToIt = (id) => {
+    if (id === 0) {
+      gsap.to(window, { duration: 0.3, scrollTo: 500, ease: "linear" });
+    }
+    if (id === 1) {
+      gsap.to(window, { duration: 0.3, scrollTo: 800, ease: "linear" });
+    }
+    if (id === 2) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
+    }
+    if (id === 3) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1400, ease: "linear" });
     }
   };
 
@@ -2446,9 +2450,7 @@ const Hero = () => {
                                     dangerouslySetInnerHTML={{
                                       __html: obj.buttonText,
                                     }}
-                                    onClick={() =>
-                                      moveToIt("hero", obj.buttonId)
-                                    }
+                                    onClick={() => moveToIt(index)}
                                   ></button>
                                 ))}
                             </div>
