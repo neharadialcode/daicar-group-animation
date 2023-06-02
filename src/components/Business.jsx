@@ -15,7 +15,6 @@ const Business = () => {
   let tl;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   useEffect(() => {
-
     let mm = gsap.matchMedia();
     gsap.set(".business_para_1", {
       height: 0,
@@ -939,15 +938,17 @@ const Business = () => {
     });
   }, []);
 
-
-  const moveTo = (sectionId, id) => {
-    const section = document.querySelector(`#${sectionId}`);
-    const pos1 = Math.ceil(
-      section.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
-        section.parentNode.offsetTop
-    );
-    // console.log(pos1);
-    gsap.to(window, { duration: 0.3, scrollTo: pos1, ease: "linear" });
+  const moveTo1 = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 8000, ease: "linear" });
+  };
+  const moveTo2 = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 8500, ease: "linear" });
+  };
+  const moveTo3 = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 9000, ease: "linear" });
+  };
+  const moveTo4 = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 9500, ease: "linear" });
   };
   return (
     <>
@@ -1014,7 +1015,7 @@ const Business = () => {
                   <div className="ps-5 ps-xxl-0">
                     <h3
                       className="font_5xl color_dark_gray business_heading_1 cursor-pointer"
-                      onClick={() => moveTo("servizi", "business_accordion_1")}
+                      onClick={() => moveTo1()}
                     >
                       GENERAZIONE TRAFFICO
                     </h3>
@@ -1027,7 +1028,7 @@ const Business = () => {
                   <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
                       className="font_5xl color_dark_gray business_heading_2 cursor-pointer"
-                      onClick={() => moveTo("servizi", "business_accordion_2")}
+                      onClick={() => moveTo2()}
                     >
                       LANDING CONVERSAZIONALE
                     </h3>
@@ -1041,7 +1042,7 @@ const Business = () => {
                   <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
                       className="font_5xl color_dark_gray business_heading_3 cursor-pointer"
-                      onClick={() => moveTo("servizi", "business_accordion_3")}
+                      onClick={() => moveTo3()}
                     >
                       VALIDAZIONE AUTOMATICA DEI DATI
                     </h3>
@@ -1056,7 +1057,7 @@ const Business = () => {
                   <div className="ps-5 ps-xxl-0 mt-3 mt-xxl-4">
                     <h3
                       className="font_5xl color_dark_gray business_heading_4 cursor-pointer"
-                      onClick={() => moveTo("servizi", "business_accordion_4")}
+                      onClick={() => moveTo4()}
                     >
                       TRASMISSIONE LEAD
                     </h3>
