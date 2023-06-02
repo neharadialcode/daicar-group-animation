@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Meeting() {
   useEffect(() => {
-    window.addEventListener("resize", gsap.matchMediaRefresh);
 
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1200px)", () => {

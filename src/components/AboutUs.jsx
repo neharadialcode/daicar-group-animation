@@ -10,7 +10,7 @@ import businessLeftTextIcon from "../assets/images/svg/small-arrow-icon.svg";
 
 const About = () => {
   useEffect(() => {
-    window.addEventListener("resize", gsap.matchMediaRefresh);
+    // window.addEventListener("resize", gsap.matchMediaRefresh);
 
     gsap.set(["#about-image-block-2", "#about-image-block-3"], {
       autoAlpha: 0,

@@ -12,13 +12,11 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Business = () => {
-  var tl;
+  let tl;
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   useEffect(() => {
-    window.addEventListener("resize", gsap.matchMediaRefresh);
 
     let mm = gsap.matchMedia();
-    tl = "ravi";
     gsap.set(".business_para_1", {
       height: 0,
     });
@@ -941,7 +939,6 @@ const Business = () => {
     });
   }, []);
 
-  console.log(tl, "hi");
 
   const moveTo = (sectionId, id) => {
     const section = document.querySelector(`#${sectionId}`);

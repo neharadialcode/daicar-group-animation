@@ -21,6 +21,12 @@ function App() {
     }, 2000);
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      window.location.reload();
+    });
+  }, []);
+
   return (
     <>
       {<PreLoader loading={loading} />}

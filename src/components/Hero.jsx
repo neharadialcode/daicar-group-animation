@@ -60,7 +60,6 @@ const Hero = () => {
 
   useEffect(() => {
     let mm = gsap.matchMedia();
-    window.addEventListener("resize", gsap.matchMediaRefresh);
 
     mm.add("(min-width: 1600px)", () => {
       gsap.set("#hero-main-heading", {

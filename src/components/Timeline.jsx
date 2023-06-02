@@ -9,7 +9,6 @@ import pagelogo from "../assets/images/svg/page-logo.svg";
 gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
   useEffect(() => {
-    window.addEventListener("resize", gsap.matchMediaRefresh);
 
     let mm = gsap.matchMedia();
     gsap.set(

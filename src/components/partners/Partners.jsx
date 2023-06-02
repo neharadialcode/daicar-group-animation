@@ -32,7 +32,6 @@ const Partners = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", gsap.matchMediaRefresh);
 
     window.innerWidth < 576.99 && setIsMobileDevice(true);
     window.innerWidth > 576.99 && setIsMobileDevice(false);
