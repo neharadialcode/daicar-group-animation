@@ -297,23 +297,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "100%",
-        //   },
-        //   {
-        //     top: "80%",
-        //   }
-        // )
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "70%",
-        //   },
-        //   "-=.5"
-        // )
-
         .fromTo(
           ".card_img_0",
           {
@@ -334,8 +317,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-        // //////////
-        // .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -353,13 +334,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "60%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_1",
           {
@@ -406,8 +380,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-        // //////////
-        // .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -425,13 +397,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "50%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_2",
           {
@@ -478,8 +443,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-        // //////////
-        // .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -493,13 +456,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "58%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_3",
           {
@@ -545,8 +501,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-        // //////////
-        // .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -564,16 +518,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "52%",
         })
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   {
-        //     top: "-40%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_4",
           {
@@ -606,7 +550,6 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    // console.log(windowWidth, "windowWidth");
   }, []);
 
   useEffect(() => {
@@ -770,7 +713,6 @@ const Hero = () => {
           ">"
         )
         .to(
-          // ["#hero-ipad", ".hero_slide_2"],
           "#hero-ipad",
           {
             scale: 0.8,
@@ -852,23 +794,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "100%",
-        //   },
-        //   {
-        //     top: "80%",
-        //   }
-        // )
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "70%",
-        //   },
-        //   "-=.5"
-        // )
-
         .fromTo(
           ".card_img_0",
           {
@@ -889,7 +814,6 @@ const Hero = () => {
             top: "0px",
           }
         )
-        .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
@@ -897,6 +821,8 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "63%",
         })
+        ////////
+        .addLabel("button_1")
         .to(
           ".active_button_1",
           {
@@ -905,13 +831,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "60%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_1",
           {
@@ -958,12 +877,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_2")
         .to(
           ".active_button_2",
           {
@@ -975,13 +894,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "58%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "50%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_2",
           {
@@ -1028,12 +940,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_3")
         .to(".active_button_3", {
           background: "rgba(83, 132, 153, 0.5)",
           rotate: "-3deg",
@@ -1041,13 +953,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "53%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_3",
           {
@@ -1093,12 +998,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_4")
         .to(
           ".active_button_4",
           {
@@ -1110,16 +1015,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "48%",
         })
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   {
-        //     top: "-40%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_4",
           {
@@ -1152,7 +1047,6 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    // console.log(windowWidth, "windowWidth");
   }, []);
 
   useEffect(() => {
@@ -1393,23 +1287,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "100%",
-        //   },
-        //   {
-        //     top: "80%",
-        //   }
-        // )
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "70%",
-        //   },
-        //   "-=.5"
-        // )
-
         .fromTo(
           ".card_img_0",
           {
@@ -1430,12 +1307,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_1")
         .to(
           ".active_button_1",
           {
@@ -1447,13 +1324,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "60%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_1",
           {
@@ -1500,12 +1370,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_2")
         .to(
           ".active_button_2",
           {
@@ -1517,13 +1387,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "68%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "50%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_2",
           {
@@ -1570,12 +1433,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_3")
         .to(".active_button_3", {
           background: "rgba(83, 132, 153, 0.5)",
           rotate: "-3deg",
@@ -1583,13 +1446,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "66%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_3",
           {
@@ -1635,12 +1491,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_4")
         .to(
           ".active_button_4",
           {
@@ -1652,16 +1508,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   {
-        //     top: "-40%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_4",
           {
@@ -1694,7 +1540,6 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    // console.log(windowWidth, "windowWidth");
   }, []);
 
   useEffect(() => {
@@ -1935,23 +1780,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "100%",
-        //   },
-        //   {
-        //     top: "80%",
-        //   }
-        // )
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "70%",
-        //   },
-        //   "-=.5"
-        // )
-
         .fromTo(
           ".card_img_0",
           {
@@ -1972,12 +1800,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_1")
         .to(".active_button_0", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_1")
         .to(
           ".active_button_1",
           {
@@ -1989,13 +1817,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "60%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_1",
           {
@@ -2021,7 +1842,6 @@ const Hero = () => {
           },
           "-=.5"
         )
-
         .fromTo(
           ".card_img_1",
           {
@@ -2042,12 +1862,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_2")
         .to(".active_button_1", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_2")
         .to(
           ".active_button_2",
           {
@@ -2059,13 +1879,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "68%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "50%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_2",
           {
@@ -2111,12 +1924,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_3")
         .to(".active_button_2", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_3")
         .to(".active_button_3", {
           background: "rgba(83, 132, 153, 0.5)",
           rotate: "-3deg",
@@ -2124,13 +1937,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "66%",
         })
-        // .to(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_3",
           {
@@ -2176,12 +1982,12 @@ const Hero = () => {
             top: "0px",
           }
         )
-        //////////
-        .addLabel("button_4")
         .to(".active_button_3", {
           background: "rgba(126, 228, 156, 0.5)",
           rotate: 0,
         })
+        //////////
+        .addLabel("button_4")
         .to(
           ".active_button_4",
           {
@@ -2193,16 +1999,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        // .fromTo(
-        //   ".arrow_tabs",
-        //   {
-        //     top: "40%",
-        //   },
-        //   {
-        //     top: "-40%",
-        //   },
-        //   "-=.5"
-        // )
         .fromTo(
           ".left_text_4",
           {
@@ -2235,7 +2031,6 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-    // console.log(windowWidth, "windowWidth");
   }, []);
 
   const venditeItbtn = () => {

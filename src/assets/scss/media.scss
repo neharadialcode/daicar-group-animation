@@ -7,7 +7,6 @@
   }
   .custom_content_padding {
     padding-top: 80px !important;
-    // padding-bottom: 80px !important;
   }
   .social_links_parent a img {
     width: 36px;
@@ -29,14 +28,10 @@
   }
   .custom_content_padding {
     padding-top: 15px !important;
-    // padding-bottom: 50px !important;
   }
 }
 
 @media (min-width: 992px) {
-  // .custom_content_padding {
-  //   padding-bottom: 163px !important;
-  // }
   .contact_icon {
     width: 39px;
     height: 39px;
@@ -44,9 +39,6 @@
   .footer_year_line {
     white-space: nowrap;
   }
-  // #main-content {
-  //   transform: translate3d(0px, -70px, 0px) !important;
-  // }
 }
 
 @media (min-width: 1200px) {
@@ -156,7 +148,6 @@
   }
   .tabs_parent {
     min-height: 951px;
-    // background-color: rgba(255, 0, 0, 0.217);
   }
 }
 
@@ -226,9 +217,6 @@
   .custom_size_timeline_text {
     font-size: 16px;
   }
-  // .arrow_tabs {
-  //   transform: scale(1.5);
-  // }
   .tab_text_position {
     transform: translateY(-120px);
   }
@@ -291,9 +279,6 @@
   .small_icon {
     left: 0%;
   }
-  // .arrow_tabs {
-  //   transform: scale(1.4);
-  // }
   .tab_right_icon {
     right: -18% !important;
   }
@@ -350,10 +335,6 @@
 }
 
 @media (max-width: 1299.98px) {
-  // .arrow_tabs {
-  //   transform: scale(1.3);
-  //   left: 13%;
-  // }
   .timeline_icon_3 {
     max-width: 150px;
   }
@@ -400,9 +381,6 @@
   .tab_text_position {
     transform: translateY(-106px) !important;
   }
-  // .arrow_tabs {
-  //   left: 5%;
-  // }
   .small_icon_arrow {
     top: -5%;
     left: 0%;
@@ -457,14 +435,6 @@
   .timeline_btn {
     padding: 0px 15px 2px;
   }
-  // .arrowbtn_set {
-  //   right: 2%;
-  //   top: 3%;
-  // }
-  // .crm_left_icon {
-  //   right: 2%;
-  //   top: 3%;
-  // }
   .noi_btn {
     padding: 8px 24px 12px !important;
   }
@@ -531,10 +501,6 @@
 }
 
 @media (max-width: 991.98px) {
-  // .custom_content_padding {
-  //   padding-top: 70px !important;
-  //   padding-bottom: 50px !important;
-  // }
   .meeting_para {
     max-width: 600px !important;
   }
@@ -588,7 +554,6 @@
   .timeline_btn {
     padding: 3px 25px 8px;
   }
-
   .small_icon_arrow_2 {
     top: 65%;
     right: 25%;
@@ -617,10 +582,6 @@
   .custom_top_spacing {
     margin-top: 8vh;
   }
-  // .arrow_tabs {
-  //   left: -2%;
-  //   transform: unset;
-  // }
   .custom_height_tab_img {
     left: 0% !important;
     width: 100% !important;
@@ -631,7 +592,6 @@
   .hero_slide_1 h3,
   .hero_slide_2 h3 {
     font-size: 80px !important;
-    // margin-top: 132px !important;
   }
   .hero_slide_para_1 {
     font-size: 24px !important;
@@ -1046,8 +1006,6 @@
     transform: translateY(-10px);
   }
   .ipad_img {
-    // height: 68vh !important;
-    // margin-top: 8px;
     height: 75vh !important;
     max-width: 110%;
   }
@@ -1152,7 +1110,6 @@
   .tabs_lottie,
   .tabs_lottie_1 {
     top: 50% !important;
-    // background: rgba(255, 0, 0, 0.176);
   }
   .custom_content_size p,
   .custom_content_size button {
@@ -1213,7 +1170,6 @@
   .tabs_lottie,
   .tabs_lottie_1 {
     top: 54.3% !important;
-    // background: rgba(255, 0, 0, 0.176);
   }
   .ipad_img {
     height: 90vh !important;
@@ -1313,8 +1269,6 @@
     padding-top: 16px !important;
     font-size: 16px !important;
   }
-  ////////////////////
-
   .intro_tab_frame {
     height: 830px !important;
   }
@@ -1345,9 +1299,6 @@
 @media (max-width: 1199.98px) and (max-height: 991.98px) {
   .arrow-hero-one {
     transform: scale(0.6, 0.6) !important;
-  }
-  .intro_tab_frame {
-    height: 870px;
   }
 }
 
@@ -1389,21 +1340,8 @@
   .tabs_parent {
     min-height: 100%;
     height: 100%;
-    // min-height: 1051px;
   }
 }
-
-// @media (min-width: 1600px) and (min-height: 900px) {
-//   .tabs_parent {
-//     height: 112vh;
-//   }
-// }
-
-// @media (min-width: 1600px) and (min-height: 1000px) {
-//   .tabs_parent {
-//     height: 104vh;
-//   }
-// }
 
 @media (min-width: 1600px) and (max-height: 959.98px) {
   #main-assets {
