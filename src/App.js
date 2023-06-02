@@ -31,8 +31,8 @@ function App() {
       <AboutUs />
       <Timeline />
       <Partners />
-      <Crm />
-      <Meeting />
+      {/* <Crm /> */}
+      {/* <Meeting /> */}
       {/* <Footer /> */}
       <div className="w-100 overflow-hidden">
         <img

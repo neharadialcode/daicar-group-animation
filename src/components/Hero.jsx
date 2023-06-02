@@ -2276,19 +2276,19 @@ const Hero = () => {
   };
   const moveToIt = (id) => {
     if (id === 0) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1000, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
     if (id === 1) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1100, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
     }
     if (id === 2) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
     }
     if (id === 3) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 3500, ease: "linear" });
     }
     if (id === 4) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1400, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 4000, ease: "linear" });
     }
   };
 
