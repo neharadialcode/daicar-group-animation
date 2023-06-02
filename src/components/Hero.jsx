@@ -10,7 +10,7 @@ import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
 import comeLottie from "../assets/lotties/tabs-1.json";
-import marketingLottie from "../assets/lotties/tabs-2.json";
+import marketingLottie from "../assets/lotties/tabs-2.json";  
 import techDrivenLottie from "../assets/lotties/tabs-3.json";
 import realTimeLottie from "../assets/lotties/tabs-4.json";
 import crmLottie from "../assets/lotties/tabs-5.json";
@@ -2238,15 +2238,14 @@ const Hero = () => {
     // console.log(windowWidth, "windowWidth");
   }, []);
 
-  const moveToIt = (sectionId, id) => {
-    const section2 = document.querySelector(`#${sectionId}`);
-    if (tl) {
-      const pos2 = Math.ceil(
-        section2.parentNode.scrollHeight * (tl.labels[id] / tl.duration()) +
-          section2.parentNode.offsetTop
-      );
-      gsap.to(window, { duration: 0.3, scrollTo: pos2, ease: "linear" });
-    }
+  const venditeItbtn = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 450, ease: "linear" });
+  };
+  const venditeItbtn2 = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 960, ease: "linear" });
+  };
+  const venditeItbtn3 = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
   };
 
   return (
@@ -2268,7 +2267,10 @@ const Hero = () => {
                   className="text-decoration-none"
                   href="#hero-sub-heading-one"
                 >
-                  <button className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3">
+                  <button
+                    className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3"
+                    onClick={() => venditeItbtn()}
+                  >
                     vendite
                   </button>
                 </a>
@@ -2287,9 +2289,12 @@ const Hero = () => {
                     Il futuro delle tue
                     <a
                       className="text-decoration-none mt-sm-2 mt-xxl-3"
-                      href="#servizi"
+                      href="#hero-sub-heading-two"
                     >
-                      <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
+                      <button
+                        className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3"
+                        onClick={() => venditeItbtn2()}
+                      >
                         vendite
                       </button>
                     </a>
@@ -2318,9 +2323,12 @@ const Hero = () => {
                     Il futuro delle tue
                     <a
                       className="text-decoration-none mt-sm-2 mt-xxl-3"
-                      href="#servizi"
+                      href="#intro-content"
                     >
-                      <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
+                      <button
+                        className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3"
+                        onClick={() => venditeItbtn3()}
+                      >
                         vendite
                       </button>
                     </a>
@@ -2454,9 +2462,9 @@ const Hero = () => {
                                     dangerouslySetInnerHTML={{
                                       __html: obj.buttonText,
                                     }}
-                                    onClick={() =>
-                                      moveToIt("hero", obj.buttonId)
-                                    }
+                                    // onClick={() =>
+                                    //   moveToIt("hero", obj.buttonId)
+                                    // }
                                   ></button>
                                 ))}
                             </div>

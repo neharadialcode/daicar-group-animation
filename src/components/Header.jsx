@@ -30,7 +30,12 @@ const Header = () => {
       });
     });
   }, []);
-
+  const mainAssetsBtn = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 10000, ease: "linear" });
+  };
+  const contactBtn = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 4000, ease: "linear" });
+  };
   return (
     <div className="header_parent bg_dark_gray" style={{ height: "100px" }}>
       <div className="container-lg common_container py-2 py-lg-1 position-relative">
@@ -51,7 +56,8 @@ const Header = () => {
           <ul className="d-flex align-items-center mb-0 d-none d-lg-flex ps-0 mb-0">
             <li className="ps-4 ps-xxl-5">
               <a
-                href="#main-assets"
+                href="#about"
+                onClick={() => mainAssetsBtn()}
                 className="font_sm color_white_off nav_hover ms-2"
               >
                 Main Assets
