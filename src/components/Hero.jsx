@@ -10,7 +10,7 @@ import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
 import comeLottie from "../assets/lotties/tabs-1.json";
-import marketingLottie from "../assets/lotties/tabs-2.json";  
+import marketingLottie from "../assets/lotties/tabs-2.json";
 import techDrivenLottie from "../assets/lotties/tabs-3.json";
 import realTimeLottie from "../assets/lotties/tabs-4.json";
 import crmLottie from "../assets/lotties/tabs-5.json";
@@ -2247,6 +2247,20 @@ const Hero = () => {
   const venditeItbtn3 = () => {
     gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
   };
+  // const moveToIt = (id) => {
+  //   if (id === 0) {
+  //     gsap.to(window, { duration: 0.3, scrollTo: 500, ease: "linear" });
+  //   }
+  //   if (id === 1) {
+  //     gsap.to(window, { duration: 0.3, scrollTo: 800, ease: "linear" });
+  //   }
+  //   if (id === 2) {
+  //     gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
+  //   }
+  //   if (id === 3) {
+  //     gsap.to(window, { duration: 0.3, scrollTo: 1400, ease: "linear" });
+  //   }
+  // };
 
   return (
     <>
@@ -2462,9 +2476,7 @@ const Hero = () => {
                                     dangerouslySetInnerHTML={{
                                       __html: obj.buttonText,
                                     }}
-                                    // onClick={() =>
-                                    //   moveToIt("hero", obj.buttonId)
-                                    // }
+                                    // onClick={() => moveToIt(index)}
                                   ></button>
                                 ))}
                             </div>

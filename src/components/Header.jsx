@@ -31,10 +31,29 @@ const Header = () => {
     });
   }, []);
   const mainAssetsBtn = () => {
-    gsap.to(window, { duration: 0.3, scrollTo: 10000, ease: "linear" });
+    if (window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 17000, ease: "linear" });
+    }
+    if (window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 15000, ease: "linear" });
+    }
+    if (window.innerWidth < 1200) {
+      gsap.to(window, { duration: 0.3, scrollTo: 11000, ease: "linear" });
+    }
+    if (window.innerWidth < 600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 9000, ease: "linear" });
+    }
   };
   const contactBtn = () => {
-    gsap.to(window, { duration: 0.3, scrollTo: 4000, ease: "linear" });
+    if (window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 30000, ease: "linear" });
+    }
+    if (window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 32000, ease: "linear" });
+    }
+  };
+  const daicarBtn = () => {
+    gsap.to(window, { duration: 0.3, scrollTo: 100, ease: "linear" });
   };
   return (
     <div className="header_parent bg_dark_gray" style={{ height: "100px" }}>
@@ -54,10 +73,9 @@ const Header = () => {
             <ToggleIcon />
           </div>
           <ul className="d-flex align-items-center mb-0 d-none d-lg-flex ps-0 mb-0">
-            <li className="ps-4 ps-xxl-5">
+            <li className="ps-4 ps-xxl-5" onClick={() => mainAssetsBtn()}>
               <a
-                href="#about"
-                onClick={() => mainAssetsBtn()}
+                href="#timeline"
                 className="font_sm color_white_off nav_hover ms-2"
               >
                 Main Assets
@@ -71,7 +89,7 @@ const Header = () => {
                 Servizi
               </a>
             </li>
-            <li className="ps-4 ps-xxl-5">
+            <li className="ps-4 ps-xxl-5" onClick={() => daicarBtn()}>
               <a
                 href="#daicar-group"
                 className="font_sm color_white_off nav_hover ms-2"
@@ -79,9 +97,9 @@ const Header = () => {
                 Daicar Group
               </a>
             </li>
-            <li className="ps-4 ps-xxl-5">
+            <li className="ps-4 ps-xxl-5" onClick={() => contactBtn()}>
               <a
-                href="#contatti"
+                href="#footer"
                 className="font_sm color_white_off nav_hover ms-2"
               >
                 Contatti
@@ -110,10 +128,10 @@ const Header = () => {
               >
                 <CloseIcon />
               </a>
-              <li>
+              <li onClick={() => mainAssetsBtn()}>
                 <a
                   onClick={() => setNavShow(false)}
-                  href="#main-assets"
+                  href="#timeline"
                   className="font_2xl color_white_off nav_hover"
                 >
                   Main Assets
