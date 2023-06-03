@@ -274,7 +274,7 @@ const Hero = () => {
             top: "50px",
           },
           {
-            opacity: 1,
+            // opacity: 1,
             top: "0px",
           }
         )
@@ -294,15 +294,9 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".card_img_0",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          }
-        )
+        .to(".card_img_0", {
+          opacity: 0,
+        })
         .fromTo(
           ".card_img_1",
           {
@@ -331,24 +325,12 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .fromTo(
-          ".left_text_1",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_2",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        .to(".left_text_1", {
+          autoAlpha: 0,
+        })
+        .from(".left_text_2", {
+          autoAlpha: 0,
+        })
         .to(
           ".side_icon",
           {
@@ -357,15 +339,9 @@ const Hero = () => {
           "-=.5"
         )
 
-        .fromTo(
-          ".card_img_1",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          }
-        )
+        .to(".card_img_1", {
+          opacity: 0,
+        })
         .fromTo(
           ".card_img_2",
           {
@@ -394,24 +370,12 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .fromTo(
-          ".left_text_2",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_3",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        .to(".left_text_2", {
+          autoAlpha: 0,
+        })
+        .from(".left_text_3", {
+          autoAlpha: 1,
+        })
         .to(
           ".side_icon",
           {
@@ -420,15 +384,9 @@ const Hero = () => {
           "-=.5"
         )
 
-        .fromTo(
-          ".card_img_2",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          }
-        )
+        .to(".card_img_2", {
+          opacity: 0,
+        })
         .fromTo(
           ".card_img_3",
           {
@@ -453,24 +411,12 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "58%",
         })
-        .fromTo(
-          ".left_text_3",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_4",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        .to(".left_text_3", {
+          autoAlpha: 0,
+        })
+        .from(".left_text_4", {
+          autoAlpha: 0,
+        })
         .to(
           ".side_icon",
           {
@@ -478,15 +424,9 @@ const Hero = () => {
           },
           "-=.5"
         )
-        .fromTo(
-          ".card_img_3",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          }
-        )
+        .to(".card_img_3", {
+          opacity: 0,
+        })
         .fromTo(
           ".card_img_4",
           {
@@ -515,24 +455,12 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "52%",
         })
-        .fromTo(
-          ".left_text_4",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_5",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
+        .to(".left_text_4", {
+          autoAlpha: 0,
+        })
+        .from(".left_text_5", {
+          autoAlpha: 0,
+        })
         .to(
           ".side_icon",
           {
@@ -2058,20 +1986,74 @@ const Hero = () => {
     }
   };
   const moveToIt = (id) => {
-    if (id === 0) {
+    ////////// 1
+    if (id === 0 && window.innerWidth > 1600) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
-    if (id === 1) {
+    if (id === 0 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1800, ease: "linear" });
+    }
+    if (id === 0 && window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1500, ease: "linear" });
+    }
+    if (id === 0 && window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
+    }
+
+    ////////// 2
+    if (id === 1 && window.innerWidth > 1600) {
       gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
     }
-    if (id === 2) {
+    // if (id === 1 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
+    //   gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
+    // }
+    if (id === 1 && window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
+    }
+    if (id === 1 && window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1800, ease: "linear" });
+    }
+
+    ////////// 3
+    if (id === 2 && window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3400, ease: "linear" });
+    }
+    if (id === 2 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
       gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
     }
-    if (id === 3) {
-      gsap.to(window, { duration: 0.3, scrollTo: 3500, ease: "linear" });
+    if (id === 2 && window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
     }
-    if (id === 4) {
+    if (id === 2 && window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
+    }
+
+    ////////// 4
+    if (id === 3 && window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 4300, ease: "linear" });
+    }
+    if (id === 3 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
       gsap.to(window, { duration: 0.3, scrollTo: 4000, ease: "linear" });
+    }
+    if (id === 3 && window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
+    }
+    if (id === 3 && window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
+    }
+
+    ////////// 5
+    if (id === 4 && window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 5000, ease: "linear" });
+    }
+    if (id === 4 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
+      gsap.to(window, { duration: 0.3, scrollTo: 4700, ease: "linear" });
+    }
+    if (id === 4 && window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3600, ease: "linear" });
+    }
+    if (id === 4 && window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2800, ease: "linear" });
     }
   };
 
