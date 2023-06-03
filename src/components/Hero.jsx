@@ -60,7 +60,6 @@ const Hero = () => {
 
   useEffect(() => {
     let mm = gsap.matchMedia();
-
     mm.add("(min-width: 1600px)", () => {
       gsap.set("#hero-main-heading", {
         y: "-150px",
@@ -215,7 +214,6 @@ const Hero = () => {
           ["#hero-ipad", ".hero_slide_2"],
           {
             scale: 0.8,
-            // background: "red",
           },
           ">"
         )
@@ -549,10 +547,7 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-  }, []);
 
-  useEffect(() => {
-    let mm = gsap.matchMedia();
     mm.add("(min-width: 992px) and (max-width:1599.98px)", () => {
       gsap.set("#main-content", {
         y: "-60px",
@@ -1046,10 +1041,7 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-  }, []);
 
-  useEffect(() => {
-    let mm = gsap.matchMedia();
     mm.add("(min-width: 576px) and (max-width:991.98px)", () => {
       gsap.set("#main-content", {
         y: "-60px",
@@ -1539,10 +1531,7 @@ const Hero = () => {
           backgroundColor: "#29424D",
         });
     });
-  }, []);
 
-  useEffect(() => {
-    let mm = gsap.matchMedia();
     mm.add("(max-width:575.98px)", () => {
       gsap.set("#main-content", {
         y: "-90px",
@@ -2096,7 +2085,7 @@ const Hero = () => {
               id="main-content"
               className="align-items-center flex-column justify-content-center position-relative h-100"
             >
-              <h1
+              <h2
                 id="hero-main-heading"
                 className="color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5"
               >
@@ -2113,7 +2102,7 @@ const Hero = () => {
                   </button>
                 </a>
                 è digitale
-              </h1>
+              </h2>
 
               <div
                 id="hero-sub-heading"
@@ -2209,14 +2198,13 @@ const Hero = () => {
                 alt="arrow"
               />
               <img
-                className="arrow-hero-three position-absolute -z-10  pointer-events-none"
+                className="arrow-hero-three position-absolute -z-10 pointer-events-none"
                 src={arrow}
                 alt="arrow"
               />
             </div>
 
             <div id="intro-content" className="position-relative h-100 w-100">
-              {/* overflow-hidden */}
               <div
                 className="vh-100 d-flex flex-column justify-content-center tab_parent z_2"
                 id="main-assets"
@@ -2258,9 +2246,8 @@ const Hero = () => {
                 {/* ===== BREADCRUMBS ENDS ===== */}
 
                 <div className="max_width_tabs position-relative">
-                  <div className="text-center pb-sm-5 tabs_parent h-100 d-flex flex-column align-items-en">
+                  <div className="text-center pb-sm-5 tabs_parent h-100 d-flex flex-column">
                     <div className="intro_tab_frame my-4"></div>
-
                     <div className="d-flex">
                       <div className="max_width_tabs d-flex justify-content-center tabs_wrap pt-sm-5 pt-lg-0 tabs_content_parent">
                         {buttonData.map((obj, index) => (
