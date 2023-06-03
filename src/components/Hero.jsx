@@ -1999,19 +1999,28 @@ const Hero = () => {
     if (id === 0 && window.innerWidth < 1100) {
       gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
     }
+    if (id === 0 && window.innerWidth < 992) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
+    }
+    if (id === 0 && window.innerWidth < 576) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
+    }
 
     ////////// 2
     if (id === 1 && window.innerWidth > 1600) {
       gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
     }
-    // if (id === 1 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
-    //   gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
-    // }
     if (id === 1 && window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
     if (id === 1 && window.innerWidth < 1100) {
       gsap.to(window, { duration: 0.3, scrollTo: 1800, ease: "linear" });
+    }
+    if (id === 1 && window.innerWidth < 992) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
+    }
+    if (id === 1 && window.innerWidth < 576) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1600, ease: "linear" });
     }
 
     ////////// 3
@@ -2027,6 +2036,12 @@ const Hero = () => {
     if (id === 2 && window.innerWidth < 1100) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
+    if (id === 2 && window.innerWidth < 992) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3700, ease: "linear" });
+    }
+    if (id === 2 && window.innerWidth < 576) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2300, ease: "linear" });
+    }
 
     ////////// 4
     if (id === 3 && window.innerWidth > 1600) {
@@ -2039,7 +2054,10 @@ const Hero = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
     }
     if (id === 3 && window.innerWidth < 1100) {
-      gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 4500, ease: "linear" });
+    }
+    if (id === 3 && window.innerWidth < 576) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2600, ease: "linear" });
     }
 
     ////////// 5
@@ -2053,7 +2071,10 @@ const Hero = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 3600, ease: "linear" });
     }
     if (id === 4 && window.innerWidth < 1100) {
-      gsap.to(window, { duration: 0.3, scrollTo: 2800, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 5500, ease: "linear" });
+    }
+    if (id === 4 && window.innerWidth < 576) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3200, ease: "linear" });
     }
   };
 
