@@ -53,7 +53,12 @@ const Header = () => {
     }
   };
   const daicarBtn = () => {
-    gsap.to(window, { duration: 0.3, scrollTo: 100, ease: "linear" });
+    if (window.innerHeight > 1025) {
+      gsap.to(window, { duration: 1, scrollTo: 11500, ease: "none" });
+    }
+    if (window.innerHeight < 1025) {
+      gsap.to(window, { duration: 1, scrollTo: 11000, ease: "linear" });
+    }
   };
   const Servizi = () => {
     if (window.innerHeight > 1025) {
