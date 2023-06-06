@@ -35,8 +35,10 @@ function App() {
       <AboutUs />
       <Timeline />
       <Partners />
-      <Crm />
-      <Meeting />
+      <div className="bg_light_white">
+        <Crm />
+        <Meeting />
+      </div>
       <div className="w-100 overflow-hidden">
         <img
           alt="largeArrow"

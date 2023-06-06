@@ -21,7 +21,9 @@
     width: unset !important;
   }
 }
-
+.scale_8 {
+  transform: scale(0.8);
+}
 @media (min-width: 768px) {
   .common_gap {
     gap: 20px;

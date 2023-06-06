@@ -46,10 +46,10 @@ const Header = () => {
   };
   const contactBtn = () => {
     if (window.innerWidth > 1600) {
-      gsap.to(window, { duration: 0.3, scrollTo: 30000, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 30000, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 0.3, scrollTo: 32000, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 32000, ease: "linear" });
     }
   };
   // const daicarBtn = () => {
@@ -119,13 +119,13 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <div className="d-flex d-none d-lg-flex align-items-center gap-5">
-            <a
-              className="mb-0 fw-bold font_sm color_white_off parliamone sentia_link me-2"
-              href="/"
-            >
+          <div
+            className="d-flex d-none d-lg-flex align-items-center gap-5"
+            onClick={() => contactBtn()}
+          >
+            <span className="mb-0 fw-bold font_sm color_white_off parliamone sentia_link me-2">
               Sentiamoci
-            </a>
+            </span>
             <button className="navbar_btn font_2xl color_dark_gray  custom_tab_button_012">
               chat
             </button>

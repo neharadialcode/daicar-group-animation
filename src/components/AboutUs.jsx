@@ -53,12 +53,12 @@ const About = () => {
         .from("#about-arrow-img", {
           xPercent: -50,
           autoAlpha: 0,
-          scale: 0.8,
+          scale: 0.6,
         })
         .from("#about-image-block", {
           autoAlpha: 0,
-          scale: 0,
-          xPercent: -50,
+          // scale: 0,
+          // xPercent: -50,
         })
         .fromTo(
           "#about-image-block",
@@ -137,12 +137,12 @@ const About = () => {
         .from("#about-arrow-img", {
           xPercent: -50,
           autoAlpha: 0,
-          scale: 0.8,
+          scale: 0.6,
         })
         .from("#about-image-block", {
           autoAlpha: 0,
-          scale: 0,
-          xPercent: -50,
+          // scale: 0,
+          // xPercent: -50,
         })
         .fromTo(
           "#about-image-block",
@@ -221,7 +221,7 @@ const About = () => {
         .from("#about-arrow-img", {
           xPercent: -50,
           autoAlpha: 0,
-          scale: 0.8,
+          scale: 0.6,
         })
         .from("#about-image-block", {
           autoAlpha: 0,
@@ -337,7 +337,7 @@ const About = () => {
                 </div>
                 <div
                   id="about-image-block"
-                  className="h-100 d-flex align-items-end flex-column gap-2 justify-content-center position-relative"
+                  className="h-100 d-flex align-items-end flex-column gap-2 justify-content-center position-relative scale_8"
                 >
                   <div
                     id="about-image-block-1"
