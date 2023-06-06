@@ -325,12 +325,25 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .to(".left_text_1", {
-          autoAlpha: 0,
-        })
-        .from(".left_text_2", {
-          autoAlpha: 0,
-        })
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".side_icon",
           {
@@ -370,12 +383,25 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .to(".left_text_2", {
-          autoAlpha: 0,
-        })
-        .from(".left_text_3", {
-          autoAlpha: 1,
-        })
+        .fromTo(
+          ".left_text_2",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".side_icon",
           {
@@ -411,12 +437,25 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "58%",
         })
-        .to(".left_text_3", {
-          autoAlpha: 0,
-        })
-        .from(".left_text_4", {
-          autoAlpha: 0,
-        })
+        .fromTo(
+          ".left_text_3",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".side_icon",
           {
@@ -455,12 +494,25 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "52%",
         })
-        .to(".left_text_4", {
-          autoAlpha: 0,
-        })
-        .from(".left_text_5", {
-          autoAlpha: 0,
-        })
+        .fromTo(
+          ".left_text_4",
+          {
+            autoAlpha: 1,
+          },
+          {
+            autoAlpha: 0,
+          },
+          "-=.5"
+        )
+        .fromTo(
+          ".left_text_5",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
         .to(
           ".side_icon",
           {
