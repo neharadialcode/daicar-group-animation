@@ -55,6 +55,14 @@ const Header = () => {
   const daicarBtn = () => {
     gsap.to(window, { duration: 0.3, scrollTo: 100, ease: "linear" });
   };
+  const Servizi = () => {
+    if (window.innerHeight > 1025) {
+      gsap.to(window, { duration: 0.3, scrollTo: 7200, ease: "linear" });
+    }
+    if (window.innerHeight < 1025) {
+      gsap.to(window, { duration: 0.3, scrollTo: 6500, ease: "linear" });
+    }
+  };
   return (
     <div className="header_parent bg_dark_gray" style={{ height: "100px" }}>
       <div className="container-lg common_container py-2 py-lg-1 position-relative">
@@ -81,7 +89,7 @@ const Header = () => {
                 Main Assets
               </a>
             </li>
-            <li className="ps-4 ps-xxl-5">
+            <li className="ps-4 ps-xxl-5" onClick={() => Servizi()}>
               <a
                 href="#servizi"
                 className="font_sm color_white_off nav_hover ms-2"
