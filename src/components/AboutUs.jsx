@@ -10,22 +10,11 @@ import businessLeftTextIcon from "../assets/images/svg/small-arrow-icon.svg";
 
 const About = () => {
   useEffect(() => {
-    // window.addEventListener("resize", gsap.matchMediaRefresh);
-
-    gsap.set(["#about-image-block-2", "#about-image-block-3"], {
+      gsap.set(["#about-image-block-2", "#about-image-block-3"], {
       autoAlpha: 0,
     });
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1600px)", () => {
-      const main = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".bg_light_main_green",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-          pin: true,
-        },
-      });
       const tl1 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
@@ -138,12 +127,6 @@ const About = () => {
           },
           "<3"
         )
-        .to(".bg_light_main_green", {
-          autoAlpha: 0,
-        });
-      // .to(".bg_light_main_green", {
-      //   yPercent: -50,
-      // })
     });
     mm.add("(min-width: 1200px) and (max-width:1599.98px)", () => {
       const tl1 = gsap.timeline({
@@ -281,9 +264,6 @@ const About = () => {
           },
           "<2"
         );
-      // .to(".bg_light_main_green", {
-      //   yPercent: -50,
-      // });
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
@@ -375,7 +355,6 @@ const About = () => {
 
   return (
     <>
-      <div className="bg_light_main_green"></div>
       <div className="position-relative" id="about_section">
         <div id="about" className="vh-100 w-100 z-10 d-none d-lg-block">
           <div className="position-absolute end-0 text_left_rotate left_text_about d-none d-xl-flex align-items-center pe-5 me-3 me-xl-2 pt-5">
@@ -389,16 +368,10 @@ const About = () => {
               <p className="font_5xl text-white pt-sm-5 custom_letter_spacing">
                 Ideata da
                 <a href="#timeline">
-                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                  <button className="custom_tab_button_012 cursor-pointer hero_heading_btn bg_light_green mx-2">
                     noi
                   </button>
                 </a>
-                {/* grazie all’esperienza acquisita nel
-                <a href="#timeline">
-                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                    tempo
-                  </button>
-                </a> */}
                 <span className="color_dark_gray">.</span>
               </p>
               <div
@@ -539,14 +512,8 @@ const About = () => {
               <p className="font_5xl text-white pt-sm-5 custom_letter_spacing">
                 Ideata da
                 <a href="#timeline">
-                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                  <button className="custom_tab_button_012 cursor-pointer bg_light_green mx-2 hero_heading_btn">
                     noi
-                  </button>
-                </a>
-                grazie all’esperienza acquisita nel
-                <a href="#timeline">
-                  <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                    tempo
                   </button>
                 </a>
                 <span className="color_dark_gray">.</span>

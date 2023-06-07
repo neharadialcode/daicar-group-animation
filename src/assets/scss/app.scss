@@ -152,16 +152,10 @@
   background: rgba(126, 228, 156, 0.5);
   border: 1px solid var(--color-white-off);
   border-radius: 10px;
-  // padding: 14.4px 24px;
-  padding: 11px 24px 18px !important;
+  padding: 16px 24px 20px !important;
   display: inline-block;
   font-weight: 400;
-  // height: 52px;
   line-height: 76%;
-}
-
-.crm_btn {
-  padding: 11px 24px 14px !important;
 }
 .meeting_custom_top_space {
   margin-top: 23px;
@@ -194,7 +188,6 @@
   right: 18%;
 }
 .noi_btn {
-  padding: 8px 24px 12px !important;
   color: var(--color-dark-gray) !important;
   background: rgba(126, 228, 156, 0.5);
 }
@@ -212,11 +205,6 @@
   cursor: pointer !important;
   transition: all 0.3s ease-in-out !important;
 }
-// .arrowbtn_set {
-//   right: 2%;
-//   top: 10%;
-//   transform: rotate(90deg);
-// }
 .footer_background_set {
   bottom: 0;
   left: 0 !important;
@@ -225,7 +213,7 @@
 }
 .hero_heading_btn {
   font-size: var(--font-5xl) !important;
-  padding: 11px 24px 18px !important;
+  padding: 4px 24px 10px !important;
   color: var(--color-dark-gray) !important;
   background: rgba(126, 228, 156, 0.5) !important;
   border: 1px solid var(--color-white-off) !important;
@@ -233,7 +221,6 @@
   // height: 52px;
 }
 .hero_slide_3_btn {
-  // padding: 15px 12px !important;
   width: 158px;
 }
 .hero_slide_1 h3,
@@ -254,11 +241,6 @@
     transform: scale(0.94);
   }
 }
-// .crm_left_icon {
-//   right: 2%;
-//   top: 10%;
-//   transform: rotate(90deg);
-// }
 .meeting_para {
   line-height: 236% !important;
   max-width: 1302px !important;

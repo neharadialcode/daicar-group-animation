@@ -29,13 +29,14 @@ const Timeline = () => {
       scrollTrigger: {
         trigger: "#timeline",
         start: "top bottom",
-        end: "top center",
+        end: "top 50%",
         scrub: true,
       },
     });
     tl.to("#hero-large-arrow", {
       top: "-150%",
       autoAlpha: 0,
+      immediateRender: false,
     }).to("#root", {
       backgroundColor: "#29424D",
     });
@@ -862,18 +863,12 @@ const Timeline = () => {
             >
               <div className="text-center pt-md-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
                 <p className="font_5xl text-white text-center">
-                  {/* Ideata da
-                  <a href="#partners">
-                    <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
-                      noi
-                    </button>
-                  </a> */}
                   grazie all’esperienza acquisita nel
-                  {/* <a href="#partners"> */}
-                    <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2 btn_active">
+                  <a href="#partners">
+                    <button className="custom_tab_button_012 cursor-pointer timeline_btn_padding hero_heading_btn bg_light_green mx-2">
                       tempo
                     </button>
-                  {/* </a> */}
+                  </a>
                 </p>
               </div>
               <div className="flex-grow-1 w-100 timeline_text_parent_max_w">

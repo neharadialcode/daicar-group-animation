@@ -17,7 +17,7 @@ function Footer() {
         <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2 manager_content">
           <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
             <a
-              className="custom_tab_button_012 cursor-pointer hero_btn mt-5 mt-sm-0"
+              className="custom_tab_button_012 cursor-pointer common_button mt-5 mt-sm-0"
               href="https://calendly.com/"
               target="_blank"
               rel="noreferrer"
@@ -26,7 +26,7 @@ function Footer() {
               <span className="d-none d-sm-inline-block">f</span>issa un meeting
             </a>
             <p className="custom_line d-none d-sm-block"></p>
-            <button className="custom_tab_button_012 cursor-pointer hero_btn meeting_border_line parliamone d-none d-sm-block">
+            <button className="custom_tab_button_012 cursor-pointer common_button meeting_border_line parliamone d-none d-sm-block">
               chat
             </button>
           </div>
