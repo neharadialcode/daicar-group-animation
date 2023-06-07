@@ -27,7 +27,6 @@ const Crm = () => {
   };
 
   useEffect(() => {
-
     window.innerWidth < 576.99 && setIsMobileDevice(true);
     window.innerWidth > 576.99 && setIsMobileDevice(false);
     window.addEventListener("resize", () => {
@@ -43,7 +42,15 @@ const Crm = () => {
       },
     });
 
-    tl.from("#CRM-img-container img", {
+    tl.fromTo(
+      ".left_text_crm",
+      {
+        bottom: "0%",
+      },
+      {
+        bottom: "80%",
+      }
+    ).from("#CRM-img-container img", {
       x: -50,
       autoAlpha: 0,
       stagger: 0.07,

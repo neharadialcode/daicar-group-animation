@@ -61,6 +61,15 @@ const About = () => {
           // xPercent: -50,
         })
         .fromTo(
+          ".left_text_about",
+          {
+            bottom: "0%",
+          },
+          {
+            bottom: "20%",
+          }
+        )
+        .fromTo(
           "#about-image-block",
           {
             width: "90%",
@@ -73,6 +82,15 @@ const About = () => {
         .to("#about-image-block-1", {
           autoAlpha: 0,
         })
+        .fromTo(
+          ".left_text_about",
+          {
+            bottom: "20%",
+          },
+          {
+            bottom: "40%",
+          }
+        )
         .to("#about-image-block-2", {
           autoAlpha: 1,
         })
@@ -89,6 +107,15 @@ const About = () => {
         .to("#about-image-block-2", {
           autoAlpha: 0,
         })
+        .fromTo(
+          ".left_text_about",
+          {
+            bottom: "40%",
+          },
+          {
+            bottom: "60%",
+          }
+        )
         .to("#about-image-block-3", {
           autoAlpha: 1,
         })
@@ -145,6 +172,17 @@ const About = () => {
           // xPercent: -50,
         })
         .fromTo(
+          ".left_text_about",
+          {
+            bottom: "0%",
+            autoAlpha: 0,
+          },
+          {
+            bottom: "20%",
+            autoAlpha: 1,
+          }
+        )
+        .fromTo(
           "#about-image-block",
           {
             width: "90%",
@@ -157,6 +195,15 @@ const About = () => {
         .to("#about-image-block-1", {
           autoAlpha: 0,
         })
+        .fromTo(
+          ".left_text_about",
+          {
+            bottom: "20%",
+          },
+          {
+            bottom: "40%",
+          }
+        )
         .to("#about-image-block-2", {
           autoAlpha: 1,
         })
@@ -173,6 +220,15 @@ const About = () => {
         .to("#about-image-block-2", {
           autoAlpha: 0,
         })
+        .fromTo(
+          ".left_text_about",
+          {
+            bottom: "40%",
+          },
+          {
+            bottom: "60%",
+          }
+        )
         .to("#about-image-block-3", {
           autoAlpha: 1,
         })
@@ -299,7 +355,7 @@ const About = () => {
     <>
       <div className="position-relative" id="about_section">
         <div id="about" className="vh-100 w-100 z-10 d-none d-lg-block">
-          <div className="position-absolute end-0 text_left_rotate left_text_about d-none d-lg-flex align-items-center pe-5 me-3 me-xl-2 pt-5">
+          <div className="position-absolute end-0 text_left_rotate left_text_about d-none d-xl-flex align-items-center pe-5 me-3 me-xl-2 pt-5">
             <p className="color_white_off font_md mb-0">Su di noi</p>
             <div className="ps-4">
               <img src={businessLeftTextIcon} alt="about-small-arrow" />

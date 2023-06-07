@@ -31,17 +31,8 @@ const Header = () => {
     });
   }, []);
   const mainAssetsBtn = () => {
-    if (window.innerWidth > 1600) {
-      gsap.to(window, { duration: 0.3, scrollTo: 17000, ease: "linear" });
-    }
-    if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 0.3, scrollTo: 15000, ease: "linear" });
-    }
-    if (window.innerWidth < 1200) {
-      gsap.to(window, { duration: 0.3, scrollTo: 11000, ease: "linear" });
-    }
-    if (window.innerWidth < 600) {
-      gsap.to(window, { duration: 0.3, scrollTo: 9000, ease: "linear" });
+    if (window.innerWidth ) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
   };
   const contactBtn = () => {
@@ -88,7 +79,7 @@ const Header = () => {
           <ul className="d-flex align-items-center mb-0 d-none d-lg-flex ps-0 mb-0">
             <li className="ps-4 ps-xxl-5" onClick={() => mainAssetsBtn()}>
               <a
-                href="#timeline"
+                href="#intro-content"
                 className="font_sm color_white_off nav_hover ms-2"
               >
                 Main Assets
@@ -123,10 +114,10 @@ const Header = () => {
             className="d-flex d-none d-lg-flex align-items-center gap-5"
             onClick={() => contactBtn()}
           >
-            <span className="mb-0 fw-bold font_sm color_white_off parliamone sentia_link me-2">
+            <span className="mb-0 fw-bold font_sm color_white_off parliamone sentia_link me-2 cursor-pointer">
               Sentiamoci
             </span>
-            <button className="navbar_btn font_2xl color_dark_gray  custom_tab_button_012">
+            <button className="navbar_btn font_2xl color_dark_gray custom_tab_button_012">
               chat
             </button>
           </div>
@@ -144,7 +135,7 @@ const Header = () => {
               <li onClick={() => mainAssetsBtn()}>
                 <a
                   onClick={() => setNavShow(false)}
-                  href="#timeline"
+                  href="#intro-content"
                   className="font_2xl color_white_off nav_hover"
                 >
                   Main Assets
