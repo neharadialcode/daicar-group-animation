@@ -69,6 +69,15 @@ const Business = () => {
         autoAlpha: 0,
         scale: 0.5,
       })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "0%",
+          },
+          {
+            bottom: "30%",
+          }
+        )
         .to(
           [
             ".business_heading_1",
@@ -130,6 +139,15 @@ const Business = () => {
         .from(".business_heading_2", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "30%",
+          },
+          {
+            bottom: "40%",
+          }
+        )
         .to(".business_para_2", {
           autoAlpha: 1,
           height: "auto",
@@ -173,6 +191,15 @@ const Business = () => {
         .from(".business_heading_3", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "40%",
+          },
+          {
+            bottom: "50%",
+          }
+        )
         .to(".business_para_3", {
           autoAlpha: 1,
           height: "auto",
@@ -226,6 +253,15 @@ const Business = () => {
         .from(".business_heading_4", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "50%",
+          },
+          {
+            bottom: "60%",
+          }
+        )
         .to(".business_para_4", {
           autoAlpha: 1,
           height: "auto",
@@ -246,14 +282,14 @@ const Business = () => {
         )
         .to(".business_heading_4", {
           autoAlpha: 0.5,
-        })
-        .to(
-          ".business_left_icon",
-          {
-            autoAlpha: 0,
-          },
-          ">"
-        );
+        });
+      // .to(
+      //   ".business_left_icon",
+      //   {
+      //     autoAlpha: 0,
+      //   },
+      //   ">"
+      // );
     });
 
     mm.add("(min-width:1300px) and (max-width:1599.98px)", () => {
@@ -292,6 +328,15 @@ const Business = () => {
         autoAlpha: 0,
         scale: 0.5,
       })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "0%",
+          },
+          {
+            bottom: "30%",
+          }
+        )
         .to(
           [
             ".business_heading_1",
@@ -354,6 +399,15 @@ const Business = () => {
         .from(".business_heading_2", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "30%",
+          },
+          {
+            bottom: "40%",
+          }
+        )
         .to(".business_para_2", {
           autoAlpha: 1,
           height: "auto",
@@ -397,6 +451,15 @@ const Business = () => {
         .from(".business_heading_3", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "40%",
+          },
+          {
+            bottom: "50%",
+          }
+        )
         .to(".business_para_3", {
           autoAlpha: 1,
           height: "auto",
@@ -440,6 +503,15 @@ const Business = () => {
         .from(".business_heading_4", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "50%",
+          },
+          {
+            bottom: "60%",
+          }
+        )
         .to(".business_para_4", {
           autoAlpha: 1,
           height: "auto",
@@ -461,13 +533,13 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         })
-        .to(
-          ".business_left_icon",
-          {
-            autoAlpha: 0,
-          },
-          "+=.5"
-        )
+        // .to(
+        //   ".business_left_icon",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=.5"
+        // )
         .to(".third_heading", {
           autoAlpha: 0,
         });
@@ -509,6 +581,15 @@ const Business = () => {
         autoAlpha: 0,
         scale: 0.5,
       })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "0%",
+          },
+          {
+            bottom: "30%",
+          }
+        )
         .to(
           [
             ".business_heading_1",
@@ -571,6 +652,15 @@ const Business = () => {
         .from(".business_heading_2", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "30%",
+          },
+          {
+            bottom: "40%",
+          }
+        )
         .to(".business_para_2", {
           autoAlpha: 1,
           height: "auto",
@@ -614,6 +704,15 @@ const Business = () => {
         .from(".business_heading_3", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "40%",
+          },
+          {
+            bottom: "50%",
+          }
+        )
         .to(".business_para_3", {
           autoAlpha: 1,
           height: "auto",
@@ -657,6 +756,15 @@ const Business = () => {
         .from(".business_heading_4", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "50%",
+          },
+          {
+            bottom: "60%",
+          }
+        )
         .to(".business_para_4", {
           autoAlpha: 1,
           height: "auto",
@@ -678,13 +786,13 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         })
-        .to(
-          ".business_left_icon",
-          {
-            autoAlpha: 0,
-          },
-          "+=.5"
-        )
+        // .to(
+        //   ".business_left_icon",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=.5"
+        // )
         .to(".third_heading", {
           autoAlpha: 0,
         });
@@ -895,13 +1003,13 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         })
-        .to(
-          ".business_left_icon",
-          {
-            autoAlpha: 0,
-          },
-          "+=.5"
-        )
+        // .to(
+        //   ".business_left_icon",
+        //   {
+        //     autoAlpha: 0,
+        //   },
+        //   "+=.5"
+        // )
         .to(".third_heading", {
           autoAlpha: 0,
         });
