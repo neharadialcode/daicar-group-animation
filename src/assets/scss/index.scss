@@ -2,12 +2,21 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 /* ====================font-family==================== */
+// @font-face {
+//   font-family: "Mundial";
+//   src: url("../fonts/mundial-light-tty.otf");
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
 @font-face {
-  font-family: "Mundial";
+  font-family: mundial-light;
   src: url("../fonts/mundial-light-tty.otf");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+}
+
+.ff_mundial_light {
+  font-family: mundial-light;
 }
 @font-face {
   font-family: "Mundial";

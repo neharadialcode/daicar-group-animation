@@ -36,10 +36,10 @@ function Footer() {
               src={meetingManImg}
               alt="meetingManImg"
             />
-            <p className="mb-0 font_md d-non d-lg-block meeting_text_color">
+            <p className="mb-0 font_md meeting_text_color">
               Matteo,
               <br className="d-sm-none" />
-              <span className="fw_light">
+              <span className="fw_light ff_mundial_light">
                 &nbsp;Business Development Manager
               </span>
             </p>
@@ -76,8 +76,8 @@ function Footer() {
                     {getnewyear} Tutti i diritti riservati
                   </p> */}
                   <p className="font_xsm fw_medium ff_montserrat color_white_off pt-3 pt-lg-5">
-                    Daicar Group è un marchio <br/> di Daicar Srl. <br /> Tutti i diritti
-                    sono riservati
+                    Daicar Group è un marchio <br /> di Daicar Srl. <br /> Tutti
+                    i diritti sono riservati
                   </p>
                   <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_montserrat">
                     P.IVA 056382975839
