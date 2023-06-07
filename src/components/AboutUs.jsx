@@ -17,6 +17,15 @@ const About = () => {
     });
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1600px)", () => {
+      const main = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".bg_light_main_green",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+          pin: true,
+        },
+      });
       const tl1 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
@@ -39,6 +48,7 @@ const About = () => {
           },
           "<2"
         );
+
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
@@ -55,6 +65,7 @@ const About = () => {
           autoAlpha: 0,
           scale: 0.6,
         })
+
         .from("#about-image-block", {
           autoAlpha: 0,
           // scale: 0,
@@ -104,6 +115,7 @@ const About = () => {
           },
           "<3"
         )
+
         .to("#about-image-block-2", {
           autoAlpha: 0,
         })
@@ -125,7 +137,13 @@ const About = () => {
             autoAlpha: 1,
           },
           "<3"
-        );
+        )
+        .to(".bg_light_main_green", {
+          autoAlpha: 0,
+        });
+      // .to(".bg_light_main_green", {
+      //   yPercent: -50,
+      // })
     });
     mm.add("(min-width: 1200px) and (max-width:1599.98px)", () => {
       const tl1 = gsap.timeline({
@@ -263,6 +281,9 @@ const About = () => {
           },
           "<2"
         );
+      // .to(".bg_light_main_green", {
+      //   yPercent: -50,
+      // });
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#about",
@@ -279,6 +300,7 @@ const About = () => {
           autoAlpha: 0,
           scale: 0.6,
         })
+
         .from("#about-image-block", {
           autoAlpha: 0,
           scale: 0,
@@ -353,6 +375,7 @@ const About = () => {
 
   return (
     <>
+      <div className="bg_light_main_green"></div>
       <div className="position-relative" id="about_section">
         <div id="about" className="vh-100 w-100 z-10 d-none d-lg-block">
           <div className="position-absolute end-0 text_left_rotate left_text_about d-none d-xl-flex align-items-center pe-5 me-3 me-xl-2 pt-5">

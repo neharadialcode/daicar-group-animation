@@ -29,14 +29,13 @@ const Timeline = () => {
       scrollTrigger: {
         trigger: "#timeline",
         start: "top bottom",
-        end: "top 50%",
+        end: "top center",
         scrub: true,
       },
     });
     tl.to("#hero-large-arrow", {
       top: "-150%",
       autoAlpha: 0,
-      immediateRender: false,
     }).to("#root", {
       backgroundColor: "#29424D",
     });
