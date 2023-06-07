@@ -43,14 +43,14 @@ const Header = () => {
       gsap.to(window, { duration: 1, scrollTo: 32000, ease: "linear" });
     }
   };
-  // const daicarBtn = () => {
-  //   if (window.innerHeight > 1025) {
-  //     gsap.to(window, { duration: 1, scrollTo: 15500, ease: "linear" });
-  //   }
-  //   if (window.innerHeight < 1025) {
-  //     gsap.to(window, { duration: 1, scrollTo: 11000, ease: "linear" });
-  //   }
-  // };
+  const daicarBtn = () => {
+    if (window.innerHeight > 1025) {
+      gsap.to(window, { duration: 1, scrollTo: 15500, ease: "linear" });
+    }
+    if (window.innerHeight < 1025) {
+      gsap.to(window, { duration: 1, scrollTo: 11000, ease: "linear" });
+    }
+  };
   const Servizi = () => {
     if (window.innerHeight > 1025) {
       gsap.to(window, { duration: 0.3, scrollTo: 7200, ease: "linear" });
@@ -93,7 +93,7 @@ const Header = () => {
                 Servizi
               </a>
             </li>
-            <li className="ps-4 ps-xxl-5">
+            <li className="ps-4 ps-xxl-5" onClick={() => daicarBtn()}>
               <a
                 href="#daicar-group"
                 className="font_sm color_white_off nav_hover ms-2"
