@@ -61,8 +61,8 @@ function Footer() {
             alt="footerbg"
           />
           <div className="container position-relative z_2 pb-5 pt-lg-5 pt-xl-0">
-            <div className="row justify-content-md-center justify-content-between gap-lg-5 text-center text-sm-start px-xxl-5">
-              <div className="col-12 col-sm-3 col-lg-2 d-flex flex-column justify-content-between">
+            <div className="row justify-content-md-center justify-content-between gap-lg- text-center text-sm-start px-xxl-5">
+              <div className="col-12 col-sm-3 col-lg-3 d-flex flex-column justify-content-between">
                 <a href="/">
                   <img
                     className="footer_logo"
@@ -71,9 +71,13 @@ function Footer() {
                   />
                 </a>
                 <div className="mt-4 mt-sm-0 d-none d-md-block">
-                  <p className="mb-0 font_xsm fw_medium color_white_off ff_montserrat footer_year_line">
+                  {/* <p className="mb-0 font_xsm fw_medium color_white_off ff_montserrat footer_year_line">
                     <span className="ff_roboto pe-1">@</span>
                     {getnewyear} Tutti i diritti riservati
+                  </p> */}
+                  <p className="font_xsm fw_medium ff_montserrat color_white_off pt-3 pt-lg-5">
+                    Daicar Group è un marchio <br/> di Daicar Srl. <br /> Tutti i diritti
+                    sono riservati
                   </p>
                   <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_montserrat">
                     P.IVA 056382975839
@@ -133,12 +137,12 @@ function Footer() {
                 <div className="d-flex align-items-center common_gap footer_icons_hover">
                   <img className="contact_icon" src={smsImg} alt="smsImg" />
                   <div className="flex-column d-flex d-inline-block">
-                    <a
+                    {/* <a
                       className="mb-0 list_item_text list-unstyled text-decoration-none  font_sm fw-bold letter_spacing color_white_off ff_montserrat"
                       href="mailTo:mail@wonw.xyz"
                     >
                       Email
-                    </a>
+                    </a> */}
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="mailTo:mail@wonw.xyz"
@@ -147,7 +151,7 @@ function Footer() {
                     </a>
                   </div>
                 </div>
-                <div className="d-flex align-items-center common_gap footer_icons_hover custom_margin_footer">
+                {/* <div className="d-flex align-items-center common_gap footer_icons_hover custom_margin_footer">
                   <img className="contact_icon" src={phoneImg} alt="phoneImg" />
                   <div className="flex-column d-flex d-inline-block">
                     <a
@@ -163,16 +167,16 @@ function Footer() {
                       521-239-4623
                     </a>
                   </div>
-                </div>
+                </div> */}
                 <div className="d-flex align-items-center common_gap footer_icons_hover custom_margin_footer">
                   <img className="contact_icon" src={iconImg} alt="iconImg" />
                   <div className="flex-column d-flex d-inline-block">
-                    <a
+                    {/* <a
                       className="mb-0 list_item_text list-unstyled text-decoration-none font_sm fw-bold letter_spacing color_white_off ff_montserrat"
                       href="/"
                     >
                       La nostra sede
-                    </a>
+                    </a> */}
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="/"
@@ -207,10 +211,10 @@ function Footer() {
                     <Linkedin />
                   </a>
                 </div>
-                <p className="pt-3 pt-sm-0 mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
+                {/* <p className="pt-3 pt-sm-0 mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
                   <span className="ff_roboto pe-1 ">@</span>
                   {getnewyear} Tutti i diritti riservati
-                </p>
+                </p> */}
                 <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray mt-1 ff_montserrat">
                   P.IVA 14570951005
                 </p>

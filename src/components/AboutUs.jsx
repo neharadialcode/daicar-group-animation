@@ -370,12 +370,12 @@ const About = () => {
                     noi
                   </button>
                 </a>
-                grazie all’esperienza acquisita nel
+                {/* grazie all’esperienza acquisita nel
                 <a href="#timeline">
                   <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
                     tempo
                   </button>
-                </a>
+                </a> */}
                 <span className="color_dark_gray">.</span>
               </p>
               <div
