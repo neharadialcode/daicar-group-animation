@@ -1,5 +1,6 @@
 import React from "react";
-import preloaderImg from "../assets/images/svg/preloader-img.svg";
+import Lottie from "react-lottie-player";
+import preloaderJson from "../assets/lotties/preloader.json";
 
 const PreLoader = ({ loading }) => {
   return (
@@ -8,11 +9,7 @@ const PreLoader = ({ loading }) => {
         <div
           className={`loader_fullscreen ${loading ? "" : "preloader_reverse"}`}
         >
-          <img
-            className="loader-img bounce-out"
-            src={preloaderImg}
-            alt="preloaderImg"
-          />
+          <Lottie loop animationData={preloaderJson} play />
         </div>
       ) : (
         ""
