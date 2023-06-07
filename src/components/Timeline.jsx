@@ -9,7 +9,6 @@ import pagelogo from "../assets/images/svg/page-logo.svg";
 gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
   useEffect(() => {
-
     let mm = gsap.matchMedia();
     gsap.set(
       [
@@ -224,7 +223,17 @@ const Timeline = () => {
           },
           "<"
         )
-
+        .fromTo(
+          ".timeline_left_icon",
+          {
+            bottom: "0%",
+            autoAlpha: 0,
+          },
+          {
+            bottom: "20%",
+            autoAlpha: 1,
+          }
+        )
         // SECOND VALUE
         .to("#hero-large-arrow-2", {
           right: `${
@@ -260,7 +269,15 @@ const Timeline = () => {
           },
           "<"
         )
-
+        .fromTo(
+          ".timeline_left_icon",
+          {
+            bottom: "20%",
+          },
+          {
+            bottom: "40%",
+          }
+        )
         // THIRD VALUE
         .to("#hero-large-arrow-2", {
           right: `${
@@ -296,7 +313,15 @@ const Timeline = () => {
           },
           "<"
         )
-
+        .fromTo(
+          ".timeline_left_icon",
+          {
+            bottom: "40%",
+          },
+          {
+            bottom: "80%",
+          }
+        )
         // FOURTH VALUE
         .to("#hero-large-arrow-2", {
           right: `${
@@ -338,6 +363,15 @@ const Timeline = () => {
             autoAlpha: 1,
           },
           "+=2"
+        )
+        .fromTo(
+          ".timeline_left_icon",
+          {
+            bottom: "80%",
+          },
+          {
+            bottom: "90%",
+          }
         );
     });
     mm.add("(min-width: 992px) and (max-width:1199.98px)", () => {
@@ -780,7 +814,7 @@ const Timeline = () => {
               className="position-fixed z-0 pointer-events-none d-none d-sm-block timeline_arrow_img"
             />
           </div>
-          <div className="position-absolute end-0 timeline_left_icon d-none d-xl-flex align-items-center pt-4 me-2 pe-xl-4">
+          <div className="position-absolute end-0 timeline_left_icon text_left_rotate d-none d-xl-flex align-items-center pt-4 me-2 pe-xl-4">
             <p className="color_white_off font_sm mb-0">Il nostro percorso</p>
             <div className="ps-4">
               <img src={businessLeftTextIcon} alt="business-small-arrow" />

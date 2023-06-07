@@ -32,7 +32,6 @@ const Partners = () => {
   };
 
   useEffect(() => {
-
     window.innerWidth < 576.99 && setIsMobileDevice(true);
     window.innerWidth > 576.99 && setIsMobileDevice(false);
     window.addEventListener("resize", () => {
@@ -139,11 +138,22 @@ const Partners = () => {
           pin: true,
         },
       });
-      tl2.from([".partners_logos_two"], {
-        x: -50,
-        autoAlpha: 0,
-        stagger: 0.07,
-      });
+      tl2
+
+        .fromTo(
+          ".left_text_partner",
+          {
+            bottom: "0%",
+          },
+          {
+            bottom: "80%",
+          }
+        )
+        .from([".partners_logos_two"], {
+          x: -50,
+          autoAlpha: 0,
+          stagger: 0.07,
+        });
     });
     mm.add("(max-width: 991.98px)", () => {
       const tl2 = gsap.timeline({
