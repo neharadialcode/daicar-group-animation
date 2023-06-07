@@ -224,7 +224,7 @@
     max-width: 1072px !important;
   }
   .meeting_para .common_button,
-  .common_btn {
+  .custome_size {
     font-size: 20px !important;
   }
   .small_icon {
@@ -470,7 +470,7 @@
   }
   .hero_slide_3_btn {
     font-size: 24px !important;
-    height: 42px !important;
+    // height: 42px !important;
     width: 136px !important;
   }
   .intro_tab_frame {
@@ -640,7 +640,8 @@
     width: 100vw;
   }
   .hero_heading_btn {
-    height: 48px !important;
+    // height: 48px !important;
+    padding: 5px 24px 10px !important;
   }
   .hero_slide_3_btn {
     font-size: 28px !important;
@@ -688,12 +689,6 @@
 @media (max-width: 767.98px) {
   .noi_btn {
     padding: 3px 22px 5px !important;
-  }
-  .hero_heading_btn {
-    height: 36px !important;
-  }
-  .common_btn {
-    height: 36px !important;
   }
   .small_tab_arrow_img {
     height: 310vh;
@@ -864,7 +859,7 @@
     margin-bottom: 77px;
   }
   .meeting_btn_parent a {
-    min-height: 35px !important;
+    // min-height: 35px !important;
     font-size: 20px;
   }
   .custom_margin_footer {
@@ -901,7 +896,7 @@
   }
   .meeting_btn_parent button {
     font-size: 20px !important;
-    height: 54px !important;
+    // height: 54px !important;
     padding: 8px 38px !important;
   }
   .fissa-meeting-content-parent p {
@@ -930,7 +925,7 @@
   }
   .noi_btn {
     font-size: 24px !important;
-    height: 42px !important;
+    // height: 42px !important;
     display: inline-block !important;
     vertical-align: middle !important;
     padding: 7px 16px 7px !important;
@@ -964,14 +959,14 @@
     transform: scale(1.1);
   }
   .hero_heading_btn {
-    height: 44px !important;
+    // height: 44px !important;
     font-size: 24px !important;
     display: inline-block !important;
     vertical-align: middle !important;
     padding: 7px 16px !important;
   }
   .hero_slide_3_btn {
-    height: 37px !important;
+    // height: 37px !important;
     width: 114px !important;
   }
   #hero-main-heading {
@@ -1139,7 +1134,7 @@
   }
   .hero_slide_3_btn {
     font-size: 16px !important;
-    height: 32px !important;
+    // height: 32px !important;
     width: 96px !important;
   }
   .tabs_parent {

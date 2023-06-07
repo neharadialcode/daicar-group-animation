@@ -870,11 +870,11 @@ const Timeline = () => {
                     </button>
                   </a> */}
                   grazie all’esperienza acquisita nel
-                  <a href="#partners">
-                    <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2">
+                  {/* <a href="#partners"> */}
+                    <button className="custom_tab_button_012 cursor-pointer hero_btn noi_btn bg_light_green mx-2 btn_active">
                       tempo
                     </button>
-                  </a>
+                  {/* </a> */}
                 </p>
               </div>
               <div className="flex-grow-1 w-100 timeline_text_parent_max_w">

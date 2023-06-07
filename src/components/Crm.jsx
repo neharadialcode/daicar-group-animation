@@ -77,7 +77,7 @@ const Crm = () => {
               É possibile integrare i dati con il tuo
             </p>
             <a href="#contatti">
-              <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button common_btn">
+              <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button custome_size crm_btn">
                 CRM
               </button>
             </a>

@@ -192,7 +192,7 @@ const Partners = () => {
                 Non cerchiamo clienti ma
               </p>
               <a href="#CRM">
-                <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 common_btn">
+                <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 custome_size">
                   partner
                 </button>
               </a>
