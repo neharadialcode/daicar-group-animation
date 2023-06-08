@@ -10,15 +10,6 @@
     transform: translateY(-10px);
   }
 }
-// .hero_parent {
-//   height: 100vh;
-//   overflow: hidden;
-//   width: 100%;
-//   position: relative;
-//   margin-top: -2px !important;
-//   z-index: 10;
-//   background-color: var(--color-white-off);
-// }
 
 .btn_active:active {
   background-color: red;
@@ -28,7 +19,6 @@
   font-size: var(--font-2xl) !important;
   border: 1px solid var(--color-white-off);
   border-radius: 10px;
-  // padding: 10px 24px;
   padding: 5px 10px 9px 10px;
   color: var(--color-white-off) !important;
   background: var(--color-light-green);
@@ -41,12 +31,6 @@
   align-items: center;
   color: #fff;
 }
-// .arrow_tabs {
-//   transform: scale(1.7);
-//   max-width: 500px;
-//   z-index: -1;
-//   left: 10%;
-// }
 .side_icon {
   right: 0;
   bottom: 0;
@@ -218,7 +202,6 @@
   background: rgba(126, 228, 156, 0.5) !important;
   border: 1px solid var(--color-white-off) !important;
   border-radius: 10px !important;
-  // height: 52px;
 }
 .hero_slide_3_btn {
   width: 158px;
@@ -389,12 +372,10 @@
 }
 .tabs_parent {
   height: 114vh;
-  // background-color: rgba(167, 241, 241, 0.525);
 }
 .tabs_lottie,
 .tabs_lottie_1 {
   top: 37% !important;
-  // background-color: rgba(0, 255, 98, 0.276);
 }
 .tabs_lottie_width {
   width: 60%;
@@ -429,9 +410,7 @@
 .timeline_years h2 {
   letter-spacing: -10px;
 }
-// .timeline_arrow_img {
-//   display: none;
-// }
+
 .text_parent_height {
   height: 71%;
 }
@@ -443,7 +422,6 @@
 }
 .about_img {
   object-fit: cover;
-  // overflow: visible;
   height: 450px;
 }
 .about_arrow_img_width {
@@ -464,7 +442,6 @@
 }
 .ipad_img {
   height: 70vh;
-  // border: 5px solid red;
 }
 #hero-sub-heading-one,
 #hero-sub-heading-two,
@@ -485,12 +462,11 @@
   height: 100vh;
 }
 
-/* PRELOADER ANIMATION ADDED */
+/* PRELOADER CSS HERE================================ */
 .loader_fullscreen {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -507,87 +483,6 @@
   z-index: 99;
   background-color: var(--color-dark-gray);
 }
-// .loader_fullscreen::after {
-//   content: "";
-//   background-color: var(--color-dark-gray);
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 50%;
-//   height: 100vh;
-//   z-index: -1;
-//   transition: all 1s ease-in-out;
-// }
-// .loader_fullscreen::before {
-//   content: "";
-//   background-color: var(--color-dark-gray);
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   width: 50%;
-//   height: 100vh;
-//   z-index: -1;
-//   transition: all 1s ease-in-out;
-// }
-.loader_fullscreen img {
-  width: 300px;
-  height: 300px;
-  // animation: preloader_animation 2s linear infinite alternate;
-}
-// .preloader_reverse.loader_fullscreen::after,
-// .preloader_reverse.loader_fullscreen::before {
-//   width: 0%;
-// }
-// .preloader_reverse.loader_fullscreen img {
-//   width: 0;
-//   opacity: 0;
-//   pointer-events: none;
-// }
-// @keyframes preloader_animation {
-//   30% {
-//     transform: scale(1.2);
-//   }
-
-//   40%,
-//   60% {
-//     transform: rotate(-20deg) scale(1.5);
-//   }
-
-//   50% {
-//     transform: rotate(20deg) scale(1.5);
-//   }
-
-//   70% {
-//     transform: rotate(0deg) scale(1.5);
-//   }
-
-//   100% {
-//     transform: scale(0.1);
-//   }
-// }
-// .preloader_reverse.loader_fullscreen {
-//   pointer-events: none;
-// }
-/* PRELOADER ANIMATION ENDS */
-.bounce-out {
-  animation: bounce-out 3s ease infinite;
-}
-@keyframes bounce-out {
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(0.9);
-  }
-
-  60% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
 .timeline_all_btns_hover a {
   transition: all 0.3s ease-in-out;
 }
@@ -599,7 +494,6 @@
 .intro_tab_frame {
   width: 100%;
   height: 870px;
-  // background-color: rgba(255, 0, 0, 0.441) !important;
 }
 
 .footer_top_space {

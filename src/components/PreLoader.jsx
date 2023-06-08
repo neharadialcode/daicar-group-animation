@@ -7,9 +7,8 @@ const PreLoader = ({ loading }) => {
     <>
       {loading ? (
         <div
-          className={`loader_fullscreen ${loading ? "" : "preloader_reverse"}`}
+          className="loader_fullscreen"
         >
-         
           <Lottie
             loop
             animationData={preloaderJson}
