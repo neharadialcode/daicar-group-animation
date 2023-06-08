@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Meeting() {
   useEffect(() => {
-
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1200px)", () => {
       const tl = gsap.timeline({
@@ -60,6 +59,22 @@ function Meeting() {
           ease: "back(3)",
           duration: 0.8,
         });
+    });
+    mm.add("(max-width: 1199px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#contatti",
+          start: "top 30%",
+          end: "bottom top",
+        },
+      });
+      tl.from(["#meeting-paragraph"], {
+        y: 100,
+        autoAlpha: 0,
+        stagger: 1,
+        ease: "back(3)",
+        duration: 0.8,
+      });
     });
   }, []);
 

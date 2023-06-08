@@ -850,7 +850,7 @@ const Timeline = () => {
               className="position-fixed z-0 pointer-events-none d-none d-sm-block timeline_arrow_img"
             />
           </div>
-          <div className="position-absolute end-0 timeline_left_icon text_left_rotate d-none d-xl-flex align-items-center pt-4 me-2 pe-xl-4">
+          <div className="position-absolute end-0 timeline_left_icon text_left_rotate d-none d-xxl-flex align-items-center pt-4 me-2 pe-xl-4">
             <p className="color_white_off font_sm mb-0">Il nostro percorso</p>
             <div className="ps-4">
               <img src={businessLeftTextIcon} alt="business-small-arrow" />
