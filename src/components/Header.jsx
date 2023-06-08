@@ -128,7 +128,6 @@ const Header = () => {
               <a
                 onClick={() => setNavShow(false)}
                 className="btn_close_position position-absolute"
-                href="#"
               >
                 <CloseIcon />
               </a>

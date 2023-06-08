@@ -385,6 +385,7 @@ const About = () => {
                   <img
                     src={aboutArrow}
                     className="position-absolute end-0 about_img"
+                    alt="about_arrow"
                   />
                 </div>
                 <div

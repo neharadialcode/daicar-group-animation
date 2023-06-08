@@ -69,7 +69,6 @@ function Footer() {
                   />
                 </a>
                 <div className="mt-4 mt-sm-0 d-none d-md-block">
-                 
                   <p className="font_xsm fw_medium ff_montserrat color_white_off pt-3 pt-lg-5">
                     Daicar Group è un marchio <br /> di Daicar Srl. <br /> Tutti
                     i diritti sono riservati
@@ -82,6 +81,7 @@ function Footer() {
                     <a
                       href="https://www.alfatauristudio.com/"
                       target="_blank"
+                      rel="noreferrer"
                       className="color_light_gray list_item_text"
                     >
                       alfatauristudio.com
@@ -132,7 +132,6 @@ function Footer() {
                 <div className="d-flex align-items-center common_gap footer_icons_hover">
                   <img className="contact_icon" src={smsImg} alt="smsImg" />
                   <div className="flex-column d-flex d-inline-block">
-                   
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="mailTo:mail@wonw.xyz"
@@ -141,11 +140,10 @@ function Footer() {
                     </a>
                   </div>
                 </div>
-               
+
                 <div className="d-flex align-items-center common_gap footer_icons_hover custom_margin_footer">
                   <img className="contact_icon" src={iconImg} alt="iconImg" />
                   <div className="flex-column d-flex d-inline-block">
-                    
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="/"
@@ -160,6 +158,7 @@ function Footer() {
                 <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 social_links_parent">
                   <a
                     target="blank"
+                    rel="noreferrer"
                     href="https://www.instagram.com/"
                     className="footer_social_icon insta_icon"
                   >
@@ -167,6 +166,7 @@ function Footer() {
                   </a>
                   <a
                     target="blank"
+                    rel="noreferrer"
                     href="https://www.facebook.com/"
                     className="mx-2 mx-sm-4 footer_social_icon"
                   >
@@ -174,13 +174,14 @@ function Footer() {
                   </a>
                   <a
                     target="blank"
+                    rel="noreferrer"
                     href="https://in.linkedin.com/"
                     className="footer_social_icon"
                   >
                     <Linkedin />
                   </a>
                 </div>
-                
+
                 <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray mt-1 ff_montserrat">
                   P.IVA 14570951005
                 </p>
@@ -189,6 +190,7 @@ function Footer() {
                   <a
                     href="https://www.alfatauristudio.com/"
                     target="_blank"
+                    rel="noreferrer"
                     className="color_light_gray"
                   >
                     alfatauristudio.com
