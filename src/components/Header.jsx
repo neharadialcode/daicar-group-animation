@@ -20,7 +20,7 @@ const Header = () => {
   useEffect(() => {
     let headerValue = gsap.matchMedia();
     headerValue.add("(min-width:992px)", () => {
-      const tl = gsap.timeline({});
+      const tl = gsap.timeline({ fastScrollEnd: true });
       tl.from(".header_section", {
         autoAlpha: 0,
       }).from(".header_section", {
@@ -44,11 +44,23 @@ const Header = () => {
     }
   };
   const daicarBtn = () => {
-    if (window.innerHeight > 1025) {
-      gsap.to(window, { duration: 1, scrollTo: 15500, ease: "linear" });
+    if (window.innerWidth > 1600) {
+      gsap.to(window, { duration: 1, scrollTo: 12400, ease: "linear" });
     }
-    if (window.innerHeight < 1025) {
-      gsap.to(window, { duration: 1, scrollTo: 11000, ease: "linear" });
+    if (window.innerWidth < 1599) {
+      gsap.to(window, { duration: 1, scrollTo: 10800, ease: "linear" });
+    }
+    if (window.innerWidth < 1025) {
+      gsap.to(window, { duration: 1, scrollTo: 8200, ease: "linear" });
+    }
+    if (window.innerWidth < 992) {
+      gsap.to(window, { duration: 1, scrollTo: 8600, ease: "linear" });
+    }
+    if (window.innerWidth < 769) {
+      gsap.to(window, { duration: 1, scrollTo: 7600, ease: "linear" });
+    }
+    if (window.innerWidth < 576) {
+      gsap.to(window, { duration: 1, scrollTo: 5800, ease: "linear" });
     }
   };
   const Servizi = () => {
@@ -149,7 +161,7 @@ const Header = () => {
                   Servizi
                 </a>
               </li>
-              <li className="pt-2">
+              <li className="pt-2" onClick={() => daicarBtn()}>
                 <a
                   onClick={() => setNavShow(false)}
                   href="#daicar-group"

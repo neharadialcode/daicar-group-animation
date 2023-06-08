@@ -39,6 +39,7 @@ const Crm = () => {
         trigger: "#CRM",
         start: "top top",
         pin: true,
+        fastScrollEnd: true,
       },
     });
 

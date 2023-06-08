@@ -125,6 +125,7 @@ const Hero = () => {
           end: "+=500%",
           pin: true,
           scrub: 1,
+          fastScrollEnd: true,
         },
       });
 
@@ -601,6 +602,7 @@ const Hero = () => {
           end: "+=500%",
           pin: true,
           scrub: 1,
+          fastScrollEnd: true,
         },
       });
 
@@ -1084,6 +1086,7 @@ const Hero = () => {
           end: "+=500%",
           pin: true,
           scrub: 1,
+          fastScrollEnd: true,
         },
       });
 
@@ -1574,6 +1577,7 @@ const Hero = () => {
           end: "+=500%",
           pin: true,
           scrub: 1,
+          fastScrollEnd: true,
         },
       });
 

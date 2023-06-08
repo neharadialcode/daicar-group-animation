@@ -31,6 +31,7 @@ const Timeline = () => {
         start: "top bottom",
         end: "top 50%",
         scrub: true,
+        fastScrollEnd: true,
       },
     });
     tl.to("#hero-large-arrow", {
@@ -47,10 +48,10 @@ const Timeline = () => {
           start: "top bottom",
           end: "top 50%",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl.to("#hero-large-arrow-2", {
-        // bottom: "-51%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -63,10 +64,10 @@ const Timeline = () => {
           start: "top bottom",
           end: "top 50%",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl.to("#hero-large-arrow-2", {
-        // bottom: "-48%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -79,10 +80,10 @@ const Timeline = () => {
           start: "top bottom",
           end: "top 50%",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl.to("#hero-large-arrow-2", {
-        // bottom: "-85%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -95,10 +96,10 @@ const Timeline = () => {
           start: "top bottom",
           end: "top 50%",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl.to("#hero-large-arrow-2", {
-        // bottom: "-83%",
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -111,10 +112,11 @@ const Timeline = () => {
           start: "top bottom",
           end: "top 50%",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl.to("#hero-large-arrow-2", {
-        // bottom: "-79%",
+       
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -127,10 +129,11 @@ const Timeline = () => {
           start: "top bottom",
           end: "top 50%",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl.to("#hero-large-arrow-2", {
-        // bottom: "-117%",
+        
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -143,10 +146,11 @@ const Timeline = () => {
           start: "top bottom",
           end: "top 50%",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl.to("#hero-large-arrow-2", {
-        // bottom: "-48%",
+        
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -159,10 +163,11 @@ const Timeline = () => {
           start: "top bottom",
           end: "top 50%",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl.to("#hero-large-arrow-2", {
-        // bottom: "-59%",
+       
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -177,6 +182,7 @@ const Timeline = () => {
           end: "+=400%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
       // FIRST VALUE
@@ -391,6 +397,7 @@ const Timeline = () => {
           end: "+=400%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
       // FIRST VALUE
@@ -571,6 +578,7 @@ const Timeline = () => {
           end: "+=400%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
       tl2
@@ -703,6 +711,7 @@ const Timeline = () => {
           end: "+=400%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
       tl2

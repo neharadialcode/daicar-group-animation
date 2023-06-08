@@ -40,6 +40,7 @@ const Business = () => {
           trigger: ".business_parent",
           start: "top bottom",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
       tl2
@@ -63,6 +64,7 @@ const Business = () => {
           end: "+=400%",
           scrub: 3,
           pin: true,
+          fastScrollEnd: true,
         },
       });
       tl.from(".main_text", {
@@ -291,6 +293,7 @@ const Business = () => {
           trigger: ".business_parent",
           start: "top bottom",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
 
@@ -315,6 +318,7 @@ const Business = () => {
           end: "+=600%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
       tl.from(".main_text", {
@@ -537,6 +541,7 @@ const Business = () => {
           trigger: ".business_parent",
           start: "top bottom",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
 
@@ -561,6 +566,7 @@ const Business = () => {
           end: "+=600%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
       tl.from(".main_text", {
@@ -783,6 +789,7 @@ const Business = () => {
           trigger: ".business_parent",
           start: "top bottom",
           scrub: true,
+          fastScrollEnd: true,
         },
       });
 
@@ -807,6 +814,7 @@ const Business = () => {
           end: "+=600%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
       tl.from(".main_text", {
@@ -1029,6 +1037,7 @@ const Business = () => {
           trigger: ".business_parent",
           start: "top top",
           end: "bottom top",
+          fastScrollEnd: true,
         },
       });
       tl.from(".business_tab_1", {

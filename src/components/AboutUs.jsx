@@ -10,7 +10,7 @@ import businessLeftTextIcon from "../assets/images/svg/small-arrow-icon.svg";
 
 const About = () => {
   useEffect(() => {
-      gsap.set(["#about-image-block-2", "#about-image-block-3"], {
+    gsap.set(["#about-image-block-2", "#about-image-block-3"], {
       autoAlpha: 0,
     });
     let mm = gsap.matchMedia();
@@ -45,6 +45,7 @@ const About = () => {
           end: "+=300%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
 
@@ -126,7 +127,7 @@ const About = () => {
             autoAlpha: 1,
           },
           "<3"
-        )
+        );
     });
     mm.add("(min-width: 1200px) and (max-width:1599.98px)", () => {
       const tl1 = gsap.timeline({
@@ -158,6 +159,7 @@ const About = () => {
           end: "+=300%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
 
@@ -169,8 +171,6 @@ const About = () => {
         })
         .from("#about-image-block", {
           autoAlpha: 0,
-          // scale: 0,
-          // xPercent: -50,
         })
         .fromTo(
           ".left_text_about",
@@ -271,6 +271,7 @@ const About = () => {
           end: "+=300%",
           scrub: 1,
           pin: true,
+          fastScrollEnd: true,
         },
       });
 
@@ -332,6 +333,7 @@ const About = () => {
           trigger: ".about_parent",
           start: "top 30%",
           end: "bottom top",
+          fastScrollEnd: true,
         },
       });
       secondSection4

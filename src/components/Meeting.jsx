@@ -13,6 +13,7 @@ function Meeting() {
           trigger: "#contatti",
           start: "top 50%",
           end: "bottom 30%",
+          fastScrollEnd: true,
         },
       });
       tl.from([".meeting_first_line"], {
@@ -34,6 +35,7 @@ function Meeting() {
           trigger: "#contatti",
           start: "top 10%",
           pin: true,
+          fastScrollEnd: true,
         },
       });
 
@@ -66,6 +68,7 @@ function Meeting() {
           trigger: "#contatti",
           start: "top 30%",
           end: "bottom top",
+          fastScrollEnd: true,
         },
       });
       tl.from(["#meeting-paragraph"], {

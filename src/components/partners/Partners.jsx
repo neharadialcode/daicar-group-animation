@@ -105,6 +105,7 @@ const Partners = () => {
         scrollTrigger: {
           trigger: "#partners",
           start: "top 50%",
+          fastScrollEnd: true,
         },
       });
       tl.from([".partners_logos_one"], {
@@ -118,6 +119,7 @@ const Partners = () => {
           trigger: "#partners",
           start: "top top",
           pin: true,
+          fastScrollEnd: true,
         },
       });
       tl2
@@ -143,6 +145,7 @@ const Partners = () => {
           trigger: "#partners",
           start: "top top",
           pin: true,
+          fastScrollEnd: true, 
         },
       });
       tl2.from("#partner-img-container2 img", {
