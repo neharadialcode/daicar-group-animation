@@ -69,7 +69,7 @@ const Partners = () => {
           "-=3"
         );
     });
-    mm.add("(min-width:576px) and (max-width: 1199.98px)", () => {
+    mm.add("(max-width: 1199.98px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#partners",
@@ -99,25 +99,7 @@ const Partners = () => {
           "-=3"
         );
     });
-    mm.add("(max-width: 575.98px)", () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#partners",
-          start: "top 50%",
-          end: "top 10%",
-          scrub: 1,
-          fastScrollEnd: true,
-        },
-      });
-      tl.to(
-        "#root",
-        {
-          backgroundColor: "#EDFAFB",
-        },
-        "-=3"
-      );
-    });
-
+    
     mm.add("(min-width: 992px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
