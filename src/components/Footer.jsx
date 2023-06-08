@@ -1,7 +1,6 @@
 import React from "react";
 import footer_logo from "../assets/images/svg/footer_logo.svg";
 import smsImg from "../assets/images/svg/sms_img.svg";
-import phoneImg from "../assets/images/svg/phone.svg";
 import iconImg from "../assets/images/svg/icon.svg";
 import footerbg from "../assets/images/png/footer_bg.png";
 import footerMobilebg from "../assets/images/png/footer-bg-mobile-sc.png";
@@ -10,7 +9,6 @@ import { FbIcon, InstagramIcon, Linkedin } from "./Icons";
 import meetingManImg from "../assets/images/svg/meeting_man_img.svg";
 
 function Footer() {
-  const getnewyear = new Date().getFullYear();
   return (
     <>
       <div className="footer_top_space">
@@ -62,7 +60,7 @@ function Footer() {
           />
           <div className="container position-relative z_2 pb-5 pt-lg-5 pt-xl-0">
             <div className="row justify-content-md-center justify-content-between gap-lg- text-center text-sm-start px-xxl-5">
-              <div className="col-12 col-sm-3 col-lg-3 d-flex flex-column justify-content-between">
+              <div className="col-12 col-sm-4 col-lg-3 d-flex flex-column justify-content-between">
                 <a href="/">
                   <img
                     className="footer_logo"
@@ -71,10 +69,7 @@ function Footer() {
                   />
                 </a>
                 <div className="mt-4 mt-sm-0 d-none d-md-block">
-                  {/* <p className="mb-0 font_xsm fw_medium color_white_off ff_montserrat footer_year_line">
-                    <span className="ff_roboto pe-1">@</span>
-                    {getnewyear} Tutti i diritti riservati
-                  </p> */}
+                 
                   <p className="font_xsm fw_medium ff_montserrat color_white_off pt-3 pt-lg-5">
                     Daicar Group è un marchio <br /> di Daicar Srl. <br /> Tutti
                     i diritti sono riservati
@@ -137,12 +132,7 @@ function Footer() {
                 <div className="d-flex align-items-center common_gap footer_icons_hover">
                   <img className="contact_icon" src={smsImg} alt="smsImg" />
                   <div className="flex-column d-flex d-inline-block">
-                    {/* <a
-                      className="mb-0 list_item_text list-unstyled text-decoration-none  font_sm fw-bold letter_spacing color_white_off ff_montserrat"
-                      href="mailTo:mail@wonw.xyz"
-                    >
-                      Email
-                    </a> */}
+                   
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="mailTo:mail@wonw.xyz"
@@ -151,32 +141,11 @@ function Footer() {
                     </a>
                   </div>
                 </div>
-                {/* <div className="d-flex align-items-center common_gap footer_icons_hover custom_margin_footer">
-                  <img className="contact_icon" src={phoneImg} alt="phoneImg" />
-                  <div className="flex-column d-flex d-inline-block">
-                    <a
-                      className="mb-0 list_item_text list-unstyled text-decoration-none font_sm fw-bold letter_spacing color_white_off ff_montserrat"
-                      href="tel:521-239-4623"
-                    >
-                      Phone
-                    </a>
-                    <a
-                      className="mb-0 font_sm list-unstyled text-decoration-none fw-normal color_light_gray ff_roboto list_item_text mt-sm-1"
-                      href="tel:521-239-4623"
-                    >
-                      521-239-4623
-                    </a>
-                  </div>
-                </div> */}
+               
                 <div className="d-flex align-items-center common_gap footer_icons_hover custom_margin_footer">
                   <img className="contact_icon" src={iconImg} alt="iconImg" />
                   <div className="flex-column d-flex d-inline-block">
-                    {/* <a
-                      className="mb-0 list_item_text list-unstyled text-decoration-none font_sm fw-bold letter_spacing color_white_off ff_montserrat"
-                      href="/"
-                    >
-                      La nostra sede
-                    </a> */}
+                    
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="/"
@@ -211,10 +180,7 @@ function Footer() {
                     <Linkedin />
                   </a>
                 </div>
-                {/* <p className="pt-3 pt-sm-0 mb-0 font_xsm d-md-none d-block fw_medium text-center color_white_off ff_montserrat">
-                  <span className="ff_roboto pe-1 ">@</span>
-                  {getnewyear} Tutti i diritti riservati
-                </p> */}
+                
                 <p className="mb-0 font_xsm d-md-none d-block fw_medium text-center color_light_gray mt-1 ff_montserrat">
                   P.IVA 14570951005
                 </p>
