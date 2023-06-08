@@ -283,13 +283,6 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         });
-      // .to(
-      //   ".business_left_icon",
-      //   {
-      //     autoAlpha: 0,
-      //   },
-      //   ">"
-      // );
     });
 
     mm.add("(min-width:1300px) and (max-width:1599.98px)", () => {
@@ -533,14 +526,7 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         })
-        // .to(
-        //   ".business_left_icon",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=.5"
-        // )
-        .to(".third_heading", {
+        .to(".business_heading", {
           autoAlpha: 0,
         });
     });
@@ -786,14 +772,7 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         })
-        // .to(
-        //   ".business_left_icon",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=.5"
-        // )
-        .to(".third_heading", {
+        .to(".business_heading", {
           autoAlpha: 0,
         });
     });
@@ -834,6 +813,15 @@ const Business = () => {
         autoAlpha: 0,
         scale: 0.5,
       })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "0%",
+          },
+          {
+            bottom: "30%",
+          }
+        )
         .to(
           [
             ".business_heading_1",
@@ -896,6 +884,15 @@ const Business = () => {
         .from(".business_heading_2", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "30%",
+          },
+          {
+            bottom: "40%",
+          }
+        )
         .to(".business_para_2", {
           autoAlpha: 1,
           height: "auto",
@@ -939,6 +936,15 @@ const Business = () => {
         .from(".business_heading_3", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "40%",
+          },
+          {
+            bottom: "50%",
+          }
+        )
         .to(".business_para_3", {
           autoAlpha: 1,
           height: "auto",
@@ -982,6 +988,15 @@ const Business = () => {
         .from(".business_heading_4", {
           autoAlpha: 0.5,
         })
+        .fromTo(
+          ".business_left_icon",
+          {
+            bottom: "50%",
+          },
+          {
+            bottom: "60%",
+          }
+        )
         .to(".business_para_4", {
           autoAlpha: 1,
           height: "auto",
@@ -1003,14 +1018,7 @@ const Business = () => {
         .to(".business_heading_4", {
           autoAlpha: 0.5,
         })
-        // .to(
-        //   ".business_left_icon",
-        //   {
-        //     autoAlpha: 0,
-        //   },
-        //   "+=.5"
-        // )
-        .to(".third_heading", {
+        .to(".business_heading", {
           autoAlpha: 0,
         });
     });
@@ -1108,7 +1116,7 @@ const Business = () => {
   return (
     <>
       <div
-        className="business_parent third_sec_height z_1 pb-5 pb-sm-0 pt-5 min-vh-100"
+        className="business_parent z_1 pb-5 pb-sm-0 pt-5 min-vh-100"
         id="servizi"
       >
         <div className="d-flex flex-column justify-content-center">
@@ -1119,7 +1127,7 @@ const Business = () => {
               alt="arrow-tab-img"
             />
           </div>
-          <div className="text-center z_1 third_heading">
+          <div className="text-center z_1 business_heading">
             <p className="font_6xl color_white_off pt-sm-5 pt-lg-0 px-md-5 px-lg-0 mb-0 custom_business_heading d-flex align-items-center justify-content-center flex-wrap">
               Progettiamo soluzioni
               <a href="#about_section">
@@ -1130,7 +1138,7 @@ const Business = () => {
               per il tuo business
             </p>
           </div>
-          <div className="position-absolute end-0 business_left_icon text_left_rotate d-none d-lg-flex align-items-center left_text_about pt-4 pe-xl-3">
+          <div className="position-absolute end-0 business_left_icon text_left_rotate d-none d-lg-flex align-items-center pt-4 pe-xl-3">
             <p className="color_white_off font_sm mb-0">Esperienza su misura</p>
             <div className="ps-4">
               <img src={businessLeftTextIcon} alt="business-small-arrow" />
@@ -1174,7 +1182,7 @@ const Business = () => {
                     >
                       GENERAZIONE TRAFFICO
                     </h3>
-                    <p className="overflow-hidden fw_light font_2xl business_para_1 color_dark_gray pe-xl-5">
+                    <p className="overflow-hidden fw_light ff_mundial_light font_2xl business_para_1 color_dark_gray pe-xl-5">
                       Strategie di marketing costruite ad hoc per generare
                       traffico qualificato da veicolare sui social media, Google
                       e native advertising
@@ -1187,7 +1195,7 @@ const Business = () => {
                     >
                       LANDING CONVERSAZIONALE
                     </h3>
-                    <p className="overflow-hidden fw_light font_2xl business_para_2 color_dark_gray pe-xl-5">
+                    <p className="overflow-hidden fw_light ff_mundial_light font_2xl business_para_2 color_dark_gray pe-xl-5">
                       Landingpage su misura per i nostri partner e conformi
                       al&nbsp;
                       <span className="fw-bold">regolamento GDPR</span>
@@ -1201,7 +1209,7 @@ const Business = () => {
                     >
                       VALIDAZIONE AUTOMATICA DEI DATI
                     </h3>
-                    <p className="overflow-hidden fw_light font_2xl business_para_3 color_dark_gray pe-xl-5">
+                    <p className="overflow-hidden fw_light ff_mundial_light font_2xl business_para_3 color_dark_gray pe-xl-5">
                       Meno tempo e maggiore conversione grazie al nostro&nbsp;
                       <span className="fw-bold">software di I.A.</span>
                       &nbsp; per la validazione real
@@ -1216,10 +1224,11 @@ const Business = () => {
                     >
                       TRASMISSIONE LEAD
                     </h3>
-                    <p className="overflow-hidden fw_light font_2xl business_para_4 color_dark_gray pe-xl-5">
+                    <p className="overflow-hidden fw_light ff_mundial_light font_2xl business_para_4 color_dark_gray pe-xl-5">
                       I lead generati vengono sottoposti ad un attento processo
                       di filtraggio e controllo tramite API o integrazione con
-                      il CRM del partner prima di essere inviati
+                      il <span className="fw-semibold">CRM</span> del partner
+                      prima di essere inviati
                     </p>
                   </div>
                 </div>
