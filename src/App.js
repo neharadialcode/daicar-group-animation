@@ -22,9 +22,11 @@ function App() {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
-      window.location.reload();
-    });
+    if (window.innerWidth > 576) {
+      window.addEventListener("resize", () => {
+        window.location.reload();
+      });
+    }
   }, []);
 
   return (
