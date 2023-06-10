@@ -15,7 +15,7 @@ function Footer() {
         <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2 manager_content">
           <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
             <a
-              className="custom_tab_button_012 cursor-pointer common_button mt-5 mt-sm-0"
+              className="custom_tab_button_012 cursor-pointer common_button mt-5 mt-sm-0 fissa_bg"
               href="https://calendly.com/"
               target="_blank"
               rel="noreferrer"
@@ -24,7 +24,7 @@ function Footer() {
               <span className="d-none d-sm-inline-block">f</span>issa un meeting
             </a>
             <p className="custom_line d-none d-sm-block"></p>
-            <button className="custom_tab_button_012 cursor-pointer common_button meeting_border_line parliamone d-none d-sm-block">
+            <button className="custom_tab_button_012 cursor-pointer common_button meeting_border_line parliamone d-none d-sm-block fissa_bg">
               chat
             </button>
           </div>
@@ -37,7 +37,7 @@ function Footer() {
             <p className="mb-0 font_md meeting_text_color">
               Matteo,
               <br className="d-sm-none" />
-              <span className="fw_light ff_mundial_light">
+              <span className="fw_thin ff_mundial_thin opacity_09">
                 &nbsp;Business Development Manager
               </span>
             </p>
@@ -74,7 +74,7 @@ function Footer() {
                     i diritti sono riservati
                   </p>
                   <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_montserrat">
-                    P.IVA 056382975839
+                    P.IVA 14570951005
                   </p>
                   <p className="mb-0 font_xsm fw_medium color_light_gray mt-1 ff_montserrat">
                     Designed & developed<br className="d-md-block d-none"></br>
@@ -134,9 +134,9 @@ function Footer() {
                   <div className="flex-column d-flex d-inline-block">
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
-                      href="mailTo:mail@wonw.xyz"
+                      href="mailTo:hello@daicargroup.com"
                     >
-                      mail@wonw.xyz
+                      hello@daicargroup.com
                     </a>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ function Footer() {
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="/"
                     >
-                      480 Laurie Causeway Suite 088
+                      Via Del Porto Fluviale, 1/C 00154 ROMA
                     </a>
                   </div>
                 </div>

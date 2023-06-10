@@ -14,9 +14,20 @@
   font-family: mundial-light;
   src: url("../fonts/mundial-light-tty.otf");
 }
+@font-face {
+  font-family: mundial-thin;
+  src: url("../fonts/mundial-thin.otf");
+}
 
 .ff_mundial_light {
   font-family: mundial-light;
+}
+.ff_mundial_thin {
+  font-family: mundial-thin;
+}
+
+.fw_thin{
+  font-weight: 200;
 }
 @font-face {
   font-family: "Mundial";
@@ -273,6 +284,9 @@ body {
 }
 .opacity_05 {
   opacity: 0.5;
+}
+.opacity_09 {
+  opacity: 0.9;
 }
 .pointer-events-none {
   pointer-events: none;
