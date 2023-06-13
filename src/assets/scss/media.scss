@@ -625,8 +625,8 @@
     }
   }
   .ipad_img {
-    height: 70vh !important;
-    max-width: 100%;
+    max-width: 645px;
+    height: 80vh !important;
   }
   .manager_content {
     transform: translateY(-50px);
@@ -677,6 +677,9 @@
   }
   .intro_tab_frame {
     height: 950px;
+  }
+  .ipad_img {
+    max-width: 595px;
   }
 }
 
