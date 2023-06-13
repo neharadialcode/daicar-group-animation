@@ -1291,13 +1291,11 @@ const Business = () => {
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-3 pt-sm-0">
-                    <h3 className="font_5xl text-white">
+                    <h3 className="font_5xl color_dark_gray fw-normal">
                       GENERAZIONE TRAFFICO
                     </h3>
-                    <p className="font_2xl text-white pe-xl-5 pt-sm-2">
-                      Strategie di marketing costruite ad hoc per generare
-                      traffico qualificato da veicolare sui social media, Google
-                      e native advertising
+                    <p className="font_2xl color_dark_gray pe-xl-5 pt-sm-2 ff_mundial_light fw-light">
+                     Generiamo traffico tramite <span className="fw-semibold ff_mundial">campagne</span> ideate dal nostro team marketing e veicolate sui canali social, Google e native.
                     </p>
                   </div>
                 </div>
@@ -1312,13 +1310,11 @@ const Business = () => {
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
-                    <h3 className="font_5xl text-white">
+                    <h3 className="font_5xl color_dark_gray fw-normal">
                       LANDING CONVERSAZIONALE
                     </h3>
-                    <p className="font_2xl text-white pe-xl-5 pt-sm-2">
-                      Landingpage su misura per i nostri partner e conformi al
-                      <span className="fw-bold">regolamento GDPR</span>
-                      &nbsp; per l’acquisizione di contatti qualificati.
+                    <p className="font_2xl color_dark_gray pe-xl-5 pt-sm-2 ff_mundial_light fw-light">
+                     Progettiamo e sviluppiamo landing page personalizzate per i nostri partner con lo scopo di generare lead di contatti altamente ingaggianti e conformi al <span className="fw-semibold ff_mundial">regolamento GDPR.</span>
                     </p>
                   </div>
                 </div>
@@ -1333,13 +1329,11 @@ const Business = () => {
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
-                    <h3 className="font_5xl text-white">
+                    <h3 className="font_5xl color_dark_gray fw-normal">
                       VALIDAZIONE AUTOMATICA DEI DATI
                     </h3>
-                    <p className="font_2xl text-white pe-xl-5 pt-sm-2">
-                      Meno tempo e maggiore conversione grazie al nostro&nbsp;
-                      <span className="fw-bold">software di I.A.</span>
-                      &nbsp; per la validazione real-time dei dati degli utenti
+                    <p className="font_2xl color_dark_gray pe-xl-5 pt-sm-2 ff_mundial_light fw-light">
+                     Qualifichiamo e validiamo in tempo reale i dati degli utenti grazie alla nostra piattaforma proprietaria connessa al nostro <span className="fw-semibold ff_mundial">software di I.A.</span>
                     </p>
                   </div>
                 </div>
@@ -1354,11 +1348,9 @@ const Business = () => {
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column">
-                    <h3 className="font_5xl text-white">TRASMISSIONE LEAD</h3>
-                    <p className="font_2xl text-white pe-xl-5 pt-sm-2 mb-0">
-                      I lead generati vengono sottoposti ad un attento processo
-                      di filtraggio e controllo tramite API o integrazione con
-                      il CRM del partner prima di essere inviati”
+                    <h3 className="font_5xl color_dark_gray fw-normal">TRASMISSIONE LEAD</h3>
+                    <p className="font_2xl color_dark_gray pe-xl-5 pt-sm-2 mb-0 ff_mundial_light fw-light">
+                      Inviamo i lead generati tramite API o integrazione con il <span className="fw-semibold ff_mundial">CRM</span> del partner solamente una volta filtrati e controllati.
                     </p>
                   </div>
                 </div>
