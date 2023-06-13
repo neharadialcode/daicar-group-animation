@@ -99,7 +99,7 @@ const Partners = () => {
           "-=3"
         );
     });
-    
+
     mm.add("(min-width: 992px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -145,7 +145,7 @@ const Partners = () => {
           trigger: "#partners",
           start: "top top",
           pin: true,
-          fastScrollEnd: true, 
+          fastScrollEnd: true,
         },
       });
       tl2.from("#partner-img-container2 img", {

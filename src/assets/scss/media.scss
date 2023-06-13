@@ -1027,6 +1027,11 @@
   .intro_tab_frame {
     height: 670px;
   }
+
+  #partners .container,
+  #CRM .container {
+    padding: 0px !important;
+  }
 }
 
 @media (min-width: 380px) and (max-width: 450px) {
