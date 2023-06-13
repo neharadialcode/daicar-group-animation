@@ -11,56 +11,78 @@ function Meeting() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#contatti",
-          start: "top 50%",
-          end: "bottom 30%",
-          fastScrollEnd: true,
-        },
-      });
-      tl.from([".meeting_first_line"], {
-        x: -100,
-        autoAlpha: 0,
-        stagger: 1,
-        ease: "back(3)",
-        duration: 0.8,
-      }).from([".meeting_second_line"], {
-        x: -100,
-        autoAlpha: 0,
-        stagger: 1,
-        ease: "back(3)",
-        duration: 0.8,
-      });
-
-      const tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#contatti",
           start: "top 10%",
           pin: true,
           fastScrollEnd: true,
         },
       });
-
-      tl2
-        .from([".meeting_third_line"], {
-          x: -100,
+      tl.from([".meeting_first_line"], {
+        y: -100,
+        autoAlpha: 0,
+        stagger: 1,
+        ease: "back(3)",
+        duration: 0.8,
+      })
+        .from([".meeting_second_line"], {
+        y: -100,
+        autoAlpha: 0,
+        stagger: 1,
+        ease: "back(3)",
+        duration: 0.8,
+        })
+       .from([".meeting_third_line"], {
+          y: -100,
           autoAlpha: 0,
           stagger: 1,
           ease: "back(3)",
           duration: 0.8,
         })
         .from([".meeting_fourth_line"], {
-          x: -100,
+          y: -100,
           autoAlpha: 0,
           stagger: 1,
           ease: "back(3)",
           duration: 0.8,
         })
         .from([".meeting_fifth_line"], {
-          x: -100,
+          y: -100,
           autoAlpha: 0,
           stagger: 1,
           ease: "back(3)",
           duration: 0.8,
         });
+
+      // const tl2 = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: "#contatti",
+      //     start: "top 10%",
+      //     pin: true,
+      //     fastScrollEnd: true,
+      //   },
+      // });
+
+      // tl2
+      //   .from([".meeting_third_line"], {
+      //     x: -100,
+      //     autoAlpha: 0,
+      //     stagger: 1,
+      //     ease: "back(3)",
+      //     duration: 0.8,
+      //   })
+      //   .from([".meeting_fourth_line"], {
+      //     x: -100,
+      //     autoAlpha: 0,
+      //     stagger: 1,
+      //     ease: "back(3)",
+      //     duration: 0.8,
+      //   })
+      //   .from([".meeting_fifth_line"], {
+      //     x: -100,
+      //     autoAlpha: 0,
+      //     stagger: 1,
+      //     ease: "back(3)",
+      //     duration: 0.8,
+      //   });
     });
     mm.add("(max-width: 1199px)", () => {
       const tl = gsap.timeline({
@@ -94,9 +116,9 @@ function Meeting() {
           <div className="custom_container container">
             <div
               id="meeting-paragraph-container"
-              className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-none d-xl-block"
+              className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-none d-xl-block meeting_stanza"
             >
-              <div>
+              {/* <div> */}
                 <p className="meeting_first_line">
                   Ora hai compreso che il futuro delle tue
                   <a href="#footer" onClick={() => meetingBtn()}>
@@ -126,8 +148,8 @@ function Meeting() {
                   </a>
                   da noi sviluppati
                 </p>
-              </div>
-              <div className="meeting_two_block">
+              {/* </div> */}
+              {/* <div className="meeting_two_block"> */}
                 <p className="meeting_third_line">
                   per ottenere una
                   <a href="#footer" onClick={() => meetingBtn()}>
@@ -166,7 +188,7 @@ function Meeting() {
                     </span>
                   </a>
                 </p>
-              </div>
+              {/* </div> */}
             </div>
 
             <div
