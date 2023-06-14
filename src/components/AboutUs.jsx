@@ -331,8 +331,9 @@ const About = () => {
       let secondSection4 = gsap.timeline({
         scrollTrigger: {
           trigger: ".about_parent",
-          start: "top 30%",
-          end: "bottom top",
+          start: "top top",
+          scrub: true,
+          pin: true,
           fastScrollEnd: true,
         },
       });
