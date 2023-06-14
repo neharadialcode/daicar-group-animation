@@ -24,13 +24,13 @@ function Meeting() {
         duration: 0.8,
       })
         .from([".meeting_second_line"], {
-        y: -100,
-        autoAlpha: 0,
-        stagger: 1,
-        ease: "back(3)",
-        duration: 0.8,
+          y: -100,
+          autoAlpha: 0,
+          stagger: 1,
+          ease: "back(3)",
+          duration: 0.8,
         })
-       .from([".meeting_third_line"], {
+        .from([".meeting_third_line"], {
           y: -100,
           autoAlpha: 0,
           stagger: 1,
@@ -109,92 +109,17 @@ function Meeting() {
   };
   return (
     <>
-        <div
-          className="bg_light_white custom_content_padding overflow-hidden"
-          id="contatti"
-        >
-          <div className="custom_container container">
-            <div
-              id="meeting-paragraph-container"
-              className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-none d-xl-block meeting_stanza"
-            >
-              {/* <div> */}
-                <p className="meeting_first_line">
-                  Ora hai compreso che il futuro delle tue
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl mx-sm-3">
-                      vendite
-                    </span>
-                  </a>
-                  è digitale e hai scoperto
-                </p>
-                <p className="meeting_second_line">
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
-                      come
-                    </span>
-                  </a>
-                  usiamo il
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray me-2 font_2xl mx-sm-3 meeting_custom_top_space">
-                      marketing converazionale
-                    </span>
-                  </a>
-                  e gli
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
-                      strumenti tech<span className="ff_math">-</span>driven
-                    </span>
-                  </a>
-                  da noi sviluppati
-                </p>
-              {/* </div> */}
-              {/* <div className="meeting_two_block"> */}
-                <p className="meeting_third_line">
-                  per ottenere una
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
-                      qualifica digitale real<span className="ff_math">-</span>
-                      time
-                    </span>
-                  </a>
-                  e trasmetterti così i dati.
-                </p>
-                <p className="meeting_fourth_line">
-                  Vogliamo utilizzare l’esperienza acquisita nel
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
-                      tempo
-                    </span>
-                  </a>
-                  per ideare una strategia
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
-                      personalizzata
-                    </span>
-                  </a>
-                </p>
-                <p className="meeting_fifth_line">
-                  proprio come se fossimo il tuo
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray me-2 font_2xl mx-sm-3 meeting_custom_top_space">
-                      partner
-                    </span>
-                  </a>
-                  integrato nel tuo team e nel tuo
-                  <a href="#footer" onClick={() => meetingBtn()}>
-                    <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
-                      CRM
-                    </span>
-                  </a>
-                </p>
-              {/* </div> */}
-            </div>
-
-            <div
-              id="meeting-paragraph"
-              className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto text-center d-xl-none"
-            >
+      <div
+        className="bg_light_white custom_content_padding overflow-hidden"
+        id="contatti"
+      >
+        <div className="custom_container container">
+          <div
+            id="meeting-paragraph-container"
+            className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para mx-auto px-2 px-sm-0 text-center d-none d-xl-block meeting_stanza"
+          >
+            {/* <div> */}
+            <p className="meeting_first_line">
               Ora hai compreso che il futuro delle tue
               <a href="#footer" onClick={() => meetingBtn()}>
                 <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl mx-sm-3">
@@ -202,6 +127,8 @@ function Meeting() {
                 </span>
               </a>
               è digitale e hai scoperto
+            </p>
+            <p className="meeting_second_line">
               <a href="#footer" onClick={() => meetingBtn()}>
                 <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
                   come
@@ -219,13 +146,21 @@ function Meeting() {
                   strumenti tech<span className="ff_math">-</span>driven
                 </span>
               </a>
-              da noi sviluppati&nbsp; per ottenere una
+              da noi sviluppati
+            </p>
+            {/* </div> */}
+            {/* <div className="meeting_two_block"> */}
+            <p className="meeting_third_line">
+              per ottenere una
               <a href="#footer" onClick={() => meetingBtn()}>
                 <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
-                  qualifica digitale real<span className="ff_math">-</span>time
+                  qualifica digitale real<span className="ff_math">-</span>
+                  time
                 </span>
               </a>
-              e trasmetterti così i dati.<br className="d-md-block d-none"></br>
+              e trasmetterti così i dati.
+            </p>
+            <p className="meeting_fourth_line">
               Vogliamo utilizzare l’esperienza acquisita nel
               <a href="#footer" onClick={() => meetingBtn()}>
                 <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
@@ -238,6 +173,8 @@ function Meeting() {
                   personalizzata
                 </span>
               </a>
+            </p>
+            <p className="meeting_fifth_line">
               proprio come se fossimo il tuo
               <a href="#footer" onClick={() => meetingBtn()}>
                 <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray me-2 font_2xl mx-sm-3 meeting_custom_top_space">
@@ -250,10 +187,83 @@ function Meeting() {
                   CRM
                 </span>
               </a>
+            </p>
+            {/* </div> */}
+          </div>
+
+          <div
+            id="meeting-paragraph"
+            className="mb-0 font_5xl color_dark_gray custom_letter_spacing meeting_para px-2 px-sm-0 mx-auto text-center d-xl-none"
+          >
+            Ora hai compreso che il futuro delle tue
+            <a href="#footer" onClick={() => meetingBtn()}>
+              <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl mx-sm-3">
+                vendite
+              </span>
+            </a>
+            è digitale e hai scoperto
+            <a href="#footer" onClick={() => meetingBtn()}>
+              <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl ms-sm-3 ms-lg-0 me-sm-3 meeting_custom_top_space">
+                come
+              </span>
+            </a>
+            usiamo il
+            <a href="#footer" onClick={() => meetingBtn()}>
+              <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray me-2 font_2xl mx-sm-3 meeting_custom_top_space">
+                marketing converazionale
+              </span>
+            </a>
+            e gli
+            <a href="#footer" onClick={() => meetingBtn()}>
+              <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray font_2xl mx-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
+                strumenti tech<span className="ff_math">-</span>driven
+              </span>
+            </a>
+            da noi sviluppati&nbsp; per ottenere una
+            <a href="#footer" onClick={() => meetingBtn()}>
+              <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray font_2xl me-2 ms-lg-3 me-sm-3 meeting_custom_top_space">
+                qualifica digitale real<span className="ff_math">-</span>time
+              </span>
+            </a>
+            <br className="d-sm-none" />
+            e trasmetterti così i dati.
+            <br />
+            Vogliamo utilizzare l’esperienza acquisita nel
+            <a href="#footer" onClick={() => meetingBtn()}>
+              <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl mx-sm-3 meeting_custom_top_space">
+                tempo
+              </span>
+            </a>
+            per ideare una strategia
+            <a href="#footer" onClick={() => meetingBtn()}>
+              <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl ms-xl-3 me-sm-3 me-xl-0 meeting_custom_top_space">
+                personalizzata
+              </span>
+            </a>
+            proprio come
+            <br className="d-sm-none" />
+            se fossimo il tuo
+            <a
+              className="ms-2 ms-sm-0"
+              href="#footer"
+              onClick={() => meetingBtn()}
+            >
+              <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray me-2 font_2xl mx-sm-3 meeting_custom_top_space">
+                partner
+              </span>
+            </a>
+            <div className="d-none d-sm-block">
+              integrato nel tuo team e nel tuo
+              <a href="#footer" onClick={() => meetingBtn()}>
+                <span className="custom_tab_button_012 cursor-pointer common_button color_dark_gray mx-2 font_2xl me-sm-0 ms-sm-3 meeting_custom_top_space">
+                  CRM
+                </span>
+              </a>
             </div>
           </div>
-          <Footer />
         </div>
+        <Footer />
+      </div>
     </>
   );
 }

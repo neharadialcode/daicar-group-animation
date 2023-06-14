@@ -625,8 +625,8 @@
     }
   }
   .ipad_img {
-    height: 70vh !important;
-    max-width: 100%;
+    max-width: 665px;
+    height: 80vh !important;
   }
   .manager_content {
     transform: translateY(-50px);
@@ -677,6 +677,43 @@
   }
   .intro_tab_frame {
     height: 950px;
+  }
+  .ipad_img {
+    max-width: 645px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .timeline_btn {
+    font-size: 21px !important;
+    padding: 0px 30px;
+    display: inline-block;
+    height: 39px;
+  }
+  .timeline_car_icon {
+    max-width: 473px;
+  }
+  .timeline_tiguido_icon {
+    max-width: 259px;
+  }
+  .timeline_icon_3 {
+    width: 328px;
+    max-width: 328px;
+  }
+  #timeline-heading-1 p,
+  #timeline-heading-2,
+  #timeline-heading-3 p,
+  #timeline-heading-4 p {
+    font-size: 20px !important;
+    line-height: 147%;
+  }
+  #timeline-heading-4 .timeline_btn {
+    height: 30px !important;
+    font-size: var(--font-md) !important;
+    padding: 0px 41px !important;
+  }
+  .timeline_content_4_parent {
+    right: -55%;
   }
 }
 
@@ -729,6 +766,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .timeline_btn {
+    border-radius: 7px !important;
+  }
   .footer_top_space {
     padding-top: 65px;
   }
@@ -986,6 +1026,11 @@
   }
   .intro_tab_frame {
     height: 670px;
+  }
+
+  #partners .container,
+  #CRM .container {
+    padding: 0px !important;
   }
 }
 

@@ -116,7 +116,6 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-       
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -133,7 +132,6 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -150,7 +148,6 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-        
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -167,7 +164,6 @@ const Timeline = () => {
         },
       });
       tl.to("#hero-large-arrow-2", {
-       
         display: "block",
         autoAlpha: 0,
         immediateRender: false,
@@ -969,7 +965,9 @@ const Timeline = () => {
                         className="timeline_icon_3"
                       />
                       <p className="font_md color_white_off py-sm-3">
-                        Il 2 Ottobre faremo <br /> otto anni.
+                        Il 2 Ottobre faremo
+                        <br className="d-md-none d-lg-block" />
+                        otto anni.
                       </p>
                       <div className="timeline_all_btns_hover">
                         <a

@@ -22,7 +22,7 @@ const Crm = () => {
     autoplay: true,
     centerMode: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1.9,
     slidesToScroll: 1,
   };
 
