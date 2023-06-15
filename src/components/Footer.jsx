@@ -59,7 +59,7 @@ function Footer() {
             alt="footerbg"
           />
           <div className="container position-relative z_2 pb-5 pt-lg-5 pt-xl-0">
-            <div className="row justify-content-md-center justify-content-between gap-lg- text-center text-sm-start px-xxl-5">
+            <div className="row justify-content-md-center justify-content-between gap-lg- text-center text-sm-start">
               <div className="col-12 col-sm-4 col-lg-3 d-flex flex-column justify-content-between">
                 <a href="/">
                   <img
@@ -128,7 +128,7 @@ function Footer() {
                 </ul>
               </div>
 
-              <div className="col-12 col-sm-4 col-md-3 mt-sm-0 ps-0 ps-sm-2 d-none d-md-block">
+              <div className="col-12 col-sm-4 col-md-3 mt-sm-0 ps-0 ps-sm-2 d-none d-md-block pt-md-3">
                 <div className="d-flex align-items-center common_gap footer_icons_hover">
                   <img className="contact_icon" src={smsImg} alt="smsImg" />
                   <div className="flex-column d-flex d-inline-block">
