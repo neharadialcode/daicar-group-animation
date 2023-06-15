@@ -44,7 +44,10 @@ const Header = () => {
     }
   };
   const daicarBtn = () => {
-    if (window.innerWidth > 1600) {
+    if (window.innerWidth > 2000 ) {
+      gsap.to(window, { duration: 1, scrollTo: 17000, ease: "linear" });
+    }
+    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 1, scrollTo: 12400, ease: "linear" });
     }
     if (window.innerWidth < 1599) {

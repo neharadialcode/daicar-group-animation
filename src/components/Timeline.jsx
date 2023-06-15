@@ -40,7 +40,16 @@ const Timeline = () => {
       immediateRender: false,
     }).to("#root", {
       backgroundColor: "#29424D",
-    });
+    })
+    .fromTo(
+          ".timeline_text_heading",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          }
+        )
     mm.add("(min-width: 1800px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -183,15 +192,6 @@ const Timeline = () => {
       });
       // FIRST VALUE
       tl2
-        .fromTo(
-          ".timeline_text_heading",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
         .fromTo(
           "#hero-large-arrow-2",
           {
