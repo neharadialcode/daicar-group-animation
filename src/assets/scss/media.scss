@@ -180,6 +180,13 @@
   .tabs_content_parent {
     margin-top: 300px;
   }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 32% !important;
+  }
+  .tabs_lottie_width {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1799.98px) {
@@ -937,9 +944,9 @@
     max-width: 145px;
   }
 
-  .timeline_car_icon {
-    max-width: 175px;
-  }
+  // .timeline_car_icon {
+  //   max-width: 175px;
+  // }
 
   .footer_social_icon svg {
     width: 23px;
@@ -982,7 +989,7 @@
   }
 
   .text_parent_height {
-    top: 20%;
+    top: 15%;
     height: 80%;
   }
 

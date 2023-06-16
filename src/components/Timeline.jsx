@@ -868,10 +868,10 @@ const Timeline = () => {
               className="d-flex align-items-center flex-column justify-content-between position-relative h-100 pt-3 pb-5 py-md-5 z-10"
             >
               <div className="text-center pt-md-5 pt-lg-0 px-sm-5 px-lg-0 about_text_size z-10 position-absolute timeline_text_heading">
-                <p className="font_5xl text-white text-center d-flex align-items-center">
+                <p className="font_5xl text-white text-center d-flex align-items-center flex-column flex-sm-row">
                   grazie all’esperienza acquisita nel
                   <a href="#partners">
-                    <button className="custom_tab_button_012 cursor-pointer timeline_btn_padding hero_heading_btn bg_light_green mx-2">
+                    <button className="custom_tab_button_012 cursor-pointer timeline_btn_padding hero_heading_btn bg_light_green mx-2 mt-2 mt-sm-0">
                       tempo
                     </button>
                   </a>
@@ -892,7 +892,7 @@ const Timeline = () => {
                         src={timelineImg1}
                         alt="timelineImg1"
                       />
-                      <p className="font_md color_white_off mb-sm-4 pe-5 pe-lg-0 me-5 me-lg-0 pe-xxl-5 me-xxl-5">
+                      <p className="font_md color_white_off mb-sm-4 pe-4 pe-sm-5 pe-lg-0 me-5 me-lg-0 pe-xxl-5 me-xxl-5">
                         Carplanner.com nasce nel 2015 posizionandosi nel settore
                         automotive, specializzata nella lead generation
                         innovativa.
