@@ -783,6 +783,10 @@
     right: 10px;
   }
 
+  .topscroll {
+    left: 10px;
+  }
+
   .header_section {
     left: 0 !important;
   }
@@ -1121,11 +1125,6 @@
     line-height: 112% !important;
     color: var(--color-white-off) !important;
   }
-
-  .show_chat_icon {
-    right: 3px;
-  }
-
   .social_links_parent a img {
     max-width: 24px !important;
   }
@@ -1195,6 +1194,9 @@
   }
   .topscroll svg {
     width: 25px;
+  }
+  .show_chat_icon {
+    right: 3px;
   }
   .chat_icon svg {
     width: 40px;
