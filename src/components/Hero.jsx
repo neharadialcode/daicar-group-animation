@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
-import ipadWhite from "../assets/images/png/ipad-green.png";
+import ipadGreen from "../assets/images/png/ipad-green.png";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
@@ -255,6 +255,16 @@ const Hero = () => {
             display: "block",
           },
           "<"
+      )
+          .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "<"
         )
         //////////
         .addLabel("button_0")
@@ -264,7 +274,7 @@ const Hero = () => {
             background: "rgba(83, 132, 153, 0.5)",
             rotate: "-3deg",
           },
-          "-=.5"
+          "<"
         )
         .to("#hero-large-arrow", {
           top: "73%",
@@ -275,17 +285,7 @@ const Hero = () => {
             top: "50px",
           },
           {
-            // opacity: 1,
             top: "0px",
-          }
-        )
-        .fromTo(
-          ".left_text_1",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
           }
         )
         .to(
@@ -730,6 +730,16 @@ const Hero = () => {
             display: "block",
           },
           "<"
+      )
+        .fromTo(
+          ".left_text_1",
+          {
+            autoAlpha: 0,
+          },
+          {
+            autoAlpha: 1,
+          },
+          "<"
         )
         //////////
         .addLabel("button_0")
@@ -739,7 +749,7 @@ const Hero = () => {
             background: "rgba(83, 132, 153, 0.5)",
             rotate: "-3deg",
           },
-          "-=.5"
+          "<"
         )
         .to("#hero-large-arrow", {
           top: "68%",
@@ -752,15 +762,6 @@ const Hero = () => {
           {
             opacity: 1,
             top: "0px",
-          }
-        )
-        .fromTo(
-          ".left_text_1",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
           }
         )
         .to(
@@ -1230,7 +1231,7 @@ const Hero = () => {
             background: "rgba(83, 132, 153, 0.5)",
             rotate: "-3deg",
           },
-          "-=.5"
+          "<"
         )
         .to("#hero-large-arrow", {
           top: "73%",
@@ -1244,22 +1245,6 @@ const Hero = () => {
             opacity: 1,
             top: "0px",
           }
-        )
-        .fromTo(
-          ".left_text_1",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "10%",
-          },
-          "-=.5"
         )
         .fromTo(
           ".card_img_0",
@@ -1307,22 +1292,6 @@ const Hero = () => {
             autoAlpha: 0,
           }
         )
-        .fromTo(
-          ".left_text_2",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "30%",
-          },
-          "-=.5"
-        )
 
         .fromTo(
           ".card_img_1",
@@ -1361,31 +1330,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "68%",
         })
-        .fromTo(
-          ".left_text_2",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_3",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "35%",
-          },
-          "-=.5"
-        )
 
         .fromTo(
           ".card_img_2",
@@ -1430,22 +1374,6 @@ const Hero = () => {
           }
         )
         .fromTo(
-          ".left_text_4",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "40%",
-          },
-          "-=.5"
-        )
-        .fromTo(
           ".card_img_3",
           {
             opacity: 1,
@@ -1482,31 +1410,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .fromTo(
-          ".left_text_4",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_5",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "45%",
-          },
-          "-=.5"
-        )
         .to(["#para_text_01 button", "#para_text_01 p"], {
           color: "white",
         })
@@ -1737,22 +1640,6 @@ const Hero = () => {
           }
         )
         .fromTo(
-          ".left_text_1",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "10%",
-          },
-          "-=.5"
-        )
-        .fromTo(
           ".card_img_0",
           {
             opacity: 1,
@@ -1789,31 +1676,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "70%",
         })
-        .fromTo(
-          ".left_text_1",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_2",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "30%",
-          },
-          "-=.5"
-        )
         .fromTo(
           ".card_img_1",
           {
@@ -1852,31 +1714,6 @@ const Hero = () => {
           top: "68%",
         })
         .fromTo(
-          ".left_text_2",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_3",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "35%",
-          },
-          "-=.5"
-        )
-        .fromTo(
           ".card_img_2",
           {
             opacity: 1,
@@ -1909,31 +1746,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "66%",
         })
-        .fromTo(
-          ".left_text_3",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_4",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "40%",
-          },
-          "-=.5"
-        )
         .fromTo(
           ".card_img_3",
           {
@@ -1971,31 +1783,6 @@ const Hero = () => {
         .to("#hero-large-arrow", {
           top: "64%",
         })
-        .fromTo(
-          ".left_text_4",
-          {
-            autoAlpha: 1,
-          },
-          {
-            autoAlpha: 0,
-          }
-        )
-        .fromTo(
-          ".left_text_5",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .to(
-          ".side_icon",
-          {
-            bottom: "45%",
-          },
-          "-=.5"
-        )
         .to(["#para_text_01 button", "#para_text_01 p"], {
           color: "white",
         })
@@ -2023,9 +1810,6 @@ const Hero = () => {
     }
   };
   const venditeItbtn2 = () => {
-    // if (window.innerWidth > 2000) {
-    //   gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
-    // }
     if (window.innerWidth > 1600) {
       gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
     }
@@ -2035,21 +1819,13 @@ const Hero = () => {
     if (window.innerWidth < 1200) {
       gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
     }
+    if (window.innerWidth < 992) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
+    }
+    if (window.innerWidth < 769 && window.innerHeight <=1025) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
+    }
   };
-  // const venditeItbtn3 = () => {
-  //   if (window.innerWidth > 2000) {
-  //     gsap.to(window, { duration: 0.3, scrollTo: 2400, ease: "linear" });
-  //   }
-  //   if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-  //     gsap.to(window, { duration: 0.3, scrollTo: 1680, ease: "linear" });
-  //   }
-  //   if (window.innerWidth < 1599) {
-  //     gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
-  //   }
-  //   if (window.innerWidth < 900) {
-  //     gsap.to(window, { duration: 0.3, scrollTo: 1700, ease: "linear" });
-  //   }
-  // };
   const moveToIt = (id) => {
     ////////// 1
     if (id === 0 && window.innerWidth > 2000) {
@@ -2173,7 +1949,7 @@ const Hero = () => {
             >
               <h2
                 id="hero-main-heading"
-                className="color_white_off font_6xl mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5"
+                className="color_white_off font_6xl fw-normal mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5"
               >
                 Il futuro delle tue
                 <a
@@ -2396,7 +2172,7 @@ const Hero = () => {
               id="hero-ipad-white"
               alt="hero-ipad-white"
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
-              src={ipadWhite}
+              src={ipadGreen}
             />
           </div>
           <div

@@ -58,13 +58,13 @@
   }
   .business_img_2 {
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     max-height: 500px;
   }
 }
 @media (min-width: 1600px) {
   .common_button {
-    padding: 18px 24px 22px !important;
+    padding: 22px 24px 22px !important;
   }
   .footer_top_space {
     padding-top: 260px;
@@ -98,7 +98,7 @@
   }
   .business_img_2 {
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     max-height: 544px;
     max-width: 359px;
     margin-left: 190px;
@@ -258,7 +258,7 @@
   }
   .custom_business_img_height img {
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
   .small_icon {
     max-width: 30px !important;
@@ -450,6 +450,9 @@
   }
 }
 @media (max-width: 991.98px) {
+  .location_icon {
+    min-width: 32px;
+  }
   .footer_background_set {
     height: 625px;
   }
@@ -467,7 +470,7 @@
     max-height: 750px;
     transform: unset;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     margin-top: 50px;
   }
   #main-assets {
@@ -607,9 +610,6 @@
   .hero-outline-arrow svg {
     width: 100vw;
   }
-  .hero_heading_btn {
-    padding: 5px 24px 10px !important;
-  }
   .hero_slide_3_btn {
     font-size: 28px !important;
   }
@@ -624,6 +624,9 @@
   }
   .show_chat_icon {
     right: 10px;
+  }
+  .topscroll {
+    left: 10px;
   }
   .header_section {
     left: 0 !important;
@@ -738,9 +741,6 @@
   }
   .footer_top_space {
     padding-top: 65px;
-  }
-  .topscroll {
-    left: 3%;
   }
   .timeline_content_4_parent {
     right: -45%;
@@ -896,9 +896,6 @@
     line-height: 112% !important;
     color: var(--color-white-off) !important;
   }
-  .show_chat_icon {
-    right: 3px;
-  }
   .social_links_parent a img {
     max-width: 24px !important;
   }
@@ -947,13 +944,24 @@
     font-size: 20px !important;
     display: inline-block !important;
     vertical-align: middle !important;
-    padding: 5px 16px 10px !important;
+    padding: 3% 16px 3% !important;
+  }
+  .topscroll {
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .topscroll svg {
+    width: 25px;
+  }
+  .show_chat_icon {
+    right: 3px;
   }
   .chat_icon svg {
     width: 40px;
   }
   .timeline_btn_padding {
-    padding: 0px 16px 5px !important;
+    padding: 5px 16px 5px !important;
   }
   .hero_slide_3_btn {
     width: 114px !important;
@@ -1370,4 +1378,4 @@
   .timeline_tiguido_icon {
     max-width: 140px;
   }
-}
+}/*# sourceMappingURL=media.css.map */
