@@ -2079,6 +2079,9 @@ const Hero = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 4000, ease: "linear" });
     }
     if (id === 1 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
+    }
+    if (id === 1 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
       gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
     }
     if (id === 1 && window.innerWidth < 1599) {
@@ -2099,10 +2102,10 @@ const Hero = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 4900, ease: "linear" });
     }
     if (id === 2 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 0.3, scrollTo: 3400, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 3500, ease: "linear" });
     }
     if (id === 2 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
-      gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 3500, ease: "linear" });
     }
     if (id === 2 && window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
