@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
-import ipadWhite from "../assets/images/png/ipad-white.png";
+import ipadWhite from "../assets/images/png/ipad-green.png";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
