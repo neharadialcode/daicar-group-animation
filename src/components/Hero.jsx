@@ -2023,33 +2023,33 @@ const Hero = () => {
     }
   };
   const venditeItbtn2 = () => {
-    if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1900, ease: "linear" });
-    }
-    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1530, ease: "linear" });
+    // if (window.innerWidth > 2000) {
+    //   gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
+    // }
+    if (window.innerWidth > 1600) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 0.3, scrollTo: 975, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 1500, ease: "linear" });
     }
     if (window.innerWidth < 1200) {
-      gsap.to(window, { duration: 0.3, scrollTo: 760, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 1200, ease: "linear" });
     }
   };
-  const venditeItbtn3 = () => {
-    if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 0.3, scrollTo: 2400, ease: "linear" });
-    }
-    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1680, ease: "linear" });
-    }
-    if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
-    }
-    if (window.innerWidth < 900) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1700, ease: "linear" });
-    }
-  };
+  // const venditeItbtn3 = () => {
+  //   if (window.innerWidth > 2000) {
+  //     gsap.to(window, { duration: 0.3, scrollTo: 2400, ease: "linear" });
+  //   }
+  //   if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
+  //     gsap.to(window, { duration: 0.3, scrollTo: 1680, ease: "linear" });
+  //   }
+  //   if (window.innerWidth < 1599) {
+  //     gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
+  //   }
+  //   if (window.innerWidth < 900) {
+  //     gsap.to(window, { duration: 0.3, scrollTo: 1700, ease: "linear" });
+  //   }
+  // };
   const moveToIt = (id) => {
     ////////// 1
     if (id === 0 && window.innerWidth > 2000) {
@@ -2240,7 +2240,7 @@ const Hero = () => {
                     >
                       <button
                         className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3"
-                        onClick={() => venditeItbtn3()}
+                        // onClick={() => venditeItbtn3()}
                       >
                         vendite
                       </button>
