@@ -513,7 +513,7 @@ const About = () => {
           </div>
           <div className="container h-100 pb-5 pb-lg-0">
             <div className="text-center pt-5">
-              <p className="font_5xl text-white pt-sm-5 custom_letter_spacing d-flex align-items-center">
+              <p className="font_5xl text-white pt-sm-5 custom_letter_spacing d-flex align-items-center justify-content-center">
                 Ideata da
                 <a href="#timeline">
                   <button className="custom_tab_button_012 cursor-pointer bg_light_green mx-2 hero_heading_btn">
@@ -545,7 +545,7 @@ const About = () => {
                       alt="arrow-founder"
                     />
                     <p className="font_2xl color_dark_gray ps-sm-3 mb-0">
-                      Federico, 
+                      Federico,
                       <span className="fw-light ff_mundial_ligh ms-2">
                         Chief Technology Officer
                       </span>
