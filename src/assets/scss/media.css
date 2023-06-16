@@ -1,7 +1,4 @@
 @media (min-width: 576px) {
-  .common_gap {
-    gap: 19px;
-  }
   .custom_margin_footer {
     margin-top: 24px !important;
   }
@@ -21,9 +18,6 @@
   }
 }
 @media (min-width: 768px) {
-  .common_gap {
-    gap: 20px;
-  }
   .custom_content_padding {
     padding-top: 15px !important;
   }
@@ -48,9 +42,6 @@
   .navbar_btn {
     font-size: 24px !important;
   }
-  .common_gap {
-    gap: 40px;
-  }
 }
 @media (min-width: 1300px) and (max-width: 1399.98px) {
   .common_container {
@@ -61,16 +52,13 @@
   .custom_margin_footer {
     margin-top: 30px !important;
   }
-  .common_gap {
-    gap: 55px;
-  }
   .common_container {
     padding-left: 12px;
     padding-right: 12px;
   }
   .business_img_2 {
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     max-height: 500px;
   }
 }
@@ -110,7 +98,7 @@
   }
   .business_img_2 {
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     max-height: 544px;
     max-width: 359px;
     margin-left: 190px;
@@ -156,6 +144,11 @@
   .business-content {
     transform: translateY(20px) !important;
     padding-top: 14px !important;
+  }
+}
+@media (min-width: 1930px) {
+  .tabs_content_parent {
+    margin-top: 300px;
   }
 }
 @media (max-width: 1799.98px) {
@@ -265,7 +258,7 @@
   }
   .custom_business_img_height img {
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .small_icon {
     max-width: 30px !important;
@@ -474,7 +467,7 @@
     max-height: 750px;
     transform: unset;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     margin-top: 50px;
   }
   #main-assets {
@@ -845,9 +838,6 @@
   .custom_content_padding {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-  }
-  .common_gap {
-    gap: 10px;
   }
   .meeting_custom_top_space {
     margin-top: 10px;
@@ -1313,6 +1303,11 @@
     padding-top: 24px !important;
   }
 }
+@media (min-height: 1400px) {
+  .timeline_arrow_img {
+    bottom: -31%;
+  }
+}
 @media (max-height: 1100px) {
   .timeline_arrow_img {
     bottom: 80.5%;
@@ -1375,4 +1370,4 @@
   .timeline_tiguido_icon {
     max-width: 140px;
   }
-}/*# sourceMappingURL=media.css.map */
+} /*# sourceMappingURL=media.css.map */
