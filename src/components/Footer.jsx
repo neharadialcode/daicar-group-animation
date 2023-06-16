@@ -47,6 +47,7 @@ function Footer() {
           className="pt-5 position-relative d-flex align-items-sm-end justify-content-sm-center"
           id="footer"
         >
+          {/* BACKTOTOP ICON */}
           <BackToTop />
           <img
             className="position-absolute footer_background_set d-sm-none"
@@ -59,7 +60,7 @@ function Footer() {
             alt="footerbg"
           />
           <div className="container position-relative z_2 pb-5 pt-lg-5 pt-xl-0">
-            <div className="row justify-content-md-center justify-content-between gap-lg- text-center text-sm-start px-xxl-5">
+            <div className="row justify-content-md-center justify-content-between gap-lg- text-center text-sm-start">
               <div className="col-12 col-sm-4 col-lg-3 d-flex flex-column justify-content-between">
                 <a href="/">
                   <img
@@ -128,10 +129,10 @@ function Footer() {
                 </ul>
               </div>
 
-              <div className="col-12 col-sm-4 col-md-3 mt-sm-0 ps-0 ps-sm-2 d-none d-md-block">
-                <div className="d-flex align-items-center common_gap footer_icons_hover">
+              <div className="col-12 col-sm-4 col-md-3 mt-sm-0 ps-0 ps-sm-2 d-none d-md-block pt-md-3">
+                <div className="d-flex align-items-center footer_icons_hover">
                   <img className="contact_icon" src={smsImg} alt="smsImg" />
-                  <div className="flex-column d-flex d-inline-block">
+                  <div className="flex-column d-flex d-inline-block ms-3 ps-3">
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="mailTo:hello@daicargroup.com"
@@ -141,21 +142,25 @@ function Footer() {
                   </div>
                 </div>
 
-                <div className="d-flex align-items-center common_gap footer_icons_hover custom_margin_footer">
-                  <img className="contact_icon" src={iconImg} alt="iconImg" />
-                  <div className="flex-column d-flex d-inline-block">
+                <div className="d-flex align-items-center footer_icons_hover custom_margin_footer">
+                  <div className="location_icon">
+                    <img className="contact_icon" src={iconImg} alt="iconImg" />
+                  </div>
+                  <div className="flex-column d-flex d-inline-block ms-3 ps-3">
                     <a
                       className="mb-0 font_sm fw-normal list-unstyled text-decoration-none color_light_gray ff_roboto list_item_text mt-sm-1"
                       href="/"
                     >
-                      Via Del Porto Fluviale, 1/C 00154 ROMA
+                      Via Del Porto Fluviale, 1/C{" "}
+                      <br className="d-none d-xl-block" />
+                      00154 ROMA
                     </a>
                   </div>
                 </div>
               </div>
 
               <div className="col-12 col-sm-4 col-md-3 col-lg-2">
-                <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 social_links_parent">
+                <div className="d-flex justify-content-center mb-5 mb-sm-4 mb-md-0 social_links_parent ms-lg-5 ms-xl-0">
                   <a
                     target="blank"
                     rel="noreferrer"
@@ -168,7 +173,7 @@ function Footer() {
                     target="blank"
                     rel="noreferrer"
                     href="https://www.facebook.com/"
-                    className="mx-2 mx-sm-4 footer_social_icon"
+                    className="mx-2 mx-xl-4 footer_social_icon"
                   >
                     <FbIcon />
                   </a>

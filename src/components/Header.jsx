@@ -31,7 +31,7 @@ const Header = () => {
     });
   }, []);
   const mainAssetsBtn = () => {
-    if (window.innerWidth ) {
+    if (window.innerWidth) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
   };
@@ -44,7 +44,7 @@ const Header = () => {
     }
   };
   const daicarBtn = () => {
-    if (window.innerWidth > 2000 ) {
+    if (window.innerWidth > 2000) {
       gsap.to(window, { duration: 1, scrollTo: 17000, ease: "linear" });
     }
     if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
@@ -189,9 +189,14 @@ const Header = () => {
               >
                 Sentiamoci
               </a>
-              <button className="navbar_btn font_2xl color_dark_gray mt-4  custom_tab_button_012">
-                chat
-              </button>
+              <a href="#" onClick={() => setNavShow(false)}>
+                <button
+                  className="navbar_btn font_2xl color_dark_gray mt-4  custom_tab_button_012"
+                  onClick={() => contactBtn()}
+                >
+                  chat
+                </button>
+              </a>
             </ul>
           </div>
         </div>

@@ -368,7 +368,7 @@ const About = () => {
           </div>
           <div className="container position-relative vh-100">
             <div className="d-flex align-items-center flex-column justify-content-between position-relative h-100 top_csutom_space z-10">
-              <p className="font_5xl text-white pt-sm-5 custom_letter_spacing">
+              <p className="font_5xl text-white pt-sm-5 custom_letter_spacing d-flex align-items-center">
                 Ideata da
                 <a href="#timeline">
                   <button className="custom_tab_button_012 cursor-pointer hero_heading_btn bg_light_green mx-2">
@@ -513,7 +513,7 @@ const About = () => {
           </div>
           <div className="container h-100 pb-5 pb-lg-0">
             <div className="text-center pt-5">
-              <p className="font_5xl text-white pt-sm-5 custom_letter_spacing">
+              <p className="font_5xl text-white pt-sm-5 custom_letter_spacing d-flex align-items-center">
                 Ideata da
                 <a href="#timeline">
                   <button className="custom_tab_button_012 cursor-pointer bg_light_green mx-2 hero_heading_btn">
