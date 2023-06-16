@@ -31,12 +31,21 @@ const Header = () => {
     });
   }, []);
   const mainAssetsBtn = () => {
-    if (window.innerWidth) {
+    if (window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
+    }
+    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
+    }
+    if (window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
   };
   const contactBtn = () => {
-    if (window.innerWidth > 1600) {
+    if (window.innerWidth > 2000) {
+      gsap.to(window, { duration: 1, scrollTo: 40000, ease: "linear" });
+    }
+    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 1, scrollTo: 30000, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
@@ -67,7 +76,10 @@ const Header = () => {
     }
   };
   const Servizi = () => {
-    if (window.innerHeight > 1025) {
+    if (window.innerHeight > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 12000, ease: "linear" });
+    }
+    if (window.innerHeight > 1025 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 0.3, scrollTo: 7200, ease: "linear" });
     }
     if (window.innerHeight < 1025) {
