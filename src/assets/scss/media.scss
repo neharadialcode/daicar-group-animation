@@ -772,9 +772,6 @@
   .footer_top_space {
     padding-top: 65px;
   }
-  .topscroll {
-    left: 3%;
-  }
   .timeline_content_4_parent {
     right: -45%;
   }
@@ -788,7 +785,6 @@
     width: 23px;
     height: 23px;
   }
-
   .custom_content_size p,
   .custom_content_size button {
     font-size: 15px !important;
@@ -988,6 +984,14 @@
     display: inline-block !important;
     vertical-align: middle !important;
     padding: 3% 16px 3% !important;
+  }
+  .topscroll {
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .topscroll svg {
+    width: 25px;
   }
   .chat_icon svg {
     width: 40px;
