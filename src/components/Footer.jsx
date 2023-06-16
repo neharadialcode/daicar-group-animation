@@ -28,14 +28,14 @@ function Footer() {
               chat
             </button>
           </div>
-          <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-sm-3 mt-xl-4 mt-2 align-items-center fissa-meeting-content-parent">
+          <div className="d-flex justify-content-center gap-1 gap-sm-3 mt-3 mt-xl-4 align-items-center fissa-meeting-content-parent">
             <img
-              className="meeting_man_img me-2"
+              className="meeting_man_img me-sm-2"
               src={meetingManImg}
               alt="meetingManImg"
             />
             <p className="mb-0 font_md meeting_text_color">
-              Matteo,
+              <span className="ps-1">Matteo,</span>
               <br className="d-sm-none" />
               <span className="fw_thin ff_mundial_thin opacity_09">
                 &nbsp;Business Development Manager
