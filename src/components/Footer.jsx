@@ -12,8 +12,8 @@ function Footer() {
   return (
     <>
       <div className="footer_top_space">
-        <div className="pt-xl-4 pt-xxl-5 mt-xl-5 position-relative z_2 manager_content">
-          <div className="d-flex align-items-center justify-content-center meeting_btn_parent">
+        <div className="pt-xl-4 pt-xxl-5 position-relative z_2 manager_content meeting_fissa_top_space">
+          <div className="d-flex align-items-center justify-content-center meeting_btn_parent meeting_fissa_top_space">
             <a
               className="custom_tab_button_012 cursor-pointer common_button mt-5 mt-sm-0 fissa_bg"
               href="https://calendly.com/"

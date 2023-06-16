@@ -63,6 +63,9 @@
   }
 }
 @media (min-width: 1600px) {
+  .custom_content_padding {
+    padding-top: 120px !important;
+  }
   .common_button {
     padding: 22px 24px 22px !important;
   }
@@ -150,6 +153,13 @@
   .tabs_content_parent {
     margin-top: 300px;
   }
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 32% !important;
+  }
+  .tabs_lottie_width {
+    width: 90%;
+  }
 }
 @media (max-width: 1799.98px) {
   .tab_right_icon {
@@ -181,7 +191,10 @@
     margin-left: -6px;
   }
   .footer_background_set {
-    height: 720px;
+    height: 740px;
+  }
+  .meeting_fissa_top_space {
+    padding-top: 50px;
   }
   .custom_size_timeline_text {
     font-size: 16px;
@@ -200,6 +213,12 @@
   }
 }
 @media (max-width: 1499.98px) {
+  .meeting_fissa_top_space {
+    padding-top: 0px;
+  }
+  .footer_background_set {
+    height: 680px;
+  }
   .meeting_para {
     line-height: 260% !important;
     max-width: 1072px !important;
@@ -748,9 +767,6 @@
   .timeline_tiguido_icon {
     max-width: 145px;
   }
-  .timeline_car_icon {
-    max-width: 175px;
-  }
   .footer_social_icon svg {
     width: 23px;
     height: 23px;
@@ -784,7 +800,7 @@
     width: 20px;
   }
   .text_parent_height {
-    top: 20%;
+    top: 15%;
     height: 80%;
   }
   .i_pad_img_2 {
@@ -1159,7 +1175,7 @@
     transform: translate(-50%, -50%) scale(0.7, 0.7) !important;
   }
   .intro_tab_frame {
-    height: 734px;
+    height: 775px;
   }
   .arrow-hero-one {
     transform: scale(0.7, 0.7) !important;

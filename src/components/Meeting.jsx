@@ -11,7 +11,8 @@ function Meeting() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#contatti",
-          start: "top 10%",
+          start: "top top",
+          scrub:true,
           pin: true,
           fastScrollEnd: true,
         },
@@ -20,69 +21,32 @@ function Meeting() {
         y: -100,
         autoAlpha: 0,
         stagger: 1,
-        ease: "back(3)",
         duration: 0.8,
       })
         .from([".meeting_second_line"], {
           y: -100,
           autoAlpha: 0,
           stagger: 1,
-          ease: "back(3)",
           duration: 0.8,
         })
         .from([".meeting_third_line"], {
           y: -100,
           autoAlpha: 0,
           stagger: 1,
-          ease: "back(3)",
           duration: 0.8,
         })
         .from([".meeting_fourth_line"], {
           y: -100,
           autoAlpha: 0,
           stagger: 1,
-          ease: "back(3)",
           duration: 0.8,
         })
         .from([".meeting_fifth_line"], {
           y: -100,
           autoAlpha: 0,
           stagger: 1,
-          ease: "back(3)",
           duration: 0.8,
         });
-
-      // const tl2 = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: "#contatti",
-      //     start: "top 10%",
-      //     pin: true,
-      //     fastScrollEnd: true,
-      //   },
-      // });
-
-      // tl2
-      //   .from([".meeting_third_line"], {
-      //     x: -100,
-      //     autoAlpha: 0,
-      //     stagger: 1,
-      //     ease: "back(3)",
-      //     duration: 0.8,
-      //   })
-      //   .from([".meeting_fourth_line"], {
-      //     x: -100,
-      //     autoAlpha: 0,
-      //     stagger: 1,
-      //     ease: "back(3)",
-      //     duration: 0.8,
-      //   })
-      //   .from([".meeting_fifth_line"], {
-      //     x: -100,
-      //     autoAlpha: 0,
-      //     stagger: 1,
-      //     ease: "back(3)",
-      //     duration: 0.8,
-      //   });
     });
     mm.add("(max-width: 1199px)", () => {
       const tl = gsap.timeline({
