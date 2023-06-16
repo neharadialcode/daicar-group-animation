@@ -158,6 +158,11 @@
     padding-top: 14px !important;
   }
 }
+@media (min-width: 1930px) {
+  .tabs_content_parent {
+    margin-top: 300px;
+  }
+}
 @media (max-width: 1799.98px) {
   .tab_right_icon {
     right: -21.5%;
@@ -1311,6 +1316,11 @@
   }
   .hero_slide_para_2 {
     padding-top: 24px !important;
+  }
+}
+@media (min-height: 1400px) {
+  .timeline_arrow_img {
+    bottom: -31%;
   }
 }
 @media (max-height: 1100px) {

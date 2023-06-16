@@ -2006,7 +2006,10 @@ const Hero = () => {
   }, []);
 
   const venditeItbtn = () => {
-    if (window.innerWidth > 1600) {
+    if (window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1000, ease: "linear" });
+    }
+    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 0.3, scrollTo: 600, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
@@ -2020,8 +2023,11 @@ const Hero = () => {
     }
   };
   const venditeItbtn2 = () => {
-    if (window.innerWidth > 1600) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1400, ease: "linear" });
+    if (window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1900, ease: "linear" });
+    }
+    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1530, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 975, ease: "linear" });
@@ -2031,8 +2037,11 @@ const Hero = () => {
     }
   };
   const venditeItbtn3 = () => {
-    if (window.innerWidth > 1600) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1600, ease: "linear" });
+    if (window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2400, ease: "linear" });
+    }
+    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1680, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 1300, ease: "linear" });
@@ -2043,7 +2052,10 @@ const Hero = () => {
   };
   const moveToIt = (id) => {
     ////////// 1
-    if (id === 0 && window.innerWidth > 1600) {
+    if (id === 0 && window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2800, ease: "linear" });
+    }
+    if (id === 0 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
     if (id === 0 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
@@ -2063,7 +2075,10 @@ const Hero = () => {
     }
 
     ////////// 2
-    if (id === 1 && window.innerWidth > 1600) {
+      if (id === 1 && window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 4000, ease: "linear" });
+    }
+    if (id === 1 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
     }
     if (id === 1 && window.innerWidth < 1599) {
@@ -2080,7 +2095,10 @@ const Hero = () => {
     }
 
     ////////// 3
-    if (id === 2 && window.innerWidth > 1600) {
+      if (id === 2 && window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 4900, ease: "linear" });
+    }
+    if (id === 2 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 0.3, scrollTo: 3400, ease: "linear" });
     }
     if (id === 2 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
@@ -2100,7 +2118,10 @@ const Hero = () => {
     }
 
     ////////// 4
-    if (id === 3 && window.innerWidth > 1600) {
+    if (id === 3 && window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 6000, ease: "linear" });
+    }
+    if (id === 3 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 0.3, scrollTo: 4300, ease: "linear" });
     }
     if (id === 3 && window.innerWidth > 1600 && window.innerHeight <= 1025) {
@@ -2117,7 +2138,10 @@ const Hero = () => {
     }
 
     ////////// 5
-    if (id === 4 && window.innerWidth > 1600) {
+    if (id === 4 && window.innerWidth > 2000) {
+      gsap.to(window, { duration: 0.3, scrollTo: 6800, ease: "linear" });
+    }
+    if (id === 4 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
       gsap.to(window, { duration: 0.3, scrollTo: 5000, ease: "linear" });
     }
     if (id === 4 && window.innerWidth > 1600 && window.innerHeight <= 1025) {

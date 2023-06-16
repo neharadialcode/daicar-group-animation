@@ -407,7 +407,7 @@ const About = () => {
                         <DownArrowNoiIcon />
                       </div>
                       <div>
-                        <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-4 ps-xl-5">
+                        <h4 className="font_6xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-4 ps-xl-5">
                           Il futuro della lead generation è basato sulla
                           creazione di relazioni di fiducia, sostenute dalla
                           tecnologia.
@@ -419,7 +419,7 @@ const About = () => {
                           src={bigFounder}
                           alt="arrow-founder"
                         />
-                        <p className="font_2xl color_dark_gray ps-3 mb-0">
+                        <p className="font_md color_dark_gray ps-3 mb-0">
                           Federico,
                           <span className="fw_light ff_mundial_light ms-2">
                             Chief Technology Officer
@@ -440,7 +440,7 @@ const About = () => {
                         <DownArrowNoiIcon />
                       </div>
                       <div>
-                        <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-4 ps-xl-5 mb-0">
+                        <h4 className="font_6xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-4 ps-xl-5 mb-0">
                           Obiettivi chiari e definiti perseguiti con un
                           approccio personalizzato verso risultati concreti e
                           misurabili.
@@ -452,7 +452,7 @@ const About = () => {
                           src={bigFounder2}
                           alt="arrow-founder"
                         />
-                        <p className="font_2xl color_dark_gray ps-3 mb-0">
+                        <p className="font_md color_dark_gray ps-3 mb-0">
                           Matteo,
                           <span className="fw_light ff_mundial_light ms-2">
                             Business Developmet Manager
@@ -473,7 +473,7 @@ const About = () => {
                         <DownArrowNoiIcon />
                       </div>
                       <div>
-                        <h4 className="font_8xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-4 ps-xl-5 mb-0">
+                        <h4 className="font_6xl color_dark_gray mt-4 mt-xl-5 pt-xl-5 ps-4 ps-xl-5 mb-0">
                           Qualifichiamo i dati in tempo reale consentendo di
                           incrementare il ROI delle azioni di lead generation.
                         </h4>
@@ -484,7 +484,7 @@ const About = () => {
                           src={bigFounder3}
                           alt="arrow-founder"
                         />
-                        <p className="font_2xl color_dark_gray ps-3 mb-0">
+                        <p className="font_md color_dark_gray ps-3 mb-0">
                           Francesca,
                           <span className="fw_light ff_mundial_light ms-2">
                             Marketing Manager
@@ -545,9 +545,9 @@ const About = () => {
                       alt="arrow-founder"
                     />
                     <p className="font_2xl color_dark_gray ps-sm-3 mb-0">
-                      Marta Daina,
+                      Federico, 
                       <span className="fw-light ff_mundial_ligh ms-2">
-                        Founder
+                        Chief Technology Officer
                       </span>
                     </p>
                   </div>
@@ -605,7 +605,7 @@ const About = () => {
                     <p className="font_2xl color_dark_gray ps-sm-3 mb-0">
                       Francesca,
                       <span className="fw-light ff_mundial_ligh ms-2">
-                        Responsabile Marketing
+                        Marketing Manager
                       </span>
                     </p>
                   </div>
