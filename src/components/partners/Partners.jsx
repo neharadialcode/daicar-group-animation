@@ -169,20 +169,18 @@ const Partners = () => {
       <div className="container">
         <div className="partner_text">
           <div className="my-3 my-lg-4 my-xxl-5">
-            <div
+            <p
+              className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing mx-auto text-center"
               id="partners-content-heading"
-              className="d-flex align-items-center gap-2 justify-content-center text-center"
             >
-              <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing mx-auto">
-                Non cerchiamo clienti ma
-                <a href="#CRM">
-                  <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button custome_size ms-2">
-                    partner
-                  </button>
-                </a>
-                <span className="font_lg ms-1">.</span>
-              </p>
-            </div>
+              Non cerchiamo clienti ma
+              <a href="#CRM">
+                <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button custome_size ms-2">
+                  partner
+                </button>
+              </a>
+              <span className="font_lg ms-1">.</span>
+            </p>
           </div>
           {!isMobileDevice && (
             <>

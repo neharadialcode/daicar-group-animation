@@ -70,20 +70,18 @@ const Crm = () => {
           </div>
         </div>
         <div className="container custom_container crm_text">
-          <div
+          <p
+            className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing mx-auto text-center"
             id="CRM-content-heading"
-            className="d-sm-flex align-items-center gap-2 justify-content-center pt-1 pt-md-5 pb-4 pb-lg-0 text-center text-sm-start"
           >
-            <p className="font_5xl color_dark_gray mb-0 custom_letter_spacing">
-              É possibile integrare i dati con il tuo
-            </p>
+            É possibile integrare i dati con il tuo
             <a href="#contatti">
-              <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button custome_size crm_btn">
+              <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button custome_size ms-2">
                 CRM
               </button>
             </a>
-            <span className="font_lg">.</span>
-          </div>
+            <span className="font_lg ms-1">.</span>
+          </p>
           {!isMobileDevice && (
             <div className="pb-lg-5">
               <div className="pb-lg-5 d-flex justify-content-center justify-content-lg-between align-items-center my-xxl-5 py-5 crm_parent_img">
