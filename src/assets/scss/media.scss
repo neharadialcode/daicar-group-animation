@@ -97,12 +97,13 @@
     max-width: 260px;
   }
 
-  .tabs_lottie {
-    top: 10%;
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    top: 27% !important;
   }
 
-  .tabs_lottie_1 {
-    top: 6%;
+  .tabs_lottie_width {
+    width: 70%;
   }
 
   .meeting_text_color {
