@@ -7,6 +7,7 @@ import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
 import ipadGreen from "../assets/images/png/ipad-green.png";
 import ipadAsset from "../assets/images/svg/ipad-mobile-img.svg";
+import eImg from "../assets/images/svg/è-img.svg";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
@@ -2023,7 +2024,13 @@ const Hero = () => {
                       vendite
                     </button>
                   </a>
-                  è digitale
+                  {/* è */}
+                  <img
+                    className="mx-1 mx-xl-2 mb-2 mb-sm-0 mt-sm-1 e-img-01"
+                    src={eImg}
+                    alt="e-img"
+                  />
+                  digitale
                 </h2>
 
                 <div

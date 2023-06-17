@@ -591,9 +591,16 @@
   .tab_right_icon {
     right: -13% !important;
   }
+  .e-img-01 {
+    height: 20px !important;
+  }
 }
 
 @media (max-width: 991.98px) {
+  .e-img-01 {
+    height: 25px !important;
+  }
+
   .location_icon {
     min-width: 32px;
   }
