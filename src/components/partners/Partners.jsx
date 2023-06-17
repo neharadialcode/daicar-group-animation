@@ -171,17 +171,17 @@ const Partners = () => {
           <div className="my-3 my-lg-4 my-xxl-5">
             <div
               id="partners-content-heading"
-              className="d-flex align-items-center gap-2 justify-content-center "
+              className="d-flex align-items-center gap-2 justify-content-center text-center"
             >
-              <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing">
+              <p className="font_5xl color_dark_gray mb-0 partner_para custom_letter_spacing mx-auto">
                 Non cerchiamo clienti ma
+                <a href="#CRM">
+                  <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button custome_size ms-2">
+                    partner
+                  </button>
+                </a>
+                <span className="font_lg ms-1">.</span>
               </p>
-              <a href="#CRM">
-                <button className="custom_tab_button_012 cursor-pointer font_2xl color_dark_gray common_button d-flex mt-2 mt-xxl-1 custome_size">
-                  partner
-                </button>
-              </a>
-              <span className="font_lg">.</span>
             </div>
           </div>
           {!isMobileDevice && (
