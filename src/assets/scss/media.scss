@@ -192,7 +192,7 @@
 
   .tabs_lottie,
   .tabs_lottie_1 {
-    top: 32% !important;
+    top: 22% !important;
   }
 
   .tabs_lottie_width {
@@ -1312,7 +1312,6 @@
 
 // TABS CSS ==========>
 @media (max-width: 1199.98px) and (min-height: 700px) {
-
   .tabs_lottie,
   .tabs_lottie_1 {
     top: 42% !important;
@@ -1328,7 +1327,6 @@
 }
 
 @media (max-width: 799.98px) and (max-height: 1199.98px) {
-
   .tabs_lottie,
   .tabs_lottie_1 {
     top: 36% !important;
@@ -1545,7 +1543,6 @@
 }
 
 @media (max-width: 767.98px) and (max-height: 399.98px) {
-
   .hero_slide_1 h2,
   .hero_slide_2 h2 {
     font-size: 15px !important;
@@ -1648,6 +1645,23 @@
   .tabs_parent {
     min-height: 100%;
     height: 100%;
+  }
+  .intro_tab_frame {
+    height: 800px;
+  }
+}
+
+@media (min-width: 1930px) and (min-height: 800px) {
+  .intro_tab_frame {
+    height: 660px;
+  }
+  .custom_content_size p,
+  .custom_content_size button {
+    font-size: 27px !important;
+  }
+  .max_width_tabs {
+    max-width: 1320px;
+    width: 1320px;
   }
 }
 

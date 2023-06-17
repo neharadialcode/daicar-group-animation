@@ -109,13 +109,13 @@ const Hero = () => {
       });
       gsap.set(["#hero-ipad", "#hero-ipad-white"], {
         scale: 2,
-        top: "50%",
+        top: "45%",
         left: "50%",
         xPercent: -50,
         yPercent: -50,
       });
       gsap.set("#main-content", {
-        y: "-70px",
+        y: "-130px",
       });
 
       tl = gsap.timeline({
@@ -255,8 +255,8 @@ const Hero = () => {
             display: "block",
           },
           "<"
-      )
-          .fromTo(
+        )
+        .fromTo(
           ".left_text_1",
           {
             autoAlpha: 0,
@@ -730,7 +730,7 @@ const Hero = () => {
             display: "block",
           },
           "<"
-      )
+        )
         .fromTo(
           ".left_text_1",
           {
@@ -1822,7 +1822,7 @@ const Hero = () => {
     if (window.innerWidth < 992) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
-    if (window.innerWidth < 769 && window.innerHeight <=1025) {
+    if (window.innerWidth < 769 && window.innerHeight <= 1025) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
   };
@@ -1851,7 +1851,7 @@ const Hero = () => {
     }
 
     ////////// 2
-      if (id === 1 && window.innerWidth > 2000) {
+    if (id === 1 && window.innerWidth > 2000) {
       gsap.to(window, { duration: 0.3, scrollTo: 4000, ease: "linear" });
     }
     if (id === 1 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
@@ -1874,7 +1874,7 @@ const Hero = () => {
     }
 
     ////////// 3
-      if (id === 2 && window.innerWidth > 2000) {
+    if (id === 2 && window.innerWidth > 2000) {
       gsap.to(window, { duration: 0.3, scrollTo: 4900, ease: "linear" });
     }
     if (id === 2 && window.innerWidth > 1600 && window.innerHeight <= 1090) {
