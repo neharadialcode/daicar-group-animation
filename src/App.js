@@ -18,7 +18,7 @@ function App() {
     setTimeout(() => {
       setLoading(false);
       document.body.classList.remove("not-scroll-before-loading");
-    }, 2000);
+    }, 3100);
   }, []);
 
   useEffect(() => {
