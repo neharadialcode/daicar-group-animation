@@ -38,6 +38,12 @@ const Header = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1700, ease: "linear" });
+    }
+    if (window.innerWidth < 1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 1000, ease: "linear" });
+    }
+    if (window.innerWidth < 992) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
   };
