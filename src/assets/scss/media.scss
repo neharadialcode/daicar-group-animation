@@ -804,26 +804,18 @@
   .crm_parent_img .crm_img_size {
     transform: scale(1);
   }
-
   .crm_parent_img .crm_img_size img {
     max-width: 210px;
     min-width: 210px;
     padding: 0 16px;
     height: 146px;
   }
-
   .show_chat_icon {
     right: 10px;
   }
-
-  .topscroll {
-    left: 10px;
-  }
-
   .header_section {
     left: 0 !important;
   }
-
   .intro_tab_frame {
     height: 1170px;
   }
@@ -1234,15 +1226,9 @@
   }
 
   .topscroll {
-    left: 10px;
-    width: 40px;
-    height: 40px;
+    bottom: 12px;
+    left: 12px;
   }
-
-  .topscroll svg {
-    width: 25px;
-  }
-
   .show_chat_icon {
     right: 3px;
   }
