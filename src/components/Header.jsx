@@ -60,16 +60,19 @@ const Header = () => {
   };
   const daicarBtn = () => {
     if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 1, scrollTo: 17000, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 15000, ease: "linear" });
     }
     if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 1, scrollTo: 12400, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 12000, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 1, scrollTo: 10800, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 9000, ease: "linear" });
+    }
+    if (window.innerWidth < 1300) {
+      gsap.to(window, { duration: 1, scrollTo: 9700, ease: "linear" });
     }
     if (window.innerWidth < 1025) {
-      gsap.to(window, { duration: 1, scrollTo: 8200, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 7000, ease: "linear" });
     }
     if (window.innerWidth < 992) {
       gsap.to(window, { duration: 1, scrollTo: 8600, ease: "linear" });
