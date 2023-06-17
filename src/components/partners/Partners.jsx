@@ -139,7 +139,7 @@ const Partners = () => {
           stagger: 0.07,
         });
     });
-    mm.add("(max-width: 991.98px)", () => {
+    mm.add("(min-width: 576px)", () => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#partners",
@@ -158,7 +158,7 @@ const Partners = () => {
   return (
     <div
       id="partners"
-      className="d-flex justify-content-center align-items-center overflow-hidden min-vh-100"
+      className="d-flex justify-content-center align-items-center overflow-hidden partners_custom_height pt-5 pt-sm-0 mt-5"
     >
       <div className="position-absolute end-0 text_left_rotate d-none d-xl-flex align-items-center left_text_partner pt-4 pe-xl-5">
         <p className="color_light_green font_sm mb-0">Chi ci ha scelto</p>

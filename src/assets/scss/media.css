@@ -2,6 +2,9 @@
   .custom_margin_footer {
     margin-top: 24px !important;
   }
+  .partners_custom_height {
+    min-height: 100vh;
+  }
   .custom_content_padding {
     padding-top: 80px !important;
   }
@@ -645,9 +648,6 @@
   .show_chat_icon {
     right: 10px;
   }
-  .topscroll {
-    left: 10px;
-  }
   .header_section {
     left: 0 !important;
   }
@@ -971,12 +971,8 @@
     padding: 3% 16px 3% !important;
   }
   .topscroll {
-    left: 10px;
-    width: 40px;
-    height: 40px;
-  }
-  .topscroll svg {
-    width: 25px;
+    bottom: 12px;
+    left: 12px;
   }
   .show_chat_icon {
     right: 3px;
