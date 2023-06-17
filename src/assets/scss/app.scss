@@ -326,7 +326,9 @@
   align-items: center;
   justify-content: center;
   opacity: 100%;
-  z-index: 12 !important;
+  // z-index: 12 !important;
+
+  z-index: 2147483001;
 }
 
 .fix-navbar {
@@ -572,3 +574,6 @@
 .location_icon {
   min-width: 39px;
 }
+// .gXodtf.LandbotLivechat {
+//   z-index: 12 !important;
+// }

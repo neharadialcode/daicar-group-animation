@@ -1939,7 +1939,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="position-relative z-10">
+      <div className="position-relative z-[2147483001]">
         <Header />
         <div id="hero" className="color_dark_gray z-10 overflow-hidden vh-100">
           <div className="container vh-100 z-0 position-relative hero_custom_container">
