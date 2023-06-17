@@ -6,6 +6,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
 import ipadGreen from "../assets/images/png/ipad-green.png";
+import ipadAsset from "../assets/images/svg/ipad-mobile-img.svg";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
@@ -1562,32 +1563,32 @@ const Hero = () => {
         .set(
           "#hero-ipad-white",
           {
-            scale: 0.7,
-            top: "25%",
+            scale: 0.8,
+            // top: "25%",
           },
           ">"
         )
         .to(
           ["#hero-ipad", ".hero_slide_2"],
           {
-            scale: 0.7,
+            scale: 0.8,
           },
           ">"
         )
-        .to(
-          "#hero-ipad",
-          {
-            top: "25%",
-          },
-          "<"
-        )
-        .to(
-          ".hero_slide_2",
-          {
-            top: "15%",
-          },
-          "<"
-        )
+        // .to(
+        //   "#hero-ipad",
+        //   {
+        //     top: "25%",
+        //   },
+        //   "<"
+        // )
+        // .to(
+        //   ".hero_slide_2",
+        //   {
+        //     top: "15%",
+        //   },
+        //   "<"
+        // )
         .to(
           "#hero-ipad",
           {
@@ -2107,7 +2108,7 @@ const Hero = () => {
                 </div>
                 {/* ===== BREADCRUMBS ENDS ===== */}
 
-                <div className="max_width_tabs position-relative">
+                <div className="max_width_tabs position-relative d-none d-sm-block">
                   <div className="text-center pb-sm-5 tabs_parent h-100 d-flex flex-column">
                     <div className="intro_tab_frame my-4"></div>
                     <div className="d-flex">
@@ -2171,8 +2172,14 @@ const Hero = () => {
             <img
               id="hero-ipad-white"
               alt="hero-ipad-white"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0 d-none d-sm-block"
               src={ipadGreen}
+            />
+            <img
+              id="hero-ipad-white"
+              alt="hero-ipad-white"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0 d-sm-none"
+              src={ipadAsset}
             />
           </div>
           <div
