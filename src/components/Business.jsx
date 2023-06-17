@@ -61,7 +61,7 @@ const Business = () => {
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
-          end: "+=400%",
+          end: "+=300%",
           scrub: 3,
           pin: true,
           fastScrollEnd: true,
@@ -324,7 +324,7 @@ const Business = () => {
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
-          end: "+=600%",
+          end: "+=400%",
           scrub: 1,
           pin: true,
           fastScrollEnd: true,
@@ -581,7 +581,7 @@ const Business = () => {
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
-          end: "+=600%",
+          end: "+=400%",
           scrub: 1,
           pin: true,
           fastScrollEnd: true,
@@ -838,7 +838,7 @@ const Business = () => {
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top top",
-          end: "+=600%",
+          end: "+=400%",
           scrub: 1,
           pin: true,
           fastScrollEnd: true,

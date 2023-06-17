@@ -78,6 +78,18 @@ function Meeting() {
      if (window.innerWidth <1300) {
       gsap.to(window, { duration: 0.3, scrollTo: 20800, ease: "linear" });
     }
+     if (window.innerWidth <1100) {
+      gsap.to(window, { duration: 0.3, scrollTo: 15750, ease: "linear" });
+    }
+     if (window.innerWidth <992) {
+      gsap.to(window, { duration: 0.3, scrollTo: 22720, ease: "linear" });
+    }
+     if (window.innerWidth <769) {
+      gsap.to(window, { duration: 0.3, scrollTo: 20400, ease: "linear" });
+    }
+     if (window.innerWidth <576) {
+      gsap.to(window, { duration: 0.3, scrollTo: 15400, ease: "linear" });
+    }
   };
   const meetingBtnLine2 = () => {
     if (window.innerWidth >2000) {
@@ -91,6 +103,18 @@ function Meeting() {
     }
     if (window.innerWidth <1300) {
       gsap.to(window, { duration: 1, scrollTo: 21000, ease: "linear" });
+    }
+    if (window.innerWidth <1100) {
+      gsap.to(window, { duration: 1, scrollTo: 15950, ease: "linear" });
+    }
+    if (window.innerWidth <992) {
+      gsap.to(window, { duration: 1, scrollTo: 22920, ease: "linear" });
+    }
+    if (window.innerWidth <769) {
+      gsap.to(window, { duration: 1, scrollTo: 20600, ease: "linear" });
+    }
+    if (window.innerWidth <576) {
+      gsap.to(window, { duration: 1, scrollTo: 15700, ease: "linear" });
     }
   };
   const meetingBtnLine3 = () => {
@@ -106,6 +130,18 @@ function Meeting() {
     if (window.innerWidth <1300) {
       gsap.to(window, { duration: 1, scrollTo: 21200, ease: "linear" });
     }
+    if (window.innerWidth <1100) {
+      gsap.to(window, { duration: 1, scrollTo: 16100, ease: "linear" });
+    }
+    if (window.innerWidth <992) {
+      gsap.to(window, { duration: 1, scrollTo: 23100, ease: "linear" });
+    }
+    if (window.innerWidth <769) {
+      gsap.to(window, { duration: 1, scrollTo: 20800, ease: "linear" });
+    }
+    if (window.innerWidth <576) {
+      gsap.to(window, { duration: 1, scrollTo: 16000, ease: "linear" });
+    }
   };
   const meetingBtnLine4 = () => {
     if (window.innerWidth >2000) {
@@ -120,6 +156,18 @@ function Meeting() {
     if (window.innerWidth <1300) {
       gsap.to(window, { duration: 1, scrollTo: 21400, ease: "linear" });
     }
+    if (window.innerWidth <1100) {
+      gsap.to(window, { duration: 1, scrollTo: 16300, ease: "linear" });
+    }
+    if (window.innerWidth <992) {
+      gsap.to(window, { duration: 1, scrollTo: 23300, ease: "linear" });
+    }
+    if (window.innerWidth <769) {
+      gsap.to(window, { duration: 1, scrollTo: 21000, ease: "linear" });
+    }
+    if (window.innerWidth <576) {
+      gsap.to(window, { duration: 1, scrollTo: 16400, ease: "linear" });
+    }
   };
   const meetingBtnLine5 = () => {
     if (window.innerWidth >2000) {
@@ -133,6 +181,18 @@ function Meeting() {
     }
     if (window.innerWidth <1300) {
       gsap.to(window, { duration: 1, scrollTo: 21600, ease: "linear" });
+    }
+    if (window.innerWidth <1100) {
+      gsap.to(window, { duration: 1, scrollTo: 16500, ease: "linear" });
+    }
+    if (window.innerWidth <992) {
+      gsap.to(window, { duration: 1, scrollTo: 23500, ease: "linear" });
+    }
+    if (window.innerWidth <769) {
+      gsap.to(window, { duration: 1, scrollTo: 21200, ease: "linear" });
+    }
+    if (window.innerWidth <576) {
+      gsap.to(window, { duration: 1, scrollTo: 16800, ease: "linear" });
     }
   };
   return (
