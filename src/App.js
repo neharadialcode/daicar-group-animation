@@ -10,6 +10,7 @@ import Meeting from "./components/Meeting";
 import largeArrow from "./assets/images/svg/largeArrow.svg";
 import PreLoader from "./components/PreLoader";
 import { useEffect, useState } from "react";
+import Dummy from "./components/Dummy";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -39,6 +40,7 @@ function App() {
     <>
       {<PreLoader loading={loading} />}
       <Hero />
+      <Dummy/>
       <Business />
       <AboutUs />
       <Timeline />
