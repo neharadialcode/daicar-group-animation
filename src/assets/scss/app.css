@@ -71,7 +71,7 @@
 
 .topscroll {
   position: absolute;
-  left: 95px;
+  left: 20px;
   bottom: 35px;
   background: var(--color-light-green);
   height: 53px;
@@ -542,4 +542,9 @@
 
 .location_icon {
   min-width: 39px;
+}
+
+.hero_lottie_icon {
+  top: 65%;
+  right: 34%;
 }/*# sourceMappingURL=app.css.map */

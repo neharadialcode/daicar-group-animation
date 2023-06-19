@@ -6,7 +6,7 @@ import Timeline from "./components/Timeline";
 import Partners from "./components/partners/Partners";
 import Crm from "./components/Crm";
 import Meeting from "./components/Meeting";
-import ScrollChatIcon from "./components/ScrollChatIcon";
+// import ScrollChatIcon from "./components/ScrollChatIcon";
 import largeArrow from "./assets/images/svg/largeArrow.svg";
 import PreLoader from "./components/PreLoader";
 import { useEffect, useState } from "react";

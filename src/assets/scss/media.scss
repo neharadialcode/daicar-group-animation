@@ -81,6 +81,9 @@
 }
 
 @media (min-width: 1600px) {
+  .hero_lottie_icon {
+    top: 80%;
+  }
   .custom_content_padding {
     padding-top: 120px !important;
   }
@@ -318,6 +321,9 @@
 }
 
 @media (max-width: 1399.98px) {
+  .hero_lottie_icon {
+    right: 32%;
+  }
   .footer_top_space {
     padding-top: 190px;
   }
@@ -415,6 +421,10 @@
 }
 
 @media (max-width: 1199.98px) {
+  .hero_lottie_icon {
+    right: 28%;
+    top: 55%;
+  }
   .footer_top_space {
     padding-top: 0px;
   }
@@ -601,6 +611,10 @@
 }
 
 @media (max-width: 991.98px) {
+  .hero_lottie_icon {
+    right: 20%;
+    top: 73%;
+  }
   .e-img-01 {
     height: 25px !important;
   }
@@ -962,6 +976,10 @@
 }
 
 @media (max-width: 575.98px) {
+  .hero_lottie_icon {
+    right: 0%;
+    top: 68%;
+  }
   .partner_para {
     font-size: 28px !important;
     max-width: 289px;
@@ -1320,7 +1338,6 @@
 
 // TABS CSS ==========>
 @media (max-width: 1199.98px) and (min-height: 700px) {
-
   .tabs_lottie,
   .tabs_lottie_1 {
     top: 42% !important;
@@ -1336,7 +1353,6 @@
 }
 
 @media (max-width: 799.98px) and (max-height: 1199.98px) {
-
   .tabs_lottie,
   .tabs_lottie_1 {
     top: 36% !important;
@@ -1553,7 +1569,6 @@
 }
 
 @media (max-width: 767.98px) and (max-height: 399.98px) {
-
   .hero_slide_1 h2,
   .hero_slide_2 h2 {
     font-size: 15px !important;

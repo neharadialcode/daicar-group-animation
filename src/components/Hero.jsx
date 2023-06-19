@@ -17,6 +17,7 @@ import techDrivenLottie from "../assets/lotties/tabs-3.json";
 import realTimeLottie from "../assets/lotties/tabs-4.json";
 import crmLottie from "../assets/lotties/tabs-5.json";
 import VisibilitySensor from "react-visibility-sensor";
+import LottieHero from "./LottieHero";
 
 const Hero = () => {
   let tl;
@@ -2032,6 +2033,7 @@ const Hero = () => {
                   />
                   digitale
                 </h2>
+                <LottieHero />
 
                 <div
                   id="hero-sub-heading"
