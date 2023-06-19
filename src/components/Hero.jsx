@@ -2005,12 +2005,9 @@ const Hero = () => {
           }, 500);
         }
       }
-
       previousScrollPos = currentScrollPos;
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -2091,15 +2088,11 @@ const Hero = () => {
                     }}
                     delayedCallon
                   >
-                    <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green">
-                      {/* 200 */}
+                    <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
                       {count}
                       .000
                     </h3>
                   </VisibilitySensor>
-                  {/* <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green">
-                    10.000
-                  </h3> */}
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Lead
                     <span className="fw-bold mx-2">Qualificati</span>
@@ -2113,7 +2106,6 @@ const Hero = () => {
                   </p>
                 </div>
                 {/* ============================================================================== */}
-                {/* ============================================================================== */}
                 <div
                   className="hero_slide_2 pt-xl-5 pt-xxl-0"
                   id="hero-sub-heading-two"
@@ -2124,17 +2116,13 @@ const Hero = () => {
                       className="text-decoration-none mt-sm-2 mt-xxl-3"
                       href="#intro-content"
                     >
-                      <button
-                        className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3"
-                        // onClick={() => venditeItbtn3()}
-                      >
+                      <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                         vendite
                       </button>
                     </a>
                     è digitale
                   </h2>
-                  {/* opacity-0 */}
-                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity-0">
+                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity0 ff_poppins">
                     10.000
                   </h3>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">

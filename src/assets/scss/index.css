@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 /* ====================font-family==================== */
 @font-face {
   font-family: mundial-light;
@@ -15,6 +16,10 @@
 
 .ff_mundial_thin {
   font-family: mundial-thin;
+}
+
+.ff_poppins {
+  font-family: "Poppins", sans-serif;
 }
 
 .fw_thin {

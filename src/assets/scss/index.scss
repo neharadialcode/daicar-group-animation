@@ -1,15 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 /* ====================font-family==================== */
-// @font-face {
-//   font-family: "Mundial";
-//   src: url("../fonts/mundial-light-tty.otf");
-//   font-weight: 300;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
 @font-face {
   font-family: mundial-light;
   src: url("../fonts/mundial-light-tty.otf");
@@ -24,6 +16,10 @@
 }
 .ff_mundial_thin {
   font-family: mundial-thin;
+}
+
+.ff_poppins {
+  font-family: "Poppins", sans-serif;
 }
 
 .fw_thin {
@@ -72,6 +68,7 @@ body {
 .ff_roboto {
   font-family: "Roboto", sans-serif;
 }
+
 :root {
   --font-xsm: 14px;
   --font-sm: 16px;
