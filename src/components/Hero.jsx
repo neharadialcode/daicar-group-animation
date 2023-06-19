@@ -246,6 +246,13 @@ const Hero = () => {
           ">"
         )
         .to(
+          ".hero_slide_1",
+          {
+            scale: 0.8,
+          },
+          "<"
+        )
+        .to(
           ".arrow-hero-two",
           {
             xPercent: 58,
@@ -596,8 +603,12 @@ const Hero = () => {
 
       gsap.set(
         [
-          "#hero-sub-heading-one",
-          "#hero-sub-heading-two",
+          "#hero-sub-heading-one h2",
+          "#hero-sub-heading-one h3",
+          "#hero-sub-heading-one p",
+          "#hero-sub-heading-two h2",
+          "#hero-sub-heading-two h3",
+          "#hero-sub-heading-two p",
           "#hero-para-one",
           "#hero-para-two",
         ],
@@ -669,9 +680,17 @@ const Hero = () => {
           },
           "<"
         )
-        .to(["#hero-sub-heading-one", "#hero-para-one"], {
-          autoAlpha: 1,
-        })
+        .to(
+          [
+            "#hero-sub-heading-one h2",
+            "#hero-sub-heading-one h3",
+            "#hero-sub-heading-one p",
+            "#hero-para-one",
+          ],
+          {
+            autoAlpha: 1,
+          }
+        )
         .to("#hero-ipad", {
           scale: 1,
         })
@@ -687,14 +706,24 @@ const Hero = () => {
           duration: 5,
         })
         .to(
-          ["#hero-sub-heading-one", "#hero-para-one"],
+          [
+            "#hero-sub-heading-one h2",
+            // "#hero-sub-heading-one h3",
+            "#hero-sub-heading-one p",
+            "#hero-para-one",
+          ],
           {
             autoAlpha: 0,
           },
           "<1"
         )
         .to(
-          ["#hero-sub-heading-two", "#hero-para-two"],
+          [
+            "#hero-sub-heading-two h2",
+            "#hero-sub-heading-two h3",
+            "#hero-sub-heading-two p",
+            "#hero-para-two",
+          ],
           {
             autoAlpha: 1,
           },
@@ -725,8 +754,14 @@ const Hero = () => {
         .to(
           ".hero_slide_2",
           {
-            scale: 0.4,
-            top: "30%",
+            scale: 0.8,
+          },
+          "<"
+        )
+        .to(
+          ".hero_slide_1",
+          {
+            scale: 0.8,
           },
           "<"
         )
@@ -1086,8 +1121,12 @@ const Hero = () => {
 
       gsap.set(
         [
-          "#hero-sub-heading-one",
-          "#hero-sub-heading-two",
+          "#hero-sub-heading-one h2",
+          "#hero-sub-heading-one h3",
+          "#hero-sub-heading-one p",
+          "#hero-sub-heading-two h2",
+          "#hero-sub-heading-two h3",
+          "#hero-sub-heading-two p",
           "#hero-para-one",
           "#hero-para-two",
         ],
@@ -1154,9 +1193,17 @@ const Hero = () => {
           },
           "<"
         )
-        .to(["#hero-sub-heading-one", "#hero-para-one"], {
-          autoAlpha: 1,
-        })
+        .to(
+          [
+            "#hero-sub-heading-one h2",
+            "#hero-sub-heading-one h3",
+            "#hero-sub-heading-one p",
+            "#hero-para-one",
+          ],
+          {
+            autoAlpha: 1,
+          }
+        )
         .to("#hero-ipad", {
           scale: 1,
         })
@@ -1172,7 +1219,11 @@ const Hero = () => {
           duration: 5,
         })
         .to(
-          ["#hero-sub-heading-one", "#hero-para-one"],
+          [
+            "#hero-sub-heading-one h2",
+            "#hero-sub-heading-one p",
+            "#hero-para-one",
+          ],
           {
             autoAlpha: 0,
           },
@@ -2036,7 +2087,7 @@ const Hero = () => {
             >
               <h2
                 id="hero-main-heading"
-                className="color_white_off font_6xl fw-normal mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5"
+                className="color_white_off font_6xl fw-normal mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5 z_1"
               >
                 Il futuro delle tue
                 <a
@@ -2068,7 +2119,7 @@ const Hero = () => {
                   className="hero_slide_1 pt-xl-5 pt-xxl-0"
                   id="hero-sub-heading-one"
                 >
-                  <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center">
+                  <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center z_1 position-relative">
                     Il futuro delle tue
                     <a
                       className="text-decoration-none mt-sm-2 mt-xxl-3"
@@ -2112,7 +2163,7 @@ const Hero = () => {
                   className="hero_slide_2 pt-xl-5 pt-xxl-0"
                   id="hero-sub-heading-two"
                 >
-                  <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center hero_text_2">
+                  <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center hero_text_2 z_1 position-relative">
                     Il futuro delle tue
                     <a
                       className="text-decoration-none mt-sm-2 mt-xxl-3"
@@ -2124,7 +2175,7 @@ const Hero = () => {
                     </a>
                     è digitale
                   </h2>
-                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity0 ff_poppins">
+                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity-0 ff_poppins">
                     10.000
                   </h3>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">

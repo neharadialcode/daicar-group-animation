@@ -547,4 +547,8 @@
 .hero_lottie_icon {
   top: 65%;
   right: 34%;
+}
+
+.custom_height_counter_text {
+  min-height: 135px;
 }/*# sourceMappingURL=app.css.map */
