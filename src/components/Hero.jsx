@@ -17,6 +17,7 @@ import techDrivenLottie from "../assets/lotties/tabs-3.json";
 import realTimeLottie from "../assets/lotties/tabs-4.json";
 import crmLottie from "../assets/lotties/tabs-5.json";
 import VisibilitySensor from "react-visibility-sensor";
+import LottieHero from "./LottieHero";
 
 const Hero = () => {
   let tl;
@@ -2049,7 +2050,6 @@ const Hero = () => {
                     vendite
                   </button>
                 </a>
-                {/* è */}
                 <img
                   className="mx-1 mx-xl-2 mb-2 mb-sm-0 mt-sm-1 e-img-01"
                   src={eImg}
@@ -2057,7 +2057,9 @@ const Hero = () => {
                 />
                 digitale
               </h2>
-
+              <div className="cursor-pointer">
+                <LottieHero />
+              </div>
               <div
                 id="hero-sub-heading"
                 className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white"
