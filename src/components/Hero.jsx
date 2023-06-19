@@ -219,7 +219,6 @@ const Hero = () => {
           ],
           {
             autoAlpha: 1,
-            // backgroundColor: "red",
           },
           "<"
         )
@@ -1230,7 +1229,12 @@ const Hero = () => {
           "<1"
         )
         .to(
-          ["#hero-sub-heading-two", "#hero-para-two"],
+          [
+            "#hero-sub-heading-two h2",
+            "#hero-sub-heading-two h3",
+            "#hero-sub-heading-two p",
+            "#hero-para-two",
+          ],
           {
             autoAlpha: 1,
           },
