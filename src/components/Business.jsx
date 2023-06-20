@@ -1173,7 +1173,7 @@ const Business = () => {
   return (
     <>
       <div
-        className="business_parent z_1 pb-5 pb-sm-0 pt-5 min-vh-100"
+        className="business_parent z_1 pb-5 pb-sm-0 pt-5 pt-sm-0 min-vh-100"
         id="servizi"
       >
         <div className="d-flex flex-column justify-content-center">
