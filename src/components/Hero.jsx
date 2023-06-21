@@ -1226,6 +1226,7 @@ const Hero = () => {
           ],
           {
             autoAlpha: 0,
+            // backgroundColor: "red",
           },
           "<1"
         )
@@ -1258,7 +1259,7 @@ const Hero = () => {
           ">"
         )
         .to(
-          ["#hero-ipad", ".hero_slide_2"],
+          ["#hero-ipad", ".hero_slide_1", ".hero_slide_2"],
           {
             scale: 0.8,
           },
@@ -1272,7 +1273,8 @@ const Hero = () => {
           "<"
         )
         .to(
-          ".hero_slide_2",
+          [".hero_slide_2", ".hero_slide_1"],
+          // ".hero_slide_2",
           {
             top: "20%",
           },
