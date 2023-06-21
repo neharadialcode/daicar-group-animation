@@ -1537,7 +1537,12 @@ const Hero = () => {
 
       gsap.set(
         [
-          "#hero-sub-heading-one",
+          // "#hero-sub-heading-one",
+
+          "#hero-sub-heading-one h2",
+          "#hero-sub-heading-one h3",
+          "#hero-sub-heading-one p",
+
           "#hero-sub-heading-two",
           "#hero-para-one",
           "#hero-para-two",
@@ -1605,9 +1610,20 @@ const Hero = () => {
           },
           "<"
         )
-        .to(["#hero-sub-heading-one", "#hero-para-one"], {
-          autoAlpha: 1,
-        })
+        .to(
+          [
+            // "#hero-sub-heading-one",
+
+            "#hero-sub-heading-one h2",
+            "#hero-sub-heading-one h3",
+            "#hero-sub-heading-one p",
+
+            "#hero-para-one",
+          ],
+          {
+            autoAlpha: 1,
+          }
+        )
         .to("#hero-ipad", {
           scale: 1,
         })
@@ -1623,7 +1639,15 @@ const Hero = () => {
           duration: 5,
         })
         .to(
-          ["#hero-sub-heading-one", "#hero-para-one"],
+          [
+            // "#hero-sub-heading-one",
+
+            "#hero-sub-heading-one h2",
+            // "#hero-sub-heading-one h3",
+            "#hero-sub-heading-one p",
+
+            "#hero-para-one",
+          ],
           {
             autoAlpha: 0,
           },
@@ -1653,7 +1677,12 @@ const Hero = () => {
           ">"
         )
         .to(
-          ["#hero-ipad", ".hero_slide_2"],
+          [
+            "#hero-ipad",
+            "#hero-sub-heading-one",
+            "#hero-sub-heading-one h3",
+            ".hero_slide_2",
+          ],
           {
             scale: 0.8,
           },
