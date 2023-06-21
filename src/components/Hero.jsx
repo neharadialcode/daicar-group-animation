@@ -175,6 +175,7 @@ const Hero = () => {
         )
         .to(
           [
+            "#hero-sub-heading-one",
             "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
@@ -182,6 +183,7 @@ const Hero = () => {
           ],
           {
             autoAlpha: 1,
+            zIndex: 10,
           }
         )
         .to("#hero-ipad", {
@@ -201,7 +203,6 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one h2",
-            // "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -212,6 +213,7 @@ const Hero = () => {
         )
         .to(
           [
+            "#hero-sub-heading-two",
             "#hero-sub-heading-two h2",
             "#hero-sub-heading-two h3",
             "#hero-sub-heading-two p",
@@ -219,6 +221,7 @@ const Hero = () => {
           ],
           {
             autoAlpha: 1,
+            zIndex: 10,
           },
           "<"
         )
@@ -682,6 +685,7 @@ const Hero = () => {
         )
         .to(
           [
+            "#hero-sub-heading-one",
             "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
@@ -689,6 +693,7 @@ const Hero = () => {
           ],
           {
             autoAlpha: 1,
+            zIndex: 10,
           }
         )
         .to("#hero-ipad", {
@@ -708,7 +713,6 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one h2",
-            // "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -719,6 +723,7 @@ const Hero = () => {
         )
         .to(
           [
+            "#hero-sub-heading-two",
             "#hero-sub-heading-two h2",
             "#hero-sub-heading-two h3",
             "#hero-sub-heading-two p",
@@ -726,6 +731,7 @@ const Hero = () => {
           ],
           {
             autoAlpha: 1,
+            zIndex: 10,
           },
           "<"
         )
@@ -1195,6 +1201,7 @@ const Hero = () => {
         )
         .to(
           [
+            "#hero-sub-heading-one",
             "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
@@ -1202,6 +1209,7 @@ const Hero = () => {
           ],
           {
             autoAlpha: 1,
+            zIndex: 10,
           }
         )
         .to("#hero-ipad", {
@@ -1226,12 +1234,12 @@ const Hero = () => {
           ],
           {
             autoAlpha: 0,
-            // backgroundColor: "red",
           },
           "<1"
         )
         .to(
           [
+            "#hero-sub-heading-two",
             "#hero-sub-heading-two h2",
             "#hero-sub-heading-two h3",
             "#hero-sub-heading-two p",
@@ -1239,6 +1247,7 @@ const Hero = () => {
           ],
           {
             autoAlpha: 1,
+            zIndex: 10,
           },
           "<"
         )
@@ -1537,12 +1546,9 @@ const Hero = () => {
 
       gsap.set(
         [
-          // "#hero-sub-heading-one",
-
           "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
-
           "#hero-sub-heading-two",
           "#hero-para-one",
           "#hero-para-two",
@@ -1612,12 +1618,9 @@ const Hero = () => {
         )
         .to(
           [
-            // "#hero-sub-heading-one",
-
             "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
-
             "#hero-para-one",
           ],
           {
@@ -1640,12 +1643,8 @@ const Hero = () => {
         })
         .to(
           [
-            // "#hero-sub-heading-one",
-
             "#hero-sub-heading-one h2",
-            // "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
-
             "#hero-para-one",
           ],
           {
