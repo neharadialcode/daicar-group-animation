@@ -282,6 +282,17 @@ const Hero = () => {
           },
           "<"
         )
+
+        //////////
+        .addLabel("button_0")
+        .to(
+          ".active_button_0",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "<"
+        )
         .set(
           "#intro-content",
           {
@@ -296,16 +307,6 @@ const Hero = () => {
           },
           {
             autoAlpha: 1,
-          },
-          "<"
-        )
-        //////////
-        .addLabel("button_0")
-        .to(
-          ".active_button_0",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
           },
           "<"
         )
@@ -785,6 +786,16 @@ const Hero = () => {
           },
           "<"
         )
+        //////////
+        .addLabel("button_0")
+        .to(
+          ".active_button_0",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "<"
+        )
         .set(
           "#intro-content",
           {
@@ -799,16 +810,6 @@ const Hero = () => {
           },
           {
             autoAlpha: 1,
-          },
-          "<"
-        )
-        //////////
-        .addLabel("button_0")
-        .to(
-          ".active_button_0",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
           },
           "<"
         )
@@ -1298,13 +1299,6 @@ const Hero = () => {
           },
           "<"
         )
-        .set(
-          "#intro-content",
-          {
-            display: "block",
-          },
-          "<"
-        )
         //////////
         .addLabel("button_0")
         .to(
@@ -1312,6 +1306,13 @@ const Hero = () => {
           {
             background: "rgba(83, 132, 153, 0.5)",
             rotate: "-3deg",
+          },
+          "<"
+        )
+        .set(
+          "#intro-content",
+          {
+            display: "block",
           },
           "<"
         )
@@ -1699,175 +1700,175 @@ const Hero = () => {
           "<"
         )
         //////////
-        .addLabel("button_0")
-        .to(
-          ".active_button_0",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .to("#hero-large-arrow", {
-          top: "73%",
-        })
-        .fromTo(
-          ".card_img_0",
-          {
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
-        .fromTo(
-          ".card_img_0",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          }
-        )
-        .fromTo(
-          ".card_img_1",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
-        .to(".active_button_0", {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        })
-        //////////
-        .addLabel("button_1")
-        .to(
-          ".active_button_1",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .to("#hero-large-arrow", {
-          top: "70%",
-        })
-        .fromTo(
-          ".card_img_1",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          }
-        )
-        .fromTo(
-          ".card_img_2",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
-        .to(".active_button_1", {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        })
-        //////////
-        .addLabel("button_2")
-        .to(
-          ".active_button_2",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .to("#hero-large-arrow", {
-          top: "68%",
-        })
-        .fromTo(
-          ".card_img_2",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          }
-        )
-        .fromTo(
-          ".card_img_3",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
-        .to(".active_button_2", {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        })
-        //////////
-        .addLabel("button_3")
-        .to(".active_button_3", {
-          background: "rgba(83, 132, 153, 0.5)",
-          rotate: "-3deg",
-        })
-        .to("#hero-large-arrow", {
-          top: "66%",
-        })
-        .fromTo(
-          ".card_img_3",
-          {
-            opacity: 1,
-          },
-          {
-            opacity: 0,
-          }
-        )
-        .fromTo(
-          ".card_img_4",
-          {
-            opacity: 0,
-            top: "50px",
-          },
-          {
-            opacity: 1,
-            top: "0px",
-          }
-        )
-        .to(".active_button_3", {
-          background: "rgba(126, 228, 156, 0.5)",
-          rotate: 0,
-        })
-        //////////
-        .addLabel("button_4")
-        .to(
-          ".active_button_4",
-          {
-            background: "rgba(83, 132, 153, 0.5)",
-            rotate: "-3deg",
-          },
-          "-=.5"
-        )
-        .to("#hero-large-arrow", {
-          top: "64%",
-        })
-        .to(["#para_text_01 button", "#para_text_01 p"], {
-          color: "white",
-        })
+        // .addLabel("button_0")
+        // .to(
+        //   ".active_button_0",
+        //   {
+        //     background: "rgba(83, 132, 153, 0.5)",
+        //     rotate: "-3deg",
+        //   },
+        //   "-=.5"
+        // )
+        // .to("#hero-large-arrow", {
+        //   top: "73%",
+        // })
+        // .fromTo(
+        //   ".card_img_0",
+        //   {
+        //     top: "50px",
+        //   },
+        //   {
+        //     opacity: 1,
+        //     top: "0px",
+        //   }
+        // )
+        // .fromTo(
+        //   ".card_img_0",
+        //   {
+        //     opacity: 1,
+        //   },
+        //   {
+        //     opacity: 0,
+        //   }
+        // )
+        // .fromTo(
+        //   ".card_img_1",
+        //   {
+        //     opacity: 0,
+        //     top: "50px",
+        //   },
+        //   {
+        //     opacity: 1,
+        //     top: "0px",
+        //   }
+        // )
+        // .to(".active_button_0", {
+        //   background: "rgba(126, 228, 156, 0.5)",
+        //   rotate: 0,
+        // })
+        // //////////
+        // .addLabel("button_1")
+        // .to(
+        //   ".active_button_1",
+        //   {
+        //     background: "rgba(83, 132, 153, 0.5)",
+        //     rotate: "-3deg",
+        //   },
+        //   "-=.5"
+        // )
+        // .to("#hero-large-arrow", {
+        //   top: "70%",
+        // })
+        // .fromTo(
+        //   ".card_img_1",
+        //   {
+        //     opacity: 1,
+        //   },
+        //   {
+        //     opacity: 0,
+        //   }
+        // )
+        // .fromTo(
+        //   ".card_img_2",
+        //   {
+        //     opacity: 0,
+        //     top: "50px",
+        //   },
+        //   {
+        //     opacity: 1,
+        //     top: "0px",
+        //   }
+        // )
+        // .to(".active_button_1", {
+        //   background: "rgba(126, 228, 156, 0.5)",
+        //   rotate: 0,
+        // })
+        // //////////
+        // .addLabel("button_2")
+        // .to(
+        //   ".active_button_2",
+        //   {
+        //     background: "rgba(83, 132, 153, 0.5)",
+        //     rotate: "-3deg",
+        //   },
+        //   "-=.5"
+        // )
+        // .to("#hero-large-arrow", {
+        //   top: "68%",
+        // })
+        // .fromTo(
+        //   ".card_img_2",
+        //   {
+        //     opacity: 1,
+        //   },
+        //   {
+        //     opacity: 0,
+        //   }
+        // )
+        // .fromTo(
+        //   ".card_img_3",
+        //   {
+        //     opacity: 0,
+        //     top: "50px",
+        //   },
+        //   {
+        //     opacity: 1,
+        //     top: "0px",
+        //   }
+        // )
+        // .to(".active_button_2", {
+        //   background: "rgba(126, 228, 156, 0.5)",
+        //   rotate: 0,
+        // })
+        // //////////
+        // .addLabel("button_3")
+        // .to(".active_button_3", {
+        //   background: "rgba(83, 132, 153, 0.5)",
+        //   rotate: "-3deg",
+        // })
+        // .to("#hero-large-arrow", {
+        //   top: "66%",
+        // })
+        // .fromTo(
+        //   ".card_img_3",
+        //   {
+        //     opacity: 1,
+        //   },
+        //   {
+        //     opacity: 0,
+        //   }
+        // )
+        // .fromTo(
+        //   ".card_img_4",
+        //   {
+        //     opacity: 0,
+        //     top: "50px",
+        //   },
+        //   {
+        //     opacity: 1,
+        //     top: "0px",
+        //   }
+        // )
+        // .to(".active_button_3", {
+        //   background: "rgba(126, 228, 156, 0.5)",
+        //   rotate: 0,
+        // })
+        // //////////
+        // .addLabel("button_4")
+        // .to(
+        //   ".active_button_4",
+        //   {
+        //     background: "rgba(83, 132, 153, 0.5)",
+        //     rotate: "-3deg",
+        //   },
+        //   "-=.5"
+        // )
+        // .to("#hero-large-arrow", {
+        //   top: "64%",
+        // })
+        // .to(["#para_text_01 button", "#para_text_01 p"], {
+        //   color: "white",
+        // })
         .to("#root", {
           backgroundColor: "#29424D",
         });

@@ -203,21 +203,23 @@ const Header = () => {
                   Contatti
                 </a>
               </li>
-              <a
-                onClick={() => setNavShow(false)}
-                className="mb-0 fw-bold font_2xl color_white_off sentia_link pt-2"
-                href="/"
-              >
-                Sentiamoci
-              </a>
-              <a href="#" onClick={() => setNavShow(false)}>
-                <button
-                  className="navbar_btn font_2xl color_dark_gray mt-4  custom_tab_button_012"
-                  onClick={() => contactBtn()}
+              <div onClick={() => contactBtn()} className="pt-2 text-center">
+                <a
+                  onClick={() => setNavShow(false)}
+                  className="mb-0 fw-bold font_2xl color_white_off sentia_link pt2"
+                  
                 >
-                  chat
-                </button>
-              </a>
+                  Sentiamoci
+                </a>
+                <a href="#" onClick={() => setNavShow(false)}>
+                  <button
+                    className="navbar_btn font_2xl color_dark_gray mt-4  custom_tab_button_012"
+                    onClick={() => contactBtn()}
+                  >
+                    chat
+                  </button>
+                </a>
+              </div>
             </ul>
           </div>
         </div>
