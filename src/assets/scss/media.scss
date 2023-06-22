@@ -402,7 +402,7 @@
 
   .hero_slide_1,
   .hero_slide_2 {
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }
 
@@ -976,7 +976,7 @@
 }
 
 @media (max-width: 575.98px) {
-   .hero_lottie_icon {
+  .hero_lottie_icon {
     right: 0%;
     top: 68%;
   }
@@ -1296,7 +1296,7 @@
   }
 
   .ipad_img {
-    height: 75vh !important;
+    height: 72vh !important;
     max-width: 110%;
   }
 
@@ -1661,7 +1661,7 @@
   }
 
   #hero-ipad-white {
-    transform: translate(-50%, -44%) scale(0.7, 0.7) !important;
+    transform: translate(-50%, -44%) scale(0.94, 0.8) !important;
   }
 }
 
