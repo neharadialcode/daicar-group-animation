@@ -1061,10 +1061,10 @@
 @media (max-width: 1199.98px) and (min-height: 700px) {
   .tabs_lottie,
   .tabs_lottie_1 {
-    top: 42% !important;
+    top: 39% !important;
   }
   .tabs_lottie_width {
-    width: 80% !important;
+    width: 100% !important;
   }
   .tabs_parent {
     height: 140vh !important;
