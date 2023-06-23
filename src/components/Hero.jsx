@@ -91,9 +91,9 @@ const Hero = () => {
         display: "none",
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-        y: 300,
+        y: 500,
         stagger: 0.1,
-        duration: 1,
+        duration: 1.5,
         delay: 3.0,
       });
       gsap.set(
@@ -598,9 +598,9 @@ const Hero = () => {
         display: "none",
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-        y: 300,
+        y: 500,
         stagger: 0.1,
-        duration: 1,
+        duration: 1.5,
         delay: 3.0,
       });
 
@@ -1119,9 +1119,9 @@ const Hero = () => {
         yPercent: 100,
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-        y: 300,
+        y: 500,
         stagger: 0.1,
-        duration: 1,
+        duration: 1.5,
         delay: 3.0,
       });
 
@@ -1538,9 +1538,9 @@ const Hero = () => {
         yPercent: 100,
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-        y: 300,
+        y: 500,
         stagger: 0.1,
-        duration: 1,
+        duration: 1.5,
         delay: 3.0,
       });
 
