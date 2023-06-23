@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import largeArrow2 from "../assets/images/svg/arrow-large-2.svg";
 import businessLeftTextIcon from "../assets/images/svg/small-arrow-icon.svg";
 import pagelogo from "../assets/images/svg/page-logo.svg";
+import facebooklogo from "../assets/images/svg/timeline-2nd-icon.svg";
 gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
   useEffect(() => {
@@ -906,17 +907,23 @@ const Timeline = () => {
                         </a>
                       </div>
                     </div>
-                    <h2
+                    <div
                       id="timeline-heading-2"
-                      className="font_md color_white_off position-absolute w-100 pt-sm-3 pt-md-0"
+                      className="position-absolute w-100 pt-sm-3 pt-md-0"
                     >
-                      Sviluppiamo la nostra piattaforma proprietaria
-                      <br className="d-xl-block" />
-                      tramite tecnologia A.I. Nello stesso anno entriamo
-                      <br className="d-xl-block" />a far parte di Facebook
-                      Success Case per lo <br className="d-xl-block" />
-                      sviluppo di chatbot sulla piattaforma Messenger
-                    </h2>
+                      <img
+                        src={facebooklogo}
+                        alt="timeline-content-img-2"
+                      />
+                      <h2 className="font_md color_white_off pt-3 pt-sm-4">
+                        Sviluppiamo la nostra piattaforma proprietaria
+                        <br className="d-xl-block" />
+                        tramite tecnologia A.I. Nello stesso anno entriamo
+                        <br className="d-xl-block" />a far parte di Facebook
+                        Success Case per lo <br className="d-xl-block" />
+                        sviluppo di chatbot sulla piattaforma Messenger
+                      </h2>
+                    </div>
                     <div
                       id="timeline-heading-3"
                       className="position-absolute w-100 me-xxl-5 pe-xxl-5"
