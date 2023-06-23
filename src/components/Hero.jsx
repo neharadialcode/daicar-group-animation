@@ -66,7 +66,7 @@ const Hero = () => {
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1600px)", () => {
       gsap.set("#hero-main-heading", {
-        y: "-150px",
+        y: "-50px",
       });
       gsap.set(".arrow-hero-one", {
         y: "30px",
@@ -91,10 +91,10 @@ const Hero = () => {
         display: "none",
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-        y: 100,
+        y: 300,
         stagger: 0.1,
         duration: 1,
-        delay: 2.2,
+        delay: 3.0,
       });
       gsap.set(
         [
@@ -598,10 +598,10 @@ const Hero = () => {
         display: "none",
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-        y: 100,
+        y: 300,
         stagger: 0.1,
         duration: 1,
-        delay: 2.2,
+        delay: 3.0,
       });
 
       gsap.set(
@@ -1119,10 +1119,10 @@ const Hero = () => {
         yPercent: 100,
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-        y: 100,
+        y: 300,
         stagger: 0.1,
         duration: 1,
-        delay: 2.2,
+        delay: 3.0,
       });
 
       gsap.set(
@@ -1538,10 +1538,10 @@ const Hero = () => {
         yPercent: 100,
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
-        y: 100,
+        y: 300,
         stagger: 0.1,
         duration: 1,
-        delay: 2.2,
+        delay: 3.0,
       });
 
       gsap.set(
@@ -2136,11 +2136,7 @@ const Hero = () => {
                     vendite
                   </button>
                 </a>
-                <img
-                  className="mx-1 mx-xl-2 mb-2 mb-sm-0 mt-sm-1 e-img-01"
-                  src={eImg}
-                  alt="e-img"
-                />
+                <img className="mx-1 mx-xl-2 e-img-01" src={eImg} alt="e-img" />
                 digitale
               </h2>
               <div className="cursor-pointer">
