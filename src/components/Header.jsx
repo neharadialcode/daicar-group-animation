@@ -5,6 +5,19 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Header = () => {
+  // const Element1 = document.getElementsByClassName("hDGih");
+  // const [chatShow, setChatShow] = useState(false);
+
+  // if (chatShow) {
+  //   // document.Element1.classList.add("d-block");
+  //   document.body.classList.add("bg-danger");
+  //   document.body.classList.add("py-5");
+  // } else {
+  //   // document.Element1.classList.remove("d-block");
+  //   document.body.classList.remove("bg-danger");
+  //   document.body.classList.remove("py-5");
+  // }
+
   const [navShow, setNavShow] = useState(false);
   if (navShow) {
     document.documentElement.classList.add("overflow-hidden");
@@ -146,14 +159,17 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <div
-            className="d-flex d-none d-lg-flex align-items-center gap-5"
-            onClick={() => contactBtn()}
-          >
-            <span className="mb-0 fw-bold font_sm color_white_off parliamone sentia_link me-2 cursor-pointer">
+          <div className="d-flex d-none d-lg-flex align-items-center gap-5">
+            <span
+              className="mb-0 fw-bold font_sm color_white_off parliamone sentia_link me-2 cursor-pointer"
+              onClick={() => contactBtn()}
+            >
               Sentiamoci
             </span>
-            <button className="navbar_btn font_2xl color_dark_gray custom_tab_button_012">
+            <button
+              className="navbar_btn font_2xl color_dark_gray custom_tab_button_012"
+              // onClick={() => setChatShow(!chatShow)}
+            >
               chat
             </button>
           </div>
@@ -207,7 +223,6 @@ const Header = () => {
                 <a
                   onClick={() => setNavShow(false)}
                   className="mb-0 fw-bold font_2xl color_white_off sentia_link pt2"
-                  
                 >
                   Sentiamoci
                 </a>
