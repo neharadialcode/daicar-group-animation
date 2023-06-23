@@ -1283,7 +1283,6 @@ const Hero = () => {
         )
         .to(
           [".hero_slide_2", ".hero_slide_1"],
-          // ".hero_slide_2",
           {
             top: "20%",
           },
@@ -1671,7 +1670,6 @@ const Hero = () => {
           "#hero-ipad-white",
           {
             scale: 0.8,
-            // top: "25%",
           },
           ">"
         )
@@ -1687,20 +1685,6 @@ const Hero = () => {
           },
           ">"
         )
-        // .to(
-        //   "#hero-ipad",
-        //   {
-        //     top: "25%",
-        //   },
-        //   "<"
-        // )
-        // .to(
-        //   ".hero_slide_2",
-        //   {
-        //     top: "15%",
-        //   },
-        //   "<"
-        // )
         .to(
           "#hero-ipad",
           {
@@ -1729,176 +1713,6 @@ const Hero = () => {
           },
           "<"
         )
-        //////////
-        // .addLabel("button_0")
-        // .to(
-        //   ".active_button_0",
-        //   {
-        //     background: "rgba(83, 132, 153, 0.5)",
-        //     rotate: "-3deg",
-        //   },
-        //   "-=.5"
-        // )
-        // .to("#hero-large-arrow", {
-        //   top: "73%",
-        // })
-        // .fromTo(
-        //   ".card_img_0",
-        //   {
-        //     top: "50px",
-        //   },
-        //   {
-        //     opacity: 1,
-        //     top: "0px",
-        //   }
-        // )
-        // .fromTo(
-        //   ".card_img_0",
-        //   {
-        //     opacity: 1,
-        //   },
-        //   {
-        //     opacity: 0,
-        //   }
-        // )
-        // .fromTo(
-        //   ".card_img_1",
-        //   {
-        //     opacity: 0,
-        //     top: "50px",
-        //   },
-        //   {
-        //     opacity: 1,
-        //     top: "0px",
-        //   }
-        // )
-        // .to(".active_button_0", {
-        //   background: "rgba(126, 228, 156, 0.5)",
-        //   rotate: 0,
-        // })
-        // //////////
-        // .addLabel("button_1")
-        // .to(
-        //   ".active_button_1",
-        //   {
-        //     background: "rgba(83, 132, 153, 0.5)",
-        //     rotate: "-3deg",
-        //   },
-        //   "-=.5"
-        // )
-        // .to("#hero-large-arrow", {
-        //   top: "70%",
-        // })
-        // .fromTo(
-        //   ".card_img_1",
-        //   {
-        //     opacity: 1,
-        //   },
-        //   {
-        //     opacity: 0,
-        //   }
-        // )
-        // .fromTo(
-        //   ".card_img_2",
-        //   {
-        //     opacity: 0,
-        //     top: "50px",
-        //   },
-        //   {
-        //     opacity: 1,
-        //     top: "0px",
-        //   }
-        // )
-        // .to(".active_button_1", {
-        //   background: "rgba(126, 228, 156, 0.5)",
-        //   rotate: 0,
-        // })
-        // //////////
-        // .addLabel("button_2")
-        // .to(
-        //   ".active_button_2",
-        //   {
-        //     background: "rgba(83, 132, 153, 0.5)",
-        //     rotate: "-3deg",
-        //   },
-        //   "-=.5"
-        // )
-        // .to("#hero-large-arrow", {
-        //   top: "68%",
-        // })
-        // .fromTo(
-        //   ".card_img_2",
-        //   {
-        //     opacity: 1,
-        //   },
-        //   {
-        //     opacity: 0,
-        //   }
-        // )
-        // .fromTo(
-        //   ".card_img_3",
-        //   {
-        //     opacity: 0,
-        //     top: "50px",
-        //   },
-        //   {
-        //     opacity: 1,
-        //     top: "0px",
-        //   }
-        // )
-        // .to(".active_button_2", {
-        //   background: "rgba(126, 228, 156, 0.5)",
-        //   rotate: 0,
-        // })
-        // //////////
-        // .addLabel("button_3")
-        // .to(".active_button_3", {
-        //   background: "rgba(83, 132, 153, 0.5)",
-        //   rotate: "-3deg",
-        // })
-        // .to("#hero-large-arrow", {
-        //   top: "66%",
-        // })
-        // .fromTo(
-        //   ".card_img_3",
-        //   {
-        //     opacity: 1,
-        //   },
-        //   {
-        //     opacity: 0,
-        //   }
-        // )
-        // .fromTo(
-        //   ".card_img_4",
-        //   {
-        //     opacity: 0,
-        //     top: "50px",
-        //   },
-        //   {
-        //     opacity: 1,
-        //     top: "0px",
-        //   }
-        // )
-        // .to(".active_button_3", {
-        //   background: "rgba(126, 228, 156, 0.5)",
-        //   rotate: 0,
-        // })
-        // //////////
-        // .addLabel("button_4")
-        // .to(
-        //   ".active_button_4",
-        //   {
-        //     background: "rgba(83, 132, 153, 0.5)",
-        //     rotate: "-3deg",
-        //   },
-        //   "-=.5"
-        // )
-        // .to("#hero-large-arrow", {
-        //   top: "64%",
-        // })
-        // .to(["#para_text_01 button", "#para_text_01 p"], {
-        //   color: "white",
-        // })
         .to("#root", {
           backgroundColor: "#29424D",
         });
@@ -1925,6 +1739,9 @@ const Hero = () => {
   const venditeItbtn2 = () => {
     if (window.innerWidth > 1600) {
       gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
+    }
+    if (window.innerWidth > 1600 && window.innerHeight <= 1025) {
+      gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
       gsap.to(window, { duration: 0.3, scrollTo: 1500, ease: "linear" });
@@ -2136,7 +1953,13 @@ const Hero = () => {
                     vendite
                   </button>
                 </a>
-                <img className="mx-1 mx-xl-2 e-img-01" src={eImg} alt="e-img" />
+                <span className="mb-2 pe-1">
+                  <img
+                    className="mx-1mx-xl-2 e-img-01 pt1"
+                    src={eImg}
+                    alt="e-img"
+                  />
+                </span>
                 digitale
               </h2>
               <div className="cursor-pointer">

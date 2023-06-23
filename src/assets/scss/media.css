@@ -69,6 +69,10 @@
   .hero_lottie_icon {
     top: 80%;
   }
+  .e-img-01 {
+    width: 23px;
+    transform: translate(0px, -1px);
+  }
   .custom_content_padding {
     padding-top: 120px !important;
   }
@@ -174,6 +178,9 @@
   }
 }
 @media (max-width: 1599.98px) {
+  .e-img-01 {
+    width: 20px;
+  }
   .meeting_text_color {
     color: white;
   }
@@ -482,7 +489,8 @@
     right: -13% !important;
   }
   .e-img-01 {
-    height: 20px !important;
+    height: 19px !important;
+    transform: translate(0px, 1px);
   }
 }
 @media (max-width: 991.98px) {
@@ -492,6 +500,7 @@
   }
   .e-img-01 {
     height: 25px !important;
+    transform: translate(0px, 0px);
   }
   .location_icon {
     min-width: 32px;
@@ -776,6 +785,10 @@
   }
 }
 @media (max-width: 575.98px) {
+  .e-img-01 {
+    height: 24px !important;
+    transform: translate(2px, -4px);
+  }
   .hero_lottie_icon {
     right: 0%;
     top: 68%;
