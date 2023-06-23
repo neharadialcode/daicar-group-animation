@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { UpArrowIcon } from "./Icons";
+import backToTopIcon from "../assets/images/svg/Arrows.svg";
 
 const BackToTop = () => {
   const [showButton, setShowButton] = useState(false);
@@ -25,7 +26,8 @@ const BackToTop = () => {
           className="topscroll d-flex justify-content-center align-items-center cursor-pointer"
           onClick={() => scrollToTop()}
         >
-          <UpArrowIcon />
+          {/* <UpArrowIcon /> */}
+          <img src={backToTopIcon} alt="backToTopIcon" />
         </div>
       )}
     </div>
