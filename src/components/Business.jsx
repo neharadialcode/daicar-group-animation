@@ -1067,13 +1067,13 @@ const Business = () => {
         });
     });
 
-    mm.add("(max-width:991.98px)", () => {
+    mm.add("(min-width:576px) and (max-width:991.98px)", () => {
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".business_parent",
-          start: "top top",
+          start: "top 80%",
+          end: "bottom center",
           scrub: true,
-          pin:true,
           fastScrollEnd: true,
         },
       });
@@ -1084,17 +1084,62 @@ const Business = () => {
         .from(".business_tab_2", {
           xPercent: "150",
           stagger: 0.3,
-
         })
         .from(".business_tab_3", {
           xPercent: "-150",
           stagger: 0.3,
-
         })
         .from(".business_tab_4", {
           xPercent: "150",
           stagger: 0.3,
+        });
+    });
 
+    mm.add("(max-width:575.98px)", () => {
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".business_parent",
+          start: "top 30%",
+          end: "+=300%",
+          scrub: true,
+          fastScrollEnd: true,
+        },
+      });
+      tl.from(".business_small_img_1", {
+        autoAlpha: 0,
+      })
+        .from(".business_small_heading_1", {
+          xPercent: "-300",
+        })
+        .from(".business_small_para_1", {
+          xPercent: "150",
+        })
+        .from(".business_small_img_2", {
+          autoAlpha: 0,
+        })
+        .from(".business_small_heading_2", {
+          xPercent: "-300",
+        })
+        .from(".business_small_para_2", {
+          xPercent: "150",
+        })
+        .from(".business_small_img_3", {
+          autoAlpha: 0,
+        })
+        .from(".business_small_heading_3", {
+          xPercent: "-300",
+        })
+        .from(".business_small_para_3", {
+          xPercent: "150",
+        })
+        .from(".business_small_img_4", {
+          autoAlpha: 0,
+        })
+        .from(".business_small_heading_4", {
+          xPercent: "-300",
+        })
+        .from(".business_small_para_4", {
+          xPercent: "150",
         });
     });
   }, []);
@@ -1297,17 +1342,27 @@ const Business = () => {
                 <div className="row justify-content-evenly pt-4 pt-sm-5">
                   <div className="col-8 col-sm-4">
                     <img
-                      className="w-100"
+                      className="w-100 business_small_img_1"
                       src={businessOne}
                       alt="business-big-arrow"
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-3 pt-sm-0">
-                    <h3 className="font_5xl color_dark_gray fw-normal">
-                      GENERAZIONE TRAFFICO
-                    </h3>
-                    <p className="font_2xl color_dark_gray pe-xl-5 pt-sm-2 ff_mundial_light fw-light">
-                     Generiamo traffico tramite <span className="fw-semibold ff_mundial">campagne</span> ideate dal nostro team marketing e veicolate sui canali social, Google e native.
+                    <div className="d-flex align-items-center business_small_heading_1">
+                      <img
+                        className="smallicon d-sm-none"
+                        src={businessIconSmall}
+                        alt="small-arrow-icon"
+                      />
+                      <h3 className="font_5xl color_dark_gray fw-semibold ps-3 mb-0">
+                        GENERAZIONE TRAFFICO
+                      </h3>
+                    </div>
+                    <p className="font_2xl color_dark_gray pe-xl-5 pt-2 ff_mundial_light fw-light business_small_para_1">
+                      Generiamo traffico tramite{" "}
+                      <span className="fw-semibold ff_mundial">campagne</span>{" "}
+                      ideate dal nostro team marketing e veicolate sui canali
+                      social, Google e native.
                     </p>
                   </div>
                 </div>
@@ -1316,17 +1371,29 @@ const Business = () => {
                 <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-8 col-sm-4">
                     <img
-                      className="w-100"
+                      className="w-100 business_small_img_2"
                       src={businessTwo}
                       alt="business-big-arrow"
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
-                    <h3 className="font_5xl color_dark_gray fw-normal">
-                      LANDING CONVERSAZIONALE
-                    </h3>
-                    <p className="font_2xl color_dark_gray pe-xl-5 pt-sm-2 ff_mundial_light fw-light">
-                     Progettiamo e sviluppiamo landing page personalizzate per i nostri partner con lo scopo di generare lead di contatti altamente ingaggianti e conformi al <span className="fw-semibold ff_mundial">regolamento GDPR.</span>
+                    <div className="d-flex align-items-center business_small_heading_2">
+                      <img
+                        className="smallicon d-sm-none"
+                        src={businessIconSmall}
+                        alt="small-arrow-icon"
+                      />
+                      <h3 className="font_5xl color_dark_gray fw-semibold ps-3 mb-0">
+                        LANDING CONVERSAZIONALE
+                      </h3>
+                    </div>
+                    <p className="font_2xl color_dark_gray pe-xl-5 pt-2 ff_mundial_light fw-light business_small_para_2">
+                      Progettiamo e sviluppiamo landing page personalizzate per
+                      i nostri partner con lo scopo di generare lead di contatti
+                      altamente ingaggianti e conformi al{" "}
+                      <span className="fw-semibold ff_mundial">
+                        regolamento GDPR.
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -1335,17 +1402,29 @@ const Business = () => {
                 <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-8 col-sm-4">
                     <img
-                      className="w-100"
+                      className="w-100 business_small_img_3"
                       src={businessThree}
                       alt="business-big-arrow"
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
-                    <h3 className="font_5xl color_dark_gray fw-normal">
-                      VALIDAZIONE AUTOMATICA DEI DATI
-                    </h3>
-                    <p className="font_2xl color_dark_gray pe-xl-5 pt-sm-2 ff_mundial_light fw-light">
-                     Qualifichiamo e validiamo in tempo reale i dati degli utenti grazie alla nostra piattaforma proprietaria connessa al nostro <span className="fw-semibold ff_mundial">software di I.A.</span>
+                    <div className="d-flex align-items-center business_small_heading_3">
+                      <img
+                        className="smallicon d-sm-none"
+                        src={businessIconSmall}
+                        alt="small-arrow-icon"
+                      />
+                      <h3 className="font_5xl color_dark_gray fw-semibold ps-3 mb-0">
+                        VALIDAZIONE AUTOMATICA DEI DATI
+                      </h3>
+                    </div>
+                    <p className="font_2xl color_dark_gray pe-xl-5 pt-2 ff_mundial_light fw-light business_small_para_3">
+                      Qualifichiamo e validiamo in tempo reale i dati degli
+                      utenti grazie alla nostra piattaforma proprietaria
+                      connessa al nostro{" "}
+                      <span className="fw-semibold ff_mundial">
+                        software di I.A.
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -1354,15 +1433,26 @@ const Business = () => {
                 <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-sm-4 d-flex align-items-center">
                     <img
-                      className="w-100"
+                      className="w-100 business_small_img_4"
                       src={businessFour}
                       alt="business-big-arrow"
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column">
-                    <h3 className="font_5xl color_dark_gray fw-normal">TRASMISSIONE LEAD</h3>
-                    <p className="font_2xl color_dark_gray pe-xl-5 pt-sm-2 mb-0 ff_mundial_light fw-light">
-                      Inviamo i lead generati tramite API o integrazione con il <span className="fw-semibold ff_mundial">CRM</span> del partner solamente una volta filtrati e controllati.
+                    <div className="d-flex align-items-center business_small_heading_4">
+                      <img
+                        className="smallicon d-sm-none"
+                        src={businessIconSmall}
+                        alt="small-arrow-icon"
+                      />
+                      <h3 className="font_5xl color_dark_gray fw-semibold ps-3 mb-0">
+                        TRASMISSIONE LEAD
+                      </h3>
+                    </div>
+                    <p className="font_2xl color_dark_gray pe-xl-5 pt-2 mb-0 ff_mundial_light fw-light business_small_para_4">
+                      Inviamo i lead generati tramite API o integrazione con il{" "}
+                      <span className="fw-semibold ff_mundial">CRM</span> del
+                      partner solamente una volta filtrati e controllati.
                     </p>
                   </div>
                 </div>
