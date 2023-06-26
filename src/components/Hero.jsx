@@ -2033,7 +2033,7 @@ const Hero = () => {
                     Il futuro delle tue
                     <a
                       className="text-decoration-none mt-sm-2 mt-xxl-3"
-                      href="#intro-content"
+                      href="#"
                     >
                       <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                         vendite
