@@ -102,10 +102,10 @@ const Hero = () => {
       gsap.set(
         [
           // "#hero-sub-heading-one h2",
-          "#hero-sub-heading-one h3",
+          // "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
-          "#hero-sub-heading-two h3",
+          // "#hero-sub-heading-two h3",
           "#hero-sub-heading-two p",
           "#hero-para-one",
           "#hero-para-two",
@@ -179,11 +179,135 @@ const Hero = () => {
           },
           "<"
         )
+
+        .to(".number_heading", {
+          autoAlpha: 1,
+        })
+        .to(".number_heading2", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading3", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading2",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading4", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading3",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading5", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading4",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading6", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading5",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading7", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading6",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading8", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading7",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading9", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading8",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading10", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading9",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading11", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading10",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading12", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading11",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
+        .to(".number_heading13", {
+          autoAlpha: 1,
+        })
+        .to(
+          ".number_heading12",
+          {
+            autoAlpha: 0,
+          },
+          "-=.8"
+        )
         .to(
           [
             "#hero-sub-heading-one",
             // "#hero-sub-heading-one h2",
-            "#hero-sub-heading-one h3",
+            // "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -221,7 +345,7 @@ const Hero = () => {
           [
             "#hero-sub-heading-two",
             "#hero-sub-heading-two h2",
-            "#hero-sub-heading-two h3",
+            // "#hero-sub-heading-two h3",
             "#hero-sub-heading-two p",
             "#hero-para-two",
           ],
@@ -616,7 +740,7 @@ const Hero = () => {
       gsap.set(
         [
           // "#hero-sub-heading-one h2",
-          "#hero-sub-heading-one h3",
+          // "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
           "#hero-sub-heading-two h3",
@@ -699,7 +823,7 @@ const Hero = () => {
           [
             "#hero-sub-heading-one",
             // "#hero-sub-heading-one h2",
-            "#hero-sub-heading-one h3",
+            // "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -737,7 +861,7 @@ const Hero = () => {
           [
             "#hero-sub-heading-two",
             "#hero-sub-heading-two h2",
-            "#hero-sub-heading-two h3",
+            // "#hero-sub-heading-two h3",
             "#hero-sub-heading-two p",
             "#hero-para-two",
           ],
@@ -1140,7 +1264,7 @@ const Hero = () => {
       gsap.set(
         [
           "#hero-sub-heading-one h2",
-          "#hero-sub-heading-one h3",
+          // "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
           "#hero-sub-heading-two h3",
@@ -1215,7 +1339,7 @@ const Hero = () => {
           [
             "#hero-sub-heading-one",
             "#hero-sub-heading-one h2",
-            "#hero-sub-heading-one h3",
+            // "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -1253,7 +1377,7 @@ const Hero = () => {
           [
             "#hero-sub-heading-two",
             "#hero-sub-heading-two h2",
-            "#hero-sub-heading-two h3",
+            // "#hero-sub-heading-two h3",
             "#hero-sub-heading-two p",
             "#hero-para-two",
           ],
@@ -1558,7 +1682,7 @@ const Hero = () => {
       gsap.set(
         [
           "#hero-sub-heading-one h2",
-          "#hero-sub-heading-one h3",
+          // "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two",
           "#hero-para-one",
@@ -1949,31 +2073,6 @@ const Hero = () => {
               id="main-content"
               className="align-items-center flex-column justify-content-center position-relative h-100"
             >
-              {/* <h2
-                id="hero-main-heading"
-                className="color_white_off font_6xl fw-normal mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5 z_1"
-              >
-                Il futuro delle tue
-                <a
-                  className="text-decoration-none"
-                  href="#hero-sub-heading-one"
-                >
-                  <button
-                    className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3"
-                    onClick={() => venditeItbtn()}
-                  >
-                    vendite
-                  </button>
-                </a>
-                <span className="mb-2 pe-1">
-                  <img
-                    className="mx-1mx-xl-2 e-img-01 pt1"
-                    src={eImg}
-                    alt="e-img"
-                  />
-                </span>
-                digitale
-              </h2> */}
               <div className="cursor-pointer">
                 <LottieHero />
               </div>
@@ -2000,18 +2099,42 @@ const Hero = () => {
                     </a>
                     è digitale
                   </h2>
-                  <VisibilitySensor
-                    onChange={onVisibilityChange}
-                    offset={{
-                      top: 10,
-                    }}
-                    delayedCallon
-                  >
+
+                  <div className="position-relative">
                     <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
-                      {count}
-                      .000
+                      200.000
                     </h3>
-                  </VisibilitySensor>
+                    <h3 className="font_8xl fw-bold number_heading2 text-center color_light_green ff_poppins">
+                      190.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading3 text-center color_light_green ff_poppins">
+                      180.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading4 text-center color_light_green ff_poppins">
+                      170.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading5 text-center color_light_green ff_poppins">
+                      160.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading6 text-center color_light_green ff_poppins">
+                      150.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading7 text-center color_light_green ff_poppins">
+                      140.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading8 text-center color_light_green ff_poppins">
+                      130.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading9 text-center color_light_green ff_poppins">
+                      120.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading10 text-center color_light_green ff_poppins">
+                      110.000
+                    </h3>
+                    <h3 className="font_8xl fw-bold number_heading11 text-center color_light_green ff_poppins">
+                      100.000
+                    </h3>
+                  </div>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Lead
                     <span className="fw-bold mx-2">Qualificati</span>
@@ -2041,9 +2164,7 @@ const Hero = () => {
                     </a>
                     è digitale
                   </h2>
-                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity-0 ff_poppins">
-                    10.000
-                  </h3>
+
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Campagne
                     <span className="fw-bold mx-2">Generate</span>

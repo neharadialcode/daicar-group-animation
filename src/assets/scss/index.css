@@ -364,4 +364,36 @@ body {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.number_heading,
+.number_heading2,
+.number_heading3,
+.number_heading4,
+.number_heading5,
+.number_heading6,
+.number_heading7,
+.number_heading8,
+.number_heading9,
+.number_heading10,
+.number_heading11,
+.number_heading12 {
+  opacity: 0;
+}
+
+.number_heading2,
+.number_heading3,
+.number_heading4,
+.number_heading5,
+.number_heading6,
+.number_heading7,
+.number_heading8,
+.number_heading9,
+.number_heading10,
+.number_heading11,
+.number_heading12 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
 }/*# sourceMappingURL=index.css.map */
