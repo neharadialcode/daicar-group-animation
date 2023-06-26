@@ -3,10 +3,11 @@ import pagelogo from "../assets/images/svg/page-logo.svg";
 import { CloseIcon, ToggleIcon } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useLayoutProvider } from "../contexts/LayoutProvider";
 
 const Header = () => {
+  // const { handleChatShow } = useLayoutProvider();
   // const Element1 = document.getElementsByClassName("hDGih");
-  // const [chatShow, setChatShow] = useState(false);
 
   // if (chatShow) {
   //   // document.Element1.classList.add("d-block");
@@ -108,6 +109,24 @@ const Header = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 6500, ease: "linear" });
     }
   };
+
+  function handleChatShow() {
+    if (!window.myLandbot) {
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.addEventListener("load", function () {
+        window.myLandbot = new window.Landbot.Livechat({
+          configUrl:
+            "https://storage.googleapis.com/landbot.pro/v3/H-1628206-9L7CAIMRB2KEUJS5/index.json",
+        });
+      });
+      s.src = "https://cdn.landbot.io/landbot-3/landbot-3.0.0.js";
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  }
+
   return (
     <div className="header_parent bg_dark_gray" style={{ height: "100px" }}>
       <div className="container-lg common_container py-2 py-lg-1 position-relative">
@@ -168,7 +187,7 @@ const Header = () => {
             </span>
             <button
               className="navbar_btn font_2xl color_dark_gray custom_tab_button_012"
-              // onClick={() => setChatShow(!chatShow)}
+              onClick={() => handleChatShow()}
             >
               chat
             </button>

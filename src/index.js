@@ -5,10 +5,13 @@ import App from "./App";
 import "./assets/scss/index.scss";
 import "./assets/scss/app.scss";
 import "./assets/scss/media.scss";
+import LayoutProvider from "./contexts/LayoutProvider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LayoutProvider>
+      <App />
+    </LayoutProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

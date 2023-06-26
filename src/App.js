@@ -1,61 +1,29 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Hero from "./components/Hero";
-import Business from "./components/Business";
-import AboutUs from "./components/AboutUs";
-import Timeline from "./components/Timeline";
-import Partners from "./components/partners/Partners";
-import Crm from "./components/Crm";
-import Meeting from "./components/Meeting";
-// import ScrollChatIcon from "./components/ScrollChatIcon";
-import largeArrow from "./assets/images/svg/largeArrow.svg";
-import PreLoader from "./components/PreLoader";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import Main from "./Main";
+import { useLayoutProvider } from "./contexts/LayoutProvider";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    document.body.classList.add("not-scroll-before-loading");
-    setTimeout(() => {
-      setLoading(false);
-      document.body.classList.remove("not-scroll-before-loading");
-    }, 3100);
-  }, []);
+  const { handleChatShow } = useLayoutProvider();
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 576) {
-        window.location.reload();
-      }
-    };
+    function initLandbot() {
+      
+    }
 
-    window.addEventListener("resize", handleResize);
+    // window.addEventListener("mouseover", initLandbot, { once: true });
+    // window.addEventListener("touchstart", initLandbot, { once: true });
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+    // return () => {
+    //   // Clean up by removing the event listeners
+    //   window.removeEventListener("mouseover", initLandbot);
+    //   window.removeEventListener("touchstart", initLandbot);
+    // };
+  }, []); // Empty dependency array ensures this effect only runs once
 
   return (
     <>
-      {<PreLoader loading={loading} />}
-      <Hero />
-      <Business />
-      <AboutUs />
-      <Timeline />
-      <Partners />
-      <div className="bg_light_white">
-        <Crm />
-        <Meeting />
-      </div>
-      <div className="w-100 overflow-hidden">
-        <img
-          alt="largeArrow"
-          src={largeArrow}
-          id="hero-large-arrow"
-          className="position-fixed z-0 pointer-events-none d-none d-lg-block"
-        />
-      </div>
-      {/* <ScrollChatIcon /> */}
+      <Main />
     </>
   );
 }

@@ -685,6 +685,10 @@
   }
 }
 @media (max-width: 799.98px) {
+  .hero_slide_1,
+  .hero_slide_2 {
+    margin-top: 25px;
+  }
   .hero_slide_para_2 {
     max-width: 526px;
     margin: auto;
@@ -785,6 +789,10 @@
   }
 }
 @media (max-width: 575.98px) {
+  .hero_slide_1,
+  .hero_slide_2 {
+    margin-top: 130px;
+  }
   .e-img-01 {
     height: 24px !important;
     transform: translate(2px, -4px);

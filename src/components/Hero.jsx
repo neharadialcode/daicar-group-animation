@@ -572,7 +572,7 @@ const Hero = () => {
         });
     });
 
-    mm.add("(min-width: 992px) and (max-width:1599.98px)", () => {
+    mm.add("(min-width: 1000px) and (max-width:1599.98px)", () => {
       gsap.set("#main-content", {
         y: "-60px",
       });
@@ -580,7 +580,7 @@ const Hero = () => {
       //   y: "-150px",
       // });
       gsap.set("#hero-sub-heading-one h2", {
-        y: "170px",
+        y: "100px",
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.8,
@@ -1105,7 +1105,7 @@ const Hero = () => {
         });
     });
 
-    mm.add("(min-width: 576px) and (max-width:991.98px)", () => {
+    mm.add("(min-width: 576px) and (max-width:999.98px)", () => {
       gsap.set("#main-content", {
         y: "-60px",
       });
@@ -1127,8 +1127,11 @@ const Hero = () => {
         xPercent: -50,
         top: "75%",
       });
-      gsap.from("#hero-main-heading", {
-        yPercent: 100,
+      // gsap.from("#hero-main-heading", {
+      //   yPercent: 100,
+      // });
+      gsap.set("#hero-sub-heading-one h2", {
+        y: "100px",
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 500,
@@ -1139,7 +1142,7 @@ const Hero = () => {
 
       gsap.set(
         [
-          "#hero-sub-heading-one h2",
+          // "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
@@ -1187,9 +1190,12 @@ const Hero = () => {
           },
           "<"
         )
-        .to("#hero-main-heading", {
-          yPercent: 100,
-          opacity: 0,
+        // .to("#hero-main-heading", {
+        //   yPercent: 100,
+        //   opacity: 0,
+        // })
+        .to("#hero-sub-heading-one h2", {
+          y: "0px",
         })
         .to(
           ".arrow-hero-two",
@@ -1214,7 +1220,7 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one",
-            "#hero-sub-heading-one h2",
+            // "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
@@ -1545,8 +1551,11 @@ const Hero = () => {
         xPercent: -50,
         top: "75%",
       });
-      gsap.from("#hero-main-heading", {
-        yPercent: 100,
+      // gsap.from("#hero-main-heading", {
+      //   yPercent: 100,
+      // });
+      gsap.set("#hero-sub-heading-one h2", {
+        y: "100px",
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 500,
@@ -1557,7 +1566,7 @@ const Hero = () => {
 
       gsap.set(
         [
-          "#hero-sub-heading-one h2",
+          // "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two",
@@ -1603,9 +1612,12 @@ const Hero = () => {
           },
           "<"
         )
-        .to("#hero-main-heading", {
-          yPercent: 100,
-          opacity: 0,
+        // .to("#hero-main-heading", {
+        //   yPercent: 100,
+        //   opacity: 0,
+        // })
+        .to("#hero-sub-heading-one h2", {
+          y: "0px",
         })
         .to(
           ".arrow-hero-two",
@@ -1629,7 +1641,7 @@ const Hero = () => {
         )
         .to(
           [
-            "#hero-sub-heading-one h2",
+            // "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
