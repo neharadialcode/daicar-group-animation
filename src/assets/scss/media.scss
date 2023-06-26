@@ -81,6 +81,13 @@
 }
 
 @media (min-width: 1600px) {
+  .hero_slide_1 {
+    margin-top: 80px;
+  }
+
+  .hero_slide_2 {
+    margin-top: 77px;
+  }
   .hero_lottie_icon {
     top: 80%;
   }
@@ -267,13 +274,13 @@
     transform: translateY(-120px);
   }
 
-  .hero_slide_1 {
-    margin-top: -80px;
-  }
+  // .hero_slide_1 {
+  //   margin-top: -80px;
+  // }
 
-  .hero_slide_2 {
-    margin-top: -72px;
-  }
+  // .hero_slide_2 {
+  //   margin-top: -72px;
+  // }
 
   .tab_right_icon {
     right: -15.5%;

@@ -65,8 +65,11 @@ const Hero = () => {
   useEffect(() => {
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1600px)", () => {
-      gsap.set("#hero-main-heading", {
-        y: "-50px",
+      // gsap.set("#hero-main-heading", {
+      //   y: "-50px",
+      // });
+      gsap.set("#hero-sub-heading-one h2", {
+        y: "170px",
       });
       gsap.set(".arrow-hero-one", {
         y: "30px",
@@ -98,7 +101,7 @@ const Hero = () => {
       });
       gsap.set(
         [
-          "#hero-sub-heading-one h2",
+          // "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
@@ -149,9 +152,12 @@ const Hero = () => {
           },
           "<"
         )
-        .to("#hero-main-heading", {
-          yPercent: 100,
-          opacity: 0,
+        // .to("#hero-main-heading", {
+        //   yPercent: 100,
+        //   opacity: 0,
+        // })
+        .to("#hero-sub-heading-one h2", {
+          y: "0px",
         })
         .to(
           ".arrow-hero-two",
@@ -176,7 +182,7 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one",
-            "#hero-sub-heading-one h2",
+            // "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
@@ -570,8 +576,11 @@ const Hero = () => {
       gsap.set("#main-content", {
         y: "-60px",
       });
-      gsap.set("#hero-main-heading", {
-        y: "-150px",
+      // gsap.set("#hero-main-heading", {
+      //   y: "-150px",
+      // });
+      gsap.set("#hero-sub-heading-one h2", {
+        y: "170px",
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.8,
@@ -591,9 +600,9 @@ const Hero = () => {
         xPercent: -50,
         top: "70%",
       });
-      gsap.from("#hero-main-heading", {
-        yPercent: 100,
-      });
+      // gsap.from("#hero-main-heading", {
+      //   yPercent: 100,
+      // });
       gsap.set("#intro-content", {
         display: "none",
       });
@@ -606,7 +615,7 @@ const Hero = () => {
 
       gsap.set(
         [
-          "#hero-sub-heading-one h2",
+          // "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
@@ -659,9 +668,12 @@ const Hero = () => {
           },
           "<"
         )
-        .to("#hero-main-heading", {
-          yPercent: 100,
-          opacity: 0,
+        // .to("#hero-main-heading", {
+        //   yPercent: 100,
+        //   opacity: 0,
+        // })
+        .to("#hero-sub-heading-one h2", {
+          y: "0px",
         })
         .to(
           ".arrow-hero-two",
@@ -686,7 +698,7 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one",
-            "#hero-sub-heading-one h2",
+            // "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
@@ -1937,7 +1949,7 @@ const Hero = () => {
               id="main-content"
               className="align-items-center flex-column justify-content-center position-relative h-100"
             >
-              <h2
+              {/* <h2
                 id="hero-main-heading"
                 className="color_white_off font_6xl fw-normal mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5 z_1"
               >
@@ -1961,7 +1973,7 @@ const Hero = () => {
                   />
                 </span>
                 digitale
-              </h2>
+              </h2> */}
               <div className="cursor-pointer">
                 <LottieHero />
               </div>
@@ -1970,7 +1982,7 @@ const Hero = () => {
                 className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white"
               >
                 <div
-                  className="hero_slide_1 pt-xl-5 pt-xxl-0"
+                  className="hero_slide_1 pt-xl-5 mt5"
                   id="hero-sub-heading-one"
                 >
                   <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center z_1 position-relative">
@@ -2014,7 +2026,7 @@ const Hero = () => {
                 </div>
                 {/* ============================================================================== */}
                 <div
-                  className="hero_slide_2 pt-xl-5 pt-xxl-0"
+                  className="hero_slide_2 pt-xl-5 mt5"
                   id="hero-sub-heading-two"
                 >
                   <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center hero_text_2 z_1 position-relative">
