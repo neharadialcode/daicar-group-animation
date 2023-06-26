@@ -3,22 +3,7 @@ import pagelogo from "../assets/images/svg/page-logo.svg";
 import { CloseIcon, ToggleIcon } from "./Icons";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { useLayoutProvider } from "../contexts/LayoutProvider";
-
 const Header = () => {
-  // const { handleChatShow } = useLayoutProvider();
-  // const Element1 = document.getElementsByClassName("hDGih");
-
-  // if (chatShow) {
-  //   // document.Element1.classList.add("d-block");
-  //   document.body.classList.add("bg-danger");
-  //   document.body.classList.add("py-5");
-  // } else {
-  //   // document.Element1.classList.remove("d-block");
-  //   document.body.classList.remove("bg-danger");
-  //   document.body.classList.remove("py-5");
-  // }
-
   const [navShow, setNavShow] = useState(false);
   if (navShow) {
     document.documentElement.classList.add("overflow-hidden");
