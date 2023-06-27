@@ -1696,6 +1696,36 @@ const Hero = () => {
           },
           ">"
         )
+        // .set(
+        //   "#hero-ipad-white",
+        //   {
+        //     scale: 0.7,
+        //     top: "25%",
+        //   },
+        //   ">"
+        // )
+        // .to(
+        //   ["#hero-ipad", ".hero_slide_2"],
+        //   {
+        //     scale: 0.7,
+        //   },
+        //   ">"
+        // )
+        // .to(
+        //   "#hero-ipad",
+        //   {
+        //     top: "25%",
+        //   },
+        //   "<"
+        // )
+        // .to(
+        //   ".hero_slide_2",
+        //   {
+        //     top: "15%",
+        //   },
+        //   "<"
+        // )
+
         .to(
           [
             "#hero-ipad",
@@ -2198,7 +2228,7 @@ const Hero = () => {
                 </div>
                 {/* ===== BREADCRUMBS ENDS ===== */}
 
-                <div className="max_width_tabs position-relative d-none d-sm-block">
+                <div className="max_width_tabs position-relative">
                   <div className="text-center pb-sm-5 tabs_parent h-100 d-flex flex-column">
                     <div className="intro_tab_frame my-4"></div>
                     <div className="d-flex">
@@ -2226,7 +2256,7 @@ const Hero = () => {
                               </div>
                             </div>
                             <div
-                              className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0"
+                              className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0 d-none d-sm-block"
                               id="para_text_01"
                             >
                               <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
@@ -2262,15 +2292,15 @@ const Hero = () => {
             <img
               id="hero-ipad-white"
               alt="hero-ipad-white"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0 d-none d-sm-block"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
               src={ipadGreen}
             />
-            <img
+            {/* <img
               id="hero-ipad-white"
               alt="hero-ipad-white"
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0 d-sm-none"
               src={ipadAsset}
-            />
+            /> */}
           </div>
           <div
             id="hero_section"
