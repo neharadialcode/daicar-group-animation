@@ -7,7 +7,6 @@ import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
 import ipadGreen from "../assets/images/png/ipad-green.png";
 import ipadAsset from "../assets/images/svg/ipad-mobile-img.svg";
-import eImg from "../assets/images/svg/è-img.svg";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
@@ -16,7 +15,6 @@ import marketingLottie from "../assets/lotties/tabs-2.json";
 import techDrivenLottie from "../assets/lotties/tabs-3.json";
 import realTimeLottie from "../assets/lotties/tabs-4.json";
 import crmLottie from "../assets/lotties/tabs-5.json";
-import VisibilitySensor from "react-visibility-sensor";
 import LottieHero from "./LottieHero";
 
 const Hero = () => {
@@ -61,13 +59,13 @@ const Hero = () => {
       para: "e trasmettere i dati sul tuo",
     },
   ];
-
+  const [counter, setcounter] = useState(0);
   useEffect(() => {
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1600px)", () => {
-      // gsap.set("#hero-main-heading", {
-      //   y: "-50px",
-      // });
+      gsap.set(["#hero-sub-heading-two", "#hero-sub-heading-two h2"], {
+        zIndex: "-1",
+      });
       gsap.set("#hero-sub-heading-one h2", {
         y: "170px",
       });
@@ -101,7 +99,6 @@ const Hero = () => {
       });
       gsap.set(
         [
-          // "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
@@ -137,6 +134,7 @@ const Hero = () => {
           pin: true,
           scrub: 1,
           fastScrollEnd: true,
+          onUpdate: (e) => setcounter(e.progress),
         },
       });
 
@@ -152,10 +150,6 @@ const Hero = () => {
           },
           "<"
         )
-        // .to("#hero-main-heading", {
-        //   yPercent: 100,
-        //   opacity: 0,
-        // })
         .to("#hero-sub-heading-one h2", {
           y: "0px",
         })
@@ -182,7 +176,6 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one",
-            // "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
@@ -576,9 +569,9 @@ const Hero = () => {
       gsap.set("#main-content", {
         y: "-60px",
       });
-      // gsap.set("#hero-main-heading", {
-      //   y: "-150px",
-      // });
+      gsap.set(["#hero-sub-heading-two", "#hero-sub-heading-two h2"], {
+        zIndex: "-1",
+      });
       gsap.set("#hero-sub-heading-one h2", {
         y: "100px",
       });
@@ -600,9 +593,6 @@ const Hero = () => {
         xPercent: -50,
         top: "70%",
       });
-      // gsap.from("#hero-main-heading", {
-      //   yPercent: 100,
-      // });
       gsap.set("#intro-content", {
         display: "none",
       });
@@ -615,7 +605,6 @@ const Hero = () => {
 
       gsap.set(
         [
-          // "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
@@ -652,6 +641,7 @@ const Hero = () => {
           end: "+=500%",
           pin: true,
           scrub: 1,
+          onUpdate: (e) => setcounter(e.progress),
           fastScrollEnd: true,
         },
       });
@@ -668,10 +658,6 @@ const Hero = () => {
           },
           "<"
         )
-        // .to("#hero-main-heading", {
-        //   yPercent: 100,
-        //   opacity: 0,
-        // })
         .to("#hero-sub-heading-one h2", {
           y: "0px",
         })
@@ -698,7 +684,6 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one",
-            // "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
@@ -1127,9 +1112,9 @@ const Hero = () => {
         xPercent: -50,
         top: "75%",
       });
-      // gsap.from("#hero-main-heading", {
-      //   yPercent: 100,
-      // });
+      gsap.set(["#hero-sub-heading-two", "#hero-sub-heading-two h2"], {
+        zIndex: "-1",
+      });
       gsap.set("#hero-sub-heading-one h2", {
         y: "100px",
       });
@@ -1142,7 +1127,6 @@ const Hero = () => {
 
       gsap.set(
         [
-          // "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two h2",
@@ -1173,6 +1157,7 @@ const Hero = () => {
           start: "top top",
           end: "+=500%",
           pin: true,
+          onUpdate: (e) => setcounter(e.progress),
           scrub: 1,
           fastScrollEnd: true,
         },
@@ -1190,10 +1175,6 @@ const Hero = () => {
           },
           "<"
         )
-        // .to("#hero-main-heading", {
-        //   yPercent: 100,
-        //   opacity: 0,
-        // })
         .to("#hero-sub-heading-one h2", {
           y: "0px",
         })
@@ -1220,7 +1201,6 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one",
-            // "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
@@ -1551,9 +1531,6 @@ const Hero = () => {
         xPercent: -50,
         top: "75%",
       });
-      // gsap.from("#hero-main-heading", {
-      //   yPercent: 100,
-      // });
       gsap.set("#hero-sub-heading-one h2", {
         y: "100px",
       });
@@ -1566,7 +1543,6 @@ const Hero = () => {
 
       gsap.set(
         [
-          // "#hero-sub-heading-one h2",
           "#hero-sub-heading-one h3",
           "#hero-sub-heading-one p",
           "#hero-sub-heading-two",
@@ -1595,6 +1571,7 @@ const Hero = () => {
           start: "top top",
           end: "+=500%",
           pin: true,
+          onUpdate: (e) => setcounter(e.progress),
           scrub: 1,
           fastScrollEnd: true,
         },
@@ -1612,10 +1589,6 @@ const Hero = () => {
           },
           "<"
         )
-        // .to("#hero-main-heading", {
-        //   yPercent: 100,
-        //   opacity: 0,
-        // })
         .to("#hero-sub-heading-one h2", {
           y: "0px",
         })
@@ -1641,7 +1614,6 @@ const Hero = () => {
         )
         .to(
           [
-            // "#hero-sub-heading-one h2",
             "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
@@ -1737,29 +1709,182 @@ const Hero = () => {
           },
           "<"
         )
+        //////////
+        .addLabel("button_0")
+        .to(
+          ".active_button_0",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to("#hero-large-arrow", {
+          top: "73%",
+        })
+        .fromTo(
+          ".card_img_0",
+          {
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .fromTo(
+          ".card_img_0",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(".active_button_0", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        //////////
+        .addLabel("button_1")
+        .to(
+          ".active_button_1",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to("#hero-large-arrow", {
+          top: "70%",
+        })
+        .fromTo(
+          ".card_img_1",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(".active_button_1", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        //////////
+        .addLabel("button_2")
+        .to(
+          ".active_button_2",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to("#hero-large-arrow", {
+          top: "68%",
+        })
+        .fromTo(
+          ".card_img_2",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(".active_button_2", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        //////////
+        .addLabel("button_3")
+        .to(".active_button_3", {
+          background: "rgba(83, 132, 153, 0.5)",
+          rotate: "-3deg",
+        })
+        .to("#hero-large-arrow", {
+          top: "66%",
+        })
+        .fromTo(
+          ".card_img_3",
+          {
+            opacity: 1,
+          },
+          {
+            opacity: 0,
+          }
+        )
+        .fromTo(
+          ".card_img_4",
+          {
+            opacity: 0,
+            top: "50px",
+          },
+          {
+            opacity: 1,
+            top: "0px",
+          }
+        )
+        .to(".active_button_3", {
+          background: "rgba(126, 228, 156, 0.5)",
+          rotate: 0,
+        })
+        //////////
+        .addLabel("button_4")
+        .to(
+          ".active_button_4",
+          {
+            background: "rgba(83, 132, 153, 0.5)",
+            rotate: "-3deg",
+          },
+          "-=.5"
+        )
+        .to("#hero-large-arrow", {
+          top: "64%",
+        })
+        .to(["#para_text_01 button", "#para_text_01 p"], {
+          color: "white",
+        })
         .to("#root", {
           backgroundColor: "#29424D",
         });
     });
   }, []);
 
-  const venditeItbtn = () => {
-    if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 0.3, scrollTo: 1000, ease: "linear" });
-    }
-    if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 0.3, scrollTo: 600, ease: "linear" });
-    }
-    if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 0.3, scrollTo: 500, ease: "linear" });
-    }
-    if (window.innerWidth < 900) {
-      gsap.to(window, { duration: 0.3, scrollTo: 800, ease: "linear" });
-    }
-    if (window.innerWidth < 500) {
-      gsap.to(window, { duration: 0.3, scrollTo: 500, ease: "linear" });
-    }
-  };
   const venditeItbtn2 = () => {
     if (window.innerWidth > 1600) {
       gsap.to(window, { duration: 0.3, scrollTo: 2500, ease: "linear" });
@@ -1778,6 +1903,9 @@ const Hero = () => {
     }
     if (window.innerWidth < 769 && window.innerHeight <= 1025) {
       gsap.to(window, { duration: 0.3, scrollTo: 2000, ease: "linear" });
+    }
+    if (window.innerWidth < 576 && window.innerHeight) {
+      gsap.to(window, { duration: 0.3, scrollTo: 3000, ease: "linear" });
     }
   };
   const moveToIt = (id) => {
@@ -1891,66 +2019,6 @@ const Hero = () => {
     }
   };
 
-  // ================================================================================================
-  const [viewCount, setViewCount] = useState(false);
-  const [count, setCount] = useState(200);
-  const clickHandler = () => {
-    let previousScrollPos =
-      window.pageYOffset || document.documentElement.scrollTop;
-
-    const handleScroll = () => {
-      const currentScrollPos =
-        window.pageYOffset || document.documentElement.scrollTop;
-
-      if (currentScrollPos > previousScrollPos) {
-        // Scrolling down
-        if (!isScrollingDown) {
-          setIsScrollingDown(true);
-          const interval = setInterval(() => {
-            setCount((prevCount) => {
-              if (prevCount <= 10) {
-                clearInterval(interval);
-                return prevCount;
-              } else {
-                return prevCount - 1;
-              }
-            });
-          }, 500);
-        }
-      } else {
-        // Scrolling up
-        if (isScrollingDown) {
-          setIsScrollingDown(false);
-          const interval = setInterval(() => {
-            setCount((prevCount) => {
-              if (prevCount >= 200) {
-                clearInterval(interval);
-                return prevCount;
-              } else {
-                return prevCount + 1;
-              }
-            });
-          }, 500);
-        }
-      }
-      previousScrollPos = currentScrollPos;
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  };
-  function onVisibilityChange(visible) {
-    if (visible) {
-      setViewCount(true);
-      clickHandler();
-    }
-  }
-  useEffect(() => {
-    setViewCount(false);
-  }, [count]);
-  const [isScrollingDown, setIsScrollingDown] = useState(false);
-
   return (
     <>
       <div className="position-relative z-[2147483001]">
@@ -1961,31 +2029,6 @@ const Hero = () => {
               id="main-content"
               className="align-items-center flex-column justify-content-center position-relative h-100"
             >
-              {/* <h2
-                id="hero-main-heading"
-                className="color_white_off font_6xl fw-normal mb-0 position-relative letter_spacing_01 d-sm-flex align-items-center pt-xxl-5 mt-xxl-5 z_1"
-              >
-                Il futuro delle tue
-                <a
-                  className="text-decoration-none"
-                  href="#hero-sub-heading-one"
-                >
-                  <button
-                    className="custom_tab_button_012 cursor-pointer mt-lg-1 d-flex align-items-center justify-content-center hero_heading_btn me-1 me-sm-2 mx-sm-3"
-                    onClick={() => venditeItbtn()}
-                  >
-                    vendite
-                  </button>
-                </a>
-                <span className="mb-2 pe-1">
-                  <img
-                    className="mx-1mx-xl-2 e-img-01 pt1"
-                    src={eImg}
-                    alt="e-img"
-                  />
-                </span>
-                digitale
-              </h2> */}
               <div className="cursor-pointer">
                 <LottieHero />
               </div>
@@ -2012,18 +2055,9 @@ const Hero = () => {
                     </a>
                     è digitale
                   </h2>
-                  <VisibilitySensor
-                    onChange={onVisibilityChange}
-                    offset={{
-                      top: 10,
-                    }}
-                    delayedCallon
-                  >
-                    <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
-                      {count}
-                      .000
-                    </h3>
-                  </VisibilitySensor>
+                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
+                    {(counter * 200 + 10).toFixed(2)}
+                  </h3>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Lead
                     <span className="fw-bold mx-2">Qualificati</span>
@@ -2043,14 +2077,14 @@ const Hero = () => {
                 >
                   <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center hero_text_2 z_1 position-relative">
                     Il futuro delle tue
-                    <a
+                    <span
                       className="text-decoration-none mt-sm-2 mt-xxl-3"
-                      href="#"
+                      // href="#"
                     >
                       <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                         vendite
                       </button>
-                    </a>
+                    </span>
                     è digitale
                   </h2>
                   <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity-0 ff_poppins">
