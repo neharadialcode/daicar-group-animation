@@ -1100,7 +1100,7 @@ const Business = () => {
         scrollTrigger: {
           trigger: ".business_parent",
           start: "top 30%",
-          end: "+=300%",
+          end: "bottom 70%",
           scrub: true,
           fastScrollEnd: true,
         },
@@ -1109,37 +1109,45 @@ const Business = () => {
         autoAlpha: 0,
       })
         .from(".business_small_heading_1", {
-          xPercent: "-300",
+          yPercent: "50",
+          autoAlpha: 0,
         })
         .from(".business_small_para_1", {
-          xPercent: "150",
+          yPercent: "100",
+          autoAlpha: 0,
         })
         .from(".business_small_img_2", {
           autoAlpha: 0,
         })
         .from(".business_small_heading_2", {
-          xPercent: "-300",
+          yPercent: "50",
+          autoAlpha: 0,
         })
         .from(".business_small_para_2", {
-          xPercent: "150",
+          yPercent: "100",
+          autoAlpha: 0,
         })
         .from(".business_small_img_3", {
           autoAlpha: 0,
         })
         .from(".business_small_heading_3", {
-          xPercent: "-300",
+          yPercent: "50",
+          autoAlpha: 0,
         })
         .from(".business_small_para_3", {
-          xPercent: "150",
+          yPercent: "100",
+          autoAlpha: 0,
         })
         .from(".business_small_img_4", {
           autoAlpha: 0,
         })
         .from(".business_small_heading_4", {
-          xPercent: "-300",
+          yPercent: "50",
+          autoAlpha: 0,
         })
         .from(".business_small_para_4", {
-          xPercent: "150",
+          yPercent: "100",
+          autoAlpha: 0,
         });
     });
   }, []);
