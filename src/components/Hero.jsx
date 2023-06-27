@@ -126,6 +126,15 @@ const Hero = () => {
         y: "-130px",
       });
 
+      const text = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".counter_parent",
+          start: "top top",
+          end: "+=110%",
+          onUpdate: (e) => setcounter(e.progress),
+        },
+      });
+
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
@@ -134,7 +143,6 @@ const Hero = () => {
           pin: true,
           scrub: 1,
           fastScrollEnd: true,
-          onUpdate: (e) => setcounter(e.progress),
         },
       });
 
@@ -633,7 +641,14 @@ const Hero = () => {
       gsap.set("#main-content", {
         y: "-70px",
       });
-
+      const text = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".counter_parent",
+          start: "top top",
+          end: "+=95%",
+          onUpdate: (e) => setcounter(e.progress),
+        },
+      });
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
@@ -641,7 +656,6 @@ const Hero = () => {
           end: "+=500%",
           pin: true,
           scrub: 1,
-          onUpdate: (e) => setcounter(e.progress),
           fastScrollEnd: true,
         },
       });
@@ -1150,14 +1164,20 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -50,
       });
-
+      const text = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".counter_parent",
+          start: "top top",
+          end: "+=80%",
+          onUpdate: (e) => setcounter(e.progress),
+        },
+      });
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
           start: "top top",
           end: "+=500%",
           pin: true,
-          onUpdate: (e) => setcounter(e.progress),
           scrub: 1,
           fastScrollEnd: true,
         },
@@ -1565,13 +1585,21 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -44,
       });
+      const text = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".counter_parent",
+          start: "top top",
+          end: "+=50%",
+          markers: true,
+          onUpdate: (e) => setcounter(e.progress),
+        },
+      });
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
           start: "top top",
           end: "+=500%",
           pin: true,
-          onUpdate: (e) => setcounter(e.progress),
           scrub: 1,
           fastScrollEnd: true,
         },
@@ -2034,7 +2062,7 @@ const Hero = () => {
               </div>
               <div
                 id="hero-sub-heading"
-                className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white"
+                className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white counter_parent"
               >
                 <div
                   className="hero_slide_1 pt-xl-5 mt5"
