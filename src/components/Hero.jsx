@@ -2255,24 +2255,26 @@ const Hero = () => {
                                 />
                               </div>
                             </div>
-                            <div
-                              className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0 d-none d-sm-block"
-                              id="para_text_01"
-                            >
-                              <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
-                                {obj.para}
-                              </p>
-                              {obj.buttonText &&
-                                (console.log(obj.buttonId),
-                                (
-                                  <button
-                                    className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
-                                    dangerouslySetInnerHTML={{
-                                      __html: obj.buttonText,
-                                    }}
-                                    onClick={() => moveToIt(index)}
-                                  ></button>
-                                ))}
+                            <div className="d-none d-sm-block">
+                              <div
+                                className="custom_content_size tab_text_position d-flex align-items-center pt-sm-3 pt-lg-0"
+                                id="para_text_01"
+                              >
+                                <p className="font_2xl color_gray pt-lg-3 mb-1 mb-lg-3">
+                                  {obj.para}
+                                </p>
+                                {obj.buttonText &&
+                                  (console.log(obj.buttonId),
+                                  (
+                                    <button
+                                      className={`custom_tab_button_012 active_button_${index} tabs_btn ms-2 ms-sm-3 font_2xl color_gray`}
+                                      dangerouslySetInnerHTML={{
+                                        __html: obj.buttonText,
+                                      }}
+                                      onClick={() => moveToIt(index)}
+                                    ></button>
+                                  ))}
+                              </div>
                             </div>
                           </div>
                         ))}
