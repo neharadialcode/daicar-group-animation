@@ -1590,7 +1590,6 @@ const Hero = () => {
           trigger: ".counter_parent",
           start: "top top",
           end: "+=50%",
-          markers: true,
           onUpdate: (e) => setcounter(e.progress),
         },
       });
