@@ -1045,7 +1045,10 @@
   }
   .ipad_img {
     height: 72vh !important;
-    max-width: 110%;
+    max-width: 96%;
+  }
+  .tabs_lottie_width {
+    min-width: 100vw;
   }
   .crm_image_size {
     min-height: 126px;
@@ -1098,31 +1101,30 @@
   }
 }
 @media (max-width: 575.98px) and (min-height: 700px) {
-  .tabs_parent {
-    height: 841px !important;
-  }
-  .tabs_lottie {
-    top: 28% !important;
-  }
-  .tabs_lottie_1 {
-    top: 31% !important;
-  }
   .tabs_lottie_width {
     width: 100% !important;
   }
-}
-@media (max-width: 575.98px) and (min-height: 730px) {
-  .tabs_parent {
-    height: 951px !important;
-  }
   .tabs_lottie,
   .tabs_lottie_1 {
-    top: 38% !important;
+    left: -200px !important;
+    top: 47.5% !important;
+    min-width: 490px;
+  }
+  .ipad_img {
+    height: 76vh !important;
+    max-width: 116% !important;
   }
 }
 @media (max-width: 575.98px) and (min-height: 800px) {
-  .tabs_parent {
-    height: 1021px !important;
+  .tabs_lottie,
+  .tabs_lottie_1 {
+    left: -200px !important;
+    top: 49% !important;
+    min-width: 490px;
+  }
+  .ipad_img {
+    height: 72vh !important;
+    max-width: 116% !important;
   }
 }
 @media (max-width: 767.98px) and (max-height: 399.98px) {
@@ -1326,11 +1328,11 @@
   .tabs_parent {
     height: 138vh !important;
   }
-  .tabs_lottie {
-    top: 34.5% !important;
-  }
+  .tabs_lottie,
   .tabs_lottie_1 {
-    top: 36% !important;
+    left: -160px !important;
+    top: 47.5% !important;
+    min-width: 400px;
   }
   #main-assets {
     transform: translateY(78px);
