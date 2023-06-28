@@ -1726,18 +1726,18 @@ const Hero = () => {
         //   "<"
         // )
 
-        .to(
-          [
-            "#hero-ipad",
-            "#hero-sub-heading-one",
-            "#hero-sub-heading-one h3",
-            ".hero_slide_2",
-          ],
-          {
-            scale: 0.8,
-          },
-          ">"
-        )
+        // .to(
+        //   [
+        //     "#hero-ipad",
+        //     "#hero-sub-heading-one",
+        //     "#hero-sub-heading-one h3",
+        //     ".hero_slide_2",
+        //   ],
+        //   {
+        //     scale: 0.8,
+        //   },
+        //   ">"
+        // )
         .to(
           "#hero-ipad",
           {
