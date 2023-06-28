@@ -43,129 +43,129 @@ function Meeting() {
   }, []);
   const meetingBtnLine1 = () => {
     if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 1, scrollTo: 32750, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 32600, ease: "linear" });
     }
     if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 1, scrollTo: 24800, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 24550, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 0.3, scrollTo: 18300, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 18000, ease: "linear" });
     }
     if (window.innerWidth < 1499) {
-      gsap.to(window, { duration: 0.3, scrollTo: 18500, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 18300, ease: "linear" });
     }
     if (window.innerWidth < 1300) {
-      gsap.to(window, { duration: 0.3, scrollTo: 19200, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 19000, ease: "linear" });
     }
     if (window.innerWidth < 1100) {
-      gsap.to(window, { duration: 0.3, scrollTo: 14550, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 14360, ease: "linear" });
     }
     if (window.innerWidth < 992) {
-      gsap.to(window, { duration: 0.3, scrollTo: 22720, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 19900, ease: "linear" });
     }
     if (window.innerWidth < 769) {
-      gsap.to(window, { duration: 0.3, scrollTo: 20400, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 17550, ease: "linear" });
     }
     if (window.innerWidth < 576) {
-      gsap.to(window, { duration: 0.3, scrollTo: 15400, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 10800, ease: "linear" });
     }
   };
   const meetingBtnLine2 = () => {
     if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 1, scrollTo: 32950, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 32650, ease: "linear" });
     }
     if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 1, scrollTo: 25000, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 24650, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 1, scrollTo: 18500, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 18100, ease: "linear" });
     }
     if (window.innerWidth < 1499) {
-      gsap.to(window, { duration: 1, scrollTo: 18700, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 18400, ease: "linear" });
     }
     if (window.innerWidth < 1300) {
-      gsap.to(window, { duration: 1, scrollTo: 19400, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 19080, ease: "linear" });
     }
     if (window.innerWidth < 1100) {
-      gsap.to(window, { duration: 1, scrollTo: 14700, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 14460, ease: "linear" });
     }
     if (window.innerWidth < 992) {
-      gsap.to(window, { duration: 1, scrollTo: 22920, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 20000, ease: "linear" });
     }
     if (window.innerWidth < 769) {
-      gsap.to(window, { duration: 1, scrollTo: 20600, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 17680, ease: "linear" });
     }
     if (window.innerWidth < 576) {
-      gsap.to(window, { duration: 1, scrollTo: 15700, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 11000, ease: "linear" });
     }
   };
   const meetingBtnLine3 = () => {
     if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 1, scrollTo: 33150, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 32720, ease: "linear" });
     }
     if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 1, scrollTo: 25200, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 24720, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 1, scrollTo: 18700, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 18200, ease: "linear" });
     }
     if (window.innerWidth < 1499) {
-      gsap.to(window, { duration: 1, scrollTo: 19000, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 18500, ease: "linear" });
     }
     if (window.innerWidth < 1300) {
-      gsap.to(window, { duration: 1, scrollTo: 19600, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 19150, ease: "linear" });
     }
     if (window.innerWidth < 1100) {
-      gsap.to(window, { duration: 1, scrollTo: 14900, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 14560, ease: "linear" });
     }
     if (window.innerWidth < 992) {
-      gsap.to(window, { duration: 1, scrollTo: 23100, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 20100, ease: "linear" });
     }
     if (window.innerWidth < 769) {
-      gsap.to(window, { duration: 1, scrollTo: 20800, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 17780, ease: "linear" });
     }
     if (window.innerWidth < 576) {
-      gsap.to(window, { duration: 1, scrollTo: 16000, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 11100, ease: "linear" });
     }
   };
   const meetingBtnLine4 = () => {
     if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 1, scrollTo: 33400, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 32800, ease: "linear" });
     }
     if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 1, scrollTo: 25450, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 24850, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 1, scrollTo: 18900, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 18300, ease: "linear" });
     }
     if (window.innerWidth < 1499) {
-      gsap.to(window, { duration: 1, scrollTo: 19200, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 18600, ease: "linear" });
     }
     if (window.innerWidth < 1300) {
       gsap.to(window, { duration: 1, scrollTo: 19800, ease: "linear" });
     }
     if (window.innerWidth < 1100) {
-      gsap.to(window, { duration: 1, scrollTo: 15100, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 14660, ease: "linear" });
     }
     if (window.innerWidth < 992) {
-      gsap.to(window, { duration: 1, scrollTo: 23300, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 20300, ease: "linear" });
     }
     if (window.innerWidth < 769) {
-      gsap.to(window, { duration: 1, scrollTo: 21000, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 17900, ease: "linear" });
     }
     if (window.innerWidth < 576) {
-      gsap.to(window, { duration: 1, scrollTo: 16400, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 11400, ease: "linear" });
     }
   };
   const meetingBtnLine5 = () => {
     if (window.innerWidth > 2000) {
-      gsap.to(window, { duration: 1, scrollTo: 33500, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 33400, ease: "linear" });
     }
     if (window.innerWidth > 1600 && window.innerHeight <= 1090) {
-      gsap.to(window, { duration: 1, scrollTo: 25600, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 25000, ease: "linear" });
     }
     if (window.innerWidth < 1599) {
-      gsap.to(window, { duration: 1, scrollTo: 19100, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 19000, ease: "linear" });
     }
     if (window.innerWidth < 1300) {
       gsap.to(window, { duration: 1, scrollTo: 20000, ease: "linear" });
@@ -174,10 +174,10 @@ function Meeting() {
       gsap.to(window, { duration: 1, scrollTo: 15200, ease: "linear" });
     }
     if (window.innerWidth < 992) {
-      gsap.to(window, { duration: 1, scrollTo: 23500, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 20500, ease: "linear" });
     }
     if (window.innerWidth < 769) {
-      gsap.to(window, { duration: 1, scrollTo: 21200, ease: "linear" });
+      gsap.to(window, { duration: 1, scrollTo: 20000, ease: "linear" });
     }
     if (window.innerWidth < 576) {
       gsap.to(window, { duration: 1, scrollTo: 16800, ease: "linear" });

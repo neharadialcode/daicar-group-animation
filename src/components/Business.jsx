@@ -1183,7 +1183,7 @@ const Business = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 5700, ease: "linear" });
     }
     if (window.innerWidth < 1100) {
-      gsap.to(window, { duration: 0.3, scrollTo: 5000, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 4600, ease: "linear" });
     }
   };
   const moveTo3 = () => {
@@ -1203,7 +1203,7 @@ const Business = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 7500, ease: "linear" });
     }
     if (window.innerWidth < 1100) {
-      gsap.to(window, { duration: 0.3, scrollTo: 6000, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 5000, ease: "linear" });
     }
   };
   const moveTo4 = () => {
@@ -1220,7 +1220,7 @@ const Business = () => {
       gsap.to(window, { duration: 0.3, scrollTo: 7500, ease: "linear" });
     }
     if (window.innerWidth < 1100) {
-      gsap.to(window, { duration: 0.3, scrollTo: 6500, ease: "linear" });
+      gsap.to(window, { duration: 0.3, scrollTo: 6000, ease: "linear" });
     }
   };
   return (
