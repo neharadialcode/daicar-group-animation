@@ -4,10 +4,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
+
 import ipad from "../assets/images/png/ipad.png";
 import ipadGreen from "../assets/images/png/ipad-green.png";
 // import ipadAsset from "../assets/images/svg/ipad-mobile-img.svg";
-import ipadAsset from "../assets/images/svg/ipad-white-green-screen-mobile-img.svg";
+import ipadGreenMob from "../assets/images/svg/ipad-green-mob-img.svg";
+import ipadWhiteMob from "../assets/images/svg/ipad-white-mob-img.svg";
+
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
@@ -1532,7 +1535,7 @@ const Hero = () => {
 
     mm.add("(max-width:575.98px)", () => {
       gsap.set("#main-content", {
-        y: "-90px",
+        y: "-60px",
       });
       gsap.set(".arrow-hero-one", {
         scale: 0.5,
@@ -2307,20 +2310,27 @@ const Hero = () => {
             <img
               id="hero-ipad"
               alt="hero-ipad"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-none d-lg-block"
               src={ipad}
             />
-            {/* <img
+            <img
               id="hero-ipad-white"
               alt="hero-ipad-white"
-              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0 d-none d-lg-block"
               src={ipadGreen}
-            /> */}
+            />
+
+            <img
+              id="hero-ipad"
+              alt="hero-ipad"
+              className="position-absolute -z-10 pointer-events-none origin-center ipad_img d-sm-none"
+              src={ipadGreenMob}
+            />
             <img
               id="hero-ipad-white"
               alt="hero-ipad-white"
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0 d-sm-none"
-              src={ipadAsset}
+              src={ipadWhiteMob}
             />
           </div>
           <div

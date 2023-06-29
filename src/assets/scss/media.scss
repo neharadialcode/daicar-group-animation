@@ -1454,14 +1454,18 @@
 
   .ipad_img {
     height: 72vh !important;
-    max-width: 116% !important;
-    // transform: translate(-50%, -44%) scale(1.011, 1.011) !important;
-    // transform: translate(-50%, -44%) scale(0.8, 0.8) !important;
+    max-width: 95% !important;
   }
 
   // .tabs_lottie_width {
   //   width: 120% !important;
   // }
+
+  // #hero-ipad,
+  #hero-ipad-white {
+    transform: translate(-50%, -44%) scale(1, 1) !important;
+    // transform: translate(-50%, -40%) scale(1.321, 1.321) !important;
+  }
 }
 
 @media (max-width: 767.98px) and (max-height: 399.98px) {
@@ -1730,7 +1734,6 @@
   }
 
   #hero-ipad-white {
-    // transform: translate(-50%, -44%) scale(0.94, 0.8) !important;
     transform: translate(-50%, -44%) scale(1.011, 1.011) !important;
   }
 }
