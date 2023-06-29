@@ -1263,7 +1263,7 @@ const Business = () => {
           </div>
           <div className="container pb-lg-5 min-vh-100 d-lg-flex flex-column justify-content-center z-10">
             <div className="main_text d-none d-lg-block pb-5">
-              <div className="row justify-content-evenly divide_space_text">
+              <div className="row justify-content-evenly divide_space_text  bg-">
                 <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center ">
                   <Lottie
                     className="tw-100 business_img_1 position-absolute"
