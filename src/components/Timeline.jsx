@@ -893,7 +893,7 @@ const Timeline = () => {
                         src={timelineImg1}
                         alt="timelineImg1"
                       />
-                      <p className="font_md color_white_off mb-sm-4 pe-4 pe-sm-5 pe-lg-0 me-5 me-lg-0 pe-xxl-5 me-xxl-5">
+                      <p className="font_md color_white_off mb-sm-4 pe-sm-5 pe-lg-0 me-sm-5 me-lg-0 pe-xxl-5 me-xxl-5 timeline_text_size">
                         Carplanner.com nasce nel 2015 posizionandosi nel settore
                         automotive, specializzata nella lead generation
                         innovativa.
@@ -911,11 +911,8 @@ const Timeline = () => {
                       id="timeline-heading-2"
                       className="position-absolute w-100 pt-sm-3 pt-md-0"
                     >
-                      <img
-                        src={facebooklogo}
-                        alt="timeline-content-img-2"
-                      />
-                      <h2 className="font_md color_white_off pt-3 pt-sm-4">
+                      <img src={facebooklogo} alt="timeline-content-img-2" />
+                      <h2 className="font_md color_white_off pt-3 pt-sm-4 timeline_text_size">
                         Sviluppiamo la nostra piattaforma proprietaria
                         <br className="d-xl-block" />
                         tramite tecnologia A.I. Nello stesso anno entriamo
@@ -933,7 +930,7 @@ const Timeline = () => {
                         src={timelineImg2}
                         alt="timelineImg2"
                       />
-                      <p className="font_md color_white_off mb-0 mb-md-3 pe-3 pe-sm-0 pe-md-5 pe-xl-1 me-md-3 me-xxl-5">
+                      <p className="font_md color_white_off mb-0 mb-md-3 pe-3 pe-sm-0 pe-md-5 pe-xl-1 me-md-3 me-xxl-5 timeline_text_size">
                         Nasce TiGuido.io che trasferisce l’elevato know
                         <span className="ff_math">-</span>how e la tecnologia
                         sviluppata in ambito automotive al servizio di nuovi
@@ -972,7 +969,7 @@ const Timeline = () => {
                         alt="timeline-content-img-2"
                         className="timeline_icon_3"
                       />
-                      <p className="font_md color_white_off py-sm-3">
+                      <p className="font_md color_white_off py-sm-3 timeline_text_size">
                         Il 2 Ottobre faremo
                         <br className="d-md-none d-lg-block" />
                         otto anni.

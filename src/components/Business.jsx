@@ -1238,7 +1238,7 @@ const Business = () => {
             />
           </div>
           <div className="text-center z_1 business_heading">
-            <p className="font_6xl color_white_off pt-lg-5 pt-lg-0 px-md-5 px-lg-0 mb-0 custom_business_heading d-flex align-items-center justify-content-center flex-wrap business_text">
+            <p className="font_5xl color_white_off pt-lg-5 pt-lg-0 px-md-5 px-lg-0 mb-0 custom_business_heading d-flex align-items-center justify-content-center flex-wrap business_text">
               Progettiamo soluzioni
               <a href="#about_section">
                 <button className="custom_tab_button_012 cursor-pointer align-middle d-flex align-items-center justify-content-center business_btn hero_heading_btn color_dark_gray bg_light_green my-2 mb-sm-0 mt-sm-2 mx-3">
