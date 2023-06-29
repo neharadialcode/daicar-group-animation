@@ -728,7 +728,7 @@
     max-width: 328px;
   }
   #timeline-heading-1 p,
-  #timeline-heading-2,
+  #timeline-heading-2 p,
   #timeline-heading-3 p,
   #timeline-heading-4 p {
     font-size: 20px !important;
@@ -789,6 +789,10 @@
   }
 }
 @media (max-width: 575.98px) {
+  .timeline_arrow_img {
+    bottom: 32% !important;
+    width: 100%;
+  }
   .timeline_text_size {
     font-size: 16px;
   }
@@ -847,7 +851,7 @@
     max-width: 150px;
   }
   .timeline_line_img {
-    left: 20px;
+    left: 6px;
   }
   .timeline_arrow_icon {
     top: 71.5%;
@@ -1072,6 +1076,10 @@
 @media (min-width: 380px) and (max-width: 450px) {
   .timeline_arrow_icon {
     top: 72.5%;
+  }
+  .timeline_arrow_img {
+    bottom: 34% !important;
+    width: 100%;
   }
 }
 @media (max-width: 374.98px) {
@@ -1435,13 +1443,14 @@
 }
 @media (max-height: 700px) {
   .timeline_arrow_img {
-    bottom: 64%;
+    bottom: 32%;
     transform: translateY(64%);
+    width: 100%;
   }
 }
 @media (max-height: 600px) {
   .timeline_arrow_img {
-    bottom: 55%;
+    bottom: 44%;
     transform: translateY(60%);
   }
 }
