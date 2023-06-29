@@ -186,7 +186,7 @@ const Timeline = () => {
         scrollTrigger: {
           trigger: "#timeline",
           start: "top top",
-          end: "+=400%",
+          end: "+=200%",
           scrub: 1,
           pin: true,
           fastScrollEnd: true,
@@ -392,7 +392,7 @@ const Timeline = () => {
         scrollTrigger: {
           trigger: "#timeline",
           start: "top top",
-          end: "+=400%",
+          end: "+=200%",
           scrub: 1,
           pin: true,
           fastScrollEnd: true,
@@ -573,7 +573,7 @@ const Timeline = () => {
         scrollTrigger: {
           trigger: "#timeline",
           start: "top top",
-          end: "+=400%",
+          end: "+=200%",
           scrub: 1,
           pin: true,
           fastScrollEnd: true,
@@ -701,154 +701,12 @@ const Timeline = () => {
           "+=4"
         );
     });
-    // mm.add("(max-width: 575.98px)", () => {
-    //   const tl2 = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: "#timeline",
-    //       start: "top top",
-    //       end: "+=400%",
-    //       scrub: 1,
-    //       pin: true,
-    //       fastScrollEnd: true,
-    //     },
-    //   });
-    //   tl2
-    //     .fromTo(
-    //       ".timeline_text_heading",
-    //       {
-    //         autoAlpha: 0,
-    //       },
-    //       {
-    //         autoAlpha: 1,
-    //       }
-    //     )
-    //     .fromTo(
-    //       ".timeline_arrow_icon",
-    //       {
-    //         left: "-100vw",
-    //       },
-    //       {
-    //         left: "-95vw",
-    //         delay: 1,
-    //       }
-    //     )
-    //     .from(
-    //       [
-    //         "#timeline-dot-1",
-    //         "#timeline-dot-2",
-    //         "#timeline-dot-3",
-    //         "#timeline-dot-4",
-    //       ],
-    //       {
-    //         autoAlpha: 0,
-    //         xPercent: -100,
-    //         stagger: 0.4,
-    //       },
-    //       "<"
-    //     )
-    //     .from(
-    //       "#timeline-dot-line",
-    //       {
-    //         width: 0,
-    //         duration: 1,
-    //       },
-    //       ">20%"
-    //     )
-    //     .to(
-    //       ["#timeline-heading-1", "#timeline-year-1"],
-    //       {
-    //         autoAlpha: 1,
-    //       },
-    //       "<"
-    //     )
-    //     .fromTo(
-    //       ".timeline_arrow_icon",
-    //       {
-    //         left: "-95vw",
-    //       },
-    //       {
-    //         left: "-60vw",
-    //         delay: 1,
-    //       }
-    //     )
-    //     .to(
-    //       ["#timeline-heading-1", "#timeline-year-1"],
-    //       {
-    //         autoAlpha: 0,
-    //       },
-    //       "<"
-    //     )
-    //     .to(
-    //       ["#timeline-heading-2", "#timeline-year-2"],
-    //       {
-    //         autoAlpha: 1,
-    //       },
-    //       "<"
-    //     )
-    //     .fromTo(
-    //       ".timeline_arrow_icon",
-    //       {
-    //         left: "-60vw",
-    //       },
-    //       {
-    //         left: "-35vw",
-    //         delay: 1,
-    //       }
-    //     )
-    //     .to(
-    //       ["#timeline-heading-2", "#timeline-year-2"],
-    //       {
-    //         autoAlpha: 0,
-    //       },
-    //       "<"
-    //     )
-    //     .to(
-    //       ["#timeline-heading-3", "#timeline-year-3"],
-    //       {
-    //         autoAlpha: 1,
-    //       },
-    //       "<"
-    //     )
-    //     .fromTo(
-    //       ".timeline_arrow_icon",
-    //       {
-    //         left: "-35vw",
-    //       },
-    //       {
-    //         left: "-5vw",
-    //         delay: 1,
-    //       }
-    //     )
-    //     .to(["#timeline-heading-3", "#timeline-year-3"], {
-    //       autoAlpha: 0,
-    //     })
-    //     .to(
-    //       ["#timeline-heading-4", "#timeline-year-4"],
-    //       {
-    //         autoAlpha: 1,
-    //       },
-    //       "<"
-    //     )
-    //     .to(
-    //       ["#timeline-heading-4", "#timeline-year-4"],
-    //       {
-    //         autoAlpha: 1,
-    //       },
-    //       "+=4"
-    //     );
-    // });
+
   }, []);
   return (
     <>
       <div id="timeline" className="min-vh-100 w-100 z-10">
         <div className="position-relative h-100 w-100">
-          {/* <span className="d-sm-none">
-            <img
-              className="timeline_arrow_icon w-100"
-              src={largeArrow2}
-              alt="largeArrow2"
-            />
-          </span> */}
           <div>
             <img
               alt="largeArrow2"

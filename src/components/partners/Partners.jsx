@@ -99,7 +99,6 @@ const Partners = () => {
           "-=3"
         );
     });
-
     mm.add("(min-width: 992px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -154,21 +153,6 @@ const Partners = () => {
         stagger: 0.07,
       });
     });
-    // mm.add("(max-width: 575.98px)", () => {
-    //   const tl = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: "#partners",
-    //       start: "top 50%",
-    //       scrub: 1,
-    //       markers: true,
-    //       fastScrollEnd: true,
-    //     },
-    //   });
-    //   tl.to(".timeline_arrow_icon", {
-    //     right: "-250%",
-    //     duration: 4,
-    //   });
-    // });
   }, []);
   return (
     <div
