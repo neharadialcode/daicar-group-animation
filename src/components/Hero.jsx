@@ -6,7 +6,8 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
 import ipadGreen from "../assets/images/png/ipad-green.png";
-import ipadAsset from "../assets/images/svg/ipad-mobile-img.svg";
+// import ipadAsset from "../assets/images/svg/ipad-mobile-img.svg";
+import ipadAsset from "../assets/images/svg/ipad-white-green-screen-mobile-img.svg";
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
@@ -2309,18 +2310,18 @@ const Hero = () => {
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img"
               src={ipad}
             />
-            <img
+            {/* <img
               id="hero-ipad-white"
               alt="hero-ipad-white"
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0"
               src={ipadGreen}
-            />
-            {/* <img
+            /> */}
+            <img
               id="hero-ipad-white"
               alt="hero-ipad-white"
               className="position-absolute -z-10 pointer-events-none origin-center ipad_img opacity_0 d-sm-none"
               src={ipadAsset}
-            /> */}
+            />
           </div>
           <div
             id="hero_section"
