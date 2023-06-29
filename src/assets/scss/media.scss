@@ -996,7 +996,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .timeline_text_size{
+  .timeline_text_size {
     font-size: 16px;
   }
   .hero_slide_1,
@@ -1455,7 +1455,8 @@
   .ipad_img {
     height: 72vh !important;
     max-width: 116% !important;
-    transform: translate(-50%, -44%) scale(1.011, 1.011) !important;
+    // transform: translate(-50%, -44%) scale(1.011, 1.011) !important;
+    // transform: translate(-50%, -44%) scale(0.8, 0.8) !important;
   }
 
   // .tabs_lottie_width {
