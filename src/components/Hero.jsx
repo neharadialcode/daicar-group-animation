@@ -4,13 +4,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
-
 import ipad from "../assets/images/png/ipad.png";
 import ipadGreen from "../assets/images/png/ipad-green.png";
 // import ipadAsset from "../assets/images/svg/ipad-mobile-img.svg";
 import ipadGreenMob from "../assets/images/svg/ipad-green-mob-img.svg";
 import ipadWhiteMob from "../assets/images/svg/ipad-white-mob-img.svg";
-
 import arrow from "../assets/images/svg/arrow.svg";
 import { TabRightIcon } from "./Icons";
 import Lottie from "react-lottie-player";
@@ -20,6 +18,7 @@ import techDrivenLottie from "../assets/lotties/tabs-3.json";
 import realTimeLottie from "../assets/lotties/tabs-4.json";
 import crmLottie from "../assets/lotties/tabs-5.json";
 import LottieHero from "./LottieHero";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Hero = () => {
   let tl;
@@ -63,7 +62,6 @@ const Hero = () => {
       para: "e trasmettere i dati sul tuo",
     },
   ];
-  const [counter, setcounter] = useState(0);
   useEffect(() => {
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1600px)", () => {
@@ -129,16 +127,6 @@ const Hero = () => {
       gsap.set("#main-content", {
         y: "-130px",
       });
-
-      const text = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".counter_parent",
-          start: "top top",
-          end: "+=110%",
-          onUpdate: (e) => setcounter(e.progress),
-        },
-      });
-
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
@@ -644,14 +632,6 @@ const Hero = () => {
       });
       gsap.set("#main-content", {
         y: "-70px",
-      });
-      const text = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".counter_parent",
-          start: "top top",
-          end: "+=95%",
-          onUpdate: (e) => setcounter(e.progress),
-        },
       });
       tl = gsap.timeline({
         scrollTrigger: {
@@ -1168,14 +1148,6 @@ const Hero = () => {
         xPercent: -50,
         yPercent: -50,
       });
-      const text = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".counter_parent",
-          start: "top top",
-          end: "+=80%",
-          onUpdate: (e) => setcounter(e.progress),
-        },
-      });
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#hero",
@@ -1588,14 +1560,6 @@ const Hero = () => {
         left: "50%",
         xPercent: -50,
         yPercent: -44,
-      });
-      const text = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".counter_parent",
-          start: "top top",
-          end: "+=50%",
-          onUpdate: (e) => setcounter(e.progress),
-        },
       });
       tl = gsap.timeline({
         scrollTrigger: {
@@ -2098,6 +2062,69 @@ const Hero = () => {
     }
   };
 
+  ////////////////////////////////////////////////////
+  const [viewCount, setViewCount] = useState(false);
+  const [count, setCount] = useState(200);
+  const clickHandler = () => {
+    let previousScrollPos =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    const handleScroll = () => {
+      const currentScrollPos =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScrollPos > previousScrollPos) {
+        // Scrolling down
+        if (!isScrollingDown) {
+          setIsScrollingDown(true);
+          const interval = setInterval(() => {
+            setCount((prevCount) => {
+              if (prevCount <= 10) {
+                clearInterval(interval);
+                return prevCount;
+              } else {
+                return prevCount - 1;
+              }
+            });
+          }, 500);
+        }
+      } else {
+        // Scrolling up
+        if (isScrollingDown) {
+          setIsScrollingDown(false);
+          const interval = setInterval(() => {
+            setCount((prevCount) => {
+              if (prevCount >= 200) {
+                clearInterval(interval);
+                return prevCount;
+              } else {
+                return prevCount + 1;
+              }
+            });
+          }, 500);
+        }
+      }
+
+      previousScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  };
+  function onVisibilityChange(visible) {
+    if (visible) {
+      setViewCount(true);
+      clickHandler();
+    }
+  }
+  useEffect(() => {
+    setViewCount(false);
+  }, [count]);
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+
   return (
     <>
       <div className="position-relative z-[2147483001]">
@@ -2113,7 +2140,7 @@ const Hero = () => {
               </div>
               <div
                 id="hero-sub-heading"
-                className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white counter_parent"
+                className="w-100 d-flex flex-column justify-content-center hero_section_text align-items-center text-white"
               >
                 <div
                   className="hero_slide_1 pt-xl-5 mt5"
@@ -2134,9 +2161,17 @@ const Hero = () => {
                     </a>
                     è digitale
                   </h2>
-                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
-                    {(counter * 200 + 10).toFixed(2)}
-                  </h3>
+                  <VisibilitySensor
+                    onChange={onVisibilityChange}
+                    offset={{
+                      top: 10,
+                    }}
+                    delayedCallon
+                  >
+                    <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
+                      {count}.000
+                    </h3>
+                  </VisibilitySensor>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Lead
                     <span className="fw-bold mx-2">Qualificati</span>
@@ -2158,7 +2193,6 @@ const Hero = () => {
                     Il futuro delle tue
                     <span
                       className="text-decoration-none mt-sm-2 mt-xxl-3"
-                      // href="#"
                     >
                       <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                         vendite

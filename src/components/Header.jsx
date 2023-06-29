@@ -111,7 +111,9 @@ const Header = () => {
       x.parentNode.insertBefore(s, x);
     }
   }
-
+  useEffect(() => {
+    handleChatShow();
+  }, []);
   return (
     <div className="header_parent bg_dark_gray" style={{ height: "100px" }}>
       <div className="container-lg common_container py-2 py-lg-1 position-relative">
