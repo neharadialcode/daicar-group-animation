@@ -663,7 +663,7 @@ const Hero = () => {
         .to(
           ".arrow-hero-two",
           {
-            xPercent: 53,
+            xPercent: 78,
             yPercent: 3,
             scale: 0.1,
             rotate: "45deg",
@@ -1179,7 +1179,7 @@ const Hero = () => {
         .to(
           ".arrow-hero-two",
           {
-            xPercent: 53,
+            xPercent: 78,
             yPercent: 3,
             scale: 0.1,
             rotate: "45deg",
