@@ -1,9 +1,16 @@
 import React, { useEffect } from "react";
+import Lottie from "react-lottie-player";
 import { gsap } from "gsap";
-import businessOne from "../assets/images/png/business-1.png";
-import businessTwo from "../assets/images/png/business-2.png";
-import businessThree from "../assets/images/png/business-3.png";
-import businessFour from "../assets/images/png/business-4.png";
+// import businessOne from "../assets/images/png/business-1.png";
+// import businessTwo from "../assets/images/png/business-2.png";
+// import businessThree from "../assets/images/png/business-3.png";
+// import businessFour from "../assets/images/png/business-4.png";
+
+import businessOne from "../assets/lotties/GenerazioneTraffico.json";
+import businessTwo from "../assets/lotties/LandingConversazionale.json";
+import businessThree from "../assets/lotties/autentificazione.json";
+import businessFour from "../assets/lotties/crm.json";
+
 import businessLeftTextIcon from "../assets/images/svg/small-arrow-icon.svg";
 import businessIconSmall from "../assets/images/png/business-small-arrow.png";
 import businessTabImg from "../assets/images/png/arrow-tab-img.png";
@@ -1258,7 +1265,32 @@ const Business = () => {
             <div className="main_text d-none d-lg-block pb-5">
               <div className="row justify-content-evenly divide_space_text">
                 <div className="col-4 col-xxl-5 position-relative custom_business_img_height d-flex align-items-center ">
-                  <img
+                  <Lottie
+                    className="tw-100 business_img_1 position-absolute"
+                    animationData={businessOne}
+                    loop={true}
+                    play
+                  />
+                  <Lottie
+                    className="w-100 business_img_2 opacity_0 position-absolute"
+                    animationData={businessTwo}
+                    loop={true}
+                    play
+                  />
+                  <Lottie
+                    className="w-100 business_img_3 opacity_0 position-absolute"
+                    animationData={businessThree}
+                    loop={true}
+                    play
+                  />
+                  <Lottie
+                    className="w-100 business_img_4 opacity_0 position-absolute"
+                    animationData={businessFour}
+                    loop={true}
+                    play
+                  />
+
+                  {/* <img
                     className="w-100 business_img_1 position-absolute"
                     src={businessOne}
                     alt="business-big-arrow"
@@ -1277,7 +1309,7 @@ const Business = () => {
                     className="w-100 business_img_4 opacity_0 position-absolute"
                     src={businessFour}
                     alt="business-big-arrow4"
-                  />
+                  /> */}
                 </div>
                 <div className="col-6 col-xl-5 position-relative business-content">
                   <img
