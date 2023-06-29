@@ -1538,13 +1538,13 @@ const Hero = () => {
       });
       gsap.set(".arrow-hero-two", {
         xPercent: 29,
-        yPercent: -31,
+        yPercent: -24,
         scale: 0.15,
       });
       gsap.set(".arrow-hero-three", {
         xPercent: -24,
-        yPercent: 36,
-        scale: 0.1,
+        yPercent: 37,
+        scale: 0.12,
       });
       gsap.set("#hero-large-arrow", {
         left: "50%",
@@ -1552,7 +1552,7 @@ const Hero = () => {
         top: "75%",
       });
       gsap.set("#hero-sub-heading-one h2", {
-        y: "100px",
+        y: "80px",
       });
       gsap.from([".arrow-hero-one", ".arrow-hero-two", ".arrow-hero-three"], {
         y: 500,
