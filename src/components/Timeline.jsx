@@ -914,10 +914,10 @@ const Timeline = () => {
                       <img src={facebooklogo} alt="timeline-content-img-2" />
                       <h2 className="font_md color_white_off pt-3 pt-sm-4 timeline_text_size">
                         Sviluppiamo la nostra piattaforma proprietaria
-                        <br className="d-xl-block" />
+                        <br className="d-none d-lg-block" />
                         tramite tecnologia A.I. Nello stesso anno entriamo
-                        <br className="d-xl-block" />a far parte di Facebook
-                        Success Case per lo <br className="d-xl-block" />
+                        <br className="d-none d-lg-block" />a far parte di Facebook
+                        Success Case per lo <br className="d-none d-lg-block" />
                         sviluppo di chatbot sulla piattaforma Messenger
                       </h2>
                     </div>
@@ -930,7 +930,7 @@ const Timeline = () => {
                         src={timelineImg2}
                         alt="timelineImg2"
                       />
-                      <p className="font_md color_white_off mb-0 mb-md-3 pe-3 pe-sm-0 pe-md-5 pe-xl-1 me-md-3 me-xxl-5 timeline_text_size">
+                      <p className="font_md color_white_off mb-0 mb-md-3 pe-md-5 pe-xl-1 me-md-3 me-xxl-5 timeline_text_size">
                         Nasce TiGuido.io che trasferisce l’elevato know
                         <span className="ff_math">-</span>how e la tecnologia
                         sviluppata in ambito automotive al servizio di nuovi
