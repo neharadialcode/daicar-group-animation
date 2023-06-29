@@ -173,7 +173,7 @@ function Footer() {
                     target="blank"
                     rel="noreferrer"
                     href="https://www.facebook.com/"
-                    className="mx-2 mx-xl-4 footer_social_icon"
+                    className="mx-3 mx-xl-4 footer_social_icon"
                   >
                     <FbIcon />
                   </a>
