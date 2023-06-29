@@ -202,6 +202,7 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one h2",
+            "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -708,6 +709,7 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one h2",
+            "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -1223,6 +1225,7 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one h2",
+            "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -1634,6 +1637,7 @@ const Hero = () => {
         .to(
           [
             "#hero-sub-heading-one h2",
+            "#hero-sub-heading-one h3",
             "#hero-sub-heading-one p",
             "#hero-para-one",
           ],
@@ -2063,67 +2067,67 @@ const Hero = () => {
   };
 
   ////////////////////////////////////////////////////
-  const [viewCount, setViewCount] = useState(false);
-  const [count, setCount] = useState(200);
-  const clickHandler = () => {
-    let previousScrollPos =
-      window.pageYOffset || document.documentElement.scrollTop;
+  // const [viewCount, setViewCount] = useState(false);
+  // const [count, setCount] = useState(200);
+  // const clickHandler = () => {
+  //   let previousScrollPos =
+  //     window.pageYOffset || document.documentElement.scrollTop;
 
-    const handleScroll = () => {
-      const currentScrollPos =
-        window.pageYOffset || document.documentElement.scrollTop;
+  //   const handleScroll = () => {
+  //     const currentScrollPos =
+  //       window.pageYOffset || document.documentElement.scrollTop;
 
-      if (currentScrollPos > previousScrollPos) {
-        // Scrolling down
-        if (!isScrollingDown) {
-          setIsScrollingDown(true);
-          const interval = setInterval(() => {
-            setCount((prevCount) => {
-              if (prevCount <= 10) {
-                clearInterval(interval);
-                return prevCount;
-              } else {
-                return prevCount - 1;
-              }
-            });
-          }, 500);
-        }
-      } else {
-        // Scrolling up
-        if (isScrollingDown) {
-          setIsScrollingDown(false);
-          const interval = setInterval(() => {
-            setCount((prevCount) => {
-              if (prevCount >= 200) {
-                clearInterval(interval);
-                return prevCount;
-              } else {
-                return prevCount + 1;
-              }
-            });
-          }, 500);
-        }
-      }
+  //     if (currentScrollPos > previousScrollPos) {
+  //       // Scrolling down
+  //       if (!isScrollingDown) {
+  //         setIsScrollingDown(true);
+  //         const interval = setInterval(() => {
+  //           setCount((prevCount) => {
+  //             if (prevCount <= 10) {
+  //               clearInterval(interval);
+  //               return prevCount;
+  //             } else {
+  //               return prevCount - 1;
+  //             }
+  //           });
+  //         }, 500);
+  //       }
+  //     } else {
+  //       // Scrolling up
+  //       if (isScrollingDown) {
+  //         setIsScrollingDown(false);
+  //         const interval = setInterval(() => {
+  //           setCount((prevCount) => {
+  //             if (prevCount >= 200) {
+  //               clearInterval(interval);
+  //               return prevCount;
+  //             } else {
+  //               return prevCount + 1;
+  //             }
+  //           });
+  //         }, 500);
+  //       }
+  //     }
 
-      previousScrollPos = currentScrollPos;
-    };
+  //     previousScrollPos = currentScrollPos;
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  };
-  function onVisibilityChange(visible) {
-    if (visible) {
-      setViewCount(true);
-      clickHandler();
-    }
-  }
-  useEffect(() => {
-    setViewCount(false);
-  }, [count]);
-  const [isScrollingDown, setIsScrollingDown] = useState(false);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // };
+  // function onVisibilityChange(visible) {
+  //   if (visible) {
+  //     setViewCount(true);
+  //     clickHandler();
+  //   }
+  // }
+  // useEffect(() => {
+  //   setViewCount(false);
+  // }, [count]);
+  // const [isScrollingDown, setIsScrollingDown] = useState(false);
 
   return (
     <>
@@ -2161,17 +2165,18 @@ const Hero = () => {
                     </a>
                     è digitale
                   </h2>
-                  <VisibilitySensor
+                  {/* <VisibilitySensor
                     onChange={onVisibilityChange}
                     offset={{
                       top: 10,
                     }}
                     delayedCallon
-                  >
-                    <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
-                      {count}.000
-                    </h3>
-                  </VisibilitySensor>
+                  > */}
+                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
+                    {/* {count} */}
+                    200.000
+                  </h3>
+                  {/* </VisibilitySensor> */}
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Lead
                     <span className="fw-bold mx-2">Qualificati</span>
@@ -2191,16 +2196,14 @@ const Hero = () => {
                 >
                   <h2 className="d-flex align-items-center justify-content-center flex-wrap font_6xl mb-0 text-center hero_text_2 z_1 position-relative">
                     Il futuro delle tue
-                    <span
-                      className="text-decoration-none mt-sm-2 mt-xxl-3"
-                    >
+                    <span className="text-decoration-none mt-sm-2 mt-xxl-3">
                       <button className="custom_tab_button_012 cursor-pointer d-flex align-items-center justify-content-center hero_heading_btn hero_slide_3_btn me-2 mx-sm-2 mx-lg-3">
                         vendite
                       </button>
                     </span>
                     è digitale
                   </h2>
-                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity-0 ff_poppins">
+                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity0 ff_poppins">
                     10.000
                   </h3>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
