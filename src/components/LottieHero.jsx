@@ -35,7 +35,7 @@ const LottieHero = () => {
     <>
       {lottieicon && (
         <div
-          className="position-absolute hero_lottie_icon"
+          className="position-absolute hero_lottie_icon d-none d-sm-block"
           onClick={() => heroscrollicon()}
         >
           <Lottie animationData={lottieurl} loop={true} play />
