@@ -1194,15 +1194,6 @@
     height: 850px;
   }
 }
-@media (max-width: 1199.98px) and (max-height: 799.98px) {
-  .arrow-hero-one {
-    transform: scale(0.55, 0.55) !important;
-    margin-top: 40px !important;
-  }
-  .ipad_img {
-    height: 75vh !important;
-  }
-}
 @media (max-width: 1199.98px) and (max-height: 699.98px) {
   .intro_tab_frame {
     height: 624px;
@@ -1210,6 +1201,18 @@
   .arrow-hero-one {
     transform: scale(0.8, 0.8) !important;
     margin-top: 8px !important;
+  }
+  .arrow-hero-two {
+    margin-left: -96px;
+  }
+}
+@media (max-width: 1199.98px) and (max-height: 799.98px) {
+  .arrow-hero-one {
+    transform: scale(0.55, 0.55) !important;
+    margin-top: 40px !important;
+  }
+  .ipad_img {
+    height: 75vh !important;
   }
 }
 @media (max-width: 575.98px) and (min-height: 800px) {
