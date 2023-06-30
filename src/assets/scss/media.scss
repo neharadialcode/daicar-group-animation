@@ -1536,6 +1536,16 @@
   }
 }
 
+@media (max-width: 1399.98px) and (max-height: 399.98px) {
+  .hero_slide_1,
+  .hero_slide_2 {
+    margin-top: 80px;
+  }
+  .hero_slide_para_2 {
+    padding-top: 28px !important;
+  }
+}
+
 @media (max-width: 1199.98px) and (max-height: 991.98px) {
   .arrow-hero-one {
     transform: scale(0.6, 0.6) !important;
