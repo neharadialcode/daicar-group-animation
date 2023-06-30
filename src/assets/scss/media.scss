@@ -1623,9 +1623,6 @@
     max-width: 450px !important;
     margin-bottom: 0px !important;
   }
-  // .hero_slide_2 {
-  //   margin-top: 20px;
-  // }
   .campagne_para {
     max-width: 440px !important;
     padding-top: 24px !important;
@@ -1652,7 +1649,7 @@
   }
   .custom_content_size p,
   .custom_content_size button {
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
   #hero-main-heading {
     margin-bottom: 40px !important;
@@ -1664,7 +1661,7 @@
     max-width: 30px !important;
   }
   #hero-ipad-white {
-    transform: translate(-50%, -70%) scale(0.7, 0.7) !important;
+    transform: translate(-50%, -64%) scale(0.6, 0.6) !important;
   }
   .intro_tab_frame {
     height: 890px !important;
@@ -1673,11 +1670,14 @@
     margin-top: 80px;
   }
   .hero_slide_2 {
-    // margin-top: 90px;
-    transform: translate(0px, -30px) scale(0.9) !important;
+    margin-top: 88px;
   }
   .hero_slide_para_2 {
     padding-top: 28px !important;
+  }
+  .tab_text_position {
+    transform: translateY(-10px) !important;
+    padding-top: 0px !important;
   }
 }
 
