@@ -1381,10 +1381,16 @@ const Business = () => {
               <div className="business_tab_1">
                 <div className="row justify-content-evenly pt-4 pt-sm-5">
                   <div className="col-8 col-sm-4">
-                    <img
+                    {/* <img
                       className="w-100 business_small_img_1"
                       src={businessOne}
                       alt="business-big-arrow"
+                    /> */}
+                    <Lottie
+                      className="w-100 business_small_img_1"
+                      animationData={businessOne}
+                      loop={true}
+                      play
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-3 pt-sm-0">
@@ -1410,10 +1416,16 @@ const Business = () => {
               <div className="business_tab_2">
                 <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-8 col-sm-4">
-                    <img
+                    {/* <img
                       className="w-100 business_small_img_2"
                       src={businessTwo}
                       alt="business-big-arrow"
+                    /> */}
+                    <Lottie
+                      className="w-100 business_small_img_2"
+                      animationData={businessTwo}
+                      loop={true}
+                      play
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
@@ -1441,10 +1453,16 @@ const Business = () => {
               <div className="business_tab_3">
                 <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-8 col-sm-4">
-                    <img
+                    {/* <img
                       className="w-100 business_small_img_3"
                       src={businessThree}
                       alt="business-big-arrow"
+                    /> */}
+                    <Lottie
+                      className="w-100 business_small_img_3"
+                      animationData={businessThree}
+                      loop={true}
+                      play
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column pt-4 pt-sm-0">
@@ -1472,10 +1490,16 @@ const Business = () => {
               <div className="business_tab_4">
                 <div className="row justify-content-evenly pt-4 pt-sm-5 mt-sm-3">
                   <div className="col-sm-4 d-flex align-items-center">
-                    <img
+                    {/* <img
                       className="w-100 business_small_img_4"
                       src={businessFour}
                       alt="business-big-arrow"
+                    /> */}
+                    <Lottie
+                      className="w-100 business_small_img_4"
+                      animationData={businessFour}
+                      loop={true}
+                      play
                     />
                   </div>
                   <div className="col-sm-8 col-lg-6 d-sm-flex justify-content-center justify-content-lg-end flex-column">
