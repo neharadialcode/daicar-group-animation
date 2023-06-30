@@ -804,7 +804,7 @@ const Hero = () => {
           {
             display: "block",
           },
-          "<"
+          "<20%"
         )
         .fromTo(
           ".left_text_1",
@@ -1321,7 +1321,7 @@ const Hero = () => {
           {
             display: "block",
           },
-          "<"
+          "<20%"
         )
         .to("#hero-large-arrow", {
           top: "73%",
@@ -1736,7 +1736,7 @@ const Hero = () => {
           {
             display: "block",
           },
-          "<"
+          "<20%"
         )
         //////////
         .addLabel("button_0")
@@ -2066,8 +2066,8 @@ const Hero = () => {
     }
   };
 
-  const [count, setCount] = useState(200100);
-  const [count2, setCount2] = useState(10150);
+  const [count, setCount] = useState(200240);
+  const [count2, setCount2] = useState(10100);
   const [viewCount, setViewCount] = useState(false);
 
   let interval;
