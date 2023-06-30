@@ -301,7 +301,7 @@ const Hero = () => {
           {
             display: "block",
           },
-          "<"
+          "<20%"
         )
         .fromTo(
           ".left_text_1",
@@ -2080,10 +2080,9 @@ const Hero = () => {
           clearInterval(interval);
           return prevCount;
         }
-        return prevCount - 1;
+        return prevCount - 8;
       });
-    }, 100);
-
+    }, 50);
     return () => {
       clearInterval(interval);
     };
