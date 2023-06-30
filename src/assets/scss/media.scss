@@ -1623,9 +1623,9 @@
     max-width: 450px !important;
     margin-bottom: 0px !important;
   }
-  .hero_slide_2 {
-    margin-top: 20px;
-  }
+  // .hero_slide_2 {
+  //   margin-top: 20px;
+  // }
   .campagne_para {
     max-width: 440px !important;
     padding-top: 24px !important;
@@ -1669,9 +1669,12 @@
   .intro_tab_frame {
     height: 890px !important;
   }
-  .hero_slide_1,
-  .hero_slide_2 {
+  .hero_slide_1 {
     margin-top: 80px;
+  }
+  .hero_slide_2 {
+    // margin-top: 90px;
+    transform: translate(0px, -30px) scale(0.9) !important;
   }
   .hero_slide_para_2 {
     padding-top: 28px !important;
