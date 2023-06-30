@@ -1548,6 +1548,12 @@
   }
 }
 
+@media (max-width: 1199.98px) and (max-height: 899.98px) {
+  .arrow-hero-two {
+    margin-left: -96px;
+  }
+}
+
 @media (max-width: 1199.98px) and (max-height: 699.98px) {
   .intro_tab_frame {
     height: 624px;
@@ -1555,9 +1561,6 @@
   .arrow-hero-one {
     transform: scale(0.8, 0.8) !important;
     margin-top: 8px !important;
-  }
-  .arrow-hero-two {
-    margin-left: -96px;
   }
 }
 
