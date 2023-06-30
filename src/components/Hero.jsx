@@ -2066,68 +2066,59 @@ const Hero = () => {
     }
   };
 
-  ////////////////////////////////////////////////////
-  // const [viewCount, setViewCount] = useState(false);
-  // const [count, setCount] = useState(200);
-  // const clickHandler = () => {
-  //   let previousScrollPos =
-  //     window.pageYOffset || document.documentElement.scrollTop;
+  const [count, setCount] = useState(200100);
+  const [count2, setCount2] = useState(10150);
+  const [viewCount, setViewCount] = useState(false);
 
-  //   const handleScroll = () => {
-  //     const currentScrollPos =
-  //       window.pageYOffset || document.documentElement.scrollTop;
+  let interval;
+  let interval2;
 
-  //     if (currentScrollPos > previousScrollPos) {
-  //       // Scrolling down
-  //       if (!isScrollingDown) {
-  //         setIsScrollingDown(true);
-  //         const interval = setInterval(() => {
-  //           setCount((prevCount) => {
-  //             if (prevCount <= 10) {
-  //               clearInterval(interval);
-  //               return prevCount;
-  //             } else {
-  //               return prevCount - 1;
-  //             }
-  //           });
-  //         }, 500);
-  //       }
-  //     } else {
-  //       // Scrolling up
-  //       if (isScrollingDown) {
-  //         setIsScrollingDown(false);
-  //         const interval = setInterval(() => {
-  //           setCount((prevCount) => {
-  //             if (prevCount >= 200) {
-  //               clearInterval(interval);
-  //               return prevCount;
-  //             } else {
-  //               return prevCount + 1;
-  //             }
-  //           });
-  //         }, 500);
-  //       }
-  //     }
+  useEffect(() => {
+    interval = setInterval(() => {
+      setCount((prevCount) => {
+        if (prevCount <= 200000) {
+          clearInterval(interval);
+          return prevCount;
+        }
+        return prevCount - 1;
+      });
+    }, 100);
 
-  //     previousScrollPos = currentScrollPos;
-  //   };
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+  function onVisibilityChange(visible) {
+    if (visible) {
+      setViewCount(true);
+      interval2 = setInterval(() => {
+        setCount2((prevCount) => {
+          if (prevCount <= 10000) {
+            clearInterval(interval2);
+            return prevCount;
+          }
+          return prevCount - 1;
+        });
+      }, 100);
 
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // };
-  // function onVisibilityChange(visible) {
-  //   if (visible) {
-  //     setViewCount(true);
-  //     clickHandler();
-  //   }
-  // }
-  // useEffect(() => {
-  //   setViewCount(false);
-  // }, [count]);
-  // const [isScrollingDown, setIsScrollingDown] = useState(false);
+      return () => {
+        clearInterval(interval2);
+      };
+    }
+  }
+  const formatCount = (count) => {
+    const countString = count.toString();
+    const formattedCount = countString.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    return formattedCount;
+  };
+  const formatCount2 = (count) => {
+    const countString = count.toString();
+    const formattedCount = countString.replace(
+      /(\d)(?=(\d{3})+(?!\d))/g,
+      "$1."
+    );
+    return formattedCount;
+  };
 
   return (
     <>
@@ -2173,8 +2164,7 @@ const Hero = () => {
                     delayedCallon
                   > */}
                   <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green ff_poppins">
-                    {/* {count} */}
-                    200.000
+                    {formatCount(count)}
                   </h3>
                   {/* </VisibilitySensor> */}
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
@@ -2203,9 +2193,17 @@ const Hero = () => {
                     </span>
                     è digitale
                   </h2>
-                  <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity0 ff_poppins">
-                    10.000
-                  </h3>
+                  <VisibilitySensor
+                    onChange={onVisibilityChange}
+                    offset={{
+                      top: 10,
+                    }}
+                    delayedCallon
+                  >
+                    <h3 className="font_8xl fw-bold number_heading py-3 py-xl-4 text-center color_light_green opacity0 ff_poppins">
+                      {formatCount2(count2)}
+                    </h3>
+                  </VisibilitySensor>
                   <p className="font_xl color_white_off text-center pb-xl-4 hero_slide_para_1">
                     Campagne
                     <span className="fw-bold mx-2">Generate</span>
