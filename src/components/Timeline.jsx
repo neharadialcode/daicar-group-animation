@@ -39,19 +39,18 @@ const Timeline = () => {
       top: "-150%",
       autoAlpha: 0,
       immediateRender: false,
+    }).to("#root", {
+      backgroundColor: "#29424D",
     })
-      .to("#root", {
-        backgroundColor: "#29424D",
-      })
-      .fromTo(
-        ".timeline_text_heading",
-        {
-          autoAlpha: 0,
-        },
-        {
-          autoAlpha: 1,
-        }
-      );
+    .fromTo(
+      ".timeline_text_heading",
+      {
+        autoAlpha: 0,
+      },
+      {
+        autoAlpha: 1,
+      }
+    );
     mm.add("(min-width: 1800px)", () => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -401,15 +400,6 @@ const Timeline = () => {
       // FIRST VALUE
       tl2
         .fromTo(
-          ".timeline_text_heading",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .fromTo(
           "#hero-large-arrow-2",
           {
             right: "130%",
@@ -581,15 +571,6 @@ const Timeline = () => {
       });
       tl2
         .fromTo(
-          ".timeline_text_heading",
-          {
-            autoAlpha: 0,
-          },
-          {
-            autoAlpha: 1,
-          }
-        )
-        .fromTo(
           "#hero-large-arrow-2",
           {
             right: "130%",
@@ -701,7 +682,6 @@ const Timeline = () => {
           "+=4"
         );
     });
-
   }, []);
   return (
     <>
@@ -774,8 +754,9 @@ const Timeline = () => {
                         Sviluppiamo la nostra piattaforma proprietaria
                         <br className="d-none d-lg-block" />
                         tramite tecnologia A.I. Nello stesso anno entriamo
-                        <br className="d-none d-lg-block" />a far parte di Facebook
-                        Success Case per lo <br className="d-none d-lg-block" />
+                        <br className="d-none d-lg-block" />a far parte di
+                        Facebook Success Case per lo{" "}
+                        <br className="d-none d-lg-block" />
                         sviluppo di chatbot sulla piattaforma Messenger
                       </p>
                     </div>
