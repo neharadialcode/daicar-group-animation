@@ -6,7 +6,6 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Header from "./Header";
 import ipad from "../assets/images/png/ipad.png";
 import ipadGreen from "../assets/images/png/ipad-green.png";
-// import ipadAsset from "../assets/images/svg/ipad-mobile-img.svg";
 import ipadGreenMob from "../assets/images/svg/ipad-green-mob-img.svg";
 import ipadWhiteMob from "../assets/images/svg/ipad-white-mob-img.svg";
 import arrow from "../assets/images/svg/arrow.svg";
@@ -1668,48 +1667,6 @@ const Hero = () => {
           },
           ">"
         )
-        // .set(
-        //   "#hero-ipad-white",
-        //   {
-        //     scale: 0.7,
-        //     top: "25%",
-        //   },
-        //   ">"
-        // )
-        // .to(
-        //   ["#hero-ipad", ".hero_slide_2"],
-        //   {
-        //     scale: 0.7,
-        //   },
-        //   ">"
-        // )
-        // .to(
-        //   "#hero-ipad",
-        //   {
-        //     top: "25%",
-        //   },
-        //   "<"
-        // )
-        // .to(
-        //   ".hero_slide_2",
-        //   {
-        //     top: "15%",
-        //   },
-        //   "<"
-        // )
-
-        // .to(
-        //   [
-        //     "#hero-ipad",
-        //     "#hero-sub-heading-one",
-        //     "#hero-sub-heading-one h3",
-        //     ".hero_slide_2",
-        //   ],
-        //   {
-        //     scale: 0.8,
-        //   },
-        //   ">"
-        // )
         .to(
           "#hero-ipad",
           {
